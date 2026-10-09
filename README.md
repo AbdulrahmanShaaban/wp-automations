@@ -11,7 +11,7 @@
 | `p3-clinic/` | عيادة سِراج للأسنان — حجز مواعيد (Demo) | WordPress block theme + حجز خاص + n8n HMAC | ✅ مسلَّم — بوابة GATE: GO |
 
 - تفاصيل كل مشروع: `README.md` داخله.
-- ملفات البحث المشتركة في الجذر: `MARKET_RESEARCH.md` · `OPENCODE_MASTER_BRIEF.md`.
+- ملفات الجذر: `MARKET_RESEARCH.md` · `OPENCODE_MASTER_BRIEF.md` · `PORTFOLIO_CLIENT_FIRST.md` (مدخلات البورتفوليو المكتوبة).
 - سياق وقرارات كل مشروع: `docs/` داخله (`PLAN` · `ARCHITECTURE` · `DECISIONS` · `CONVENTIONS` · `AUDIT/GATE`).
 
 ## التشغيل السريع (لأي مشروع)

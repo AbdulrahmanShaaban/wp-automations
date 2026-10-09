@@ -68,6 +68,7 @@ See `docs/ARCHITECTURE.md`. Human docs live here; agent/session docs live in `do
 | `docs/QA-REPORT.md` | measured QA numbers and how to read them |
 | `docs/PLAN.md` | phases, status, risks |
 | `docs/CASE-STUDY.md` | portfolio case study (what a client asks) |
+| `docs/CARE-PLAN.md` | monthly care-plan offer (P5) — prices are owner-set |
 | `design/APPROVED.md` | approved design (source of truth for all UI) |
 | `docs/OWNER-BRIEF/` | per-phase Arabic handoff summaries for the owner |
 | `docs/ASSETS_TODO.md` | **owner-only actions** with exact steps |

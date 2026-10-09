@@ -57,6 +57,7 @@
 3. الباقي كله owner-blocked: نشر فعلي + n8n live + shuffle-salts/تعريب admin على خادم الصاحب.
 
 ## Recently Completed
+- [x] **حزمة التوثيق الكاملة + البورتفوليو (2026-10-09)** — أُغلقت فجوة البريف (Part 7/8/9/10): `docs/PROBLEMS.md` (20) · `ASSETS_TODO.md` (9) · `CLIENT-QA.md` (23) · `GLOSSARY.md` (32) · `OWNER-BRIEF/00–07` · `CASE-STUDY.md` · `99-final.md` + `docs/portfolio-assets/` (cover/desktop/mobile.webp — أُعيد توليدها headless من الديمو الحيّ + architecture/automation.svg) · إصلاح مراجع CARE-PLAN/CASE-STUDY · مدخلات البورتفوليو في جذر الورشة `PORTFOLIO_CLIENT_FIRST.md`
 - [x] **رفع GitHub مكتمل (2026-10-08)** — `https://github.com/AbdulrahmanShaaban/wp-automations` (public · `main` @ b11505f): تنظيف 236 لقطة/16 log (‎44MB)، `.gitignore` موحّد للورشة (أسرار/caches)، فحص index خالٍ من hex/مفاتيح، `.env` الحيّ متجاهَل، إزالة `.git` الفارغ من p1، README جذر · (محاولة Delivery-App أُزيلت منها بالكامل قبل الاسم الصحيح)
 - [x] **اختبار متانة إعادة التشغيل (2026-10-08)** — `wp-env start` كامل: afterStart أعاد كتابة php-tune ( wordpress **و cli** — السكربت وُسّع للثانيتين) · permalinks رجعت date-based → `seed.sh` أصلحتها · بوابة verify جديدة **4b php-tune** → **50/50** · سلسلة الحجز كاملة بعد restart: e2e خضرّ + notifier → sink `signature:VALID` (id=34) · ARCHITECTURE أُعيدت كتابتها للواقع (لا GSAP، n8n مبني)
 - [x] **n8n booking confirmation (2026-10-08)** — notifier HMAC + workflow + error alert + اختبار sink محلي (VALID/401)

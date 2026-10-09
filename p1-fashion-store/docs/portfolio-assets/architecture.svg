@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 560" width="900" height="560" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="900" height="560" fill="#fafaf8"/>
+  <text x="450" y="36" text-anchor="middle" font-size="20" font-weight="700" fill="#14231c">P1 — Nilad Store · Architecture</text>
+  <text x="450" y="58" text-anchor="middle" font-size="12" fill="#5b6b62">WordPress block theme + WooCommerce, local demo on wp-env (port 8888, PHP 8.3)</text>
+
+  <!-- RTL flow: browser (right) -> app (middle) -> db (left) -->
+  <g direction="rtl">
+    <rect x="650" y="110" width="220" height="150" rx="10" fill="#ffffff" stroke="#1f7a54" stroke-width="2"/>
+    <text x="760" y="138" text-anchor="middle" font-size="14" font-weight="700" fill="#1f7a54">Browser · عربي RTL</text>
+    <text x="760" y="164" text-anchor="middle" font-size="12" fill="#3c4a43">متجر نيلاد (1440 / 390)</text>
+    <text x="760" y="186" text-anchor="middle" font-size="12" fill="#3c4a43">سلة · دفع · حساب</text>
+    <text x="760" y="208" text-anchor="middle" font-size="12" fill="#3c4a43">Store API + nonce/cart-token</text>
+    <text x="760" y="234" text-anchor="middle" font-size="11" fill="#7c8a82">dock + overlay menu للجوال</text>
+
+    <rect x="355" y="90" width="250" height="190" rx="10" fill="#ffffff" stroke="#1f7a54" stroke-width="2"/>
+    <text x="480" y="118" text-anchor="middle" font-size="14" font-weight="700" fill="#1f7a54">Apache + WordPress</text>
+    <text x="480" y="144" text-anchor="middle" font-size="12" fill="#3c4a43">nilad-theme — block theme (tokens)</text>
+    <text x="480" y="166" text-anchor="middle" font-size="12" fill="#3c4a43">nilad-core — phone validation,</text>
+    <text x="480" y="186" text-anchor="middle" font-size="12" fill="#3c4a43">branded Arabic emails, webhook secret</text>
+    <text x="480" y="208" text-anchor="middle" font-size="12" fill="#3c4a43">WooCommerce + Paymob (keys = owner)</text>
+    <text x="480" y="234" text-anchor="middle" font-size="11" fill="#7c8a82">hardened: headers, throttles, no enumeration</text>
+    <text x="480" y="256" text-anchor="middle" font-size="11" fill="#7c8a82">shipping: القاهرة/الجيزة 60 · باقي 90 · مجاني ≥1,500</text>
+
+    <rect x="40" y="110" width="230" height="150" rx="10" fill="#ffffff" stroke="#1f7a54" stroke-width="2"/>
+    <text x="155" y="138" text-anchor="middle" font-size="14" font-weight="700" fill="#1f7a54">MySQL</text>
+    <text x="155" y="164" text-anchor="middle" font-size="12" fill="#3c4a43">منتجات/طلبات/عملاء</text>
+    <text x="155" y="186" text-anchor="middle" font-size="12" fill="#3c4a43">webhook secret في wp option</text>
+    <text x="155" y="208" text-anchor="middle" font-size="12" fill="#3c4a43">بريد الطلبات مُلتقى محليًا</text>
+    <text x="155" y="234" text-anchor="middle" font-size="11" fill="#7c8a82">DB query 0.075s (8 products)</text>
+
+    <!-- arrows RTL: browser -> app -> db -->
+    <line x1="648" y1="185" x2="607" y2="185" stroke="#1f7a54" stroke-width="2" marker-end="url(#arrL)"/>
+    <line x1="353" y1="185" x2="272" y2="185" stroke="#1f7a54" stroke-width="2" marker-end="url(#arrL)"/>
+  </g>
+
+  <defs>
+    <marker id="arrL" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M9,0 L0,4.5 L9,9 z" fill="#1f7a54"/>
+    </marker>
+  </defs>
+
+  <!-- scripts band -->
+  <rect x="40" y="320" width="830" height="110" rx="10" fill="#eef5f1" stroke="#9dbdac" stroke-width="1.5"/>
+  <text x="455" y="348" text-anchor="middle" font-size="14" font-weight="700" fill="#1f7a54">scripts/ — everything as code</text>
+  <text x="455" y="374" text-anchor="middle" font-size="12" fill="#3c4a43">reset.sh (full rebuild) · seed.sh (single boot, ~50s) · verify.sh (ALL PASS, incl. §9 n8n)</text>
+  <text x="455" y="396" text-anchor="middle" font-size="12" fill="#3c4a43">php-tune (opcache afterStart) · qa-audit (Lighthouse + axe + SEO) · package.ps1 (dist zip, secret-scan)</text>
+  <text x="455" y="418" text-anchor="middle" font-size="11" fill="#7c8a82">evidence: docs/AUDIT/ · design/qa/ · docs/99-final.md</text>
+
+  <rect x="40" y="450" width="830" height="76" rx="10" fill="#ffffff" stroke="#c9d6cf" stroke-width="1.5"/>
+  <text x="455" y="478" text-anchor="middle" font-size="13" font-weight="700" fill="#14231c">Automation lives OUTSIDE WordPress → n8n “Order Ops Suite” (see automation.svg)</text>
+  <text x="455" y="502" text-anchor="middle" font-size="11" fill="#7c8a82">WooCommerce webhook (HMAC) → n8n on the owner’s own instance (n8n license rule) · site keeps selling if n8n is down</text>
+</svg>
