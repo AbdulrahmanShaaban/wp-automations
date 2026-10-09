@@ -1,0 +1,135 @@
+{
+  "generatedAt": "2026-10-08T03:13:29.029Z",
+  "pages": {
+    "/": {
+      "url": "http://localhost:8889/",
+      "loadMs": 571,
+      "paint": {
+        "fcp": 7872,
+        "fp": 7872,
+        "nav": {
+          "ttfb": 7424.5,
+          "dcl": 7883.300000011921,
+          "load": 7889.20000000298,
+          "respSize": 17499,
+          "encSize": 17199,
+          "decSize": 73948,
+          "protocol": "http/1.1"
+        },
+        "resources": 11,
+        "docHeight": 8437,
+        "revealTotal": 24,
+        "revealHidden": 24,
+        "revealIn": 0,
+        "jsMotion": true,
+        "h1Opacity": "1",
+        "firstScreenText": "أسنانك تستاهل عناية واضحة، بموعد يناسبك"
+      },
+      "responses": []
+    },
+    "/services/": {
+      "url": "http://localhost:8889/services/",
+      "loadMs": 601,
+      "paint": {
+        "fcp": 7688,
+        "fp": 7688,
+        "nav": {
+          "ttfb": 7354.100000008941,
+          "dcl": 7685.9000000059605,
+          "load": 7897.300000011921,
+          "respSize": 15159,
+          "encSize": 14859,
+          "decSize": 66091,
+          "protocol": "http/1.1"
+        },
+        "resources": 10,
+        "docHeight": 1573,
+        "revealTotal": 0,
+        "revealHidden": 0,
+        "revealIn": 0,
+        "jsMotion": false,
+        "h1Opacity": "1",
+        "firstScreenText": "الخدمات"
+      },
+      "responses": []
+    },
+    "/team/": {
+      "url": "http://localhost:8889/team/",
+      "loadMs": 365,
+      "paint": {
+        "fcp": 2452,
+        "fp": 2452,
+        "nav": {
+          "ttfb": 2098.5,
+          "dcl": 2452.5,
+          "load": 2469.9000000059605,
+          "respSize": 14909,
+          "encSize": 14609,
+          "decSize": 65235,
+          "protocol": "http/1.1"
+        },
+        "resources": 10,
+        "docHeight": 1078,
+        "revealTotal": 0,
+        "revealHidden": 0,
+        "revealIn": 0,
+        "jsMotion": false,
+        "h1Opacity": "1",
+        "firstScreenText": "الفريق"
+      },
+      "responses": []
+    },
+    "/contact/": {
+      "url": "http://localhost:8889/contact/",
+      "loadMs": 630,
+      "paint": {
+        "fcp": 4008,
+        "fp": 4008,
+        "nav": {
+          "ttfb": 3617.6000000089407,
+          "dcl": 4014.4000000059605,
+          "load": 4216,
+          "respSize": 14686,
+          "encSize": 14386,
+          "decSize": 63781,
+          "protocol": "http/1.1"
+        },
+        "resources": 10,
+        "docHeight": 844,
+        "revealTotal": 0,
+        "revealHidden": 0,
+        "revealIn": 0,
+        "jsMotion": false,
+        "h1Opacity": "1",
+        "firstScreenText": "تواصل"
+      },
+      "responses": []
+    },
+    "/book/": {
+      "url": "http://localhost:8889/book/",
+      "loadMs": 920,
+      "paint": {
+        "fcp": 1660,
+        "fp": 1660,
+        "nav": {
+          "ttfb": 1252.7999999970198,
+          "dcl": 1639.8999999910593,
+          "load": 2247.8999999910593,
+          "respSize": 15341,
+          "encSize": 15041,
+          "decSize": 65055,
+          "protocol": "http/1.1"
+        },
+        "resources": 10,
+        "docHeight": 1448,
+        "revealTotal": 0,
+        "revealHidden": 0,
+        "revealIn": 0,
+        "jsMotion": false,
+        "h1Opacity": "1",
+        "firstScreenText": "احجز زيارة"
+      },
+      "responses": []
+    }
+  }
+}

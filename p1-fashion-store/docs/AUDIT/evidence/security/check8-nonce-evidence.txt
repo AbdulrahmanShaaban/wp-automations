@@ -1,0 +1,12 @@
+﻿== CSRF/nonce framework evidence ==
+GET /wc/store/v1/checkout unauth -> body code (from check5-store-checkout-get.json):
+{"code":"woocommerce_rest_missing_nonce","message":"\u062a\u0631\u0648\u064a\u0633\u0629 Nonce \u0645\u0641\u0642\u0648\u062f\u0629. \u062a\u062a\u0637\u0644\u0628 \u0646\u0642\u0637\u0629 \u0627\u0644\u0646\u0647\u0627\u064a\u0629 \u0647\u0630\u0647 \u0645\u0639\u0644\u0645\u0629 \u0645\u062a\u063a\u064a\u0651\u0650\u0631\u0629 \u0632\u0645\u0646\u064a\u064b\u0627 \u0635\u0627\u0644\u062d\u0629.","data":{"status":401}}
+== Store API responses carry Nonce header? ==
+Access-Control-Expose-Headers: X-WP-Total, X-WP-TotalPages, Link, Cart-Token
+Access-Control-Allow-Headers: Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type, Cart-Token, Nonce
+Nonce: fd6b4a00b2
+Nonce-Timestamp: 1791272553
+Cart-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoidF81OGQzMTljY2YzM2U1NTg4ODU1MmVmYjE4ODkwOTAiLCJleHAiOjE3OTE0NDUzNTMsImlzcyI6InN0b3JlLWFwaSIsImlhdCI6MTc5MTI3MjU1M30.D9DrirZJP5GboB8tH4HS9vL4WjudvMOwtUf_RUOU6JA
+Allow: GET
+Access-Control-Allow-Methods: OPTIONS, GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Credentials: true

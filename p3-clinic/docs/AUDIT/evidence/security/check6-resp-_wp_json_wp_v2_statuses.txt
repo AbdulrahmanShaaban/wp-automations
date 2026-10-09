@@ -1,0 +1,1 @@
+{"publish":{"name":"\u0645\u0646\u0634\u0648\u0631","public":true,"queryable":true,"slug":"publish","date_floating":false,"_links":{"archives":[{"href":"http:\/\/localhost:8889\/wp-json\/wp\/v2\/posts"}]}}}

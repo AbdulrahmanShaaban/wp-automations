@@ -1,0 +1,83 @@
+# Version / banner / disclosure evidence
+
+## 1. Generator meta tag (from the saved page captures, no new requests)
+
+| file | generator value | present |
+| --- | --- | --- |
+| `page-home.html` (73,948 B) | `WordPress 7.1.3` | yes |
+| `page-book.html` (65,055 B) | `WordPress 7.1.3` | yes |
+| `page-services.html` (66,091 B) | `WordPress 7.1.3` | yes |
+| `page-team.html` (65,235 B) | `WordPress 7.1.3` | yes |
+| `page-contact.html` (63,781 B) | `WordPress 7.1.3` | yes |
+| `page-404.html` (63,024 B) | `WordPress 7.1.3` | yes |
+| `page-search-arabic.html` (63,172 B) | `WordPress 7.1.3` | yes |
+| `check5-malformed-post-response.html` (65,763 B) | `WordPress 7.1.3` | yes |
+| `check1-body-wp-login.out` (12,323 B) | — | **absent** |
+
+Core version confirmed independently by `wp core version` → `7.1.3`
+(`check7-inventory.txt` §A).
+
+## 2. Server / X-Powered-By banners
+
+Captured on every PHP-rendered response (see `check1-header-matrix.md`):
+
+- `Server: Apache/2.4.68 (Debian)`
+- `X-Powered-By: PHP/8.3.35`
+
+Absent on the three **static** files (`/readme.html`, `/license.txt`, `/wp-cli.yml`)
+because those never enter mod_php — which is why `expose_php=On` (`php.ini`
+via `/usr/local/etc/php/conf.d/`) is the source of the banner.
+
+Apache-level settings, from `/etc/apache2/conf-available/security.conf`:
+
+```
+12: ServerTokens OS          <- intended "Minimal", ships as "OS"
+23: ServerSignature On       <- intended "Off"
+51: #Header set X-Content-Type-Options: "nosniff"   <- the security block is commented out
+```
+(`check3-apache-config.txt` lines 27-33)
+
+## 3. Object-ID disclosure in Link headers
+
+`/book/` returns:
+```
+Link: <http://localhost:8889/wp-json/wp/v2/pages/23>; rel="alternate"; title="JSON"; type="application/json"
+Link: <http://localhost:8889/?p=23>; rel=shortlink
+```
+`/` returns the same shape for `pages/4` (`check1-headers-book.txt`,
+`check0-site-home-headers.txt`). Page IDs are therefore observable by any
+visitor; the REST routes that would *act* on those IDs are auth-gated
+(`/wp/v2/pages/23` requires nothing for read, edits require `X-WP-Nonce` +
+capability — the edit endpoints returned 401 unauthenticated in
+`check6-endpoint-status.txt`).
+
+## 4. readme.html / license.txt contents that disclose
+
+- `/readme.html` → 200, 7,505 bytes; carries the WordPress version string.
+- `/license.txt` → 200, 19,903 bytes; GPL text, no version.
+
+## 5. robots.txt
+
+```
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+Sitemap: http://localhost:8889/wp-sitemap.xml
+```
+Discloses the absolute origin (localhost:8889) and that the site is
+search-engine-visible (`blog_public=1`). No `Disallow` for any path that could
+contain PII — consistent with the measured result that no PII path is
+reachable (`check6-endpoint-status.txt`).
+
+## 6. Author enumeration disclosure
+
+`GET /?author=1` → 200, no `Location` header, and the body contains:
+```
+<link rel="alternate" type="application/rss+xml"
+      title="… خلاصة مقالات admin"
+      href="http://localhost:8889/author/admin/feed/" />
+```
+i.e. the sole administrator's `user_login` is rendered into the page. Contrast:
+`/wp-json/wp/v2/users` → 200 `[]`, `/wp-json/wp/v2/users/1` → 401
+(`check4-enumeration-summary.txt`).

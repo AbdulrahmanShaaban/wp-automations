@@ -1,0 +1,29 @@
+# === caches / deps (regenerate with npm install) ===
+node_modules/
+npm-debug.log*
+*.log
+
+# === secrets: examples ship, real values never ===
+.env
+.env.local
+*.local.*
+
+# === generated WordPress / wp-env state ===
+**/wordpress/
+**/wp-content/uploads/
+**/wp-content/cache/
+*.sqlite
+
+# === n8n local runtime state ===
+**/.n8n/
+**/postgres-data/
+
+# === archives / build output ===
+dist/
+*.zip
+
+# === OS / editor ===
+Thumbs.db
+.DS_Store
+.idea/
+.vscode/

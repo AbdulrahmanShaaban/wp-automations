@@ -1,0 +1,14 @@
+﻿405	/wp-comments-post.php
+404	/wp-trackback.php?p=4
+200	/wp-links-opml.php
+302	/wp-activate.php
+403	/wp-mail.php
+302	/wp-signup.php
+200	/comments/feed/
+405	/xmlrpc.php
+200	/wp-cron.php
+200	/wp-cli.yml
+200	/wp-config.php
+403	/wp-content/uploads/
+200	POST /xmlrpc.php system.listMethods
+200	POST /wp-cron.php?doing_wp_cron

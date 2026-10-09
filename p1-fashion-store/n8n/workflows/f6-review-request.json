@@ -1,0 +1,186 @@
+{
+  "name": "Nilad F6: schedule → review request email",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "daysInterval": 1,
+              "triggerAtHour": 10
+            }
+          ]
+        }
+      },
+      "id": "f6d00001-0000-4000-8000-000000000001",
+      "name": "Every day 10:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [-160, 0]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $env.STORE_URL }}/wp-json/wc/v3/orders?status=completed&after={{ $now.minus({ days: Number($env.REVIEW_AFTER_DAYS) }).toISO() }}&per_page=50&consumer_key={{ $env.WC_API_KEY }}&consumer_secret={{ $env.WC_API_SECRET }}",
+        "options": {
+          "timeout": 20000
+        }
+      },
+      "id": "f6d00001-0000-4000-8000-000000000002",
+      "name": "Fetch completed orders",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [60, 0],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000
+    },
+    {
+      "parameters": {
+        "jsCode": "// Nilad F6 — select completed orders ready for a review request.\n// Requires env: REVIEW_AFTER_DAYS, STORE_URL. Input: ONE item whose json is the\n// WC REST orders ARRAY (defensive: { body: [...] }).\n// Keep: status=completed, date_completed older than N days, billing.email present,\n// a line_item with product_id, not already asked (static sd.keys 'f6:<id>').\n// Output: one item { orderId, email, firstName, productId, productName, productUrl }\n//         — or [{ json: { none: true } }].\nconst payload = $input.first().json;\nconst sd = $getWorkflowStaticData('global');\nsd.keys = Array.isArray(sd.keys) ? sd.keys : [];\nconst days = Number($env.REVIEW_AFTER_DAYS);\nconst thresholdMs = Number.isFinite(days) && days >= 0 ? days * 86400000 : NaN;\nconst orders = Array.isArray(payload) ? payload : (payload && Array.isArray(payload.body) ? payload.body : null);\nif (!orders || Number.isNaN(thresholdMs)) {\n  return [{ json: { none: true } }];\n}\nconst now = Date.now();\nconst storeUrl = String($env.STORE_URL || '').replace(/\\/+$/, '');\nconst out = [];\nfor (const o of orders) {\n  if (!o || o.status !== 'completed') continue;\n  const id = o.id;\n  if (id === undefined || id === null) continue;\n  const completed = Date.parse(o.date_completed);\n  if (Number.isNaN(completed)) continue;\n  if (now - completed < thresholdMs) continue;\n  if (sd.keys.includes('f6:' + id)) continue;\n  const b = o.billing || {};\n  const email = typeof b.email === 'string' ? b.email.trim() : '';\n  if (!email) continue;\n  const lines = Array.isArray(o.line_items) ? o.line_items : [];\n  const li = lines.find((l) => l && Number.isFinite(Number(l.product_id)) && Number(l.product_id) > 0);\n  if (!li) continue;\n  const productId = Number(li.product_id);\n  out.push({\n    json: {\n      orderId: id,\n      email,\n      firstName: String(b.first_name || '').trim(),\n      productId,\n      productName: String(li.name || '').trim(),\n      productUrl: storeUrl + '/?p=' + productId,\n    },\n  });\n}\nreturn out.length > 0 ? out : [{ json: { none: true } }];"
+      },
+      "id": "f6d00001-0000-4000-8000-000000000003",
+      "name": "Select review candidates",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [280, 0]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "f6d00001-0000-4000-8000-000000000004",
+              "leftValue": "={{ $json.none }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "f6d00001-0000-4000-8000-000000000005",
+      "name": "No candidates?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [500, 0]
+    },
+    {
+      "parameters": {},
+      "id": "f6d00001-0000-4000-8000-000000000006",
+      "name": "Nothing to send",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [720, 220]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Nilad F6 — build the Arabic review-request email (plain text, HTML-escaped).\n// Input: one candidate { orderId, email, firstName, productId, productName, productUrl }.\n// Output: { orderId, email, subject, text, key } — key = f6:<orderId> for idempotency.\nconst j = $input.first().json;\nconst esc = (s) => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');\nconst name = esc(j.firstName || 'عزيزنا العميل');\nconst product = esc(j.productName || 'مشترياتك');\nconst subject = 'رأيك في «' + product + '» يهمنا';\nconst text = [\n  'مرحباً ' + name + ',',\n  '',\n  'شكرًا لطلبك رقم #' + esc(j.orderId) + ' من نيلاد.',\n  'آراؤك في «' + product + '» تساعدنا وتساعد زبائنًا آخرين — يُستغرق دقيقة واحدة:',\n  esc(j.productUrl),\n  '',\n  'شكرًا جزيلًا،',\n  'فريق نيلاد',\n].join('\\n');\nreturn [{ json: { orderId: j.orderId, email: j.email, subject, text, key: 'f6:' + j.orderId } }];"
+      },
+      "id": "f6d00001-0000-4000-8000-000000000007",
+      "name": "Format review email",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [720, 0]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Nilad F6 — record 'review requested' (idempotency key f6:<orderId>, cap 500).\n// Runs BEFORE the email node so the key never depends on emailSend's output shape.\n// Passthrough output.\nconst sd = $getWorkflowStaticData('global');\nsd.keys = Array.isArray(sd.keys) ? sd.keys : [];\nconst j = $input.first().json;\nif (j.key && !sd.keys.includes(j.key)) sd.keys.push(j.key);\nif (sd.keys.length > 500) sd.keys.splice(0, sd.keys.length - 500);\nreturn [{ json: { ...j } }];"
+      },
+      "id": "f6d00001-0000-4000-8000-000000000008",
+      "name": "Mark requested",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [940, 0]
+    },
+    {
+      "parameters": {
+        "fromEmail": "orders@nilad.example.com",
+        "fromName": "نيلاد",
+        "toEmail": "={{ $json.email }}",
+        "subject": "={{ $json.subject }}",
+        "emailFormat": "text",
+        "text": "={{ $json.text }}",
+        "options": {}
+      },
+      "id": "f6d00001-0000-4000-8000-000000000009",
+      "name": "Send review request",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [1160, 0],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000,
+      "credentials": {
+        "smtp": {
+          "id": "REPLACE_ON_IMPORT",
+          "name": "Nilad SMTP"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Every day 10:00": {
+      "main": [
+        [
+          { "node": "Fetch completed orders", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Fetch completed orders": {
+      "main": [
+        [
+          { "node": "Select review candidates", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Select review candidates": {
+      "main": [
+        [
+          { "node": "No candidates?", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "No candidates?": {
+      "main": [
+        [
+          { "node": "Nothing to send", "type": "main", "index": 0 }
+        ],
+        [
+          { "node": "Format review email", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Format review email": {
+      "main": [
+        [
+          { "node": "Mark requested", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Mark requested": {
+      "main": [
+        [
+          { "node": "Send review request", "type": "main", "index": 0 }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Africa/Cairo"
+  },
+  "pinData": {}
+}

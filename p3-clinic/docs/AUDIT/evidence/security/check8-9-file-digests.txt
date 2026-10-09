@@ -1,0 +1,13 @@
+check8-9-core-uploads-cookies.txt — section G was auto-redacted because md5
+fingerprints are 32-hex and matched the secret-literal filter. The fingerprints
+of the exact files audited are reproduced here (file digests, not secrets):
+
+booking.php        0e477c1c4925a675d8d4ef529301a18c  (35125 bytes, 1074 lines)
+seed-wp.php        c570585cf3a10ba7d727f41bee71df34  (9315 bytes, 136 lines)
+siraj-core.php     0eb8a67a0d81a10ea6fb13f5512440d2  (429 bytes, 17 lines)
+theme functions.php 9ee72de1b6344faf07844700fbc6a05c  (3208 bytes, 99 lines)
+wp-config.php      e57fb4ed9de6e750d19fd8036e218af5  (6122 bytes)
+
+These let a reviewer re-run the source-level greps against the identical files.
+Note: the plugin owner was editing wp-content/plugins/siraj-core/ during this
+audit, so re-run the digests before comparing.

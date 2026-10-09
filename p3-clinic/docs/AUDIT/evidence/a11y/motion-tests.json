@@ -1,0 +1,136 @@
+{
+ "generatedAt": "2026-10-08T05:04:28.674Z",
+ "checks": [
+  {
+   "id": "js-on-home-js-motion-armed",
+   "ok": true,
+   "detail": {
+    "jsMotion": true,
+    "reduced": false,
+    "revealTotal": 24
+   }
+  },
+  {
+   "id": "js-on-home-all-reveals-visible-after-scroll",
+   "ok": true,
+   "detail": {
+    "total": 24,
+    "hidden": 0,
+    "notIn": 0,
+    "hiddenSample": []
+   }
+  },
+  {
+   "id": "js-on-book-js-motion-armed",
+   "ok": true,
+   "detail": {
+    "jsMotion": false,
+    "reduced": false,
+    "revealTotal": 0,
+    "note": "page has no .reveal elements — nothing to arm or hide"
+   }
+  },
+  {
+   "id": "js-on-book-all-reveals-visible-after-scroll",
+   "ok": true,
+   "detail": {
+    "total": 0,
+    "hidden": 0,
+    "notIn": 0,
+    "hiddenSample": []
+   }
+  },
+  {
+   "id": "js-off-home-no-js-motion-class",
+   "ok": true,
+   "detail": {
+    "jsMotion": false
+   }
+  },
+  {
+   "id": "js-off-home-all-reveals-visible",
+   "ok": true,
+   "detail": {
+    "total": 24,
+    "hidden": 0,
+    "hiddenSample": []
+   }
+  },
+  {
+   "id": "js-off-book-no-js-motion-class",
+   "ok": true,
+   "detail": {
+    "jsMotion": false
+   }
+  },
+  {
+   "id": "js-off-book-all-reveals-visible",
+   "ok": true,
+   "detail": {
+    "total": 0,
+    "hidden": 0,
+    "hiddenSample": []
+   }
+  },
+  {
+   "id": "reduced-home-query-matches",
+   "ok": true,
+   "detail": {
+    "reduced": true
+   }
+  },
+  {
+   "id": "reduced-home-script-did-not-arm",
+   "ok": true,
+   "detail": {
+    "jsMotion": false
+   }
+  },
+  {
+   "id": "reduced-home-all-content-visible",
+   "ok": true,
+   "detail": {
+    "total": 24,
+    "hidden": 0,
+    "hiddenSample": []
+   }
+  },
+  {
+   "id": "reduced-home-rule-animation-off",
+   "ok": true,
+   "detail": {
+    "animationName": "none",
+    "transform": "none",
+    "w": 320
+   }
+  },
+  {
+   "id": "reduced-book-query-matches",
+   "ok": true,
+   "detail": {
+    "reduced": true
+   }
+  },
+  {
+   "id": "reduced-book-script-did-not-arm",
+   "ok": true,
+   "detail": {
+    "jsMotion": false
+   }
+  },
+  {
+   "id": "reduced-book-all-content-visible",
+   "ok": true,
+   "detail": {
+    "total": 0,
+    "hidden": 0,
+    "hiddenSample": []
+   }
+  },
+  {
+   "id": "reduced-book-rule-animation-off",
+   "ok": true,
+   "detail": "no-.rule"
+  }
+ ]
+}

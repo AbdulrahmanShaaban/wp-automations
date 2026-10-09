@@ -1,0 +1,25 @@
+HTTP/1.1 201 Created
+Date: Tue, 06 Oct 2026 07:20:11 GMT
+Server: Apache/2.4.68 (Debian)
+X-Powered-By: PHP/8.3.35
+X-Robots-Tag: noindex
+Link: <http://localhost:8888/wp-json/>; rel="https://api.w.org/"
+X-Content-Type-Options: nosniff
+Access-Control-Expose-Headers: X-WP-Total, X-WP-TotalPages, Link, Cart-Token
+Access-Control-Allow-Headers: Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type, Cart-Token, Nonce
+Set-Cookie: woocommerce_items_in_cart=1; path=/
+Set-Cookie: woocommerce_cart_hash=9a120e03146b33c6cd094998ed0d0513; path=/
+Set-Cookie: wp_woocommerce_session_cd9b744c619529c4988e0e94344eaf12=t_3d513c6e0468c0223ee2142cdcab72%7C1791444014%7C1791357614%7Ccae7d085f57e871d63a2990a10ac174c; expires=Thu, 08 Oct 2026 07:20:14 GMT; Max-Age=172800; path=/; HttpOnly
+Nonce: fd6b4a00b2
+Nonce-Timestamp: 1791271214
+User-ID: 0
+Cart-Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoidF8zZDUxM2M2ZTA0NjhjMDIyM2VlMjE0MmNkY2FiNzIiLCJleHAiOjE3OTE0NDQwMTQsImlzcyI6InN0b3JlLWFwaSIsImlhdCI6MTc5MTI3MTIxNH0.rC_ivWBj_mc-MwjMukqGGfnY9gfBm2a9HgWnC0jxlA4
+Cart-Hash: 7ddf680b051d516ce96cac57d6720f43
+Cache-Control: no-store
+Allow: POST
+Access-Control-Allow-Methods: OPTIONS, GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Credentials: true
+Vary: Origin
+Content-Length: 4385
+Content-Type: application/json; charset=UTF-8
+

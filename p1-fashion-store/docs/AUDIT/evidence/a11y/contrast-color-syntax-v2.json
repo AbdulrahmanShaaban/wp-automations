@@ -1,0 +1,122 @@
+[
+ {
+  "sel": ".tile span",
+  "found": true,
+  "text": "هدوم",
+  "fg": "rgb(27, 26, 23)",
+  "fontSize": 14,
+  "fontWeight": 700,
+  "layers": [
+   {
+    "cls": "",
+    "color": "color(srgb 1 1 1 / 0.92)",
+    "image": false
+   },
+   {
+    "cls": "rtl home wp-singular page-template-defau",
+    "color": "rgb(250, 248, 244)",
+    "image": false
+   }
+  ],
+  "ancestorFallbacks": [
+   [
+    "#F1EBE0"
+   ],
+   [
+    "#E6EFEA"
+   ],
+   [
+    "#ECE7EE"
+   ],
+   [
+    "#F2E7DD"
+   ]
+  ],
+  "computed": {
+   "ratio": 17.32,
+   "backdrop": {
+    "r": 254.60000000000002,
+    "g": 254.44,
+    "b": 254.12,
+    "a": 1
+   },
+   "required": 4.5,
+   "verdict": "PASS",
+   "method": "composite ancestor color() layers over known theme backdrop"
+  }
+ },
+ {
+  "sel": ".site-header .wp-block-navigation a",
+  "found": true,
+  "text": "الجديد",
+  "fg": "rgb(27, 26, 23)",
+  "fontSize": 17,
+  "fontWeight": 600,
+  "layers": [
+   {
+    "cls": "wp-block-group site-header has-global-pa",
+    "color": "color(srgb 0.980392 0.972549 0.956863 / 0.88)",
+    "image": false
+   },
+   {
+    "cls": "rtl home wp-singular page-template-defau",
+    "color": "rgb(250, 248, 244)",
+    "image": false
+   }
+  ],
+  "ancestorFallbacks": [
+   [
+    "#FAF8F4"
+   ]
+  ],
+  "computed": {
+   "ratio": 16.41,
+   "backdrop": {
+    "r": 249.99996480000001,
+    "g": 247.9999956,
+    "b": 244.00005720000001,
+    "a": 1
+   },
+   "required": 4.5,
+   "verdict": "PASS",
+   "method": "composite ancestor color() layers over known theme backdrop"
+  }
+ },
+ {
+  "sel": ".wp-block-site-title a",
+  "found": true,
+  "text": "نيلاد",
+  "fg": "rgb(27, 26, 23)",
+  "fontSize": 18,
+  "fontWeight": 800,
+  "layers": [
+   {
+    "cls": "wp-block-group site-header has-global-pa",
+    "color": "color(srgb 0.980392 0.972549 0.956863 / 0.88)",
+    "image": false
+   },
+   {
+    "cls": "rtl home wp-singular page-template-defau",
+    "color": "rgb(250, 248, 244)",
+    "image": false
+   }
+  ],
+  "ancestorFallbacks": [
+   [
+    "#FAF8F4"
+   ]
+  ],
+  "computed": {
+   "ratio": 16.41,
+   "backdrop": {
+    "r": 249.99996480000001,
+    "g": 247.9999956,
+    "b": 244.00005720000001,
+    "a": 1
+   },
+   "required": 4.5,
+   "verdict": "PASS",
+   "method": "composite ancestor color() layers over known theme backdrop"
+  }
+ }
+]

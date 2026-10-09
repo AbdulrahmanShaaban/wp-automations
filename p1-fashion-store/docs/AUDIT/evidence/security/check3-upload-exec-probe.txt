@@ -1,0 +1,10 @@
+﻿== existing static file ==webp=200== PHP inside uploads (wc-logs/index.php) ==indexphp=403 type=text/html; charset=iso-8859-1== wp-content dir ==wp-content=200== uploads/2026 dir ==2026dir=403== php engine probe via existing index.php body ==<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+<title>403 Forbidden</title>
+</head><body>
+<h1>Forbidden</h1>
+<p>You don't have permission to access this resource.</p>
+<hr>
+<address>Apache/2.4.68 (Debian) Server at localhost Port 8888</address>
+</body></html>
+

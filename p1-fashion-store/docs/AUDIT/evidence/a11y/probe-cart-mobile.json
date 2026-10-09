@@ -1,0 +1,269 @@
+{
+ "page": "cart",
+ "url": "http://localhost:8888/cart/",
+ "viewport": {
+  "name": "mobile",
+  "w": 390,
+  "h": 844,
+  "mobile": true
+ },
+ "redirected": false,
+ "probe": {
+  "lang": "ar",
+  "dir": "rtl",
+  "title": "السلة – نيلاد",
+  "url": "/cart/",
+  "actualPath": "/cart/",
+  "headings": [
+   {
+    "level": 1,
+    "text": "سلة التسوق",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "المنتجات في عربة التسوق",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "إجمالي سلة المشتريات",
+    "visible": false
+   }
+  ],
+  "h1Count": 1,
+  "landmarks": {
+   "header": 1,
+   "nav": 2,
+   "main": 1,
+   "footer": 1,
+   "aside": 1
+  },
+  "focusableCount": 17,
+  "skipLink": {
+   "present": true,
+   "href": "#wp--skip-link--target",
+   "text": "تخطى إلى المحتوى",
+   "isFirstFocusable": true
+  },
+  "firstFocusable": [
+   {
+    "tag": "a",
+    "text": "تخطى إلى المحتوى",
+    "href": "#wp--skip-link--target"
+   },
+   {
+    "tag": "a",
+    "text": "نيلاد",
+    "href": "http://localhost:8888"
+   },
+   {
+    "tag": "a",
+    "text": "الجديد",
+    "href": "/#new"
+   },
+   {
+    "tag": "a",
+    "text": "التصنيفات",
+    "href": "/#cats"
+   }
+  ],
+  "bodyTextLen": 469,
+  "cartEmpty": false,
+  "forms": [
+   {
+    "tag": "input",
+    "type": "number",
+    "id": null,
+    "name": null,
+    "dir": null,
+    "autocomplete": null,
+    "inputmode": null,
+    "placeholder": null,
+    "ariaLabel": "كمية تيشيرت قطن أوفرسايز الموجودة في سلة التسوق الخاصة بك.",
+    "labelText": null,
+    "describedby": null,
+    "invalid": null,
+    "required": false,
+    "w": 45,
+    "h": 25
+   }
+  ],
+  "targets": [
+   {
+    "group": "other",
+    "tag": "a",
+    "cls": "skip-link screen-reader-text",
+    "text": "تخطى إلى المحتوى",
+    "w": 1,
+    "h": 1
+   },
+   {
+    "group": "header",
+    "tag": "a",
+    "cls": "",
+    "text": "نيلاد",
+    "w": 36.5,
+    "h": 33
+   },
+   {
+    "group": "header",
+    "tag": "a",
+    "cls": "wp-block-button__link has-text-color has-surface-background-",
+    "text": "السلة",
+    "w": 100.4,
+    "h": 57.5
+   },
+   {
+    "group": "header",
+    "tag": "a",
+    "cls": "wp-block-button__link has-on-primary-text-color has-primary-",
+    "text": "اتسوّق الآن",
+    "w": 118.3,
+    "h": 55.5
+   },
+   {
+    "group": "cart",
+    "tag": "a",
+    "cls": "",
+    "text": "",
+    "w": 64,
+    "h": 32
+   },
+   {
+    "group": "cart",
+    "tag": "a",
+    "cls": "wc-block-components-product-name",
+    "text": "تيشيرت قطن أوفرسايز",
+    "w": 113.2,
+    "h": 18.2
+   },
+   {
+    "group": "cart",
+    "tag": "button",
+    "cls": "wc-block-components-quantity-selector__button wc-block-compo",
+    "text": "−",
+    "w": 30,
+    "h": 25.4
+   },
+   {
+    "group": "cart",
+    "tag": "input",
+    "cls": "wc-block-components-quantity-selector__input",
+    "text": "كمية تيشيرت قطن أوفرسايز الموجودة في سلة",
+    "w": 45,
+    "h": 25.4
+   },
+   {
+    "group": "cart",
+    "tag": "button",
+    "cls": "wc-block-components-quantity-selector__button wc-block-compo",
+    "text": "+",
+    "w": 30,
+    "h": 25.4
+   },
+   {
+    "group": "cart",
+    "tag": "button",
+    "cls": "wc-block-cart-item__remove-link",
+    "text": "إزالة تيشيرت قطن أوفرسايز من عربة التسوق",
+    "w": 24,
+    "h": 24
+   },
+   {
+    "group": "cart",
+    "tag": "div",
+    "cls": "wc-block-components-panel__button",
+    "text": "إضافة قسيمة",
+    "w": 350,
+    "h": 24
+   },
+   {
+    "group": "cart",
+    "tag": "a",
+    "cls": "wc-block-components-button wp-element-button wc-block-cart__",
+    "text": "المتابعة لإتمام الطلب",
+    "w": 350,
+    "h": 55.5
+   },
+   {
+    "group": "footer",
+    "tag": "a",
+    "cls": "",
+    "text": "الشحن والإرجاع",
+    "w": 84.7,
+    "h": 26
+   },
+   {
+    "group": "footer",
+    "tag": "a",
+    "cls": "",
+    "text": "الخصوصية",
+    "w": 59.8,
+    "h": 26
+   },
+   {
+    "group": "footer",
+    "tag": "a",
+    "cls": "",
+    "text": "تواصل معنا",
+    "w": 66.1,
+    "h": 26
+   },
+   {
+    "group": "dock",
+    "tag": "a",
+    "cls": "dock-btn dock-cart",
+    "text": "السلة",
+    "w": 179,
+    "h": 50
+   },
+   {
+    "group": "dock",
+    "tag": "a",
+    "cls": "dock-btn dock-wa",
+    "text": "واتساب",
+    "w": 179,
+    "h": 50
+   }
+  ],
+  "targetTotal": 17,
+  "cartControls": [
+   {
+    "tag": "button",
+    "cls": "wc-block-components-quantity-selector__button wc-b",
+    "aria": "خفض كمية تيشيرت قطن أوفرسايز",
+    "text": "−",
+    "w": 30,
+    "h": 25.4
+   },
+   {
+    "tag": "button",
+    "cls": "wc-block-components-quantity-selector__button wc-b",
+    "aria": "زيادة كمية تيشيرت قطن أوفرسايز",
+    "text": "+",
+    "w": 30,
+    "h": 25.4
+   },
+   {
+    "tag": "button",
+    "cls": "wc-block-cart-item__remove-link",
+    "aria": "إزالة تيشيرت قطن أوفرسايز من عربة التسوق",
+    "text": "",
+    "w": 24,
+    "h": 24
+   }
+  ],
+  "foreignRuns": [],
+  "digits": {
+   "latin": 26,
+   "eastern": 0
+  },
+  "notice": {
+   "present": true,
+   "hidden": false,
+   "role": "status",
+   "text": "متبقي 1,080 ج.م للحصول على شحن مجاني"
+  }
+ }
+}

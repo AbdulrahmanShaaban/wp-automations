@@ -1,0 +1,10 @@
+HTTP/1.1 404 Not Found
+Date: Thu, 08 Oct 2026 02:51:37 GMT
+Server: Apache/2.4.68 (Debian)
+X-Powered-By: PHP/8.3.35
+Expires: Wed, 11 Jan 1984 05:00:00 GMT
+Cache-Control: no-cache, must-revalidate, max-age=0, no-store, private
+Link: <http://localhost:8889/wp-json/>; rel="https://api.w.org/"
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+

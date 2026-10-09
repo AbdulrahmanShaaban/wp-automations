@@ -1,0 +1,110 @@
+{
+ "page": "team",
+ "url": "http://localhost:8889/team/",
+ "viewport": {
+  "w": 1440,
+  "h": 900
+ },
+ "violations": [
+  {
+   "id": "heading-order",
+   "impact": "moderate",
+   "help": "Heading levels should only increase by one",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/heading-order?application=axeAPI",
+   "tags": [
+    "best-practice"
+   ],
+   "nodes": 1,
+   "sample": [
+    {
+     "target": "h3:nth-child(2)",
+     "html": "<h3 class=\"wp-block-heading\">طبقة التقويم</h3>",
+     "failureSummary": "Fix any of the following:\n  Heading order invalid"
+    }
+   ]
+  }
+ ],
+ "incomplete": [],
+ "passes": 27,
+ "inapplicable": [
+  "accesskeys",
+  "area-alt",
+  "aria-allowed-attr",
+  "aria-allowed-role",
+  "aria-braille-equivalent",
+  "aria-command-name",
+  "aria-conditional-attr",
+  "aria-deprecated-role",
+  "aria-dialog-name",
+  "aria-input-field-name",
+  "aria-meter-name",
+  "aria-progressbar-name",
+  "aria-prohibited-attr",
+  "aria-required-attr",
+  "aria-required-children",
+  "aria-required-parent",
+  "aria-roles",
+  "aria-tab-name",
+  "aria-text",
+  "aria-toggle-field-name",
+  "aria-tooltip-name",
+  "aria-treeitem-name",
+  "aria-valid-attr-value",
+  "aria-valid-attr",
+  "autocomplete-valid",
+  "avoid-inline-spacing",
+  "blink",
+  "button-name",
+  "definition-list",
+  "dlitem",
+  "duplicate-id-aria",
+  "empty-table-header",
+  "form-field-multiple-labels",
+  "frame-focusable-content",
+  "frame-tested",
+  "frame-title-unique",
+  "frame-title",
+  "html-xml-lang-mismatch",
+  "image-alt",
+  "image-redundant-alt",
+  "input-button-name",
+  "input-image-alt",
+  "label-title-only",
+  "label",
+  "link-in-text-block",
+  "marquee",
+  "meta-refresh",
+  "nested-interactive",
+  "object-alt",
+  "presentation-role-conflict",
+  "role-img-alt",
+  "scope-attr-valid",
+  "scrollable-region-focusable",
+  "select-name",
+  "server-side-image-map",
+  "summary-name",
+  "svg-img-alt",
+  "table-duplicate-name",
+  "td-headers-attr",
+  "th-has-data-cells",
+  "valid-lang",
+  "video-caption",
+  "no-autoplay-audio"
+ ],
+ "engine": {
+  "name": "axe-core",
+  "version": "4.13.0"
+ },
+ "runner": {
+  "name": "axe"
+ },
+ "timestamp": "2026-10-08T04:23:01.876Z",
+ "violationCounts": {
+  "critical": 0,
+  "serious": 0,
+  "moderate": 1,
+  "minor": 0,
+  "total": 1,
+  "nodes": 1
+ }
+}

@@ -1,0 +1,27 @@
+=== check4-probe-__git_HEAD.out ===
+fc9832bef919c2a08541248db23af90d14ffb082
+
+=== check4-probe-__git_config.out ===
+[core]
+	repositoryformatversion = 1
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://github.com/WordPress/WordPress.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+	promisor = true
+	partialclonefilter = blob:none
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+
+=== check4-probe-_robots_txt.out ===
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+
+Sitemap: http://localhost:8889/wp-sitemap.xml
+

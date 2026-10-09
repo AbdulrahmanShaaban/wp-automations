@@ -1,0 +1,6 @@
+﻿== /wp-json/ index (routes count + notable) ==
+name=نيلاد description=أزياء وإكسسوارات — متجر تجريبي (Demo)
+routes=662
+== wc/store routes ==
+== wc/v3 routes ==
+== auth-dependent namespaces present ==

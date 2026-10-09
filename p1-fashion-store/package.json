@@ -1,0 +1,29 @@
+{
+  "name": "p1-fashion-store",
+  "private": true,
+  "description": "Nilad (نيلاد) — Arabic-first WooCommerce demo store. Tooling only; WordPress runs in wp-env (Docker).",
+  "scripts": {
+    "postinstall": "node scripts/patch-wp-env.js",
+    "patch:wp-env": "node scripts/patch-wp-env.js",
+    "start": "wp-env start",
+    "stop": "wp-env stop",
+    "destroy": "wp-env destroy",
+    "seed": "bash scripts/seed.sh",
+    "reset": "bash scripts/reset.sh",
+    "verify": "bash scripts/verify.sh",
+    "tune": "node scripts/php-tune.js",
+    "opcache:reset": "bash scripts/opcache-reset.sh",
+    "qa": "node scripts/qa-audit.js",
+    "qa:fast": "node scripts/qa-audit.js --skip-lighthouse",
+    "dist": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/package.ps1",
+    "secret:sync": "node scripts/sync-webhook-secret.js",
+    "n8n:check": "node n8n/check-live.js",
+    "n8n:test": "node n8n/tests/run-tests.js"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^11.16.0",
+    "axe-core": "^4.13.0",
+    "chrome-launcher": "^1.2.2",
+    "lighthouse": "^13.5.0"
+  }
+}

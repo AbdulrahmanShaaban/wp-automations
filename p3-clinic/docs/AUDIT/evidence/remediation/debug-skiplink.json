@@ -1,0 +1,56 @@
+{
+ "generatedAt": "2026-10-08T11:32:49.025Z",
+ "pre": {
+  "present": true,
+  "rect": {
+   "x": 1440,
+   "y": -1,
+   "w": 1,
+   "h": 1
+  },
+  "clip": "auto",
+  "clipPath": "inset(50%)",
+  "position": "absolute",
+  "zIndex": "auto",
+  "opacity": "1",
+  "visibility": "visible"
+ },
+ "post": {
+  "active": "skip-link screen-reader-text",
+  "rect": {
+   "x": 4,
+   "y": 4,
+   "w": 184.640625,
+   "h": 48
+  },
+  "clip": "auto",
+  "clipPath": "none",
+  "position": "absolute",
+  "zIndex": "100000",
+  "background": "rgb(238, 238, 238)",
+  "outline": "rgb(163, 35, 27) solid 3px",
+  "focusVisible": true,
+  "hitAtCenter": "a.skip-link.screen-reader-text",
+  "hitAtTopLeft": "a.skip-link.screen-reader-text",
+  "header": {
+   "position": "sticky",
+   "z": "20",
+   "rect": {
+    "y": 0,
+    "h": 69
+   },
+   "bg": "color(srgb 0.968627 0.972549 0.988235 / 0.88)",
+   "backdrop": "saturate(1.4) blur(10px)"
+  },
+  "zIndexChain": [
+   {
+    "el": "a.skip-link",
+    "position": "absolute",
+    "z": "100000"
+   }
+  ]
+ },
+ "freshHomeMd5": "FD5FE157E476A609BDEE4D7952FA8E0B",
+ "groupMd5": "A4B56E05 (truncated)",
+ "freshBytes": 121557
+}

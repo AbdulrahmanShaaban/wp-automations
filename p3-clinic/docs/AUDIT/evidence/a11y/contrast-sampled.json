@@ -1,0 +1,501 @@
+{
+ "generatedAt": "2026-10-08T03:16:55.049Z",
+ "chrome": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+ "method": "pixel-sampled backgrounds + WCAG 2.x relative-luminance ratio",
+ "targets": [
+  {
+   "viewport": "1440",
+   "sel": "aside > .sec-num",
+   "text": "RX—001",
+   "fg": "rgb(47, 75, 216)",
+   "fgHex": "#2F4BD8",
+   "fontSize": "16px",
+   "fontWeight": "700",
+   "declaredBgImage": "none",
+   "parentBg": "rgba(0, 0, 0, 0)",
+   "measuredBgDominant": "#F7F8FC",
+   "measuredBgHistogram": [
+    {
+     "hex": "#F7F8FC",
+     "px": 5692,
+     "pct": 91.5
+    },
+    {
+     "hex": "#E8EBF9",
+     "px": 335,
+     "pct": 5.4
+    },
+    {
+     "hex": "#E9EBF9",
+     "px": 48,
+     "pct": 0.8
+    },
+    {
+     "hex": "#F4F5F9",
+     "px": 16,
+     "pct": 0.3
+    }
+   ],
+   "measuredBgDarkest": "#CED1E0",
+   "measuredBgLightest": "#F7F8FC",
+   "ratioVsDarkest": 4.43,
+   "ratioVsLightest": 6.34,
+   "worstCaseRatio": 4.43,
+   "passesAA_normal": false,
+   "passesAA_large": true
+  },
+  {
+   "viewport": "1440",
+   "sel": "aside > h2",
+   "text": "ملاحظات الزيارة",
+   "fg": "rgb(18, 19, 43)",
+   "fgHex": "#12132B",
+   "fontSize": "24px",
+   "fontWeight": "700",
+   "declaredBgImage": "none",
+   "parentBg": "rgba(0, 0, 0, 0)",
+   "measuredBgDominant": "#F7F8FC",
+   "measuredBgHistogram": [
+    {
+     "hex": "#F7F8FC",
+     "px": 10208,
+     "pct": 93.7
+    },
+    {
+     "hex": "#E8EBF9",
+     "px": 377,
+     "pct": 3.5
+    },
+    {
+     "hex": "#DBDBE2",
+     "px": 30,
+     "pct": 0.3
+    },
+    {
+     "hex": "#EFF0F5",
+     "px": 21,
+     "pct": 0.2
+    }
+   ],
+   "measuredBgDarkest": "#CED1E0",
+   "measuredBgLightest": "#F7F8FC",
+   "ratioVsDarkest": 11.98,
+   "ratioVsLightest": 17.15,
+   "worstCaseRatio": 11.98,
+   "passesAA_normal": true,
+   "passesAA_large": true
+  },
+  {
+   "viewport": "1440",
+   "sel": ".note-list > li:nth-child(1) > span",
+   "text": "20 دقيقة",
+   "fg": "rgb(85, 88, 120)",
+   "fgHex": "#555878",
+   "fontSize": "16px",
+   "fontWeight": "400",
+   "declaredBgImage": "none",
+   "parentBg": "rgba(0, 0, 0, 0)",
+   "measuredBgDominant": "#F7F8FC",
+   "measuredBgHistogram": [
+    {
+     "hex": "#F7F8FC",
+     "px": 1556,
+     "pct": 81.2
+    },
+    {
+     "hex": "#DBDBE2",
+     "px": 59,
+     "pct": 3.1
+    },
+    {
+     "hex": "#F3F4F8",
+     "px": 18,
+     "pct": 0.9
+    },
+    {
+     "hex": "#F5F6FA",
+     "px": 18,
+     "pct": 0.9
+    }
+   ],
+   "measuredBgDarkest": "#DBDBE2",
+   "measuredBgLightest": "#F7F8FC",
+   "ratioVsDarkest": 4.99,
+   "ratioVsLightest": 6.48,
+   "worstCaseRatio": 4.99,
+   "passesAA_normal": true,
+   "passesAA_large": true
+  },
+  {
+   "viewport": "1440",
+   "sel": ".note-list > li:nth-child(2)",
+   "text": "أشعة عند الحاجة 15 دقيقة",
+   "fg": "rgb(18, 19, 43)",
+   "fgHex": "#12132B",
+   "fontSize": "16px",
+   "fontWeight": "600",
+   "declaredBgImage": "none",
+   "parentBg": "rgba(0, 0, 0, 0)",
+   "measuredBgDominant": "#F7F8FC",
+   "measuredBgHistogram": [
+    {
+     "hex": "#F7F8FC",
+     "px": 19420,
+     "pct": 96
+    },
+    {
+     "hex": "#E8EBF9",
+     "px": 341,
+     "pct": 1.7
+    },
+    {
+     "hex": "#E1E2EF",
+     "px": 162,
+     "pct": 0.8
+    },
+    {
+     "hex": "#E9EBF9",
+     "px": 48,
+     "pct": 0.2
+    }
+   ],
+   "measuredBgDarkest": "#DBDBE2",
+   "measuredBgLightest": "#F7F8FC",
+   "ratioVsDarkest": 13.21,
+   "ratioVsLightest": 17.15,
+   "worstCaseRatio": 13.21,
+   "passesAA_normal": true,
+   "passesAA_large": true
+  },
+  {
+   "viewport": "1440",
+   "sel": ".note-list > li:nth-child(2) > span",
+   "text": "15 دقيقة",
+   "fg": "rgb(85, 88, 120)",
+   "fgHex": "#555878",
+   "fontSize": "16px",
+   "fontWeight": "400",
+   "declaredBgImage": "none",
+   "parentBg": "rgba(0, 0, 0, 0)",
+   "measuredBgDominant": "#F7F8FC",
+   "measuredBgHistogram": [
+    {
+     "hex": "#F7F8FC",
+     "px": 1716,
+     "pct": 96.3
+    },
+    {
+     "hex": "#E8EBF9",
+     "px": 58,
+     "pct": 3.3
+    },
+    {
+     "hex": "#E9EBF9",
+     "px": 8,
+     "pct": 0.4
+    }
+   ],
+   "measuredBgDarkest": "#E8EBF9",
+   "measuredBgLightest": "#F7F8FC",
+   "ratioVsDarkest": 5.79,
+   "ratioVsLightest": 6.48,
+   "worstCaseRatio": 5.79,
+   "passesAA_normal": true,
+   "passesAA_large": true
+  },
+  {
+   "viewport": "1440",
+   "sel": ".note-list > li:nth-child(3) > span",
+   "text": "45 دقيقة",
+   "fg": "rgb(85, 88, 120)",
+   "fgHex": "#555878",
+   "fontSize": "16px",
+   "fontWeight": "400",
+   "declaredBgImage": "none",
+   "parentBg": "rgba(0, 0, 0, 0)",
+   "measuredBgDominant": "#F7F8FC",
+   "measuredBgHistogram": [
+    {
+     "hex": "#F7F8FC",
+     "px": 1890,
+     "pct": 100
+    }
+   ],
+   "measuredBgDarkest": "#F7F8FC",
+   "measuredBgLightest": "#F7F8FC",
+   "ratioVsDarkest": 6.48,
+   "ratioVsLightest": 6.48,
+   "worstCaseRatio": 6.48,
+   "passesAA_normal": true,
+   "passesAA_large": true
+  },
+  {
+   "viewport": "1440",
+   "sel": ".stamp",
+   "text": "سراج · Cairo",
+   "fg": "rgb(163, 35, 27)",
+   "fgHex": "#A3231B",
+   "fontSize": "14px",
+   "fontWeight": "800",
+   "declaredBgImage": "none",
+   "parentBg": "rgba(0, 0, 0, 0)",
+   "measuredBgDominant": "#F7F8FC",
+   "measuredBgHistogram": [
+    {
+     "hex": "#F7F8FC",
+     "px": 4674,
+     "pct": 82.2
+    },
+    {
+     "hex": "#C88381",
+     "px": 286,
+     "pct": 5
+    },
+    {
+     "hex": "#E8EBF9",
+     "px": 123,
+     "pct": 2.2
+    },
+    {
+     "hex": "#C27D7F",
+     "px": 34,
+     "pct": 0.6
+    }
+   ],
+   "measuredBgDarkest": "#C27D7F",
+   "measuredBgLightest": "#F7F8FC",
+   "ratioVsDarkest": 2.32,
+   "ratioVsLightest": 7.03,
+   "worstCaseRatio": 2.32,
+   "passesAA_normal": false,
+   "passesAA_large": false
+  },
+  {
+   "viewport": "390",
+   "sel": "aside > .sec-num",
+   "text": "RX—001",
+   "fg": "rgb(47, 75, 216)",
+   "fgHex": "#2F4BD8",
+   "fontSize": "16px",
+   "fontWeight": "700",
+   "declaredBgImage": "none",
+   "parentBg": "rgba(0, 0, 0, 0)",
+   "measuredBgDominant": "#F7F8FC",
+   "measuredBgHistogram": [
+    {
+     "hex": "#F7F8FC",
+     "px": 3997,
+     "pct": 90.5
+    },
+    {
+     "hex": "#E8EBF9",
+     "px": 236,
+     "pct": 5.3
+    },
+    {
+     "hex": "#E9EBF9",
+     "px": 34,
+     "pct": 0.8
+    },
+    {
+     "hex": "#F4F5F9",
+     "px": 16,
+     "pct": 0.4
+    }
+   ],
+   "measuredBgDarkest": "#CED1E0",
+   "measuredBgLightest": "#F7F8FC",
+   "ratioVsDarkest": 4.43,
+   "ratioVsLightest": 6.34,
+   "worstCaseRatio": 4.43,
+   "passesAA_normal": false,
+   "passesAA_large": true
+  },
+  {
+   "viewport": "390",
+   "sel": "aside > h2",
+   "text": "ملاحظات الزيارة",
+   "fg": "rgb(18, 19, 43)",
+   "fgHex": "#12132B",
+   "fontSize": "24px",
+   "fontWeight": "700",
+   "declaredBgImage": "none",
+   "parentBg": "rgba(0, 0, 0, 0)",
+   "measuredBgDominant": "#F7F8FC",
+   "measuredBgHistogram": [
+    {
+     "hex": "#F7F8FC",
+     "px": 7157,
+     "pct": 92.6
+    },
+    {
+     "hex": "#E8EBF9",
+     "px": 264,
+     "pct": 3.4
+    },
+    {
+     "hex": "#DBDBE2",
+     "px": 30,
+     "pct": 0.4
+    },
+    {
+     "hex": "#EFF0F5",
+     "px": 21,
+     "pct": 0.3
+    }
+   ],
+   "measuredBgDarkest": "#CED1E0",
+   "measuredBgLightest": "#F7F8FC",
+   "ratioVsDarkest": 11.98,
+   "ratioVsLightest": 17.15,
+   "worstCaseRatio": 11.98,
+   "passesAA_normal": true,
+   "passesAA_large": true
+  },
+  {
+   "viewport": "390",
+   "sel": ".note-list > li:nth-child(1) > span",
+   "text": "20 دقيقة",
+   "fg": "rgb(85, 88, 120)",
+   "fgHex": "#555878",
+   "fontSize": "16px",
+   "fontWeight": "400",
+   "declaredBgImage": "none",
+   "parentBg": "rgba(0, 0, 0, 0)",
+   "measuredBgDominant": "#F7F8FC",
+   "measuredBgHistogram": [
+    {
+     "hex": "#F7F8FC",
+     "px": 1553,
+     "pct": 81
+    },
+    {
+     "hex": "#DBDBE2",
+     "px": 58,
+     "pct": 3
+    },
+    {
+     "hex": "#F1F2F7",
+     "px": 20,
+     "pct": 1
+    },
+    {
+     "hex": "#F4F5F9",
+     "px": 18,
+     "pct": 0.9
+    }
+   ],
+   "measuredBgDarkest": "#DBDBE2",
+   "measuredBgLightest": "#F7F8FC",
+   "ratioVsDarkest": 4.99,
+   "ratioVsLightest": 6.48,
+   "worstCaseRatio": 4.99,
+   "passesAA_normal": true,
+   "passesAA_large": true
+  },
+  {
+   "viewport": "390",
+   "sel": ".note-list > li:nth-child(2)",
+   "text": "أشعة عند الحاجة 15 دقيقة",
+   "fg": "rgb(18, 19, 43)",
+   "fgHex": "#12132B",
+   "fontSize": "16px",
+   "fontWeight": "600",
+   "declaredBgImage": "none",
+   "parentBg": "rgba(0, 0, 0, 0)",
+   "measuredBgDominant": "#F7F8FC",
+   "measuredBgHistogram": [
+    {
+     "hex": "#F7F8FC",
+     "px": 14352,
+     "pct": 100
+    }
+   ],
+   "measuredBgDarkest": "#F7F8FC",
+   "measuredBgLightest": "#F7F8FC",
+   "ratioVsDarkest": 17.15,
+   "ratioVsLightest": 17.15,
+   "worstCaseRatio": 17.15,
+   "passesAA_normal": true,
+   "passesAA_large": true
+  },
+  {
+   "viewport": "390",
+   "sel": ".note-list > li:nth-child(2) > span",
+   "text": "15 دقيقة",
+   "fg": "rgb(85, 88, 120)",
+   "fgHex": "#555878",
+   "fontSize": "16px",
+   "fontWeight": "400",
+   "declaredBgImage": "none",
+   "parentBg": "rgba(0, 0, 0, 0)",
+   "measuredBgDominant": "#F7F8FC",
+   "measuredBgHistogram": [
+    {
+     "hex": "#F7F8FC",
+     "px": 1782,
+     "pct": 100
+    }
+   ],
+   "measuredBgDarkest": "#F7F8FC",
+   "measuredBgLightest": "#F7F8FC",
+   "ratioVsDarkest": 6.48,
+   "ratioVsLightest": 6.48,
+   "worstCaseRatio": 6.48,
+   "passesAA_normal": true,
+   "passesAA_large": true
+  },
+  {
+   "viewport": "390",
+   "sel": ".note-list > li:nth-child(3) > span",
+   "text": "45 دقيقة",
+   "fg": "rgb(85, 88, 120)",
+   "fgHex": "#555878",
+   "fontSize": "16px",
+   "fontWeight": "400",
+   "declaredBgImage": "none",
+   "parentBg": "rgba(0, 0, 0, 0)",
+   "measuredBgDominant": "#F7F8FC",
+   "measuredBgHistogram": [
+    {
+     "hex": "#F7F8FC",
+     "px": 1890,
+     "pct": 100
+    }
+   ],
+   "measuredBgDarkest": "#F7F8FC",
+   "measuredBgLightest": "#F7F8FC",
+   "ratioVsDarkest": 6.48,
+   "ratioVsLightest": 6.48,
+   "worstCaseRatio": 6.48,
+   "passesAA_normal": true,
+   "passesAA_large": true
+  },
+  {
+   "viewport": "390",
+   "sel": ".stamp",
+   "text": "سراج · Cairo",
+   "fg": "rgb(163, 35, 27)",
+   "fgHex": "#A3231B",
+   "fontSize": "14px",
+   "fontWeight": "800",
+   "declaredBgImage": "none",
+   "parentBg": "rgba(0, 0, 0, 0)",
+   "measuredBgDominant": "#F7F8FC",
+   "measuredBgHistogram": [
+    {
+     "hex": "#F7F8FC",
+     "px": 5687,
+     "pct": 100
+    }
+   ],
+   "measuredBgDarkest": "#F7F8FC",
+   "measuredBgLightest": "#F7F8FC",
+   "ratioVsDarkest": 7.03,
+   "ratioVsLightest": 7.03,
+   "worstCaseRatio": 7.03,
+   "passesAA_normal": true,
+   "passesAA_large": true
+  }
+ ]
+}

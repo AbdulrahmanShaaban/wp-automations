@@ -1,0 +1,53 @@
+{
+  "name": "Siraj clinic: error alert to owner",
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveDataErrorExecution": "all",
+    "saveDataSuccessExecution": "all"
+  },
+  "pinData": {},
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "5f1a2e00-0001-4000-8000-000000000001",
+      "name": "Error Trigger",
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [-240, 0]
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "sendMessage",
+        "chatId": "REPLACE_WITH_YOUR_CHAT_ID",
+        "text": "={{ 'فشل تنفيذ في n8n (عيادة سِراج)\\n' + 'Workflow: ' + ($json.workflow?.name || '?') + '\\n' + 'التنفيذ: ' + ($json.execution?.url || $json.execution?.id || '?') }}",
+        "additionalFields": {}
+      },
+      "id": "5f1a2e00-0002-4000-8000-000000000002",
+      "name": "Telegram error alert",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [0, 0],
+      "credentials": {
+        "telegramApi": {
+          "id": "REPLACE_ON_IMPORT",
+          "name": "Telegram account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Error Trigger": {
+      "main": [
+        [
+          {
+            "node": "Telegram error alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

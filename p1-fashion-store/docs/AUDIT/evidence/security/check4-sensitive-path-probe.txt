@@ -1,0 +1,13 @@
+﻿/.git/config => 200
+/.env => 404
+/n8n/.env => 404
+/n8n/oauth-client.local.txt => 404
+/wp-config.php => 200
+/readme.html => 200
+/license.txt => 200
+/wp-content/debug.log => 404
+/wp-content/uploads/paymob-private-logs/.htaccess => 403
+/xmlrpc.php => 405
+/wp-cron.php => 200
+/?rest_route=/ => 200
+/wp-json/wc/store/v1/checkout => 401

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="robots" content="noindex,nofollow" />
+	<title>ووردبريس &lsaquo; التنصيب</title>
+	<link rel='stylesheet' id='dashicons-css' href='http://localhost:8889/wp-includes/css/dashicons.css?ver=7.1.3' media='all' />
+<link rel='stylesheet' id='buttons-rtl-css' href='http://localhost:8889/wp-includes/css/buttons-rtl.css?ver=7.1.3' media='all' />
+<link rel='stylesheet' id='forms-rtl-css' href='http://localhost:8889/wp-admin/css/forms-rtl.css?ver=7.1.3' media='all' />
+<link rel='stylesheet' id='l10n-rtl-css' href='http://localhost:8889/wp-admin/css/l10n-rtl.css?ver=7.1.3' media='all' />
+<link rel='stylesheet' id='wp-base-styles-css' href='http://localhost:8889/wp-includes/css/dist/base-styles/admin-schemes.css?ver=7.1.3' media='all' />
+<link rel='stylesheet' id='install-rtl-css' href='http://localhost:8889/wp-admin/css/install-rtl.css?ver=7.1.3' media='all' />
+</head>
+<body class="wp-core-ui admin-color-modern rtl">
+<p id="logo">ووردبريس</p>
+
+	<h1>تمّ التنصيب مسبقاً</h1><p>يبدو أنك قمت بتنصيب ووردبريس مسبقاً. لإعادة التنصيب يرجى إفراغ جداول قاعدة البيانات القديمة أولاً.</p><p class="step"><a href="http://localhost:8889/wp-login.php">دخول</a></p></body></html>

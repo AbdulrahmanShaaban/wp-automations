@@ -1,0 +1,231 @@
+{
+  "name": "Nilad F4: daily schedule → low stock Telegram",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "daysInterval": 1,
+              "triggerAtHour": 8
+            }
+          ]
+        }
+      },
+      "id": "f4a00001-0000-4000-8000-000000000001",
+      "name": "Every day 08:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -160,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $env.STORE_URL }}/wp-json/wc/v3/products?per_page=100&consumer_key={{ $env.WC_API_KEY }}&consumer_secret={{ $env.WC_API_SECRET }}",
+        "options": {
+          "timeout": 20000
+        }
+      },
+      "id": "f4a00001-0000-4000-8000-000000000002",
+      "name": "Fetch products",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        60,
+        0
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000
+    },
+    {
+      "parameters": {
+        "jsCode": "// Nilad F4 — keep low-stock products from the Woo /products list, dedupe against static data.\n// Requires env: LOW_STOCK_QTY. Input: single item { json: [ ...products ] } (Woo REST array).\n// Output: one item per hit { productId, name, stock, qty }, or [{ json: { none: true } }].\nconst threshold = Number($env.LOW_STOCK_QTY);\nconst raw = $input.first().json;\nconst products = Array.isArray(raw) ? raw : [];\nconst sd = $getWorkflowStaticData('global');\nsd.keys = Array.isArray(sd.keys) ? sd.keys : [];\nconst hits = [];\nfor (const p of products) {\n  if (!p || p.manage_stock !== true) continue;\n  const stock = p.stock_quantity;\n  if (typeof stock !== 'number' || !Number.isFinite(stock)) continue;\n  if (!(stock <= threshold)) continue;\n  const key = 'f4:' + p.id + ':' + stock;\n  if (sd.keys.includes(key)) continue;\n  hits.push({ json: { productId: p.id, name: p.name, stock, qty: stock } });\n}\nreturn hits.length ? hits : [{ json: { none: true } }];"
+      },
+      "id": "f4a00001-0000-4000-8000-000000000003",
+      "name": "Collect low stock",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        280,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "f4a00001-0000-4000-8000-000000000005",
+              "leftValue": "={{ $json.none }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "f4a00001-0000-4000-8000-000000000004",
+      "name": "None found?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        500,
+        0
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "f4a00001-0000-4000-8000-000000000006",
+      "name": "All good",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        720,
+        220
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Nilad F4 — build ONE Arabic Telegram text (HTML-escaped) listing every low-stock hit.\n// Input: all 'Collect low stock' items { productId, name, stock, qty }.\n// Output: single item { tgText, keys } (keys = f4:<id>:<qty> for idempotency).\nconst esc = (s) => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');\nconst hits = $input.all().map((i) => i.json);\nconst lines = hits.map((h) => '• ' + esc(h.name) + ' — المتبقي: ' + esc(h.qty));\nconst keys = hits.map((h) => 'f4:' + h.productId + ':' + h.qty);\nconst tgText = ['تنبيه: مخزون منخفض'].concat(lines).join('\\n');\nreturn [{ json: {\n    // n8n 2.41 blocks $env in node expressions (Code nodes may read it), so\n    // the Telegram HTTP node gets its credentials from this item instead.\n    tgToken: $env.TELEGRAM_BOT_TOKEN || '',\n    tgChatId: $env.TELEGRAM_CHAT_ID || '', tgText, keys } }];"
+      },
+      "id": "f4a00001-0000-4000-8000-000000000007",
+      "name": "Format alert",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        720,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://api.telegram.org/bot{{ $json.tgToken }}/sendMessage",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ chat_id: $json.tgChatId, text: $json.tgText, parse_mode: 'HTML' }) }}",
+        "options": {}
+      },
+      "id": "f4a00001-0000-4000-8000-000000000008",
+      "name": "Telegram → owner",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1160,
+        0
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000
+    },
+    {
+      "parameters": {
+        "jsCode": "// Nilad F4 — persist alerted idempotency keys in workflow static data (cap 500). Passthrough.\nconst sd = $getWorkflowStaticData('global');\nsd.keys = Array.isArray(sd.keys) ? sd.keys : [];\nconst json = $input.first().json;\nconst keys = Array.isArray(json.keys) ? json.keys : [];\nfor (const k of keys) {\n  if (!sd.keys.includes(k)) sd.keys.push(k);\n}\nif (sd.keys.length > 500) sd.keys.splice(0, sd.keys.length - 500);\nreturn [{ json: {\n    // n8n 2.41 blocks $env in node expressions (Code nodes may read it), so\n    // the Telegram HTTP node gets its credentials from this item instead.\n    tgToken: $env.TELEGRAM_BOT_TOKEN || '',\n    tgChatId: $env.TELEGRAM_CHAT_ID || '', ...json } }];"
+      },
+      "id": "f4a00001-0000-4000-8000-000000000009",
+      "name": "Mark alerted",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        940,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "Every day 08:00": {
+      "main": [
+        [
+          {
+            "node": "Fetch products",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch products": {
+      "main": [
+        [
+          {
+            "node": "Collect low stock",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Collect low stock": {
+      "main": [
+        [
+          {
+            "node": "None found?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "None found?": {
+      "main": [
+        [
+          {
+            "node": "All good",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Format alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format alert": {
+      "main": [
+        [
+          {
+            "node": "Mark alerted",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Mark alerted": {
+      "main": [
+        [
+          {
+            "node": "Telegram → owner",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Africa/Cairo"
+  },
+  "pinData": {}
+}

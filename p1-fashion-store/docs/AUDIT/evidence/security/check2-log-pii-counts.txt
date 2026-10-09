@@ -1,0 +1,6 @@
+﻿reset-run.log: lines=142 email-like-tokens=0 egypt-phone-like-tokens=0
+seed-catalog-test.log: lines=7 email-like-tokens=0 egypt-phone-like-tokens=0
+seed-err.log: lines=144 email-like-tokens=0 egypt-phone-like-tokens=0
+seed-run-copy.log: lines=13 email-like-tokens=0 egypt-phone-like-tokens=0
+seed-run.log: lines=17 email-like-tokens=0 egypt-phone-like-tokens=0
+-- counts only, no values printed --

@@ -1,0 +1,245 @@
+# Final self-verification — 2026-10-08T05:12:29.032Z
+
+files scanned (report + evidence): 176
+
+## 1. secret-shaped literal sweep
+
+  secret-shaped literals found: 0
+
+## 2. long hex literals still present (file digests are expected and listed in full)
+
+  occurrences of 24+ hex: 9
+    docs\AUDIT\security.md :: length=32 md5=0e477c1c4925a675d8d4ef529301a18c
+    docs\AUDIT\evidence\security\check4-git-robots-content.txt :: length=40 md5=fc9832bef919c2a08541248db23af90d14ffb082
+    docs\AUDIT\evidence\security\check4-probe-__git_HEAD.out :: length=40 md5=fc9832bef919c2a08541248db23af90d14ffb082
+    docs\AUDIT\evidence\security\check4-probe-__git_refs_heads_master.out :: length=40 md5=83ceda9338f0873389e7508dfd60d8aa356d4a9b
+    docs\AUDIT\evidence\security\check8-9-file-digests.txt :: length=32 md5=0e477c1c4925a675d8d4ef529301a18c
+    docs\AUDIT\evidence\security\check8-9-file-digests.txt :: length=32 md5=c570585cf3a10ba7d727f41bee71df34
+    docs\AUDIT\evidence\security\check8-9-file-digests.txt :: length=32 md5=0eb8a67a0d81a10ea6fb13f5512440d2
+    docs\AUDIT\evidence\security\check8-9-file-digests.txt :: length=32 md5=9ee72de1b6344faf07844700fbc6a05c
+    docs\AUDIT\evidence\security\check8-9-file-digests.txt :: length=32 md5=e57fb4ed9de6e750d19fd8036e218af5
+  (a 32-char value that equals the md5 of an audited file is a fingerprint, not a secret;
+   see check8-9-file-digests.txt. Anything else here would need review.)
+
+## 3. evidence files cited by the report that do NOT exist
+  SUFFIX-OK  "-_wp_admin_css_.out" -> check3-probe-_wp_admin_css_.out
+  SUFFIX-OK  "-_wp_admin_js_.out" -> check3-probe-_wp_admin_js_.out
+  SUFFIX-OK  "-_wp_content_languages_.out" -> check3-probe-_wp_content_languages_.out
+  SUFFIX-OK  "-_wp_content_plugins_.out" -> check3-probe-_wp_content_plugins_.out
+  SUFFIX-OK  "-_wp_content_themes_.out" -> check3-probe-_wp_content_themes_.out
+  SUFFIX-OK  "-_wp_content_uploads_2026_.out" -> check3-probe-_wp_content_uploads_2026_.out
+  SUFFIX-OK  "-_wp_content_uploads_2026_10_.out" -> check3-probe-_wp_content_uploads_2026_10_.out
+  SUFFIX-OK  "-_wp_content_uploads__htaccess.out" -> check3-probe-_wp_content_uploads__htaccess.out
+  SUFFIX-OK  "-_wp_content_uploads_index_php.out" -> check3-probe-_wp_content_uploads_index_php.out
+  SUFFIX-OK  "-_wp_content_uploads_siraj_.out" -> check3-probe-_wp_content_uploads_siraj_.out
+  SUFFIX-OK  "-_wp_includes_.out" -> check3-probe-_wp_includes_.out
+  SUFFIX-OK  ".wp-env.json" -> check4-probe-__wp_env_json.out
+  SUFFIX-OK  "README.md" -> check1-header-matrix.md
+  SUFFIX-OK  "package.json" -> check4-probe-_package_json.out
+  SUFFIX-OK  "robots.txt" -> check4-probe-_robots_txt.out
+  SUFFIX-OK  "wp-sitemap-posts-page-1.xml" -> check4-sitemap-wp-sitemap-posts-page-1.xml
+  cited-in-report (unique quoted filenames): 99
+  resolved via suffix (continuation style): 16
+  genuinely missing: 0
+
+## 4. every file this audit created (md5) — nothing else was written
+
+  ed36f9a1ebea2f9b8b5f7c2be0f7a4f9      45623  docs\AUDIT\security.md
+  b5695ab851ec8db0c388a766f229b9cf        427  docs\AUDIT\evidence\security\check0-site-home-headers.txt
+  87198bfb3dbf1d9b55b46a2c39ba0d1e      73948  docs\AUDIT\evidence\security\check0-site-home.html
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check1-body-404-page.out
+  d41d8cd98f00b204e9800998ecf8427e          0  docs\AUDIT\evidence\security\check1-body-admin-post.out
+  f750faaf39d3653fcadfab5c9d79fdf6      19903  docs\AUDIT\evidence\security\check1-body-license.out
+  ed974dfccfa92c076b968f281dcc68d4       7505  docs\AUDIT\evidence\security\check1-body-readme.out
+  d41d8cd98f00b204e9800998ecf8427e          0  docs\AUDIT\evidence\security\check1-body-wp-admin-redirect.out
+  d41d8cd98f00b204e9800998ecf8427e          0  docs\AUDIT\evidence\security\check1-body-wp-cron.out
+  f7ea71a13bb46e67c77751e15609ce61     373015  docs\AUDIT\evidence\security\check1-body-wp-json-index.out
+  116800decc5a26b08e2678128eb8b7dd      12323  docs\AUDIT\evidence\security\check1-body-wp-login.out
+  1a172802b8ea33d47692ea6782f4faf1         42  docs\AUDIT\evidence\security\check1-body-xmlrpc-get.out
+  2d4bd0264cf900b6625c463bcd18ba54       2788  docs\AUDIT\evidence\security\check1-header-matrix.md
+  4b5efa874e13fffb0f22eaae38682e53        367  docs\AUDIT\evidence\security\check1-headers-404-page.txt
+  af9c4795aae70055b07e1861fe5fe36a        414  docs\AUDIT\evidence\security\check1-headers-admin-post.txt
+  7ea2b1c5619cce556291b9627a5c942b        433  docs\AUDIT\evidence\security\check1-headers-book.txt
+  3d28d02db72b0d0dbedd55368201c0f1        431  docs\AUDIT\evidence\security\check1-headers-contact.txt
+  7a114a94e251ba55542e570919c74e9c        427  docs\AUDIT\evidence\security\check1-headers-home.txt
+  5a7e3da269d1f38eb54dd327cb202aca        256  docs\AUDIT\evidence\security\check1-headers-license.txt
+  aa5425187de1c28931ff1378f15643bd        254  docs\AUDIT\evidence\security\check1-headers-readme.txt
+  1902ed7ae0ad43051a4b559b6941bd36        431  docs\AUDIT\evidence\security\check1-headers-services.txt
+  76a7ae71d0ee88409e93c3a8f2542630        431  docs\AUDIT\evidence\security\check1-headers-team.txt
+  2d18891a8b23cbc41e743a97c603080b        425  docs\AUDIT\evidence\security\check1-headers-wp-admin-redirect.txt
+  1db579aadeeb3bb96ed921ccfdbd57ef        266  docs\AUDIT\evidence\security\check1-headers-wp-cron.txt
+  957009cf81906545866e1f35a00d89d1        508  docs\AUDIT\evidence\security\check1-headers-wp-json-index.txt
+  1870f3b9aef256bdecda5a8e8080459f        519  docs\AUDIT\evidence\security\check1-headers-wp-login.txt
+  45dc52e968b3a9e5606e381bf48e7155        203  docs\AUDIT\evidence\security\check1-headers-xmlrpc-get.txt
+  2dab219334b5a156fdc8216600ff98bb        170  docs\AUDIT\evidence\security\check1-status-summary.txt
+  82c63ebe6140772f3765ccc113a50503      10335  docs\AUDIT\evidence\security\check2-check6-page-output-scan.txt
+  268c562f68481f869c22b3094a2d9308       1286  docs\AUDIT\evidence\security\check2-header-code-grep.txt
+  e5747aa0f4995d2578b0a3dd15c7fdfc        752  docs\AUDIT\evidence\security\check2-secret-scan.txt
+  5535706f93dbc19e557e676a3b3c849c      13673  docs\AUDIT\evidence\security\check3-apache-config.txt
+  7255abff210449dc81a494942263677c        316  docs\AUDIT\evidence\security\check3-probe-_wp_admin_css_.out
+  7255abff210449dc81a494942263677c        316  docs\AUDIT\evidence\security\check3-probe-_wp_admin_js_.out
+  7255abff210449dc81a494942263677c        316  docs\AUDIT\evidence\security\check3-probe-_wp_content_languages_.out
+  d41d8cd98f00b204e9800998ecf8427e          0  docs\AUDIT\evidence\security\check3-probe-_wp_content_plugins_.out
+  d41d8cd98f00b204e9800998ecf8427e          0  docs\AUDIT\evidence\security\check3-probe-_wp_content_themes_.out
+  7255abff210449dc81a494942263677c        316  docs\AUDIT\evidence\security\check3-probe-_wp_content_uploads_.out
+  7255abff210449dc81a494942263677c        316  docs\AUDIT\evidence\security\check3-probe-_wp_content_uploads_2026_.out
+  7255abff210449dc81a494942263677c        316  docs\AUDIT\evidence\security\check3-probe-_wp_content_uploads_2026_10_.out
+  d41d8cd98f00b204e9800998ecf8427e          0  docs\AUDIT\evidence\security\check3-probe-_wp_content_uploads_index_php.out
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check3-probe-_wp_content_uploads_siraj_.out
+  7255abff210449dc81a494942263677c        316  docs\AUDIT\evidence\security\check3-probe-_wp_content_uploads__htaccess.out
+  7255abff210449dc81a494942263677c        316  docs\AUDIT\evidence\security\check3-probe-_wp_includes_.out
+  e486ff42635c2c822388d6d5d6ee8c3f        380  docs\AUDIT\evidence\security\check4-author-archive-headers.txt
+  d4f346e06c2dd375d7279db69dae5cbb        954  docs\AUDIT\evidence\security\check4-author-feed.xml
+  431afb2a33a065f0b4f488e7fdb64cc3        380  docs\AUDIT\evidence\security\check4-author1-headers.txt
+  a3b13fdb80dc8ac23cf7f3e8c1e832a6      63160  docs\AUDIT\evidence\security\check4-author1.html
+  cfe1165505f78c130dbb322589004c89        668  docs\AUDIT\evidence\security\check4-cors-preflight.txt
+  304166406df33e0c89e84644eacf54ed        703  docs\AUDIT\evidence\security\check4-cors-simple.txt
+  44281a3169664007248fc3ec9897035d       1765  docs\AUDIT\evidence\security\check4-enumeration-summary.txt
+  8956e659ba16b1211422dc67ccd3fc2d       1141  docs\AUDIT\evidence\security\check4-git-ref-probes.txt
+  dea20bc5721fcc96372c668ea8cea5cc        623  docs\AUDIT\evidence\security\check4-git-robots-content.txt
+  7c6ce01bbeb525ba88adce8e30d5b11d        326  docs\AUDIT\evidence\security\check4-headers-wp-config-sample.txt
+  256c3588286374d01512f046ea248cc6        282  docs\AUDIT\evidence\security\check4-install-php-text.txt
+  1fbe950b7396e17389103879cc50fdf9         32  docs\AUDIT\evidence\security\check4-probe-wp-cli-yml.out
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-probe-_backup_zip.out
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-probe-_debug_log.out
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-probe-_design_.out
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-probe-_design_APPROVED_md.out
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-probe-_docs_.out
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-probe-_docs_AUDIT_security_md.out
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-probe-_docs_PLAN_md.out
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-probe-_n8n_.out
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-probe-_n8n__env.out
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-probe-_package_json.out
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-probe-_package_lock_json.out
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-probe-_phpinfo_php.out
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-probe-_README_md.out
+  131c1f88d1a8cf7a327589d46d7e119c        114  docs\AUDIT\evidence\security\check4-probe-_robots_txt.out
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-probe-_scripts_booking_e2e_js.out
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-probe-_scripts_seed_sh.out
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-probe-_scripts_verify_sh.out
+  7255abff210449dc81a494942263677c        316  docs\AUDIT\evidence\security\check4-probe-_server_status.out
+  5fac2398d0e7019bff41f3ea01637e7d       1508  docs\AUDIT\evidence\security\check4-probe-_wp_admin_install_php.out
+  d41d8cd98f00b204e9800998ecf8427e          0  docs\AUDIT\evidence\security\check4-probe-_wp_config_php.out
+  ac2aec92c4e16ee1fdb11f9309fa7567       2596  docs\AUDIT\evidence\security\check4-probe-_wp_config_sample_php.out
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-probe-_wp_content_debug_log.out
+  d41d8cd98f00b204e9800998ecf8427e          0  docs\AUDIT\evidence\security\check4-probe-_wp_content_plugins_siraj_core_booking_php.out
+  d41d8cd98f00b204e9800998ecf8427e          0  docs\AUDIT\evidence\security\check4-probe-_wp_content_themes_siraj_theme_functions_php.out
+  7255abff210449dc81a494942263677c        316  docs\AUDIT\evidence\security\check4-probe-_wp_content_uploads_.out
+  d41d8cd98f00b204e9800998ecf8427e          0  docs\AUDIT\evidence\security\check4-probe-_wp_signup_php.out
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-probe-__DS_Store.out
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-probe-__env.out
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-probe-__env_local.out
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-probe-__env_production.out
+  785dbd1aa0b2e547790bb8dcba2456f1        354  docs\AUDIT\evidence\security\check4-probe-__git_config.out
+  644306994f5ab58d79ceac7414213c1e         41  docs\AUDIT\evidence\security\check4-probe-__git_HEAD.out
+  8794ba17c6a0d155c29d03232fdb30a8         41  docs\AUDIT\evidence\security\check4-probe-__git_refs_heads_master.out
+  7255abff210449dc81a494942263677c        316  docs\AUDIT\evidence\security\check4-probe-__htaccess.out
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-probe-__wp_env_json.out
+  9d34938e686b78f182689260a447bf38       1098  docs\AUDIT\evidence\security\check4-sensitive-path-probe.txt
+  82383355bc7ce51f1d8f77d10acc2aed        286  docs\AUDIT\evidence\security\check4-sitemap-index.xml
+  10284081f3164e436b62501b07fd28ea        656  docs\AUDIT\evidence\security\check4-sitemap-wp-sitemap-posts-page-1.xml
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-sitemap-wp-sitemap-posts-post-1.xml
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-sitemap-wp-sitemap-taxonomies-category-1.xml
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\check4-sitemap-wp-sitemap-users-1.xml
+  055708e915fad8c51bd865716e83dbb3        189  docs\AUDIT\evidence\security\check4-users-me.json
+  d751713988987e9331980363e24189ce          2  docs\AUDIT\evidence\security\check4-users.json
+  eb6d9880851f90da3668644749afe6a4       3236  docs\AUDIT\evidence\security\check4-version-disclosure.txt
+  d11dc201aa59833520ec0c05fa79d05d        234  docs\AUDIT\evidence\security\check4-wp-cli-yml-headers.txt
+  ac2aec92c4e16ee1fdb11f9309fa7567       2596  docs\AUDIT\evidence\security\check4-wp-config-sample.php.out
+  f7ea71a13bb46e67c77751e15609ce61     373015  docs\AUDIT\evidence\security\check4-wp-json-index.json
+  fa40f5021593a4f7de537706bbcd0800       1167  docs\AUDIT\evidence\security\check4-wp-json-summary.txt
+  2c8e0555d79d68d27901f3ad094edc94       4233  docs\AUDIT\evidence\security\check4-xmlrpc-listmethods.xml
+  a7a15ffb3ce69a9d44218933e8c05e66       2829  docs\AUDIT\evidence\security\check5-6-db-and-cpt.txt
+  56d811413ca2cd6996eea1a11c5f3ff3       4252  docs\AUDIT\evidence\security\check5-6b-after-and-source-grep.txt
+  a563d07c71a2f3f7ccbc65da211cef21       1382  docs\AUDIT\evidence\security\check5-malformed-post-findings.txt
+  89a0c5e6959924203f5a03497bf3028e        433  docs\AUDIT\evidence\security\check5-malformed-post-headers.txt
+  1694449653b85654524811e6c1001e51      65763  docs\AUDIT\evidence\security\check5-malformed-post-response.html
+  2e8058469060a0981f061928409368fa        758  docs\AUDIT\evidence\security\check6-endpoint-status.txt
+  feaa96ae0d9c5aabce94c7fc45c92d79       5779  docs\AUDIT\evidence\security\check6-pii-context.txt
+  d064b57a2634305601aed15a205b9b25        169  docs\AUDIT\evidence\security\check6-resp-types-bogus.txt
+  2836cc757a615b0d68ff528808067ed3        927  docs\AUDIT\evidence\security\check6-resp-_feed_.txt
+  b54334a787bd250c4fe080e5db0217c6       5054  docs\AUDIT\evidence\security\check6-resp-_wp_json_oembed_1_0_embed_url_http_3A_2F_2Flocalhost_3A8889_2Fbook_2F.txt
+  a555dc8de2615c52023fbf0ebe9f1795        296  docs\AUDIT\evidence\security\check6-resp-_wp_json_wp_v2_block_types.txt
+  d751713988987e9331980363e24189ce          2  docs\AUDIT\evidence\security\check6-resp-_wp_json_wp_v2_media_per_page_100.txt
+  bc44309ceaa7a613f21457c473aca325      25771  docs\AUDIT\evidence\security\check6-resp-_wp_json_wp_v2_pages_per_page_100.txt
+  667b0e9a5181853069d09aa7d91cac95        318  docs\AUDIT\evidence\security\check6-resp-_wp_json_wp_v2_plugins.txt
+  d751713988987e9331980363e24189ce          2  docs\AUDIT\evidence\security\check6-resp-_wp_json_wp_v2_posts_per_page_100.txt
+  d751713988987e9331980363e24189ce          2  docs\AUDIT\evidence\security\check6-resp-_wp_json_wp_v2_search_search_test.txt
+  fa40eac4adb8d7312d71fd0a4476afa4        204  docs\AUDIT\evidence\security\check6-resp-_wp_json_wp_v2_settings.txt
+  0804c19ac798cbc0a24162a6c24337a6        331  docs\AUDIT\evidence\security\check6-resp-_wp_json_wp_v2_siraj_booking.txt
+  3dd353a22e6dbd3f8b26a21cb7aa226d        206  docs\AUDIT\evidence\security\check6-resp-_wp_json_wp_v2_statuses.txt
+  9f923e9ca1324e8ec2a3d8a68f206b4a        255  docs\AUDIT\evidence\security\check6-resp-_wp_json_wp_v2_themes.txt
+  9bf55ffa154dabd2c5805cdaf18dfb2e       6631  docs\AUDIT\evidence\security\check6-resp-_wp_json_wp_v2_types.txt
+  fb0ba6ce6c84e0f1a539603540af33e0        180  docs\AUDIT\evidence\security\check6-resp-_wp_json_wp_v2_types_siraj_booking.txt
+  cc607a6d4c2eec13a82cef49553aebc0        302  docs\AUDIT\evidence\security\check6-resp-_wp_json_wp_v2_users_1.txt
+  89cc45d86f32ad43ba73bf0c3733df83        266  docs\AUDIT\evidence\security\check6-resp-_wp_json_wp_v2_users_context_edit.txt
+  87198bfb3dbf1d9b55b46a2c39ba0d1e      73948  docs\AUDIT\evidence\security\check6-resp-__post_type_siraj_booking.txt
+  c41c5f32028996a9ccf706b73614c481      63148  docs\AUDIT\evidence\security\check6-resp-__s_siraj_booking.txt
+  db560eb309258025346717983d986169      63124  docs\AUDIT\evidence\security\check6-resp-__s_test.txt
+  a8ae5a826a842fcdccaea86cdff08d56      63172  docs\AUDIT\evidence\security\check6-resp-__s__D8_A7_D8_AD_D8_AA_D8_A8_D8_A7_D8_B1.txt
+  0abbe9a13f4c3170e9d8574cc62e8346       7497  docs\AUDIT\evidence\security\check7-inventory.txt
+  24be550d5600b141045bff16486b4de4       7913  docs\AUDIT\evidence\security\check7-npm-audit-all.json
+  7b22a8d9ebf39a01b65f05c49ba77e2a        384  docs\AUDIT\evidence\security\check7-npm-audit-prod.json
+  ec4f9c4702b0b0d0cd0ace9bdf7dc618       1440  docs\AUDIT\evidence\security\check7-npm-audit-summary.txt
+  1b8b4210c8b403e179d7c4438bbe9b4c       5832  docs\AUDIT\evidence\security\check8-9-core-uploads-cookies.txt
+  2bad0af51c30b62ece727412d9a1fdd4        814  docs\AUDIT\evidence\security\check8-9-file-digests.txt
+  a5eb3db5f970e1c0555a2db54387e793       3363  docs\AUDIT\evidence\security\check8-cookie-samesite.txt
+  749d444822212ec3c50a4c3e554d9d92        966  docs\AUDIT\evidence\security\check8-cookie-samesite2.txt
+  5e3fb61552c0738e6d102294c08bf4e7        214  docs\AUDIT\evidence\security\check8-cookiejar.txt
+  31e864d9b1570860390d79b5b2a19a6f        338  docs\AUDIT\evidence\security\check8-endpoint-status.txt
+  879001033e38282b0bb235579782eee4        519  docs\AUDIT\evidence\security\check8-login-failed-headers.txt
+  928febc3072d8a4327fd218d2d6b1303      12783  docs\AUDIT\evidence\security\check8-login-failed.html
+  40e92a1e0ab701ca913ac9bcd8b05702        566  docs\AUDIT\evidence\security\check8-login-findings.txt
+  48fc21b0ff39707453e5af34c5986f92       3374  docs\AUDIT\evidence\security\check9-wp-config-redacted.txt
+  33353362c27c8bf8fe71d7d74298746e        599  docs\AUDIT\evidence\security\checkFINAL-report-crosscheck.txt
+  dc9f432bdb46427fbf5311b42ce322a3      63024  docs\AUDIT\evidence\security\page-404.html
+  8f0ca9b292ec21eac34589ae30f2e8a6      65055  docs\AUDIT\evidence\security\page-book.html
+  3b1f0efd14a86db942f5da0fd0baabad      63781  docs\AUDIT\evidence\security\page-contact.html
+  87198bfb3dbf1d9b55b46a2c39ba0d1e      73948  docs\AUDIT\evidence\security\page-home.html
+  a8ae5a826a842fcdccaea86cdff08d56      63172  docs\AUDIT\evidence\security\page-search-arabic.html
+  4d91f2a8236d0a669dcf12170a03f2da      66091  docs\AUDIT\evidence\security\page-services.html
+  177780ef77745c6f891ec1d695e9adab      65235  docs\AUDIT\evidence\security\page-team.html
+  8606720af12d798232367c0df9eb7e80       4127  docs\AUDIT\evidence\security\tools\build-summaries.js
+  fa734525f175bfd6bb4dddf288fd8817       1656  docs\AUDIT\evidence\security\tools\check2-header-code-grep.sh
+  feb3f3910331b9ae8f11bd80d58a07a6       3004  docs\AUDIT\evidence\security\tools\check3-apache.sh
+  6dd189ba9e224523f1660f284f74d19f       5168  docs\AUDIT\evidence\security\tools\check5-6-db.sh
+  8b27d043f9e82048a71f23054d641e9d       5422  docs\AUDIT\evidence\security\tools\check5-6b.sh
+  05b401877df3147c174665e096b773f4       2531  docs\AUDIT\evidence\security\tools\check5-inspect-response.js
+  d0d450a65faf1c59e9fe880cec8cf3c1       6865  docs\AUDIT\evidence\security\tools\check6-pii-context.js
+  f8ba10a27cd979b08853a0c7bcbe444e       3914  docs\AUDIT\evidence\security\tools\check7-inventory.sh
+  4c13313840e13b6c714982c57c065b7c       3289  docs\AUDIT\evidence\security\tools\check8-9-core-and-uploads.sh
+  80c56b141e1f5985406a03fcfa1fb5d8       2311  docs\AUDIT\evidence\security\tools\check8-comments-and-cron.sh
+  178943eda4a2e1ff0d190ce3654eda7b       1153  docs\AUDIT\evidence\security\tools\check8-cookie-samesite.sh
+  2a60fa7ce3b20d660b4845b4c05321fa       1185  docs\AUDIT\evidence\security\tools\check8-cookie-samesite2.sh
+  1d335957396678e9bee8c3eb87f08bc3       1548  docs\AUDIT\evidence\security\tools\check8-login-inspect.js
+  268b0762514c521c6c62e6eee72268a9       2793  docs\AUDIT\evidence\security\tools\check9-secrets-redacted.sh
+  77c571eae6afccceec3d501bc3fbd217       2559  docs\AUDIT\evidence\security\tools\count-findings.js
+  76c05b9b39e843c8f9053d64ca114a54       6191  docs\AUDIT\evidence\security\tools\final-verify.js
+  60c26aa45344b2be78dec4296074bd05       1479  docs\AUDIT\evidence\security\tools\grab-nonce.js
+  4a2026b432abf8b352e6d128eb32a09d       3703  docs\AUDIT\evidence\security\tools\header-matrix.js
+  34dd0652d891e79c34bc0366aef513d7       3133  docs\AUDIT\evidence\security\tools\html-scan.js
+  a8ec55e478a3bddc8e4b49db05eef7a0       1102  docs\AUDIT\evidence\security\tools\redact-evidence.js
+  c1c4ab97f89258bb9ac2221e1aa08683       5837  docs\AUDIT\evidence\security\tools\secret-scan.js
+
+total files created: 176
+
+## 5. files under the project that predate this audit and were NOT modified
+  (spot-checked mtimes only — this agent wrote nothing outside docs/AUDIT/)
+
+  package.json :: 529 bytes :: mtime=2026-10-07T00:50:18.256Z :: md5=e82a4f5661ccaf26bde2e4018b64e7b2
+  .wp-env.json :: 226 bytes :: mtime=2026-10-07T01:04:20.333Z :: md5=1ad91f2baede9c8eb85aaf7084c0a8ef
+  .gitignore :: 201 bytes :: mtime=2026-10-07T00:50:19.866Z :: md5=7842c98d00c759d206d98cb1b4a40e65
+  README.md :: 3305 bytes :: mtime=2026-10-06T07:12:20.190Z :: md5=d1ea4b51037692ceeb494b098e604a84
+  wp-content/plugins/siraj-core/booking.php :: 35125 bytes :: mtime=2026-10-07T12:19:59.140Z :: md5=0e477c1c4925a675d8d4ef529301a18c
+  wp-content/plugins/siraj-core/siraj-core.php :: 429 bytes :: mtime=2026-10-07T12:18:02.184Z :: md5=0eb8a67a0d81a10ea6fb13f5512440d2
+  wp-content/plugins/siraj-core/seed-wp.php :: 9315 bytes :: mtime=2026-10-07T12:39:40.978Z :: md5=c570585cf3a10ba7d727f41bee71df34
+  wp-content/themes/siraj-theme/functions.php :: 3208 bytes :: mtime=2026-10-08T02:25:01.909Z :: md5=9ee72de1b6344faf07844700fbc6a05c
+  wp-content/themes/siraj-theme/theme.json :: 3829 bytes :: mtime=2026-10-07T01:03:24.291Z :: md5=79d26957afcdb167394027e7699a3f14
+  wp-content/themes/siraj-theme/templates/front-page.html :: 13615 bytes :: mtime=2026-10-08T02:28:38.596Z :: md5=06bd844005e3ca87bd9269f25d910623
+  scripts/verify.sh :: 9452 bytes :: mtime=2026-10-08T02:28:52.591Z :: md5=3947348bc8f0e4d18ca4a01ae7a48b70
+  scripts/seed.sh :: 1814 bytes :: mtime=2026-10-07T01:02:23.905Z :: md5=1978fc2fe767c600ac6a61976c1913cd
+  scripts/booking-e2e.js :: 7590 bytes :: mtime=2026-10-07T13:00:02.032Z :: md5=2e39d2a2e650a1f2adcf38ff232799f4
+  docs/PLAN.md :: 8749 bytes :: mtime=2026-10-08T02:37:46.697Z :: md5=6699e500a12665357c3c3629053b2f28
+  docs/DECISIONS.md :: 8007 bytes :: mtime=2026-10-07T13:14:35.516Z :: md5=e64cb7ecc6303c5989f3a109f1bbbac5
+  docs/CONVENTIONS.md :: 6180 bytes :: mtime=2026-10-08T02:37:29.767Z :: md5=3b385b51d9972d3e319aaed4fa4663c5
+  design/APPROVED.md :: 6710 bytes :: mtime=2026-10-06T01:19:58.620Z :: md5=65c27cb57d970b52d7fe2d5197080e1f

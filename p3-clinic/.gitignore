@@ -1,0 +1,9 @@
+node_modules/
+*.log
+
+# Secrets never ship in a handoff zip (P1 audit finding: zips bypass .gitignore —
+# keep local-only files out of the project folder entirely).
+.env
+.env.local
+*.local.*
+n8n/.env

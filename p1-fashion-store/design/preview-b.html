@@ -1,0 +1,211 @@
+<!doctype html>
+<!-- Direction B — "Bold editorial": dark premium, oversized type hero (H3), collections as a stacked showcase (W2/S4).
+     Palette B (dark + amber) + IBM Plex Sans Arabic/Space Grotesk. Feel: premium, confident. -->
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>نيلاد — أزياء وإكسسوارات | Preview B</title>
+<meta name="description" content="نيلاد — متجر أزياء وإكسسوارات مصري. كاش عند الاستلام وشحن لكل المحافظات. متجر تجريبي Demo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<style>
+:root{
+  --bg:#0E0F13;--surface:#16181E;--text:#F3F1EC;--muted:#A6A9B2;
+  --primary:#F2B84B;--on-primary:#14110A;--accent:#6EE7B7;--border:#262A33;
+  --primary-soft:#2A2416;
+  --font-body:"IBM Plex Sans Arabic","Space Grotesk",system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;
+  --pad-x:20px;--section-y:64px;
+}
+@media(min-width:900px){:root{--section-y:120px}}
+.announce{background:var(--primary);color:var(--on-primary);font-size:var(--fs-sm);font-weight:700;text-align:center;padding:var(--s2) var(--s4)}
+.site-header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 85%,transparent);backdrop-filter:blur(16px);border-bottom:1px solid var(--border)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:var(--s4);min-height:72px}
+.brand{font-weight:700;font-size:var(--fs-xl);text-decoration:none}
+.brand small{font-family:"Space Grotesk",sans-serif;font-size:.65rem;letter-spacing:.2em;color:var(--primary);margin-inline-start:var(--s2)}
+.nav-links{display:none;gap:var(--s6);list-style:none;margin:0;padding:0}
+.nav-links a{text-decoration:none;color:var(--muted);font-weight:600}
+.nav-links a:hover{color:var(--text)}
+@media(min-width:900px){.nav-links{display:flex}}
+.cart{display:inline-flex;align-items:center;gap:var(--s2);font-weight:700;text-decoration:none;border:1.5px solid var(--border);background:transparent;color:var(--text);border-radius:var(--pill);min-height:44px;padding:0 var(--s4)}
+.cart:hover{border-color:var(--primary);color:var(--primary)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--s2);min-height:48px;padding:0 var(--s6);border-radius:var(--pill);border:1.5px solid transparent;font:inherit;font-weight:700;text-decoration:none;cursor:pointer;transition:transform .15s,background-color .15s,border-color .15s}
+.btn-primary{background:var(--primary);color:var(--on-primary)}
+.btn-primary:hover{transform:translateY(-1px);background:#E0A633}
+.btn-ghost{border-color:var(--border);color:var(--text);background:transparent}
+.btn-ghost:hover{border-color:var(--primary);color:var(--primary)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+/* hero — H3 editorial: oversized type, small media card overlapping */
+.hero{padding-block:var(--s12) var(--s16);position:relative;overflow:hidden}
+.hero h1{font-size:clamp(3rem,8vw,6.5rem);max-width:none;margin-bottom:var(--s6)}
+.hero h1 em{font-style:normal;color:var(--primary)}
+.hero-grid{display:grid;gap:var(--s8)}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.6fr .9fr;align-items:end}}
+.hero-media{aspect-ratio:4/5;border-radius:var(--radius);background:linear-gradient(150deg,#2A2416,#16181E 60%,#1E2530);border:1px solid var(--border);display:grid;place-items:center;color:var(--muted);font-weight:600;position:relative}
+.hero-media .tag{position:absolute;top:var(--s4);inset-inline-start:var(--s4);background:var(--primary);color:var(--on-primary);border-radius:var(--pill);font-size:.75rem;font-weight:700;padding:.25rem var(--s3)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:var(--s3);align-items:center}
+.hero-note{color:var(--muted);font-size:var(--fs-sm);font-weight:600}
+
+/* collections — S4 list: sticky title + stacked dividers */
+.split-list{display:grid;gap:var(--s8)}
+@media(min-width:900px){.split-list{grid-template-columns:.8fr 1.2fr;gap:var(--s16)}}
+.sticky-title{position:static}
+@media(min-width:900px){.sticky-title{position:sticky;top:120px;align-self:start}}
+.coll{list-style:none;margin:0;padding:0}
+.coll li{border-top:1px solid var(--border);padding-block:var(--s6);display:flex;justify-content:space-between;align-items:center;gap:var(--s4)}
+.coll li:last-child{border-bottom:1px solid var(--border)}
+.coll h3{margin:0 0 var(--s1)}
+.coll p{color:var(--muted);margin:0;font-size:var(--fs-sm)}
+.coll .go{font-weight:700;color:var(--primary);text-decoration:none;white-space:nowrap}
+.coll .go:hover{text-decoration:underline}
+.coll .num{font-family:"Space Grotesk",sans-serif;color:var(--muted);font-size:var(--fs-sm);margin-inline-end:var(--s4)}
+
+/* showcase — W2: one product row per full-width block */
+.showcase{display:grid;gap:var(--s6)}
+@media(min-width:900px){.showcase{grid-template-columns:repeat(3,1fr)}}
+.look{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.look .thumb{aspect-ratio:4/5;background:linear-gradient(150deg,#20242D,#15171C);display:grid;place-items:center;color:var(--muted);font-size:var(--fs-sm);font-weight:600;border-bottom:1px solid var(--border)}
+.look:nth-child(2) .thumb{background:linear-gradient(150deg,#2A2416,#17150F)}
+.look:nth-child(3) .thumb{background:linear-gradient(150deg,#1B2A26,#121614)}
+.look .body{padding:var(--s6)}
+.look .cat{font-family:"Space Grotesk",sans-serif;font-size:.7rem;letter-spacing:.16em;color:var(--primary);text-transform:uppercase;margin-bottom:var(--s2)}
+.look h3{margin-bottom:var(--s2)}
+.look .price{font-weight:700;font-size:var(--fs-lg);margin:0 0 var(--s4)}
+.look .price small{color:var(--muted);font-weight:600;font-size:var(--fs-sm)}
+.look .demo{display:inline-block;font-size:.7rem;font-weight:700;color:var(--muted);border:1px dashed var(--border);border-radius:var(--pill);padding:.15rem var(--s3);margin-bottom:var(--s3)}
+
+/* value — numbers row */
+.value{border-block:1px solid var(--border);background:var(--surface)}
+.value ul{display:grid;gap:var(--s6);grid-template-columns:repeat(2,1fr);list-style:none;margin:0;padding:var(--s8) 0}
+@media(min-width:900px){.value ul{grid-template-columns:repeat(4,1fr)}}
+.value .n{font-family:"Space Grotesk",sans-serif;font-size:2rem;font-weight:700;color:var(--primary);line-height:1;display:block;margin-bottom:var(--s2)}
+.value li{font-weight:700}
+.value li span.h{display:block;font-weight:400;font-size:var(--fs-sm);color:var(--muted);margin-top:var(--s1)}
+
+/* editorial band */
+.band{background:linear-gradient(120deg,#1A1C22,#12141A);border:1px solid var(--border);border-radius:var(--radius);padding:var(--s12) var(--s8);display:grid;gap:var(--s8);align-items:center}
+@media(min-width:900px){.band{grid-template-columns:1fr 1fr;padding:var(--s16) var(--s12)}}
+.band .media{aspect-ratio:4/3;border-radius:var(--radius-sm);background:linear-gradient(135deg,#2A2416,#172026);border:1px solid var(--border);display:grid;place-items:center;color:var(--muted);font-weight:600}
+.band blockquote{margin:0;font-size:var(--fs-h2);font-weight:700;line-height:1.35}
+.band cite{display:block;margin-top:var(--s4);font-style:normal;color:var(--muted);font-size:var(--fs-sm)}
+
+/* newsletter */
+.news{display:grid;gap:var(--s6);border-top:1px solid var(--border);padding-top:var(--s16)}
+.news h2{max-width:20ch}
+.news form{display:flex;gap:var(--s3);flex-wrap:wrap;max-width:520px}
+.news input{flex:1 1 220px;min-height:48px;border-radius:var(--pill);border:1.5px solid var(--border);background:var(--surface);color:var(--text);padding:0 var(--s4);font:inherit}
+.news input:focus{outline:none;border-color:var(--primary)}
+footer{border-top:1px solid var(--border);padding-block:var(--s8);color:var(--muted);font-size:var(--fs-sm);margin-top:var(--s16)}
+.footer-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--s4)}
+.footer-links{display:flex;gap:var(--s4);list-style:none;margin:0;padding:0}
+.footer-links a{text-decoration:none}
+.footer-links a:hover{color:var(--primary)}
+</style>
+</head>
+<body>
+
+<div class="announce">شحن مجاني فوق 1,500 ج.م · كاش عند الاستلام · متجر تجريبي (Demo)</div>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#top">نيلاد<small>NILAD</small></a>
+    <ul class="nav-links">
+      <li><a href="#coll">التشكيلات</a></li>
+      <li><a href="#looks">المختارات</a></li>
+      <li><a href="#story">القصة</a></li>
+      <li><a href="#news">النشرة</a></li>
+    </ul>
+    <a class="cart" href="#cart">🛒 السلة (0)</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">خريف 2026</p>
+        <h1>البسّ<em> ببساطة</em>، وخلّي التفاصيل تتكلم.</h1>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#looks">شوف المختارات</a>
+          <a class="btn btn-ghost" href="#coll">كل التشكيلات</a>
+          <span class="hero-note">كاش عند الاستلام · شحن لكل المحافظات</span>
+        </div>
+      </div>
+      <div class="hero-media" role="img" aria-label="صورة إطلالة الموسم (مكان مؤقت)"><span class="tag">الموسم الجديد</span>صورة الإطلالة</div>
+    </div>
+  </section>
+
+  <section id="coll">
+    <div class="container split-list">
+      <div class="sticky-title">
+        <p class="eyebrow">التشكيلات</p>
+        <h2>أربع مجموعات، حكاية واحدة</h2>
+        <p class="lead">كل مجموعة مبنية على مناسبة واحدة: الشغل، النهار، المناسبة، والسفر.</p>
+      </div>
+      <ul class="coll">
+        <li><div><span class="num">01</span><h3>أساسيات الشغل</h3><p>قمصان، بلايزر، وقطع بتكمل معاك كل حاجة.</p></div><a class="go" href="#looks">اكتشف ←</a></li>
+        <li><div><span class="num">02</span><h3>النهار الخفيف</h3><p>كتان وقطن، مريح للجو المصري.</p></div><a class="go" href="#looks">اكتشف ←</a></li>
+        <li><div><span class="num">03</span><h3>الإكسسوار الدقيق</h3><p>ساعات، نظارات، حقائب بلمسة نهائية.</p></div><a class="go" href="#looks">اكتشف ←</a></li>
+        <li><div><span class="num">04</span><h3>سفر ورحلة</h3><p>قطع سهلة الغسيل والطي.</p></div><a class="go" href="#looks">اكتشف ←</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="looks">
+    <div class="container">
+      <div class="section-head"><p class="eyebrow">المختارات</p><h2>قطع مختارة هذا الأسبوع</h2></div>
+      <div class="showcase">
+        <article class="look"><div class="thumb">صورة المنتج</div><div class="body"><span class="demo">Demo · متجر تجريبي</span><p class="cat">Outerwear</p><h3>معطف صوف مطرّز</h3><p class="price">2,950 <small>ج.م</small></p><a class="btn btn-primary" href="#">أضف للسلة</a></div></article>
+        <article class="look"><div class="thumb">صورة المنتج</div><div class="body"><span class="demo">Demo · متجر تجريبي</span><p class="cat">Bags</p><h3>حقيبة يد جلد طبيعي</h3><p class="price">1,890 <small>ج.م</small></p><a class="btn btn-primary" href="#">أضف للسلة</a></div></article>
+        <article class="look"><div class="thumb">صورة المنتج</div><div class="body"><span class="demo">Demo · متجر تجريبي</span><p class="cat">Watches</p><h3>ساعة كلاسيك معدنية</h3><p class="price">2,450 <small>ج.م</small></p><a class="btn btn-primary" href="#">أضف للسلة</a></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="value">
+    <div class="container">
+      <ul>
+        <li><span class="n">COD</span>كاش عند الاستلام<span class="h">ادفع لما الشحنة توصلك</span></li>
+        <li><span class="n">2–5</span>أيام للشحن<span class="h">لكل محافظات مصر</span></li>
+        <li><span class="n">14</span>يوم للإرجاع<span class="h">الشروط في صفحة الإرجاع</span></li>
+        <li><span class="n">SSL</span>دفع آمن<span class="h">Paymob — وضع تجريبي في الديمو</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="story">
+    <div class="container">
+      <div class="band">
+        <div>
+          <p class="eyebrow">القصة</p>
+          <blockquote>«صُمّم في القاهرة، وبيلبس كل يوم — من غير ضجة.»</blockquote>
+          <cite>— نيلاد، متجر تجريبي (Demo)</cite>
+        </div>
+        <div class="media">صورة الورشة / التفاصيل</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="news">
+    <div class="container news">
+      <div>
+        <p class="eyebrow">النشرة</p>
+        <h2>جديد نيلاد، قبل أي حد تاني</h2>
+        <p class="lead">رسالة واحدة في الشهر — قطع جديدة وقصص وراءها.</p>
+      </div>
+      <form action="#" method="post"><label style="position:absolute;inset-inline-start:-9999px" for="em2">بريدك</label><input id="em2" type="email" placeholder="بريدك الإلكتروني" required><button class="btn btn-primary" type="submit">اشترك</button></form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <span>© 2026 نيلاد — متجر تجريبي (Demo) لا يبيع فعليًا</span>
+    <ul class="footer-links"><li><a href="#">الشحن والإرجاع</a></li><li><a href="#">الخصوصية</a></li><li><a href="#">تواصل</a></li></ul>
+  </div>
+</footer>
+</body>
+</html>

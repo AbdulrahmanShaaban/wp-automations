@@ -1,0 +1,600 @@
+{
+  "generatedAt": "2026-10-08T03:17:41.093Z",
+  "url": "http://localhost:8889/",
+  "steps": [
+    {
+      "scrollY": 0,
+      "vh": 844,
+      "jsMotion": true,
+      "total": 24,
+      "inClass": 0,
+      "opacityZero": 24,
+      "inViewportHidden": 0,
+      "sample": [
+        {
+          "cls": "section-head reveal",
+          "tag": "DIV",
+          "opacity": "0",
+          "top": 1345,
+          "inView": false
+        },
+        {
+          "cls": "svc reveal",
+          "tag": "LI",
+          "opacity": "0",
+          "top": 1578,
+          "inView": false
+        },
+        {
+          "cls": "svc reveal",
+          "tag": "LI",
+          "opacity": "0",
+          "top": 1798,
+          "inView": false
+        },
+        {
+          "cls": "svc reveal",
+          "tag": "LI",
+          "opacity": "0",
+          "top": 2017,
+          "inView": false
+        },
+        {
+          "cls": "svc reveal",
+          "tag": "LI",
+          "opacity": "0",
+          "top": 2261,
+          "inView": false
+        },
+        {
+          "cls": "svc reveal",
+          "tag": "LI",
+          "opacity": "0",
+          "top": 2480,
+          "inView": false
+        }
+      ],
+      "label": "01-after-load-2.5s"
+    },
+    {
+      "scrollY": 600,
+      "vh": 844,
+      "jsMotion": true,
+      "total": 24,
+      "inClass": 1,
+      "opacityZero": 23,
+      "inViewportHidden": 0,
+      "sample": [
+        {
+          "cls": "section-head reveal in",
+          "tag": "DIV",
+          "opacity": "1",
+          "top": 729,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal",
+          "tag": "LI",
+          "opacity": "0",
+          "top": 978,
+          "inView": false
+        },
+        {
+          "cls": "svc reveal",
+          "tag": "LI",
+          "opacity": "0",
+          "top": 1198,
+          "inView": false
+        },
+        {
+          "cls": "svc reveal",
+          "tag": "LI",
+          "opacity": "0",
+          "top": 1417,
+          "inView": false
+        },
+        {
+          "cls": "svc reveal",
+          "tag": "LI",
+          "opacity": "0",
+          "top": 1661,
+          "inView": false
+        },
+        {
+          "cls": "svc reveal",
+          "tag": "LI",
+          "opacity": "0",
+          "top": 1880,
+          "inView": false
+        }
+      ],
+      "label": "02-scroll-400"
+    },
+    {
+      "scrollY": 1200,
+      "vh": 844,
+      "jsMotion": true,
+      "total": 24,
+      "inClass": 3,
+      "opacityZero": 21,
+      "inViewportHidden": 1,
+      "sample": [
+        {
+          "cls": "section-head reveal in",
+          "tag": "DIV",
+          "opacity": "1",
+          "top": 129,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": 362,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": 582,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal",
+          "tag": "LI",
+          "opacity": "0",
+          "top": 817,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal",
+          "tag": "LI",
+          "opacity": "0",
+          "top": 1061,
+          "inView": false
+        },
+        {
+          "cls": "svc reveal",
+          "tag": "LI",
+          "opacity": "0",
+          "top": 1280,
+          "inView": false
+        }
+      ],
+      "label": "02-scroll-900"
+    },
+    {
+      "scrollY": 1800,
+      "vh": 844,
+      "jsMotion": true,
+      "total": 24,
+      "inClass": 6,
+      "opacityZero": 18,
+      "inViewportHidden": 0,
+      "sample": [
+        {
+          "cls": "section-head reveal in",
+          "tag": "DIV",
+          "opacity": "1",
+          "top": -471,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -238,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -18,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": 201,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": 445,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": 664,
+          "inView": true
+        }
+      ],
+      "label": "02-scroll-1600"
+    },
+    {
+      "scrollY": 2400,
+      "vh": 844,
+      "jsMotion": true,
+      "total": 24,
+      "inClass": 8,
+      "opacityZero": 16,
+      "inViewportHidden": 0,
+      "sample": [
+        {
+          "cls": "section-head reveal in",
+          "tag": "DIV",
+          "opacity": "1",
+          "top": -1071,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -838,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -618,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -399,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -155,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": 64,
+          "inView": true
+        }
+      ],
+      "label": "02-scroll-2400"
+    },
+    {
+      "scrollY": 3000,
+      "vh": 844,
+      "jsMotion": true,
+      "total": 24,
+      "inClass": 10,
+      "opacityZero": 14,
+      "inViewportHidden": 0,
+      "sample": [
+        {
+          "cls": "section-head reveal in",
+          "tag": "DIV",
+          "opacity": "1",
+          "top": -1671,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -1438,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -1218,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -999,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -755,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -536,
+          "inView": true
+        }
+      ],
+      "label": "02-scroll-3200"
+    },
+    {
+      "scrollY": 3600,
+      "vh": 844,
+      "jsMotion": true,
+      "total": 24,
+      "inClass": 12,
+      "opacityZero": 12,
+      "inViewportHidden": 0,
+      "sample": [
+        {
+          "cls": "section-head reveal in",
+          "tag": "DIV",
+          "opacity": "1",
+          "top": -2271,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -2038,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -1818,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -1599,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -1355,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -1136,
+          "inView": true
+        }
+      ],
+      "label": "02-scroll-4200"
+    },
+    {
+      "scrollY": 4200,
+      "vh": 844,
+      "jsMotion": true,
+      "total": 24,
+      "inClass": 14,
+      "opacityZero": 10,
+      "inViewportHidden": 0,
+      "sample": [
+        {
+          "cls": "section-head reveal in",
+          "tag": "DIV",
+          "opacity": "1",
+          "top": -2871,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -2638,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -2418,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -2199,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -1955,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -1736,
+          "inView": true
+        }
+      ],
+      "label": "02-scroll-5200"
+    },
+    {
+      "scrollY": 4800,
+      "vh": 844,
+      "jsMotion": true,
+      "total": 24,
+      "inClass": 16,
+      "opacityZero": 8,
+      "inViewportHidden": 0,
+      "sample": [
+        {
+          "cls": "section-head reveal in",
+          "tag": "DIV",
+          "opacity": "1",
+          "top": -3471,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -3238,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -3018,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -2799,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -2555,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -2336,
+          "inView": true
+        }
+      ],
+      "label": "02-scroll-6400"
+    },
+    {
+      "scrollY": 5400,
+      "vh": 844,
+      "jsMotion": true,
+      "total": 24,
+      "inClass": 19,
+      "opacityZero": 5,
+      "inViewportHidden": 0,
+      "sample": [
+        {
+          "cls": "section-head reveal in",
+          "tag": "DIV",
+          "opacity": "1",
+          "top": -4071,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -3838,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -3618,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -3399,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -3155,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -2936,
+          "inView": true
+        }
+      ],
+      "label": "02-scroll-7600"
+    },
+    {
+      "scrollY": 7252,
+      "vh": 844,
+      "jsMotion": true,
+      "total": 24,
+      "inClass": 22,
+      "opacityZero": 2,
+      "inViewportHidden": 0,
+      "sample": [
+        {
+          "cls": "section-head reveal in",
+          "tag": "DIV",
+          "opacity": "1",
+          "top": -5923,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -5690,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -5470,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -5251,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -5007,
+          "inView": true
+        },
+        {
+          "cls": "svc reveal in",
+          "tag": "LI",
+          "opacity": "1",
+          "top": -4788,
+          "inView": true
+        }
+      ],
+      "label": "03-end"
+    }
+  ]
+}

@@ -1,0 +1,396 @@
+{
+  "name": "Nilad F2: order status → customer email",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "woo-order-updated",
+        "responseMode": "onReceived",
+        "options": {
+          "rawBody": true
+        }
+      },
+      "id": "f2b00001-0000-4000-8000-000000000001",
+      "name": "Woo order.updated",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        -160,
+        0
+      ],
+      "webhookId": "f2b00001-0000-4000-8000-000000000020"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Nilad F2 — verify WooCommerce webhook HMAC + validate + sendable + duplicate check.\n// Requires: NODE_FUNCTION_ALLOW_BUILTIN=crypto, env WOO_WEBHOOK_SECRET,\n// Webhook node option Raw Body ON (raw bytes at binary.data.data, base64).\n// Outputs: { ok, reason, sendable, sendableReason, duplicate, orderId, total,\n//            city, phone, phoneValid, status, email, createdAt, paymentMethod,\n//            customerName, itemsText }\n// Idempotency key: f2:<orderId>:<status>\nconst crypto = require('crypto');\nconst item = $input.first();\nconst headers = (item.json && item.json.headers) || {};\nconst secret = $env.WOO_WEBHOOK_SECRET;\n\nlet ok = false;\nlet reason = '';\nconst rawB64 = item.binary && item.binary.data && item.binary.data.data;\nconst sig = headers['x-wc-webhook-signature'] || headers['X-WC-Webhook-Signature'] || '';\n\nif (!secret) {\n  reason = 'server-misconfig: WOO_WEBHOOK_SECRET missing';\n} else if (!rawB64) {\n  reason = 'no-raw-body: enable Raw Body on the Webhook node';\n} else if (!sig) {\n  reason = 'missing-signature-header';\n} else {\n  const expected = crypto.createHmac('sha256', secret).update(Buffer.from(rawB64, 'base64')).digest('base64');\n  const a = Buffer.from(String(sig));\n  const b = Buffer.from(expected);\n  ok = a.length === b.length && crypto.timingSafeEqual(a, b);\n  reason = ok ? 'valid' : 'bad-signature';\n}\n\nconst body = (item.json && item.json.body) || {};\nconst orderId = typeof body.id === 'number' ? body.id : null;\nif (ok && orderId === null) {\n  ok = false;\n  reason = 'missing-order-id';\n}\n\nfunction normalizePhone(raw) {\n  const trimmed = String(raw || '').trim();\n  if (!trimmed) return { phone: '', phoneValid: false };\n  const cleaned = trimmed.replace(/[^\\d+]/g, '');\n  let p = cleaned;\n  if (p.startsWith('0020')) p = '+20' + p.slice(4);\n  else if (p.startsWith('+20')) { /* already */ }\n  else if (p.startsWith('0')) p = '+20' + p.slice(1);\n  const phoneValid = /^\\+20(10|11|12|15)\\d{8}$/.test(p);\n  return { phone: phoneValid ? p : trimmed, phoneValid };\n}\n\nconst rawPhone = (body.billing && body.billing.phone) || (body.shipping && body.shipping.phone) || '';\nconst { phone, phoneValid } = normalizePhone(rawPhone);\nconst lines = Array.isArray(body.line_items) ? body.line_items : [];\nconst itemsText = lines.map((l) => (l.name || 'منتج') + ' ×' + (l.quantity || 1)).join('\\n');\nconst billing = body.billing || {};\nconst shipping = body.shipping || {};\nconst total = Number.isFinite(parseFloat(body.total)) ? parseFloat(body.total) : 0;\nconst customerName = ((billing.first_name || '') + ' ' + (billing.last_name || '')).trim() || shipping.first_name || '';\n\nconst status = body.status || '';\nconst sendable = ok && ['processing', 'completed', 'shipped'].includes(status);\nconst sendableReason = sendable ? '' : 'status-not-actionable';\n\nconst sd = $getWorkflowStaticData('global');\nsd.processed = Array.isArray(sd.processed) ? sd.processed : [];\nconst duplicate = ok && sd.processed.includes('f2:' + orderId + ':' + status);\n\nreturn [{\n  json: {\n    ok,\n    reason,\n    sendable,\n    sendableReason,\n    duplicate,\n    orderId,\n    total,\n    city: shipping.city || billing.city || '',\n    phone,\n    phoneValid,\n    status,\n    email: String(billing.email || '').trim(),\n    createdAt: body.date_created || '',\n    paymentMethod: body.payment_method_title || body.payment_method || '',\n    customerName,\n    itemsText\n  }\n}];\n"
+      },
+      "id": "f2b00001-0000-4000-8000-000000000003",
+      "name": "Verify HMAC + validate",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        60,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "f2b00001-0000-4000-8000-000000000014",
+              "leftValue": "={{ $json.ok }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "f2b00001-0000-4000-8000-000000000004",
+      "name": "Signature + payload ok?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        280,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "errorMessage": "={{ 'F2 rejected webhook: ' + $json.reason }}"
+      },
+      "id": "f2b00001-0000-4000-8000-000000000005",
+      "name": "Reject → error workflow",
+      "type": "n8n-nodes-base.stopAndError",
+      "typeVersion": 1,
+      "position": [
+        500,
+        220
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "f2b00001-0000-4000-8000-000000000015",
+              "leftValue": "={{ $json.sendable }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "f2b00001-0000-4000-8000-000000000006",
+      "name": "Actionable status?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        500,
+        0
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "f2b00001-0000-4000-8000-000000000007",
+      "name": "Status ignored",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        720,
+        220
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "f2b00001-0000-4000-8000-000000000016",
+              "leftValue": "={{ $json.duplicate }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "f2b00001-0000-4000-8000-000000000008",
+      "name": "Duplicate delivery?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        720,
+        0
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "f2b00001-0000-4000-8000-000000000009",
+      "name": "Already notified",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        940,
+        220
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Nilad F2 — build the customer status email (Arabic, plain text, HTML-escaped).\n// Outputs: { orderId, status, toEmail, subject, text, hasEmail } — text format, no emoji.\n// orderId/status flow to the downstream Mark node so it never depends on\n// emailSend's output shape (email nodes may replace item json).\nconst j = $input.first().json;\nconst esc = (s) => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');\nconst toEmail = String(j.email || '').trim();\nconst hasEmail = toEmail.length > 0;\nconst statusText = {\n  processing: 'طلبك قيد التجهيز',\n  completed: 'تم تسليم/اكتمل طلبك',\n  shipped: 'طلبك في الطريق إليك'\n};\nconst statusMsg = esc(statusText[j.status] || 'تم تحديث حالة طلبك');\nconst subject = 'حالة طلبك #' + esc(j.orderId) + ' تغيّرت';\nconst text = [\n  'مرحباً ' + esc(j.customerName || 'عميلنا العزيز') + ',',\n  '',\n  statusMsg,\n  'رقم الطلب: ' + esc(j.orderId),\n  'الإجمالي: ' + esc(j.total) + ' ج.م',\n  'الحالة: ' + esc(j.status),\n  '',\n  'شكراً لتسوقك من نيلاد.'\n].join('\\n');\nreturn [{ json: { orderId: j.orderId, status: j.status, toEmail, subject, text, hasEmail } }];\n"
+      },
+      "id": "f2b00001-0000-4000-8000-000000000010",
+      "name": "Format customer email",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        940,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "f2b00001-0000-4000-8000-000000000017",
+              "leftValue": "={{ $json.hasEmail }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "f2b00001-0000-4000-8000-000000000011",
+      "name": "Has customer email?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        1380,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "fromEmail": "orders@nilad.example.com",
+        "fromName": "نيلاد",
+        "toEmail": "={{ $json.toEmail }}",
+        "subject": "={{ $json.subject }}",
+        "emailFormat": "text",
+        "text": "={{ $json.text }}",
+        "options": {}
+      },
+      "id": "f2b00001-0000-4000-8000-000000000012",
+      "name": "Send Email (customer)",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        1600,
+        -110
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000,
+      "credentials": {
+        "smtp": {
+          "id": "REPLACE_ON_IMPORT",
+          "name": "Nilad SMTP"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Nilad F2 — mark customer status email handled (idempotency key f2:<orderId>:<status>).\n// Runs right after Format, which carries orderId/status — no dependency on\n// emailSend's output shape. Caps store at 500. Passthrough output.\nconst sd = $getWorkflowStaticData('global');\nsd.processed = Array.isArray(sd.processed) ? sd.processed : [];\nconst j = $input.first().json;\nconst key = 'f2:' + j.orderId + ':' + j.status;\nif (!sd.processed.includes(key)) sd.processed.push(key);\nif (sd.processed.length > 500) sd.processed.splice(0, sd.processed.length - 500);\nreturn [{ json: { ...j } }];\n"
+      },
+      "id": "f2b00001-0000-4000-8000-000000000013",
+      "name": "Mark processed",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1160,
+        0
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "f2b00001-0000-4000-8000-000000000014",
+      "name": "No email to send",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1600,
+        110
+      ]
+    }
+  ],
+  "connections": {
+    "Woo order.updated": {
+      "main": [
+        [
+          {
+            "node": "Verify HMAC + validate",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Verify HMAC + validate": {
+      "main": [
+        [
+          {
+            "node": "Signature + payload ok?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Signature + payload ok?": {
+      "main": [
+        [
+          {
+            "node": "Actionable status?",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Reject → error workflow",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Actionable status?": {
+      "main": [
+        [
+          {
+            "node": "Duplicate delivery?",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Status ignored",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Duplicate delivery?": {
+      "main": [
+        [
+          {
+            "node": "Already notified",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Format customer email",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format customer email": {
+      "main": [
+        [
+          {
+            "node": "Mark processed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Mark processed": {
+      "main": [
+        [
+          {
+            "node": "Has customer email?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Has customer email?": {
+      "main": [
+        [
+          {
+            "node": "Send Email (customer)",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "No email to send",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Africa/Cairo"
+  },
+  "pinData": {}
+}

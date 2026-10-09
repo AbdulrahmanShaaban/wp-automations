@@ -1,0 +1,34 @@
+[
+ {
+  "alt": "🛒",
+  "hasAlt": true,
+  "src": "1f6d2.svg",
+  "w": 17,
+  "h": 17,
+  "cls": "emoji"
+ },
+ {
+  "alt": "🔍",
+  "hasAlt": true,
+  "src": "1f50d.svg",
+  "w": 1,
+  "h": 34,
+  "cls": "emoji"
+ },
+ {
+  "alt": "شال كتان خفيف",
+  "hasAlt": true,
+  "src": "scarf-600x750.jpg",
+  "w": 512,
+  "h": 640,
+  "cls": "wp-post-image"
+ },
+ {
+  "alt": "",
+  "hasAlt": true,
+  "src": "scarf.jpg",
+  "w": 800,
+  "h": 1000,
+  "cls": "zoomImg"
+ }
+]

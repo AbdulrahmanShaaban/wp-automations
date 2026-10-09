@@ -1,0 +1,17 @@
+{
+ "jsMotionOnHtml": false,
+ "reducedMotionQuery": false,
+ "revealTotal": 24,
+ "hiddenCount": 0,
+ "notInCount": 24,
+ "hiddenSample": [],
+ "rule": {
+  "animationName": "draw",
+  "transform": "matrix(1, 0, 0, 1, 0, 0)",
+  "w": 320
+ },
+ "scrollBehavior": "smooth",
+ "anyTransition": 5,
+ "bodyTextLen": 3024,
+ "bookingFormVisible": "no-form"
+}

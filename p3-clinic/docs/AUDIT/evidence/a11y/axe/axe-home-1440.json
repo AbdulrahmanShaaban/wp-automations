@@ -1,0 +1,158 @@
+{
+ "bytes": 580480,
+ "axeVersion": "4.13.0",
+ "url": "http://localhost:8889/",
+ "timestamp": "2026-10-08T03:12:59.073Z",
+ "violations": [],
+ "incomplete": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "tags": [
+    "cat.color",
+    "wcag2aa",
+    "wcag143",
+    "TTv5",
+    "TT13.c",
+    "EN-301-549",
+    "EN-9.1.4.3",
+    "ACT",
+    "RGAAv4",
+    "RGAA-3.2.1"
+   ],
+   "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "helpUrl": "https://dequeuniversity.com/rules/axe/4.13/color-contrast?application=axeAPI",
+   "nodes": [
+    {
+     "target": [
+      "aside > .sec-num"
+     ],
+     "impact": "serious",
+     "html": "<span class=\"sec-num\">RX—001</span>",
+     "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+     "any": [
+      {
+       "id": "color-contrast",
+       "msg": "Element's background color could not be determined due to a background gradient"
+      }
+     ],
+     "all": [],
+     "none": []
+    },
+    {
+     "target": [
+      "aside > h2"
+     ],
+     "impact": "serious",
+     "html": "<h2>ملاحظات الزيارة</h2>",
+     "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+     "any": [
+      {
+       "id": "color-contrast",
+       "msg": "Element's background color could not be determined due to a background gradient"
+      }
+     ],
+     "all": [],
+     "none": []
+    },
+    {
+     "target": [
+      ".note-list > li:nth-child(1) > span"
+     ],
+     "impact": "serious",
+     "html": "<span>20 دقيقة</span>",
+     "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node",
+     "any": [
+      {
+       "id": "color-contrast",
+       "msg": "Element's background color could not be determined because element contains an image node"
+      }
+     ],
+     "all": [],
+     "none": []
+    },
+    {
+     "target": [
+      ".note-list > li:nth-child(2)"
+     ],
+     "impact": "serious",
+     "html": "<li>أشعة عند الحاجة <span>15 دقيقة</span></li>",
+     "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+     "any": [
+      {
+       "id": "color-contrast",
+       "msg": "Element's background color could not be determined due to a background gradient"
+      }
+     ],
+     "all": [],
+     "none": []
+    },
+    {
+     "target": [
+      ".note-list > li:nth-child(2) > span"
+     ],
+     "impact": "serious",
+     "html": "<span>15 دقيقة</span>",
+     "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node",
+     "any": [
+      {
+       "id": "color-contrast",
+       "msg": "Element's background color could not be determined because element contains an image node"
+      }
+     ],
+     "all": [],
+     "none": []
+    },
+    {
+     "target": [
+      ".note-list > li:nth-child(3) > span"
+     ],
+     "impact": "serious",
+     "html": "<span>45 دقيقة</span>",
+     "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+     "any": [
+      {
+       "id": "color-contrast",
+       "msg": "Element's background color could not be determined due to a background gradient"
+      }
+     ],
+     "all": [],
+     "none": []
+    },
+    {
+     "target": [
+      ".stamp"
+     ],
+     "impact": "serious",
+     "html": "<p class=\"stamp\">سراج · Cairo</p>",
+     "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+     "any": [
+      {
+       "id": "color-contrast",
+       "msg": "Element's background color could not be determined due to a background gradient"
+      }
+     ],
+     "all": [],
+     "none": []
+    }
+   ]
+  }
+ ],
+ "passCount": 37,
+ "inapplicableCount": 53,
+ "testEngine": {
+  "name": "axe-core",
+  "version": "4.13.0"
+ },
+ "testRunner": {
+  "name": "axe"
+ },
+ "testEnvironment": {
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+  "windowWidth": 1440,
+  "windowHeight": 900,
+  "orientationAngle": 0,
+  "orientationType": "landscape-primary"
+ }
+}

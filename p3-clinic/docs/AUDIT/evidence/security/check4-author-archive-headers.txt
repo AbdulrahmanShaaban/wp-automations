@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Date: Thu, 08 Oct 2026 02:52:24 GMT
+Server: Apache/2.4.68 (Debian)
+X-Powered-By: PHP/8.3.35
+Link: <http://localhost:8889/wp-json/>; rel="https://api.w.org/"
+Link: <http://localhost:8889/wp-json/wp/v2/users/1>; rel="alternate"; title="JSON"; type="application/json"
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+

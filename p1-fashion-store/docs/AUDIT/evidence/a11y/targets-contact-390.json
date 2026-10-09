@@ -1,0 +1,122 @@
+{
+ "page": "contact",
+ "total": 9,
+ "measured": 9,
+ "below24": 1,
+ "minW": 1,
+ "minH": 1,
+ "smallest": [
+  {
+   "group": "other",
+   "tag": "a",
+   "cls": "skip-link screen-reader-text",
+   "text": "تخطى إلى المحتوى",
+   "w": 1,
+   "h": 1,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "header",
+   "tag": "a",
+   "cls": "",
+   "text": "نيلاد",
+   "w": 36.5,
+   "h": 33,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "footer",
+   "tag": "a",
+   "cls": "",
+   "text": "الخصوصية",
+   "w": 59.8,
+   "h": 26,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "footer",
+   "tag": "a",
+   "cls": "",
+   "text": "تواصل معنا",
+   "w": 66.1,
+   "h": 26,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "footer",
+   "tag": "a",
+   "cls": "",
+   "text": "الشحن والإرجاع",
+   "w": 84.7,
+   "h": 26,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "header",
+   "tag": "a",
+   "cls": "wp-block-button__link has-text-color has-surface-background-",
+   "text": "السلة",
+   "w": 100.4,
+   "h": 57.5,
+   "padT": "13.339px",
+   "padB": "13.339px"
+  },
+  {
+   "group": "header",
+   "tag": "a",
+   "cls": "wp-block-button__link has-on-primary-text-color has-primary-",
+   "text": "اتسوّق الآن",
+   "w": 118.3,
+   "h": 55.5,
+   "padT": "13.339px",
+   "padB": "13.339px"
+  },
+  {
+   "group": "dock",
+   "tag": "a",
+   "cls": "dock-btn dock-cart",
+   "text": "السلة",
+   "w": 179,
+   "h": 50,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "dock",
+   "tag": "a",
+   "cls": "dock-btn dock-wa",
+   "text": "واتساب",
+   "w": 179,
+   "h": 50,
+   "padT": "0px",
+   "padB": "0px"
+  }
+ ],
+ "byGroup": {
+  "other": {
+   "n": 1,
+   "minW": 1,
+   "minH": 1
+  },
+  "header": {
+   "n": 3,
+   "minW": 36.5,
+   "minH": 33
+  },
+  "footer": {
+   "n": 3,
+   "minW": 59.8,
+   "minH": 26
+  },
+  "dock": {
+   "n": 2,
+   "minW": 179,
+   "minH": 50
+  }
+ }
+}

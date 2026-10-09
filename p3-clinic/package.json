@@ -1,0 +1,17 @@
+{
+  "name": "p3-clinic",
+  "private": true,
+  "description": "Siraj dental clinic (Demo) — Arabic-first WordPress block theme. Tooling only; WordPress runs in wp-env (Docker).",
+  "scripts": {
+    "postinstall": "node scripts/patch-wp-env.js",
+    "patch:wp-env": "node scripts/patch-wp-env.js",
+    "start": "wp-env start",
+    "stop": "wp-env stop",
+    "destroy": "wp-env destroy",
+    "seed": "bash scripts/seed.sh",
+    "verify": "bash scripts/verify.sh"
+  },
+  "devDependencies": {
+    "@wordpress/env": "^11.16.0"
+  }
+}

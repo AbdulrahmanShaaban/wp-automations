@@ -1,0 +1,313 @@
+# Page-output scan — 2026-10-08T03:08:30.390Z
+
+## check0-site-home-headers.txt (427 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check0-site-home.html (73948 bytes)
+  generator-meta: 1 found -> WordPress 7.1.3
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 1
+
+## check1-headers-404-page.txt (367 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check1-headers-admin-post.txt (414 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check1-headers-book.txt (433 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check1-headers-contact.txt (431 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check1-headers-home.txt (427 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check1-headers-license.txt (256 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check1-headers-readme.txt (254 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check1-headers-services.txt (431 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check1-headers-team.txt (431 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check1-headers-wp-admin-redirect.txt (425 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check1-headers-wp-cron.txt (266 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check1-headers-wp-json-index.txt (508 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check1-headers-wp-login.txt (519 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check1-headers-xmlrpc-get.txt (203 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check1-status-summary.txt (170 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check2-secret-scan.txt (752 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check4-author-archive-headers.txt (380 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check4-author-feed.xml (954 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check4-author1-headers.txt (380 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check4-author1-matches.txt (187 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check4-author1.html (63160 bytes)
+  generator-meta: 1 found -> WordPress 7.1.3
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 1
+
+## check4-git-robots-content.txt (623 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+  long-hex-24plus: hits=1 valueLengths=40
+
+## check4-headers-wp-config-sample.txt (326 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check4-install-php-text.txt (282 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check4-sitemap-index.xml (286 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check4-sitemap-wp-sitemap-posts-page-1.xml (656 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check4-sitemap-wp-sitemap-posts-post-1.xml (63024 bytes)
+  generator-meta: 1 found -> WordPress 7.1.3
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 1
+
+## check4-sitemap-wp-sitemap-taxonomies-category-1.xml (63024 bytes)
+  generator-meta: 1 found -> WordPress 7.1.3
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 1
+
+## check4-sitemap-wp-sitemap-users-1.xml (63024 bytes)
+  generator-meta: 1 found -> WordPress 7.1.3
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 1
+
+## check4-wp-json-summary.txt (331 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check4-xmlrpc-listmethods.xml (4233 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check6-endpoint-status.txt (758 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check6-resp-types-bogus.txt (169 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check6-resp-_feed_.txt (927 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check6-resp-_wp_json_oembed_1_0_embed_url_http_3A_2F_2Flocalhost_3A8889_2Fbook_2F.txt (5054 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+  assigned-secret: hits=1 valueLengths=52
+
+## check6-resp-_wp_json_wp_v2_block_types.txt (296 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check6-resp-_wp_json_wp_v2_media_per_page_100.txt (2 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check6-resp-_wp_json_wp_v2_pages_per_page_100.txt (25771 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+  egypt-mobile: hits=1 valueLengths=11
+  booking-meta-key: hits=8 valueLengths=13,11,13,10,11,20,20,18
+
+## check6-resp-_wp_json_wp_v2_plugins.txt (318 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check6-resp-_wp_json_wp_v2_posts_per_page_100.txt (2 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check6-resp-_wp_json_wp_v2_search_search_test.txt (2 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check6-resp-_wp_json_wp_v2_settings.txt (204 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check6-resp-_wp_json_wp_v2_siraj_booking.txt (331 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check6-resp-_wp_json_wp_v2_statuses.txt (206 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check6-resp-_wp_json_wp_v2_themes.txt (255 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check6-resp-_wp_json_wp_v2_types.txt (6631 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check6-resp-_wp_json_wp_v2_types_siraj_booking.txt (180 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check6-resp-_wp_json_wp_v2_users_1.txt (302 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check6-resp-_wp_json_wp_v2_users_context_edit.txt (266 bytes)
+  generator-meta: none
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 0
+
+## check6-resp-__post_type_siraj_booking.txt (73948 bytes)
+  generator-meta: 1 found -> WordPress 7.1.3
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 1
+
+## check6-resp-__s_siraj_booking.txt (63148 bytes)
+  generator-meta: 1 found -> WordPress 7.1.3
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 1
+
+## check6-resp-__s_test.txt (63124 bytes)
+  generator-meta: 1 found -> WordPress 7.1.3
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 1
+
+## check6-resp-__s__D8_A7_D8_AD_D8_AA_D8_A8_D8_A7_D8_B1.txt (63172 bytes)
+  generator-meta: 1 found -> WordPress 7.1.3
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 1
+
+## page-404.html (63024 bytes)
+  generator-meta: 1 found -> WordPress 7.1.3
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 1
+
+## page-book.html (65055 bytes)
+  generator-meta: 1 found -> WordPress 7.1.3
+  nonce/referer input names present: name="siraj_booking_submit", name="_wp_http_referer" (values withheld)
+  api.w.org link tags: 1
+  egypt-mobile: hits=1 valueLengths=11
+  booking-meta-key: hits=8 valueLengths=13,11,13,10,11,20,20,18
+
+## page-contact.html (63781 bytes)
+  generator-meta: 1 found -> WordPress 7.1.3
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 1
+
+## page-search-arabic.html (63172 bytes)
+  generator-meta: 1 found -> WordPress 7.1.3
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 1
+
+## page-services.html (66091 bytes)
+  generator-meta: 1 found -> WordPress 7.1.3
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 1
+
+## page-team.html (65235 bytes)
+  generator-meta: 1 found -> WordPress 7.1.3
+  nonce/referer input names present: none (values withheld)
+  api.w.org link tags: 1
+

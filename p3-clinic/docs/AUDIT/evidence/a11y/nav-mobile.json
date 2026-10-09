@@ -1,0 +1,847 @@
+{
+ "generatedAt": "2026-10-08T03:39:30.430Z",
+ "chrome": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+ "viewport": "390x844",
+ "checks": [
+  {
+   "id": "nav-toggle-reachable-390",
+   "desc": "A menu toggle is present and visible at 390x844",
+   "expected": ".wp-block-navigation__responsive-container-open visible with >0 size",
+   "actual": "btn={\"x\":126,\"y\":22,\"w\":24,\"h\":24,\"top\":22,\"left\":126,\"right\":150,\"bottom\":46,\"position\":\"static\",\"display\":\"flex\",\"visibility\":\"visible\",\"opacity\":\"1\",\"zIndex\":\"auto\",\"backdropFilter\":\"none\",\"transform\":\"none\",\"filter\":\"none\"} containerDisplay=none",
+   "pass": true,
+   "evidence": "nav-mobile.json -> states.closed"
+  },
+  {
+   "id": "nav-toggle-target-size",
+   "desc": "The menu toggle meets WCAG 2.2 2.5.8 (24px min, or 24px spacing exception)",
+   "expected": "min(width,height) >= 24 OR passes via the spacing exception",
+   "actual": "btn 24x24",
+   "pass": true,
+   "evidence": "nav-mobile.json"
+  },
+  {
+   "id": "nav-desktop-links-not-leaking",
+   "desc": "With the overlay closed the desktop link row is not duplicated on screen",
+   "expected": "container display:none OR all link widths 0",
+   "actual": "container display=none links=[{\"text\":\"الخدمات\",\"href\":\"/services/\",\"r\":{\"w\":0,\"h\":0}},{\"text\":\"الفريق\",\"href\":\"/team/\",\"r\":{\"w\":0,\"h\":0}},{\"text\":\"تواصل\",\"href\":\"/contact/\",\"r\":{\"w\":0,\"h\":0}}]",
+   "pass": true,
+   "evidence": "nav-mobile.json -> states.closed"
+  },
+  {
+   "id": "overlay-covers-viewport",
+   "desc": "The open overlay covers the viewport (the backdrop-filter containing-block lesson)",
+   "expected": "overlay content width >= viewport width and height >= viewport height",
+   "actual": "hasModalOpen=true htmlClass=\"js-motion has-modal-open\" headerBackdropFilter=none coversViewport={\"coversWidth\":true,\"coversHeight\":false,\"widthPct\":100,\"heightPct\":22,\"innerW\":390,\"innerH\":844} content={\"x\":0,\"y\":16,\"w\":390,\"h\":186,\"top\":16,\"left\":0,\"right\":390,\"bottom\":202,\"position\":\"static\",\"display\":\"flex\",\"visibility\":\"visible\",\"opacity\":\"1\",\"zIndex\":\"auto\",\"backdropFilter\":\"none\",\"transform\":\"none\",\"filter\":\"none\"} modalOverlay=null",
+   "pass": false,
+   "evidence": "screens/nav-390-menu-open.png"
+  },
+  {
+   "id": "toggle-aria-state",
+   "desc": "The toggle exposes its expanded state",
+   "expected": "aria-expanded=\"true\" when open",
+   "actual": "aria-expanded=null aria-label=\"فتح القائمة\"",
+   "pass": false,
+   "evidence": "nav-mobile.json -> states.open"
+  },
+  {
+   "id": "focus-moves-into-overlay",
+   "desc": "Opening the menu moves focus inside the overlay (so a screen reader lands in the menu)",
+   "expected": "document.activeElement is inside .wp-block-navigation__responsive-container",
+   "actual": "before={\"tag\":\"button\",\"cls\":\"wp-block-navigation__responsive-container-open\",\"text\":\"\",\"outline\":\"none 3px\"} after={\"tag\":\"a\",\"cls\":\"wp-block-navigation-item__content\",\"text\":\"الخدمات\",\"insideModal\":true,\"outline\":\"solid 3px rgb(163, 35, 27)\"}",
+   "pass": true,
+   "evidence": "nav-mobile.json -> focusAfterOpen"
+  },
+  {
+   "id": "menu-tab-order",
+   "desc": "Tab inside the open menu stays inside it and every stop shows a focus ring",
+   "expected": "all stops inside the overlay with an outline",
+   "actual": "a:الفريق -> a:تواصل -> button: -> a:الخدمات -> a:الفريق -> a:تواصل -> button: -> a:الخدمات",
+   "pass": true,
+   "evidence": "nav-mobile.json -> tabChainInMenu"
+  },
+  {
+   "id": "escape-closes",
+   "desc": "Escape closes the overlay",
+   "expected": "has-modal-open removed and overlay no longer covers the viewport",
+   "actual": "hasModalOpen=false htmlClass=\"js-motion\" content={\"x\":0,\"y\":0,\"w\":0,\"h\":0,\"top\":0,\"left\":0,\"right\":0,\"bottom\":0,\"position\":\"static\",\"display\":\"flex\",\"visibility\":\"visible\",\"opacity\":\"1\",\"zIndex\":\"auto\",\"backdropFilter\":\"none\",\"transform\":\"none\",\"filter\":\"none\"}",
+   "pass": true,
+   "evidence": "nav-mobile.json -> states.afterEscape"
+  },
+  {
+   "id": "focus-returns-on-close",
+   "desc": "Closing the menu returns focus to the toggle",
+   "expected": "document.activeElement is the responsive-container-open button",
+   "actual": "activeElement={\"tag\":\"button\",\"cls\":\"wp-block-navigation__responsive-container-open\",\"text\":\"\",\"outline\":\"solid 3px\"}",
+   "pass": true,
+   "evidence": "nav-mobile.json -> focusAfterEscape"
+  },
+  {
+   "id": "background-not-scrollable-when-open",
+   "desc": "The page behind the open overlay does not scroll (focus not lost behind the menu)",
+   "expected": "scrollY unchanged while the menu is open",
+   "actual": "scrollY 0 -> 397 (moved 397px), body.overflow=visible, html.overflow=hidden",
+   "pass": false,
+   "evidence": "nav-mobile.json -> backgroundScrollWhileOpen"
+  },
+  {
+   "id": "menu-link-target-sizes",
+   "desc": "Open-menu links are >= 24px on their smaller side",
+   "expected": "min(w,h) >= 24 for every link",
+   "actual": "=24x24, الخدمات=63.3x27.2, الفريق=48.9x27.2, تواصل=50.8x27.2",
+   "pass": true,
+   "evidence": "nav-mobile.json -> menuTargets"
+  },
+  {
+   "id": "overlay-on-book-page",
+   "desc": "The overlay toggle also exists on /book/ at 390",
+   "expected": "visible toggle",
+   "actual": "btn={\"x\":126,\"y\":22,\"w\":24,\"h\":24,\"top\":22,\"left\":126,\"right\":150,\"bottom\":46,\"position\":\"static\",\"display\":\"flex\",\"visibility\":\"visible\",\"opacity\":\"1\",\"zIndex\":\"auto\",\"backdropFilter\":\"none\",\"transform\":\"none\",\"filter\":\"none\"} container={\"x\":0,\"y\":0,\"w\":0,\"h\":0,\"top\":0,\"left\":0,\"right\":0,\"bottom\":0,\"position\":\"fixed\",\"display\":\"none\",\"visibility\":\"visible\",\"opacity\":\"1\",\"zIndex\":\"auto\",\"backdropFilter\":\"none\",\"transform\":\"none\",\"filter\":\"none\"}",
+   "pass": true,
+   "evidence": "nav-mobile.json -> bookPageNav"
+  },
+  {
+   "id": "nav-at-1024",
+   "desc": "At 1024 the desktop nav row is visible (and the overlay is not)",
+   "expected": "container visible at 1024",
+   "actual": "container={\"x\":300,\"y\":20,\"w\":211,\"h\":27,\"top\":20,\"left\":300,\"right\":511,\"bottom\":48,\"position\":\"relative\",\"display\":\"block\",\"visibility\":\"visible\",\"opacity\":\"1\",\"zIndex\":\"auto\",\"backdropFilter\":\"none\",\"transform\":\"none\",\"filter\":\"none\"} toggle={\"x\":0,\"y\":0,\"w\":0,\"h\":0,\"top\":0,\"left\":0,\"right\":0,\"bottom\":0,\"position\":\"static\",\"display\":\"none\",\"visibility\":\"visible\",\"opacity\":\"1\",\"zIndex\":\"auto\",\"backdropFilter\":\"none\",\"transform\":\"none\",\"filter\":\"none\"} links=[{\"text\":\"الخدمات\",\"href\":\"/services/\",\"r\":{\"w\":63,\"h\":27}},{\"text\":\"الفريق\",\"href\":\"/team/\",\"r\":{\"w\":49,\"h\":27}},{\"text\":\"تواصل\",\"href\":\"/contact/\",\"r\":{\"w\":51,\"h\":27}}]",
+   "pass": true,
+   "evidence": "nav-mobile.json -> at1024"
+  }
+ ],
+ "states": {
+  "closed": {
+   "htmlClass": "js-motion",
+   "hasModalOpen": false,
+   "openBtn": {
+    "x": 126,
+    "y": 22,
+    "w": 24,
+    "h": 24,
+    "top": 22,
+    "left": 126,
+    "right": 150,
+    "bottom": 46,
+    "position": "static",
+    "display": "flex",
+    "visibility": "visible",
+    "opacity": "1",
+    "zIndex": "auto",
+    "backdropFilter": "none",
+    "transform": "none",
+    "filter": "none"
+   },
+   "openBtnAria": {
+    "expanded": null,
+    "label": "فتح القائمة",
+    "controls": "فتح القائمة",
+    "tabindex": null
+   },
+   "container": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "left": 0,
+    "right": 0,
+    "bottom": 0,
+    "position": "fixed",
+    "display": "none",
+    "visibility": "visible",
+    "opacity": "1",
+    "zIndex": "auto",
+    "backdropFilter": "none",
+    "transform": "none",
+    "filter": "none"
+   },
+   "modalOverlay": null,
+   "content": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "left": 0,
+    "right": 0,
+    "bottom": 0,
+    "position": "static",
+    "display": "flex",
+    "visibility": "visible",
+    "opacity": "1",
+    "zIndex": "auto",
+    "backdropFilter": "none",
+    "transform": "none",
+    "filter": "none"
+   },
+   "coversViewport": {
+    "coversWidth": false,
+    "coversHeight": false,
+    "widthPct": 0,
+    "heightPct": 0,
+    "innerW": 390,
+    "innerH": 844
+   },
+   "headerBackdropFilter": "saturate(1.4) blur(10px)",
+   "headerBox": {
+    "x": 0,
+    "y": 0,
+    "w": 390,
+    "h": 69,
+    "top": 0,
+    "left": 0,
+    "right": 390,
+    "bottom": 69,
+    "position": "sticky",
+    "display": "block",
+    "visibility": "visible",
+    "opacity": "1",
+    "zIndex": "20",
+    "backdropFilter": "saturate(1.4) blur(10px)",
+    "transform": "none",
+    "filter": "none"
+   },
+   "links": [
+    {
+     "text": "الخدمات",
+     "href": "/services/",
+     "r": {
+      "w": 0,
+      "h": 0
+     }
+    },
+    {
+     "text": "الفريق",
+     "href": "/team/",
+     "r": {
+      "w": 0,
+      "h": 0
+     }
+    },
+    {
+     "text": "تواصل",
+     "href": "/contact/",
+     "r": {
+      "w": 0,
+      "h": 0
+     }
+    }
+   ],
+   "closeBtn": {
+    "w": 0,
+    "h": 0,
+    "ariaLabel": "إغلاق القائمة",
+    "text": ""
+   },
+   "bodyScrollLocked": "visible|",
+   "scrollY": 0
+  },
+  "open": {
+   "htmlClass": "js-motion has-modal-open",
+   "hasModalOpen": true,
+   "openBtn": {
+    "x": 126,
+    "y": 22,
+    "w": 24,
+    "h": 24,
+    "top": 22,
+    "left": 126,
+    "right": 150,
+    "bottom": 46,
+    "position": "static",
+    "display": "flex",
+    "visibility": "visible",
+    "opacity": "1",
+    "zIndex": "auto",
+    "backdropFilter": "none",
+    "transform": "none",
+    "filter": "none"
+   },
+   "openBtnAria": {
+    "expanded": null,
+    "label": "فتح القائمة",
+    "controls": "فتح القائمة",
+    "tabindex": null
+   },
+   "container": {
+    "x": 0,
+    "y": 0,
+    "w": 390,
+    "h": 844,
+    "top": 0,
+    "left": 0,
+    "right": 390,
+    "bottom": 844,
+    "position": "fixed",
+    "display": "flex",
+    "visibility": "visible",
+    "opacity": "1",
+    "zIndex": "100000",
+    "backdropFilter": "none",
+    "transform": "matrix(1, 0, 0, 1, 0, 0)",
+    "filter": "none"
+   },
+   "modalOverlay": null,
+   "content": {
+    "x": 0,
+    "y": 16,
+    "w": 390,
+    "h": 186,
+    "top": 16,
+    "left": 0,
+    "right": 390,
+    "bottom": 202,
+    "position": "static",
+    "display": "flex",
+    "visibility": "visible",
+    "opacity": "1",
+    "zIndex": "auto",
+    "backdropFilter": "none",
+    "transform": "none",
+    "filter": "none"
+   },
+   "coversViewport": {
+    "coversWidth": true,
+    "coversHeight": false,
+    "widthPct": 100,
+    "heightPct": 22,
+    "innerW": 390,
+    "innerH": 844
+   },
+   "headerBackdropFilter": "none",
+   "headerBox": {
+    "x": 0,
+    "y": 0,
+    "w": 390,
+    "h": 69,
+    "top": 0,
+    "left": 0,
+    "right": 390,
+    "bottom": 69,
+    "position": "sticky",
+    "display": "block",
+    "visibility": "visible",
+    "opacity": "1",
+    "zIndex": "20",
+    "backdropFilter": "none",
+    "transform": "none",
+    "filter": "none"
+   },
+   "links": [
+    {
+     "text": "الخدمات",
+     "href": "/services/",
+     "r": {
+      "w": 63,
+      "h": 27
+     }
+    },
+    {
+     "text": "الفريق",
+     "href": "/team/",
+     "r": {
+      "w": 49,
+      "h": 27
+     }
+    },
+    {
+     "text": "تواصل",
+     "href": "/contact/",
+     "r": {
+      "w": 51,
+      "h": 27
+     }
+    }
+   ],
+   "closeBtn": {
+    "w": 24,
+    "h": 24,
+    "ariaLabel": "إغلاق القائمة",
+    "text": ""
+   },
+   "bodyScrollLocked": "visible|",
+   "scrollY": 0
+  },
+  "afterEscape": {
+   "htmlClass": "js-motion",
+   "hasModalOpen": false,
+   "openBtn": {
+    "x": 126,
+    "y": 22,
+    "w": 24,
+    "h": 24,
+    "top": 22,
+    "left": 126,
+    "right": 150,
+    "bottom": 46,
+    "position": "static",
+    "display": "flex",
+    "visibility": "visible",
+    "opacity": "1",
+    "zIndex": "auto",
+    "backdropFilter": "none",
+    "transform": "none",
+    "filter": "none"
+   },
+   "openBtnAria": {
+    "expanded": null,
+    "label": "فتح القائمة",
+    "controls": "فتح القائمة",
+    "tabindex": null
+   },
+   "container": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "left": 0,
+    "right": 0,
+    "bottom": 0,
+    "position": "fixed",
+    "display": "none",
+    "visibility": "visible",
+    "opacity": "1",
+    "zIndex": "auto",
+    "backdropFilter": "none",
+    "transform": "none",
+    "filter": "none"
+   },
+   "modalOverlay": null,
+   "content": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "top": 0,
+    "left": 0,
+    "right": 0,
+    "bottom": 0,
+    "position": "static",
+    "display": "flex",
+    "visibility": "visible",
+    "opacity": "1",
+    "zIndex": "auto",
+    "backdropFilter": "none",
+    "transform": "none",
+    "filter": "none"
+   },
+   "coversViewport": {
+    "coversWidth": false,
+    "coversHeight": false,
+    "widthPct": 0,
+    "heightPct": 0,
+    "innerW": 390,
+    "innerH": 844
+   },
+   "headerBackdropFilter": "saturate(1.4) blur(10px)",
+   "headerBox": {
+    "x": 0,
+    "y": 0,
+    "w": 390,
+    "h": 69,
+    "top": 0,
+    "left": 0,
+    "right": 390,
+    "bottom": 69,
+    "position": "sticky",
+    "display": "block",
+    "visibility": "visible",
+    "opacity": "1",
+    "zIndex": "20",
+    "backdropFilter": "saturate(1.4) blur(10px)",
+    "transform": "none",
+    "filter": "none"
+   },
+   "links": [
+    {
+     "text": "الخدمات",
+     "href": "/services/",
+     "r": {
+      "w": 0,
+      "h": 0
+     }
+    },
+    {
+     "text": "الفريق",
+     "href": "/team/",
+     "r": {
+      "w": 0,
+      "h": 0
+     }
+    },
+    {
+     "text": "تواصل",
+     "href": "/contact/",
+     "r": {
+      "w": 0,
+      "h": 0
+     }
+    }
+   ],
+   "closeBtn": {
+    "w": 0,
+    "h": 0,
+    "ariaLabel": "إغلاق القائمة",
+    "text": ""
+   },
+   "bodyScrollLocked": "visible|",
+   "scrollY": 0
+  }
+ },
+ "focusAfterOpen": {
+  "tag": "a",
+  "cls": "wp-block-navigation-item__content",
+  "text": "الخدمات",
+  "insideModal": true,
+  "outline": "solid 3px rgb(163, 35, 27)"
+ },
+ "tabChainInMenu": [
+  {
+   "tag": "a",
+   "cls": "wp-block-navigation-item__content",
+   "text": "الفريق",
+   "insideModal": true,
+   "focusVisible": true
+  },
+  {
+   "tag": "a",
+   "cls": "wp-block-navigation-item__content",
+   "text": "تواصل",
+   "insideModal": true,
+   "focusVisible": true
+  },
+  {
+   "tag": "button",
+   "cls": "wp-block-navigation__responsive-container-close",
+   "text": "",
+   "insideModal": true,
+   "focusVisible": true
+  },
+  {
+   "tag": "a",
+   "cls": "wp-block-navigation-item__content",
+   "text": "الخدمات",
+   "insideModal": true,
+   "focusVisible": true
+  },
+  {
+   "tag": "a",
+   "cls": "wp-block-navigation-item__content",
+   "text": "الفريق",
+   "insideModal": true,
+   "focusVisible": true
+  },
+  {
+   "tag": "a",
+   "cls": "wp-block-navigation-item__content",
+   "text": "تواصل",
+   "insideModal": true,
+   "focusVisible": true
+  },
+  {
+   "tag": "button",
+   "cls": "wp-block-navigation__responsive-container-close",
+   "text": "",
+   "insideModal": true,
+   "focusVisible": true
+  },
+  {
+   "tag": "a",
+   "cls": "wp-block-navigation-item__content",
+   "text": "الخدمات",
+   "insideModal": true,
+   "focusVisible": true
+  }
+ ],
+ "focusAfterEscape": {
+  "tag": "button",
+  "cls": "wp-block-navigation__responsive-container-open",
+  "text": "",
+  "outline": "solid 3px"
+ },
+ "backgroundScrollWhileOpen": {
+  "before": 0,
+  "after": 397,
+  "moved": 397,
+  "bodyOverflow": "visible",
+  "htmlOverflow": "hidden"
+ },
+ "menuTargets": [
+  {
+   "tag": "button",
+   "text": "",
+   "w": 24,
+   "h": 24
+  },
+  {
+   "tag": "a",
+   "text": "الخدمات",
+   "w": 63.3,
+   "h": 27.2
+  },
+  {
+   "tag": "a",
+   "text": "الفريق",
+   "w": 48.9,
+   "h": 27.2
+  },
+  {
+   "tag": "a",
+   "text": "تواصل",
+   "w": 50.8,
+   "h": 27.2
+  }
+ ],
+ "bookPageNav": {
+  "htmlClass": "",
+  "hasModalOpen": false,
+  "openBtn": {
+   "x": 126,
+   "y": 22,
+   "w": 24,
+   "h": 24,
+   "top": 22,
+   "left": 126,
+   "right": 150,
+   "bottom": 46,
+   "position": "static",
+   "display": "flex",
+   "visibility": "visible",
+   "opacity": "1",
+   "zIndex": "auto",
+   "backdropFilter": "none",
+   "transform": "none",
+   "filter": "none"
+  },
+  "openBtnAria": {
+   "expanded": null,
+   "label": "فتح القائمة",
+   "controls": "فتح القائمة",
+   "tabindex": null
+  },
+  "container": {
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0,
+   "top": 0,
+   "left": 0,
+   "right": 0,
+   "bottom": 0,
+   "position": "fixed",
+   "display": "none",
+   "visibility": "visible",
+   "opacity": "1",
+   "zIndex": "auto",
+   "backdropFilter": "none",
+   "transform": "none",
+   "filter": "none"
+  },
+  "modalOverlay": null,
+  "content": {
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0,
+   "top": 0,
+   "left": 0,
+   "right": 0,
+   "bottom": 0,
+   "position": "static",
+   "display": "flex",
+   "visibility": "visible",
+   "opacity": "1",
+   "zIndex": "auto",
+   "backdropFilter": "none",
+   "transform": "none",
+   "filter": "none"
+  },
+  "coversViewport": {
+   "coversWidth": false,
+   "coversHeight": false,
+   "widthPct": 0,
+   "heightPct": 0,
+   "innerW": 390,
+   "innerH": 844
+  },
+  "headerBackdropFilter": "saturate(1.4) blur(10px)",
+  "headerBox": {
+   "x": 0,
+   "y": 0,
+   "w": 390,
+   "h": 69,
+   "top": 0,
+   "left": 0,
+   "right": 390,
+   "bottom": 69,
+   "position": "sticky",
+   "display": "block",
+   "visibility": "visible",
+   "opacity": "1",
+   "zIndex": "20",
+   "backdropFilter": "saturate(1.4) blur(10px)",
+   "transform": "none",
+   "filter": "none"
+  },
+  "links": [
+   {
+    "text": "الخدمات",
+    "href": "/services/",
+    "r": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   {
+    "text": "الفريق",
+    "href": "/team/",
+    "r": {
+     "w": 0,
+     "h": 0
+    }
+   },
+   {
+    "text": "تواصل",
+    "href": "/contact/",
+    "r": {
+     "w": 0,
+     "h": 0
+    }
+   }
+  ],
+  "closeBtn": {
+   "w": 0,
+   "h": 0,
+   "ariaLabel": "إغلاق القائمة",
+   "text": ""
+  },
+  "bodyScrollLocked": "visible|",
+  "scrollY": 0
+ },
+ "at1024": {
+  "htmlClass": "js-motion",
+  "hasModalOpen": false,
+  "openBtn": {
+   "x": 0,
+   "y": 0,
+   "w": 0,
+   "h": 0,
+   "top": 0,
+   "left": 0,
+   "right": 0,
+   "bottom": 0,
+   "position": "static",
+   "display": "none",
+   "visibility": "visible",
+   "opacity": "1",
+   "zIndex": "auto",
+   "backdropFilter": "none",
+   "transform": "none",
+   "filter": "none"
+  },
+  "openBtnAria": {
+   "expanded": null,
+   "label": "فتح القائمة",
+   "controls": "فتح القائمة",
+   "tabindex": null
+  },
+  "container": {
+   "x": 300,
+   "y": 20,
+   "w": 211,
+   "h": 27,
+   "top": 20,
+   "left": 300,
+   "right": 511,
+   "bottom": 48,
+   "position": "relative",
+   "display": "block",
+   "visibility": "visible",
+   "opacity": "1",
+   "zIndex": "auto",
+   "backdropFilter": "none",
+   "transform": "none",
+   "filter": "none"
+  },
+  "modalOverlay": null,
+  "content": {
+   "x": 300,
+   "y": 20,
+   "w": 211,
+   "h": 27,
+   "top": 20,
+   "left": 300,
+   "right": 511,
+   "bottom": 48,
+   "position": "static",
+   "display": "flex",
+   "visibility": "visible",
+   "opacity": "1",
+   "zIndex": "auto",
+   "backdropFilter": "none",
+   "transform": "none",
+   "filter": "none"
+  },
+  "coversViewport": {
+   "coversWidth": false,
+   "coversHeight": false,
+   "widthPct": 21,
+   "heightPct": 4,
+   "innerW": 1024,
+   "innerH": 768
+  },
+  "headerBackdropFilter": "saturate(1.4) blur(10px)",
+  "headerBox": {
+   "x": 0,
+   "y": 0,
+   "w": 1024,
+   "h": 69,
+   "top": 0,
+   "left": 0,
+   "right": 1024,
+   "bottom": 69,
+   "position": "sticky",
+   "display": "block",
+   "visibility": "visible",
+   "opacity": "1",
+   "zIndex": "20",
+   "backdropFilter": "saturate(1.4) blur(10px)",
+   "transform": "none",
+   "filter": "none"
+  },
+  "links": [
+   {
+    "text": "الخدمات",
+    "href": "/services/",
+    "r": {
+     "w": 63,
+     "h": 27
+    }
+   },
+   {
+    "text": "الفريق",
+    "href": "/team/",
+    "r": {
+     "w": 49,
+     "h": 27
+    }
+   },
+   {
+    "text": "تواصل",
+    "href": "/contact/",
+    "r": {
+     "w": 51,
+     "h": 27
+    }
+   }
+  ],
+  "closeBtn": {
+   "w": 0,
+   "h": 0,
+   "ariaLabel": "إغلاق القائمة",
+   "text": ""
+  },
+  "bodyScrollLocked": "visible|",
+  "scrollY": 0
+ }
+}

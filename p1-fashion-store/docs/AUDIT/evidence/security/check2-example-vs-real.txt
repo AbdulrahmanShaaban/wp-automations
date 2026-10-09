@@ -1,0 +1,16 @@
+﻿== hash-compare example vs real env (MATCH/DIFFER only, no values) ==
+  PENDING_HOURS : present-in-real=True example-value-equals-real=True
+  LOW_STOCK_QTY : present-in-real=True example-value-equals-real=True
+  NODE_FUNCTION_ALLOW_BUILTIN : present-in-real=True example-value-equals-real=True
+  TELEGRAM_CHAT_ID : present-in-real=True example-value-equals-real=False
+  TELEGRAM_BOT_TOKEN : present-in-real=True example-value-equals-real=False
+  WC_API_SECRET : present-in-real=True example-value-equals-real=False
+  GOOGLE_SHEET_ID : present-in-real=True example-value-equals-real=False
+  GOOGLE_SHEET_TAB : present-in-real=True example-value-equals-real=True
+  GENERIC_TIMEZONE : present-in-real=True example-value-equals-real=True
+  WC_API_KEY : present-in-real=True example-value-equals-real=False
+  WOO_WEBHOOK_SECRET : present-in-real=True example-value-equals-real=False
+  SHEETS_ENABLED : present-in-real=True example-value-equals-real=True
+  STORE_URL : present-in-real=True example-value-equals-real=True
+  GOOGLE_SHEET_GID : present-in-real=True example-value-equals-real=False
+  REVIEW_AFTER_DAYS : present-in-real=True example-value-equals-real=True

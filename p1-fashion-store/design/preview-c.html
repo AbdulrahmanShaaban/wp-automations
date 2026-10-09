@@ -1,0 +1,240 @@
+<!doctype html>
+<!-- Direction C — "Warm local": friendly/round, floating pill nav, split hero with rounded photo (H1),
+     categories as bento grid (S3), products as featured + compact list (W3).
+     Palette C (terracotta) + Tajawal/DM Sans. Feel: warm, local, approachable. -->
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>نيلاد — أزياء وإكسسوارات | Preview C</title>
+<meta name="description" content="نيلاد — متجر أزياء وإكسسوارات مصري. كاش عند الاستلام وشحن لكل المحافظات. متجر تجريبي Demo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;800&family=DM+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<style>
+:root{
+  --bg:#FFF7EE;--surface:#FFFFFF;--text:#2A1A12;--muted:#6E5546;
+  --primary:#C2410C;--on-primary:#FFFFFF;--accent:#0F766E;--border:#F0DCC8;
+  --primary-soft:#FDE7D6;
+  --font-body:"Tajawal","DM Sans",system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;
+  --pad-x:20px;--section-y:56px;
+}
+@media(min-width:900px){:root{--section-y:96px}}
+.announce{background:var(--accent);color:#fff;font-size:var(--fs-sm);font-weight:700;text-align:center;padding:var(--s2) var(--s4)}
+
+/* header — floating pill nav (different structure) */
+.site-header{position:sticky;top:1rem;margin-inline:1rem;margin-top:var(--s4);z-index:30}
+@media(min-width:900px){.site-header{margin-inline:2rem}}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:var(--s4);min-height:64px;background:color-mix(in srgb,var(--surface) 92%,transparent);backdrop-filter:blur(16px);border:1px solid var(--border);border-radius:var(--pill);padding:var(--s2) var(--s2) var(--s2) var(--s6);box-shadow:0 8px 30px rgba(42,26,18,.10)}
+.brand{font-weight:800;font-size:var(--fs-lg);text-decoration:none;color:var(--text)}
+.brand small{display:none}
+@media(min-width:600px){.brand small{display:inline;color:var(--muted);font-weight:700;font-size:.65rem;letter-spacing:.14em;margin-inline-start:var(--s2)}}
+.nav-links{display:none;gap:var(--s6);list-style:none;margin:0;padding:0}
+.nav-links a{text-decoration:none;color:var(--muted);font-weight:700}
+.nav-links a:hover{color:var(--primary)}
+@media(min-width:900px){.nav-links{display:flex}}
+.nav-right{display:flex;gap:var(--s2);align-items:center}
+.cart{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px;font-weight:700;text-decoration:none;border:1.5px solid var(--border);background:var(--surface);border-radius:50%}
+.cart:hover{border-color:var(--primary);color:var(--primary)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--s2);min-height:48px;padding:0 var(--s6);border-radius:var(--pill);border:1.5px solid transparent;font:inherit;font-weight:700;text-decoration:none;cursor:pointer;transition:transform .15s,background-color .15s,border-color .15s}
+.btn-primary{background:var(--primary);color:var(--on-primary)}
+.btn-primary:hover{transform:translateY(-1px);background:#A7340A}
+.btn-ghost{border-color:var(--border);background:var(--surface);color:var(--text)}
+.btn-ghost:hover{border-color:var(--primary)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+main{padding-top:var(--s6)}
+@media(min-width:900px){main{padding-top:var(--s8)}}
+
+/* hero — H1 split with big rounded photo */
+.hero-grid{display:grid;gap:var(--s8);align-items:center}
+@media(min-width:900px){.hero-grid{grid-template-columns:1fr 1fr;gap:var(--s12)}}
+.hero .eyebrow{background:var(--primary-soft);display:inline-block;border-radius:var(--pill);padding:.3rem var(--s4);color:var(--primary)}
+.hero h1{margin-top:var(--s4)}
+.hero .lead{margin-bottom:var(--s6)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:var(--s3)}
+.hero-photo{aspect-ratio:4/5;border-radius:32px;background:linear-gradient(150deg,#FDE7D6,#F3E3D0 55%,#E7D2BC);border:2px solid var(--border);display:grid;place-items:center;color:var(--muted);font-weight:700;position:relative;overflow:hidden}
+.hero-photo .float{position:absolute;bottom:var(--s4);inset-inline-start:var(--s4);background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:var(--s3) var(--s4);box-shadow:0 10px 30px rgba(42,26,18,.12);font-size:var(--fs-sm);font-weight:700;max-width:80%}
+.hero-photo .float span{display:block;font-weight:600;color:var(--muted)}
+.proof{display:flex;flex-wrap:wrap;gap:var(--s2) var(--s4);margin:var(--s6) 0 0;padding:0;list-style:none;color:var(--muted);font-size:var(--fs-sm);font-weight:700}
+.proof li::before{content:"♥";color:var(--primary);margin-inline-end:var(--s2)}
+
+/* categories — S3 bento */
+.bento{display:grid;gap:var(--s6);grid-template-columns:repeat(6,1fr)}
+.bento>*{grid-column:span 6}
+@media(min-width:900px){.bento>.a{grid-column:span 4}.bento>.b{grid-column:span 2}.bento>.c{grid-column:span 2}.bento>.d{grid-column:span 4}}
+.cat{position:relative;border-radius:var(--radius);border:2px solid var(--border);display:flex;align-items:flex-end;padding:var(--s6);text-decoration:none;color:var(--text);min-height:180px;background:linear-gradient(150deg,#FDE7D6,#F5E0CC)}
+.bento>.b{background:linear-gradient(150deg,#E7EDE9,#DCE6E0)}
+.bento>.c{background:linear-gradient(150deg,#F6E7D9,#EBD8C4)}
+.bento>.d{background:linear-gradient(150deg,#F3E9DD,#E9D9C7)}
+.cat h3{margin:0;font-size:var(--fs-h3)}
+.cat p{margin:var(--s1) 0 0;font-size:var(--fs-sm);color:var(--muted)}
+.cat .arrow{position:absolute;top:var(--s4);inset-inline-end:var(--s4);width:44px;height:44px;border-radius:50%;background:var(--surface);border:1px solid var(--border);display:grid;place-items:center;font-weight:800;color:var(--primary)}
+.cat:hover .arrow{background:var(--primary);color:#fff;border-color:var(--primary)}
+
+/* products — W3 featured + compact list */
+.feature-grid{display:grid;gap:var(--s6)}
+@media(min-width:900px){.feature-grid{grid-template-columns:2fr 1fr}}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);overflow:hidden}
+.feature .thumb{aspect-ratio:4/3;background:linear-gradient(140deg,#F5E4D3,#E8D2BB);display:grid;place-items:center;color:var(--muted);font-weight:700}
+.feature .body{padding:var(--s6)}
+.list{display:grid;gap:var(--s4);align-content:start}
+.mini{display:flex;gap:var(--s4);padding:var(--s4);align-items:center;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius)}
+.mini .sw{width:72px;height:72px;border-radius:var(--radius-sm);flex:none;background:linear-gradient(140deg,#F0E0CE,#E2CDB6);display:grid;place-items:center;font-size:.7rem;color:var(--muted);font-weight:700;text-align:center}
+.mini:nth-child(2) .sw{background:linear-gradient(140deg,#E9EFEA,#D9E4DC)}
+.mini:nth-child(3) .sw{background:linear-gradient(140deg,#EFE8F0,#DED5E0)}
+.mini h3{font-size:var(--fs-base);margin:0 0 var(--s1)}
+.mini .price{margin:0;font-weight:800;color:var(--primary)}
+.mini .price small{color:var(--muted);font-weight:600;font-size:var(--fs-sm)}
+.tag{display:inline-block;font-size:.7rem;font-weight:800;padding:.2rem var(--s3);border-radius:var(--pill);background:var(--primary-soft);color:var(--primary);margin-bottom:var(--s2)}
+.p-cat{font-size:var(--fs-sm);color:var(--muted);margin:0 0 var(--s1)}
+.price-lg{font-size:var(--fs-h3);font-weight:800;margin:0 0 var(--s4)}
+.price-lg small{font-size:var(--fs-sm);color:var(--muted)}
+
+/* value strip */
+.value{background:var(--primary-soft);border-radius:var(--radius);padding:var(--s8) var(--s6)}
+.value ul{display:grid;gap:var(--s6);grid-template-columns:repeat(2,1fr);list-style:none;margin:0;padding:0}
+@media(min-width:900px){.value ul{grid-template-columns:repeat(4,1fr)}}
+.value li{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-sm);padding:var(--s4);font-weight:800}
+.value li span{display:block;font-weight:600;font-size:var(--fs-sm);color:var(--muted);margin-top:var(--s1)}
+
+/* editorial split reversed */
+.split{display:grid;gap:var(--s8);align-items:center}
+@media(min-width:900px){.split{grid-template-columns:1fr 1fr;gap:var(--s16)}}
+.split .media{aspect-ratio:4/3;border-radius:var(--radius);background:linear-gradient(135deg,#FDE7D6,#EADCC8);border:2px solid var(--border);display:grid;place-items:center;color:var(--muted);font-weight:700}
+.split.rev .media{order:-1}
+@media(min-width:900px){.split.rev .media{order:0}.split.rev .text{order:-1}}
+
+/* newsletter + footer */
+.news{background:var(--accent);color:#fff;border-radius:var(--radius);padding:var(--s12) var(--s8);text-align:center}
+.news h2{color:#fff}
+.news p{color:#D8ECEA;margin-inline:auto}
+.news form{display:flex;gap:var(--s3);flex-wrap:wrap;justify-content:center;max-width:520px;margin:var(--s6) auto 0}
+.news input{flex:1 1 220px;min-height:48px;border-radius:var(--pill);border:none;padding:0 var(--s4);font:inherit}
+.news .btn{background:var(--text);color:#fff}
+footer{border-top:1px solid var(--border);padding-block:var(--s8);color:var(--muted);font-size:var(--fs-sm);margin-top:var(--s16)}
+.footer-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--s4)}
+.footer-links{display:flex;gap:var(--s4);list-style:none;margin:0;padding:0}
+.footer-links a{text-decoration:none}
+.footer-links a:hover{color:var(--primary)}
+</style>
+</head>
+<body>
+
+<div class="announce">شحن مجاني فوق 1,500 ج.م · كاش عند الاستلام · متجر تجريبي (Demo)</div>
+
+<header class="site-header">
+  <nav class="container nav" aria-label="القائمة الرئيسية">
+    <a class="brand" href="#top">نيلاد<small>NILAD · DEMO</small></a>
+    <ul class="nav-links">
+      <li><a href="#cats">التصنيفات</a></li>
+      <li><a href="#best">الأكثر مبيعًا</a></li>
+      <li><a href="#story">حكايتنا</a></li>
+      <li><a href="#news">النشرة</a></li>
+    </ul>
+    <div class="nav-right">
+      <a class="cart" href="#cart" aria-label="السلة">🛒</a>
+      <a class="btn btn-primary" href="#best">اتسوّق</a>
+    </div>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">من القاهرة لكل مصر</p>
+        <h1>أزياء مريحة زي نيلاد — كل يوم، بلا تعقيد</h1>
+        <p class="lead">هدوم وإكسسوارات مختارة بذوق، بتدفع كاش عند الاستلام وبتوصل لكل المحافظات.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#best">ابدأ التسوق</a>
+          <a class="btn btn-ghost" href="#cats">شوف التصنيفات</a>
+        </div>
+        <ul class="proof"><li>كاش عند الاستلام</li><li>إرجاع 14 يوم</li><li>دفع آمن عبر Paymob</li></ul>
+      </div>
+      <div class="hero-photo" role="img" aria-label="صورة إطلالة (مكان مؤقت)">صورة الإطلالة
+        <div class="float">إطلالة الموسم · من 380 ج.م<span>متجر تجريبي — Demo</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cats">
+    <div class="container">
+      <div class="section-head"><p class="eyebrow">التصنيفات</p><h2>اختار مزاجك</h2></div>
+      <div class="bento">
+        <a class="cat a" href="#"><span class="arrow">←</span><div><h3>هدوم نسائي</h3><p>فساتين، عبايات، وقطع يومية</p></div></a>
+        <a class="cat b" href="#"><span class="arrow">←</span><div><h3>حقائب</h3><p>كتف ويود</p></div></a>
+        <a class="cat c" href="#"><span class="arrow">←</span><div><h3>ساعات</h3><p>كلاسيك</p></div></a>
+        <a class="cat d" href="#"><span class="arrow">←</span><div><h3>هدوم رجالي</h3><p>قمصان وتيشيرتات بقطن مريح</p></div></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="best">
+    <div class="container">
+      <div class="section-head"><p class="eyebrow">الأكثر مبيعًا</p><h2>بيحبّه الناس</h2><p class="lead">أرقام المبيعات الحقيقية هتظهر بعد أول طلبات فعلية — إحنا في الديمو مش بنختلق أرقام.</p></div>
+      <div class="feature-grid">
+        <article class="card feature">
+          <div class="thumb">صورة المنتج</div>
+          <div class="body">
+            <span class="tag">Demo · الأكثر طلبًا</span>
+            <p class="p-cat">فساتين</p>
+            <h3>فستان صيفي مطرّز</h3>
+            <p class="price-lg">1,650 <small>ج.م</small></p>
+            <a class="btn btn-primary" href="#">أضف للسلة</a>
+          </div>
+        </article>
+        <div class="list">
+          <article class="mini"><div class="sw">صورة</div><div><h3>حقيبة كتف جلد</h3><p class="price">1,890 <small>ج.م</small></p></div></article>
+          <article class="mini"><div class="sw">صورة</div><div><h3>ساعة كلاسيك</h3><p class="price">2,450 <small>ج.م</small></p></div></article>
+          <article class="mini"><div class="sw">صورة</div><div><h3>عباية كتان</h3><p class="price">1,250 <small>ج.م</small></p></div></article>
+          <article class="mini"><div class="sw">صورة</div><div><h3>شال كتان</h3><p class="price">380 <small>ج.م</small></p></div></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="value">
+        <ul>
+          <li>كاش عند الاستلام<span>تدفع لما تشوف الحاجة</span></li>
+          <li>شحن لكل المحافظات<span>2–5 أيام عمل</span></li>
+          <li>إرجاع خلال 14 يوم<span>الشروط في صفحة الإرجاع</span></li>
+          <li>دفع آمن<span>Paymob — وضع تجريبي في الديمو</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="story">
+    <div class="container split rev">
+      <div class="media">صورة الحكاية</div>
+      <div class="text">
+        <p class="eyebrow">حكايتنا</p>
+        <h2>اسم جاي من النيل، وذوق مصري بسيط</h2>
+        <p class="lead">نيلاد بيختار قطع تحسّها من غير ما تفكّر — جودة في القماش، وسعر واضح من غير مبالغة. (متجر تجريبي — Demo)</p>
+        <a class="btn btn-ghost" href="#">اتعرّف علينا أكتر</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="news">
+    <div class="container">
+      <div class="news">
+        <h2>خليك منّا أول</h2>
+        <p>قطعة جديدة وعرض مرة في الشهر — من غير رسائل مزعجة.</p>
+        <form action="#" method="post"><label style="position:absolute;inset-inline-start:-9999px" for="em3">بريدك</label><input id="em3" type="email" placeholder="بريدك الإلكتروني" required><button class="btn" type="submit">اشترك</button></form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <span>© 2026 نيلاد — متجر تجريبي (Demo) لا يبيع فعليًا</span>
+    <ul class="footer-links"><li><a href="#">الشحن والإرجاع</a></li><li><a href="#">الخصوصية</a></li><li><a href="#">تواصل معنا</a></li></ul>
+  </div>
+</footer>
+</body>
+</html>

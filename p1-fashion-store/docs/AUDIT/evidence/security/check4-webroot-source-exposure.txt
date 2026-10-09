@@ -1,0 +1,34 @@
+﻿/.git/ => 403
+/.git/HEAD => 200
+/.gitignore => 404
+/.wp-env.json => 404
+/package.json => 404
+/n8n/ => 404
+/scripts/seed.sh => 404
+/docs/PLAN.md => 404
+/README.md => 404
+/wp-content/plugins/nilad-core/nilad-core.php => 200
+/.git/config => 200
+/.git/index => 200
+/.git/refs/heads/master => 200
+/wp-includes/version.php => 200
+== /.git/HEAD body ==
+160387b7312c9407c7fe4b1d3dd2055206749a34
+== /.git/config keys (values redacted) ==
+section: core
+key: repositoryformatversion (value withheld)
+key: filemode (value withheld)
+key: bare (value withheld)
+key: logallrefupdates (value withheld)
+key: symlinks (value withheld)
+key: ignorecase (value withheld)
+section: remote "origin"
+key: url (value withheld)
+key: fetch (value withheld)
+key: promisor (value withheld)
+key: partialclonefilter (value withheld)
+section: branch "master"
+key: remote (value withheld)
+key: merge (value withheld)
+== PHP source disclosure check (wp-config.php body bytes) ==
+0

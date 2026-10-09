@@ -1,0 +1,202 @@
+=== A. WordPress / plugin / theme inventory ===
+7.1.3
+core installed: yes
+--- plugins ---
+name	status	update	version	update_version	auto_update
+hello	inactive	none	1.7.2		off
+siraj-core	active	none	0.1.0		off
+--- themes ---
+name	status	update	version	update_version	auto_update
+siraj-theme	active	none	0.1.0		off
+twentyeleven	inactive	none	5.2		off
+twentyfifteen	inactive	none	4.3		off
+twentyfourteen	inactive	none	4.6		off
+twentynineteen	inactive	none	3.4		off
+twentyseventeen	inactive	none	4.2		off
+twentysixteen	inactive	none	3.9		off
+twentyten	inactive	none	4.7		off
+twentythirteen	inactive	none	4.7		off
+twentytwelve	inactive	none	4.9		off
+twentytwenty	inactive	none	3.2		off
+twentytwentyfive	inactive	none	1.5		off
+twentytwentyfour	inactive	none	1.6		off
+twentytwentyone	inactive	none	2.9		off
+twentytwentythree	inactive	none	1.7		off
+twentytwentytwo	inactive	none	2.2		off
+--- users (login + roles only, no email/hash) ---
+ID	user_login	roles	display_name
+1	admin	administrator	admin
+--- options ---
+blogname=عيادة سِراج للأسنان
+users_can_register=0
+default_comment_status=open
+default_ping_status=open
+blog_public=1
+permalink_structure=/%postname%/
+WPLANG=ar
+template=siraj-theme
+stylesheet=siraj-theme
+timezone_string=
+gmt_offset=0
+
+=== B. wp-config constant NAMES (values withheld) ===
+name
+table_prefix
+configExtra
+DB_NAME
+DB_USER
+DB_PASSWORD
+DB_HOST
+DB_CHARSET
+DB_COLLATE
+AUTH_KEY
+SECURE_AUTH_KEY
+LOGGED_IN_KEY
+NONCE_KEY
+AUTH_SALT
+SECURE_AUTH_SALT
+LOGGED_IN_SALT
+NONCE_SALT
+FS_METHOD
+SCRIPT_DEBUG
+WP_ENVIRONMENT_TYPE
+WP_PHP_BINARY
+WP_TESTS_EMAIL
+WP_TESTS_TITLE
+WP_TESTS_DOMAIN
+WP_SITEURL
+WP_HOME
+WP_DEBUG
+
+=== C. security-relevant constants (non-secret values only) ===
+WP_DEBUG=true
+WP_DEBUG_DISPLAY=true
+WP_DEBUG_LOG=false
+SCRIPT_DEBUG=true
+DISALLOW_FILE_EDIT=UNDEFINED
+DISALLOW_FILE_MODS=UNDEFINED
+AUTOMATIC_UPDATER_DISABLED=UNDEFINED
+DISABLE_WP_CRON=UNDEFINED
+WP_AUTO_UPDATE_CORE=UNDEFINED
+WP_HTTP_BLOCK_EXTERNAL=UNDEFINED
+FORCE_SSL_ADMIN=false
+WP_ENVIRONMENT_TYPE='local'
+FS_METHOD='direct'
+WP_MEMORY_LIMIT='40M'
+WP_ALLOW_REPAIR=UNDEFINED
+EMPTY_TRASH_DAYS=30
+WP_POST_REVISIONS=true
+
+=== D. secret constants: DEFINED/UNDEFINED + length only (never the value) ===
+AUTH_KEY: DEFINED length=40 (value withheld)
+SECURE_AUTH_KEY: DEFINED length=40 (value withheld)
+LOGGED_IN_KEY: DEFINED length=40 (value withheld)
+NONCE_KEY: DEFINED length=40 (value withheld)
+AUTH_SALT: DEFINED length=40 (value withheld)
+SECURE_AUTH_SALT: DEFINED length=40 (value withheld)
+LOGGED_IN_SALT: DEFINED length=40 (value withheld)
+NONCE_SALT: DEFINED length=40 (value withheld)
+DB_NAME: DEFINED length=9 (value withheld)
+DB_USER: DEFINED length=4 (value withheld)
+DB_PASSWORD: DEFINED length=8 (value withheld)
+DB_HOST: DEFINED length=5 (value withheld)
+distinct-secret-values=8 duplicate-groups=0
+
+=== E. PHP ini security surface ===
+Loaded Configuration File => /usr/local/etc/php/php.ini
+Scan this dir for additional .ini files => /usr/local/etc/php/conf.d
+allow_url_fopen => On => On
+allow_url_include => Off => Off
+disable_functions => no value => no value
+display_errors => Off => Off
+error_reporting => 4343 => 4343
+expose_php => On => On
+log_errors => On => On
+open_basedir => no value => no value
+variables_order => EGPCS => EGPCS
+--- php version ---
+PHP 8.3.35 (cli) (built: Sep 25 2026 17:43:50) (NTS)
+Copyright (c) The PHP Group
+
+=== F. uploads / docroot inventory ===
+--- /var/www/html top level (dotfiles included) ---
+total 228
+drwxrwxrwx    1 root     root           512 Oct  6 08:04 .
+drwxr-xr-x    3 root     root          4096 Sep 25 17:42 ..
+drwxrwxrwx    1 root     root           512 Oct  7 01:12 .git
+-rw-r--r--    1 1000     1000           525 Oct  7 01:13 .htaccess
+-rwxrwxrwx    1 root     root           422 Oct  6 07:52 index.php
+-rwxrwxrwx    1 root     root         19903 Oct  6 07:52 license.txt
+-rwxrwxrwx    1 root     root          7505 Oct  6 07:52 readme.html
+-rwxrwxrwx    1 root     root          7938 Oct  6 07:53 wp-activate.php
+drwxrwxrwx    1 root     root           512 Oct  7 01:12 wp-admin
+-rwxrwxrwx    1 root     root           372 Oct  6 07:52 wp-blog-header.php
+-rw-r--r--    1 1000     1000            32 Oct  6 08:03 wp-cli.yml
+-rwxrwxrwx    1 root     root          2404 Oct  6 07:52 wp-comments-post.php
+-rwxrwxrwx    1 root     root          3339 Oct  6 07:52 wp-config-sample.php
+-rw-r--r--    1 1000     1000          6122 Oct  6 08:04 wp-config.php
+drwxrwxrwx    1 root     root           512 Oct  6 08:07 wp-content
+-rwxrwxrwx    1 root     root          5822 Oct  6 07:52 wp-cron.php
+drwxrwxrwx    1 root     root           512 Oct  7 01:12 wp-includes
+-rwxrwxrwx    1 root     root          2591 Oct  6 07:52 wp-links-opml.php
+-rwxrwxrwx    1 root     root          4042 Oct  6 07:52 wp-load.php
+-rwxrwxrwx    1 root     root         54216 Oct  6 07:53 wp-login.php
+-rwxrwxrwx    1 root     root          9003 Oct  6 07:53 wp-mail.php
+-rwxrwxrwx    1 root     root         33953 Oct  6 07:53 wp-settings.php
+-rwxrwxrwx    1 root     root         36144 Oct  6 07:53 wp-signup.php
+-rwxrwxrwx    1 root     root          5577 Oct  6 07:53 wp-trackback.php
+-rwxrwxrwx    1 root     root          3311 Oct  6 07:52 xmlrpc.php
+--- wp-content ---
+total 0
+drwxrwxrwx    1 root     root           512 Oct  6 08:07 .
+drwxrwxrwx    1 root     root           512 Oct  6 08:04 ..
+-rwxrwxrwx    1 root     root            30 Oct  6 07:52 index.php
+drwxrwxrwx    1 1000     1000           512 Oct  6 08:07 languages
+drwxrwxrwx    1 root     root           512 Oct  6 08:03 plugins
+drwxrwxrwx    1 root     root           512 Oct  6 08:03 themes
+drwxrwxrwx    1 1000     1000           512 Oct  6 08:07 upgrade
+drwxrwxrwx    1 1000     1000           512 Oct  6 08:03 uploads
+--- wp-content/plugins ---
+total 4
+drwxrwxrwx    1 root     root           512 Oct  6 08:03 .
+drwxrwxrwx    1 root     root           512 Oct  6 08:07 ..
+-rwxrwxrwx    1 root     root          2775 Oct  6 07:53 hello.php
+-rwxrwxrwx    1 root     root            30 Oct  6 07:52 index.php
+drwxrwxrwx    1 root     root           512 Oct  7 13:02 siraj-core
+--- uploads tree (depth 2) ---
+/var/www/html/wp-content/uploads
+/var/www/html/wp-content/uploads/2026
+/var/www/html/wp-content/uploads/2026/10
+--- .htaccess files anywhere under wp-content ---
+--- docroot .htaccess ---
+
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress--- any .php under uploads ---
+(end php-under-uploads list)
+
+=== G. file permissions of docroot ---
+drwxrwxrwx    1 root     root           512 Oct  6 08:04 /var/www/html
+drwxrwxrwx    1 root     root           512 Oct  6 08:07 /var/www/html/wp-content
+drwxrwxrwx    1 1000     1000           512 Oct  6 08:03 /var/www/html/wp-content/uploads
+
+=== H. installed plugin/theme headers on disk ===
+--- /var/www/html/wp-content/plugins/siraj-core/booking.php
+--- /var/www/html/wp-content/plugins/siraj-core/seed-wp.php
+--- /var/www/html/wp-content/plugins/siraj-core/siraj-core.php
+ * Plugin Name: Siraj Core
+ * Version: 0.1.0
+ * Requires at least: 6.5
+ * Requires PHP: 8.3

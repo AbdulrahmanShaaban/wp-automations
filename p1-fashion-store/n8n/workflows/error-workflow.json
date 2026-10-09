@@ -1,0 +1,79 @@
+{
+  "name": "Nilad: error → owner alert",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "e7a00001-0000-4000-8000-000000000001",
+      "name": "Error Trigger",
+      "type": "n8n-nodes-base.errorTrigger",
+      "typeVersion": 1,
+      "position": [
+        -160,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Nilad shared Error Workflow — build the owner Telegram alert (Arabic, PII-scrubbed, HTML-safe).\n// Env: TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID are consumed by the downstream HTTP Request node.\n// Input: Error Trigger item { json: { execution: { id, url, error?, lastNodeExecuted? },\n//   workflow: { id, name }, node?: { name }, error?: { message, description?, stack? } } }\n// Outputs ONLY: { tgText } — first line of the error, capped at 300 chars; no stack trace, no raw error, no PII.\nconst j = ($input.first() || {}).json || {};\nconst esc = (s) => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');\n\nconst exec = j.execution || {};\nconst wfName = (j.workflow && j.workflow.name) || 'unknown';\nconst nodeName = (j.node && j.node.name) || exec.lastNodeExecuted || 'unknown';\nconst execId = exec.id === undefined || exec.id === null || exec.id === '' ? 'unknown' : String(exec.id);\n\nconst errorSources = [j.error, exec.error, j.trigger && j.trigger.error].filter((e) => e && typeof e === 'object');\nconst pickText = (key) => {\n  for (let i = 0; i < errorSources.length; i++) {\n    const v = errorSources[i][key];\n    if (typeof v === 'string' && v.trim()) return v;\n  }\n  return '';\n};\nconst firstLine = (pickText('message') || pickText('description') || 'unknown error').split(/\\r?\\n/)[0].slice(0, 300);\n\nconst text = [\n  '⚠️ n8n: تنبيه فشل',\n  'الواجهة/Workflow: ' + wfName,\n  'العقدة/node: ' + nodeName,\n  'التنفيذ/execution: ' + execId,\n  'السبب: ' + firstLine,\n]\n  .join('\\n')\n  .replace(/[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}/g, '[email]')\n  .replace(/[0-9]{10,}/g, '[phone]');\n\nreturn [{ json: {\n    // n8n 2.41 blocks $env in node expressions (Code nodes may read it), so\n    // the Telegram HTTP node gets its credentials from this item instead.\n    tgToken: $env.TELEGRAM_BOT_TOKEN || '',\n    tgChatId: $env.TELEGRAM_CHAT_ID || '', tgText: esc(text) } }];"
+      },
+      "id": "e7a00001-0000-4000-8000-000000000002",
+      "name": "Format alert",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        60,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://api.telegram.org/bot{{ $json.tgToken }}/sendMessage",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ chat_id: $json.tgChatId, text: $json.tgText, parse_mode: 'HTML' }) }}",
+        "options": {}
+      },
+      "id": "e7a00001-0000-4000-8000-000000000003",
+      "name": "Telegram → owner",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        280,
+        0
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000
+    }
+  ],
+  "connections": {
+    "Error Trigger": {
+      "main": [
+        [
+          {
+            "node": "Format alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format alert": {
+      "main": [
+        [
+          {
+            "node": "Telegram → owner",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Africa/Cairo"
+  },
+  "pinData": {}
+}

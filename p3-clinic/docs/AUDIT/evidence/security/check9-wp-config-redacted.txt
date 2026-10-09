@@ -1,0 +1,55 @@
+=== A. wp-config.php defines (NAMES only, every literal replaced) ===
+44:define( '<REDACTED>', getenv_docker('<REDACTED>', '<REDACTED>') );
+47:define( '<REDACTED>', getenv_docker('<REDACTED>', '<REDACTED>') );
+50:define( '<REDACTED>', getenv_docker('<REDACTED>', '<REDACTED>') );
+59:define( '<REDACTED>', getenv_docker('<REDACTED>', '<REDACTED>') );
+62:define( '<REDACTED>', getenv_docker('<REDACTED>', '<REDACTED>') );
+65:define( '<REDACTED>', getenv_docker('<REDACTED>', '<REDACTED>') );
+78:define( '<REDACTED>',         getenv_docker('<REDACTED>',         '<REDACTED>') );
+79:define( '<REDACTED>',  getenv_docker('<REDACTED>',  '<REDACTED>') );
+80:define( '<REDACTED>',    getenv_docker('<REDACTED>',    '<REDACTED>') );
+81:define( '<REDACTED>',        getenv_docker('<REDACTED>',        '<REDACTED>') );
+82:define( '<REDACTED>',        getenv_docker('<REDACTED>',        '<REDACTED>') );
+83:define( '<REDACTED>', getenv_docker('<REDACTED>', '<REDACTED>') );
+84:define( '<REDACTED>',   getenv_docker('<REDACTED>',   '<REDACTED>') );
+85:define( '<REDACTED>',       getenv_docker('<REDACTED>',       '<REDACTED>') );
+116:define( '<REDACTED>', '<REDACTED>' );
+117:define( '<REDACTED>', true );
+118:define( '<REDACTED>', '<REDACTED>' );
+119:define( '<REDACTED>', '<REDACTED>' );
+120:define( '<REDACTED>', '<REDACTED>' );
+121:define( '<REDACTED>', '<REDACTED>' );
+122:define( '<REDACTED>', '<REDACTED>' );
+123:define( '<REDACTED>', '<REDACTED>' );
+124:define( '<REDACTED>', '<REDACTED>' );
+125:define( '<REDACTED>', true );
+144:	define( '<REDACTED>', __DIR__ . '<REDACTED>' );
+
+=== B. are the AUTH/SALT constants the wp-env FALLBACK literals (public, known) ? ===
+(method: compare the constant value against the literal fallback written in
+ wp-config.php; only MATCH / DIFFER is reported, never a value)
+AUTH_KEY           fallback-len=40  live-len=40  MATCH (live value IS the hardcoded fallback)
+SECURE_AUTH_KEY    fallback-len=40  live-len=40  MATCH (live value IS the hardcoded fallback)
+LOGGED_IN_KEY      fallback-len=40  live-len=40  MATCH (live value IS the hardcoded fallback)
+NONCE_KEY          fallback-len=40  live-len=40  MATCH (live value IS the hardcoded fallback)
+AUTH_SALT          fallback-len=40  live-len=40  MATCH (live value IS the hardcoded fallback)
+SECURE_AUTH_SALT   fallback-len=40  live-len=40  MATCH (live value IS the hardcoded fallback)
+LOGGED_IN_SALT     fallback-len=40  live-len=40  MATCH (live value IS the hardcoded fallback)
+NONCE_SALT         fallback-len=40  live-len=40  MATCH (live value IS the hardcoded fallback)
+DB_PASSWORD        fallback-len=16  live-len=8   DIFFER (live value came from the environment)
+
+=== C. is the fallback identical to a value published in the wp-env image? ===
+(no network; instead: how many of the 8 keys/salts share the SAME fallback)
+fallback-literals-found=8 distinct=8
+
+=== D. wp-config.php readable as a static file? ===
+-rw-r--r--    1 1000     1000          6122 Oct  6 08:04 /var/www/html/wp-config.php
+--- .htaccess protection of wp-config? ---
+(no wp-config rule in the docroot .htaccess)
+--- what Apache does with it: the httpd config has no <Files wp-config.php> deny,
+    so the request is handled by mod_php (executed, no source returned)
+
+=== E. wp-cli.yml in the docroot ===
+apache_modules:
+  - mod_rewrite
+-rw-r--r--    1 1000     1000            32 Oct  6 08:03 /var/www/html/wp-cli.yml

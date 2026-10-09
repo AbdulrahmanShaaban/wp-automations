@@ -1,0 +1,46 @@
+{
+ "startCount": 0,
+ "afterPointerClick": 1,
+ "reset1": {
+  "cleared": 200,
+  "was": 1,
+  "now": "n/a",
+  "status": 200
+ },
+ "afterEnterRaw": 0,
+ "eventsAfterEnterRaw": [
+  "keydown:Enter:0",
+  "keyup:Enter:0"
+ ],
+ "reset2": {
+  "cleared": true,
+  "was": 0
+ },
+ "afterEnterKeyDown": 1,
+ "eventsAfterEnterKeyDown": [
+  "keydown:Enter:0",
+  "keydown:Enter:0",
+  "click::0",
+  "click::0",
+  "keyup:Enter:0",
+  "keyup:Enter:0"
+ ],
+ "reset3": {
+  "cleared": 200,
+  "was": 1,
+  "now": "n/a",
+  "status": 200
+ },
+ "afterSpace": 1,
+ "eventsAfterSpace": [
+  "keydown: :0",
+  "keydown: :0",
+  "keydown: :0",
+  "keyup: :0",
+  "keyup: :0",
+  "keyup: :0",
+  "click::0",
+  "click::0",
+  "click::0"
+ ]
+}

@@ -1,0 +1,124 @@
+{
+  "generatedAt": "2026-10-08T03:32:33.292Z",
+  "pages": {
+    "404": {
+      "bytes": 63024,
+      "title": "الصفحة غير موجودة. &#8211; عيادة سِراج للأسنان",
+      "robots": "max-image-preview:large",
+      "canonical": null,
+      "canonicalCount": 0,
+      "h1Count": 1,
+      "h1Text": [
+        "الصفحة غير موجودة (404)"
+      ],
+      "metaDescription": null,
+      "ogCount": 0,
+      "jsonLdCount": 0,
+      "lang": "ar",
+      "dir": "rtl"
+    },
+    "author1": {
+      "bytes": 63160,
+      "title": "admin &#8211; عيادة سِراج للأسنان",
+      "robots": "max-image-preview:large",
+      "canonical": null,
+      "canonicalCount": 0,
+      "h1Count": 1,
+      "h1Text": [
+        "المقالات"
+      ],
+      "metaDescription": null,
+      "ogCount": 0,
+      "jsonLdCount": 0,
+      "lang": "ar",
+      "dir": "rtl"
+    },
+    "feed": {
+      "bytes": 927,
+      "title": "عيادة سِراج للأسنان",
+      "robots": null,
+      "canonical": null,
+      "canonicalCount": 0,
+      "h1Count": 0,
+      "h1Text": [],
+      "metaDescription": null,
+      "ogCount": 0,
+      "jsonLdCount": 0,
+      "lang": null,
+      "dir": null
+    },
+    "BOOK-uppercase": {
+      "bytes": 65055,
+      "title": "احجز زيارة &#8211; عيادة سِراج للأسنان",
+      "robots": "max-image-preview:large",
+      "canonical": "http://localhost:8889/book/",
+      "canonicalCount": 1,
+      "h1Count": 1,
+      "h1Text": [
+        "احجز زيارة"
+      ],
+      "metaDescription": null,
+      "ogCount": 0,
+      "jsonLdCount": 0,
+      "lang": "ar",
+      "dir": "rtl"
+    }
+  },
+  "siteChrome": {
+    "home": {
+      "ogTags": [],
+      "twitterTags": [],
+      "generator": [
+        "<meta name=\"generator\" content=\"WordPress 7.1.3\" />"
+      ],
+      "favicon": [
+        "<link rel=\"icon\" href=\"http://localhost:8889/wp-content/themes/siraj-theme/assets/img/favicon.svg\" type=\"image/svg+xml\">"
+      ],
+      "viewport": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />"
+    },
+    "services": {
+      "ogTags": [],
+      "twitterTags": [],
+      "generator": [
+        "<meta name=\"generator\" content=\"WordPress 7.1.3\" />"
+      ],
+      "favicon": [
+        "<link rel=\"icon\" href=\"http://localhost:8889/wp-content/themes/siraj-theme/assets/img/favicon.svg\" type=\"image/svg+xml\">"
+      ],
+      "viewport": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />"
+    },
+    "team": {
+      "ogTags": [],
+      "twitterTags": [],
+      "generator": [
+        "<meta name=\"generator\" content=\"WordPress 7.1.3\" />"
+      ],
+      "favicon": [
+        "<link rel=\"icon\" href=\"http://localhost:8889/wp-content/themes/siraj-theme/assets/img/favicon.svg\" type=\"image/svg+xml\">"
+      ],
+      "viewport": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />"
+    },
+    "contact": {
+      "ogTags": [],
+      "twitterTags": [],
+      "generator": [
+        "<meta name=\"generator\" content=\"WordPress 7.1.3\" />"
+      ],
+      "favicon": [
+        "<link rel=\"icon\" href=\"http://localhost:8889/wp-content/themes/siraj-theme/assets/img/favicon.svg\" type=\"image/svg+xml\">"
+      ],
+      "viewport": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />"
+    },
+    "book": {
+      "ogTags": [],
+      "twitterTags": [],
+      "generator": [
+        "<meta name=\"generator\" content=\"WordPress 7.1.3\" />"
+      ],
+      "favicon": [
+        "<link rel=\"icon\" href=\"http://localhost:8889/wp-content/themes/siraj-theme/assets/img/favicon.svg\" type=\"image/svg+xml\">"
+      ],
+      "viewport": "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\" />"
+    }
+  }
+}

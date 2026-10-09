@@ -1,0 +1,34 @@
+{
+  "session": "chrome-devtools MCP live pass",
+  "date": "2026-10-06",
+  "base": "http://localhost:8888",
+  "engine": "CDP live evaluation (not scripted run)",
+  "home": {
+    "when": "2026-10-06T12:11:24.296Z",
+    "viewport": { "w": 390, "h": 844, "mq899": true },
+    "nav390": { "display": "none", "links": 4, "headerMenuButtons": 0, "note": "max-width:899px hides .wp-block-navigation (style.css:45); overlayMenu:'never' in parts/header.html -> no toggle exists at <=899px" },
+    "nav1440": { "display": "flex", "checkedAt": "resize 1440x900", "screenshot": "screens/live-home-1440.png" },
+    "anchors": [
+      { "h": "#new", "exists": true },
+      { "h": "#cats", "exists": false },
+      { "h": "#best", "exists": false },
+      { "h": "#about", "exists": false }
+    ],
+    "linkPurpose": { "pBtn": { "text": "أضف للسلة", "href": "/shop/", "count": 8, "note": "front-page.html wp:html static cards; navigates to /shop/, no cart action; no JS handler found in theme" } },
+    "skipLink": { "focusedOnLoad": true, "rect": { "x": 5, "y": 5, "w": 475, "h": 61 }, "outline": "rgb(180, 83, 9) solid 3px", "note": "kb-test pre-focus 1x1 is an off-screen artifact; when focused it becomes a full-width visible target" },
+    "keyboardTabLive": ["skip-link", "site-title/cart link", "dock cart link (nav links display:none at 390)"],
+    "siteTitle": { "text": "نيلاد", "letterSpacing": "-0.18px", "rule": "style.css:37 letter-spacing:-.01em", "arabicRtlRule": "FAIL (must be 0 for Arabic)" },
+    "body": { "fontSize": "17px", "lineHeight": "28.9px", "ratio": 1.7, "textAlign": "start", "direction": "rtl" },
+    "doc": { "lang": "ar", "dir": "rtl", "serverRendered": true },
+    "fonts": { "cairo400": true, "cairo700": true, "note": "document.fonts loaded; Cairo 400/600/700 faces loaded (800 weight synthesized)" },
+    "h1Count": 1,
+    "bdiCount": 0,
+    "langEnCount": 0,
+    "demoBadge": { "html": "<span class=\"badge demo\">Demo</span>", "lang": null, "contrast": { "fg": "rgb(250, 248, 244)", "bg": "rgb(27, 26, 23)", "ratio": 16.41, "result": "PASS" } },
+    "tileSpan": { "text": "هدوم", "fg": "rgb(27, 26, 23)", "bgGradient": "linear-gradient(160deg, rgb(241, 235, 224), rgb(224, 214, 198))", "ratioVsDarkestStop": 12.1, "result": "PASS", "note": "axe color-contrast incomplete node; manual computation vs darkest gradient stop" },
+    "touchTargets390": { "pBtn": "206x44", "chip": "61.3x46", "siteTitle": "36.5x33", "dockLink": "171.5x50", "newsBtn": "95.5x48", "newsInput": "301x48", "heroCta": "148.3x57.5", "allGe24": true }
+  },
+  "getCssStyles": { "element": "h1.hero-title", "notes": ["style.css:57 clamp font-size -> 60px at 1440", "body line-height 1.7 inherited (global-styles)", "body.rtl classes server-rendered"] },
+  "screenshots": ["screens/live-home-1440.png", "screens/live-home-1024.png", "screens/live-home-390.png"],
+  "lighthouse": { "mode": "navigation", "device": "desktop", "accessibility": 100, "bestPractices": 100, "seo": 92, "report": "lighthouse/report.json", "note": "2 failed audits are SEO/binary (robots.txt, llms.txt), not accessibility" }
+}

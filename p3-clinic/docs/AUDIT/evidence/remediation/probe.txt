@@ -1,0 +1,96 @@
+﻿=== 1. security headers on 5 pages + login ===
+--- /
+  ok   x-content-type-options: nosniff
+  ok   x-frame-options: SAMEORIGIN
+  ok   referrer-policy: strict-origin-when-cross-origin
+  ok   permissions-policy: geolocation=(), microphone=(), camera=()
+  ok   content-security-policy: frame-ancestors 'self'
+  ok   x-powered-by absent
+--- /services/
+  ok   x-content-type-options: nosniff
+  ok   x-frame-options: SAMEORIGIN
+  ok   referrer-policy: strict-origin-when-cross-origin
+  ok   permissions-policy: geolocation=(), microphone=(), camera=()
+  ok   content-security-policy: frame-ancestors 'self'
+  ok   x-powered-by absent
+--- /team/
+  ok   x-content-type-options: nosniff
+  ok   x-frame-options: SAMEORIGIN
+  ok   referrer-policy: strict-origin-when-cross-origin
+  ok   permissions-policy: geolocation=(), microphone=(), camera=()
+  ok   content-security-policy: frame-ancestors 'self'
+  ok   x-powered-by absent
+--- /contact/
+  ok   x-content-type-options: nosniff
+  ok   x-frame-options: SAMEORIGIN
+  ok   referrer-policy: strict-origin-when-cross-origin
+  ok   permissions-policy: geolocation=(), microphone=(), camera=()
+  ok   content-security-policy: frame-ancestors 'self'
+  ok   x-powered-by absent
+--- /book/
+  ok   x-content-type-options: nosniff
+  ok   x-frame-options: SAMEORIGIN
+  ok   referrer-policy: strict-origin-when-cross-origin
+  ok   permissions-policy: geolocation=(), microphone=(), camera=()
+  ok   content-security-policy: frame-ancestors 'self'
+  ok   x-powered-by absent
+--- /wp-login.php
+  ok   x-content-type-options: nosniff
+  ok   x-frame-options: SAMEORIGIN
+  ok   referrer-policy: strict-origin-when-cross-origin
+  ok   permissions-policy: geolocation=(), microphone=(), camera=()
+  ok   content-security-policy: frame-ancestors 'self'
+  ok   x-powered-by absent
+=== 2. generator tag removed (home) ===
+PASS  no wp_generator meta
+PASS  og:image present
+PASS  twitter:card present
+PASS  meta description present
+PASS  JSON-LD Dentist present
+PASS  JSON-LD FAQPage present
+info  home title chars = 55  [╪╣┘è╪º╪»╪⌐ ╪│┘É╪▒╪º╪¼ ┘ä┘ä╪ú╪│┘å╪º┘å &#8211; ╪¡╪¼╪▓ ╪▓┘è╪º╪▒╪º╪¬ ┘ê╪╖╪¿ ╪ú╪│┘å╪º┘å (Demo)]
+PASS  home title <=60 chars
+=== 3. author enumeration -> 404 ===
+PASS  author=1 status (404)
+PASS  author/admin status (404)
+=== 4. xmlrpc blocked ===
+PASS  xmlrpc POST status (403)
+=== 5. REST users routes removed for anonymous ===
+PASS  users route status (404)
+PASS  users/1 route status (404)
+=== 6. REST CORS pinned (evil origin not reflected) ===
+PASS  evil origin reflected (0)
+PASS  own origin allowed (1)
+  PASS x-powered-by absent on REST
+=== 7. case-variant 301 ===
+info  /BOOK/ -> 301 http://localhost:8889/book/
+PASS  /BOOK/ 301 -> /book/
+=== 8. uploads/.htaccess guard written ===
+PASS  uploads/.htaccess exists
+      <FilesMatch "\.(php|phtml|phar|cgi|pl|py)$">
+        Require all denied
+      </FilesMatch>
+=== 9. WP_DEBUG_DISPLAY off ===
+PASS  WP_DEBUG_DISPLAY false (false)
+=== 10. per-page meta description + breadcrumb JSON-LD ===
+PASS  /services/ meta description
+PASS  /services/ BreadcrumbList
+PASS  /services/ og:url
+PASS  /team/ meta description
+PASS  /team/ BreadcrumbList
+PASS  /team/ og:url
+PASS  /contact/ meta description
+PASS  /contact/ BreadcrumbList
+PASS  /contact/ og:url
+PASS  /book/ meta description
+PASS  /book/ BreadcrumbList
+PASS  /book/ og:url
+=== 11. no .jpg references left in template ===
+PASS  jpg refs in template (0)
+info  webp refs = 4
+=== 12. header CTA points to /book/ ===
+info  nav CTA = href="/book/"
+PASS  nav CTA -> /book/
+info  header demo-badge lang=en count = 2
+
+SUMMARY: PASS=68 FAIL=0

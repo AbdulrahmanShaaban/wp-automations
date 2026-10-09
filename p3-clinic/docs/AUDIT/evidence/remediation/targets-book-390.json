@@ -1,0 +1,174 @@
+{
+ "page": "book",
+ "totalInteractive": 17,
+ "measured": 17,
+ "below24raw": 1,
+ "minW": 1,
+ "minH": 1,
+ "below24": [
+  {
+   "sel": "#wp-skip-link",
+   "tag": "a",
+   "text": "تخطى إلى المحتوى",
+   "w": 1,
+   "h": 1,
+   "x": 390,
+   "y": -4
+  }
+ ],
+ "all": [
+  {
+   "sel": "#wp-skip-link",
+   "tag": "a",
+   "text": "تخطى إلى المحتوى",
+   "w": 1,
+   "h": 1,
+   "x": 390,
+   "y": -4
+  },
+  {
+   "sel": "div.wp-site-blocks>div.wp-block-template-part>header.wp-block-group.site-header.has-global-padding>div.wp-block-group.container.nav>a.brand",
+   "tag": "a",
+   "text": "عيادة سِراج للأسنان Demo",
+   "w": 196.9,
+   "h": 34,
+   "x": 169,
+   "y": 14
+  },
+  {
+   "sel": "div.wp-block-template-part>header.wp-block-group.site-header.has-global-padding>div.wp-block-group.container.nav>nav.is-responsive.items-justified-center.wp-block-navigation>button.wp-block-navigation__responsive-container-open",
+   "tag": "button",
+   "text": "فتح القائمة",
+   "w": 24,
+   "h": 24,
+   "x": 126,
+   "y": 19
+  },
+  {
+   "sel": "header.wp-block-group.site-header.has-global-padding>div.wp-block-group.container.nav>div.wp-block-buttons.nav-actions.is-layout-flex>div.wp-block-button>a.wp-block-button__link.wp-element-button",
+   "tag": "a",
+   "text": "احجز زيارة",
+   "w": 83.5,
+   "h": 46.5,
+   "x": 24,
+   "y": 8
+  },
+  {
+   "sel": "#siraj-website-1",
+   "tag": "input",
+   "text": "",
+   "w": 34,
+   "h": 53.2,
+   "x": 308,
+   "y": 347
+  },
+  {
+   "sel": "#siraj-name-1",
+   "tag": "input",
+   "text": "",
+   "w": 292,
+   "h": 52,
+   "x": 49,
+   "y": 377
+  },
+  {
+   "sel": "#siraj-phone-1",
+   "tag": "input",
+   "text": "",
+   "w": 292,
+   "h": 52,
+   "x": 49,
+   "y": 485
+  },
+  {
+   "sel": "#siraj-service-1",
+   "tag": "select",
+   "text": "من فضلك اختر الخدمةتنظيف وتلميععلاج عصبح",
+   "w": 292,
+   "h": 52,
+   "x": 49,
+   "y": 641
+  },
+  {
+   "sel": "#siraj-date-1",
+   "tag": "input",
+   "text": "",
+   "w": 292,
+   "h": 52,
+   "x": 49,
+   "y": 749
+  },
+  {
+   "sel": "#siraj-notes-1",
+   "tag": "textarea",
+   "text": "",
+   "w": 292,
+   "h": 134.8,
+   "x": 49,
+   "y": 905
+  },
+  {
+   "sel": "#siraj-consent-1",
+   "tag": "input",
+   "text": "",
+   "w": 24,
+   "h": 24,
+   "x": 314,
+   "y": 1089
+  },
+  {
+   "sel": "div.siraj-booking>form>div.siraj-grid>div.siraj-actions>button.siraj-submit.btn.btn-primary",
+   "tag": "button",
+   "text": "إرسال الطلب",
+   "w": 161.7,
+   "h": 52,
+   "x": 179,
+   "y": 1142
+  },
+  {
+   "sel": "div.wp-site-blocks>div.wp-block-template-part>footer.wp-block-group.site-footer.has-global-padding>div.wp-block-group.container.footer-row>a.brand",
+   "tag": "a",
+   "text": "عيادة سِراج للأسنان",
+   "w": 202.9,
+   "h": 40,
+   "x": 163,
+   "y": 1276
+  },
+  {
+   "sel": "div.wp-block-template-part>footer.wp-block-group.site-footer.has-global-padding>div.wp-block-group.container.footer-row>p.wp-block-paragraph>a",
+   "tag": "a",
+   "text": "الخدمات",
+   "w": 52.2,
+   "h": 24,
+   "x": 314,
+   "y": 1395
+  },
+  {
+   "sel": "div.wp-block-template-part>footer.wp-block-group.site-footer.has-global-padding>div.wp-block-group.container.footer-row>p.wp-block-paragraph>a",
+   "tag": "a",
+   "text": "الفريق",
+   "w": 39.6,
+   "h": 24,
+   "x": 263,
+   "y": 1395
+  },
+  {
+   "sel": "div.wp-block-template-part>footer.wp-block-group.site-footer.has-global-padding>div.wp-block-group.container.footer-row>p.wp-block-paragraph>a",
+   "tag": "a",
+   "text": "تواصل",
+   "w": 41.5,
+   "h": 24,
+   "x": 211,
+   "y": 1395
+  },
+  {
+   "sel": "div.wp-block-template-part>footer.wp-block-group.site-footer.has-global-padding>div.wp-block-group.container.footer-row>p.wp-block-paragraph>a",
+   "tag": "a",
+   "text": "احجز زيارة",
+   "w": 56,
+   "h": 24,
+   "x": 144,
+   "y": 1395
+  }
+ ]
+}

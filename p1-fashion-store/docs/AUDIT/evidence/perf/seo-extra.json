@@ -1,0 +1,219 @@
+{
+  "checkoutInCart": {
+    "status": 200,
+    "chain": [
+      "http://localhost:8888/checkout/"
+    ],
+    "bytes": 447044,
+    "title": "إتمام الطلب &#8211; نيلاد",
+    "canonical": "http://localhost:8888/checkout/",
+    "robots": "max-image-preview:large, noindex, follow",
+    "ogImage": "http://localhost:8888/wp-content/uploads/2026/10/og-nilad.jpg",
+    "hasOrderSummary": true
+  },
+  "ogImages": {
+    "http://localhost:8888/wp-content/uploads/2026/10/og-nilad.jpg": {
+      "status": 200,
+      "contentType": "image/jpeg",
+      "contentLength": "31721",
+      "transfer": 30636,
+      "dims": null
+    },
+    "http://localhost:8888/wp-content/uploads/2026/10/abaya.jpg": {
+      "status": 200,
+      "contentType": "image/jpeg",
+      "contentLength": "25141",
+      "transfer": 24366,
+      "dims": null
+    }
+  },
+  "jsonLd": {
+    "home": [
+      [
+        {
+          "type": "Organization",
+          "name": "نيلاد",
+          "id": "http://localhost:8888/#organization"
+        },
+        {
+          "type": "WebSite",
+          "name": "نيلاد",
+          "id": "http://localhost:8888/#website"
+        }
+      ]
+    ],
+    "shop": [
+      [
+        {
+          "type": "Organization",
+          "name": "نيلاد",
+          "id": "http://localhost:8888/#organization"
+        },
+        {
+          "type": "WebSite",
+          "name": "نيلاد",
+          "id": "http://localhost:8888/#website"
+        }
+      ]
+    ],
+    "product": [
+      [
+        {
+          "type": "Organization",
+          "name": "نيلاد",
+          "id": "http://localhost:8888/#organization"
+        },
+        {
+          "type": "Product",
+          "name": "عباية كتان مطرّزة",
+          "id": "http://localhost:8888/product/embroidered-abaya/#product"
+        }
+      ],
+      [
+        {
+          "type": "Product",
+          "name": "عباية كتان مطرّزة",
+          "id": "http://localhost:8888/product/embroidered-abaya/#product"
+        }
+      ]
+    ],
+    "cart": [
+      [
+        {
+          "type": "Organization",
+          "name": "نيلاد",
+          "id": "http://localhost:8888/#organization"
+        }
+      ]
+    ],
+    "contact": [
+      [
+        {
+          "type": "Organization",
+          "name": "نيلاد",
+          "id": "http://localhost:8888/#organization"
+        }
+      ]
+    ]
+  },
+  "fonts": {
+    "home": {
+      "preconnect": [],
+      "dnsPrefetch": [
+        "//fonts.googleapis.com"
+      ],
+      "preloadFonts": [],
+      "fontStylesheets": [
+        "//fonts.googleapis.com",
+        "https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&#038;family=Inter:wght@400;600;800&#038;display=swap"
+      ],
+      "fontFacesInInlineCss": [],
+      "arabicFontsReferenced": [
+        "inherit"
+      ]
+    },
+    "product": {
+      "preconnect": [],
+      "dnsPrefetch": [
+        "//fonts.googleapis.com"
+      ],
+      "preloadFonts": [],
+      "fontStylesheets": [
+        "//fonts.googleapis.com",
+        "https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&#038;family=Inter:wght@400;600;800&#038;display=swap"
+      ],
+      "fontFacesInInlineCss": [],
+      "arabicFontsReferenced": [
+        "inherit"
+      ]
+    },
+    "cart": {
+      "preconnect": [],
+      "dnsPrefetch": [
+        "//fonts.googleapis.com"
+      ],
+      "preloadFonts": [],
+      "fontStylesheets": [
+        "//fonts.googleapis.com",
+        "https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&#038;family=Inter:wght@400;600;800&#038;display=swap"
+      ],
+      "fontFacesInInlineCss": [],
+      "arabicFontsReferenced": [
+        "inherit",
+        "serif"
+      ]
+    }
+  },
+  "homeLinks": {
+    "total": 14,
+    "sameOrigin": 11,
+    "hashAnchors": [
+      "#wp--skip-link--target",
+      "#cats"
+    ],
+    "brokenHashAnchors": [
+      "#cats"
+    ],
+    "sample": [
+      "http://localhost:8888",
+      "/#new",
+      "/#cats",
+      "/#best",
+      "/#about",
+      "/cart/",
+      "/shop/",
+      "/about/",
+      "/shipping-returns/",
+      "/privacy/",
+      "/contact/"
+    ]
+  },
+  "homeLinkStatus": {
+    "/": 200,
+    "/cart/": 200,
+    "/shop/": 200,
+    "/about/": 200,
+    "/shipping-returns/": 200,
+    "/privacy/": 200,
+    "/contact/": 200
+  },
+  "sitemap": {
+    "childCount": 6,
+    "urlCount": 28,
+    "urls": [
+      "http://localhost:8888/2026/10/01/hello-world/",
+      "http://localhost:8888/shop/",
+      "http://localhost:8888/cart/",
+      "http://localhost:8888/checkout/",
+      "http://localhost:8888/my-account/",
+      "http://localhost:8888/",
+      "http://localhost:8888/about/",
+      "http://localhost:8888/contact/",
+      "http://localhost:8888/shipping-returns/",
+      "http://localhost:8888/privacy/",
+      "http://localhost:8888/product/embroidered-abaya/",
+      "http://localhost:8888/product/leather-shoulder-bag/",
+      "http://localhost:8888/product/classic-metal-watch/",
+      "http://localhost:8888/product/classic-sunglasses/",
+      "http://localhost:8888/product/plain-cotton-shirt/",
+      "http://localhost:8888/product/linen-scarf/",
+      "http://localhost:8888/product/summer-embroidered-dress/",
+      "http://localhost:8888/product/oversized-cotton-tee/",
+      "http://localhost:8888/category/uncategorized/",
+      "http://localhost:8888/product-category/%d9%87%d8%af%d9%88%d9%85/",
+      "http://localhost:8888/product-category/%d9%82%d9%85%d8%b5%d8%a7%d9%86/",
+      "http://localhost:8888/product-category/%d9%81%d8%b3%d8%a7%d8%aa%d9%8a%d9%86/",
+      "http://localhost:8888/product-category/%d8%aa%d9%8a%d8%b4%d9%8a%d8%b1%d8%aa%d8%a7%d8%aa/",
+      "http://localhost:8888/product-category/%d8%ad%d9%82%d8%a7%d8%a6%d8%a8/",
+      "http://localhost:8888/product-category/%d8%b3%d8%a7%d8%b9%d8%a7%d8%aa/",
+      "http://localhost:8888/product-category/%d9%86%d8%b8%d8%a7%d8%b1%d8%a7%d8%aa/",
+      "http://localhost:8888/product-category/%d8%a3%d9%83%d8%b3%d8%b3%d9%88%d8%a7%d8%b1%d8%a7%d8%aa/",
+      "http://localhost:8888/author/admin/"
+    ],
+    "hasShop": true,
+    "hasContact": true,
+    "hasProduct": true,
+    "hasCart": true,
+    "hasUser": true
+  }
+}

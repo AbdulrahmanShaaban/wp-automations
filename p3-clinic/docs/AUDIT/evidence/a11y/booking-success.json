@@ -1,0 +1,10 @@
+{
+ "successPresent": true,
+ "role": "status",
+ "tabindex": "-1",
+ "text": "تم استلام طلبك، هنتواصل معاك لتأكيد الموعد.هذا نموذج تجريبي لا يمثّل أي عيادة حقيقية.",
+ "formGone": true,
+ "easternDigits": 0,
+ "latinDigits": 0,
+ "focusOn": "body.rtl wp-singular page-template-default page page-id-23 wp-embed-responsive wp-theme-siraj-theme"
+}

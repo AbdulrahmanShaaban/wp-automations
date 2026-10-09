@@ -1,0 +1,4304 @@
+{
+  "generatedAt": "2026-10-08T03:13:11.371Z",
+  "pages": [
+    {
+      "id": "home",
+      "url": "http://localhost:8889/",
+      "fetchedAt": "2026-10-08T03:09:59.236Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "perf": 85,
+        "a11y": 100,
+        "bp": 100,
+        "seo": 85
+      },
+      "simulated": {
+        "fcp": 1570,
+        "lcp": 1954,
+        "tbt": 222,
+        "cls": 0.04467660801924934,
+        "tti": 2327,
+        "si": 18911,
+        "ttfb": 12384
+      },
+      "observed": {
+        "ttfb": 0,
+        "fcp": 12926,
+        "lcp": 12926,
+        "cls": 0.04467660801924934,
+        "load": 13682,
+        "dcl": 12916,
+        "traceEnd": 17984,
+        "si": 12987
+      },
+      "totalByteWeight": {
+        "bytes": 470677,
+        "display": "Total size was 460 KiB"
+      },
+      "requests": 16,
+      "byType": {
+        "Document": {
+          "count": 1,
+          "transfer": 17701,
+          "resource": 73948
+        },
+        "Stylesheet": {
+          "count": 3,
+          "transfer": 11533,
+          "resource": 51910
+        },
+        "Script": {
+          "count": 5,
+          "transfer": 42788,
+          "resource": 165536
+        },
+        "Image": {
+          "count": 4,
+          "transfer": 335492,
+          "resource": 334335
+        },
+        "Font": {
+          "count": 2,
+          "transfer": 62064,
+          "resource": 61488
+        },
+        "Other": {
+          "count": 1,
+          "transfer": 1099,
+          "resource": 811
+        }
+      },
+      "docRequest": {
+        "transferSize": 17701,
+        "resourceSize": 73948,
+        "protocol": "http/1.1",
+        "cache": "none",
+        "totalMs": 12400415,
+        "startedAtMs": 1
+      },
+      "lcpElement": {
+        "selector": "section.hero > div.container > div.hero-text > h1",
+        "snippet": "<h1>",
+        "label": "أسنانك تستاهل عناية واضحة، بموعد يناسبك"
+      },
+      "lcpPhases": {
+        "timeToFirstByte": 12384,
+        "elementRenderDelay": 542
+      },
+      "renderBlocking": {
+        "items": 3,
+        "totalWastedMs": 1353,
+        "top": [
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+            "wastedMs": 501,
+            "bytes": 973
+          },
+          {
+            "url": "/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+            "wastedMs": 351,
+            "bytes": 4124
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+            "wastedMs": 501,
+            "bytes": 6436
+          }
+        ]
+      },
+      "clsSources": [
+        {
+          "score": 0.0447,
+          "node": "main#wp--skip-link--target > section.hero > div.container > aside.note",
+          "cause": "Web font loaded",
+          "moved": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2"
+        }
+      ],
+      "longTasks": [
+        {
+          "url": "/",
+          "durationMs": 571,
+          "startMs": 999
+        },
+        {
+          "url": "/",
+          "durationMs": 221,
+          "startMs": 1736
+        },
+        {
+          "url": "Unattributable",
+          "durationMs": 78,
+          "startMs": 2554
+        },
+        {
+          "url": "Unattributable",
+          "durationMs": 77,
+          "startMs": 1659
+        },
+        {
+          "url": "/",
+          "durationMs": 74,
+          "startMs": 1957
+        }
+      ],
+      "bootup": [
+        {
+          "url": "Unattributable",
+          "totalMs": 7280,
+          "scriptingMs": 135
+        },
+        {
+          "url": "/",
+          "totalMs": 1929,
+          "scriptingMs": 16
+        },
+        {
+          "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+          "totalMs": 52,
+          "scriptingMs": 37
+        }
+      ],
+      "slowestRequests": [
+        {
+          "url": "/",
+          "type": "Document",
+          "ttfbOrTotalMs": 12400415,
+          "transfer": 17701
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/photo-stilllife.jpg",
+          "type": "Image",
+          "ttfbOrTotalMs": 570748,
+          "transfer": 97944
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/photo-instruments.jpg",
+          "type": "Image",
+          "ttfbOrTotalMs": 566287,
+          "transfer": 112118
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/photo-implant.jpg",
+          "type": "Image",
+          "ttfbOrTotalMs": 565635,
+          "transfer": 124263
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+          "type": "Font",
+          "ttfbOrTotalMs": 551780,
+          "transfer": 30428
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+          "type": "Font",
+          "ttfbOrTotalMs": 550294,
+          "transfer": 31636
+        }
+      ],
+      "fontRequests": [
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+          "transfer": 30428,
+          "resource": 30140
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+          "transfer": 31636,
+          "resource": 31348
+        }
+      ],
+      "imageRequests": [
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/logo-mark.svg",
+          "transfer": 1167,
+          "resource": 879
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/photo-instruments.jpg",
+          "transfer": 112118,
+          "resource": 111828
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/photo-stilllife.jpg",
+          "transfer": 97944,
+          "resource": 97655
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/photo-implant.jpg",
+          "transfer": 124263,
+          "resource": 123973
+        }
+      ],
+      "failedSeo": [
+        {
+          "id": "meta-description",
+          "weight": 1,
+          "score": 0
+        },
+        {
+          "id": "robots-txt",
+          "weight": 1,
+          "score": 0
+        }
+      ],
+      "failedA11y": [],
+      "failedBp": [],
+      "failedPerf": [
+        {
+          "id": "total-blocking-time",
+          "weight": 30,
+          "score": 0.87
+        },
+        {
+          "id": "speed-index",
+          "weight": 10,
+          "score": 0
+        },
+        {
+          "id": "cache-insight",
+          "weight": 0,
+          "score": 0.5
+        },
+        {
+          "id": "document-latency-insight",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "forced-reflow-insight",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "image-delivery-insight",
+          "weight": 0,
+          "score": 0.5
+        },
+        {
+          "id": "lcp-breakdown-insight",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "weight": 0,
+          "score": 0.5
+        },
+        {
+          "id": "max-potential-fid",
+          "weight": 0,
+          "score": 0.59
+        },
+        {
+          "id": "unminified-javascript",
+          "weight": 0,
+          "score": 0.5
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "server-response-time",
+          "weight": 0,
+          "score": 0
+        }
+      ],
+      "insightDisplays": {
+        "cache-insight": {
+          "score": 0.5,
+          "display": "Est savings of 441 KiB"
+        },
+        "image-delivery-insight": {
+          "score": 0.5,
+          "display": "Est savings of 189 KiB"
+        },
+        "render-blocking-insight": {
+          "score": 0.5,
+          "display": null
+        },
+        "document-latency-insight": {
+          "score": 0,
+          "display": "Est savings of 12,270 ms"
+        },
+        "dom-size-insight": {
+          "score": 1,
+          "display": null
+        },
+        "font-display-insight": {
+          "score": 1,
+          "display": null
+        },
+        "forced-reflow-insight": {
+          "score": 0,
+          "display": null
+        },
+        "modern-http-insight": {
+          "score": 1,
+          "display": null
+        },
+        "third-parties-insight": {
+          "score": 1,
+          "display": null
+        },
+        "duplicated-javascript-insight": {
+          "score": 1,
+          "display": null
+        }
+      },
+      "thirdPartyHosts": [
+        "localhost:8889",
+        ""
+      ]
+    },
+    {
+      "id": "services",
+      "url": "http://localhost:8889/services/",
+      "fetchedAt": "2026-10-08T03:10:43.981Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "perf": 92,
+        "a11y": 98,
+        "bp": 100,
+        "seo": 83
+      },
+      "simulated": {
+        "fcp": 1222,
+        "lcp": 1608,
+        "tbt": 49,
+        "cls": 0.04468961911124914,
+        "tti": 1808,
+        "si": 7781,
+        "ttfb": 4858
+      },
+      "observed": {
+        "ttfb": 0,
+        "fcp": 5166,
+        "lcp": 5166,
+        "cls": 0.04468961911124914,
+        "load": 5359,
+        "dcl": 5170,
+        "traceEnd": 11860,
+        "si": 5184
+      },
+      "totalByteWeight": {
+        "bytes": 134015,
+        "display": "Total size was 131 KiB"
+      },
+      "requests": 13,
+      "byType": {
+        "Document": {
+          "count": 1,
+          "transfer": 15365,
+          "resource": 66091
+        },
+        "Stylesheet": {
+          "count": 3,
+          "transfer": 11533,
+          "resource": 51910
+        },
+        "Script": {
+          "count": 5,
+          "transfer": 42787,
+          "resource": 165536
+        },
+        "Image": {
+          "count": 1,
+          "transfer": 1167,
+          "resource": 879
+        },
+        "Font": {
+          "count": 2,
+          "transfer": 62064,
+          "resource": 61488
+        },
+        "Other": {
+          "count": 1,
+          "transfer": 1099,
+          "resource": 811
+        }
+      },
+      "docRequest": {
+        "transferSize": 15365,
+        "resourceSize": 66091,
+        "protocol": "http/1.1",
+        "cache": "none",
+        "totalMs": 4856035,
+        "startedAtMs": 2
+      },
+      "lcpElement": {
+        "selector": "div.wp-site-blocks > main#wp--skip-link--target > div.entry-content > p.lead",
+        "snippet": "<p class=\"lead wp-block-paragraph\">",
+        "label": "كل خدمة بسعرها ومدةها المتوقعة. التقييم النهائي بيحدده الفحص، وأي علاج بيبدأ بع…"
+      },
+      "lcpPhases": {
+        "timeToFirstByte": 4858,
+        "elementRenderDelay": 308
+      },
+      "renderBlocking": {
+        "items": 3,
+        "totalWastedMs": 1008,
+        "top": [
+          {
+            "url": "/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+            "wastedMs": 236,
+            "bytes": 4124
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+            "wastedMs": 386,
+            "bytes": 973
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+            "wastedMs": 386,
+            "bytes": 6436
+          }
+        ],
+        "auditDisplay": "Est savings of 50 ms"
+      },
+      "clsSources": [
+        {
+          "score": 0.0447,
+          "node": "div.wp-site-blocks > main#wp--skip-link--target > div.entry-content > p.wp-block-paragraph",
+          "cause": "Web font loaded; Web font loaded",
+          "moved": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2"
+        }
+      ],
+      "longTasks": [
+        {
+          "url": "/services/",
+          "durationMs": 293,
+          "startMs": 931
+        },
+        {
+          "url": "/services/",
+          "durationMs": 73,
+          "startMs": 1293
+        },
+        {
+          "url": "Unattributable",
+          "durationMs": 69,
+          "startMs": 1224
+        },
+        {
+          "url": "Unattributable",
+          "durationMs": 64,
+          "startMs": 1908
+        }
+      ],
+      "bootup": [
+        {
+          "url": "/services/",
+          "totalMs": 858,
+          "scriptingMs": 14
+        },
+        {
+          "url": "Unattributable",
+          "totalMs": 369,
+          "scriptingMs": 109
+        },
+        {
+          "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+          "totalMs": 72,
+          "scriptingMs": 59
+        }
+      ],
+      "slowestRequests": [
+        {
+          "url": "/services/",
+          "type": "Document",
+          "ttfbOrTotalMs": 4856035,
+          "transfer": 15365
+        },
+        {
+          "url": "blob:/702cc45c-01a0-464c-9189-46ef737076b4",
+          "type": "Script",
+          "ttfbOrTotalMs": 248452,
+          "transfer": -1
+        },
+        {
+          "url": "/wp-includes/js/dist/script-modules/block-library/navigation/view.js?ver=1bf28de",
+          "type": "Script",
+          "ttfbOrTotalMs": 149360,
+          "transfer": 1774
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+          "type": "Font",
+          "ttfbOrTotalMs": 133481,
+          "transfer": 30428
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+          "type": "Font",
+          "ttfbOrTotalMs": 132539,
+          "transfer": 31636
+        },
+        {
+          "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60f",
+          "type": "Script",
+          "ttfbOrTotalMs": 115128,
+          "transfer": 28051
+        }
+      ],
+      "fontRequests": [
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+          "transfer": 30428,
+          "resource": 30140
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+          "transfer": 31636,
+          "resource": 31348
+        }
+      ],
+      "imageRequests": [
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/logo-mark.svg",
+          "transfer": 1167,
+          "resource": 879
+        }
+      ],
+      "failedSeo": [
+        {
+          "id": "meta-description",
+          "weight": 1,
+          "score": 0
+        },
+        {
+          "id": "robots-txt",
+          "weight": 1,
+          "score": 0
+        }
+      ],
+      "failedA11y": [
+        {
+          "id": "heading-order",
+          "score": 0
+        }
+      ],
+      "failedBp": [],
+      "failedPerf": [
+        {
+          "id": "speed-index",
+          "weight": 10,
+          "score": 0.24
+        },
+        {
+          "id": "cache-insight",
+          "weight": 0,
+          "score": 0.5
+        },
+        {
+          "id": "document-latency-insight",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "forced-reflow-insight",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "lcp-breakdown-insight",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "max-potential-fid",
+          "weight": 0,
+          "score": 0.37
+        },
+        {
+          "id": "unminified-javascript",
+          "weight": 0,
+          "score": 0.5
+        },
+        {
+          "id": "server-response-time",
+          "weight": 0,
+          "score": 0
+        }
+      ],
+      "insightDisplays": {
+        "cache-insight": {
+          "score": 0.5,
+          "display": "Est savings of 115 KiB"
+        },
+        "image-delivery-insight": {
+          "score": 1,
+          "display": null
+        },
+        "render-blocking-insight": {
+          "score": 0,
+          "display": "Est savings of 50 ms"
+        },
+        "document-latency-insight": {
+          "score": 0,
+          "display": "Est savings of 4,750 ms"
+        },
+        "dom-size-insight": {
+          "score": 1,
+          "display": null
+        },
+        "font-display-insight": {
+          "score": 1,
+          "display": null
+        },
+        "forced-reflow-insight": {
+          "score": 0,
+          "display": null
+        },
+        "modern-http-insight": {
+          "score": 1,
+          "display": null
+        },
+        "third-parties-insight": {
+          "score": 1,
+          "display": null
+        },
+        "duplicated-javascript-insight": {
+          "score": 1,
+          "display": null
+        }
+      },
+      "thirdPartyHosts": [
+        "localhost:8889",
+        ""
+      ]
+    },
+    {
+      "id": "team",
+      "url": "http://localhost:8889/team/",
+      "fetchedAt": "2026-10-08T03:11:19.400Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "perf": 95,
+        "a11y": 98,
+        "bp": 100,
+        "seo": 83
+      },
+      "simulated": {
+        "fcp": 1237,
+        "lcp": 1630,
+        "tbt": 0,
+        "cls": 0.0002068168349249187,
+        "tti": 1630,
+        "si": 5759,
+        "ttfb": 3406
+      },
+      "observed": {
+        "ttfb": 0,
+        "fcp": 3744,
+        "lcp": 3744,
+        "cls": 0.0002068168349249187,
+        "load": 3894,
+        "dcl": 3769,
+        "traceEnd": 7603,
+        "si": 3760
+      },
+      "totalByteWeight": {
+        "bytes": 133765,
+        "display": "Total size was 131 KiB"
+      },
+      "requests": 13,
+      "byType": {
+        "Document": {
+          "count": 1,
+          "transfer": 15115,
+          "resource": 65235
+        },
+        "Stylesheet": {
+          "count": 3,
+          "transfer": 11533,
+          "resource": 51910
+        },
+        "Script": {
+          "count": 5,
+          "transfer": 42787,
+          "resource": 165536
+        },
+        "Image": {
+          "count": 1,
+          "transfer": 1167,
+          "resource": 879
+        },
+        "Font": {
+          "count": 2,
+          "transfer": 62064,
+          "resource": 61488
+        },
+        "Other": {
+          "count": 1,
+          "transfer": 1099,
+          "resource": 811
+        }
+      },
+      "docRequest": {
+        "transferSize": 15115,
+        "resourceSize": 65235,
+        "protocol": "http/1.1",
+        "cache": "none",
+        "totalMs": 3432860,
+        "startedAtMs": 1
+      },
+      "lcpElement": {
+        "selector": "div.wp-site-blocks > main#wp--skip-link--target > div.entry-content > p.lead",
+        "snippet": "<p class=\"lead wp-block-paragraph\">",
+        "label": "النموذج بيعرض التخصصات والأدوار بدون صور أشخاص — دور واضح لكل تخصص، من غير أسما…"
+      },
+      "lcpPhases": {
+        "timeToFirstByte": 3406,
+        "elementRenderDelay": 338
+      },
+      "renderBlocking": {
+        "items": 3,
+        "totalWastedMs": 1029,
+        "top": [
+          {
+            "url": "/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+            "wastedMs": 243,
+            "bytes": 4124
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+            "wastedMs": 393,
+            "bytes": 973
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+            "wastedMs": 393,
+            "bytes": 6436
+          }
+        ],
+        "auditDisplay": "Est savings of 100 ms"
+      },
+      "clsSources": [
+        {
+          "score": 0.0002,
+          "node": "body.rtl > div.wp-site-blocks > main#wp--skip-link--target > h1.wp-block-post-title",
+          "cause": "Web font loaded",
+          "moved": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2"
+        }
+      ],
+      "longTasks": [
+        {
+          "url": "/team/",
+          "durationMs": 251,
+          "startMs": 883
+        },
+        {
+          "url": "/team/",
+          "durationMs": 61,
+          "startMs": 1134
+        }
+      ],
+      "bootup": [
+        {
+          "url": "Unattributable",
+          "totalMs": 4919,
+          "scriptingMs": 110
+        },
+        {
+          "url": "/team/",
+          "totalMs": 764,
+          "scriptingMs": 6
+        }
+      ],
+      "slowestRequests": [
+        {
+          "url": "/team/",
+          "type": "Document",
+          "ttfbOrTotalMs": 3432860,
+          "transfer": 15115
+        },
+        {
+          "url": "blob:/e1e55c2a-1fde-49cb-bdfb-99c4b00375c8",
+          "type": "Script",
+          "ttfbOrTotalMs": 264082,
+          "transfer": -1
+        },
+        {
+          "url": "/wp-includes/js/dist/script-modules/block-library/navigation/view.js?ver=1bf28de",
+          "type": "Script",
+          "ttfbOrTotalMs": 187224,
+          "transfer": 1774
+        },
+        {
+          "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60f",
+          "type": "Script",
+          "ttfbOrTotalMs": 178667,
+          "transfer": 28051
+        },
+        {
+          "url": "/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+          "type": "Stylesheet",
+          "ttfbOrTotalMs": 163327,
+          "transfer": 4124
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+          "type": "Stylesheet",
+          "ttfbOrTotalMs": 147038,
+          "transfer": 973
+        }
+      ],
+      "fontRequests": [
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+          "transfer": 30428,
+          "resource": 30140
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+          "transfer": 31636,
+          "resource": 31348
+        }
+      ],
+      "imageRequests": [
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/logo-mark.svg",
+          "transfer": 1167,
+          "resource": 879
+        }
+      ],
+      "failedSeo": [
+        {
+          "id": "meta-description",
+          "weight": 1,
+          "score": 0
+        },
+        {
+          "id": "robots-txt",
+          "weight": 1,
+          "score": 0
+        }
+      ],
+      "failedA11y": [
+        {
+          "id": "heading-order",
+          "score": 0
+        }
+      ],
+      "failedBp": [],
+      "failedPerf": [
+        {
+          "id": "speed-index",
+          "weight": 10,
+          "score": 0.5
+        },
+        {
+          "id": "cache-insight",
+          "weight": 0,
+          "score": 0.5
+        },
+        {
+          "id": "document-latency-insight",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "forced-reflow-insight",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "lcp-breakdown-insight",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "unminified-javascript",
+          "weight": 0,
+          "score": 0.5
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "weight": 0,
+          "score": 0.5
+        },
+        {
+          "id": "server-response-time",
+          "weight": 0,
+          "score": 0
+        }
+      ],
+      "insightDisplays": {
+        "cache-insight": {
+          "score": 0.5,
+          "display": "Est savings of 115 KiB"
+        },
+        "image-delivery-insight": {
+          "score": 1,
+          "display": null
+        },
+        "render-blocking-insight": {
+          "score": 0,
+          "display": "Est savings of 100 ms"
+        },
+        "document-latency-insight": {
+          "score": 0,
+          "display": "Est savings of 3,280 ms"
+        },
+        "dom-size-insight": {
+          "score": 1,
+          "display": null
+        },
+        "font-display-insight": {
+          "score": 1,
+          "display": null
+        },
+        "forced-reflow-insight": {
+          "score": 0,
+          "display": null
+        },
+        "modern-http-insight": {
+          "score": 1,
+          "display": null
+        },
+        "third-parties-insight": {
+          "score": 1,
+          "display": null
+        },
+        "duplicated-javascript-insight": {
+          "score": 1,
+          "display": null
+        }
+      },
+      "thirdPartyHosts": [
+        "localhost:8889",
+        ""
+      ]
+    },
+    {
+      "id": "contact",
+      "url": "http://localhost:8889/contact/",
+      "fetchedAt": "2026-10-08T03:11:47.729Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "perf": 98,
+        "a11y": 100,
+        "bp": 100,
+        "seo": 92
+      },
+      "simulated": {
+        "fcp": 1247,
+        "lcp": 1697,
+        "tbt": 2,
+        "cls": 0.006706794920299064,
+        "tti": 1809,
+        "si": 3992,
+        "ttfb": 2217
+      },
+      "observed": {
+        "ttfb": 0,
+        "fcp": 2480,
+        "lcp": 2480,
+        "cls": 0.006706794920299064,
+        "load": 2669,
+        "dcl": 2488,
+        "traceEnd": 6001,
+        "si": 2495
+      },
+      "totalByteWeight": {
+        "bytes": 133542,
+        "display": "Total size was 130 KiB"
+      },
+      "requests": 13,
+      "byType": {
+        "Document": {
+          "count": 1,
+          "transfer": 14892,
+          "resource": 63781
+        },
+        "Stylesheet": {
+          "count": 3,
+          "transfer": 11533,
+          "resource": 51910
+        },
+        "Script": {
+          "count": 5,
+          "transfer": 42787,
+          "resource": 165536
+        },
+        "Image": {
+          "count": 1,
+          "transfer": 1167,
+          "resource": 879
+        },
+        "Font": {
+          "count": 2,
+          "transfer": 62064,
+          "resource": 61488
+        },
+        "Other": {
+          "count": 1,
+          "transfer": 1099,
+          "resource": 811
+        }
+      },
+      "docRequest": {
+        "transferSize": 14892,
+        "resourceSize": 63781,
+        "protocol": "http/1.1",
+        "cache": "none",
+        "totalMs": 2235052,
+        "startedAtMs": 1
+      },
+      "lcpElement": {
+        "selector": "div.wp-site-blocks > main#wp--skip-link--target > div.entry-content > p.lead",
+        "snippet": "<p class=\"lead wp-block-paragraph\">",
+        "label": "العنوان في وسط البلد، القاهرة، والمواعيد يوميًا من 10ص لـ9م."
+      },
+      "lcpPhases": {
+        "timeToFirstByte": 2217,
+        "elementRenderDelay": 262
+      },
+      "renderBlocking": {
+        "items": 3,
+        "totalWastedMs": 1047,
+        "top": [
+          {
+            "url": "/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+            "wastedMs": 249,
+            "bytes": 4124
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+            "wastedMs": 399,
+            "bytes": 973
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+            "wastedMs": 399,
+            "bytes": 6436
+          }
+        ],
+        "auditDisplay": "Est savings of 150 ms"
+      },
+      "clsSources": [
+        {
+          "score": 0.0067,
+          "node": "body.rtl > div.wp-site-blocks > main#wp--skip-link--target > h1.wp-block-post-title",
+          "cause": "Web font loaded",
+          "moved": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2"
+        },
+        {
+          "score": 0,
+          "node": "div.entry-content > ul.info-list > li > span.v",
+          "cause": null,
+          "moved": null
+        }
+      ],
+      "longTasks": [
+        {
+          "url": "/contact/",
+          "durationMs": 245,
+          "startMs": 858
+        },
+        {
+          "url": "Unattributable",
+          "durationMs": 53,
+          "startMs": 1847
+        },
+        {
+          "url": "/contact/",
+          "durationMs": 52,
+          "startMs": 1103
+        }
+      ],
+      "bootup": [
+        {
+          "url": "Unattributable",
+          "totalMs": 3690,
+          "scriptingMs": 102
+        },
+        {
+          "url": "/contact/",
+          "totalMs": 707,
+          "scriptingMs": 7
+        }
+      ],
+      "slowestRequests": [
+        {
+          "url": "/contact/",
+          "type": "Document",
+          "ttfbOrTotalMs": 2235052,
+          "transfer": 14892
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/logo-mark.svg",
+          "type": "Image",
+          "ttfbOrTotalMs": 198770,
+          "transfer": 1167
+        },
+        {
+          "url": "blob:/25f0963b-3553-49b8-adaa-c4df06d1c1db",
+          "type": "Script",
+          "ttfbOrTotalMs": 177024,
+          "transfer": -1
+        },
+        {
+          "url": "/wp-includes/js/dist/script-modules/block-library/navigation/view.js?ver=1bf28de",
+          "type": "Script",
+          "ttfbOrTotalMs": 162923,
+          "transfer": 1774
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+          "type": "Font",
+          "ttfbOrTotalMs": 153671,
+          "transfer": 30428
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+          "type": "Font",
+          "ttfbOrTotalMs": 153210,
+          "transfer": 31636
+        }
+      ],
+      "fontRequests": [
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+          "transfer": 30428,
+          "resource": 30140
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+          "transfer": 31636,
+          "resource": 31348
+        }
+      ],
+      "imageRequests": [
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/logo-mark.svg",
+          "transfer": 1167,
+          "resource": 879
+        }
+      ],
+      "failedSeo": [
+        {
+          "id": "meta-description",
+          "weight": 1,
+          "score": 0
+        }
+      ],
+      "failedA11y": [],
+      "failedBp": [],
+      "failedPerf": [
+        {
+          "id": "speed-index",
+          "weight": 10,
+          "score": 0.81
+        },
+        {
+          "id": "cache-insight",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "document-latency-insight",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "forced-reflow-insight",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "unminified-javascript",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "weight": 0,
+          "score": 0.5
+        },
+        {
+          "id": "server-response-time",
+          "weight": 0,
+          "score": 0
+        }
+      ],
+      "insightDisplays": {
+        "cache-insight": {
+          "score": 0,
+          "display": "Est savings of 115 KiB"
+        },
+        "image-delivery-insight": {
+          "score": 1,
+          "display": null
+        },
+        "render-blocking-insight": {
+          "score": 0,
+          "display": "Est savings of 150 ms"
+        },
+        "document-latency-insight": {
+          "score": 0,
+          "display": "Est savings of 2,100 ms"
+        },
+        "dom-size-insight": {
+          "score": 1,
+          "display": null
+        },
+        "font-display-insight": {
+          "score": 1,
+          "display": null
+        },
+        "forced-reflow-insight": {
+          "score": 0,
+          "display": null
+        },
+        "modern-http-insight": {
+          "score": 1,
+          "display": null
+        },
+        "third-parties-insight": {
+          "score": 1,
+          "display": null
+        },
+        "duplicated-javascript-insight": {
+          "score": 1,
+          "display": null
+        }
+      },
+      "thirdPartyHosts": [
+        "localhost:8889",
+        ""
+      ]
+    },
+    {
+      "id": "book",
+      "url": "http://localhost:8889/book/",
+      "fetchedAt": "2026-10-08T03:12:11.591Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "perf": 91,
+        "a11y": 100,
+        "bp": 100,
+        "seo": 83
+      },
+      "simulated": {
+        "fcp": 1222,
+        "lcp": 1609,
+        "tbt": 24,
+        "cls": 0.0023353170535447398,
+        "tti": 1835,
+        "si": 8685,
+        "ttfb": 5542
+      },
+      "observed": {
+        "ttfb": 0,
+        "fcp": 5817,
+        "lcp": 5817,
+        "cls": 0.0023353170535447398,
+        "load": 6038,
+        "dcl": 5828,
+        "traceEnd": 8890,
+        "si": 5842
+      },
+      "totalByteWeight": {
+        "bytes": 134199,
+        "display": "Total size was 131 KiB"
+      },
+      "requests": 14,
+      "byType": {
+        "Document": {
+          "count": 1,
+          "transfer": 15549,
+          "resource": 65055
+        },
+        "Stylesheet": {
+          "count": 3,
+          "transfer": 11533,
+          "resource": 51910
+        },
+        "Script": {
+          "count": 5,
+          "transfer": 42787,
+          "resource": 165536
+        },
+        "Image": {
+          "count": 2,
+          "transfer": 1167,
+          "resource": 1145
+        },
+        "Font": {
+          "count": 2,
+          "transfer": 62064,
+          "resource": 61488
+        },
+        "Other": {
+          "count": 1,
+          "transfer": 1099,
+          "resource": 811
+        }
+      },
+      "docRequest": {
+        "transferSize": 15549,
+        "resourceSize": 65055,
+        "protocol": "http/1.1",
+        "cache": "none",
+        "totalMs": 5541635,
+        "startedAtMs": 1
+      },
+      "lcpElement": {
+        "selector": "div.wp-site-blocks > main#wp--skip-link--target > div.entry-content > p.lead",
+        "snippet": "<p class=\"lead wp-block-paragraph\">",
+        "label": "املأ النموذج بالتوازي، والتأكيد بيتم بعد كده على واتساب أو اتصال. البيانات مش ب…"
+      },
+      "lcpPhases": {
+        "timeToFirstByte": 5542,
+        "elementRenderDelay": 275
+      },
+      "renderBlocking": {
+        "items": 3,
+        "totalWastedMs": 1008,
+        "top": [
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+            "wastedMs": 386,
+            "bytes": 973
+          },
+          {
+            "url": "/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+            "wastedMs": 236,
+            "bytes": 4124
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+            "wastedMs": 386,
+            "bytes": 6436
+          }
+        ],
+        "auditDisplay": "Est savings of 40 ms"
+      },
+      "clsSources": [
+        {
+          "score": 0.0017,
+          "node": "div.siraj-grid > div.siraj-field > label.siraj-label > span",
+          "cause": null,
+          "moved": null
+        },
+        {
+          "score": 0.0006,
+          "node": "body.rtl > div.wp-site-blocks > main#wp--skip-link--target > h1.wp-block-post-title",
+          "cause": "Web font loaded",
+          "moved": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2"
+        }
+      ],
+      "longTasks": [
+        {
+          "url": "/book/",
+          "durationMs": 294,
+          "startMs": 936
+        },
+        {
+          "url": "/book/",
+          "durationMs": 68,
+          "startMs": 1257
+        },
+        {
+          "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+          "durationMs": 57,
+          "startMs": 1909
+        },
+        {
+          "url": "Unattributable",
+          "durationMs": 55,
+          "startMs": 1966
+        },
+        {
+          "url": "Unattributable",
+          "durationMs": 52,
+          "startMs": 836
+        }
+      ],
+      "bootup": [
+        {
+          "url": "Unattributable",
+          "totalMs": 1263,
+          "scriptingMs": 106
+        },
+        {
+          "url": "/book/",
+          "totalMs": 875,
+          "scriptingMs": 10
+        },
+        {
+          "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+          "totalMs": 73,
+          "scriptingMs": 33
+        }
+      ],
+      "slowestRequests": [
+        {
+          "url": "/book/",
+          "type": "Document",
+          "ttfbOrTotalMs": 5541635,
+          "transfer": 15549
+        },
+        {
+          "url": "blob:/6e2433e9-a368-47da-82d5-43ec9cdfa9a6",
+          "type": "Script",
+          "ttfbOrTotalMs": 196427,
+          "transfer": -1
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+          "type": "Font",
+          "ttfbOrTotalMs": 191041,
+          "transfer": 31636
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+          "type": "Font",
+          "ttfbOrTotalMs": 190785,
+          "transfer": 30428
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/favicon.svg",
+          "type": "Other",
+          "ttfbOrTotalMs": 157780,
+          "transfer": 1099
+        },
+        {
+          "url": "/wp-includes/js/dist/script-modules/block-library/navigation/view.js?ver=1bf28de",
+          "type": "Script",
+          "ttfbOrTotalMs": 135441,
+          "transfer": 1774
+        }
+      ],
+      "fontRequests": [
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+          "transfer": 30428,
+          "resource": 30140
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+          "transfer": 31636,
+          "resource": 31348
+        }
+      ],
+      "imageRequests": [
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/logo-mark.svg",
+          "transfer": 1167,
+          "resource": 879
+        },
+        {
+          "url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ…",
+          "transfer": 0,
+          "resource": 266
+        }
+      ],
+      "failedSeo": [
+        {
+          "id": "meta-description",
+          "weight": 1,
+          "score": 0
+        },
+        {
+          "id": "robots-txt",
+          "weight": 1,
+          "score": 0
+        }
+      ],
+      "failedA11y": [],
+      "failedBp": [],
+      "failedPerf": [
+        {
+          "id": "speed-index",
+          "weight": 10,
+          "score": 0.16
+        },
+        {
+          "id": "cache-insight",
+          "weight": 0,
+          "score": 0.5
+        },
+        {
+          "id": "document-latency-insight",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "lcp-breakdown-insight",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "render-blocking-insight",
+          "weight": 0,
+          "score": 0
+        },
+        {
+          "id": "max-potential-fid",
+          "weight": 0,
+          "score": 0.37
+        },
+        {
+          "id": "unminified-javascript",
+          "weight": 0,
+          "score": 0.5
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "weight": 0,
+          "score": 0.5
+        },
+        {
+          "id": "server-response-time",
+          "weight": 0,
+          "score": 0
+        }
+      ],
+      "insightDisplays": {
+        "cache-insight": {
+          "score": 0.5,
+          "display": "Est savings of 115 KiB"
+        },
+        "image-delivery-insight": {
+          "score": 1,
+          "display": null
+        },
+        "render-blocking-insight": {
+          "score": 0,
+          "display": "Est savings of 40 ms"
+        },
+        "document-latency-insight": {
+          "score": 0,
+          "display": "Est savings of 5,430 ms"
+        },
+        "dom-size-insight": {
+          "score": 1,
+          "display": null
+        },
+        "font-display-insight": {
+          "score": 1,
+          "display": null
+        },
+        "forced-reflow-insight": {
+          "score": 1,
+          "display": null
+        },
+        "modern-http-insight": {
+          "score": 1,
+          "display": null
+        },
+        "third-parties-insight": {
+          "score": 1,
+          "display": null
+        },
+        "duplicated-javascript-insight": {
+          "score": 1,
+          "display": null
+        }
+      },
+      "thirdPartyHosts": [
+        "localhost:8889",
+        ""
+      ]
+    }
+  ],
+  "deepDive": {
+    "home": {
+      "insights": {
+        "cache-insight": {
+          "score": 0.5,
+          "displayValue": "Est savings of 441 KiB",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "Request"
+              },
+              {
+                "key": "cacheLifetimeMs",
+                "valueType": "ms",
+                "label": "Cache TTL",
+                "displayUnit": "duration"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size",
+                "displayUnit": "kb",
+                "granularity": 1
+              }
+            ],
+            "items": [
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/img/photo-implant.jpg",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 124263,
+                "wastedBytes": 124263
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/img/photo-instruments.jpg",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 112118,
+                "wastedBytes": 112118
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/img/photo-stilllife.jpg",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 97944,
+                "wastedBytes": 97944
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 31636,
+                "wastedBytes": 31636
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 30428,
+                "wastedBytes": 30428
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 28051,
+                "wastedBytes": 28051
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/twemoji.js?ver=7.1.3",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 9231,
+                "wastedBytes": 9231
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 6436,
+                "wastedBytes": 6436
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 4124,
+                "wastedBytes": 4124
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/wp-emoji.js?ver=7.1.3",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 3732,
+                "wastedBytes": 3732
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/dist/script-modules/block-library/navigation/view.js?ver=1bf28ded04f9f188bdcb",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 1774,
+                "wastedBytes": 1774
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/img/logo-mark.svg",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 1167,
+                "wastedBytes": 1167
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 973,
+                "wastedBytes": 973
+              }
+            ],
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "skipSumming": [
+              "cacheLifetimeMs"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 451877
+            }
+          }
+        },
+        "image-delivery-insight": {
+          "score": 0.5,
+          "displayValue": "Est savings of 189 KiB",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL",
+                "subItemsHeading": {
+                  "key": "reason",
+                  "valueType": "text"
+                }
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Resource Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings",
+                "subItemsHeading": {
+                  "key": "wastedBytes",
+                  "valueType": "bytes"
+                }
+              }
+            ],
+            "items": [
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-5-IMG",
+                  "path": "1,HTML,1,BODY,1,DIV,1,MAIN,2,SECTION,0,DIV,1,DIV,0,FIGURE,0,IMG",
+                  "selector": "div.container > div.photo-grid > figure.photo > img",
+                  "boundingRect": {
+                    "top": 3318,
+                    "bottom": 3622,
+                    "left": 25,
+                    "right": 365,
+                    "width": 340,
+                    "height": 304
+                  },
+                  "snippet": "<img src=\"/wp-content/themes/siraj-theme/assets/img/photo-instruments.jpg\" alt=\"أدوات تنظيف الأسنان مرتبة على سطح أبيض\" loading=\"lazy\" decoding=\"async\">",
+                  "nodeLabel": "أدوات تنظيف الأسنان مرتبة على سطح أبيض"
+                },
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/img/photo-instruments.jpg",
+                "totalBytes": 111828,
+                "wastedBytes": 71666,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "This image file is larger than it needs to be (1200x1073) for its displayed dimensions (680x680). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 71666
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-6-IMG",
+                  "path": "1,HTML,1,BODY,1,DIV,1,MAIN,2,SECTION,0,DIV,1,DIV,2,FIGURE,0,IMG",
+                  "selector": "div.container > div.photo-grid > figure.photo > img",
+                  "boundingRect": {
+                    "top": 3930,
+                    "bottom": 4233,
+                    "left": 25,
+                    "right": 365,
+                    "width": 340,
+                    "height": 304
+                  },
+                  "snippet": "<img src=\"/wp-content/themes/siraj-theme/assets/img/photo-implant.jpg\" alt=\"زرعة سن معدنية ممسوكة بقفاز أبيض\" loading=\"lazy\" decoding=\"async\">",
+                  "nodeLabel": "زرعة سن معدنية ممسوكة بقفاز أبيض"
+                },
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/img/photo-implant.jpg",
+                "totalBytes": 123973,
+                "wastedBytes": 68135,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "This image file is larger than it needs to be (1200x1069) for its displayed dimensions (680x850). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 68135
+                    }
+                  ]
+                }
+              },
+              {
+                "node": {
+                  "type": "node",
+                  "lhId": "page-7-IMG",
+                  "path": "1,HTML,1,BODY,1,DIV,1,MAIN,2,SECTION,0,DIV,1,DIV,1,FIGURE,0,IMG",
+                  "selector": "div.container > div.photo-grid > figure.photo > img",
+                  "boundingRect": {
+                    "top": 3624,
+                    "bottom": 3928,
+                    "left": 25,
+                    "right": 365,
+                    "width": 340,
+                    "height": 304
+                  },
+                  "snippet": "<img src=\"/wp-content/themes/siraj-theme/assets/img/photo-stilllife.jpg\" alt=\"مرآة فحص الأسنان وملقط معدني على سطح أبيض\" loading=\"lazy\" decoding=\"async\">",
+                  "nodeLabel": "مرآة فحص الأسنان وملقط معدني على سطح أبيض"
+                },
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/img/photo-stilllife.jpg",
+                "totalBytes": 97655,
+                "wastedBytes": 53816,
+                "subItems": {
+                  "type": "subitems",
+                  "items": [
+                    {
+                      "reason": "This image file is larger than it needs to be (1200x1073) for its displayed dimensions (680x850). Use responsive images to reduce the image download size.",
+                      "wastedBytes": 53816
+                    }
+                  ]
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 193617
+            }
+          }
+        },
+        "network-dependency-tree-insight": {
+          "score": 0,
+          "displayValue": null,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "list-section",
+                "value": {
+                  "type": "network-tree",
+                  "chains": {
+                    "7D772909D6AEE4018FAB2F777D8F7FAE": {
+                      "url": "http://localhost:8889/",
+                      "navStartToEndTime": 12415,
+                      "transferSize": 17701,
+                      "isLongest": true,
+                      "children": {
+                        "12884.4": {
+                          "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+                          "navStartToEndTime": 12604,
+                          "transferSize": 973,
+                          "isLongest": true,
+                          "children": {
+                            "12884.17": {
+                              "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+                              "navStartToEndTime": 13619,
+                              "transferSize": 30428,
+                              "isLongest": true,
+                              "children": {}
+                            },
+                            "12884.16": {
+                              "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+                              "navStartToEndTime": 13500,
+                              "transferSize": 31636,
+                              "children": {}
+                            }
+                          }
+                        },
+                        "12884.2": {
+                          "url": "http://localhost:8889/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+                          "navStartToEndTime": 12563,
+                          "transferSize": 4124,
+                          "children": {}
+                        },
+                        "12884.5": {
+                          "url": "http://localhost:8889/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+                          "navStartToEndTime": 12526,
+                          "transferSize": 6436,
+                          "children": {}
+                        }
+                      }
+                    }
+                  },
+                  "longestChain": {
+                    "duration": 13619
+                  }
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnected origins",
+                "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+                "value": {
+                  "type": "text",
+                  "value": "no origins were preconnected"
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnect candidates",
+                "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+                "value": {
+                  "type": "text",
+                  "value": "No additional origins are good candidates for preconnecting"
+                }
+              }
+            ]
+          }
+        },
+        "document-latency-insight": {
+          "score": 0,
+          "displayValue": "Est savings of 12,270 ms",
+          "details": {
+            "type": "checklist",
+            "items": {
+              "noRedirects": {
+                "label": "Avoids redirects",
+                "value": true
+              },
+              "serverResponseIsFast": {
+                "label": "Server responded slowly (observed 12370 ms)",
+                "value": false
+              },
+              "usesCompression": {
+                "label": "Applies text compression",
+                "value": true
+              }
+            },
+            "debugData": {
+              "type": "debugdata",
+              "redirectDuration": 0,
+              "serverResponseTime": 12370,
+              "uncompressedResponseBytes": 0,
+              "wastedBytes": 0
+            }
+          }
+        },
+        "dom-size-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "statistic",
+                "valueType": "text",
+                "label": "Statistic"
+              },
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              },
+              {
+                "key": "value",
+                "valueType": "numeric",
+                "label": "Value"
+              }
+            ],
+            "items": [
+              {
+                "statistic": "Total elements",
+                "value": {
+                  "type": "numeric",
+                  "granularity": 1,
+                  "value": 256
+                }
+              },
+              {
+                "statistic": "DOM depth",
+                "node": {
+                  "type": "node",
+                  "lhId": "page-10-SPAN",
+                  "path": "1,HTML,1,BODY,1,DIV,0,DIV,0,HEADER,0,DIV,1,NAV,1,DIV,0,DIV,0,DIV,1,DIV,0,UL,0,LI,0,A,0,SPAN",
+                  "selector": "ul.wp-block-navigation__container > li.wp-block-navigation-item > a.wp-block-navigation-item__content > span.wp-block-navigation-item__label",
+                  "boundingRect": {
+                    "top": 0,
+                    "bottom": 0,
+                    "left": 0,
+                    "right": 0,
+                    "width": 0,
+                    "height": 0
+                  },
+                  "snippet": "<span class=\"wp-block-navigation-item__label\">",
+                  "nodeLabel": "الخدمات"
+                },
+                "value": {
+                  "type": "numeric",
+                  "granularity": 1,
+                  "value": 14
+                }
+              },
+              {
+                "statistic": "Most children",
+                "node": {
+                  "type": "node",
+                  "lhId": "page-9-MAIN",
+                  "path": "1,HTML,1,BODY,1,DIV,1,MAIN",
+                  "selector": "body.rtl > div.wp-site-blocks > main#wp--skip-link--target",
+                  "boundingRect": {
+                    "top": 93,
+                    "bottom": 8205,
+                    "left": 0,
+                    "right": 390,
+                    "width": 390,
+                    "height": 8112
+                  },
+                  "snippet": "<main id=\"wp--skip-link--target\" class=\"wp-block-group site-main is-layout-flow wp-block-group-is-layout-flow\">",
+                  "nodeLabel": "نموذج تجريبي · لا يمثّل أي عيادة حقيقية\n\nأسنانك تستاهل عناية واضحة، بموعد يناسبك…"
+                },
+                "value": {
+                  "type": "numeric",
+                  "granularity": 1,
+                  "value": 8
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "totalElements": 256,
+              "maxChildren": 8,
+              "maxDepth": 14
+            }
+          }
+        },
+        "font-display-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "ms",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [],
+            "skipSumming": [
+              "wastedMs"
+            ]
+          }
+        },
+        "forced-reflow-insight": {
+          "score": 0,
+          "displayValue": null,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "source",
+                    "valueType": "source-location",
+                    "label": "Source"
+                  },
+                  {
+                    "key": "reflowTime",
+                    "valueType": "ms",
+                    "granularity": 1,
+                    "label": "Total reflow time"
+                  }
+                ],
+                "items": [
+                  {
+                    "source": {
+                      "type": "text",
+                      "value": "[unattributed]"
+                    },
+                    "reflowTime": 402.889
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "cls-culprits-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "node",
+                    "valueType": "node",
+                    "subItemsHeading": {
+                      "key": "extra"
+                    },
+                    "label": "Element"
+                  },
+                  {
+                    "key": "score",
+                    "valueType": "numeric",
+                    "subItemsHeading": {
+                      "key": "cause",
+                      "valueType": "text"
+                    },
+                    "granularity": 0.001,
+                    "label": "Layout shift score"
+                  }
+                ],
+                "items": [
+                  {
+                    "node": {
+                      "type": "text",
+                      "value": "Total"
+                    },
+                    "score": 0.04467660801924934
+                  },
+                  {
+                    "node": {
+                      "type": "node",
+                      "lhId": "page-1-ASIDE",
+                      "path": "1,HTML,1,BODY,1,DIV,1,MAIN,0,SECTION,0,DIV,1,ASIDE",
+                      "selector": "main#wp--skip-link--target > section.hero > div.container > aside.note",
+                      "boundingRect": {
+                        "top": 711,
+                        "bottom": 1193,
+                        "left": 24,
+                        "right": 366,
+                        "width": 342,
+                        "height": 483
+                      },
+                      "snippet": "<aside class=\"note paper\" aria-label=\"توضيح نظام الحجز\">",
+                      "nodeLabel": "RX—001\nملاحظات الزيارة\nفحص وتشخيص\n20 دقيقة\nأشعة عند الحاجة\n15 دقيقة\nتنظيف وتلمي…"
+                    },
+                    "score": 0.04467660801924934,
+                    "subItems": {
+                      "type": "subitems",
+                      "items": [
+                        {
+                          "extra": {
+                            "type": "url",
+                            "value": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2"
+                          },
+                          "cause": "Web font"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "duplicated-javascript-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "code",
+                "subItemsHeading": {
+                  "key": "url",
+                  "valueType": "url"
+                },
+                "label": "Source"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "subItemsHeading": {
+                  "key": "sourceTransferBytes"
+                },
+                "granularity": 10,
+                "label": "Duplicated bytes"
+              }
+            ],
+            "items": [],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 0
+            }
+          }
+        }
+      }
+    },
+    "services": {
+      "insights": {
+        "cache-insight": {
+          "score": 0.5,
+          "displayValue": "Est savings of 115 KiB",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "Request"
+              },
+              {
+                "key": "cacheLifetimeMs",
+                "valueType": "ms",
+                "label": "Cache TTL",
+                "displayUnit": "duration"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size",
+                "displayUnit": "kb",
+                "granularity": 1
+              }
+            ],
+            "items": [
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 31636,
+                "wastedBytes": 31636
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 30428,
+                "wastedBytes": 30428
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 28051,
+                "wastedBytes": 28051
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/twemoji.js?ver=7.1.3",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 9230,
+                "wastedBytes": 9230
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 6436,
+                "wastedBytes": 6436
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 4124,
+                "wastedBytes": 4124
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/wp-emoji.js?ver=7.1.3",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 3732,
+                "wastedBytes": 3732
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/dist/script-modules/block-library/navigation/view.js?ver=1bf28ded04f9f188bdcb",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 1774,
+                "wastedBytes": 1774
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/img/logo-mark.svg",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 1167,
+                "wastedBytes": 1167
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 973,
+                "wastedBytes": 973
+              }
+            ],
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "skipSumming": [
+              "cacheLifetimeMs"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 117551
+            }
+          }
+        },
+        "image-delivery-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL",
+                "subItemsHeading": {
+                  "key": "reason",
+                  "valueType": "text"
+                }
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Resource Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings",
+                "subItemsHeading": {
+                  "key": "wastedBytes",
+                  "valueType": "bytes"
+                }
+              }
+            ],
+            "items": [],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 0
+            }
+          }
+        },
+        "network-dependency-tree-insight": {
+          "score": 0,
+          "displayValue": null,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "list-section",
+                "value": {
+                  "type": "network-tree",
+                  "chains": {
+                    "6BA6D108D8555A994EB63043CBE70402": {
+                      "url": "http://localhost:8889/services/",
+                      "navStartToEndTime": 4886,
+                      "transferSize": 15365,
+                      "isLongest": true,
+                      "children": {
+                        "10784.3": {
+                          "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+                          "navStartToEndTime": 4992,
+                          "transferSize": 973,
+                          "isLongest": true,
+                          "children": {
+                            "10784.12": {
+                              "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+                              "navStartToEndTime": 5358,
+                              "transferSize": 30428,
+                              "isLongest": true,
+                              "children": {}
+                            },
+                            "10784.11": {
+                              "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+                              "navStartToEndTime": 5358,
+                              "transferSize": 31636,
+                              "children": {}
+                            }
+                          }
+                        },
+                        "10784.2": {
+                          "url": "http://localhost:8889/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+                          "navStartToEndTime": 4993,
+                          "transferSize": 4124,
+                          "children": {}
+                        },
+                        "10784.4": {
+                          "url": "http://localhost:8889/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+                          "navStartToEndTime": 4945,
+                          "transferSize": 6436,
+                          "children": {}
+                        }
+                      }
+                    }
+                  },
+                  "longestChain": {
+                    "duration": 5358
+                  }
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnected origins",
+                "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+                "value": {
+                  "type": "text",
+                  "value": "no origins were preconnected"
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnect candidates",
+                "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+                "value": {
+                  "type": "text",
+                  "value": "No additional origins are good candidates for preconnecting"
+                }
+              }
+            ]
+          }
+        },
+        "document-latency-insight": {
+          "score": 0,
+          "displayValue": "Est savings of 4,750 ms",
+          "details": {
+            "type": "checklist",
+            "items": {
+              "noRedirects": {
+                "label": "Avoids redirects",
+                "value": true
+              },
+              "serverResponseIsFast": {
+                "label": "Server responded slowly (observed 4848 ms)",
+                "value": false
+              },
+              "usesCompression": {
+                "label": "Applies text compression",
+                "value": true
+              }
+            },
+            "debugData": {
+              "type": "debugdata",
+              "redirectDuration": 0,
+              "serverResponseTime": 4848,
+              "uncompressedResponseBytes": 0,
+              "wastedBytes": 0
+            }
+          }
+        },
+        "dom-size-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "statistic",
+                "valueType": "text",
+                "label": "Statistic"
+              },
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              },
+              {
+                "key": "value",
+                "valueType": "numeric",
+                "label": "Value"
+              }
+            ],
+            "items": [
+              {
+                "statistic": "Total elements",
+                "value": {
+                  "type": "numeric",
+                  "granularity": 1,
+                  "value": 71
+                }
+              },
+              {
+                "statistic": "DOM depth",
+                "node": {
+                  "type": "node",
+                  "lhId": "page-7-SPAN",
+                  "path": "1,HTML,1,BODY,1,DIV,0,DIV,0,HEADER,0,DIV,1,NAV,1,DIV,0,DIV,0,DIV,1,DIV,0,UL,0,LI,0,A,0,SPAN",
+                  "selector": "ul.wp-block-navigation__container > li.wp-block-navigation-item > a.wp-block-navigation-item__content > span.wp-block-navigation-item__label",
+                  "boundingRect": {
+                    "top": 0,
+                    "bottom": 0,
+                    "left": 0,
+                    "right": 0,
+                    "width": 0,
+                    "height": 0
+                  },
+                  "snippet": "<span class=\"wp-block-navigation-item__label\">",
+                  "nodeLabel": "الخدمات"
+                },
+                "value": {
+                  "type": "numeric",
+                  "granularity": 1,
+                  "value": 14
+                }
+              },
+              {
+                "statistic": "Most children",
+                "node": {
+                  "type": "node",
+                  "lhId": "page-6-DIV",
+                  "path": "1,HTML,1,BODY,1,DIV,1,MAIN,1,DIV",
+                  "selector": "body.rtl > div.wp-site-blocks > main#wp--skip-link--target > div.entry-content",
+                  "boundingRect": {
+                    "top": 167,
+                    "bottom": 1341,
+                    "left": 24,
+                    "right": 366,
+                    "width": 342,
+                    "height": 1174
+                  },
+                  "snippet": "<div class=\"entry-content wp-block-post-content is-layout-flow wp-block-post-content-i…\">",
+                  "nodeLabel": "كل خدمة بسعرها ومدةها المتوقعة. التقييم النهائي بيحدده الفحص، وأي علاج بيبدأ بع…"
+                },
+                "value": {
+                  "type": "numeric",
+                  "granularity": 1,
+                  "value": 15
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "totalElements": 71,
+              "maxChildren": 15,
+              "maxDepth": 14
+            }
+          }
+        },
+        "font-display-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "ms",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [],
+            "skipSumming": [
+              "wastedMs"
+            ]
+          }
+        },
+        "forced-reflow-insight": {
+          "score": 0,
+          "displayValue": null,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "source",
+                    "valueType": "source-location",
+                    "label": "Source"
+                  },
+                  {
+                    "key": "reflowTime",
+                    "valueType": "ms",
+                    "granularity": 1,
+                    "label": "Total reflow time"
+                  }
+                ],
+                "items": [
+                  {
+                    "source": {
+                      "type": "text",
+                      "value": "[unattributed]"
+                    },
+                    "reflowTime": 167.665
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "cls-culprits-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "node",
+                    "valueType": "node",
+                    "subItemsHeading": {
+                      "key": "extra"
+                    },
+                    "label": "Element"
+                  },
+                  {
+                    "key": "score",
+                    "valueType": "numeric",
+                    "subItemsHeading": {
+                      "key": "cause",
+                      "valueType": "text"
+                    },
+                    "granularity": 0.001,
+                    "label": "Layout shift score"
+                  }
+                ],
+                "items": [
+                  {
+                    "node": {
+                      "type": "text",
+                      "value": "Total"
+                    },
+                    "score": 0.04468961911124914
+                  },
+                  {
+                    "node": {
+                      "type": "node",
+                      "lhId": "page-2-P",
+                      "path": "1,HTML,1,BODY,1,DIV,1,MAIN,1,DIV,4,P",
+                      "selector": "div.wp-site-blocks > main#wp--skip-link--target > div.entry-content > p.wp-block-paragraph",
+                      "boundingRect": {
+                        "top": 528,
+                        "bottom": 610,
+                        "left": 24,
+                        "right": 366,
+                        "width": 342,
+                        "height": 82
+                      },
+                      "snippet": "<p class=\"wp-block-paragraph\">",
+                      "nodeLabel": "إزالة الجير وتلميع الأسنان، مع نصايح عن العناية المنزلية بعد الجلسة. المدة: 45 …"
+                    },
+                    "score": 0.04468961911124914,
+                    "subItems": {
+                      "type": "subitems",
+                      "items": [
+                        {
+                          "extra": {
+                            "type": "url",
+                            "value": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2"
+                          },
+                          "cause": "Web font"
+                        },
+                        {
+                          "extra": {
+                            "type": "url",
+                            "value": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2"
+                          },
+                          "cause": "Web font"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "duplicated-javascript-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "code",
+                "subItemsHeading": {
+                  "key": "url",
+                  "valueType": "url"
+                },
+                "label": "Source"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "subItemsHeading": {
+                  "key": "sourceTransferBytes"
+                },
+                "granularity": 10,
+                "label": "Duplicated bytes"
+              }
+            ],
+            "items": [],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 0
+            }
+          }
+        }
+      }
+    },
+    "team": {
+      "insights": {
+        "cache-insight": {
+          "score": 0.5,
+          "displayValue": "Est savings of 115 KiB",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "Request"
+              },
+              {
+                "key": "cacheLifetimeMs",
+                "valueType": "ms",
+                "label": "Cache TTL",
+                "displayUnit": "duration"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size",
+                "displayUnit": "kb",
+                "granularity": 1
+              }
+            ],
+            "items": [
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 31636,
+                "wastedBytes": 31636
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 30428,
+                "wastedBytes": 30428
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 28051,
+                "wastedBytes": 28051
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/twemoji.js?ver=7.1.3",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 9230,
+                "wastedBytes": 9230
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 6436,
+                "wastedBytes": 6436
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 4124,
+                "wastedBytes": 4124
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/wp-emoji.js?ver=7.1.3",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 3732,
+                "wastedBytes": 3732
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/dist/script-modules/block-library/navigation/view.js?ver=1bf28ded04f9f188bdcb",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 1774,
+                "wastedBytes": 1774
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/img/logo-mark.svg",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 1167,
+                "wastedBytes": 1167
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 973,
+                "wastedBytes": 973
+              }
+            ],
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "skipSumming": [
+              "cacheLifetimeMs"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 117551
+            }
+          }
+        },
+        "image-delivery-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL",
+                "subItemsHeading": {
+                  "key": "reason",
+                  "valueType": "text"
+                }
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Resource Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings",
+                "subItemsHeading": {
+                  "key": "wastedBytes",
+                  "valueType": "bytes"
+                }
+              }
+            ],
+            "items": [],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 0
+            }
+          }
+        },
+        "network-dependency-tree-insight": {
+          "score": 0,
+          "displayValue": null,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "list-section",
+                "value": {
+                  "type": "network-tree",
+                  "chains": {
+                    "BFB02A4E9D13B70188072FF48D1C3923": {
+                      "url": "http://localhost:8889/team/",
+                      "navStartToEndTime": 3446,
+                      "transferSize": 15115,
+                      "isLongest": true,
+                      "children": {
+                        "21076.4": {
+                          "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+                          "navStartToEndTime": 3586,
+                          "transferSize": 973,
+                          "isLongest": true,
+                          "children": {
+                            "21076.11": {
+                              "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+                              "navStartToEndTime": 3892,
+                              "transferSize": 31636,
+                              "isLongest": true,
+                              "children": {}
+                            },
+                            "21076.12": {
+                              "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+                              "navStartToEndTime": 3881,
+                              "transferSize": 30428,
+                              "children": {}
+                            }
+                          }
+                        },
+                        "21076.2": {
+                          "url": "http://localhost:8889/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+                          "navStartToEndTime": 3599,
+                          "transferSize": 4124,
+                          "children": {}
+                        },
+                        "21076.5": {
+                          "url": "http://localhost:8889/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+                          "navStartToEndTime": 3547,
+                          "transferSize": 6436,
+                          "children": {}
+                        }
+                      }
+                    }
+                  },
+                  "longestChain": {
+                    "duration": 3892
+                  }
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnected origins",
+                "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+                "value": {
+                  "type": "text",
+                  "value": "no origins were preconnected"
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnect candidates",
+                "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+                "value": {
+                  "type": "text",
+                  "value": "No additional origins are good candidates for preconnecting"
+                }
+              }
+            ]
+          }
+        },
+        "document-latency-insight": {
+          "score": 0,
+          "displayValue": "Est savings of 3,280 ms",
+          "details": {
+            "type": "checklist",
+            "items": {
+              "noRedirects": {
+                "label": "Avoids redirects",
+                "value": true
+              },
+              "serverResponseIsFast": {
+                "label": "Server responded slowly (observed 3384 ms)",
+                "value": false
+              },
+              "usesCompression": {
+                "label": "Applies text compression",
+                "value": true
+              }
+            },
+            "debugData": {
+              "type": "debugdata",
+              "redirectDuration": 0,
+              "serverResponseTime": 3384,
+              "uncompressedResponseBytes": 0,
+              "wastedBytes": 0
+            }
+          }
+        },
+        "dom-size-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "statistic",
+                "valueType": "text",
+                "label": "Statistic"
+              },
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              },
+              {
+                "key": "value",
+                "valueType": "numeric",
+                "label": "Value"
+              }
+            ],
+            "items": [
+              {
+                "statistic": "Total elements",
+                "value": {
+                  "type": "numeric",
+                  "granularity": 1,
+                  "value": 65
+                }
+              },
+              {
+                "statistic": "DOM depth",
+                "node": {
+                  "type": "node",
+                  "lhId": "page-4-SPAN",
+                  "path": "1,HTML,1,BODY,1,DIV,0,DIV,0,HEADER,0,DIV,1,NAV,1,DIV,0,DIV,0,DIV,1,DIV,0,UL,0,LI,0,A,0,SPAN",
+                  "selector": "ul.wp-block-navigation__container > li.wp-block-navigation-item > a.wp-block-navigation-item__content > span.wp-block-navigation-item__label",
+                  "boundingRect": {
+                    "top": 0,
+                    "bottom": 0,
+                    "left": 0,
+                    "right": 0,
+                    "width": 0,
+                    "height": 0
+                  },
+                  "snippet": "<span class=\"wp-block-navigation-item__label\">",
+                  "nodeLabel": "الخدمات"
+                },
+                "value": {
+                  "type": "numeric",
+                  "granularity": 1,
+                  "value": 14
+                }
+              },
+              {
+                "statistic": "Most children",
+                "node": {
+                  "type": "node",
+                  "lhId": "page-3-DIV",
+                  "path": "1,HTML,1,BODY,1,DIV,1,MAIN,1,DIV",
+                  "selector": "body.rtl > div.wp-site-blocks > main#wp--skip-link--target > div.entry-content",
+                  "boundingRect": {
+                    "top": 167,
+                    "bottom": 846,
+                    "left": 24,
+                    "right": 366,
+                    "width": 342,
+                    "height": 679
+                  },
+                  "snippet": "<div class=\"entry-content wp-block-post-content is-layout-flow wp-block-post-content-i…\">",
+                  "nodeLabel": "النموذج بيعرض التخصصات والأدوار بدون صور أشخاص — دور واضح لكل تخصص، من غير أسما…"
+                },
+                "value": {
+                  "type": "numeric",
+                  "granularity": 1,
+                  "value": 10
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "totalElements": 65,
+              "maxChildren": 10,
+              "maxDepth": 14
+            }
+          }
+        },
+        "font-display-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "ms",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [],
+            "skipSumming": [
+              "wastedMs"
+            ]
+          }
+        },
+        "forced-reflow-insight": {
+          "score": 0,
+          "displayValue": null,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "source",
+                    "valueType": "source-location",
+                    "label": "Source"
+                  },
+                  {
+                    "key": "reflowTime",
+                    "valueType": "ms",
+                    "granularity": 1,
+                    "label": "Total reflow time"
+                  }
+                ],
+                "items": [
+                  {
+                    "source": {
+                      "type": "text",
+                      "value": "[unattributed]"
+                    },
+                    "reflowTime": 123.683
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "cls-culprits-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "node",
+                    "valueType": "node",
+                    "subItemsHeading": {
+                      "key": "extra"
+                    },
+                    "label": "Element"
+                  },
+                  {
+                    "key": "score",
+                    "valueType": "numeric",
+                    "subItemsHeading": {
+                      "key": "cause",
+                      "valueType": "text"
+                    },
+                    "granularity": 0.001,
+                    "label": "Layout shift score"
+                  }
+                ],
+                "items": [
+                  {
+                    "node": {
+                      "type": "text",
+                      "value": "Total"
+                    },
+                    "score": 0.0002068168349249187
+                  },
+                  {
+                    "node": {
+                      "type": "node",
+                      "lhId": "page-1-H1",
+                      "path": "1,HTML,1,BODY,1,DIV,1,MAIN,0,H1",
+                      "selector": "body.rtl > div.wp-site-blocks > main#wp--skip-link--target > h1.wp-block-post-title",
+                      "boundingRect": {
+                        "top": 93,
+                        "bottom": 143,
+                        "left": 24,
+                        "right": 366,
+                        "width": 342,
+                        "height": 50
+                      },
+                      "snippet": "<h1 class=\"wp-block-post-title\">",
+                      "nodeLabel": "الفريق"
+                    },
+                    "score": 0.0002068168349249187,
+                    "subItems": {
+                      "type": "subitems",
+                      "items": [
+                        {
+                          "extra": {
+                            "type": "url",
+                            "value": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2"
+                          },
+                          "cause": "Web font"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "duplicated-javascript-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "code",
+                "subItemsHeading": {
+                  "key": "url",
+                  "valueType": "url"
+                },
+                "label": "Source"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "subItemsHeading": {
+                  "key": "sourceTransferBytes"
+                },
+                "granularity": 10,
+                "label": "Duplicated bytes"
+              }
+            ],
+            "items": [],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 0
+            }
+          }
+        }
+      }
+    },
+    "contact": {
+      "insights": {
+        "cache-insight": {
+          "score": 0,
+          "displayValue": "Est savings of 115 KiB",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "Request"
+              },
+              {
+                "key": "cacheLifetimeMs",
+                "valueType": "ms",
+                "label": "Cache TTL",
+                "displayUnit": "duration"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size",
+                "displayUnit": "kb",
+                "granularity": 1
+              }
+            ],
+            "items": [
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 31636,
+                "wastedBytes": 31636
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 30428,
+                "wastedBytes": 30428
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 28051,
+                "wastedBytes": 28051
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/twemoji.js?ver=7.1.3",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 9230,
+                "wastedBytes": 9230
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 6436,
+                "wastedBytes": 6436
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 4124,
+                "wastedBytes": 4124
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/wp-emoji.js?ver=7.1.3",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 3732,
+                "wastedBytes": 3732
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/dist/script-modules/block-library/navigation/view.js?ver=1bf28ded04f9f188bdcb",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 1774,
+                "wastedBytes": 1774
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/img/logo-mark.svg",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 1167,
+                "wastedBytes": 1167
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 973,
+                "wastedBytes": 973
+              }
+            ],
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "skipSumming": [
+              "cacheLifetimeMs"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 117551
+            }
+          }
+        },
+        "image-delivery-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL",
+                "subItemsHeading": {
+                  "key": "reason",
+                  "valueType": "text"
+                }
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Resource Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings",
+                "subItemsHeading": {
+                  "key": "wastedBytes",
+                  "valueType": "bytes"
+                }
+              }
+            ],
+            "items": [],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 0
+            }
+          }
+        },
+        "network-dependency-tree-insight": {
+          "score": 0,
+          "displayValue": null,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "list-section",
+                "value": {
+                  "type": "network-tree",
+                  "chains": {
+                    "60627FBCEC40B2F80C706ACF970CDB44": {
+                      "url": "http://localhost:8889/contact/",
+                      "navStartToEndTime": 2246,
+                      "transferSize": 14892,
+                      "isLongest": true,
+                      "children": {
+                        "9956.4": {
+                          "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+                          "navStartToEndTime": 2332,
+                          "transferSize": 973,
+                          "isLongest": true,
+                          "children": {
+                            "9956.12": {
+                              "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+                              "navStartToEndTime": 2668,
+                              "transferSize": 30428,
+                              "isLongest": true,
+                              "children": {}
+                            },
+                            "9956.11": {
+                              "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+                              "navStartToEndTime": 2641,
+                              "transferSize": 31636,
+                              "children": {}
+                            }
+                          }
+                        },
+                        "9956.2": {
+                          "url": "http://localhost:8889/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+                          "navStartToEndTime": 2339,
+                          "transferSize": 4124,
+                          "children": {}
+                        },
+                        "9956.5": {
+                          "url": "http://localhost:8889/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+                          "navStartToEndTime": 2293,
+                          "transferSize": 6436,
+                          "children": {}
+                        }
+                      }
+                    }
+                  },
+                  "longestChain": {
+                    "duration": 2668
+                  }
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnected origins",
+                "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+                "value": {
+                  "type": "text",
+                  "value": "no origins were preconnected"
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnect candidates",
+                "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+                "value": {
+                  "type": "text",
+                  "value": "No additional origins are good candidates for preconnecting"
+                }
+              }
+            ]
+          }
+        },
+        "document-latency-insight": {
+          "score": 0,
+          "displayValue": "Est savings of 2,100 ms",
+          "details": {
+            "type": "checklist",
+            "items": {
+              "noRedirects": {
+                "label": "Avoids redirects",
+                "value": true
+              },
+              "serverResponseIsFast": {
+                "label": "Server responded slowly (observed 2204 ms)",
+                "value": false
+              },
+              "usesCompression": {
+                "label": "Applies text compression",
+                "value": true
+              }
+            },
+            "debugData": {
+              "type": "debugdata",
+              "redirectDuration": 0,
+              "serverResponseTime": 2204,
+              "uncompressedResponseBytes": 0,
+              "wastedBytes": 0
+            }
+          }
+        },
+        "dom-size-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "statistic",
+                "valueType": "text",
+                "label": "Statistic"
+              },
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              },
+              {
+                "key": "value",
+                "valueType": "numeric",
+                "label": "Value"
+              }
+            ],
+            "items": [
+              {
+                "statistic": "Total elements",
+                "value": {
+                  "type": "numeric",
+                  "granularity": 1,
+                  "value": 73
+                }
+              },
+              {
+                "statistic": "DOM depth",
+                "node": {
+                  "type": "node",
+                  "lhId": "page-9-SPAN",
+                  "path": "1,HTML,1,BODY,1,DIV,0,DIV,0,HEADER,0,DIV,1,NAV,1,DIV,0,DIV,0,DIV,1,DIV,0,UL,0,LI,0,A,0,SPAN",
+                  "selector": "ul.wp-block-navigation__container > li.wp-block-navigation-item > a.wp-block-navigation-item__content > span.wp-block-navigation-item__label",
+                  "boundingRect": {
+                    "top": 0,
+                    "bottom": 0,
+                    "left": 0,
+                    "right": 0,
+                    "width": 0,
+                    "height": 0
+                  },
+                  "snippet": "<span class=\"wp-block-navigation-item__label\">",
+                  "nodeLabel": "الخدمات"
+                },
+                "value": {
+                  "type": "numeric",
+                  "granularity": 1,
+                  "value": 14
+                }
+              },
+              {
+                "statistic": "Most children",
+                "node": {
+                  "type": "node",
+                  "lhId": "page-8-BODY",
+                  "path": "1,HTML,1,BODY",
+                  "selector": "body.rtl",
+                  "boundingRect": {
+                    "top": 0,
+                    "bottom": 835,
+                    "left": 0,
+                    "right": 390,
+                    "width": 390,
+                    "height": 835
+                  },
+                  "snippet": "<body class=\"rtl wp-singular page-template-default page page-id-7 wp-embed-responsive w…\">",
+                  "nodeLabel": "body.rtl"
+                },
+                "value": {
+                  "type": "numeric",
+                  "granularity": 1,
+                  "value": 7
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "totalElements": 73,
+              "maxChildren": 7,
+              "maxDepth": 14
+            }
+          }
+        },
+        "font-display-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "ms",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [],
+            "skipSumming": [
+              "wastedMs"
+            ]
+          }
+        },
+        "forced-reflow-insight": {
+          "score": 0,
+          "displayValue": null,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "source",
+                    "valueType": "source-location",
+                    "label": "Source"
+                  },
+                  {
+                    "key": "reflowTime",
+                    "valueType": "ms",
+                    "granularity": 1,
+                    "label": "Total reflow time"
+                  }
+                ],
+                "items": [
+                  {
+                    "source": {
+                      "type": "text",
+                      "value": "[unattributed]"
+                    },
+                    "reflowTime": 139.309
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "cls-culprits-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "node",
+                    "valueType": "node",
+                    "subItemsHeading": {
+                      "key": "extra"
+                    },
+                    "label": "Element"
+                  },
+                  {
+                    "key": "score",
+                    "valueType": "numeric",
+                    "subItemsHeading": {
+                      "key": "cause",
+                      "valueType": "text"
+                    },
+                    "granularity": 0.001,
+                    "label": "Layout shift score"
+                  }
+                ],
+                "items": [
+                  {
+                    "node": {
+                      "type": "text",
+                      "value": "Total"
+                    },
+                    "score": 0.006706794920299064
+                  },
+                  {
+                    "node": {
+                      "type": "node",
+                      "lhId": "page-1-H1",
+                      "path": "1,HTML,1,BODY,1,DIV,1,MAIN,0,H1",
+                      "selector": "body.rtl > div.wp-site-blocks > main#wp--skip-link--target > h1.wp-block-post-title",
+                      "boundingRect": {
+                        "top": 93,
+                        "bottom": 143,
+                        "left": 24,
+                        "right": 366,
+                        "width": 342,
+                        "height": 50
+                      },
+                      "snippet": "<h1 class=\"wp-block-post-title\">",
+                      "nodeLabel": "تواصل"
+                    },
+                    "score": 0.006662117970095789,
+                    "subItems": {
+                      "type": "subitems",
+                      "items": [
+                        {
+                          "extra": {
+                            "type": "url",
+                            "value": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2"
+                          },
+                          "cause": "Web font"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "node": {
+                      "type": "node",
+                      "lhId": "page-6-SPAN",
+                      "path": "1,HTML,1,BODY,1,DIV,1,MAIN,1,DIV,1,UL,0,LI,1,SPAN",
+                      "selector": "div.entry-content > ul.info-list > li > span.v",
+                      "boundingRect": {
+                        "top": 247,
+                        "bottom": 277,
+                        "left": 24,
+                        "right": 225,
+                        "width": 201,
+                        "height": 31
+                      },
+                      "snippet": "<span class=\"v\">",
+                      "nodeLabel": "0100 000 0000 Demo"
+                    },
+                    "score": 0.00004467695020327485
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "duplicated-javascript-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "code",
+                "subItemsHeading": {
+                  "key": "url",
+                  "valueType": "url"
+                },
+                "label": "Source"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "subItemsHeading": {
+                  "key": "sourceTransferBytes"
+                },
+                "granularity": 10,
+                "label": "Duplicated bytes"
+              }
+            ],
+            "items": [],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 0
+            }
+          }
+        }
+      }
+    },
+    "book": {
+      "insights": {
+        "cache-insight": {
+          "score": 0.5,
+          "displayValue": "Est savings of 115 KiB",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "Request"
+              },
+              {
+                "key": "cacheLifetimeMs",
+                "valueType": "ms",
+                "label": "Cache TTL",
+                "displayUnit": "duration"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size",
+                "displayUnit": "kb",
+                "granularity": 1
+              }
+            ],
+            "items": [
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 31636,
+                "wastedBytes": 31636
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 30428,
+                "wastedBytes": 30428
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 28051,
+                "wastedBytes": 28051
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/twemoji.js?ver=7.1.3",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 9230,
+                "wastedBytes": 9230
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 6436,
+                "wastedBytes": 6436
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 4124,
+                "wastedBytes": 4124
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/wp-emoji.js?ver=7.1.3",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 3732,
+                "wastedBytes": 3732
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/dist/script-modules/block-library/navigation/view.js?ver=1bf28ded04f9f188bdcb",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 1774,
+                "wastedBytes": 1774
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/img/logo-mark.svg",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 1167,
+                "wastedBytes": 1167
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 973,
+                "wastedBytes": 973
+              }
+            ],
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "skipSumming": [
+              "cacheLifetimeMs"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 117551
+            }
+          }
+        },
+        "image-delivery-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL",
+                "subItemsHeading": {
+                  "key": "reason",
+                  "valueType": "text"
+                }
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Resource Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings",
+                "subItemsHeading": {
+                  "key": "wastedBytes",
+                  "valueType": "bytes"
+                }
+              }
+            ],
+            "items": [],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 0
+            }
+          }
+        },
+        "network-dependency-tree-insight": {
+          "score": 0,
+          "displayValue": null,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "list-section",
+                "value": {
+                  "type": "network-tree",
+                  "chains": {
+                    "5765906F39129937923C78DE86C3B563": {
+                      "url": "http://localhost:8889/book/",
+                      "navStartToEndTime": 5570,
+                      "transferSize": 15549,
+                      "isLongest": true,
+                      "children": {
+                        "20296.3": {
+                          "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+                          "navStartToEndTime": 5651,
+                          "transferSize": 973,
+                          "isLongest": true,
+                          "children": {
+                            "20296.11": {
+                              "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+                              "navStartToEndTime": 6037,
+                              "transferSize": 31636,
+                              "isLongest": true,
+                              "children": {}
+                            },
+                            "20296.12": {
+                              "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+                              "navStartToEndTime": 6022,
+                              "transferSize": 30428,
+                              "children": {}
+                            }
+                          }
+                        },
+                        "20296.2": {
+                          "url": "http://localhost:8889/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+                          "navStartToEndTime": 5643,
+                          "transferSize": 4124,
+                          "children": {}
+                        },
+                        "20296.4": {
+                          "url": "http://localhost:8889/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+                          "navStartToEndTime": 5627,
+                          "transferSize": 6436,
+                          "children": {}
+                        }
+                      }
+                    }
+                  },
+                  "longestChain": {
+                    "duration": 6037
+                  }
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnected origins",
+                "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+                "value": {
+                  "type": "text",
+                  "value": "no origins were preconnected"
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnect candidates",
+                "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+                "value": {
+                  "type": "text",
+                  "value": "No additional origins are good candidates for preconnecting"
+                }
+              }
+            ]
+          }
+        },
+        "document-latency-insight": {
+          "score": 0,
+          "displayValue": "Est savings of 5,430 ms",
+          "details": {
+            "type": "checklist",
+            "items": {
+              "noRedirects": {
+                "label": "Avoids redirects",
+                "value": true
+              },
+              "serverResponseIsFast": {
+                "label": "Server responded slowly (observed 5534 ms)",
+                "value": false
+              },
+              "usesCompression": {
+                "label": "Applies text compression",
+                "value": true
+              }
+            },
+            "debugData": {
+              "type": "debugdata",
+              "redirectDuration": 0,
+              "serverResponseTime": 5534,
+              "uncompressedResponseBytes": 0,
+              "wastedBytes": 0
+            }
+          }
+        },
+        "dom-size-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "statistic",
+                "valueType": "text",
+                "label": "Statistic"
+              },
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              },
+              {
+                "key": "value",
+                "valueType": "numeric",
+                "label": "Value"
+              }
+            ],
+            "items": [
+              {
+                "statistic": "Total elements",
+                "value": {
+                  "type": "numeric",
+                  "granularity": 1,
+                  "value": 99
+                }
+              },
+              {
+                "statistic": "DOM depth",
+                "node": {
+                  "type": "node",
+                  "lhId": "page-9-SPAN",
+                  "path": "1,HTML,1,BODY,1,DIV,0,DIV,0,HEADER,0,DIV,1,NAV,1,DIV,0,DIV,0,DIV,1,DIV,0,UL,0,LI,0,A,0,SPAN",
+                  "selector": "ul.wp-block-navigation__container > li.wp-block-navigation-item > a.wp-block-navigation-item__content > span.wp-block-navigation-item__label",
+                  "boundingRect": {
+                    "top": 0,
+                    "bottom": 0,
+                    "left": 0,
+                    "right": 0,
+                    "width": 0,
+                    "height": 0
+                  },
+                  "snippet": "<span class=\"wp-block-navigation-item__label\">",
+                  "nodeLabel": "الخدمات"
+                },
+                "value": {
+                  "type": "numeric",
+                  "granularity": 1,
+                  "value": 14
+                }
+              },
+              {
+                "statistic": "Most children",
+                "node": {
+                  "type": "node",
+                  "lhId": "page-8-SELECT",
+                  "path": "1,HTML,1,BODY,1,DIV,1,MAIN,1,DIV,1,DIV,0,FORM,1,DIV,2,DIV,1,SELECT",
+                  "selector": "form > div.siraj-grid > div.siraj-field > select#siraj-service-1",
+                  "boundingRect": {
+                    "top": 638,
+                    "bottom": 690,
+                    "left": 49,
+                    "right": 341,
+                    "width": 292,
+                    "height": 52
+                  },
+                  "snippet": "<select class=\"siraj-select\" id=\"siraj-service-1\" name=\"siraj_service\" aria-required=\"true\">",
+                  "nodeLabel": "من فضلك اختر الخدمة\nتنظيف وتلميع\nعلاج عصب\nحشو تجميلي\nتقويم\nزراعة\nفحص وتشخيص"
+                },
+                "value": {
+                  "type": "numeric",
+                  "granularity": 1,
+                  "value": 7
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "totalElements": 99,
+              "maxChildren": 7,
+              "maxDepth": 14
+            }
+          }
+        },
+        "font-display-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "ms",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [],
+            "skipSumming": [
+              "wastedMs"
+            ]
+          }
+        },
+        "forced-reflow-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "source",
+                    "valueType": "source-location",
+                    "label": "Source"
+                  },
+                  {
+                    "key": "reflowTime",
+                    "valueType": "ms",
+                    "granularity": 1,
+                    "label": "Total reflow time"
+                  }
+                ],
+                "items": []
+              }
+            ]
+          }
+        },
+        "cls-culprits-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "node",
+                    "valueType": "node",
+                    "subItemsHeading": {
+                      "key": "extra"
+                    },
+                    "label": "Element"
+                  },
+                  {
+                    "key": "score",
+                    "valueType": "numeric",
+                    "subItemsHeading": {
+                      "key": "cause",
+                      "valueType": "text"
+                    },
+                    "granularity": 0.001,
+                    "label": "Layout shift score"
+                  }
+                ],
+                "items": [
+                  {
+                    "node": {
+                      "type": "text",
+                      "value": "Total"
+                    },
+                    "score": 0.0023353170535447398
+                  },
+                  {
+                    "node": {
+                      "type": "node",
+                      "lhId": "page-3-SPAN",
+                      "path": "1,HTML,1,BODY,1,DIV,1,MAIN,1,DIV,1,DIV,0,FORM,1,DIV,1,DIV,0,LABEL,1,SPAN",
+                      "selector": "div.siraj-grid > div.siraj-field > label.siraj-label > span",
+                      "boundingRect": {
+                        "top": 430,
+                        "bottom": 449,
+                        "left": 236,
+                        "right": 242,
+                        "width": 6,
+                        "height": 19
+                      },
+                      "snippet": "<span aria-hidden=\"true\">",
+                      "nodeLabel": "*"
+                    },
+                    "score": 0.00173261152391568
+                  },
+                  {
+                    "node": {
+                      "type": "node",
+                      "lhId": "page-1-H1",
+                      "path": "1,HTML,1,BODY,1,DIV,1,MAIN,0,H1",
+                      "selector": "body.rtl > div.wp-site-blocks > main#wp--skip-link--target > h1.wp-block-post-title",
+                      "boundingRect": {
+                        "top": 93,
+                        "bottom": 143,
+                        "left": 24,
+                        "right": 366,
+                        "width": 342,
+                        "height": 50
+                      },
+                      "snippet": "<h1 class=\"wp-block-post-title\">",
+                      "nodeLabel": "احجز زيارة"
+                    },
+                    "score": 0.00060270552962906,
+                    "subItems": {
+                      "type": "subitems",
+                      "items": [
+                        {
+                          "extra": {
+                            "type": "url",
+                            "value": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2"
+                          },
+                          "cause": "Web font"
+                        }
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "duplicated-javascript-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "code",
+                "subItemsHeading": {
+                  "key": "url",
+                  "valueType": "url"
+                },
+                "label": "Source"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "subItemsHeading": {
+                  "key": "sourceTransferBytes"
+                },
+                "granularity": 10,
+                "label": "Duplicated bytes"
+              }
+            ],
+            "items": [],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 0
+            }
+          }
+        }
+      }
+    }
+  }
+}

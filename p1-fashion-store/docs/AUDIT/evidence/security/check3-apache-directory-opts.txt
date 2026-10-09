@@ -1,0 +1,22 @@
+﻿node.exe : i Starting 'bash -c grep -n -A6 '<Directory /var/www/>' /etc/apache2/apache2.conf; echo '--- global opts 
+---'; grep -n 'Options' /etc/apache2/apache2.conf' on the wordpress container. 
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (i Starting 'bas...ess container. :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+170:<Directory /var/www/>
+171-	Options Indexes FollowSymLinks
+172-	AllowOverride None
+173-	Require all granted
+174-</Directory>
+175-
+176-#<Directory /srv/>
+--- global opts ---
+160:	Options FollowSymLinks
+171:	Options Indexes FollowSymLinks
+177:#	Options Indexes FollowSymLinks
+ΓêÜ Ran `bash -c grep -n -A6 '<Directory /var/www/>' /etc/apache2/apache2.conf; echo '--- global opts ---'; grep -n 
+'Options' /etc/apache2/apache2.conf` in 'wordpress'. (in 1s 515ms)

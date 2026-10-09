@@ -1,0 +1,320 @@
+{
+  "name": "Nilad F3: schedule → pending order recovery",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 3
+            }
+          ]
+        }
+      },
+      "id": "f3c00001-0000-4000-8000-000000000001",
+      "name": "Every 3 hours",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -160,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $env.STORE_URL }}/wp-json/wc/v3/orders?status=pending&per_page=50&consumer_key={{ $env.WC_API_KEY }}&consumer_secret={{ $env.WC_API_SECRET }}",
+        "options": {
+          "timeout": 20000
+        }
+      },
+      "id": "f3c00001-0000-4000-8000-000000000002",
+      "name": "Fetch pending orders",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        60,
+        0
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000
+    },
+    {
+      "parameters": {
+        "jsCode": "// Nilad F3 — keep only pending orders older than $env.PENDING_HOURS that are not\n// yet marked in static data sd.keys ('f3:<id>'). Env: PENDING_HOURS.\n// Input: ONE item whose json is the orders ARRAY returned by the WC REST API.\n// Output: one item per survivor { orderId, email, customerName, total, ageHours,\n//          hasEmail } — or [{ json: { none: true } }] if nothing qualifies.\nconst payload = $input.first().json;\nconst sd = $getWorkflowStaticData('global');\nsd.keys = Array.isArray(sd.keys) ? sd.keys : [];\nconst rawHours = Number($env.PENDING_HOURS);\nconst thresholdMs = Number.isFinite(rawHours) && rawHours > 0 ? rawHours * 3600 * 1000 : NaN;\nconst orders = Array.isArray(payload) ? payload : null;\nif (!orders || Number.isNaN(thresholdMs)) {\n  return [{ json: { none: true } }];\n}\nconst now = Date.now();\nconst survivors = [];\nfor (const o of orders) {\n  if (!o || o.status !== 'pending') continue;\n  const id = o.id;\n  if (id === undefined || id === null) continue;\n  const created = Date.parse(o.date_created);\n  if (Number.isNaN(created)) continue;\n  const ageMs = now - created;\n  if (!(ageMs > thresholdMs)) continue;\n  if (sd.keys.includes('f3:' + id)) continue;\n  const b = o.billing || {};\n  const email = typeof b.email === 'string' ? b.email.trim() : '';\n  const customerName = [b.first_name, b.last_name]\n    .filter((p) => p && String(p).trim() !== '')\n    .map((p) => String(p).trim())\n    .join(' ');\n  survivors.push({\n    json: {\n      orderId: id,\n      email,\n      customerName,\n      total: o.total,\n      ageHours: Math.floor(ageMs / 3600000),\n      hasEmail: email !== '',\n    },\n  });\n}\nreturn survivors.length > 0 ? survivors : [{ json: { none: true } }];"
+      },
+      "id": "f3c00001-0000-4000-8000-000000000003",
+      "name": "Filter + dedupe",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        280,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Nilad F3 — build the Arabic customer reminder email + owner Telegram line.\n// Env: $env.PENDING_HOURS (threshold quoted in the email body).\n// Input: one item { orderId, email, customerName, total, ageHours, hasEmail, none }\n//        — or the passthrough { none: true }.\n// Output: same fields + emailSubject / emailText / tgText (all user text escaped);\n//         the { none: true } case passes through unchanged.\nconst j = $input.first().json;\nif (j && j.none === true) {\n  return [{ json: {\n    // n8n 2.41 blocks $env in node expressions (Code nodes may read it), so\n    // the Telegram HTTP node gets its credentials from this item instead.\n    tgToken: $env.TELEGRAM_BOT_TOKEN || '',\n    tgChatId: $env.TELEGRAM_CHAT_ID || '', none: true } }];\n}\nconst esc = (s) => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');\nconst id = esc(j.orderId);\nconst name = esc(j.customerName || 'عزيزنا العميل');\nconst total = esc(j.total);\nconst age = esc(j.ageHours);\nconst hours = esc($env.PENDING_HOURS);\nconst emailSubject = 'طلبك المعلق #' + id + ' بانتظارك';\nconst emailText = [\n  'مرحباً ' + name + ',',\n  '',\n  'طلبك رقم #' + id + ' ما زال معلقاً منذ ' + age + ' ساعة (أكثر من ' + hours + ' ساعة)، وإجماليه ' + total + ' ج.م.',\n  '',\n  'يرجى إتمام الدفع لتأكيد الطلب، وإن كان الدفع عند الاستلام (COD) فيرجى تأكيد توفرك لاستلامه حتى لا يُلغى الطلب.',\n  '',\n  'شكراً لتسوقك من نيلاد.',\n].join('\\n');\nconst tgText = '🕓 طلب معلق قديم #' + id + ' — ' + name + ' — ' + total + ' ج.م — منذ ' + age + ' ساعة';\nreturn [{\n  json: {\n    orderId: j.orderId,\n    email: j.email,\n    customerName: j.customerName,\n    total: j.total,\n    ageHours: j.ageHours,\n    hasEmail: j.hasEmail,\n    emailSubject,\n    emailText,\n    tgText,\n    none: false,\n  },\n}];"
+      },
+      "id": "f3c00001-0000-4000-8000-000000000004",
+      "name": "Format messages",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        500,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "f3c00001-0000-4000-8000-000000000011",
+              "leftValue": "={{ $json.none }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "f3c00001-0000-4000-8000-000000000005",
+      "name": "No pending orders?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        720,
+        0
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "f3c00001-0000-4000-8000-000000000006",
+      "name": "Nothing pending",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        940,
+        220
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "f3c00001-0000-4000-8000-000000000012",
+              "leftValue": "={{ $json.hasEmail }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "f3c00001-0000-4000-8000-000000000007",
+      "name": "Has customer email?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        1160,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "fromEmail": "orders@nilad.example.com",
+        "fromName": "نيلاد",
+        "toEmail": "={{ $json.email }}",
+        "subject": "={{ $json.emailSubject }}",
+        "emailFormat": "text",
+        "text": "={{ $json.emailText }}",
+        "options": {}
+      },
+      "id": "f3c00001-0000-4000-8000-000000000008",
+      "name": "Customer reminder email",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [
+        1380,
+        0
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000,
+      "credentials": {
+        "smtp": {
+          "id": "REPLACE_ON_IMPORT",
+          "name": "Nilad SMTP"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://api.telegram.org/bot{{ $json.tgToken }}/sendMessage",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ chat_id: $json.tgChatId, text: $json.tgText, parse_mode: 'HTML' }) }}",
+        "options": {}
+      },
+      "id": "f3c00001-0000-4000-8000-000000000009",
+      "name": "Owner alert",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1600,
+        0
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000
+    },
+    {
+      "parameters": {
+        "jsCode": "// Nilad F3 — mark one order as reminded (idempotency write, sd.keys capped at 500).\n// Env: none. Input: ONE item { orderId, ... } — output is the item passthrough.\nconst sd = $getWorkflowStaticData('global');\nsd.keys = Array.isArray(sd.keys) ? sd.keys : [];\nconst j = $input.first().json;\nconst key = 'f3:' + j.orderId;\nif (!sd.keys.includes(key)) sd.keys.push(key);\nif (sd.keys.length > 500) sd.keys.splice(0, sd.keys.length - 500);\nreturn [{ json: { ...j } }];"
+      },
+      "id": "f3c00001-0000-4000-8000-000000000010",
+      "name": "Mark processed",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        940,
+        110
+      ]
+    }
+  ],
+  "connections": {
+    "Every 3 hours": {
+      "main": [
+        [
+          {
+            "node": "Fetch pending orders",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch pending orders": {
+      "main": [
+        [
+          {
+            "node": "Filter + dedupe",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter + dedupe": {
+      "main": [
+        [
+          {
+            "node": "Format messages",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format messages": {
+      "main": [
+        [
+          {
+            "node": "No pending orders?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "No pending orders?": {
+      "main": [
+        [
+          {
+            "node": "Nothing pending",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Mark processed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Mark processed": {
+      "main": [
+        [
+          {
+            "node": "Has customer email?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Has customer email?": {
+      "main": [
+        [
+          {
+            "node": "Customer reminder email",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Owner alert",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Owner alert",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Customer reminder email": {
+      "main": [
+        []
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Africa/Cairo"
+  },
+  "pinData": {}
+}

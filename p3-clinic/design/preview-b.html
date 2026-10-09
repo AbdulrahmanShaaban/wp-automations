@@ -1,0 +1,342 @@
+<!doctype html>
+<!--
+  DIRECTION B — «العيادة الخاصة» / the private practice  (design/direction.md)
+  Concept: a premium private clinic after hours — deep ink-blue room, quiet confidence,
+  the clinic presented as a design brand rather than a health poster.
+  Palette: adapted from E (Midnight Cinema), cream primary -> warm bone #E8DCC3,
+            periwinkle accent -> muted gold #D9B26A, plus a grain overlay (tokens).
+  Type: pairing 1 — Markazi Text (Arabic SERIF display) + IBM Plex Sans Arabic (body).
+            Arabic serif headlines exist nowhere in P1: strongest differentiator here.
+  Radius family: SHARP (4px), borders only, zero shadows, 128px section padding desktop.
+  Hero: editorial — the Arabic display type IS the image, with an offset media card that
+        breaks the grid once. No gradient blob (ban list).
+  Signature moment: headline lines reveal behind a fixed edge (.line-mask, tokens).
+  Sections: bento services · featured+list team · price table · form band · 2-col FAQ.
+-->
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Direction B — عيادة سِراج للأسنان (Demo)</title>
+<meta name="description" content="نموذج تجريبي لعيادة أسنان: حجز زيارة، خدمات، أسعار، وفريق العمل.">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<style>
+/* ---- hero: editorial, the type is the image (offset card breaks the grid once) ---- */
+.hero{padding-block:var(--s12) var(--s16);position:relative;overflow:hidden}
+.hero-grid{position:relative;z-index:1;display:grid;gap:var(--s8);align-items:center}
+@media(min-width:960px){.hero-grid{grid-template-columns:1.3fr .7fr;gap:var(--s16)}}
+.hero h1{max-width:16ch} /* --fs-hero / --lh-hero come from the .palette-b tokens */
+.hero .lead{max-width:46ch}
+.hero-actions{display:flex;flex-wrap:wrap;gap:var(--s3);margin-top:var(--s6)}
+.hero-media{aspect-ratio:3/4;border-radius:var(--radius-lg);border:var(--border-w) solid var(--border);
+  background:
+    repeating-linear-gradient(135deg,transparent 0 9px,color-mix(in srgb,var(--primary) 9%,transparent) 9px 10px),
+    linear-gradient(150deg,var(--primary-soft),color-mix(in srgb,var(--primary) 30%,var(--surface)));
+  display:grid;place-items:center;color:var(--muted);font-weight:600;text-align:center;padding:var(--s6)}
+@media(min-width:960px){.hero-media{margin-block-start:-2.5rem;margin-inline-start:-1.5rem}}
+.tagline{display:inline-flex;align-items:center;gap:var(--s2);font-size:var(--fs-sm);font-weight:600;
+  color:var(--muted);border:var(--border-w) solid var(--border);border-radius:var(--radius-pill);
+  padding:.25rem var(--s3);margin-bottom:var(--s4)}
+
+/* ---- services: S3 bento (6-col) ---- */
+.bento{display:grid;gap:var(--s4);grid-template-columns:repeat(6,1fr)}
+.bento>*{grid-column:span 6}
+@media(min-width:900px){
+  .bento>.a{grid-column:span 4}
+  .bento>.b{grid-column:span 2}
+  .bento>.c{grid-column:span 2}
+  .bento>.d{grid-column:span 2}
+  .bento>.e{grid-column:span 2}
+}
+.bento .card{height:100%}
+.bento .num{font-family:var(--font-display);font-size:var(--fs-lg);color:var(--primary);
+  font-weight:700;margin-bottom:var(--s3);display:block}
+.bento .tint{background:linear-gradient(160deg,var(--primary-soft),color-mix(in srgb,var(--accent) 14%,var(--surface)))}
+.bento .tint h3{color:var(--text)}
+.bento .meta{margin-top:var(--s4);font-size:var(--fs-sm);color:var(--muted);font-weight:600}
+
+/* ---- team: W3 featured + list ---- */
+.team-wrap{display:grid;gap:var(--s6)}
+@media(min-width:900px){.team-wrap{grid-template-columns:2fr 1fr}}
+.feature{padding:0;overflow:hidden}
+.feature .team-media{aspect-ratio:16/10}
+.feature .body{padding:var(--s6)}
+.team-list{display:grid;gap:var(--s4)}
+.team-item{display:flex;gap:var(--s4);align-items:center;background:var(--surface);
+  border:var(--border-w) solid var(--border);border-radius:var(--radius);padding:var(--s4)}
+.avatar{width:56px;height:56px;border-radius:14px;flex:0 0 auto;
+  background:linear-gradient(140deg,var(--primary-soft),color-mix(in srgb,var(--primary) 26%,var(--surface)));
+  display:grid;place-items:center;font-weight:800;color:var(--primary)}
+.team-item h3{font-size:var(--fs-base);margin:0}
+.team-item p{margin:0;font-size:var(--fs-sm);color:var(--muted)}
+
+/* ---- prices: K2 comparison table ---- */
+.table-wrap{overflow-x:auto;border:var(--border-w) solid var(--border);border-radius:var(--radius);
+  background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:640px}
+th,td{padding:var(--s4);text-align:start;border-bottom:var(--border-w) solid var(--border);font-size:var(--fs-sm)}
+thead th{color:var(--muted);font-weight:700;font-size:var(--fs-base)} /* no letter-spacing: Arabic joins break */
+tbody tr:last-child td{border-bottom:0}
+td b{font-size:var(--fs-base)}
+.note{font-size:var(--fs-sm);color:var(--muted);margin-top:var(--s3)}
+
+/* ---- booking band ---- */
+.band{background:var(--surface);border:var(--border-w) solid var(--border);border-radius:var(--radius-lg);
+  padding:var(--s8);box-shadow:var(--shadow-strong)}
+.band-grid{display:grid;gap:var(--s8)}
+@media(min-width:900px){.band-grid{grid-template-columns:1fr 1fr;align-items:start}}
+
+/* ---- faq 2-col ---- */
+.faq-grid{display:grid;gap:0 var(--s12)}
+@media(min-width:900px){.faq-grid{grid-template-columns:1fr 1fr}}
+
+footer{border-top:var(--border-w) solid var(--border)}
+/* two fields side by side, collapsing to one column on narrow screens
+   (a hard-coded 1fr 1fr grid overflowed the 390px viewport by 3px) */
+.two-col{display:grid;gap:var(--s4);grid-template-columns:1fr}
+@media(min-width:560px){.two-col{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body class="palette-b">
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#top"><span class="mark">س</span> عيادة سِراج <span class="demo-badge">Demo</span></a>
+    <ul class="nav-links">
+      <li><a href="#services">الخدمات</a></li>
+      <li><a href="#team">الفريق</a></li>
+      <li><a href="#prices">الأسعار</a></li>
+      <li><a href="#book">الحجز</a></li>
+      <li><a href="#faq">أسئلة</a></li>
+    </ul>
+    <a class="btn btn-primary" href="#book">احجز زيارة</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="tagline">وسط البلد · القاهرة · Demo</p>
+        <h1 class="hero-title"><span class="line-mask"><span>عيادة أسنان هادية،</span></span><span class="line-mask"><span>وأرقام واضحة</span></span><span class="line-mask"><span>قبل أي قرار</span></span></h1>
+        <p class="lead">ست خدمات بأسعار معلنة، وأطباء بتخصّص محدد. احجز أونلاين في أقل من دقيقة.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#book">احجز زيارة</a>
+          <a class="btn btn-ghost" href="#prices">شوف الأسعار</a>
+        </div>
+        <ul class="proof">
+          <li>يوميًا 10ص — 9م</li>
+          <li>بتقبل التأمين الطبي</li>
+          <li>حجز أونلاين أو واتساب</li>
+        </ul>
+      </div>
+      <div class="hero-media" role="img" aria-label="صورة توضيحية للعيادة">صورة العيادة (Demo)</div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <div class="section-head">
+        <span class="sec-num">01</span>
+        <p class="eyebrow">الخدمات</p>
+        <h2>الست خدمات الأساسية</h2>
+        <p class="lead">كل خدمة بنبذة قصيرة وسعر مبدئي — التفصيل بيتحدد بعد الفحص.</p>
+      </div>
+      <div class="bento">
+        <article class="card a tint">
+          <span class="num">01</span>
+          <h3>تنظيف وتلميع الأسنان</h3>
+          <p>إزالة الجير والتلميع في جلسة واحدة، مع نصائح عناية يومية في البيت.</p>
+          <p class="meta">45 دقيقة · من 400 ج.م</p>
+        </article>
+        <article class="card b">
+          <span class="num">02</span>
+          <h3>علاج التسوّس</h3>
+          <p>فحص وأشعة، ثم حشو المكان المصاب بخامة مناسبة.</p>
+          <p class="meta">من 500 ج.م</p>
+        </article>
+        <article class="card c">
+          <span class="num">03</span>
+          <h3>تقويم الأسنان</h3>
+          <p>شفاف أو تقليدي، مع خطة مكتوبة خطوة بخطوة.</p>
+          <p class="meta">استشارة 200 ج.م</p>
+        </article>
+        <article class="card d">
+          <span class="num">04</span>
+          <h3>زراعة الأسنان</h3>
+          <p>فحص العظم أولًا، ثم خطة زراعة مكتوبة بالمراحل.</p>
+          <p class="meta">من 12,000 ج.م</p>
+        </article>
+        <article class="card e">
+          <span class="num">05</span>
+          <h3>تبييض الأسنان</h3>
+          <p>في العيادة أو بقوالب منزلية، مع شرح الفرق.</p>
+          <p class="meta">من 2,500 ج.م</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+    <div class="container">
+      <div class="section-head">
+        <span class="sec-num">02</span>
+        <p class="eyebrow">الفريق</p>
+        <h2>الأطباء</h2>
+        <p class="lead">أسماء وصور توضيحية — النموذج كله تجريبي.</p>
+      </div>
+      <div class="team-wrap">
+        <article class="card feature">
+          <div class="team-media" role="img" aria-label="صورة توضيحية">صورة (Demo)</div>
+          <div class="body">
+            <span class="demo-badge">Demo</span>
+            <h3 style="margin-top:var(--s3)">د. منى عبد الله — أسنان تحفظ</h3>
+            <p>خبرة 9 سنوات. تشخيص التسوّس وحشو التجويف للبالغين، مع متابعة بعد أسبوعين من الحشو.</p>
+          </div>
+        </article>
+        <div class="team-list">
+          <div class="team-item">
+            <div class="avatar">كر</div>
+            <div><h3>د. كريم فؤاد</h3><p>تقويم · خبرة 12 سنة</p></div>
+          </div>
+          <div class="team-item">
+            <div class="avatar">هـ</div>
+            <div><h3>د. هالة رشدي</h3><p>زراعة · خبرة 11 سنة</p></div>
+          </div>
+          <div class="team-item">
+            <div class="avatar">عم</div>
+            <div><h3>د. عمر شاذلي</h3><p>علاج عصب · خبرة 8 سنوات</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="prices">
+    <div class="container">
+      <div class="section-head">
+        <span class="sec-num">03</span>
+        <p class="eyebrow">الأسعار</p>
+        <h2>جدول الأسعار (Demo)</h2>
+        <p class="lead">أرقام توضيحية للسوق المصري — السعر النهائي بيتحدد بعد الفحص.</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>الخدمة</th><th>السعر المبدئي</th><th>المدة</th><th>متابعة</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>تنظيف وتلميع</td><td><b>400 ج.م</b></td><td>45 دقيقة</td><td>نصائح في نفس الجلسة</td></tr>
+            <tr><td>حشو تجويف (سنيان)</td><td><b>500 ج.م</b></td><td>30 — 45 دقيقة</td><td>بعد أسبوعين</td></tr>
+            <tr><td>حشو عصب ( أمامي )</td><td><b>1,200 ج.م</b></td><td>جلستان</td><td>مواعيد متابعة مجدولة</td></tr>
+            <tr><td>تبييض في العيادة</td><td><b>2,500 ج.م</b></td><td>60 دقيقة</td><td>جلسة صيانة سنوية</td></tr>
+            <tr><td>استشارة تقويم</td><td><b>200 ج.م</b></td><td>20 دقيقة</td><td>خطة مكتوبة</td></tr>
+            <tr><td>زراعة سن (مبدئية)</td><td><b>12,000 ج.م</b></td><td>حسب الخطة</td><td>ضمان موثّق</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">الأرقام توضيحية للنموذج، ومفيش أي وعد بنتيجة علاج.</p>
+    </div>
+  </section>
+
+  <section id="book">
+    <div class="container band">
+      <div class="band-grid">
+        <div>
+          <span class="sec-num">04</span>
+          <p class="eyebrow">الحجز</p>
+          <h2>احجز في أقل من دقيقة</h2>
+          <p class="lead">سيب بياناتك، وبنرد عليك خلال ساعات العمل لتأكيد الموعد.</p>
+          <ul class="proof" style="margin-top:var(--s6)">
+            <li>رد خلال ساعات العمل</li>
+            <li>تأكيد على نفس الرقم</li>
+          </ul>
+        </div>
+        <form action="#" method="post" novalidate>
+          <label>الاسم الكامل
+            <input name="name" autocomplete="name" required>
+          </label>
+          <label>رقم الموبايل
+            <input name="phone" inputmode="tel" autocomplete="tel" placeholder="01xxxxxxxxx" required>
+          </label>
+          <div class="two-col">
+            <label>الخدمة
+              <select name="service" required>
+                <option>تنظيف وتلميع</option>
+                <option>علاج تسوّس</option>
+                <option>تقويم</option>
+                <option>زراعة</option>
+                <option>تبييض</option>
+                <option>علاج عصب</option>
+              </select>
+            </label>
+            <label>الموعد
+              <select name="slot" required>
+                <option>صباحًا</option>
+                <option>ظهرًا</option>
+                <option>مساءً</option>
+              </select>
+            </label>
+          </div>
+          <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn-primary" type="submit">أرسل طلب الحجز</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="container">
+      <div class="section-head">
+        <span class="sec-num">05</span>
+        <p class="eyebrow">أسئلة شائعة</p>
+        <h2>قبل ما تحجز</h2>
+      </div>
+      <div class="faq-grid">
+        <div>
+          <details><summary>هل الحجز أونلاين بيضمن الموعد؟</summary>
+            <p>الحجز بيعتبر طلب — بنكلمك على الرقم المسجّل للتأكيد، والأولوية للمواعيد المؤكدة.</p></details>
+          <details><summary>بتقبلوا التأمين الطبي؟</summary>
+            <p>بنقبل التحصيل من شركات التأمين المشاركة بعد التحقق من البوليصة في الفرع.</p></details>
+        </div>
+        <div>
+          <details><summary>في عيادة للأطفال؟</summary>
+            <p>أيوا، من سن 4 سنوات، وأول زيارة تكون الفحص فقط من غير أي إجراء.</p></details>
+          <details><summary>إيه حالة الطوارئ؟</summary>
+            <p>ألم حاد أو تورّم: ابعتلنا على واتساب مع صور، وبنرد عليك في نفس اليوم.</p></details>
+          <details><summary>أقدر أدفع بالأقساط؟</summary>
+            <p>أيوا، من 3 إلى 12 قسطًا على التقويم والزراعة — بيتأكد في زيارة الاستشارة.</p></details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-head">
+        <span class="sec-num">06</span>
+        <p class="eyebrow">تواصل</p>
+        <h2>الموقع والعنوان</h2>
+      </div>
+      <div class="grid grid-3">
+        <article class="card"><div class="icon">م</div><h3>العنوان (Demo)</h3><p>٢٤ شارع التحرير، وسط البلد، القاهرة</p></article>
+        <article class="card"><div class="icon">ت</div><h3>التليفون والواتساب</h3><p>0100 000 0000 (placeholder)</p></article>
+        <article class="card"><div class="icon">س</div><h3>ساعات العمل</h3><p>يوميًا 10ص — 9م · الجمعة 2م — 7م</p></article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <span>© عيادة سِراج للأسنان — نموذج تجريبي (Demo)</span>
+    <span>القاهرة · الخصوصية · سياسة الحجز</span>
+  </div>
+</footer>
+</body>
+</html>

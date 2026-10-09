@@ -1,0 +1,16 @@
+=== A. every SameSite mention under wp-includes ===
+--- occurrences with context ---
+(end)
+
+=== B. wp_set_auth_cookie: how $secure is derived ===
+
+=== C. any SameSite set by the theme or the plugin? ===
+(no output above = neither project file touches cookies)
+
+=== D. session cookie params used by core for the LOGGED_IN cookie path ===
+1193:		setcookie( $auth_cookie_name, $auth_cookie, $expire, PLUGINS_COOKIE_PATH, COOKIE_DOMAIN, $secure, true );
+1194:		setcookie( $auth_cookie_name, $auth_cookie, $expire, ADMIN_COOKIE_PATH, COOKIE_DOMAIN, $secure, true );
+1195:		setcookie( LOGGED_IN_COOKIE, $logged_in_cookie, $expire, COOKIEPATH, COOKIE_DOMAIN, $secure_logged_in_cookie, true );
+1196:		if ( COOKIEPATH !== SITECOOKIEPATH ) {
+1197:			setcookie( LOGGED_IN_COOKIE, $logged_in_cookie, $expire, SITECOOKIEPATH, COOKIE_DOMAIN, $secure_logged_in_cookie, true );
+1222:		setcookie( AUTH_COOKIE, ' ', time() - YEAR_IN_SECONDS, ADMIN_COOKIE_PATH, COOKIE_DOMAIN );

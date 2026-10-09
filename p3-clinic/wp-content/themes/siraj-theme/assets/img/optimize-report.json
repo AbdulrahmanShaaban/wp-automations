@@ -1,0 +1,46 @@
+{
+  "targetW": 800,
+  "quality": 0.72,
+  "report": [
+    {
+      "name": "photo-instruments",
+      "natural": "1200x1200",
+      "out": "800x800",
+      "jpgBytes": 111828,
+      "webpBytes": 20924,
+      "savedBytes": 90904,
+      "savedPct": 81
+    },
+    {
+      "name": "photo-stilllife",
+      "natural": "1200x1500",
+      "out": "800x1000",
+      "jpgBytes": 97655,
+      "webpBytes": 14704,
+      "savedBytes": 82951,
+      "savedPct": 85
+    },
+    {
+      "name": "photo-implant",
+      "natural": "1200x1500",
+      "out": "800x1000",
+      "jpgBytes": 123973,
+      "webpBytes": 20362,
+      "savedBytes": 103611,
+      "savedPct": 84
+    },
+    {
+      "name": "photo-lounge",
+      "natural": "1200x1200",
+      "out": "800x800",
+      "jpgBytes": 205952,
+      "webpBytes": 41772,
+      "savedBytes": 164180,
+      "savedPct": 80
+    }
+  ],
+  "totals": {
+    "jpgBytes": 539408,
+    "webpBytes": 97762
+  }
+}

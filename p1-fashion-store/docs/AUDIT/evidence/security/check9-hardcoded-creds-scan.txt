@@ -1,0 +1,51 @@
+﻿== credential-ish patterns in scripts/ and .wp-env.json (values redacted) ==
+cleanup-n8n-api.js:11 :: // Reads credentials from n8n/owner-account.local.txt (local, gitignored) and
+cleanup-n8n-api.js:12 :: // keeps the session cookie in the OS temp dir. No secrets are printed.
+cleanup-n8n-api.js:26 :: const password = [REDACTED] || [])[1];
+cleanup-n8n-api.js:27 :: if (!email || !password) throw new Error('owner credentials not found in n8n/owner-account.local.txt');
+cleanup-n8n-api.js:28 :: return { email: email.trim(), password: [REDACTED] };
+cleanup-n8n-api.js:47 :: const { email, password } = account();
+cleanup-n8n-api.js:50 :: body: JSON.stringify({ emailOrLdapLoginId: email, password }),
+list-n8n-executions.js:18 :: password: [REDACTED] || [])[1].trim(),
+list-n8n-executions.js:24 :: const { email, password } = account();
+list-n8n-executions.js:28 :: body: JSON.stringify({ emailOrLdapLoginId: email, password }),
+live-e2e-evidence.js:25 :: say('Telegram: @nilad_notify_bot (token [REDACTED], chat id read from owner /start)');
+patch-telegram-env.js:1 :: // patch-telegram-env.js â€” move Telegram credentials out of node expressions.
+patch-telegram-env.js:5 :: //   Code node  -> appends tgToken/tgChatId (from $env) to the item JSON
+patch-telegram-env.js:6 :: //   HTTP node  -> reads {{$json.tgToken}} / {{$json.tgChatId}} in url + jsonBody
+patch-telegram-env.js:17 :: const FORBIDDEN = /\$env\.(TELEGRAM_BOT_TOKEN|TELEGRAM_CHAT_ID)/;
+patch-telegram-env.js:24 :: if (code.includes('tgToken:')) return { node, changed: false, why: 'already patched' };
+patch-telegram-env.js:31 :: indent + '// credentials are resolved here and the HTTP node reads them from the item.\n' +
+patch-telegram-env.js:32 :: indent + "tgToken: [REDACTED] || '',\n" +
+patch-telegram-env.js:38 :: why: 'added tgToken/tgChatId',
+patch-telegram-env.js:42 :: // Appends the credential [REDACTED] to whatever object a Code node returns, without
+patch-telegram-env.js:45 :: if (code.includes('tgToken:')) return { code, changed: false };
+patch-telegram-env.js:53 :: '    // the Telegram HTTP node gets its credentials from this item instead.\n' +
+patch-telegram-env.js:54 :: "    tgToken: [REDACTED] || '',\n" +
+patch-telegram-env.js:102 :: next.url = '=https://api.telegram.org/bot{{ $json.tgToken [REDACTED];
+patch-telegram-env.js:111 :: why: 'url/jsonBody now read $json.tgToken/tgChatId',
+patch-telegram-env.js:123 :: const needCreds = tgNodes.some((n) => String(JSON.stringify(n.parameters)).includes('$json.tgToken'));
+patch-telegram-env.js:140 :: notes.push(fnode.name + ': injected tgToken/tgChatId');
+patch-wp-env.js:8 :: * `composer global require` as USER $HOST_UID with no passwd [REDACTED] / home dir.
+probe-f1-webhook.js:7 :: // Uses the real WOO_WEBHOOK_SECRET [REDACTED] n8n/.env and prints n8n's HTTP response
+probe-f1-webhook.js:8 :: // plus the resulting execution status. Secrets are never printed.
+probe-f1-webhook.js:53 :: const sig = crypto.createHmac('sha256', E.WOO_WEBHOOK_SECRET).update(body).digest('base64');
+probe-f1-webhook.js:73 :: 'X-WC-Webhook-Signature': crypto.createHmac('sha256', 'wrong-secret'[REDACTED]base64'),
+qa-audit.js:41 :: // then add the abaya (product 38) and reuse the returned cart token as a cookie.
+qa-audit.js:80 :: const token = [REDACTED]cart-token'] || add.headers['cart-token'];
+qa-audit.js:87 :: if (token && !jar.some((c) => c.startsWith('cart_token='))) {
+qa-audit.js:88 :: jar.push('cart_token=' + token);
+qa-audit.js:93 :: (token ? ' token ok' : ' NO TOKEN') +
+qa-audit.js:185 :: // only host config (`ServerTokens Prod`, `ServerSignature Off`) can. Locally the
+qa-audit.js:193 :: 'server: ' + (serverBanner || 'n/a') + (isLocal && !serverClean ? '  [WARN â€” needs ServerTokens Prod on the real host]' : ''));
+qa-audit.js:581 :: L.push('- Apache `ServerTokens Prod` + `ServerSignature Off` (the local wp-env image leaks');
+show-n8n-execution-error.js:18 :: password: [REDACTED] || [])[1].trim(),
+show-n8n-execution-error.js:32 :: const { email, password } = account();
+show-n8n-execution-error.js:36 :: body: JSON.stringify({ emailOrLdapLoginId: email, password }),
+trace-telegram-inputs.js:2 :: // receives tgToken/tgChatId in its input item.
+trace-telegram-inputs.js:4 :: // A Telegram node reads {{$json.tgToken}}; that field must survive every hop between
+trace-telegram-inputs.js:19 :: return c.includes('tgToken:') || c.includes('tgChatId:');
+trace-telegram-inputs.js:52 :: // Walk back until we find a Code node that sets the credentials, or a node that
+trace-telegram-inputs.js:95 :: console.log('    => NO credential [REDACTED] found for ' + tg.name);
+trace-telegram-inputs.js:99 :: console.log(problems === 0 ? '\nall Telegram nodes have a credential [REDACTED] : '\n' + problems + ' Telegram node(s) without a credential [REDACTED]);
+-- no matches in .wp-env.json beyond config keys --

@@ -1,0 +1,171 @@
+{
+  "name": "Siraj clinic: booking.created (HMAC) → confirm to owner",
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "saveDataErrorExecution": "all",
+    "saveDataSuccessExecution": "all",
+    "errorWorkflow": ""
+  },
+  "pinData": {},
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "siraj-booking",
+        "responseMode": "responseNode",
+        "options": {
+          "rawBody": true
+        }
+      },
+      "id": "5f1a1e00-0001-4000-8000-000000000001",
+      "name": "Webhook (booking.created)",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [-640, 0],
+      "webhookId": "siraj-booking"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Verify WP notifier signature: X-Siraj-Signature: v1=hex(HMAC-SHA256(\"<ts>.<rawBody>\", secret))\n// Requires NODE_FUNCTION_ALLOW_BUILTIN=crypto on self-hosted n8n [VERIFY on your version].\nconst crypto = require('crypto');\nconst item = $input.first();\nconst headers = item.json.headers || {};\nconst rawBody = item.json.rawBody;\nconst ts = String(headers['x-siraj-timestamp'] ?? '');\nconst sig = String(headers['x-siraj-signature'] ?? '');\nconst secret = String($env.SIRAJ_N8N_SECRET ?? '');\nconst fail = (reason) => [{ json: { ok: false, reason } }];\nif (!secret) return fail('SIRAJ_N8N_SECRET not set on this n8n instance');\nif (!rawBody) return fail('raw body missing - enable Raw Body on the Webhook node');\nif (!ts || !sig) return fail('missing signature headers');\nconst skew = Math.abs(Math.floor(Date.now() / 1000) - Number(ts));\nif (!Number.isFinite(Number(ts)) || skew > 300) return fail('timestamp missing or expired (skew ' + skew + 's)');\nconst expected = 'v1=' + crypto.createHmac('sha256', secret).update(ts + '.' + rawBody).digest('hex');\nconst a = Buffer.from(sig, 'utf8');\nconst b = Buffer.from(expected, 'utf8');\nif (a.length !== b.length || !crypto.timingSafeEqual(a, b)) return fail('bad signature');\nlet payload;\ntry { payload = JSON.parse(rawBody); } catch (e) { return fail('body is not JSON'); }\nif (payload.event !== 'booking.created') return fail('unexpected event: ' + payload.event);\nconst bk = payload.booking || {};\n// Defensive phone normalization (WP already stores +20...): expect +20(10|11|12|15)xxxxxxxx\nconst raw = String(bk.phone ?? '').replace(/[^\\d+]/g, '');\nconst phone = raw.startsWith('+20') ? raw : raw.startsWith('0020') ? '+20' + raw.slice(4) : raw.startsWith('0') ? '+20' + raw.slice(1) : raw;\nconst phoneValid = /^\\+20(10|11|12|15)\\d{8}$/.test(phone);\nconst missing = ['name', 'phone', 'service_label', 'date'].filter((k) => !bk[k]);\nif (missing.length) return fail('missing fields: ' + missing.join(','));\nreturn [{ json: { ok: true, booking: { id: bk.id, name: bk.name, phone, phoneValid, service: bk.service, service_label: bk.service_label, date: bk.date, notes: bk.notes || '', created_at: bk.created_at || '' }, receivedAt: new Date().toISOString() } }];"
+      },
+      "id": "5f1a1e00-0002-4000-8000-000000000002",
+      "name": "Verify HMAC + normalize",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [-380, 0]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "cond-signature-ok",
+              "leftValue": "={{ $json.ok }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "5f1a1e00-0003-4000-8000-000000000003",
+      "name": "Signature valid?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [-140, 0]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ ok: false, reason: $json.reason }) }}",
+        "options": {
+          "responseCode": 401
+        }
+      },
+      "id": "5f1a1e00-0004-4000-8000-000000000004",
+      "name": "Respond 401",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [100, -140]
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ ok: true, bookingId: $json.booking.id }) }}",
+        "options": {
+          "responseCode": 200
+        }
+      },
+      "id": "5f1a1e00-0005-4000-8000-000000000005",
+      "name": "Respond 200",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [100, 120]
+    },
+    {
+      "parameters": {
+        "resource": "message",
+        "operation": "sendMessage",
+        "chatId": "REPLACE_WITH_YOUR_CHAT_ID",
+        "text": "={{ 'حجز جديد - عيادة سِراج (Demo)\\n' + 'الاسم: ' + $json.booking.name + '\\n' + 'الموبايل: ' + $json.booking.phone + ($json.booking.phoneValid ? '' : ' - رقم غير مطابق للصيغة المصرية') + '\\n' + 'الخدمة: ' + $json.booking.service_label + '\\n' + 'التاريخ: ' + $json.booking.date + ($json.booking.notes ? '\\n' + 'ملاحظات: ' + $json.booking.notes : '') + '\\n' + 'رقم الحجز: #' + $json.booking.id }}",
+        "additionalFields": {}
+      },
+      "id": "5f1a1e00-0006-4000-8000-000000000006",
+      "name": "Telegram to owner",
+      "type": "n8n-nodes-base.telegram",
+      "typeVersion": 1.2,
+      "position": [340, 120],
+      "credentials": {
+        "telegramApi": {
+          "id": "REPLACE_ON_IMPORT",
+          "name": "Telegram account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Webhook (booking.created)": {
+      "main": [
+        [
+          {
+            "node": "Verify HMAC + normalize",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Verify HMAC + normalize": {
+      "main": [
+        [
+          {
+            "node": "Signature valid?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Signature valid?": {
+      "main": [
+        [
+          {
+            "node": "Respond 200",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Respond 401",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Respond 200": {
+      "main": [
+        [
+          {
+            "node": "Telegram to owner",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

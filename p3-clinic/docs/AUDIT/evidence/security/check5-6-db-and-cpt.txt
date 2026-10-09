@@ -1,0 +1,84 @@
+=== A. effective PHP ini AFTER WordPress bootstrap (web code path) ===
+display_errors=stderr expose_php=1 display_startup_errors= error_reporting=32767
+WP_DEBUG=true WP_DEBUG_DISPLAY=true WP_DEBUG_LOG=false
+
+=== B. siraj_booking CPT as WordPress resolved it ===
+public=false
+publicly_queryable=false
+exclude_from_search=true
+show_ui=true
+show_in_rest=false
+show_in_nav_menus=false
+has_archive=false
+query_var=false
+can_export=false
+hierarchical=false
+rewrite=false
+map_meta_cap=true
+capability_type="post"
+_builtin=false
+-- capabilities --
+cap[edit_post]=["edit_post"]
+cap[read_post]=["read_post"]
+cap[delete_post]=["delete_post"]
+cap[edit_posts]=["edit_posts"]
+cap[publish_posts]=["publish_posts"]
+cap[create_posts]=["edit_posts"]
+-- is this type in the public REST list? --
+get_post_types( array( "show_in_rest" => true ) ) contains siraj_booking: NO
+
+=== C. booking row count BEFORE the malformed submission ===
+bookings_before
+1
+
+
+=== D. existing booking rows (ids + status + title LENGTH only, no PII) ===
+ID	post_status	post_date	title_len
+24	publish	2026-10-07 13:00:40	15
+
+
+=== E. booking meta: key names + value lengths only (no values) ===
+meta_key	rows_n	min_len	max_len
+siraj_date	1	10	10
+siraj_ip_hash	1	64	64
+siraj_notes	1	29	29
+siraj_phone	1	13	13
+siraj_service	1	8	8
+
+
+=== F. are any booking meta keys registered as REST-visible? ===
+registered meta for post_type siraj_booking: NONE (no register_post_meta calls)
+
+=== G. cron / scheduled events ===
+hook	next_run_gmt	recurrence
+wp_privacy_delete_old_export_files	2026-10-08 04:03:51	1 hour
+recovery_mode_clean_expired_keys	2026-10-08 08:03:50	1 day
+wp_privacy_personal_data_cleanup_requests	2026-10-08 08:03:51	1 day
+wp_version_check	2026-10-08 09:03:33	12 hours
+wp_update_plugins	2026-10-08 09:33:33	12 hours
+wp_update_themes	2026-10-08 10:03:33	12 hours
+wp_update_user_counts	2026-10-08 14:51:44	12 hours
+wp_delete_temp_updater_backups	2026-10-13 08:07:31	1 week
+wp_site_health_scheduled_check	2026-10-14 08:03:50	1 week
+--- DISABLE_WP_CRON / ALTERNATE_WP_CRON ---
+DISABLE_WP_CRON=NULL ALTERNATE_WP_CRON=NULL
+
+=== H. does a page render the booking shortcode and is it in any feed? ===
+ID	post_name	content_len
+4	home	0
+5	services	1935
+6	team	1191
+7	contact	816
+23	book	228
+
+--- shortcode occurrences per page (counts only) ---
+Error: Query failed: --------------
+SELECT post_id, (CHAR_LENGTH(post_content)-CHAR_LENGTH(REPLACE(post_content,'[siraj_booking]','')))/16 AS shortcode_count FROM wp_posts WHERE post_type='page' AND post_status='publish' AND post_content LIKE '%[siraj_booking]%'
+--------------
+
+ERROR 1054 (42S22) at line 1: Unknown column 'post_id' in 'SELECT'
+
+
+=== I. active theme / plugin code paths that read $_GET or $_POST globally ===
+bash: line 78: syntax error near unexpected token `('
+bash: line 78: `    substr_count( $src, 'eval(' ),'

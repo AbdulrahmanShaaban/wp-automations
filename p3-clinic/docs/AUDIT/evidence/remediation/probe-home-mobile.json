@@ -1,0 +1,1099 @@
+{
+ "page": "home",
+ "url": "http://localhost:8889/",
+ "viewport": {
+  "name": "mobile",
+  "w": 390,
+  "h": 844,
+  "mobile": true
+ },
+ "probe": {
+  "lang": "ar",
+  "dir": "rtl",
+  "title": "عيادة سِراج للأسنان – حجز زيارات وطب أسنان (Demo)",
+  "viewportMeta": "width=device-width, initial-scale=1",
+  "url": "/",
+  "headings": [
+   {
+    "level": 1,
+    "text": "أسنانك تستاهل عناية واضحة، بموعد يناسبك",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "ملاحظات الزيارة",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "كل خدمة بسعرها ومدةها، قبل ما تحجز",
+    "visible": true
+   },
+   {
+    "level": 3,
+    "text": "فحص وتشخيص",
+    "visible": true
+   },
+   {
+    "level": 3,
+    "text": "تنظيف وتلميع",
+    "visible": true
+   },
+   {
+    "level": 3,
+    "text": "علاج العصب (حشو عصب)",
+    "visible": true
+   },
+   {
+    "level": 3,
+    "text": "حشو تجميلي",
+    "visible": true
+   },
+   {
+    "level": 3,
+    "text": "تقويم",
+    "visible": true
+   },
+   {
+    "level": 3,
+    "text": "زراعة سن",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "أدوات واضحة، ونظافة مقدّمة",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "تخصصات واضحة، كل واحد في مجاله",
+    "visible": true
+   },
+   {
+    "level": 3,
+    "text": "طبقة التقويم",
+    "visible": true
+   },
+   {
+    "level": 3,
+    "text": "طبقة زراعة الأسنان",
+    "visible": true
+   },
+   {
+    "level": 3,
+    "text": "طبقة تجميل الأسنان",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "أربع خطوات، تعرفها قبل ما تيجي",
+    "visible": true
+   },
+   {
+    "level": 3,
+    "text": "تحجز أونلاين",
+    "visible": true
+   },
+   {
+    "level": 3,
+    "text": "تأكيد الموعد",
+    "visible": true
+   },
+   {
+    "level": 3,
+    "text": "الفحص والتقييم",
+    "visible": true
+   },
+   {
+    "level": 3,
+    "text": "خطة العلاج",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "الأسئلة اللي بتتسأل قبل الحجز",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "وسط البلد، القاهرة",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "جاهز تحجز؟ ابدأ من غير ما تتصل",
+    "visible": true
+   }
+  ],
+  "h1Count": 1,
+  "hiddenHeadingCount": 0,
+  "headingSkips": [],
+  "landmarks": {
+   "header": 1,
+   "nav": 1,
+   "main": 1,
+   "footer": 1,
+   "aside": 1,
+   "bannerTopLevel": false,
+   "contentinfoTopLevel": false,
+   "roleMain": 0,
+   "roleStatus": 0
+  },
+  "focusableCount": 19,
+  "firstFocusables": [
+   {
+    "tag": "a",
+    "text": "تخطى إلى المحتوى",
+    "href": "#wp--skip-link--target",
+    "cls": "skip-link screen-reader-text",
+    "tabIndex": 0
+   },
+   {
+    "tag": "a",
+    "text": "عيادة سِراج للأسنان Demo",
+    "href": "/",
+    "cls": "brand",
+    "tabIndex": 0
+   },
+   {
+    "tag": "button",
+    "text": "فتح القائمة",
+    "href": null,
+    "cls": "wp-block-navigation__responsive-container-open",
+    "tabIndex": 0
+   },
+   {
+    "tag": "button",
+    "text": "إغلاق القائمة",
+    "href": null,
+    "cls": "wp-block-navigation__responsive-container-close",
+    "tabIndex": 0
+   },
+   {
+    "tag": "a",
+    "text": "الخدمات",
+    "href": "/services/",
+    "cls": "wp-block-navigation-item__content",
+    "tabIndex": 0
+   },
+   {
+    "tag": "a",
+    "text": "الفريق",
+    "href": "/team/",
+    "cls": "wp-block-navigation-item__content",
+    "tabIndex": 0
+   },
+   {
+    "tag": "a",
+    "text": "تواصل",
+    "href": "/contact/",
+    "cls": "wp-block-navigation-item__content",
+    "tabIndex": 0
+   },
+   {
+    "tag": "a",
+    "text": "احجز زيارة",
+    "href": "/book/",
+    "cls": "wp-block-button__link wp-element-button",
+    "tabIndex": 0
+   }
+  ],
+  "skipLink": {
+   "present": true,
+   "href": "#wp--skip-link--target",
+   "text": "تخطى إلى المحتوى",
+   "cls": "skip-link screen-reader-text",
+   "isFirstFocusable": true,
+   "targetExists": true
+  },
+  "images": {
+   "total": 4,
+   "missingAlt": 0,
+   "emptyAlt": 0,
+   "broken": 0,
+   "sample": [
+    {
+     "alt": "أدوات تنظيف الأسنان مرتبة على سطح أبيض",
+     "src": "photo-instruments.webp",
+     "w": 340
+    },
+    {
+     "alt": "مرآة فحص الأسنان وملقط معدني على سطح أبيض",
+     "src": "photo-stilllife.webp",
+     "w": 340
+    },
+    {
+     "alt": "زرعة سن معدنية ممسوكة بقفاز أبيض",
+     "src": "photo-implant.webp",
+     "w": 340
+    },
+    {
+     "alt": "صالة انتظار في عيادة أسنان بأربعة كراسي ونبتة",
+     "src": "photo-lounge.webp",
+     "w": 340
+    }
+   ]
+  },
+  "digits": {
+   "latin": 69,
+   "eastern": 0,
+   "egp": 6,
+   "arabicComma": 24,
+   "westernCommaInArabic": 0,
+   "semicolonAr": 0
+  },
+  "typography": [
+   {
+    "tag": "a",
+    "cls": "skip-link screen-reader-text",
+    "text": "تخطى إلى المحتوى",
+    "letterSpacing": "normal",
+    "lineHeight": "27.2px",
+    "fontSize": "16px",
+    "fontStyle": "normal",
+    "fontFamily": "Alexandria, system-ui, -apple-system",
+    "textAlign": "start"
+   },
+   {
+    "tag": "a",
+    "cls": "wp-block-button__link wp-element-button",
+    "text": "احجز زيارة",
+    "letterSpacing": "normal",
+    "lineHeight": "23.8px",
+    "fontSize": "14px",
+    "fontStyle": "normal",
+    "fontFamily": "Alexandria, system-ui, -apple-system",
+    "textAlign": "center"
+   },
+   {
+    "tag": "p",
+    "cls": "eyebrow",
+    "text": "نموذج تجريبي · لا يمثّل أي عيادة حقيقية",
+    "letterSpacing": "normal",
+    "lineHeight": "23.8px",
+    "fontSize": "14px",
+    "fontStyle": "normal",
+    "fontFamily": "Alexandria, system-ui, -apple-system",
+    "textAlign": "start"
+   },
+   {
+    "tag": "h1",
+    "cls": "",
+    "text": "أسنانك تستاهل عناية واضحة، بموعد يناسبك",
+    "letterSpacing": "normal",
+    "lineHeight": "56.29px",
+    "fontSize": "43.3px",
+    "fontStyle": "normal",
+    "fontFamily": "Alexandria, system-ui, -apple-system",
+    "textAlign": "start"
+   },
+   {
+    "tag": "p",
+    "cls": "lead",
+    "text": "احجز الزيارة أونلاين في أقل من دقيقة، وتعرف كل خطو",
+    "letterSpacing": "normal",
+    "lineHeight": "34px",
+    "fontSize": "20px",
+    "fontStyle": "normal",
+    "fontFamily": "Alexandria, system-ui, -apple-system",
+    "textAlign": "start"
+   },
+   {
+    "tag": "h2",
+    "cls": "",
+    "text": "ملاحظات الزيارة",
+    "letterSpacing": "normal",
+    "lineHeight": "28.8px",
+    "fontSize": "24px",
+    "fontStyle": "normal",
+    "fontFamily": "Alexandria, system-ui, -apple-system",
+    "textAlign": "start"
+   },
+   {
+    "tag": "h2",
+    "cls": "",
+    "text": "كل خدمة بسعرها ومدةها، قبل ما تحجز",
+    "letterSpacing": "normal",
+    "lineHeight": "33.6px",
+    "fontSize": "28px",
+    "fontStyle": "normal",
+    "fontFamily": "Alexandria, system-ui, -apple-system",
+    "textAlign": "start"
+   },
+   {
+    "tag": "h3",
+    "cls": "",
+    "text": "فحص وتشخيص",
+    "letterSpacing": "normal",
+    "lineHeight": "24px",
+    "fontSize": "20px",
+    "fontStyle": "normal",
+    "fontFamily": "Alexandria, system-ui, -apple-system",
+    "textAlign": "start"
+   },
+   {
+    "tag": "span",
+    "cls": "v",
+    "text": "يوميًا 10ص — 9م",
+    "letterSpacing": "normal",
+    "lineHeight": "27.2px",
+    "fontSize": "16px",
+    "fontStyle": "normal",
+    "fontFamily": "Alexandria, system-ui, -apple-system",
+    "textAlign": "end"
+   }
+  ],
+  "negativeLetterSpacing": null,
+  "justifySeen": null,
+  "lowLineHeight": {
+   "sel": "h1.",
+   "ratio": 1.3,
+   "lineHeight": "56.29px",
+   "fontSize": "43.3px",
+   "text": "أسنانك تستاهل عناية واضحة، بموعد يناسبك"
+  },
+  "bodyStyle": {
+   "lineHeight": "27.2px",
+   "fontSize": "16px",
+   "fontFamily": "Alexandria, system-ui, -apple-system, \"Segoe UI\", Tahoma, sans-serif",
+   "letterSpacing": "normal",
+   "textAlign": "start",
+   "direction": "rtl"
+  },
+  "targets": [
+   {
+    "sel": "#wp-skip-link",
+    "tag": "a",
+    "text": "تخطى إلى المحتوى",
+    "w": 1,
+    "h": 1,
+    "x": 390,
+    "y": -4410
+   },
+   {
+    "sel": "div.wp-site-blocks>div.wp-block-template-part>header.wp-block-group.site-header.has-global-padding>div.wp-block-group.container.nav>a.brand",
+    "tag": "a",
+    "text": "عيادة سِراج للأسنان Demo",
+    "w": 196.9,
+    "h": 34,
+    "x": 169,
+    "y": -4392
+   },
+   {
+    "sel": "div.wp-block-template-part>header.wp-block-group.site-header.has-global-padding>div.wp-block-group.container.nav>nav.is-responsive.items-justified-center.wp-block-navigation>button.wp-block-navigation__responsive-container-open",
+    "tag": "button",
+    "text": "فتح القائمة",
+    "w": 24,
+    "h": 24,
+    "x": 126,
+    "y": -4387
+   },
+   {
+    "sel": "header.wp-block-group.site-header.has-global-padding>div.wp-block-group.container.nav>div.wp-block-buttons.nav-actions.is-layout-flex>div.wp-block-button>a.wp-block-button__link.wp-element-button",
+    "tag": "a",
+    "text": "احجز زيارة",
+    "w": 83.5,
+    "h": 46.5,
+    "x": 24,
+    "y": -4398
+   },
+   {
+    "sel": "section.hero>div.container.hero-grid>div.hero-text>div.hero-actions>a.btn.btn-primary",
+    "tag": "a",
+    "text": "احجز زيارة",
+    "w": 118,
+    "h": 48,
+    "x": 248,
+    "y": -3840
+   },
+   {
+    "sel": "section.hero>div.container.hero-grid>div.hero-text>div.hero-actions>a.btn.btn-ghost",
+    "tag": "a",
+    "text": "شوف الخدمات",
+    "w": 159.7,
+    "h": 48,
+    "x": 76,
+    "y": -3840
+   },
+   {
+    "sel": "section.section.faq>div.container.narrow>div.faq-list>details.faq-item>summary",
+    "tag": "summary",
+    "text": "هل الحجز اللي بعمله أونلاين نهائي؟",
+    "w": 340,
+    "h": 27.2,
+    "x": 25,
+    "y": 2335
+   },
+   {
+    "sel": "section.section.faq>div.container.narrow>div.faq-list>details.faq-item>summary",
+    "tag": "summary",
+    "text": "كام تكلفة الكشف؟",
+    "w": 340,
+    "h": 27.2,
+    "x": 25,
+    "y": 2376
+   },
+   {
+    "sel": "section.section.faq>div.container.narrow>div.faq-list>details.faq-item>summary",
+    "tag": "summary",
+    "text": "بتقبلوا التأمين الطبي؟",
+    "w": 340,
+    "h": 27.2,
+    "x": 25,
+    "y": 2417
+   },
+   {
+    "sel": "section.section.faq>div.container.narrow>div.faq-list>details.faq-item>summary",
+    "tag": "summary",
+    "text": "إيه المواعيد المتاحة؟",
+    "w": 340,
+    "h": 27.2,
+    "x": 25,
+    "y": 2458
+   },
+   {
+    "sel": "section.section.faq>div.container.narrow>div.faq-list>details.faq-item>summary",
+    "tag": "summary",
+    "text": "الأسعار دي هتفضل زي ما هي؟",
+    "w": 340,
+    "h": 27.2,
+    "x": 25,
+    "y": 2500
+   },
+   {
+    "sel": "section.section.contact-band>div.container.contact-grid>div.contact-text.reveal.in>div.hero-actions>a.btn.btn-primary",
+    "tag": "a",
+    "text": "احجز دلوقتي",
+    "w": 143.2,
+    "h": 48,
+    "x": 223,
+    "y": 2991
+   },
+   {
+    "sel": "section.section.contact-band>div.container.contact-grid>div.contact-text.reveal.in>div.hero-actions>a.btn.btn-ghost",
+    "tag": "a",
+    "text": "صفحة التواصل",
+    "w": 166,
+    "h": 48,
+    "x": 45,
+    "y": 2991
+   },
+   {
+    "sel": "div.wp-site-blocks>main.wp-block-group.site-main.is-layout-flow>section.section.cta-band>div.container.cta-inner.reveal>a.btn.btn-primary.btn-lg",
+    "tag": "a",
+    "text": "احجز زيارة",
+    "w": 151,
+    "h": 56,
+    "x": 215,
+    "y": 3718
+   },
+   {
+    "sel": "div.wp-site-blocks>div.wp-block-template-part>footer.wp-block-group.site-footer.has-global-padding>div.wp-block-group.container.footer-row>a.brand",
+    "tag": "a",
+    "text": "عيادة سِراج للأسنان",
+    "w": 202.9,
+    "h": 40,
+    "x": 163,
+    "y": 3879
+   },
+   {
+    "sel": "div.wp-block-template-part>footer.wp-block-group.site-footer.has-global-padding>div.wp-block-group.container.footer-row>p.wp-block-paragraph>a",
+    "tag": "a",
+    "text": "الخدمات",
+    "w": 52.2,
+    "h": 24,
+    "x": 314,
+    "y": 3998
+   },
+   {
+    "sel": "div.wp-block-template-part>footer.wp-block-group.site-footer.has-global-padding>div.wp-block-group.container.footer-row>p.wp-block-paragraph>a",
+    "tag": "a",
+    "text": "الفريق",
+    "w": 39.6,
+    "h": 24,
+    "x": 263,
+    "y": 3998
+   },
+   {
+    "sel": "div.wp-block-template-part>footer.wp-block-group.site-footer.has-global-padding>div.wp-block-group.container.footer-row>p.wp-block-paragraph>a",
+    "tag": "a",
+    "text": "تواصل",
+    "w": 41.5,
+    "h": 24,
+    "x": 211,
+    "y": 3998
+   },
+   {
+    "sel": "div.wp-block-template-part>footer.wp-block-group.site-footer.has-global-padding>div.wp-block-group.container.footer-row>p.wp-block-paragraph>a",
+    "tag": "a",
+    "text": "احجز زيارة",
+    "w": 56,
+    "h": 24,
+    "x": 144,
+    "y": 3998
+   }
+  ],
+  "targetTotal": 19,
+  "forms": [],
+  "unlabelled": 0,
+  "foreignRuns": [
+   {
+    "text": "Demo",
+    "parentTag": "span",
+    "parentCls": "demo-badge",
+    "langAncestor": "en",
+    "dirAttr": "rtl",
+    "bdi": false
+   },
+   {
+    "text": "RX—001",
+    "parentTag": "span",
+    "parentCls": "sec-num",
+    "langAncestor": "ar",
+    "dirAttr": "rtl",
+    "bdi": false
+   },
+   {
+    "text": "Cairo",
+    "parentTag": "span",
+    "parentCls": "",
+    "langAncestor": "en",
+    "dirAttr": "rtl",
+    "bdi": false
+   },
+   {
+    "text": "Demo",
+    "parentTag": "span",
+    "parentCls": "demo-badge",
+    "langAncestor": "en",
+    "dirAttr": "rtl",
+    "bdi": false
+   },
+   {
+    "text": "(Demo)",
+    "parentTag": "span",
+    "parentCls": "",
+    "langAncestor": "en",
+    "dirAttr": "rtl",
+    "bdi": false
+   }
+  ],
+  "langEnCount": 4,
+  "bdiCount": 0,
+  "links": [
+   {
+    "text": "تخطى إلى المحتوى",
+    "href": "#wp--skip-link--target",
+    "cls": "skip-link screen-reader-text",
+    "rect": {
+     "w": 1,
+     "h": 1
+    }
+   },
+   {
+    "text": "عيادة سِراج للأسنان Demo",
+    "href": "/",
+    "cls": "brand",
+    "rect": {
+     "w": 197,
+     "h": 34
+    }
+   },
+   {
+    "text": "احجز زيارة",
+    "href": "/book/",
+    "cls": "wp-block-button__link wp-element-button",
+    "rect": {
+     "w": 84,
+     "h": 46
+    }
+   },
+   {
+    "text": "احجز زيارة",
+    "href": "/book/",
+    "cls": "btn btn-primary",
+    "rect": {
+     "w": 118,
+     "h": 48
+    }
+   },
+   {
+    "text": "شوف الخدمات",
+    "href": "/services/",
+    "cls": "btn btn-ghost",
+    "rect": {
+     "w": 160,
+     "h": 48
+    }
+   },
+   {
+    "text": "احجز دلوقتي",
+    "href": "/book/",
+    "cls": "btn btn-primary",
+    "rect": {
+     "w": 143,
+     "h": 48
+    }
+   },
+   {
+    "text": "صفحة التواصل",
+    "href": "/contact/",
+    "cls": "btn btn-ghost",
+    "rect": {
+     "w": 166,
+     "h": 48
+    }
+   },
+   {
+    "text": "احجز زيارة",
+    "href": "/book/",
+    "cls": "btn btn-primary btn-lg",
+    "rect": {
+     "w": 151,
+     "h": 56
+    }
+   },
+   {
+    "text": "عيادة سِراج للأسنان",
+    "href": "/",
+    "cls": "brand",
+    "rect": {
+     "w": 203,
+     "h": 40
+    }
+   },
+   {
+    "text": "الخدمات",
+    "href": "/services/",
+    "cls": "",
+    "rect": {
+     "w": 52,
+     "h": 24
+    }
+   },
+   {
+    "text": "الفريق",
+    "href": "/team/",
+    "cls": "",
+    "rect": {
+     "w": 40,
+     "h": 24
+    }
+   },
+   {
+    "text": "تواصل",
+    "href": "/contact/",
+    "cls": "",
+    "rect": {
+     "w": 42,
+     "h": 24
+    }
+   },
+   {
+    "text": "احجز زيارة",
+    "href": "/book/",
+    "cls": "",
+    "rect": {
+     "w": 56,
+     "h": 24
+    }
+   }
+  ],
+  "reveal": {
+   "total": 24,
+   "hiddenNow": 11,
+   "jsMotion": true
+  },
+  "motion": {
+   "reducedMotionQuery": false,
+   "scrollBehavior": "smooth",
+   "ruleAnimation": "draw"
+  },
+  "nav": {
+   "hamburger": {
+    "display": "flex",
+    "visible": true,
+    "w": 24,
+    "h": 24,
+    "ariaExpanded": null,
+    "tag": "button"
+   },
+   "overlayContainer": {
+    "display": "none",
+    "cls": "wp-block-navigation__responsive-container",
+    "visible": false
+   },
+   "inlineListDisplay": "flex",
+   "inlineLinksVisible": 0,
+   "headerBackdropFilter": "saturate(1.4) blur(10px)",
+   "htmlHasModalOpen": false
+  },
+  "overflowX": null,
+  "contrast": [
+   {
+    "sel": "body",
+    "text": "تخطى إلى المحتوى عيادة سِراج للأسنان Demo الخ",
+    "fg": "rgb(18, 19, 43)",
+    "bg": "rgb(247, 248, 252)",
+    "bgImage": false,
+    "bgEl": "rtl home wp-singular page-template-default page pa",
+    "fontSize": 16,
+    "fontWeight": 400,
+    "lineHeight": "27.2px",
+    "w": 390,
+    "h": 8463
+   },
+   {
+    "sel": ".eyebrow",
+    "text": "نموذج تجريبي · لا يمثّل أي عيادة حقيقية",
+    "fg": "rgb(47, 75, 216)",
+    "bg": "rgb(247, 248, 252)",
+    "bgImage": false,
+    "bgEl": "rtl home wp-singular page-template-default page pa",
+    "fontSize": 14,
+    "fontWeight": 700,
+    "lineHeight": "23.8px",
+    "w": 342,
+    "h": 24
+   },
+   {
+    "sel": ".hero .lead",
+    "text": "احجز الزيارة أونلاين في أقل من دقيقة، وتعرف ك",
+    "fg": "rgb(85, 88, 120)",
+    "bg": "rgb(247, 248, 252)",
+    "bgImage": false,
+    "bgEl": "rtl home wp-singular page-template-default page pa",
+    "fontSize": 20,
+    "fontWeight": 400,
+    "lineHeight": "34px",
+    "w": 342,
+    "h": 102
+   },
+   {
+    "sel": ".hero h1",
+    "text": "أسنانك تستاهل عناية واضحة، بموعد يناسبك",
+    "fg": "rgb(18, 19, 43)",
+    "bg": "rgb(247, 248, 252)",
+    "bgImage": false,
+    "bgEl": "rtl home wp-singular page-template-default page pa",
+    "fontSize": 43.3,
+    "fontWeight": 800,
+    "lineHeight": "56.29px",
+    "w": 342,
+    "h": 225
+   },
+   {
+    "sel": ".proof",
+    "text": "وسط البلد، القاهرة يوميًا 10ص — 9م بتقبل التأ",
+    "fg": "rgb(85, 88, 120)",
+    "bg": "rgb(247, 248, 252)",
+    "bgImage": false,
+    "bgEl": "rtl home wp-singular page-template-default page pa",
+    "fontSize": 14,
+    "fontWeight": 600,
+    "lineHeight": "23.8px",
+    "w": 342,
+    "h": 56
+   },
+   {
+    "sel": ".lead",
+    "text": "احجز الزيارة أونلاين في أقل من دقيقة، وتعرف ك",
+    "fg": "rgb(85, 88, 120)",
+    "bg": "rgb(247, 248, 252)",
+    "bgImage": false,
+    "bgEl": "rtl home wp-singular page-template-default page pa",
+    "fontSize": 20,
+    "fontWeight": 400,
+    "lineHeight": "34px",
+    "w": 342,
+    "h": 102
+   },
+   {
+    "sel": ".field-note",
+    "text": "مثال توضيحي على ترتيب الزيارة، وليس وصفًا طبي",
+    "fg": "rgb(85, 88, 120)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImage": true,
+    "bgEl": "note paper",
+    "fontSize": 14,
+    "fontWeight": 400,
+    "lineHeight": "23.8px",
+    "w": 276,
+    "h": 48
+   },
+   {
+    "sel": ".svc-meta",
+    "text": "20 دقيقة300 ج.م",
+    "fg": "rgb(85, 88, 120)",
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": false,
+    "bgEl": "svc reveal in",
+    "fontSize": 14,
+    "fontWeight": 600,
+    "lineHeight": "23.8px",
+    "w": 220,
+    "h": 24
+   },
+   {
+    "sel": ".svc-meta span:last-child",
+    "text": "300 ج.م",
+    "fg": "rgb(18, 19, 43)",
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": false,
+    "bgEl": "svc reveal in",
+    "fontSize": 14,
+    "fontWeight": 800,
+    "lineHeight": "23.8px",
+    "w": 56,
+    "h": 24
+   },
+   {
+    "sel": ".svc h3",
+    "text": "فحص وتشخيص",
+    "fg": "rgb(18, 19, 43)",
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": false,
+    "bgEl": "svc reveal in",
+    "fontSize": 20,
+    "fontWeight": 700,
+    "lineHeight": "24px",
+    "w": 220,
+    "h": 24
+   },
+   {
+    "sel": ".sec-num",
+    "text": "RX—001",
+    "fg": "rgb(47, 75, 216)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImage": true,
+    "bgEl": "note paper",
+    "fontSize": 16,
+    "fontWeight": 700,
+    "lineHeight": "16px",
+    "w": 276,
+    "h": 16
+   },
+   {
+    "sel": ".photo figcaption",
+    "text": "أدوات الفحص والتلميع",
+    "fg": "rgb(85, 88, 120)",
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": false,
+    "bgEl": "photo reveal in",
+    "fontSize": 14,
+    "fontWeight": 400,
+    "lineHeight": "23.8px",
+    "w": 340,
+    "h": 49
+   },
+   {
+    "sel": ".team-meta",
+    "text": "قسم التقويم",
+    "fg": "rgb(85, 88, 120)",
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": false,
+    "bgEl": "card team-card reveal in",
+    "fontSize": 14,
+    "fontWeight": 700,
+    "lineHeight": "23.8px",
+    "w": 292,
+    "h": 24
+   },
+   {
+    "sel": ".step p",
+    "text": "نموذج الحجز بياخد أقل من دقيقة، من غير مكالما",
+    "fg": "rgb(85, 88, 120)",
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": false,
+    "bgEl": "step reveal in",
+    "fontSize": 16,
+    "fontWeight": 400,
+    "lineHeight": "27.2px",
+    "w": 292,
+    "h": 54
+   },
+   {
+    "sel": ".step-num",
+    "text": "1",
+    "fg": "rgb(255, 255, 255)",
+    "bg": "rgb(47, 75, 216)",
+    "bgImage": false,
+    "bgEl": "step-num",
+    "fontSize": 16,
+    "fontWeight": 800,
+    "lineHeight": "27.2px",
+    "w": 40,
+    "h": 40
+   },
+   {
+    "sel": ".faq-item p",
+    "text": "الحجز أونلاين أولي، والتأكيد بيتم مع العيادة ",
+    "fg": "rgb(85, 88, 120)",
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": false,
+    "bgEl": "faq-item",
+    "fontSize": 16,
+    "fontWeight": 400,
+    "lineHeight": "27.2px",
+    "w": 340,
+    "h": 54
+   },
+   {
+    "sel": ".faq-item summary",
+    "text": "هل الحجز اللي بعمله أونلاين نهائي؟",
+    "fg": "rgb(18, 19, 43)",
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": false,
+    "bgEl": "faq-item",
+    "fontSize": 16,
+    "fontWeight": 700,
+    "lineHeight": "27.2px",
+    "w": 340,
+    "h": 27
+   },
+   {
+    "sel": ".info-list .k",
+    "text": "المواعيد",
+    "fg": "rgb(85, 88, 120)",
+    "bg": "rgb(247, 248, 252)",
+    "bgImage": false,
+    "bgEl": "rtl home wp-singular page-template-default page pa",
+    "fontSize": 16,
+    "fontWeight": 600,
+    "lineHeight": "27.2px",
+    "w": 64,
+    "h": 27
+   },
+   {
+    "sel": ".info-list .v",
+    "text": "يوميًا 10ص — 9م",
+    "fg": "rgb(18, 19, 43)",
+    "bg": "rgb(247, 248, 252)",
+    "bgImage": false,
+    "bgEl": "rtl home wp-singular page-template-default page pa",
+    "fontSize": 16,
+    "fontWeight": 700,
+    "lineHeight": "27.2px",
+    "w": 129,
+    "h": 27
+   },
+   {
+    "sel": ".brand-name",
+    "text": "عيادة سِراج للأسنان",
+    "fg": "rgb(18, 19, 43)",
+    "bg": "color(srgb 0.968627 0.972549 0.988235 / 0.88)",
+    "bgImage": false,
+    "bgEl": "wp-block-group site-header has-global-padding is-l",
+    "fontSize": 16,
+    "fontWeight": 800,
+    "lineHeight": "27.2px",
+    "w": 155,
+    "h": 27
+   },
+   {
+    "sel": ".cta-inner .lead",
+    "text": "نموذج الحجز بياخد أقل من دقيقة، والتأكيد بيتم",
+    "fg": "color(srgb 1 1 1 / 0.82)",
+    "bg": "rgb(47, 75, 216)",
+    "bgImage": false,
+    "bgEl": "container cta-inner reveal",
+    "fontSize": 20,
+    "fontWeight": 400,
+    "lineHeight": "34px",
+    "w": 342,
+    "h": 68
+   },
+   {
+    "sel": ".cta-inner h2",
+    "text": "جاهز تحجز؟ ابدأ من غير ما تتصل",
+    "fg": "rgb(255, 255, 255)",
+    "bg": "rgb(47, 75, 216)",
+    "bgImage": false,
+    "bgEl": "container cta-inner reveal",
+    "fontSize": 28,
+    "fontWeight": 700,
+    "lineHeight": "33.6px",
+    "w": 342,
+    "h": 67
+   },
+   {
+    "sel": "footer p",
+    "text": "© نموذج تجريبي (Demo) — لا يمثّل أي عيادة حقي",
+    "fg": "rgb(85, 88, 120)",
+    "bg": "rgb(247, 248, 252)",
+    "bgImage": false,
+    "bgEl": "rtl home wp-singular page-template-default page pa",
+    "fontSize": 14,
+    "fontWeight": 400,
+    "lineHeight": "23.8px",
+    "w": 342,
+    "h": 48
+   },
+   {
+    "sel": "footer a",
+    "text": "عيادة سِراج للأسنان",
+    "fg": "rgb(85, 88, 120)",
+    "bg": "rgb(247, 248, 252)",
+    "bgImage": false,
+    "bgEl": "rtl home wp-singular page-template-default page pa",
+    "fontSize": 16,
+    "fontWeight": 800,
+    "lineHeight": "27.2px",
+    "w": 203,
+    "h": 40
+   },
+   {
+    "sel": ".stamp",
+    "text": "سراج · Cairo",
+    "fg": "rgb(163, 35, 27)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImage": true,
+    "bgEl": "note paper",
+    "fontSize": 14,
+    "fontWeight": 800,
+    "lineHeight": "23.8px",
+    "w": 125,
+    "h": 48
+   },
+   {
+    "sel": ".note-list li span",
+    "text": "20 دقيقة",
+    "fg": "rgb(85, 88, 120)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "bgImage": true,
+    "bgEl": "note paper",
+    "fontSize": 16,
+    "fontWeight": 400,
+    "lineHeight": "27.2px",
+    "w": 71,
+    "h": 27
+   },
+   {
+    "sel": ".btn-primary",
+    "text": "احجز زيارة",
+    "fg": "rgb(255, 255, 255)",
+    "bg": "rgb(47, 75, 216)",
+    "bgImage": false,
+    "bgEl": "btn btn-primary",
+    "fontSize": 16,
+    "fontWeight": 600,
+    "lineHeight": "27.2px",
+    "w": 118,
+    "h": 48
+   },
+   {
+    "sel": ".btn-ghost",
+    "text": "شوف الخدمات",
+    "fg": "rgb(18, 19, 43)",
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": false,
+    "bgEl": "btn btn-ghost",
+    "fontSize": 16,
+    "fontWeight": 600,
+    "lineHeight": "27.2px",
+    "w": 160,
+    "h": 48
+   }
+  ]
+ }
+}

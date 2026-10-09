@@ -1,0 +1,57 @@
+{
+ "hasModalOpen": true,
+ "headerBackdropFilter": "none",
+ "boxRect": {
+  "x": 0,
+  "y": 0,
+  "w": 390,
+  "h": 844
+ },
+ "viewport": {
+  "w": 390,
+  "h": 844
+ },
+ "boxPosition": "fixed",
+ "boxVisible": true,
+ "activeElement": {
+  "tag": "a",
+  "cls": "wp-block-navigation-item__content",
+  "text": "الخدمات"
+ },
+ "linkCount": 3,
+ "links": [
+  {
+   "text": "الخدمات",
+   "href": "/services/",
+   "visible": true,
+   "rect": {
+    "w": 63,
+    "h": 27
+   }
+  },
+  {
+   "text": "الفريق",
+   "href": "/team/",
+   "visible": true,
+   "rect": {
+    "w": 49,
+    "h": 27
+   }
+  },
+  {
+   "text": "تواصل",
+   "href": "/contact/",
+   "visible": true,
+   "rect": {
+    "w": 51,
+    "h": 27
+   }
+  }
+ ],
+ "centerPointInsideMenu": true,
+ "centerPoint": {
+  "tag": "div",
+  "cls": "wp-block-navigation__responsive-container has-modal-open is-"
+ },
+ "ctaInMenu": 0
+}

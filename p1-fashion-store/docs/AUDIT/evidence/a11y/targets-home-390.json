@@ -1,0 +1,162 @@
+{
+ "page": "home",
+ "total": 31,
+ "measured": 31,
+ "below24": 1,
+ "minW": 1,
+ "minH": 1,
+ "smallest": [
+  {
+   "group": "other",
+   "tag": "a",
+   "cls": "skip-link screen-reader-text",
+   "text": "تخطى إلى المحتوى",
+   "w": 1,
+   "h": 1,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "header",
+   "tag": "a",
+   "cls": "",
+   "text": "نيلاد",
+   "w": 36.5,
+   "h": 33,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "footer",
+   "tag": "a",
+   "cls": "",
+   "text": "الخصوصية",
+   "w": 59.8,
+   "h": 26,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "footer",
+   "tag": "a",
+   "cls": "",
+   "text": "تواصل معنا",
+   "w": 66.1,
+   "h": 26,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "footer",
+   "tag": "a",
+   "cls": "",
+   "text": "الشحن والإرجاع",
+   "w": 84.7,
+   "h": 26,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "other",
+   "tag": "a",
+   "cls": "chip active",
+   "text": "الكل",
+   "w": 61.3,
+   "h": 46,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "other",
+   "tag": "a",
+   "cls": "chip",
+   "text": "هدوم",
+   "w": 69.4,
+   "h": 46,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "other",
+   "tag": "a",
+   "cls": "chip",
+   "text": "حقائب",
+   "w": 70.8,
+   "h": 46,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "other",
+   "tag": "a",
+   "cls": "chip",
+   "text": "نظارات",
+   "w": 72,
+   "h": 46,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "other",
+   "tag": "a",
+   "cls": "chip",
+   "text": "ساعات",
+   "w": 74,
+   "h": 46,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "product-card",
+   "tag": "a",
+   "cls": "p-btn",
+   "text": "أضف للسلة",
+   "w": 89,
+   "h": 44,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "product-card",
+   "tag": "a",
+   "cls": "p-btn",
+   "text": "أضف للسلة",
+   "w": 89,
+   "h": 44,
+   "padT": "0px",
+   "padB": "0px"
+  }
+ ],
+ "byGroup": {
+  "other": {
+   "n": 13,
+   "minW": 1,
+   "minH": 1
+  },
+  "header": {
+   "n": 3,
+   "minW": 36.5,
+   "minH": 33
+  },
+  "product-card": {
+   "n": 8,
+   "minW": 89,
+   "minH": 44
+  },
+  "form": {
+   "n": 2,
+   "minW": 95.5,
+   "minH": 48
+  },
+  "footer": {
+   "n": 3,
+   "minW": 59.8,
+   "minH": 26
+  },
+  "dock": {
+   "n": 2,
+   "minW": 179,
+   "minH": 50
+  }
+ }
+}

@@ -1,0 +1,522 @@
+{
+  "generatedAt": "2026-10-08T02:51:44.614Z",
+  "base": "http://localhost:8889",
+  "seo": {
+    "home": {
+      "url": "http://localhost:8889/",
+      "finalUrl": "http://localhost:8889/",
+      "status": 200,
+      "redirectChain": 0,
+      "title": "عيادة سِراج للأسنان &#8211; نموذج تجريبي — حجز زيارات وأسنان (Demo)",
+      "titleLen": 67,
+      "metaDesc": null,
+      "metaDescLen": 0,
+      "canonical": "http://localhost:8889/",
+      "canonicalCount": 1,
+      "canonicalAll": [
+        "http://localhost:8889/"
+      ],
+      "robots": "max-image-preview:large",
+      "lang": "ar",
+      "dir": "rtl",
+      "og": {},
+      "twitter": {},
+      "jsonLd": [],
+      "hreflang": [],
+      "h1Count": 1,
+      "headingOrder": [],
+      "headingsOutOfOrder": [],
+      "images": {
+        "count": 4,
+        "missingAlt": 0,
+        "emptyAlt": 0,
+        "missingDims": 4,
+        "lazy": 4,
+        "eager": 0,
+        "items": [
+          {
+            "src": "/wp-content/themes/siraj-theme/assets/img/photo-instruments.jpg",
+            "srcset": null,
+            "alt": "أدوات تنظيف الأسنان مرتبة على سطح أبيض",
+            "w": null,
+            "h": null,
+            "lazy": true,
+            "decoding": "async",
+            "fetchespriority": null
+          },
+          {
+            "src": "/wp-content/themes/siraj-theme/assets/img/photo-stilllife.jpg",
+            "srcset": null,
+            "alt": "مرآة فحص الأسنان وملقط معدني على سطح أبيض",
+            "w": null,
+            "h": null,
+            "lazy": true,
+            "decoding": "async",
+            "fetchespriority": null
+          },
+          {
+            "src": "/wp-content/themes/siraj-theme/assets/img/photo-implant.jpg",
+            "srcset": null,
+            "alt": "زرعة سن معدنية ممسوكة بقفاز أبيض",
+            "w": null,
+            "h": null,
+            "lazy": true,
+            "decoding": "async",
+            "fetchespriority": null
+          },
+          {
+            "src": "/wp-content/themes/siraj-theme/assets/img/photo-lounge.jpg",
+            "srcset": null,
+            "alt": "صالة انتظار في عيادة أسنان بأربعة كراسي ونبتة",
+            "w": null,
+            "h": null,
+            "lazy": true,
+            "decoding": "async",
+            "fetchespriority": null
+          }
+        ]
+      },
+      "hashAnchors": [
+        "#wp--skip-link--target"
+      ],
+      "brokenHashAnchors": [],
+      "sameOriginLinks": [
+        "/",
+        "/services/",
+        "/team/",
+        "/contact/",
+        "/book/"
+      ],
+      "scripts": {
+        "count": 6,
+        "external": [
+          "http://localhost:8889/wp-includes/js/dist/script-modules/block-library/navigation/view.js?ver=1bf28ded04f9f188bdcb"
+        ],
+        "inlineBytes": 15265
+      },
+      "bytes": 73948,
+      "contentEncoding": null,
+      "wallMs": 4641
+    },
+    "services": {
+      "url": "http://localhost:8889/services/",
+      "finalUrl": "http://localhost:8889/services/",
+      "status": 200,
+      "redirectChain": 0,
+      "title": "الخدمات &#8211; عيادة سِراج للأسنان",
+      "titleLen": 35,
+      "metaDesc": null,
+      "metaDescLen": 0,
+      "canonical": "http://localhost:8889/services/",
+      "canonicalCount": 1,
+      "canonicalAll": [
+        "http://localhost:8889/services/"
+      ],
+      "robots": "max-image-preview:large",
+      "lang": "ar",
+      "dir": "rtl",
+      "og": {},
+      "twitter": {},
+      "jsonLd": [],
+      "hreflang": [],
+      "h1Count": 1,
+      "headingOrder": [
+        {
+          "level": 1,
+          "text": "الخدمات"
+        },
+        {
+          "level": 3,
+          "text": "فحص وتشخيص"
+        },
+        {
+          "level": 3,
+          "text": "تنظيف وتلميع"
+        },
+        {
+          "level": 3,
+          "text": "علاج العصب (حشو عصب)"
+        },
+        {
+          "level": 3,
+          "text": "حشو تجميلي"
+        },
+        {
+          "level": 3,
+          "text": "تقويم"
+        },
+        {
+          "level": 3,
+          "text": "زراعة سن"
+        }
+      ],
+      "headingsOutOfOrder": [
+        {
+          "level": 3,
+          "text": "فحص وتشخيص"
+        }
+      ],
+      "images": {
+        "count": 0,
+        "missingAlt": 0,
+        "emptyAlt": 0,
+        "missingDims": 0,
+        "lazy": 0,
+        "eager": 0,
+        "items": []
+      },
+      "hashAnchors": [
+        "#wp--skip-link--target"
+      ],
+      "brokenHashAnchors": [],
+      "sameOriginLinks": [
+        "/",
+        "/services/",
+        "/team/",
+        "/contact/",
+        "/book/"
+      ],
+      "scripts": {
+        "count": 6,
+        "external": [
+          "http://localhost:8889/wp-includes/js/dist/script-modules/block-library/navigation/view.js?ver=1bf28ded04f9f188bdcb"
+        ],
+        "inlineBytes": 15265
+      },
+      "bytes": 66091,
+      "contentEncoding": null,
+      "wallMs": 2625
+    },
+    "team": {
+      "url": "http://localhost:8889/team/",
+      "finalUrl": "http://localhost:8889/team/",
+      "status": 200,
+      "redirectChain": 0,
+      "title": "الفريق &#8211; عيادة سِراج للأسنان",
+      "titleLen": 34,
+      "metaDesc": null,
+      "metaDescLen": 0,
+      "canonical": "http://localhost:8889/team/",
+      "canonicalCount": 1,
+      "canonicalAll": [
+        "http://localhost:8889/team/"
+      ],
+      "robots": "max-image-preview:large",
+      "lang": "ar",
+      "dir": "rtl",
+      "og": {},
+      "twitter": {},
+      "jsonLd": [],
+      "hreflang": [],
+      "h1Count": 1,
+      "headingOrder": [
+        {
+          "level": 1,
+          "text": "الفريق"
+        },
+        {
+          "level": 3,
+          "text": "طبقة التقويم"
+        },
+        {
+          "level": 3,
+          "text": "طبقة زراعة الأسنان"
+        },
+        {
+          "level": 3,
+          "text": "طبقة تجميل الأسنان"
+        },
+        {
+          "level": 3,
+          "text": "فريق المساعدة"
+        }
+      ],
+      "headingsOutOfOrder": [
+        {
+          "level": 3,
+          "text": "طبقة التقويم"
+        }
+      ],
+      "images": {
+        "count": 0,
+        "missingAlt": 0,
+        "emptyAlt": 0,
+        "missingDims": 0,
+        "lazy": 0,
+        "eager": 0,
+        "items": []
+      },
+      "hashAnchors": [
+        "#wp--skip-link--target"
+      ],
+      "brokenHashAnchors": [],
+      "sameOriginLinks": [
+        "/",
+        "/services/",
+        "/team/",
+        "/contact/"
+      ],
+      "scripts": {
+        "count": 6,
+        "external": [
+          "http://localhost:8889/wp-includes/js/dist/script-modules/block-library/navigation/view.js?ver=1bf28ded04f9f188bdcb"
+        ],
+        "inlineBytes": 15265
+      },
+      "bytes": 65235,
+      "contentEncoding": null,
+      "wallMs": 6067
+    },
+    "contact": {
+      "url": "http://localhost:8889/contact/",
+      "finalUrl": "http://localhost:8889/contact/",
+      "status": 200,
+      "redirectChain": 0,
+      "title": "تواصل &#8211; عيادة سِراج للأسنان",
+      "titleLen": 33,
+      "metaDesc": null,
+      "metaDescLen": 0,
+      "canonical": "http://localhost:8889/contact/",
+      "canonicalCount": 1,
+      "canonicalAll": [
+        "http://localhost:8889/contact/"
+      ],
+      "robots": "max-image-preview:large",
+      "lang": "ar",
+      "dir": "rtl",
+      "og": {},
+      "twitter": {},
+      "jsonLd": [],
+      "hreflang": [],
+      "h1Count": 1,
+      "headingOrder": [
+        {
+          "level": 1,
+          "text": "تواصل"
+        }
+      ],
+      "headingsOutOfOrder": [],
+      "images": {
+        "count": 0,
+        "missingAlt": 0,
+        "emptyAlt": 0,
+        "missingDims": 0,
+        "lazy": 0,
+        "eager": 0,
+        "items": []
+      },
+      "hashAnchors": [
+        "#wp--skip-link--target"
+      ],
+      "brokenHashAnchors": [],
+      "sameOriginLinks": [
+        "/",
+        "/services/",
+        "/team/",
+        "/contact/",
+        "/book/"
+      ],
+      "scripts": {
+        "count": 6,
+        "external": [
+          "http://localhost:8889/wp-includes/js/dist/script-modules/block-library/navigation/view.js?ver=1bf28ded04f9f188bdcb"
+        ],
+        "inlineBytes": 15265
+      },
+      "bytes": 63781,
+      "contentEncoding": null,
+      "wallMs": 9401
+    },
+    "book": {
+      "url": "http://localhost:8889/book/",
+      "finalUrl": "http://localhost:8889/book/",
+      "status": 200,
+      "redirectChain": 0,
+      "title": "احجز زيارة &#8211; عيادة سِراج للأسنان",
+      "titleLen": 38,
+      "metaDesc": null,
+      "metaDescLen": 0,
+      "canonical": "http://localhost:8889/book/",
+      "canonicalCount": 1,
+      "canonicalAll": [
+        "http://localhost:8889/book/"
+      ],
+      "robots": "max-image-preview:large",
+      "lang": "ar",
+      "dir": "rtl",
+      "og": {},
+      "twitter": {},
+      "jsonLd": [],
+      "hreflang": [],
+      "h1Count": 1,
+      "headingOrder": [
+        {
+          "level": 1,
+          "text": "احجز زيارة"
+        }
+      ],
+      "headingsOutOfOrder": [],
+      "images": {
+        "count": 0,
+        "missingAlt": 0,
+        "emptyAlt": 0,
+        "missingDims": 0,
+        "lazy": 0,
+        "eager": 0,
+        "items": []
+      },
+      "hashAnchors": [
+        "#wp--skip-link--target"
+      ],
+      "brokenHashAnchors": [],
+      "sameOriginLinks": [
+        "/",
+        "/services/",
+        "/team/",
+        "/contact/"
+      ],
+      "scripts": {
+        "count": 6,
+        "external": [
+          "http://localhost:8889/wp-includes/js/dist/script-modules/block-library/navigation/view.js?ver=1bf28ded04f9f188bdcb"
+        ],
+        "inlineBytes": 15265
+      },
+      "bytes": 65055,
+      "contentEncoding": null,
+      "wallMs": 3733
+    }
+  },
+  "statusChecks": {
+    "/services": {
+      "status": 200,
+      "chain": [
+        "http://localhost:8889/services",
+        "http://localhost:8889/services/"
+      ],
+      "finalUrl": "http://localhost:8889/services/"
+    },
+    "/team": {
+      "status": 200,
+      "chain": [
+        "http://localhost:8889/team",
+        "http://localhost:8889/team/"
+      ],
+      "finalUrl": "http://localhost:8889/team/"
+    },
+    "/contact": {
+      "status": 200,
+      "chain": [
+        "http://localhost:8889/contact",
+        "http://localhost:8889/contact/"
+      ],
+      "finalUrl": "http://localhost:8889/contact/"
+    },
+    "/book": {
+      "status": 200,
+      "chain": [
+        "http://localhost:8889/book",
+        "http://localhost:8889/book/"
+      ],
+      "finalUrl": "http://localhost:8889/book/"
+    },
+    "/nonexistent-page-xyz": {
+      "status": 404,
+      "chain": [
+        "http://localhost:8889/nonexistent-page-xyz"
+      ],
+      "finalUrl": "http://localhost:8889/nonexistent-page-xyz"
+    },
+    "/wp-sitemap.xml": {
+      "status": 200,
+      "chain": [
+        "http://localhost:8889/wp-sitemap.xml"
+      ],
+      "finalUrl": "http://localhost:8889/wp-sitemap.xml"
+    },
+    "/sitemap.xml": {
+      "status": 200,
+      "chain": [
+        "http://localhost:8889/sitemap.xml",
+        "http://localhost:8889/wp-sitemap.xml"
+      ],
+      "finalUrl": "http://localhost:8889/wp-sitemap.xml"
+    },
+    "/robots.txt": {
+      "status": 200,
+      "chain": [
+        "http://localhost:8889/robots.txt"
+      ],
+      "finalUrl": "http://localhost:8889/robots.txt"
+    },
+    "/feed/": {
+      "status": 200,
+      "chain": [
+        "http://localhost:8889/feed/"
+      ],
+      "finalUrl": "http://localhost:8889/feed/"
+    },
+    "/?author=1": {
+      "status": 200,
+      "chain": [
+        "http://localhost:8889/?author=1"
+      ],
+      "finalUrl": "http://localhost:8889/?author=1"
+    },
+    "/services/?x=1": {
+      "status": 200,
+      "chain": [
+        "http://localhost:8889/services/?x=1"
+      ],
+      "finalUrl": "http://localhost:8889/services/?x=1"
+    },
+    "/BOOK/": {
+      "status": 200,
+      "chain": [
+        "http://localhost:8889/BOOK/"
+      ],
+      "finalUrl": "http://localhost:8889/BOOK/"
+    }
+  },
+  "wwwChecks": {
+    "http://www.localhost:8889/": {
+      "status": 0,
+      "chain": [
+        "http://www.localhost:8889/"
+      ],
+      "finalUrl": "http://www.localhost:8889/"
+    },
+    "http://localhost:8889/": {
+      "status": 200,
+      "chain": [
+        "http://localhost:8889/"
+      ],
+      "finalUrl": "http://localhost:8889/"
+    },
+    "http://127.0.0.1:8889/": {
+      "status": 200,
+      "chain": [
+        "http://127.0.0.1:8889/",
+        "http://localhost:8889/"
+      ],
+      "finalUrl": "http://localhost:8889/"
+    }
+  },
+  "robotsTxt": "User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: http://localhost:8889/wp-sitemap.xml\n",
+  "sitemapIndex": [
+    "http://localhost:8889/wp-sitemap-posts-page-1.xml"
+  ],
+  "sitemaps": {
+    "http://localhost:8889/wp-sitemap-posts-page-1.xml": {
+      "status": 200,
+      "count": 5,
+      "locs": [
+        "http://localhost:8889/",
+        "http://localhost:8889/services/",
+        "http://localhost:8889/team/",
+        "http://localhost:8889/contact/",
+        "http://localhost:8889/book/"
+      ]
+    }
+  }
+}

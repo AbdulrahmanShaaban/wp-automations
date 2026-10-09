@@ -1,0 +1,70 @@
+{
+  "generatedAt": "2026-10-08T03:33:28.245Z",
+  "url": "http://localhost:8889/",
+  "runs": [
+    {
+      "afterScroll": {
+        "cls": 0,
+        "count": 0,
+        "entries": [],
+        "fcp": 3816,
+        "ttfb": 3310.2999999970198,
+        "fontResources": [
+          {
+            "n": "/wp-content/themes/siraj-theme/assets/img/logo-mark.svg",
+            "start": 3528,
+            "end": 3763
+          },
+          {
+            "n": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+            "start": 3535,
+            "end": 4101
+          },
+          {
+            "n": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+            "start": 3572,
+            "end": 4101
+          }
+        ],
+        "imgsLoaded": [
+          "/wp-content/themes/siraj-theme/assets/img/photo-instruments.jpg",
+          "/wp-content/themes/siraj-theme/assets/img/photo-stilllife.jpg",
+          "/wp-content/themes/siraj-theme/assets/img/photo-implant.jpg",
+          "/wp-content/themes/siraj-theme/assets/img/photo-lounge.jpg"
+        ]
+      }
+    },
+    {
+      "noScroll": {
+        "cls": 0,
+        "count": 0,
+        "entries": [],
+        "fcp": 2956,
+        "ttfb": 2868.2000000029802,
+        "fontResources": [
+          {
+            "n": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+            "start": 2884,
+            "end": 2884
+          },
+          {
+            "n": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+            "start": 2884,
+            "end": 2884
+          },
+          {
+            "n": "/wp-content/themes/siraj-theme/assets/img/logo-mark.svg",
+            "start": 2892,
+            "end": 2892
+          }
+        ],
+        "imgsLoaded": [
+          "/wp-content/themes/siraj-theme/assets/img/photo-instruments.jpg",
+          "/wp-content/themes/siraj-theme/assets/img/photo-stilllife.jpg",
+          "/wp-content/themes/siraj-theme/assets/img/photo-implant.jpg",
+          "/wp-content/themes/siraj-theme/assets/img/photo-lounge.jpg"
+        ]
+      }
+    }
+  ]
+}

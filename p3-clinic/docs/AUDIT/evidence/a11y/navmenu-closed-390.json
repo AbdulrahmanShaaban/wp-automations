@@ -1,0 +1,11 @@
+{
+ "hamburger": {
+  "w": 24,
+  "h": 24,
+  "display": "flex",
+  "ariaExpanded": null
+ },
+ "headerBackdropFilter": "saturate(1.4) blur(10px)",
+ "hasModalOpen": false,
+ "inlineNavDisplay": "flex"
+}

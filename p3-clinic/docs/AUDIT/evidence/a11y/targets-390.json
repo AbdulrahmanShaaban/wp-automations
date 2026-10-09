@@ -1,0 +1,712 @@
+{
+ "home": {
+  "url": "/",
+  "viewport": {
+   "w": 390,
+   "h": 844
+  },
+  "total": 18,
+  "raw": [
+   {
+    "sel": "a.skip-link.screen-reader-text",
+    "text": "تخطى إلى المحتوى",
+    "w": 1,
+    "h": 1,
+    "min": 1,
+    "sub24": true,
+    "hitAtCentre": null,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a.brand",
+    "text": "عيادة سِراج للأسنان Demo",
+    "w": 196.9,
+    "h": 34,
+    "min": 34,
+    "sub24": false,
+    "hitAtCentre": null,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "button.wp-block-navigation__responsive-container-open",
+    "text": "",
+    "w": 24,
+    "h": 24,
+    "min": 24,
+    "sub24": false,
+    "hitAtCentre": null,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a.wp-block-button__link.wp-element-button",
+    "text": "احجز زيارة",
+    "w": 83.5,
+    "h": 46.5,
+    "min": 46.5,
+    "sub24": false,
+    "hitAtCentre": null,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a.btn.btn-primary",
+    "text": "احجز زيارة",
+    "w": 118,
+    "h": 48,
+    "min": 48,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a.btn.btn-ghost",
+    "text": "شوف الخدمات",
+    "w": 159.7,
+    "h": 48,
+    "min": 48,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "summary",
+    "text": "هل الحجز اللي بعمله أونلاين ",
+    "w": 340,
+    "h": 27.2,
+    "min": 27.2,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "summary",
+    "text": "كام تكلفة الكشف؟",
+    "w": 340,
+    "h": 27.2,
+    "min": 27.2,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "summary",
+    "text": "بتقبلوا التأمين الطبي؟",
+    "w": 340,
+    "h": 27.2,
+    "min": 27.2,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "summary",
+    "text": "إيه المواعيد المتاحة؟",
+    "w": 340,
+    "h": 27.2,
+    "min": 27.2,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "summary",
+    "text": "الأسعار دي هتفضل زي ما هي؟",
+    "w": 340,
+    "h": 27.2,
+    "min": 27.2,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a.btn.btn-primary",
+    "text": "احجز دلوقتي",
+    "w": 143.2,
+    "h": 48,
+    "min": 48,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a.btn.btn-ghost",
+    "text": "صفحة التواصل",
+    "w": 166,
+    "h": 48,
+    "min": 48,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a.btn.btn-primary.btn-lg",
+    "text": "احجز زيارة",
+    "w": 151,
+    "h": 56,
+    "min": 56,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a.brand",
+    "text": "عيادة سِراج للأسنان",
+    "w": 202.9,
+    "h": 40,
+    "min": 40,
+    "sub24": false,
+    "hitAtCentre": false,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a",
+    "text": "الخدمات",
+    "w": 52.2,
+    "h": 24,
+    "min": 24,
+    "sub24": false,
+    "hitAtCentre": false,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a",
+    "text": "الفريق",
+    "w": 39.6,
+    "h": 24,
+    "min": 24,
+    "sub24": false,
+    "hitAtCentre": false,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a",
+    "text": "تواصل",
+    "w": 41.5,
+    "h": 24,
+    "min": 24,
+    "sub24": false,
+    "hitAtCentre": false,
+    "spacingClear24": true,
+    "passes258": true
+   }
+  ]
+ },
+ "services": {
+  "url": "/services/",
+  "viewport": {
+   "w": 390,
+   "h": 844
+  },
+  "total": 9,
+  "raw": [
+   {
+    "sel": "a.skip-link.screen-reader-text",
+    "text": "تخطى إلى المحتوى",
+    "w": 1,
+    "h": 1,
+    "min": 1,
+    "sub24": true,
+    "hitAtCentre": null,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a.brand",
+    "text": "عيادة سِراج للأسنان Demo",
+    "w": 196.9,
+    "h": 34,
+    "min": 34,
+    "sub24": false,
+    "hitAtCentre": null,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "button.wp-block-navigation__responsive-container-open",
+    "text": "",
+    "w": 24,
+    "h": 24,
+    "min": 24,
+    "sub24": false,
+    "hitAtCentre": null,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a.wp-block-button__link.wp-element-button",
+    "text": "احجز زيارة",
+    "w": 83.5,
+    "h": 46.5,
+    "min": 46.5,
+    "sub24": false,
+    "hitAtCentre": null,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a.btn.btn-primary",
+    "text": "احجز زيارة",
+    "w": 118,
+    "h": 48,
+    "min": 48,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a.brand",
+    "text": "عيادة سِراج للأسنان",
+    "w": 202.9,
+    "h": 40,
+    "min": 40,
+    "sub24": false,
+    "hitAtCentre": false,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a",
+    "text": "الخدمات",
+    "w": 52.2,
+    "h": 24,
+    "min": 24,
+    "sub24": false,
+    "hitAtCentre": false,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a",
+    "text": "الفريق",
+    "w": 39.6,
+    "h": 24,
+    "min": 24,
+    "sub24": false,
+    "hitAtCentre": false,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a",
+    "text": "تواصل",
+    "w": 41.5,
+    "h": 24,
+    "min": 24,
+    "sub24": false,
+    "hitAtCentre": false,
+    "spacingClear24": true,
+    "passes258": true
+   }
+  ]
+ },
+ "team": {
+  "url": "/team/",
+  "viewport": {
+   "w": 390,
+   "h": 844
+  },
+  "total": 8,
+  "raw": [
+   {
+    "sel": "a.skip-link.screen-reader-text",
+    "text": "تخطى إلى المحتوى",
+    "w": 1,
+    "h": 1,
+    "min": 1,
+    "sub24": true,
+    "hitAtCentre": null,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a.brand",
+    "text": "عيادة سِراج للأسنان Demo",
+    "w": 196.9,
+    "h": 34,
+    "min": 34,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "button.wp-block-navigation__responsive-container-open",
+    "text": "",
+    "w": 24,
+    "h": 24,
+    "min": 24,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a.wp-block-button__link.wp-element-button",
+    "text": "احجز زيارة",
+    "w": 83.5,
+    "h": 46.5,
+    "min": 46.5,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a.brand",
+    "text": "عيادة سِراج للأسنان",
+    "w": 202.9,
+    "h": 40,
+    "min": 40,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a",
+    "text": "الخدمات",
+    "w": 52.2,
+    "h": 24,
+    "min": 24,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a",
+    "text": "الفريق",
+    "w": 39.6,
+    "h": 24,
+    "min": 24,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a",
+    "text": "تواصل",
+    "w": 41.5,
+    "h": 24,
+    "min": 24,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   }
+  ]
+ },
+ "contact": {
+  "url": "/contact/",
+  "viewport": {
+   "w": 390,
+   "h": 844
+  },
+  "total": 9,
+  "raw": [
+   {
+    "sel": "a.skip-link.screen-reader-text",
+    "text": "تخطى إلى المحتوى",
+    "w": 1,
+    "h": 1,
+    "min": 1,
+    "sub24": true,
+    "hitAtCentre": null,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a.brand",
+    "text": "عيادة سِراج للأسنان Demo",
+    "w": 196.9,
+    "h": 34,
+    "min": 34,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "button.wp-block-navigation__responsive-container-open",
+    "text": "",
+    "w": 24,
+    "h": 24,
+    "min": 24,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a.wp-block-button__link.wp-element-button",
+    "text": "احجز زيارة",
+    "w": 83.5,
+    "h": 46.5,
+    "min": 46.5,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a.btn.btn-primary",
+    "text": "احجز زيارة",
+    "w": 118,
+    "h": 48,
+    "min": 48,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a.brand",
+    "text": "عيادة سِراج للأسنان",
+    "w": 202.9,
+    "h": 40,
+    "min": 40,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a",
+    "text": "الخدمات",
+    "w": 52.2,
+    "h": 24,
+    "min": 24,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a",
+    "text": "الفريق",
+    "w": 39.6,
+    "h": 24,
+    "min": 24,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a",
+    "text": "تواصل",
+    "w": 41.5,
+    "h": 24,
+    "min": 24,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   }
+  ]
+ },
+ "book": {
+  "url": "/book/",
+  "viewport": {
+   "w": 390,
+   "h": 844
+  },
+  "total": 16,
+  "raw": [
+   {
+    "sel": "a.skip-link.screen-reader-text",
+    "text": "تخطى إلى المحتوى",
+    "w": 1,
+    "h": 1,
+    "min": 1,
+    "sub24": true,
+    "hitAtCentre": null,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a.brand",
+    "text": "عيادة سِراج للأسنان Demo",
+    "w": 196.9,
+    "h": 34,
+    "min": 34,
+    "sub24": false,
+    "hitAtCentre": null,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "button.wp-block-navigation__responsive-container-open",
+    "text": "",
+    "w": 24,
+    "h": 24,
+    "min": 24,
+    "sub24": false,
+    "hitAtCentre": null,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a.wp-block-button__link.wp-element-button",
+    "text": "احجز زيارة",
+    "w": 83.5,
+    "h": 46.5,
+    "min": 46.5,
+    "sub24": false,
+    "hitAtCentre": null,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "input",
+    "text": "",
+    "w": 34,
+    "h": 53.2,
+    "min": 34,
+    "sub24": false,
+    "hitAtCentre": false,
+    "spacingClear24": false,
+    "passes258": true
+   },
+   {
+    "sel": "input.siraj-input",
+    "text": "",
+    "w": 292,
+    "h": 52,
+    "min": 52,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "input.siraj-input",
+    "text": "",
+    "w": 292,
+    "h": 52,
+    "min": 52,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "select.siraj-select",
+    "text": "من فضلك اختر الخدمةتنظيف وتل",
+    "w": 292,
+    "h": 52,
+    "min": 52,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "input.siraj-input",
+    "text": "",
+    "w": 292,
+    "h": 52,
+    "min": 52,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "textarea.siraj-textarea",
+    "text": "",
+    "w": 292,
+    "h": 134.8,
+    "min": 134.8,
+    "sub24": false,
+    "hitAtCentre": true,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "input.siraj-input",
+    "text": "1",
+    "w": 24,
+    "h": 24,
+    "min": 24,
+    "sub24": false,
+    "hitAtCentre": false,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "button.siraj-submit.btn.btn-primary",
+    "text": "إرسال الطلب",
+    "w": 161.7,
+    "h": 52,
+    "min": 52,
+    "sub24": false,
+    "hitAtCentre": false,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a.brand",
+    "text": "عيادة سِراج للأسنان",
+    "w": 202.9,
+    "h": 40,
+    "min": 40,
+    "sub24": false,
+    "hitAtCentre": false,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a",
+    "text": "الخدمات",
+    "w": 52.2,
+    "h": 24,
+    "min": 24,
+    "sub24": false,
+    "hitAtCentre": false,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a",
+    "text": "الفريق",
+    "w": 39.6,
+    "h": 24,
+    "min": 24,
+    "sub24": false,
+    "hitAtCentre": false,
+    "spacingClear24": true,
+    "passes258": true
+   },
+   {
+    "sel": "a",
+    "text": "تواصل",
+    "w": 41.5,
+    "h": 24,
+    "min": 24,
+    "sub24": false,
+    "hitAtCentre": false,
+    "spacingClear24": true,
+    "passes258": true
+   }
+  ]
+ }
+}

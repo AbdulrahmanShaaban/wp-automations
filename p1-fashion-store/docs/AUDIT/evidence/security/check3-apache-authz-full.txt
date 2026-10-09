@@ -1,0 +1,105 @@
+﻿node.exe : i Starting 'bash -c echo '=== AllowOverride/Options/Require across /etc/apache2 ==='; grep -rn -E 
+'AllowOverride|Options|Require all denied' /etc/apache2/ 2>/dev/null | grep -v '#' | head -60; echo '=== security.conf 
+==='; cat /etc/apache2/conf-enabled/security.conf; echo '=== docker-php.conf ==='; cat 
+/etc/apache2/conf-enabled/docker-php.conf' on the wordpress container. 
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (i Starting 'bas...ess container. :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+=== AllowOverride/Options/Require across /etc/apache2 ===
+/etc/apache2/sites-available/default-ssl.conf:96:		SSLOptions +StdEnvVars
+/etc/apache2/sites-available/default-ssl.conf:99:		SSLOptions +StdEnvVars
+/etc/apache2/conf-available/serve-cgi-bin.conf:13:			AllowOverride None
+/etc/apache2/conf-available/serve-cgi-bin.conf:14:			Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+/etc/apache2/conf-available/docker-php.conf:9:	Options -Indexes
+/etc/apache2/conf-available/docker-php.conf:10:	AllowOverride All
+/etc/apache2/mods-available/alias.conf:16:	Options FollowSymlinks
+/etc/apache2/mods-available/alias.conf:17:	AllowOverride None
+/etc/apache2/mods-available/autoindex.conf:7:IndexOptions FancyIndexing VersionSort HTMLTable NameWidth=* DescriptionWidth=* Charset=UTF-8
+/etc/apache2/mods-available/userdir.conf:5:	AllowOverride FileInfo AuthConfig Limit Indexes
+/etc/apache2/mods-available/userdir.conf:6:	Options MultiViews Indexes SymLinksIfOwnerMatch IncludesNoExec
+/etc/apache2/apache2.conf:160:	Options FollowSymLinks
+/etc/apache2/apache2.conf:161:	AllowOverride None
+/etc/apache2/apache2.conf:162:	Require all denied
+/etc/apache2/apache2.conf:166:	AllowOverride None
+/etc/apache2/apache2.conf:171:	Options Indexes FollowSymLinks
+/etc/apache2/apache2.conf:172:	AllowOverride None
+/etc/apache2/apache2.conf:196:	Require all denied
+=== security.conf ===
+# Changing the following options will not really affect the security of the
+# server, but might make attacks slightly more difficult in some cases.
+
+#
+# ServerTokens
+# This directive configures what you return as the Server HTTP response
+# Header. The default is 'Full' which sends information about the OS-Type
+# and compiled in modules.
+# Set to one of:  Full | OS | Minimal | Minor | Major | Prod
+# where Full conveys the most information, and Prod the least.
+#ServerTokens Minimal
+ServerTokens OS
+#ServerTokens Full
+
+#
+# Optionally add a line containing the server version and virtual host
+# name to server-generated pages (internal error documents, FTP directory
+# listings, mod_status and mod_info output etc., but not CGI generated
+# documents or custom error documents).
+# Set to "EMail" to also include a mailto: link to the ServerAdmin.
+# Set to one of:  On | Off | EMail
+#ServerSignature Off
+ServerSignature On
+
+#
+# Allow TRACE method
+#
+# Set to "extended" to also reflect the request body (only for testing and
+# diagnostic purposes).
+#
+# Set to one of:  On | Off | extended
+TraceEnable Off
+#TraceEnable On
+
+#
+# Forbid access to version control directories
+#
+# If you use version control systems in your document root, you should
+# probably deny access to their directories.
+#
+# Examples:
+#
+#RedirectMatch 404 /\.git
+#RedirectMatch 404 /\.svn
+
+#
+# Setting this header will prevent MSIE from interpreting files as something
+# else than declared by the content type in the HTTP headers.
+# Requires mod_headers to be enabled.
+#
+#Header set X-Content-Type-Options: "nosniff"
+
+#
+# Setting this header will prevent other sites from embedding pages from this
+# site as frames. This defends against clickjacking attacks.
+# Requires mod_headers to be enabled.
+#
+#Header set Content-Security-Policy "frame-ancestors 'self';"
+=== docker-php.conf ===
+<FilesMatch \.php$>
+	SetHandler application/x-httpd-php
+</FilesMatch>
+
+DirectoryIndex disabled
+DirectoryIndex index.php index.html
+
+<Directory /var/www/>
+	Options -Indexes
+	AllowOverride All
+</Directory>
+ΓêÜ Ran `bash -c echo '=== AllowOverride/Options/Require across /etc/apache2 ==='; grep -rn -E 
+'AllowOverride|Options|Require all denied' /etc/apache2/ 2>/dev/null | grep -v '#' | head -60; echo '=== security.conf 
+==='; cat /etc/apache2/conf-enabled/security.conf; echo '=== docker-php.conf ==='; cat 
+/etc/apache2/conf-enabled/docker-php.conf` in 'wordpress'. (in 3s 115ms)

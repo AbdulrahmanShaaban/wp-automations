@@ -1,0 +1,29 @@
+﻿HTTP/1.1 302 Found
+Date: Tue, 06 Oct 2026 07:11:19 GMT
+Server: Apache/2.4.68 (Debian)
+Expires: Wed, 11 Jan 1984 05:00:00 GMT
+Cache-Control: no-cache, must-revalidate, max-age=0, private
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: strict-origin-when-cross-origin
+Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()
+X-XSS-Protection: 0
+X-Redirect-By: WordPress
+Location: http://localhost:8888/cart/
+Content-Type: text/html; charset=UTF-8
+
+HTTP/1.1 200 OK
+Date: Tue, 06 Oct 2026 07:11:24 GMT
+Server: Apache/2.4.68 (Debian)
+Expires: Wed, 11 Jan 1984 05:00:00 GMT
+Cache-Control: no-cache, must-revalidate, max-age=0, private
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Referrer-Policy: strict-origin-when-cross-origin
+Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()
+X-XSS-Protection: 0
+Link: <http://localhost:8888/wp-json/>; rel="https://api.w.org/"
+Link: <http://localhost:8888/wp-json/wp/v2/pages/6>; rel="alternate"; title="JSON"; type="application/json"
+Link: <http://localhost:8888/?p=6>; rel=shortlink
+Content-Type: text/html; charset=UTF-8
+

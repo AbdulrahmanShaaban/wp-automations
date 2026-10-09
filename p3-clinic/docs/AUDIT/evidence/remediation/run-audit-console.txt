@@ -1,0 +1,85 @@
+﻿== P3 clinic a11y/Arabic audit runner ==
+chrome on port 62369
+-- viewport desktop 1440x900
+  -> home http://localhost:8889/
+  wrote probe-home-desktop.json
+  wrote axe-home-desktop.json
+      axe: 0 rules / 0 nodes (0c 0s 0m 0mi) [43634ms]
+  shot home-1440.png
+  shot home-1440-full.png
+  -> services http://localhost:8889/services/
+  wrote probe-services-desktop.json
+  wrote axe-services-desktop.json
+      axe: 0 rules / 0 nodes (0c 0s 0m 0mi) [16844ms]
+  shot services-1440.png
+  shot services-1440-full.png
+  -> team http://localhost:8889/team/
+  wrote probe-team-desktop.json
+  wrote axe-team-desktop.json
+      axe: 0 rules / 0 nodes (0c 0s 0m 0mi) [44324ms]
+  shot team-1440.png
+  shot team-1440-full.png
+  -> contact http://localhost:8889/contact/
+  wrote probe-contact-desktop.json
+  wrote axe-contact-desktop.json
+      axe: 0 rules / 0 nodes (0c 0s 0m 0mi) [4277ms]
+  shot contact-1440.png
+  shot contact-1440-full.png
+  -> book http://localhost:8889/book/
+  wrote probe-book-desktop.json
+  wrote axe-book-desktop.json
+      axe: 0 rules / 0 nodes (0c 0s 0m 0mi) [4018ms]
+  shot book-1440.png
+  shot book-1440-full.png
+-- viewport mobile 390x844
+  -> home http://localhost:8889/
+  wrote probe-home-mobile.json
+  wrote axe-home-mobile.json
+      axe: 0 rules / 0 nodes (0c 0s 0m 0mi) [7409ms]
+  wrote targets-home-390.json
+  shot home-390.png
+  shot home-390-full.png
+  wrote nav-home-390.json
+  -> services http://localhost:8889/services/
+  wrote probe-services-mobile.json
+  wrote axe-services-mobile.json
+      axe: 0 rules / 0 nodes (0c 0s 0m 0mi) [14519ms]
+  wrote targets-services-390.json
+  shot services-390.png
+  shot services-390-full.png
+  wrote nav-services-390.json
+  -> team http://localhost:8889/team/
+  wrote probe-team-mobile.json
+  wrote axe-team-mobile.json
+      axe: 0 rules / 0 nodes (0c 0s 0m 0mi) [5484ms]
+  wrote targets-team-390.json
+  shot team-390.png
+  shot team-390-full.png
+  wrote nav-team-390.json
+  -> contact http://localhost:8889/contact/
+  wrote probe-contact-mobile.json
+  wrote axe-contact-mobile.json
+      axe: 0 rules / 0 nodes (0c 0s 0m 0mi) [7866ms]
+  wrote targets-contact-390.json
+  shot contact-390.png
+  shot contact-390-full.png
+  wrote nav-contact-390.json
+  -> book http://localhost:8889/book/
+  wrote probe-book-mobile.json
+  wrote axe-book-mobile.json
+      axe: 0 rules / 0 nodes (0c 0s 0m 0mi) [12158ms]
+  wrote targets-book-390.json
+  shot book-390.png
+  shot book-390-full.png
+  wrote nav-book-390.json
+-- 1024 spot check
+  shot home-1024.png
+  shot services-1024.png
+  shot team-1024.png
+  shot contact-1024.png
+  shot book-1024.png
+-- platform fonts
+  wrote fonts-platform.json
+  fonts h1: {"selector":".hero h1","fonts":[{"family":"Alexandria","glyphCount":36}]}
+  wrote axe-summary.json
+done in 201s

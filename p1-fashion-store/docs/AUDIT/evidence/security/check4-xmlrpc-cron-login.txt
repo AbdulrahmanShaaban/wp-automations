@@ -1,0 +1,33 @@
+﻿== xmlrpc.php ==
+HTTP/1.1 405 Method Not Allowed
+Date: Tue, 06 Oct 2026 07:14:20 GMT
+Server: Apache/2.4.68 (Debian)
+X-Powered-By: PHP/8.3.35
+Allow: POST
+Content-Type: text/plain;charset=UTF-8
+
+
+== wp-cron.php ==
+HTTP/1.1 200 OK
+Date: Tue, 06 Oct 2026 07:14:21 GMT
+Server: Apache/2.4.68 (Debian)
+X-Powered-By: PHP/8.3.35
+Expires: Wed, 11 Jan 1984 05:00:00 GMT
+Cache-Control: no-cache, must-revalidate, max-age=0
+Content-Type: text/html; charset=UTF-8
+
+
+== wp-login.php ==
+HTTP/1.1 200 OK
+Date: Tue, 06 Oct 2026 07:14:23 GMT
+Server: Apache/2.4.68 (Debian)
+X-Powered-By: PHP/8.3.35
+Expires: Wed, 11 Jan 1984 05:00:00 GMT
+Cache-Control: no-cache, must-revalidate, max-age=0, no-store, private
+Set-Cookie: wordpress_test_cookie=WP%20Cookie%20check; path=/; HttpOnly
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self';
+Referrer-Policy: strict-origin-when-cross-origin
+Content-Type: text/html; charset=UTF-8
+
+

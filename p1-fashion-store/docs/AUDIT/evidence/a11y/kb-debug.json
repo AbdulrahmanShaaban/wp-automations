@@ -1,0 +1,329 @@
+{
+ "shopFocusables": [
+  {
+   "tag": "a",
+   "cls": "skip-link screen-reader-text",
+   "text": "تخطى إلى المحتوى",
+   "pid": null
+  },
+  {
+   "tag": "a",
+   "cls": "",
+   "text": "نيلاد",
+   "pid": null
+  },
+  {
+   "tag": "a",
+   "cls": "wp-block-navigation-item__content",
+   "text": "الجديد",
+   "pid": null
+  },
+  {
+   "tag": "a",
+   "cls": "wp-block-navigation-item__content",
+   "text": "التصنيفات",
+   "pid": null
+  },
+  {
+   "tag": "a",
+   "cls": "wp-block-navigation-item__content",
+   "text": "الأكثر مبيعًا",
+   "pid": null
+  },
+  {
+   "tag": "a",
+   "cls": "wp-block-navigation-item__content",
+   "text": "عن نيلاد",
+   "pid": null
+  },
+  {
+   "tag": "a",
+   "cls": "wp-block-button__link has-text-color has-surface-background-",
+   "text": "السلة",
+   "pid": null
+  },
+  {
+   "tag": "a",
+   "cls": "wp-block-button__link has-on-primary-text-color has-primary-",
+   "text": "اتسوّق الآن",
+   "pid": null
+  },
+  {
+   "tag": "select",
+   "cls": "orderby",
+   "text": "الترتيب الافتراضي\n\t\t\t\t\tترتيب ح",
+   "pid": null
+  },
+  {
+   "tag": "a",
+   "cls": "",
+   "text": "سعر العرضمنتج مخفض",
+   "pid": null
+  },
+  {
+   "tag": "a",
+   "cls": "",
+   "text": "عباية كتان مطرّزة",
+   "pid": null
+  },
+  {
+   "tag": "button",
+   "cls": "wp-block-button__link wp-element-button wc-block-components-",
+   "text": "إضافة إلى السلة",
+   "pid": "38"
+  },
+  {
+   "tag": "a",
+   "cls": "",
+   "text": "",
+   "pid": null
+  },
+  {
+   "tag": "a",
+   "cls": "",
+   "text": "حقيبة كتف جلد طبيعي",
+   "pid": null
+  },
+  {
+   "tag": "button",
+   "cls": "wp-block-button__link wp-element-button wc-block-components-",
+   "text": "إضافة إلى السلة",
+   "pid": "39"
+  },
+  {
+   "tag": "a",
+   "cls": "",
+   "text": "",
+   "pid": null
+  },
+  {
+   "tag": "a",
+   "cls": "",
+   "text": "ساعة كلاسيك معدنية",
+   "pid": null
+  },
+  {
+   "tag": "button",
+   "cls": "wp-block-button__link wp-element-button wc-block-components-",
+   "text": "إضافة إلى السلة",
+   "pid": "40"
+  },
+  {
+   "tag": "a",
+   "cls": "",
+   "text": "",
+   "pid": null
+  },
+  {
+   "tag": "a",
+   "cls": "",
+   "text": "نظارة شمسية كلاسيك",
+   "pid": null
+  },
+  {
+   "tag": "button",
+   "cls": "wp-block-button__link wp-element-button wc-block-components-",
+   "text": "إضافة إلى السلة",
+   "pid": "41"
+  },
+  {
+   "tag": "a",
+   "cls": "",
+   "text": "",
+   "pid": null
+  },
+  {
+   "tag": "a",
+   "cls": "",
+   "text": "قميص قطن بسيط",
+   "pid": null
+  },
+  {
+   "tag": "button",
+   "cls": "wp-block-button__link wp-element-button wc-block-components-",
+   "text": "إضافة إلى السلة",
+   "pid": "42"
+  },
+  {
+   "tag": "a",
+   "cls": "",
+   "text": "",
+   "pid": null
+  },
+  {
+   "tag": "a",
+   "cls": "",
+   "text": "شال كتان خفيف",
+   "pid": null
+  },
+  {
+   "tag": "button",
+   "cls": "wp-block-button__link wp-element-button wc-block-components-",
+   "text": "إضافة إلى السلة",
+   "pid": "43"
+  },
+  {
+   "tag": "a",
+   "cls": "",
+   "text": "",
+   "pid": null
+  },
+  {
+   "tag": "a",
+   "cls": "",
+   "text": "فستان صيفي مطرّز",
+   "pid": null
+  },
+  {
+   "tag": "button",
+   "cls": "wp-block-button__link wp-element-button wc-block-components-",
+   "text": "إضافة إلى السلة",
+   "pid": "44"
+  },
+  {
+   "tag": "a",
+   "cls": "",
+   "text": "",
+   "pid": null
+  },
+  {
+   "tag": "a",
+   "cls": "",
+   "text": "تيشيرت قطن أوفرسايز",
+   "pid": null
+  },
+  {
+   "tag": "button",
+   "cls": "wp-block-button__link wp-element-button wc-block-components-",
+   "text": "إضافة إلى السلة",
+   "pid": "45"
+  },
+  {
+   "tag": "a",
+   "cls": "",
+   "text": "الشحن والإرجاع",
+   "pid": null
+  },
+  {
+   "tag": "a",
+   "cls": "",
+   "text": "الخصوصية",
+   "pid": null
+  },
+  {
+   "tag": "a",
+   "cls": "",
+   "text": "تواصل معنا",
+   "pid": null
+  }
+ ],
+ "atcFound": {
+  "step": 12,
+  "cls": "wp-block-button__link wp-element-button wc-block-components-product-button__butt",
+  "text": "إضافة إلى السلة",
+  "pid": "38",
+  "disabled": false,
+  "rect": {
+   "x": 1088,
+   "y": 780,
+   "w": 132,
+   "h": 43
+  },
+  "inViewport": true,
+  "html": "<button class=\"wp-block-button__link wp-element-button wc-block-components-product-button__button add_to_cart_button ajax_add_to_cart product_type_simple has-font-size has-small-font-size has-text-align-center wc-interactive\" style=\"margin-bottom:1rem;\" type=\"button\" data-product_id=\"38\" data-product_sku=\"\" aria-label="
+ },
+ "before": 0,
+ "after": 0,
+ "urlAfter": "/shop/",
+ "notice": [
+  "عرض ⁦8⁩ من كل النتائج"
+ ],
+ "cookie": [],
+ "shopVisitedTail": [
+  {
+   "i": 1,
+   "tag": "a",
+   "cls": "skip-link screen-reader-text",
+   "text": "تخطى إلى المحتوى",
+   "uid": "body:nth-of-type(1)>a:nth-of-type(1)"
+  },
+  {
+   "i": 2,
+   "tag": "a",
+   "cls": "",
+   "text": "نيلاد",
+   "uid": "ype(1)>p:nth-of-type(1)>a:nth-of-type(1)"
+  },
+  {
+   "i": 3,
+   "tag": "a",
+   "cls": "wp-block-navigation-item__content",
+   "text": "الجديد",
+   "uid": "pe(1)>li:nth-of-type(1)>a:nth-of-type(1)"
+  },
+  {
+   "i": 4,
+   "tag": "a",
+   "cls": "wp-block-navigation-item__content",
+   "text": "التصنيفات",
+   "uid": "pe(1)>li:nth-of-type(2)>a:nth-of-type(1)"
+  },
+  {
+   "i": 5,
+   "tag": "a",
+   "cls": "wp-block-navigation-item__content",
+   "text": "الأكثر مبيعًا",
+   "uid": "pe(1)>li:nth-of-type(3)>a:nth-of-type(1)"
+  },
+  {
+   "i": 6,
+   "tag": "a",
+   "cls": "wp-block-navigation-item__content",
+   "text": "عن نيلاد",
+   "uid": "pe(1)>li:nth-of-type(4)>a:nth-of-type(1)"
+  },
+  {
+   "i": 7,
+   "tag": "a",
+   "cls": "wp-block-button__link has-text-color has-surface-b",
+   "text": "السلة",
+   "uid": "e(1)>div:nth-of-type(1)>a:nth-of-type(1)"
+  },
+  {
+   "i": 8,
+   "tag": "a",
+   "cls": "wp-block-button__link has-on-primary-text-color ha",
+   "text": "اتسوّق الآن",
+   "uid": "e(1)>div:nth-of-type(2)>a:nth-of-type(1)"
+  },
+  {
+   "i": 9,
+   "tag": "select",
+   "cls": "orderby",
+   "text": "الترتيب الافتراضي ترتيب حسب الشهرة ترتيب حسب الأحدث ترتيب حس",
+   "uid": "orm:nth-of-type(1)>select:nth-of-type(1)"
+  },
+  {
+   "i": 10,
+   "tag": "a",
+   "cls": "",
+   "text": "سعر العرضمنتج مخفض",
+   "uid": "e(1)>div:nth-of-type(1)>a:nth-of-type(1)"
+  },
+  {
+   "i": 11,
+   "tag": "a",
+   "cls": "",
+   "text": "عباية كتان مطرّزة",
+   "uid": "pe(1)>h2:nth-of-type(1)>a:nth-of-type(1)"
+  },
+  {
+   "i": 12,
+   "tag": "button",
+   "cls": "wp-block-button__link wp-element-button wc-block-c",
+   "text": "إضافة إلى السلة",
+   "uid": "div:nth-of-type(3)>button:nth-of-type(1)"
+  }
+ ],
+ "longestRuns": []
+}

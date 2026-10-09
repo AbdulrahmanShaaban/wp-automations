@@ -1,0 +1,13 @@
+﻿== auth-required endpoint status codes ==
+/wp-json/wp/v2/settings => 401
+/wp-json/wc/v3/system_status => 401
+/wp-json/wc/v3/orders => 401
+/wp-json/wc/v3/customers => 401
+/wp-json/wc/store/v1/order/1 => 404
+/wp-json/wp/v2/users/1?context=edit => 401
+/wp-json/wp/v2/plugins => 401
+== public data endpoints ==
+/wp-json/wp/v2/pages => 200
+/wp-json/wp/v2/posts => 200
+/wp-json/wc/store/v1/products => 200
+/wp-json/wc/store/v1/cart => 200

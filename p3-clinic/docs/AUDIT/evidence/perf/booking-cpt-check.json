@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-10-08T03:41:07.508Z",
+  "base": "http://localhost:8889",
+  "checks": {
+    "bookingArchive": {
+      "path": "/?post_type=siraj_booking",
+      "status": 200,
+      "bytes": 73948,
+      "title": "عيادة سِراج للأسنان &#8211; نموذج تجريبي — حجز زيارات وأسنان (Demo)",
+      "canonical": "http://localhost:8889/",
+      "robots": "max-image-preview:large",
+      "h1Count": 1
+    },
+    "bookingPostType": {
+      "path": "/siraj_booking/",
+      "status": 404,
+      "bytes": 63024,
+      "title": "الصفحة غير موجودة. &#8211; عيادة سِراج للأسنان",
+      "canonical": null,
+      "robots": "max-image-preview:large",
+      "h1Count": 1
+    },
+    "wpRestTypes": {
+      "path": "/wp-json/wp/v2/types",
+      "status": 200,
+      "bytes": 6631,
+      "title": null,
+      "canonical": null,
+      "robots": null,
+      "h1Count": 0
+    },
+    "search": {
+      "path": "/?s=%D8%A8%D8%AD%D8%B2",
+      "status": 200,
+      "bytes": 63142,
+      "title": "نتائج البحث عن &#8220;بحز&#8221; &#8211; عيادة سِراج للأسنان",
+      "canonical": null,
+      "robots": "noindex, follow, max-image-preview:large",
+      "h1Count": 1
+    }
+  }
+}

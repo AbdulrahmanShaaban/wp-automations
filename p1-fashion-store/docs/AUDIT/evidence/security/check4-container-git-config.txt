@@ -1,0 +1,16 @@
+﻿node.exe : i Starting 'bash -c echo --- git-config-redacted ---; sed -E s#(url = 
+[a-z]+://)[^@/]+@#\1[USERINFO-REDACTED]@# /var/www/html/.git/config; echo --- embedded-cred-check ---; if grep -qE url 
+= [a-z]+://[^/[:space:]]*:[^/[:space:]]*@ /var/www/html/.git/config; then echo EMBEDDED-CREDENTIALS: yes; else echo 
+EMBEDDED-CREDENTIALS: no; fi; echo --- head-refs ---; head -5 /var/www/html/.git/packed-refs' on the wordpress 
+container. 
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (i Starting 'bas...ess container. :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+=: -c: line 1: syntax error near unexpected token `('
+=: -c: line 1: `echo --- git-config-redacted ---; sed -E s#(url'
+├ù Command failed with exit code 2
+Command failed with exit code 2

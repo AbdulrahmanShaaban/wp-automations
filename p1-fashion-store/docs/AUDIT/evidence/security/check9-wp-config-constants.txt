@@ -1,0 +1,36 @@
+﻿node.exe : i Starting 'wp config list --format=csv' on the cli container. 
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (i Starting 'wp ...cli container. :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+name,value,type
+table_prefix,wp_,variable
+configExtra,,variable
+DB_NAME,wordpress,constant
+DB_USER,root,constant
+DB_PASSWORD,password,constant
+DB_HOST,mysql,constant
+DB_CHARSET,utf8mb4,constant
+DB_COLLATE,,constant
+AUTH_KEY,d7b8b85ed4e14e444bbce053cf63441a7c47edea,constant
+SECURE_AUTH_KEY,e3e113c97c3288424c7f3fa751cc7c284efac2b3,constant
+LOGGED_IN_KEY,affadedafc2a6c557a49b05cce231fabdf2f4c97,constant
+NONCE_KEY,b514d8518602999a06dc1b4124e0a9d77a691341,constant
+AUTH_SALT,e0fcbb3aa13bad84da167af71a26332122bf6e4b,constant
+SECURE_AUTH_SALT,0057c0304f7d395d00647fadb2baa3776c7651a7,constant
+LOGGED_IN_SALT,de5f6d48a730befa3409bc84f0cad2b9f28a55f2,constant
+NONCE_SALT,ea234d5da009320f9f777962e3e1b6bc4fcf491f,constant
+FS_METHOD,direct,constant
+SCRIPT_DEBUG,1,constant
+WP_ENVIRONMENT_TYPE,local,constant
+WP_PHP_BINARY,php,constant
+WP_TESTS_EMAIL,admin@example.org,constant
+WP_TESTS_TITLE,"Test Blog",constant
+WP_TESTS_DOMAIN,localhost:8888,constant
+WP_SITEURL,http://localhost:8888,constant
+WP_HOME,http://localhost:8888,constant
+WP_DEBUG,1,constant
+ΓêÜ Ran `wp config list --format=csv` in 'cli'. (in 1s 813ms)

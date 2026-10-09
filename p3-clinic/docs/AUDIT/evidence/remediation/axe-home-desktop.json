@@ -1,0 +1,111 @@
+{
+ "page": "home",
+ "url": "http://localhost:8889/",
+ "viewport": {
+  "w": 1440,
+  "h": 900
+ },
+ "violations": [],
+ "incomplete": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "nodes": 8,
+   "sample": [
+    {
+     "target": "aside > .sec-num",
+     "html": "<span class=\"sec-num\">RX—001</span>",
+     "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+    },
+    {
+     "target": "aside > h2",
+     "html": "<h2>ملاحظات الزيارة</h2>",
+     "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+    },
+    {
+     "target": ".note-list > li:nth-child(1) > span",
+     "html": "<span>20 دقيقة</span>",
+     "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+    },
+    {
+     "target": ".note-list > li:nth-child(2)",
+     "html": "<li>أشعة عند الحاجة <span>15 دقيقة</span></li>",
+     "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+    }
+   ]
+  }
+ ],
+ "passes": 37,
+ "inapplicable": [
+  "accesskeys",
+  "area-alt",
+  "aria-allowed-role",
+  "aria-braille-equivalent",
+  "aria-command-name",
+  "aria-deprecated-role",
+  "aria-dialog-name",
+  "aria-input-field-name",
+  "aria-meter-name",
+  "aria-progressbar-name",
+  "aria-required-attr",
+  "aria-required-children",
+  "aria-required-parent",
+  "aria-roles",
+  "aria-tab-name",
+  "aria-text",
+  "aria-toggle-field-name",
+  "aria-tooltip-name",
+  "aria-treeitem-name",
+  "autocomplete-valid",
+  "avoid-inline-spacing",
+  "blink",
+  "button-name",
+  "definition-list",
+  "dlitem",
+  "duplicate-id-aria",
+  "empty-table-header",
+  "form-field-multiple-labels",
+  "frame-focusable-content",
+  "frame-tested",
+  "frame-title-unique",
+  "frame-title",
+  "html-xml-lang-mismatch",
+  "input-button-name",
+  "input-image-alt",
+  "label-title-only",
+  "label",
+  "link-in-text-block",
+  "marquee",
+  "meta-refresh",
+  "object-alt",
+  "presentation-role-conflict",
+  "role-img-alt",
+  "scope-attr-valid",
+  "scrollable-region-focusable",
+  "select-name",
+  "server-side-image-map",
+  "svg-img-alt",
+  "table-duplicate-name",
+  "td-headers-attr",
+  "th-has-data-cells",
+  "video-caption",
+  "no-autoplay-audio"
+ ],
+ "engine": {
+  "name": "axe-core",
+  "version": "4.13.0"
+ },
+ "runner": {
+  "name": "axe"
+ },
+ "timestamp": "2026-10-08T11:34:20.780Z",
+ "violationCounts": {
+  "critical": 0,
+  "serious": 0,
+  "moderate": 0,
+  "minor": 0,
+  "total": 0,
+  "nodes": 0
+ }
+}

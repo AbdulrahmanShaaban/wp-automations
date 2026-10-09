@@ -1,0 +1,644 @@
+{
+  "generatedAt": "2026-10-08T03:39:48.052Z",
+  "pageChecks": {
+    "total": 90,
+    "pass": 58,
+    "fail": 32
+  },
+  "siteChecks": {
+    "total": 14,
+    "pass": 13,
+    "fail": 1
+  },
+  "total": {
+    "total": 104,
+    "pass": 71,
+    "fail": 33
+  },
+  "checks": [
+    {
+      "scope": "page:home",
+      "item": "title present",
+      "pass": true,
+      "detail": "عيادة سِراج للأسنان &#8211; نموذج تجريبي — حجز زيارات وأسنان (Demo)"
+    },
+    {
+      "scope": "page:home",
+      "item": "title length <= 60",
+      "pass": false,
+      "detail": "67 chars"
+    },
+    {
+      "scope": "page:home",
+      "item": "title unique",
+      "pass": true,
+      "detail": "1x"
+    },
+    {
+      "scope": "page:home",
+      "item": "meta description present",
+      "pass": false,
+      "detail": "MISSING"
+    },
+    {
+      "scope": "page:home",
+      "item": "canonical exactly 1",
+      "pass": true,
+      "detail": "1 tag(s) -> http://localhost:8889/"
+    },
+    {
+      "scope": "page:home",
+      "item": "robots meta present",
+      "pass": true,
+      "detail": "max-image-preview:large"
+    },
+    {
+      "scope": "page:home",
+      "item": "page is crawlable (no noindex)",
+      "pass": true,
+      "detail": "max-image-preview:large"
+    },
+    {
+      "scope": "page:home",
+      "item": "Open Graph tags present",
+      "pass": false,
+      "detail": "0 og tags"
+    },
+    {
+      "scope": "page:home",
+      "item": "og:image present with 1200x630",
+      "pass": false,
+      "detail": "MISSING"
+    },
+    {
+      "scope": "page:home",
+      "item": "Twitter card tags present",
+      "pass": false,
+      "detail": "0 twitter tags"
+    },
+    {
+      "scope": "page:home",
+      "item": "JSON-LD structured data",
+      "pass": false,
+      "detail": "0 block(s)"
+    },
+    {
+      "scope": "page:home",
+      "item": "lang + dir set",
+      "pass": true,
+      "detail": "ar/rtl"
+    },
+    {
+      "scope": "page:home",
+      "item": "exactly one h1",
+      "pass": true,
+      "detail": "1 h1"
+    },
+    {
+      "scope": "page:home",
+      "item": "heading order no skips",
+      "pass": true,
+      "detail": "clean"
+    },
+    {
+      "scope": "page:home",
+      "item": "status 200",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "scope": "page:home",
+      "item": "all images have alt",
+      "pass": true,
+      "detail": "4 imgs, 0 missing alt"
+    },
+    {
+      "scope": "page:home",
+      "item": "no broken #hash anchors",
+      "pass": true,
+      "detail": "clean"
+    },
+    {
+      "scope": "page:home",
+      "item": "Lighthouse SEO category >= 90",
+      "pass": false,
+      "detail": "85 (fails: meta-description,robots-txt)"
+    },
+    {
+      "scope": "page:services",
+      "item": "title present",
+      "pass": true,
+      "detail": "الخدمات &#8211; عيادة سِراج للأسنان"
+    },
+    {
+      "scope": "page:services",
+      "item": "title length <= 60",
+      "pass": true,
+      "detail": "35 chars"
+    },
+    {
+      "scope": "page:services",
+      "item": "title unique",
+      "pass": true,
+      "detail": "1x"
+    },
+    {
+      "scope": "page:services",
+      "item": "meta description present",
+      "pass": false,
+      "detail": "MISSING"
+    },
+    {
+      "scope": "page:services",
+      "item": "canonical exactly 1",
+      "pass": true,
+      "detail": "1 tag(s) -> http://localhost:8889/services/"
+    },
+    {
+      "scope": "page:services",
+      "item": "robots meta present",
+      "pass": true,
+      "detail": "max-image-preview:large"
+    },
+    {
+      "scope": "page:services",
+      "item": "page is crawlable (no noindex)",
+      "pass": true,
+      "detail": "max-image-preview:large"
+    },
+    {
+      "scope": "page:services",
+      "item": "Open Graph tags present",
+      "pass": false,
+      "detail": "0 og tags"
+    },
+    {
+      "scope": "page:services",
+      "item": "og:image present with 1200x630",
+      "pass": false,
+      "detail": "MISSING"
+    },
+    {
+      "scope": "page:services",
+      "item": "Twitter card tags present",
+      "pass": false,
+      "detail": "0 twitter tags"
+    },
+    {
+      "scope": "page:services",
+      "item": "JSON-LD structured data",
+      "pass": false,
+      "detail": "0 block(s)"
+    },
+    {
+      "scope": "page:services",
+      "item": "lang + dir set",
+      "pass": true,
+      "detail": "ar/rtl"
+    },
+    {
+      "scope": "page:services",
+      "item": "exactly one h1",
+      "pass": true,
+      "detail": "1 h1"
+    },
+    {
+      "scope": "page:services",
+      "item": "heading order no skips",
+      "pass": false,
+      "detail": "heading-order"
+    },
+    {
+      "scope": "page:services",
+      "item": "status 200",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "scope": "page:services",
+      "item": "all images have alt",
+      "pass": true,
+      "detail": "0 imgs, 0 missing alt"
+    },
+    {
+      "scope": "page:services",
+      "item": "no broken #hash anchors",
+      "pass": true,
+      "detail": "clean"
+    },
+    {
+      "scope": "page:services",
+      "item": "Lighthouse SEO category >= 90",
+      "pass": false,
+      "detail": "83 (fails: meta-description,robots-txt)"
+    },
+    {
+      "scope": "page:team",
+      "item": "title present",
+      "pass": true,
+      "detail": "الفريق &#8211; عيادة سِراج للأسنان"
+    },
+    {
+      "scope": "page:team",
+      "item": "title length <= 60",
+      "pass": true,
+      "detail": "34 chars"
+    },
+    {
+      "scope": "page:team",
+      "item": "title unique",
+      "pass": true,
+      "detail": "1x"
+    },
+    {
+      "scope": "page:team",
+      "item": "meta description present",
+      "pass": false,
+      "detail": "MISSING"
+    },
+    {
+      "scope": "page:team",
+      "item": "canonical exactly 1",
+      "pass": true,
+      "detail": "1 tag(s) -> http://localhost:8889/team/"
+    },
+    {
+      "scope": "page:team",
+      "item": "robots meta present",
+      "pass": true,
+      "detail": "max-image-preview:large"
+    },
+    {
+      "scope": "page:team",
+      "item": "page is crawlable (no noindex)",
+      "pass": true,
+      "detail": "max-image-preview:large"
+    },
+    {
+      "scope": "page:team",
+      "item": "Open Graph tags present",
+      "pass": false,
+      "detail": "0 og tags"
+    },
+    {
+      "scope": "page:team",
+      "item": "og:image present with 1200x630",
+      "pass": false,
+      "detail": "MISSING"
+    },
+    {
+      "scope": "page:team",
+      "item": "Twitter card tags present",
+      "pass": false,
+      "detail": "0 twitter tags"
+    },
+    {
+      "scope": "page:team",
+      "item": "JSON-LD structured data",
+      "pass": false,
+      "detail": "0 block(s)"
+    },
+    {
+      "scope": "page:team",
+      "item": "lang + dir set",
+      "pass": true,
+      "detail": "ar/rtl"
+    },
+    {
+      "scope": "page:team",
+      "item": "exactly one h1",
+      "pass": true,
+      "detail": "1 h1"
+    },
+    {
+      "scope": "page:team",
+      "item": "heading order no skips",
+      "pass": false,
+      "detail": "heading-order"
+    },
+    {
+      "scope": "page:team",
+      "item": "status 200",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "scope": "page:team",
+      "item": "all images have alt",
+      "pass": true,
+      "detail": "0 imgs, 0 missing alt"
+    },
+    {
+      "scope": "page:team",
+      "item": "no broken #hash anchors",
+      "pass": true,
+      "detail": "clean"
+    },
+    {
+      "scope": "page:team",
+      "item": "Lighthouse SEO category >= 90",
+      "pass": false,
+      "detail": "83 (fails: meta-description,robots-txt)"
+    },
+    {
+      "scope": "page:contact",
+      "item": "title present",
+      "pass": true,
+      "detail": "تواصل &#8211; عيادة سِراج للأسنان"
+    },
+    {
+      "scope": "page:contact",
+      "item": "title length <= 60",
+      "pass": true,
+      "detail": "33 chars"
+    },
+    {
+      "scope": "page:contact",
+      "item": "title unique",
+      "pass": true,
+      "detail": "1x"
+    },
+    {
+      "scope": "page:contact",
+      "item": "meta description present",
+      "pass": false,
+      "detail": "MISSING"
+    },
+    {
+      "scope": "page:contact",
+      "item": "canonical exactly 1",
+      "pass": true,
+      "detail": "1 tag(s) -> http://localhost:8889/contact/"
+    },
+    {
+      "scope": "page:contact",
+      "item": "robots meta present",
+      "pass": true,
+      "detail": "max-image-preview:large"
+    },
+    {
+      "scope": "page:contact",
+      "item": "page is crawlable (no noindex)",
+      "pass": true,
+      "detail": "max-image-preview:large"
+    },
+    {
+      "scope": "page:contact",
+      "item": "Open Graph tags present",
+      "pass": false,
+      "detail": "0 og tags"
+    },
+    {
+      "scope": "page:contact",
+      "item": "og:image present with 1200x630",
+      "pass": false,
+      "detail": "MISSING"
+    },
+    {
+      "scope": "page:contact",
+      "item": "Twitter card tags present",
+      "pass": false,
+      "detail": "0 twitter tags"
+    },
+    {
+      "scope": "page:contact",
+      "item": "JSON-LD structured data",
+      "pass": false,
+      "detail": "0 block(s)"
+    },
+    {
+      "scope": "page:contact",
+      "item": "lang + dir set",
+      "pass": true,
+      "detail": "ar/rtl"
+    },
+    {
+      "scope": "page:contact",
+      "item": "exactly one h1",
+      "pass": true,
+      "detail": "1 h1"
+    },
+    {
+      "scope": "page:contact",
+      "item": "heading order no skips",
+      "pass": true,
+      "detail": "clean"
+    },
+    {
+      "scope": "page:contact",
+      "item": "status 200",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "scope": "page:contact",
+      "item": "all images have alt",
+      "pass": true,
+      "detail": "0 imgs, 0 missing alt"
+    },
+    {
+      "scope": "page:contact",
+      "item": "no broken #hash anchors",
+      "pass": true,
+      "detail": "clean"
+    },
+    {
+      "scope": "page:contact",
+      "item": "Lighthouse SEO category >= 90",
+      "pass": true,
+      "detail": "92 (fails: meta-description)"
+    },
+    {
+      "scope": "page:book",
+      "item": "title present",
+      "pass": true,
+      "detail": "احجز زيارة &#8211; عيادة سِراج للأسنان"
+    },
+    {
+      "scope": "page:book",
+      "item": "title length <= 60",
+      "pass": true,
+      "detail": "38 chars"
+    },
+    {
+      "scope": "page:book",
+      "item": "title unique",
+      "pass": true,
+      "detail": "1x"
+    },
+    {
+      "scope": "page:book",
+      "item": "meta description present",
+      "pass": false,
+      "detail": "MISSING"
+    },
+    {
+      "scope": "page:book",
+      "item": "canonical exactly 1",
+      "pass": true,
+      "detail": "1 tag(s) -> http://localhost:8889/book/"
+    },
+    {
+      "scope": "page:book",
+      "item": "robots meta present",
+      "pass": true,
+      "detail": "max-image-preview:large"
+    },
+    {
+      "scope": "page:book",
+      "item": "page is crawlable (no noindex)",
+      "pass": true,
+      "detail": "max-image-preview:large"
+    },
+    {
+      "scope": "page:book",
+      "item": "Open Graph tags present",
+      "pass": false,
+      "detail": "0 og tags"
+    },
+    {
+      "scope": "page:book",
+      "item": "og:image present with 1200x630",
+      "pass": false,
+      "detail": "MISSING"
+    },
+    {
+      "scope": "page:book",
+      "item": "Twitter card tags present",
+      "pass": false,
+      "detail": "0 twitter tags"
+    },
+    {
+      "scope": "page:book",
+      "item": "JSON-LD structured data",
+      "pass": false,
+      "detail": "0 block(s)"
+    },
+    {
+      "scope": "page:book",
+      "item": "lang + dir set",
+      "pass": true,
+      "detail": "ar/rtl"
+    },
+    {
+      "scope": "page:book",
+      "item": "exactly one h1",
+      "pass": true,
+      "detail": "1 h1"
+    },
+    {
+      "scope": "page:book",
+      "item": "heading order no skips",
+      "pass": true,
+      "detail": "clean"
+    },
+    {
+      "scope": "page:book",
+      "item": "status 200",
+      "pass": true,
+      "detail": 200
+    },
+    {
+      "scope": "page:book",
+      "item": "all images have alt",
+      "pass": true,
+      "detail": "0 imgs, 0 missing alt"
+    },
+    {
+      "scope": "page:book",
+      "item": "no broken #hash anchors",
+      "pass": true,
+      "detail": "clean"
+    },
+    {
+      "scope": "page:book",
+      "item": "Lighthouse SEO category >= 90",
+      "pass": false,
+      "detail": "83 (fails: meta-description,robots-txt)"
+    },
+    {
+      "scope": "site",
+      "item": "robots.txt exists and has no blanket Disallow",
+      "pass": true,
+      "detail": "User-agent: * Disallow: /wp-admin/ Allow: /wp-admin/admin-ajax.php Sitemap: http://localho"
+    },
+    {
+      "scope": "site",
+      "item": "robots.txt declares sitemap",
+      "pass": true,
+      "detail": "Sitemap: http://localhost:8889/wp-sitemap.xml"
+    },
+    {
+      "scope": "site",
+      "item": "wp-sitemap.xml reachable (200)",
+      "pass": true,
+      "detail": "200"
+    },
+    {
+      "scope": "site",
+      "item": "/sitemap.xml redirects to wp-sitemap",
+      "pass": true,
+      "detail": "http://localhost:8889/sitemap.xml -> http://localhost:8889/wp-sitemap.xml"
+    },
+    {
+      "scope": "site",
+      "item": "sitemap contains no noindex URLs",
+      "pass": true,
+      "detail": "5 URLs: /, /services/, /team/, /contact/, /book/"
+    },
+    {
+      "scope": "site",
+      "item": "404 for unknown path",
+      "pass": true,
+      "detail": "404"
+    },
+    {
+      "scope": "site",
+      "item": "trailing-slash 301 for no-slash paths",
+      "pass": true,
+      "detail": "/services -> /services/"
+    },
+    {
+      "scope": "site",
+      "item": "uppercase variants self-canonical (no 200 dup)",
+      "pass": true,
+      "detail": "/BOOK/ + /SERVICES/ canonical correct (200, not 301)"
+    },
+    {
+      "scope": "site",
+      "item": "utm variants self-canonical",
+      "pass": true,
+      "detail": "/book/?utm_source=x -> canonical /book/"
+    },
+    {
+      "scope": "site",
+      "item": "no third-party font/font host on any page",
+      "pass": true,
+      "detail": "localhost:8889"
+    },
+    {
+      "scope": "site",
+      "item": "no third-party hosts at all (Lighthouse)",
+      "pass": true,
+      "detail": "localhost + blob only"
+    },
+    {
+      "scope": "site",
+      "item": "wp-json REST index reachable",
+      "pass": true,
+      "detail": "200 (observed via curl)"
+    },
+    {
+      "scope": "site",
+      "item": "author archive exists and is indexable (should not be)",
+      "pass": false,
+      "detail": "/?author=1 -> title \"admin &#8211; عيادة سِراج للأسنان\", robots=max-image-preview:large"
+    },
+    {
+      "scope": "site",
+      "item": "feed reachable (should be noindex or disallowed)",
+      "pass": true,
+      "detail": "/feed/ 200, not disallowed in robots.txt"
+    }
+  ]
+}

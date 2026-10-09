@@ -1,0 +1,612 @@
+{
+  "generatedAt": "2026-10-06T07:24:36.165Z",
+  "baselineDir": "D:\\my work\\p1-fashion-store\\design\\qa",
+  "pages": {
+    "home": {
+      "url": "http://localhost:8888/",
+      "lighthouseVersion": {
+        "now": "13.5.0",
+        "was": "13.5.0"
+      },
+      "score": {
+        "now": 84,
+        "was": 87,
+        "delta": -3,
+        "verdict": "worse"
+      },
+      "a11y": {
+        "now": 100,
+        "was": 100
+      },
+      "seoScore": {
+        "now": 100,
+        "was": 92
+      },
+      "fcp": {
+        "now": 2426.37,
+        "was": 2443.08,
+        "delta": -16.7,
+        "verdict": "same"
+      },
+      "lcp": {
+        "now": 2576.76,
+        "was": 2593.88,
+        "delta": -17.12,
+        "verdict": "same"
+      },
+      "tbt": {
+        "now": 26,
+        "was": 34.5,
+        "delta": -8.5,
+        "verdict": "same"
+      },
+      "cls": {
+        "now": 0.13,
+        "was": 0.13,
+        "delta": 0,
+        "verdict": "same"
+      },
+      "tti": {
+        "now": 3343.71,
+        "was": 3362.95,
+        "delta": -19.24,
+        "verdict": "same"
+      },
+      "ttfb": {
+        "now": 3099,
+        "was": 1744,
+        "delta": 1355,
+        "verdict": "worse"
+      },
+      "weight": {
+        "now": 252750,
+        "was": 252751,
+        "delta": -1,
+        "verdict": "same"
+      },
+      "renderBlockingWasted": {
+        "now": 5966,
+        "was": 5956,
+        "delta": 10,
+        "verdict": "same"
+      },
+      "now": {
+        "perf": 84,
+        "fcp": "2.4 s",
+        "lcp": "2.6 s",
+        "tbt": "30 ms",
+        "cls": "0.133",
+        "tti": "3.3 s",
+        "ttfb": "Root document took 3,100 ms",
+        "weight": "Total size was 247 KiB",
+        "rbMs": 5966,
+        "lcpEl": {
+          "selector": "div.wp-block-group > div.wp-block-group > div.wp-block-group > h1.wp-block-heading",
+          "snippet": "<h1 class=\"wp-block-heading hero-title\">",
+          "label": "قطع تلبسها كل يوم، بجودة تحسّها"
+        }
+      },
+      "was": {
+        "perf": 87,
+        "fcp": "2.4 s",
+        "lcp": "2.6 s",
+        "tbt": "30 ms",
+        "cls": "0.133",
+        "tti": "3.4 s",
+        "ttfb": "Root document took 1,740 ms",
+        "weight": "Total size was 247 KiB",
+        "rbMs": 5956,
+        "lcpEl": {
+          "selector": "div.wp-block-group > div.wp-block-group > div.wp-block-group > h1.wp-block-heading",
+          "snippet": "<h1 class=\"wp-block-heading hero-title\">",
+          "label": "قطع تلبسها كل يوم، بجودة تحسّها"
+        }
+      }
+    },
+    "shop": {
+      "url": "http://localhost:8888/shop/",
+      "lighthouseVersion": {
+        "now": "13.5.0",
+        "was": "13.5.0"
+      },
+      "score": {
+        "now": 66,
+        "was": 67,
+        "delta": -1,
+        "verdict": "same"
+      },
+      "a11y": {
+        "now": 100,
+        "was": 100
+      },
+      "seoScore": {
+        "now": 100,
+        "was": 92
+      },
+      "fcp": {
+        "now": 3660,
+        "was": 3247.47,
+        "delta": 412.53,
+        "verdict": "worse"
+      },
+      "lcp": {
+        "now": 4712.53,
+        "was": 4760.67,
+        "delta": -48.15,
+        "verdict": "same"
+      },
+      "tbt": {
+        "now": 99.5,
+        "was": 76.5,
+        "delta": 23,
+        "verdict": "same"
+      },
+      "cls": {
+        "now": 0.01,
+        "was": 0.01,
+        "delta": 0,
+        "verdict": "same"
+      },
+      "tti": {
+        "now": 5264.82,
+        "was": 5260.03,
+        "delta": 4.79,
+        "verdict": "same"
+      },
+      "ttfb": {
+        "now": 5714,
+        "was": 10553,
+        "delta": -4839,
+        "verdict": "better"
+      },
+      "weight": {
+        "now": 403541,
+        "was": 403580,
+        "delta": -39,
+        "verdict": "same"
+      },
+      "renderBlockingWasted": {
+        "now": 9893,
+        "was": 9962,
+        "delta": -69,
+        "verdict": "same"
+      },
+      "now": {
+        "perf": 66,
+        "fcp": "3.7 s",
+        "lcp": "4.7 s",
+        "tbt": "100 ms",
+        "cls": "0.009",
+        "tti": "5.3 s",
+        "ttfb": "Root document took 5,710 ms",
+        "weight": "Total size was 394 KiB",
+        "rbMs": 9893,
+        "lcpEl": {
+          "selector": "li.wc-block-product > div.wc-block-components-product-image > a > img.attachment-large",
+          "snippet": "<img width=\"800\" height=\"1000\" src=\"http://localhost:8888/wp-content/uploads/2026/10/abaya-600x750.jpg\" class=\"attachment-large size-large\" alt=\"عباية كتان مطرّزة\" data-testid=\"product-image\" data-ima",
+          "label": "عباية كتان مطرّزة"
+        }
+      },
+      "was": {
+        "perf": 67,
+        "fcp": "3.2 s",
+        "lcp": "4.8 s",
+        "tbt": "80 ms",
+        "cls": "0.009",
+        "tti": "5.3 s",
+        "ttfb": "Root document took 10,550 ms",
+        "weight": "Total size was 394 KiB",
+        "rbMs": 9962,
+        "lcpEl": {
+          "selector": "li.wc-block-product > div.wc-block-components-product-image > a > img.attachment-large",
+          "snippet": "<img width=\"800\" height=\"1000\" src=\"http://localhost:8888/wp-content/uploads/2026/10/abaya-600x750.jpg\" class=\"attachment-large size-large\" alt=\"عباية كتان مطرّزة\" data-testid=\"product-image\" data-ima",
+          "label": "عباية كتان مطرّزة"
+        }
+      }
+    },
+    "product": {
+      "url": "http://localhost:8888/product/embroidered-abaya/",
+      "lighthouseVersion": {
+        "now": "13.5.0",
+        "was": "13.5.0"
+      },
+      "score": {
+        "now": 70,
+        "was": 71,
+        "delta": -1,
+        "verdict": "same"
+      },
+      "a11y": {
+        "now": 100,
+        "was": 100
+      },
+      "seoScore": {
+        "now": 100,
+        "was": 100
+      },
+      "fcp": {
+        "now": 2696.51,
+        "was": 2992.5,
+        "delta": -295.99,
+        "verdict": "better"
+      },
+      "lcp": {
+        "now": 4549.02,
+        "was": 4288.93,
+        "delta": 260.09,
+        "verdict": "same"
+      },
+      "tbt": {
+        "now": 36.5,
+        "was": 37,
+        "delta": -0.5,
+        "verdict": "same"
+      },
+      "cls": {
+        "now": 0.01,
+        "was": 0.01,
+        "delta": 0,
+        "verdict": "same"
+      },
+      "tti": {
+        "now": 4750.48,
+        "was": 4724.36,
+        "delta": 26.12,
+        "verdict": "same"
+      },
+      "ttfb": {
+        "now": 10551,
+        "was": 7024,
+        "delta": 3527,
+        "verdict": "worse"
+      },
+      "weight": {
+        "now": 371941,
+        "was": 372570,
+        "delta": -629,
+        "verdict": "same"
+      },
+      "renderBlockingWasted": {
+        "now": 7202,
+        "was": 7128,
+        "delta": 74,
+        "verdict": "same"
+      },
+      "now": {
+        "perf": 70,
+        "fcp": "2.7 s",
+        "lcp": "4.5 s",
+        "tbt": "40 ms",
+        "cls": "0.006",
+        "tti": "4.8 s",
+        "ttfb": "Root document took 10,550 ms",
+        "weight": "Total size was 363 KiB",
+        "rbMs": 7202,
+        "lcpEl": {
+          "selector": "div.woocommerce-product-gallery__wrapper > div.woocommerce-product-gallery__image > a > img.wp-post-image",
+          "snippet": "<img width=\"600\" height=\"750\" src=\"http://localhost:8888/wp-content/uploads/2026/10/abaya.jpg\" class=\"wp-post-image\" alt=\"عباية كتان مطرّزة\" data-caption=\"\" data-src=\"http://localhost:8888/wp-content/",
+          "label": "عباية كتان مطرّزة"
+        }
+      },
+      "was": {
+        "perf": 71,
+        "fcp": "3.0 s",
+        "lcp": "4.3 s",
+        "tbt": "40 ms",
+        "cls": "0.008",
+        "tti": "4.7 s",
+        "ttfb": "Root document took 7,020 ms",
+        "weight": "Total size was 364 KiB",
+        "rbMs": 7128,
+        "lcpEl": {
+          "selector": "div.woocommerce-product-gallery__wrapper > div.woocommerce-product-gallery__image > a > img.wp-post-image",
+          "snippet": "<img width=\"600\" height=\"750\" src=\"http://localhost:8888/wp-content/uploads/2026/10/abaya.jpg\" class=\"wp-post-image\" alt=\"عباية كتان مطرّزة\" data-caption=\"\" data-src=\"http://localhost:8888/wp-content/",
+          "label": "عباية كتان مطرّزة"
+        }
+      }
+    },
+    "cart": {
+      "url": "http://localhost:8888/cart/",
+      "lighthouseVersion": {
+        "now": "13.5.0",
+        "was": "13.5.0"
+      },
+      "score": {
+        "now": 7,
+        "was": 9,
+        "delta": -2,
+        "verdict": "same"
+      },
+      "a11y": {
+        "now": 100,
+        "was": 100
+      },
+      "seoScore": {
+        "now": 69,
+        "was": 69
+      },
+      "fcp": {
+        "now": 3544.81,
+        "was": 2927.72,
+        "delta": 617.08,
+        "verdict": "worse"
+      },
+      "lcp": {
+        "now": 14052.43,
+        "was": 11786.84,
+        "delta": 2265.6,
+        "verdict": "worse"
+      },
+      "tbt": {
+        "now": 1875.61,
+        "was": 1909.62,
+        "delta": -34.01,
+        "verdict": "same"
+      },
+      "cls": {
+        "now": 0.81,
+        "was": 0.81,
+        "delta": -0.01,
+        "verdict": "same"
+      },
+      "tti": {
+        "now": 14572.13,
+        "was": 12035.85,
+        "delta": 2536.28,
+        "verdict": "worse"
+      },
+      "ttfb": {
+        "now": 4696,
+        "was": 5118,
+        "delta": -422,
+        "verdict": "better"
+      },
+      "weight": {
+        "now": 1660795,
+        "was": 1660809,
+        "delta": -14,
+        "verdict": "same"
+      },
+      "renderBlockingWasted": {
+        "now": 14425,
+        "was": 10552,
+        "delta": 3873,
+        "verdict": "worse"
+      },
+      "now": {
+        "perf": 7,
+        "fcp": "3.5 s",
+        "lcp": "14.1 s",
+        "tbt": "1,880 ms",
+        "cls": "0.809",
+        "tti": "14.6 s",
+        "ttfb": "Root document took 4,700 ms",
+        "weight": "Total size was 1,622 KiB",
+        "rbMs": 14425,
+        "lcpEl": {
+          "selector": "li.wc-block-grid__product > a.wc-block-grid__product-link > div.wc-block-grid__product-image > img.attachment-woocommerce_thumbnail",
+          "snippet": "<img fetchpriority=\"high\" decoding=\"async\" width=\"300\" height=\"300\" src=\"http://localhost:8888/wp-content/uploads/2026/10/tee-300x300.jpg\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thum",
+          "label": "تيشيرت قطن أوفرسايز"
+        }
+      },
+      "was": {
+        "perf": 9,
+        "fcp": "2.9 s",
+        "lcp": "11.8 s",
+        "tbt": "1,910 ms",
+        "cls": "0.814",
+        "tti": "12.0 s",
+        "ttfb": "Root document took 5,120 ms",
+        "weight": "Total size was 1,622 KiB",
+        "rbMs": 10552,
+        "lcpEl": {
+          "selector": "li.wc-block-grid__product > a.wc-block-grid__product-link > div.wc-block-grid__product-image > img.attachment-woocommerce_thumbnail",
+          "snippet": "<img fetchpriority=\"high\" decoding=\"async\" width=\"300\" height=\"300\" src=\"http://localhost:8888/wp-content/uploads/2026/10/tee-300x300.jpg\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thum",
+          "label": "تيشيرت قطن أوفرسايز"
+        }
+      }
+    },
+    "checkout": {
+      "url": "http://localhost:8888/cart/",
+      "lighthouseVersion": {
+        "now": "13.5.0",
+        "was": "13.5.0"
+      },
+      "score": {
+        "now": 20,
+        "was": 6,
+        "delta": 14,
+        "verdict": "better"
+      },
+      "a11y": {
+        "now": 100,
+        "was": 100
+      },
+      "seoScore": {
+        "now": 69,
+        "was": 69
+      },
+      "fcp": {
+        "now": 4005.19,
+        "was": 3224.79,
+        "delta": 780.4,
+        "verdict": "worse"
+      },
+      "lcp": {
+        "now": 15559.43,
+        "was": 13845.74,
+        "delta": 1713.7,
+        "verdict": "worse"
+      },
+      "tbt": {
+        "now": 1640.88,
+        "was": 2700.48,
+        "delta": -1059.6,
+        "verdict": "better"
+      },
+      "cls": {
+        "now": 0.22,
+        "was": 0.81,
+        "delta": -0.59,
+        "verdict": "better"
+      },
+      "tti": {
+        "now": 16695,
+        "was": 14206.83,
+        "delta": 2488.18,
+        "verdict": "worse"
+      },
+      "ttfb": {
+        "now": 5264,
+        "was": 5585,
+        "delta": -321,
+        "verdict": "same"
+      },
+      "weight": {
+        "now": 1661385,
+        "was": 1661396,
+        "delta": -11,
+        "verdict": "same"
+      },
+      "renderBlockingWasted": {
+        "now": 11007,
+        "was": 8435,
+        "delta": 2572,
+        "verdict": "worse"
+      },
+      "now": {
+        "perf": 20,
+        "fcp": "4.0 s",
+        "lcp": "15.6 s",
+        "tbt": "1,640 ms",
+        "cls": "0.215",
+        "tti": "16.7 s",
+        "ttfb": "Root document took 5,260 ms",
+        "weight": "Total size was 1,622 KiB",
+        "rbMs": 11007,
+        "lcpEl": {
+          "selector": "li.wc-block-grid__product > a.wc-block-grid__product-link > div.wc-block-grid__product-image > img.attachment-woocommerce_thumbnail",
+          "snippet": "<img fetchpriority=\"high\" decoding=\"async\" width=\"300\" height=\"300\" src=\"http://localhost:8888/wp-content/uploads/2026/10/tee-300x300.jpg\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thum",
+          "label": "تيشيرت قطن أوفرسايز"
+        }
+      },
+      "was": {
+        "perf": 6,
+        "fcp": "3.2 s",
+        "lcp": "13.8 s",
+        "tbt": "2,700 ms",
+        "cls": "0.809",
+        "tti": "14.2 s",
+        "ttfb": "Root document took 5,590 ms",
+        "weight": "Total size was 1,622 KiB",
+        "rbMs": 8435,
+        "lcpEl": {
+          "selector": "li.wc-block-grid__product > a.wc-block-grid__product-link > div.wc-block-grid__product-image > img.attachment-woocommerce_thumbnail",
+          "snippet": "<img fetchpriority=\"high\" decoding=\"async\" width=\"300\" height=\"300\" src=\"http://localhost:8888/wp-content/uploads/2026/10/tee-300x300.jpg\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thum",
+          "label": "تيشيرت قطن أوفرسايز"
+        }
+      }
+    },
+    "contact": {
+      "url": "http://localhost:8888/contact/",
+      "lighthouseVersion": {
+        "now": "13.5.0",
+        "was": "13.5.0"
+      },
+      "score": {
+        "now": 93,
+        "was": 84,
+        "delta": 9,
+        "verdict": "better"
+      },
+      "a11y": {
+        "now": 100,
+        "was": 100
+      },
+      "seoScore": {
+        "now": 100,
+        "was": 100
+      },
+      "fcp": {
+        "now": 2279.94,
+        "was": 2958.16,
+        "delta": -678.22,
+        "verdict": "better"
+      },
+      "lcp": {
+        "now": 2583.07,
+        "was": 2958.16,
+        "delta": -375.09,
+        "verdict": "better"
+      },
+      "tbt": {
+        "now": 34.5,
+        "was": 19,
+        "delta": 15.5,
+        "verdict": "same"
+      },
+      "cls": {
+        "now": 0.01,
+        "was": 0.02,
+        "delta": -0.01,
+        "verdict": "same"
+      },
+      "tti": {
+        "now": 3356.05,
+        "was": 4034.57,
+        "delta": -678.51,
+        "verdict": "better"
+      },
+      "ttfb": {
+        "now": 1410,
+        "was": 2890,
+        "delta": -1480,
+        "verdict": "better"
+      },
+      "weight": {
+        "now": 251319,
+        "was": 251319,
+        "delta": 0,
+        "verdict": "same"
+      },
+      "renderBlockingWasted": {
+        "now": 5632,
+        "was": 8171,
+        "delta": -2539,
+        "verdict": "better"
+      },
+      "now": {
+        "perf": 93,
+        "fcp": "2.3 s",
+        "lcp": "2.6 s",
+        "tbt": "30 ms",
+        "cls": "0.013",
+        "tti": "3.4 s",
+        "ttfb": "Root document took 1,410 ms",
+        "weight": "Total size was 245 KiB",
+        "rbMs": 5632,
+        "lcpEl": {
+          "selector": "div.wp-site-blocks > main#wp--skip-link--target > div.entry-content > p.wp-block-paragraph",
+          "snippet": "<p class=\"wp-block-paragraph\">",
+          "label": "تقدر تتصفّح المتجر وتضيف منتجات للسلة وتجربة خطوات الطلب من غير ما يتحصّل أي دفع"
+        }
+      },
+      "was": {
+        "perf": 84,
+        "fcp": "3.0 s",
+        "lcp": "3.0 s",
+        "tbt": "20 ms",
+        "cls": "0.019",
+        "tti": "4.0 s",
+        "ttfb": "Root document took 2,890 ms",
+        "weight": "Total size was 245 KiB",
+        "rbMs": 8171,
+        "lcpEl": {
+          "selector": "div.wp-site-blocks > main#wp--skip-link--target > div.entry-content > p.wp-block-paragraph",
+          "snippet": "<p class=\"wp-block-paragraph\">",
+          "label": "تقدر تتصفّح المتجر وتضيف منتجات للسلة وتجربة خطوات الطلب من غير ما يتحصّل أي دفع"
+        }
+      }
+    }
+  }
+}

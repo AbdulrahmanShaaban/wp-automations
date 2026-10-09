@@ -1,0 +1,11 @@
+﻿== CORS: cross-origin probe ==
+Origin: http://evil.example
+  Access-Control-Allow-Credentials: true
+Origin: http://localhost:8888
+  Access-Control-Allow-Credentials: true
+== preflight ==
+HTTP/1.1 200 OK
+Access-Control-Expose-Headers: X-WP-Total, X-WP-TotalPages, Link, Cart-Token
+Access-Control-Allow-Headers: Authorization, X-WP-Nonce, Content-Disposition, Content-MD5, Content-Type, Cart-Token, Nonce
+Access-Control-Allow-Methods: OPTIONS, GET, POST, PUT, PATCH, DELETE
+Access-Control-Allow-Credentials: true

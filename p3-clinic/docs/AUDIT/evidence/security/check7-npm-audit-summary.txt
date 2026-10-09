@@ -1,0 +1,17 @@
+=== check7-npm-audit-all.json
+{"info":0,"low":0,"moderate":6,"high":0,"critical":3,"total":9}
+vulnerable packages: @simple-git/argv-parser, @wordpress/env, @wp-playground/cli, argparse, express, js-yaml, qs, simple-git, sprintf-js
+  @simple-git/argv-parser severity=critical direct=false range="<2.0.1" fixAvailable={"name":"@wordpress/env","version":"11.8.0","isSemVerMajor":true}
+  @wordpress/env severity=critical direct=true range=">=1.0.0" fixAvailable={"name":"@wordpress/env","version":"11.8.0","isSemVerMajor":true}
+  @wp-playground/cli severity=moderate direct=false range=">=3.1.38" fixAvailable=true
+  argparse severity=moderate direct=false range="1.0.0 - 1.0.10" fixAvailable={"name":"@wordpress/env","version":"11.8.0","isSemVerMajor":true}
+  express severity=moderate direct=false range="4.22.2" fixAvailable=true
+  js-yaml severity=moderate direct=false range="3.2.7 - 3.15.2" fixAvailable={"name":"@wordpress/env","version":"11.8.0","isSemVerMajor":true}
+  qs severity=moderate direct=false range="2.2.5 - 6.15.3" fixAvailable=true
+  simple-git severity=critical direct=false range="<=4.0.1" fixAvailable={"name":"@wordpress/env","version":"11.8.0","isSemVerMajor":true}
+  sprintf-js severity=moderate direct=false range="*" fixAvailable={"name":"@wordpress/env","version":"11.8.0","isSemVerMajor":true}
+
+=== check7-npm-audit-prod.json
+{"info":0,"low":0,"moderate":0,"high":0,"critical":0,"total":0}
+vulnerable packages: 
+

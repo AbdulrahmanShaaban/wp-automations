@@ -1,0 +1,150 @@
+{
+ "alertPresent": true,
+ "alertRole": "alert",
+ "alertText": "من فضلك راجع الحقول التالية:الاسم بالكامل: من فضلك اكتب الاسم بالكامل، 3 أحرف على الأقل.رقم الموبايل: رقم الموبايل غير صحيح. مثال: 01012345678الخدمة المطلوبة: من فضلك اختر الخدمة المطلوبة من القائمة.الموافقة على التواصل: من فضلك أوافق على تواصل العيادة معك لتأكيد الموعد.",
+ "alertItems": [
+  "الاسم بالكامل: من فضلك اكتب الاسم بالكامل، 3 أحرف على الأقل.",
+  "رقم الموبايل: رقم الموبايل غير صحيح. مثال: 01012345678",
+  "الخدمة المطلوبة: من فضلك اختر الخدمة المطلوبة من القائمة.",
+  "الموافقة على التواصل: من فضلك أوافق على تواصل العيادة معك لتأكيد الموعد."
+ ],
+ "fields": [
+  {
+   "name": "siraj_name",
+   "id": "siraj-name-1",
+   "ariaInvalid": "true",
+   "ariaRequired": "true",
+   "describedby": [
+    "siraj-name-1-error"
+   ],
+   "describedbyResolves": true,
+   "errorPresent": true,
+   "errorId": "siraj-name-1-error",
+   "errorText": "من فضلك اكتب الاسم بالكامل، 3 أحرف على الأقل.",
+   "errorAdjacent": true,
+   "errorPrev": "input#siraj-name-1.siraj-input",
+   "errorAfterControl": true,
+   "errorVisible": true,
+   "errorColor": "rgb(185, 28, 28)",
+   "hintPresent": false,
+   "valueRetained": "",
+   "easternDigits": 0,
+   "latinDigits": 1
+  },
+  {
+   "name": "siraj_phone",
+   "id": "siraj-phone-1",
+   "ariaInvalid": "true",
+   "ariaRequired": "true",
+   "describedby": [
+    "siraj-phone-1-hint",
+    "siraj-phone-1-error"
+   ],
+   "describedbyResolves": true,
+   "errorPresent": true,
+   "errorId": "siraj-phone-1-error",
+   "errorText": "رقم الموبايل غير صحيح. مثال: 01012345678",
+   "errorAdjacent": true,
+   "errorPrev": "p#siraj-phone-1-hint.siraj-hint",
+   "errorAfterControl": true,
+   "errorVisible": true,
+   "errorColor": "rgb(185, 28, 28)",
+   "hintPresent": true,
+   "valueRetained": "",
+   "easternDigits": 0,
+   "latinDigits": 11
+  },
+  {
+   "name": "siraj_service",
+   "id": "siraj-service-1",
+   "ariaInvalid": "true",
+   "ariaRequired": "true",
+   "describedby": [
+    "siraj-service-1-error"
+   ],
+   "describedbyResolves": true,
+   "errorPresent": true,
+   "errorId": "siraj-service-1-error",
+   "errorText": "من فضلك اختر الخدمة المطلوبة من القائمة.",
+   "errorAdjacent": true,
+   "errorPrev": "select#siraj-service-1.siraj-select",
+   "errorAfterControl": true,
+   "errorVisible": true,
+   "errorColor": "rgb(185, 28, 28)",
+   "hintPresent": false,
+   "valueRetained": "",
+   "easternDigits": 0,
+   "latinDigits": 0
+  },
+  {
+   "name": "siraj_date",
+   "id": "siraj-date-1",
+   "ariaInvalid": null,
+   "ariaRequired": null,
+   "describedby": [
+    "siraj-date-1-hint"
+   ],
+   "describedbyResolves": true,
+   "errorPresent": false,
+   "errorId": null,
+   "errorText": null,
+   "errorAdjacent": null,
+   "errorPrev": null,
+   "errorAfterControl": null,
+   "errorVisible": null,
+   "errorColor": null,
+   "hintPresent": true,
+   "valueRetained": "",
+   "easternDigits": 0,
+   "latinDigits": 0
+  },
+  {
+   "name": "siraj_notes",
+   "id": "siraj-notes-1",
+   "ariaInvalid": null,
+   "ariaRequired": null,
+   "describedby": [
+    "siraj-notes-1-hint"
+   ],
+   "describedbyResolves": true,
+   "errorPresent": false,
+   "errorId": null,
+   "errorText": null,
+   "errorAdjacent": null,
+   "errorPrev": null,
+   "errorAfterControl": null,
+   "errorVisible": null,
+   "errorColor": null,
+   "hintPresent": true,
+   "valueRetained": "",
+   "easternDigits": 0,
+   "latinDigits": 0
+  },
+  {
+   "name": "siraj_consent",
+   "id": "siraj-consent-1",
+   "ariaInvalid": "true",
+   "ariaRequired": "true",
+   "describedby": [
+    "siraj-consent-1-error"
+   ],
+   "describedbyResolves": true,
+   "errorPresent": true,
+   "errorId": "siraj-consent-1-error",
+   "errorText": "من فضلك أوافق على تواصل العيادة معك لتأكيد الموعد.",
+   "errorAdjacent": true,
+   "errorPrev": "div.siraj-consent",
+   "errorAfterControl": true,
+   "errorVisible": true,
+   "errorColor": "rgb(185, 28, 28)",
+   "hintPresent": false,
+   "valueRetained": false,
+   "easternDigits": 0,
+   "latinDigits": 0
+  }
+ ],
+ "invalidCount": 4,
+ "easternDigitsInPage": 0,
+ "latinDigitsInPage": 38,
+ "focusOn": "body#"
+}

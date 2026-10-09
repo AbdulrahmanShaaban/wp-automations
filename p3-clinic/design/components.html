@@ -1,0 +1,129 @@
+<!doctype html>
+<!-- Components sheet — the states and building blocks every P3 page reuses.
+     Open design/components.html to review buttons, inputs, cards, states and
+     error/empty/loading treatments in all three palettes. -->
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<title>P3 — Components & states</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&family=Markazi+Text:wght@500;600;700&family=El+Messiri:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<style>
+  body{padding-block:var(--s8) var(--s16)}
+  h2{margin-top:var(--s12)}
+  .row{display:flex;flex-wrap:wrap;gap:var(--s3);align-items:center}
+  .state-grid{display:grid;gap:var(--s4);grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))}
+  .state{border:1px dashed var(--border);border-radius:var(--radius);padding:var(--s4);background:var(--surface)}
+  .state h4{margin:0 0 var(--s2);font-size:var(--fs-sm);color:var(--muted);font-weight:700}
+  .err{border-color:#B91C1C}
+  .err input{border-color:#B91C1C}
+  .ok{border-color:#15803D}
+  .disabled{opacity:.55;pointer-events:none}
+  .badge-row{display:flex;flex-wrap:wrap;gap:var(--s2)}
+  .pill-demo{font-size:var(--fs-sm);font-weight:700;padding:.2rem var(--s3);border-radius:var(--radius-pill);
+    background:var(--primary-soft);color:var(--primary);border:1px solid var(--border)}
+  .skeleton{height:14px;border-radius:7px;background:linear-gradient(90deg,var(--primary-soft),var(--border),var(--primary-soft));
+    background-size:200% 100%;animation:sk 1.4s linear infinite}
+  @keyframes sk{to{background-position:-200% 0}}
+  @media(prefers-reduced-motion:reduce){.skeleton{animation:none}}
+  .palette-tag{font-family:var(--font-display);font-size:var(--fs-base);font-weight:700;
+    color:var(--primary)}
+</style>
+</head>
+<body class="palette-a">
+<div class="container">
+
+  <p class="eyebrow">P3 · عيادة سِراج للأسنان (Demo)</p>
+  <h1>Components & states</h1>
+  <p class="lead">كل صفحة في الموقع بتستخدم نفس العناصر دي — الأسلوب واحد، والفرق في الهوية البصرية بس.</p>
+
+  <h2>الأزرار</h2>
+  <div class="row">
+    <a class="btn btn-primary" href="#">احجز زيارة (أساسي)</a>
+    <a class="btn btn-ghost" href="#">secondary</a>
+    <button class="btn btn-primary disabled" type="button">معطّل</button>
+  </div>
+
+  <h2>حقول النموذج</h2>
+  <div class="state-grid">
+    <div class="state"><h4>عادي</h4>
+      <label>رقم الموبايل<input placeholder="01xxxxxxxxx"></label></div>
+    <div class="state err"><h4>خطأ (مثل الفحص في المتجر)</h4>
+      <label>رقم الموبايل<input value="01234" aria-invalid="true"></label>
+      <small style="color:#B91C1C">رقم الموبايل غير صحيح. مثال: 01012345678</small></div>
+    <div class="state ok"><h4>بعد الإرسال</h4>
+      <label>رقم الموبايل<input value="01012345678" readonly></label>
+      <small style="color:#15803D">تمام — وصلنا طلبك وهنرد عليك.</small></div>
+    <div class="state"><h4>مع مساعدة</h4>
+      <label>الخدمة<select><option>تنظيف وتلميع</option><option>تقويم</option></select></label></div>
+  </div>
+
+  <h2>حالات القوائم</h2>
+  <div class="state-grid">
+    <div class="state"><h4>عادي</h4><a class="btn btn-ghost" href="#">الخدمات</a></div>
+    <div class="state"><h4>فوكس (focus-visible)</h4><a class="btn btn-primary" href="#" style="outline:3px solid var(--accent);outline-offset:3px">عند Tab</a></div>
+    <div class="state"><h4>Busy (أثناء الإرسال)</h4>
+      <button class="btn btn-primary" type="button" style="opacity:.8">جارٍ الإرسال…</button></div>
+  </div>
+
+  <h2>Empty / loading / error states</h2>
+  <div class="state-grid">
+    <div class="state"><h4>Loading (سكايلتون)</h4>
+      <div class="skeleton" style="width:70%"></div>
+      <div class="skeleton" style="width:45%;margin-top:8px"></div></div>
+    <div class="state"><h4>Empty (منع التكرار)</h4>
+      <p style="margin:0;color:var(--muted);font-size:var(--fs-sm)">الطلب اتسجّل قبل كده — بنكلمك لو محتاج تغيير.</p></div>
+    <div class="state err"><h4>Error (فشل الإرسال)</h4>
+      <p style="margin:0;font-size:var(--fs-sm)">حصلت مشكلة في الإرسال. جرّب تاني أو كلمنا على 0100 000 0000.</p></div>
+  </div>
+
+  <h2>الشارات</h2>
+  <div class="badge-row">
+    <span class="demo-badge">Demo</span>
+    <span class="pill-demo">مفتوح الآن</span>
+    <span class="pill-demo">يستقبل التأمين</span>
+    <span class="pill-demo">نفس اليوم</span>
+  </div>
+
+  <h2>البطاقات (نفس الشكل في الثلاث لوحات)</h2>
+  <div class="grid grid-3" style="margin-top:var(--s4)">
+    <article class="card"><div class="icon">1</div><h3>خدمة</h3><p>وصف من سطرين، وسعر مبدئي.</p></article>
+    <article class="card"><h3 style="margin-top:var(--s4)">بدون أيقونة</h3><p>لما الأيقونة تضيف ضوضاء بدل ما توضّح.</p></article>
+    <article class="card team-card" style="padding:0">
+      <div class="team-media" style="aspect-ratio:16/9;padding:0;overflow:hidden">
+        <img src="img/photos/spare-office.jpg" width="1400" height="936" alt="صورة توضيحية لغرفة الكشف في العيادة" style="width:100%;height:100%;object-fit:cover;display:block" loading="lazy">
+      </div>
+      <div class="team-body"><h3 style="margin-bottom:var(--s1)">د. اسم</h3><p class="team-note">تخصّص · سنوات</p></div>
+    </article>
+  </div>
+
+  <h2>الهوستات الثلاثة جنب بعض</h2>
+  <p class="lead">نفس المحتوى، ثلاث هويات مختلفة — وده اللي بيتبنى عليه الاختيار في البوابة.</p>
+  <div class="grid grid-3" style="margin-top:var(--s4)">
+    <div class="card palette-a" style="background:var(--bg)">
+      <span class="palette-tag">A</span>
+      <h3 style="margin-top:var(--s2)">«الروشتة»</h3>
+      <p style="font-size:var(--fs-sm)">أزرق سريري + Alexandria + زوايا 14px — دقة ووضوح.</p>
+      <a class="btn btn-primary" href="preview-a.html">افتح</a>
+    </div>
+    <div class="card palette-b" style="background:var(--bg)">
+      <span class="palette-tag">B</span>
+      <h3 style="margin-top:var(--s2)">«العيادة الخاصة»</h3>
+      <p style="font-size:var(--fs-sm)">كحلي + عاجي + Markazi Text (serif) + زوايا 4px — بريميوم.</p>
+      <a class="btn btn-primary" href="preview-b.html">افتح</a>
+    </div>
+    <div class="card palette-c" style="background:var(--bg)">
+      <span class="palette-tag">C</span>
+      <h3 style="margin-top:var(--s2)">«دفتر الوصفات»</h3>
+      <p style="font-size:var(--fs-sm)">ورق رملي + أزرق بحري + El Messiri + pill — دافي ومألوف.</p>
+      <a class="btn btn-primary" href="preview-c.html">افتح</a>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>

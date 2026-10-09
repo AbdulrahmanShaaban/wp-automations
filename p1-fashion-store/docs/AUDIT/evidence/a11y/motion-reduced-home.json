@@ -1,0 +1,14 @@
+{
+ "matchesReduce": true,
+ "revealTotal": 13,
+ "hiddenCount": 0,
+ "scrollBehavior": "auto",
+ "sampleOpacity": [
+  "1",
+  "1",
+  "1",
+  "1",
+  "1",
+  "1"
+ ]
+}

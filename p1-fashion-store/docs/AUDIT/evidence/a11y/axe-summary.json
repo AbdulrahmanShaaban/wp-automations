@@ -1,0 +1,240 @@
+{
+ "generatedAt": "2026-10-06T11:35:33.820Z",
+ "base": "http://localhost:8888",
+ "axeTags": [
+  "wcag2a",
+  "wcag2aa",
+  "wcag21a",
+  "wcag21aa",
+  "wcag22aa",
+  "best-practice"
+ ],
+ "pages": [
+  {
+   "page": "home",
+   "url": "http://localhost:8888/",
+   "viewport": "desktop",
+   "ms": 15167,
+   "critical": 0,
+   "serious": 0,
+   "moderate": 0,
+   "minor": 0,
+   "total": 0,
+   "nodes": 0,
+   "rules": [],
+   "incomplete": [
+    "color-contrast(4)"
+   ],
+   "cartState": null
+  },
+  {
+   "page": "shop",
+   "url": "http://localhost:8888/shop/",
+   "viewport": "desktop",
+   "ms": 36204,
+   "critical": 0,
+   "serious": 0,
+   "moderate": 0,
+   "minor": 0,
+   "total": 0,
+   "nodes": 0,
+   "rules": [],
+   "incomplete": [],
+   "cartState": null
+  },
+  {
+   "page": "product",
+   "url": "http://localhost:8888/product/linen-scarf/",
+   "viewport": "desktop",
+   "ms": 23129,
+   "critical": 0,
+   "serious": 0,
+   "moderate": 0,
+   "minor": 0,
+   "total": 0,
+   "nodes": 0,
+   "rules": [],
+   "incomplete": [
+    "aria-valid-attr-value(1)"
+   ],
+   "cartState": null
+  },
+  {
+   "page": "cart",
+   "url": "http://localhost:8888/cart/",
+   "viewport": "desktop",
+   "ms": 30873,
+   "critical": 0,
+   "serious": 0,
+   "moderate": 0,
+   "minor": 1,
+   "total": 1,
+   "nodes": 4,
+   "rules": [
+    "image-redundant-alt(minor,4)"
+   ],
+   "incomplete": [],
+   "cartState": {
+    "items": "1",
+    "hasItem": true,
+    "textLen": 463
+   }
+  },
+  {
+   "page": "checkout",
+   "url": "http://localhost:8888/checkout/",
+   "viewport": "desktop",
+   "ms": 19626,
+   "critical": 0,
+   "serious": 0,
+   "moderate": 0,
+   "minor": 1,
+   "total": 1,
+   "nodes": 4,
+   "rules": [
+    "image-redundant-alt(minor,4)"
+   ],
+   "incomplete": [],
+   "cartState": {
+    "items": "1",
+    "hasItem": true,
+    "textLen": 463
+   }
+  },
+  {
+   "page": "contact",
+   "url": "http://localhost:8888/contact/",
+   "viewport": "desktop",
+   "ms": 8279,
+   "critical": 0,
+   "serious": 0,
+   "moderate": 0,
+   "minor": 0,
+   "total": 0,
+   "nodes": 0,
+   "rules": [],
+   "incomplete": [],
+   "cartState": null
+  },
+  {
+   "page": "home",
+   "url": "http://localhost:8888/",
+   "viewport": "mobile",
+   "ms": 9013,
+   "critical": 0,
+   "serious": 0,
+   "moderate": 0,
+   "minor": 0,
+   "total": 0,
+   "nodes": 0,
+   "rules": [],
+   "incomplete": [
+    "color-contrast(4)"
+   ],
+   "cartState": null
+  },
+  {
+   "page": "shop",
+   "url": "http://localhost:8888/shop/",
+   "viewport": "mobile",
+   "ms": 49352,
+   "critical": 0,
+   "serious": 0,
+   "moderate": 0,
+   "minor": 0,
+   "total": 0,
+   "nodes": 0,
+   "rules": [],
+   "incomplete": [],
+   "cartState": null
+  },
+  {
+   "page": "product",
+   "url": "http://localhost:8888/product/linen-scarf/",
+   "viewport": "mobile",
+   "ms": 29000,
+   "critical": 0,
+   "serious": 0,
+   "moderate": 0,
+   "minor": 0,
+   "total": 0,
+   "nodes": 0,
+   "rules": [],
+   "incomplete": [
+    "aria-valid-attr-value(1)"
+   ],
+   "cartState": null
+  },
+  {
+   "page": "cart",
+   "url": "http://localhost:8888/cart/",
+   "viewport": "mobile",
+   "ms": 16617,
+   "critical": 0,
+   "serious": 0,
+   "moderate": 0,
+   "minor": 1,
+   "total": 1,
+   "nodes": 4,
+   "rules": [
+    "image-redundant-alt(minor,4)"
+   ],
+   "incomplete": [],
+   "cartState": {
+    "items": "1",
+    "hasItem": true,
+    "textLen": 437
+   }
+  },
+  {
+   "page": "checkout",
+   "url": "http://localhost:8888/checkout/",
+   "viewport": "mobile",
+   "ms": 18557,
+   "critical": 0,
+   "serious": 0,
+   "moderate": 0,
+   "minor": 1,
+   "total": 1,
+   "nodes": 4,
+   "rules": [
+    "image-redundant-alt(minor,4)"
+   ],
+   "incomplete": [],
+   "cartState": {
+    "items": "1",
+    "hasItem": true,
+    "textLen": 437
+   }
+  },
+  {
+   "page": "contact",
+   "url": "http://localhost:8888/contact/",
+   "viewport": "mobile",
+   "ms": 8869,
+   "critical": 0,
+   "serious": 0,
+   "moderate": 0,
+   "minor": 0,
+   "total": 0,
+   "nodes": 0,
+   "rules": [],
+   "incomplete": [],
+   "cartState": null
+  }
+ ],
+ "viewports": [
+  {
+   "name": "desktop",
+   "w": 1440,
+   "h": 900,
+   "mobile": false
+  },
+  {
+   "name": "mobile",
+   "w": 390,
+   "h": 844,
+   "mobile": true
+  }
+ ]
+}

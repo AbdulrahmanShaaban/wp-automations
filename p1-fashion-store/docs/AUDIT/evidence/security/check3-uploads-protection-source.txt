@@ -1,0 +1,44 @@
+﻿node.exe : i Starting 'bash -c echo '--- uploads root ---'; ls -la /var/www/html/wp-content/uploads/; echo '--- 
+htaccess under uploads ---'; find /var/www/html/wp-content/uploads -maxdepth 3 -name '.htaccess' -print; echo '--- 
+conf-enabled ---'; ls /etc/apache2/conf-enabled/; echo '--- grep uploads/handler ---'; grep -rn 
+'uploads|SetHandler|FilesMatch' /etc/apache2/conf-enabled/ /etc/apache2/apache2.conf 2>/dev/null | head -30; echo '--- 
+wp-content htaccess ---'; ls -la /var/www/html/wp-content/.htaccess' on the wordpress container. 
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (i Starting 'bas...ess container. :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+--- uploads root ---
+total 44
+drwxrwxrwx 1 1000 1000  512 Oct  3 02:28 .
+drwxrwxrwx 1 root root  512 Oct  1 23:43 ..
+drwxrwxrwx 1 1000 1000  512 Oct  1 23:39 2026
+drwxrwxrwx 1 1000 1000  512 Oct  3 02:28 paymob-private-logs
+drwxrwxrwx 1 1000 1000  512 Oct  6 07:04 wc-logs
+-rw-rw-rw- 1 root root  868 Oct  1 23:59 woocommerce-placeholder-100x100.webp
+-rw-rw-rw- 1 1000 1000 6032 Oct  1 23:40 woocommerce-placeholder-1024x1024.webp
+-rw-rw-rw- 1 1000 1000  662 Oct  1 23:40 woocommerce-placeholder-150x150.webp
+-rw-rw-rw- 1 1000 1000 1760 Oct  1 23:59 woocommerce-placeholder-300x300.webp
+-rw-rw-rw- 1 root root 3278 Oct  1 23:59 woocommerce-placeholder-600x600.webp
+-rw-rw-rw- 1 1000 1000 4240 Oct  1 23:40 woocommerce-placeholder-768x768.webp
+-rw-r--r-- 1 1000 1000 9892 Oct  1 23:40 woocommerce-placeholder.webp
+drwxrwxrwx 1 1000 1000  512 Oct  1 23:40 woocommerce_uploads
+--- htaccess under uploads ---
+/var/www/html/wp-content/uploads/paymob-private-logs/.htaccess
+/var/www/html/wp-content/uploads/wc-logs/.htaccess
+/var/www/html/wp-content/uploads/woocommerce_uploads/.htaccess
+--- conf-enabled ---
+charset.conf
+docker-php.conf
+localized-error-pages.conf
+other-vhosts-access-log.conf
+remoteip.conf
+security.conf
+serve-cgi-bin.conf
+--- grep uploads/handler ---
+--- wp-content htaccess ---
+ls: cannot access '/var/www/html/wp-content/.htaccess': No such file or directory
+├ù Command failed with exit code 2
+Command failed with exit code 2

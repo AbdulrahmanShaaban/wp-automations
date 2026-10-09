@@ -1,0 +1,41 @@
+# /wp-json/ inventory (from check4-wp-json-index.json)
+
+site name (from index): عيادة سِراج للأسنان
+site url: http://localhost:8889
+home: http://localhost:8889
+gmt_offset: 0   timezone_string: ""
+namespaces (5): oembed/1.0, wp/v2, wp-site-health/v1, wp-block-editor/v1, wp-abilities/v1
+total routes: 135
+
+## routes per namespace
+  wp: 112
+  wp-site-health: 8
+  wp-abilities: 6
+  wp-block-editor: 4
+  oembed: 3
+  : 1
+  batch: 1
+
+## endpoint methods across the whole surface
+  GET: 128 routes
+  POST: 57 routes
+  DELETE: 28 routes
+  PUT: 23 routes
+  PATCH: 23 routes
+
+## routes mentioning users / booking / oembed
+  /oembed/1.0
+  /oembed/1.0/embed
+  /oembed/1.0/proxy
+  /wp/v2/users
+  /wp/v2/users/(?P<id>[\d]+)
+  /wp/v2/users/me
+  /wp/v2/users/(?P<user_id>(?:[\d]+|me))/application-passwords
+  /wp/v2/users/(?P<user_id>(?:[\d]+|me))/application-passwords/introspect
+  /wp/v2/users/(?P<user_id>(?:[\d]+|me))/application-passwords/(?P<uuid>[\w\-]+)
+
+## any route path containing "siraj"?
+  NONE
+
+## authentication block as advertised
+  {"application-passwords":{"endpoints":{"authorization":"http://localhost:8889/wp-admin/authorize-application.php"}}}

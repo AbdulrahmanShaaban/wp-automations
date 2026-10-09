@@ -1,0 +1,1549 @@
+{
+  "generatedAt": "2026-10-05T00:02:23.578Z",
+  "base": "http://localhost:8888",
+  "lighthouse": [
+    {
+      "page": "home",
+      "url": "http://localhost:8888/",
+      "scores": {
+        "performance": 87,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcp": "2.4 s",
+        "lcp": "2.6 s",
+        "cls": "0.133",
+        "tbt": "30 ms",
+        "ttfb": "Root document took 1,740 ms"
+      },
+      "scoresByPass": {
+        "throttled": {
+          "performance": 87,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 92
+        },
+        "unthrottled": {
+          "performance": 89,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 92
+        }
+      },
+      "metricsByPass": {
+        "throttled": {
+          "fcp": "2.4 s",
+          "lcp": "2.6 s",
+          "cls": "0.133",
+          "tbt": "30 ms",
+          "ttfb": "Root document took 1,740 ms"
+        },
+        "unthrottled": {
+          "fcp": "2.9 s",
+          "lcp": "2.9 s",
+          "cls": "0.048",
+          "tbt": "30 ms",
+          "ttfb": "Root document took 2,140 ms"
+        }
+      },
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.69,
+          "title": "First Contentful Paint"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "score": 0.88,
+          "title": "Largest Contentful Paint"
+        },
+        {
+          "id": "speed-index",
+          "score": 0.74,
+          "title": "Speed Index"
+        },
+        {
+          "id": "cumulative-layout-shift",
+          "score": 0.81,
+          "title": "Cumulative Layout Shift"
+        },
+        {
+          "id": "server-response-time",
+          "score": 0,
+          "title": "Reduce initial server response time"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "score": 0,
+          "title": "Minimize main-thread work"
+        },
+        {
+          "id": "layout-shifts",
+          "score": 0,
+          "title": "Avoid large layout shifts"
+        },
+        {
+          "id": "unminified-javascript",
+          "score": 0,
+          "title": "Minify JavaScript"
+        },
+        {
+          "id": "unused-css-rules",
+          "score": 0,
+          "title": "Reduce unused CSS"
+        },
+        {
+          "id": "unused-javascript",
+          "score": 0,
+          "title": "Reduce unused JavaScript"
+        },
+        {
+          "id": "robots-txt",
+          "score": 0,
+          "title": "robots.txt is not valid"
+        },
+        {
+          "id": "cache-insight",
+          "score": 0,
+          "title": "Use efficient cache lifetimes"
+        }
+      ]
+    },
+    {
+      "page": "shop",
+      "url": "http://localhost:8888/?post_type=product",
+      "scores": {
+        "performance": 67,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcp": "3.2 s",
+        "lcp": "4.8 s",
+        "cls": "0.009",
+        "tbt": "80 ms",
+        "ttfb": "Root document took 10,550 ms"
+      },
+      "scoresByPass": {
+        "throttled": {
+          "performance": 67,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 92
+        },
+        "unthrottled": {
+          "performance": 57,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 100
+        }
+      },
+      "metricsByPass": {
+        "throttled": {
+          "fcp": "3.2 s",
+          "lcp": "4.8 s",
+          "cls": "0.009",
+          "tbt": "80 ms",
+          "ttfb": "Root document took 10,550 ms"
+        },
+        "unthrottled": {
+          "fcp": "8.6 s",
+          "lcp": "8.9 s",
+          "cls": "0.007",
+          "tbt": "0 ms",
+          "ttfb": "Root document took 7,990 ms"
+        }
+      },
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.42,
+          "title": "First Contentful Paint"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "score": 0.31,
+          "title": "Largest Contentful Paint"
+        },
+        {
+          "id": "speed-index",
+          "score": 0,
+          "title": "Speed Index"
+        },
+        {
+          "id": "server-response-time",
+          "score": 0,
+          "title": "Reduce initial server response time"
+        },
+        {
+          "id": "interactive",
+          "score": 0.73,
+          "title": "Time to Interactive"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "score": 0,
+          "title": "Minimize main-thread work"
+        },
+        {
+          "id": "unsized-images",
+          "score": 0.5,
+          "title": "Image elements do not have explicit `width` and `height`"
+        },
+        {
+          "id": "unminified-javascript",
+          "score": 0,
+          "title": "Minify JavaScript"
+        },
+        {
+          "id": "unused-css-rules",
+          "score": 0.5,
+          "title": "Reduce unused CSS"
+        },
+        {
+          "id": "unused-javascript",
+          "score": 0,
+          "title": "Reduce unused JavaScript"
+        },
+        {
+          "id": "robots-txt",
+          "score": 0,
+          "title": "robots.txt is not valid"
+        },
+        {
+          "id": "cache-insight",
+          "score": 0,
+          "title": "Use efficient cache lifetimes"
+        }
+      ]
+    },
+    {
+      "page": "product",
+      "url": "http://localhost:8888/?p=38",
+      "scores": {
+        "performance": 71,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "3.0 s",
+        "lcp": "4.3 s",
+        "cls": "0.008",
+        "tbt": "40 ms",
+        "ttfb": "Root document took 7,020 ms"
+      },
+      "scoresByPass": {
+        "throttled": {
+          "performance": 71,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 100
+        },
+        "unthrottled": {
+          "performance": 63,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 92
+        }
+      },
+      "metricsByPass": {
+        "throttled": {
+          "fcp": "3.0 s",
+          "lcp": "4.3 s",
+          "cls": "0.008",
+          "tbt": "40 ms",
+          "ttfb": "Root document took 7,020 ms"
+        },
+        "unthrottled": {
+          "fcp": "5.7 s",
+          "lcp": "6.1 s",
+          "cls": "0.005",
+          "tbt": "0 ms",
+          "ttfb": "Root document took 3,860 ms"
+        }
+      },
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.5,
+          "title": "First Contentful Paint"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "score": 0.42,
+          "title": "Largest Contentful Paint"
+        },
+        {
+          "id": "speed-index",
+          "score": 0.01,
+          "title": "Speed Index"
+        },
+        {
+          "id": "server-response-time",
+          "score": 0,
+          "title": "Reduce initial server response time"
+        },
+        {
+          "id": "interactive",
+          "score": 0.8,
+          "title": "Time to Interactive"
+        },
+        {
+          "id": "redirects",
+          "score": 0,
+          "title": "Avoid multiple page redirects"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "score": 0,
+          "title": "Minimize main-thread work"
+        },
+        {
+          "id": "unsized-images",
+          "score": 0.5,
+          "title": "Image elements do not have explicit `width` and `height`"
+        },
+        {
+          "id": "unminified-javascript",
+          "score": 0,
+          "title": "Minify JavaScript"
+        },
+        {
+          "id": "unused-css-rules",
+          "score": 0.5,
+          "title": "Reduce unused CSS"
+        },
+        {
+          "id": "unused-javascript",
+          "score": 0,
+          "title": "Reduce unused JavaScript"
+        },
+        {
+          "id": "cache-insight",
+          "score": 0,
+          "title": "Use efficient cache lifetimes"
+        }
+      ]
+    },
+    {
+      "page": "cart",
+      "url": "http://localhost:8888/cart/",
+      "scores": {
+        "performance": 9,
+        "accessibility": 100,
+        "bestPractices": 96,
+        "seo": 69
+      },
+      "metrics": {
+        "fcp": "2.9 s",
+        "lcp": "11.8 s",
+        "cls": "0.814",
+        "tbt": "1,910 ms",
+        "ttfb": "Root document took 5,120 ms"
+      },
+      "scoresByPass": {
+        "throttled": {
+          "performance": 9,
+          "accessibility": 100,
+          "bestPractices": 96,
+          "seo": 69
+        },
+        "unthrottled": {
+          "performance": 40,
+          "accessibility": 100,
+          "bestPractices": 96,
+          "seo": 69
+        }
+      },
+      "metricsByPass": {
+        "throttled": {
+          "fcp": "2.9 s",
+          "lcp": "11.8 s",
+          "cls": "0.814",
+          "tbt": "1,910 ms",
+          "ttfb": "Root document took 5,120 ms"
+        },
+        "unthrottled": {
+          "fcp": "9.3 s",
+          "lcp": "11.5 s",
+          "cls": "0.214",
+          "tbt": "260 ms",
+          "ttfb": "Root document took 8,830 ms"
+        }
+      },
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.52,
+          "title": "First Contentful Paint"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "score": 0,
+          "title": "Largest Contentful Paint"
+        },
+        {
+          "id": "speed-index",
+          "score": 0.05,
+          "title": "Speed Index"
+        },
+        {
+          "id": "total-blocking-time",
+          "score": 0.08,
+          "title": "Total Blocking Time"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0.01,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "cumulative-layout-shift",
+          "score": 0.04,
+          "title": "Cumulative Layout Shift"
+        },
+        {
+          "id": "server-response-time",
+          "score": 0,
+          "title": "Reduce initial server response time"
+        },
+        {
+          "id": "interactive",
+          "score": 0.16,
+          "title": "Time to Interactive"
+        },
+        {
+          "id": "image-size-responsive",
+          "score": 0,
+          "title": "Serves images with low resolution"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "score": 0,
+          "title": "Minimize main-thread work"
+        },
+        {
+          "id": "bootup-time",
+          "score": 0,
+          "title": "Reduce JavaScript execution time"
+        },
+        {
+          "id": "layout-shifts",
+          "score": 0,
+          "title": "Avoid large layout shifts"
+        }
+      ]
+    },
+    {
+      "page": "checkout",
+      "url": "http://localhost:8888/checkout/",
+      "scores": {
+        "performance": 6,
+        "accessibility": 100,
+        "bestPractices": 96,
+        "seo": 69
+      },
+      "metrics": {
+        "fcp": "3.2 s",
+        "lcp": "13.8 s",
+        "cls": "0.809",
+        "tbt": "2,700 ms",
+        "ttfb": "Root document took 5,590 ms"
+      },
+      "scoresByPass": {
+        "throttled": {
+          "performance": 6,
+          "accessibility": 100,
+          "bestPractices": 96,
+          "seo": 69
+        },
+        "unthrottled": {
+          "performance": 24,
+          "accessibility": 100,
+          "bestPractices": 96,
+          "seo": 69
+        }
+      },
+      "metricsByPass": {
+        "throttled": {
+          "fcp": "3.2 s",
+          "lcp": "13.8 s",
+          "cls": "0.809",
+          "tbt": "2,700 ms",
+          "ttfb": "Root document took 5,590 ms"
+        },
+        "unthrottled": {
+          "fcp": "5.9 s",
+          "lcp": "8.1 s",
+          "cls": "0.815",
+          "tbt": "430 ms",
+          "ttfb": "Root document took 4,660 ms"
+        }
+      },
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.42,
+          "title": "First Contentful Paint"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "score": 0,
+          "title": "Largest Contentful Paint"
+        },
+        {
+          "id": "speed-index",
+          "score": 0.01,
+          "title": "Speed Index"
+        },
+        {
+          "id": "total-blocking-time",
+          "score": 0.03,
+          "title": "Total Blocking Time"
+        },
+        {
+          "id": "max-potential-fid",
+          "score": 0,
+          "title": "Max Potential First Input Delay"
+        },
+        {
+          "id": "cumulative-layout-shift",
+          "score": 0.05,
+          "title": "Cumulative Layout Shift"
+        },
+        {
+          "id": "server-response-time",
+          "score": 0,
+          "title": "Reduce initial server response time"
+        },
+        {
+          "id": "interactive",
+          "score": 0.09,
+          "title": "Time to Interactive"
+        },
+        {
+          "id": "redirects",
+          "score": 0,
+          "title": "Avoid multiple page redirects"
+        },
+        {
+          "id": "image-size-responsive",
+          "score": 0,
+          "title": "Serves images with low resolution"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "score": 0,
+          "title": "Minimize main-thread work"
+        },
+        {
+          "id": "bootup-time",
+          "score": 0,
+          "title": "Reduce JavaScript execution time"
+        }
+      ]
+    },
+    {
+      "page": "contact",
+      "url": "http://localhost:8888/contact/",
+      "scores": {
+        "performance": 84,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcp": "3.0 s",
+        "lcp": "3.0 s",
+        "cls": "0.019",
+        "tbt": "20 ms",
+        "ttfb": "Root document took 2,890 ms"
+      },
+      "scoresByPass": {
+        "throttled": {
+          "performance": 84,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 100
+        },
+        "unthrottled": {
+          "performance": 92,
+          "accessibility": 100,
+          "bestPractices": 100,
+          "seo": 100
+        }
+      },
+      "metricsByPass": {
+        "throttled": {
+          "fcp": "3.0 s",
+          "lcp": "3.0 s",
+          "cls": "0.019",
+          "tbt": "20 ms",
+          "ttfb": "Root document took 2,890 ms"
+        },
+        "unthrottled": {
+          "fcp": "2.7 s",
+          "lcp": "2.7 s",
+          "cls": "0.013",
+          "tbt": "0 ms",
+          "ttfb": "Root document took 2,250 ms"
+        }
+      },
+      "failedAudits": [
+        {
+          "id": "first-contentful-paint",
+          "score": 0.51,
+          "title": "First Contentful Paint"
+        },
+        {
+          "id": "largest-contentful-paint",
+          "score": 0.79,
+          "title": "Largest Contentful Paint"
+        },
+        {
+          "id": "speed-index",
+          "score": 0.42,
+          "title": "Speed Index"
+        },
+        {
+          "id": "server-response-time",
+          "score": 0,
+          "title": "Reduce initial server response time"
+        },
+        {
+          "id": "interactive",
+          "score": 0.87,
+          "title": "Time to Interactive"
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "score": 0.5,
+          "title": "Minimize main-thread work"
+        },
+        {
+          "id": "unminified-javascript",
+          "score": 0,
+          "title": "Minify JavaScript"
+        },
+        {
+          "id": "unused-css-rules",
+          "score": 0,
+          "title": "Reduce unused CSS"
+        },
+        {
+          "id": "unused-javascript",
+          "score": 0,
+          "title": "Reduce unused JavaScript"
+        },
+        {
+          "id": "cache-insight",
+          "score": 0,
+          "title": "Use efficient cache lifetimes"
+        },
+        {
+          "id": "document-latency-insight",
+          "score": 0,
+          "title": "Document request latency"
+        },
+        {
+          "id": "forced-reflow-insight",
+          "score": 0,
+          "title": "Forced reflow"
+        }
+      ]
+    }
+  ],
+  "axe": [
+    {
+      "page": "home",
+      "url": "http://localhost:8888/",
+      "violations": [],
+      "smallTargets": []
+    },
+    {
+      "page": "shop",
+      "url": "http://localhost:8888/?post_type=product",
+      "violations": [],
+      "smallTargets": []
+    },
+    {
+      "page": "product",
+      "url": "http://localhost:8888/?p=38",
+      "violations": [],
+      "smallTargets": []
+    },
+    {
+      "page": "cart",
+      "url": "http://localhost:8888/cart/",
+      "violations": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 3,
+          "sample": [
+            "<div class=\"wc-block-components-skeleton__element\" aria-live=\"polite\" aria-label=\"جارٍ تحميل السعر… \" style=\"width: 45px; height: 1em;\"></div>",
+            "<div class=\"wc-block-components-skeleton__element\" aria-live=\"polite\" aria-label=\"جارٍ تحميل السعر… \" style=\"width: 45px; height: 1em;\"></div>"
+          ]
+        }
+      ],
+      "smallTargets": []
+    },
+    {
+      "page": "checkout",
+      "url": "http://localhost:8888/checkout/",
+      "violations": [
+        {
+          "id": "aria-prohibited-attr",
+          "impact": "serious",
+          "help": "Elements must only use permitted ARIA attributes",
+          "nodes": 5,
+          "sample": [
+            "<div class=\"wc-block-components-skeleton wc-block-components-skeleton--checkout-payment\" aria-live=\"polite\" aria-label=\"جارٍ تحميل خيارات الدفع... \">",
+            "<div class=\"wc-block-components-order-summary\" aria-live=\"polite\" aria-label=\"تحميل المنتج\">"
+          ]
+        },
+        {
+          "id": "autocomplete-valid",
+          "impact": "serious",
+          "help": "autocomplete attribute must be used correctly",
+          "nodes": 1,
+          "sample": [
+            "<input type=\"email\" id=\"email\" autocapitalize=\"none\" autocomplete=\"section-contact contact email\" aria-label=\"البريد الإلكتروني\" aria-describedby=\"wc-guest-chec"
+          ]
+        }
+      ],
+      "smallTargets": []
+    },
+    {
+      "page": "contact",
+      "url": "http://localhost:8888/contact/",
+      "violations": [],
+      "smallTargets": []
+    }
+  ],
+  "security": [
+    {
+      "id": "home",
+      "url": "http://localhost:8888/",
+      "checks": [
+        {
+          "name": "http-200",
+          "ok": true,
+          "detail": "status 200 http://localhost:8888/"
+        },
+        {
+          "name": "x-content-type-options: nosniff",
+          "ok": true,
+          "detail": "nosniff"
+        },
+        {
+          "name": "x-frame-options present",
+          "ok": true,
+          "detail": "SAMEORIGIN"
+        },
+        {
+          "name": "referrer-policy present",
+          "ok": true,
+          "detail": "strict-origin-when-cross-origin"
+        },
+        {
+          "name": "no server version leak (host config: deployment item)",
+          "ok": true,
+          "detail": "server: Apache/2.4.68 (Debian)  [WARN — needs ServerTokens Prod on the real host]"
+        },
+        {
+          "name": "no PHP error output",
+          "ok": true,
+          "detail": "php errors in HTML body"
+        },
+        {
+          "name": "no absolute filesystem paths leaked",
+          "ok": true,
+          "detail": "filesystem path in body"
+        },
+        {
+          "name": "no debug.log reference",
+          "ok": true,
+          "detail": "debug.log leaked"
+        },
+        {
+          "name": "no REST user enumeration (wp-json users)",
+          "ok": true,
+          "detail": "user id exposed in body"
+        }
+      ],
+      "passed": 9,
+      "failed": 0
+    },
+    {
+      "id": "shop",
+      "url": "http://localhost:8888/?post_type=product",
+      "checks": [
+        {
+          "name": "http-200",
+          "ok": true,
+          "detail": "status 200 http://localhost:8888/?post_type=product"
+        },
+        {
+          "name": "x-content-type-options: nosniff",
+          "ok": true,
+          "detail": "nosniff"
+        },
+        {
+          "name": "x-frame-options present",
+          "ok": true,
+          "detail": "SAMEORIGIN"
+        },
+        {
+          "name": "referrer-policy present",
+          "ok": true,
+          "detail": "strict-origin-when-cross-origin"
+        },
+        {
+          "name": "no server version leak (host config: deployment item)",
+          "ok": true,
+          "detail": "server: Apache/2.4.68 (Debian)  [WARN — needs ServerTokens Prod on the real host]"
+        },
+        {
+          "name": "no PHP error output",
+          "ok": true,
+          "detail": "php errors in HTML body"
+        },
+        {
+          "name": "no absolute filesystem paths leaked",
+          "ok": true,
+          "detail": "filesystem path in body"
+        },
+        {
+          "name": "no debug.log reference",
+          "ok": true,
+          "detail": "debug.log leaked"
+        },
+        {
+          "name": "no REST user enumeration (wp-json users)",
+          "ok": true,
+          "detail": "user id exposed in body"
+        }
+      ],
+      "passed": 9,
+      "failed": 0
+    },
+    {
+      "id": "product",
+      "url": "http://localhost:8888/?p=38",
+      "checks": [
+        {
+          "name": "http-200",
+          "ok": true,
+          "detail": "status 200 http://localhost:8888/product/embroidered-abaya/"
+        },
+        {
+          "name": "x-content-type-options: nosniff",
+          "ok": true,
+          "detail": "nosniff"
+        },
+        {
+          "name": "x-frame-options present",
+          "ok": true,
+          "detail": "SAMEORIGIN"
+        },
+        {
+          "name": "referrer-policy present",
+          "ok": true,
+          "detail": "strict-origin-when-cross-origin"
+        },
+        {
+          "name": "no server version leak (host config: deployment item)",
+          "ok": true,
+          "detail": "server: Apache/2.4.68 (Debian)  [WARN — needs ServerTokens Prod on the real host]"
+        },
+        {
+          "name": "no PHP error output",
+          "ok": true,
+          "detail": "php errors in HTML body"
+        },
+        {
+          "name": "no absolute filesystem paths leaked",
+          "ok": true,
+          "detail": "filesystem path in body"
+        },
+        {
+          "name": "no debug.log reference",
+          "ok": true,
+          "detail": "debug.log leaked"
+        },
+        {
+          "name": "no REST user enumeration (wp-json users)",
+          "ok": true,
+          "detail": "user id exposed in body"
+        }
+      ],
+      "passed": 9,
+      "failed": 0
+    },
+    {
+      "id": "cart",
+      "url": "http://localhost:8888/cart/",
+      "checks": [
+        {
+          "name": "http-200",
+          "ok": true,
+          "detail": "status 200 http://localhost:8888/cart/"
+        },
+        {
+          "name": "x-content-type-options: nosniff",
+          "ok": true,
+          "detail": "nosniff"
+        },
+        {
+          "name": "x-frame-options present",
+          "ok": true,
+          "detail": "SAMEORIGIN"
+        },
+        {
+          "name": "referrer-policy present",
+          "ok": true,
+          "detail": "strict-origin-when-cross-origin"
+        },
+        {
+          "name": "no server version leak (host config: deployment item)",
+          "ok": true,
+          "detail": "server: Apache/2.4.68 (Debian)  [WARN — needs ServerTokens Prod on the real host]"
+        },
+        {
+          "name": "no PHP error output",
+          "ok": true,
+          "detail": "php errors in HTML body"
+        },
+        {
+          "name": "no absolute filesystem paths leaked",
+          "ok": true,
+          "detail": "filesystem path in body"
+        },
+        {
+          "name": "no debug.log reference",
+          "ok": true,
+          "detail": "debug.log leaked"
+        },
+        {
+          "name": "no REST user enumeration (wp-json users)",
+          "ok": true,
+          "detail": "user id exposed in body"
+        }
+      ],
+      "passed": 9,
+      "failed": 0
+    },
+    {
+      "id": "checkout",
+      "url": "http://localhost:8888/checkout/",
+      "checks": [
+        {
+          "name": "http-200",
+          "ok": true,
+          "detail": "status 200 http://localhost:8888/checkout/"
+        },
+        {
+          "name": "x-content-type-options: nosniff",
+          "ok": true,
+          "detail": "nosniff"
+        },
+        {
+          "name": "x-frame-options present",
+          "ok": true,
+          "detail": "SAMEORIGIN"
+        },
+        {
+          "name": "referrer-policy present",
+          "ok": true,
+          "detail": "strict-origin-when-cross-origin"
+        },
+        {
+          "name": "no server version leak (host config: deployment item)",
+          "ok": true,
+          "detail": "server: Apache/2.4.68 (Debian)  [WARN — needs ServerTokens Prod on the real host]"
+        },
+        {
+          "name": "no PHP error output",
+          "ok": true,
+          "detail": "php errors in HTML body"
+        },
+        {
+          "name": "no absolute filesystem paths leaked",
+          "ok": true,
+          "detail": "filesystem path in body"
+        },
+        {
+          "name": "no debug.log reference",
+          "ok": true,
+          "detail": "debug.log leaked"
+        },
+        {
+          "name": "no REST user enumeration (wp-json users)",
+          "ok": true,
+          "detail": "user id exposed in body"
+        }
+      ],
+      "passed": 9,
+      "failed": 0
+    },
+    {
+      "id": "contact",
+      "url": "http://localhost:8888/contact/",
+      "checks": [
+        {
+          "name": "http-200",
+          "ok": true,
+          "detail": "status 200 http://localhost:8888/contact/"
+        },
+        {
+          "name": "x-content-type-options: nosniff",
+          "ok": true,
+          "detail": "nosniff"
+        },
+        {
+          "name": "x-frame-options present",
+          "ok": true,
+          "detail": "SAMEORIGIN"
+        },
+        {
+          "name": "referrer-policy present",
+          "ok": true,
+          "detail": "strict-origin-when-cross-origin"
+        },
+        {
+          "name": "no server version leak (host config: deployment item)",
+          "ok": true,
+          "detail": "server: Apache/2.4.68 (Debian)  [WARN — needs ServerTokens Prod on the real host]"
+        },
+        {
+          "name": "no PHP error output",
+          "ok": true,
+          "detail": "php errors in HTML body"
+        },
+        {
+          "name": "no absolute filesystem paths leaked",
+          "ok": true,
+          "detail": "filesystem path in body"
+        },
+        {
+          "name": "no debug.log reference",
+          "ok": true,
+          "detail": "debug.log leaked"
+        },
+        {
+          "name": "no REST user enumeration (wp-json users)",
+          "ok": true,
+          "detail": "user id exposed in body"
+        }
+      ],
+      "passed": 9,
+      "failed": 0
+    }
+  ],
+  "seo": [
+    {
+      "id": "home",
+      "url": "http://localhost:8888/",
+      "checks": [
+        {
+          "name": "title present",
+          "ok": true,
+          "detail": "نيلاد &#8211; أزياء وإكسسوارات — متجر تجريبي (Demo)"
+        },
+        {
+          "name": "title length 15-70",
+          "ok": true,
+          "detail": "len=51"
+        },
+        {
+          "name": "title is Arabic",
+          "ok": true,
+          "detail": "نيلاد &#8211; أزياء وإكسسوارات — متجر تج"
+        },
+        {
+          "name": "meta description present",
+          "ok": true,
+          "detail": "نيلاد — متجر أزياء وإكسسوارات مصري: هدوم مختارة بخامات مريحة، أسعار واضحة، شحن ل"
+        },
+        {
+          "name": "meta description length 50-160",
+          "ok": true,
+          "detail": "len=135"
+        },
+        {
+          "name": "canonical present",
+          "ok": true,
+          "detail": "http://localhost:8888/"
+        },
+        {
+          "name": "og:title present",
+          "ok": true,
+          "detail": "نيلاد &#8211; أزياء وإكسسوارات — متجر تجريبي (Demo)"
+        },
+        {
+          "name": "og:image present",
+          "ok": true,
+          "detail": "http://localhost:8888/wp-content/uploads/2026/10/og-nilad.jpg"
+        },
+        {
+          "name": "lang=\"ar\"",
+          "ok": true,
+          "detail": "lang=ar"
+        },
+        {
+          "name": "dir=\"rtl\"",
+          "ok": true,
+          "detail": "dir=rtl"
+        },
+        {
+          "name": "exactly one h1",
+          "ok": true,
+          "detail": "h1 count=1"
+        },
+        {
+          "name": "all images have alt",
+          "ok": true,
+          "detail": "images without alt=0"
+        },
+        {
+          "name": "responsive viewport",
+          "ok": true,
+          "detail": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "JSON-LD structured data",
+          "ok": true,
+          "detail": "blocks=1"
+        },
+        {
+          "name": "no noindex on indexable page",
+          "ok": true,
+          "detail": "robots=max-image-preview:large"
+        }
+      ],
+      "passed": 15,
+      "failed": 0
+    },
+    {
+      "id": "shop",
+      "url": "http://localhost:8888/?post_type=product",
+      "checks": [
+        {
+          "name": "title present",
+          "ok": true,
+          "detail": "المتجر &#8211; نيلاد"
+        },
+        {
+          "name": "title length 15-70",
+          "ok": true,
+          "detail": "len=20"
+        },
+        {
+          "name": "title is Arabic",
+          "ok": true,
+          "detail": "المتجر &#8211; نيلاد"
+        },
+        {
+          "name": "meta description present",
+          "ok": true,
+          "detail": "تسوّق كل منتجات نيلاد: هدوم، حقائب، ساعات، نظارات وإكسسوارات — بأسعار واضحة وشحن"
+        },
+        {
+          "name": "meta description length 50-160",
+          "ok": true,
+          "detail": "len=113"
+        },
+        {
+          "name": "canonical present",
+          "ok": true,
+          "detail": "http://localhost:8888/?post_type=product"
+        },
+        {
+          "name": "og:title present",
+          "ok": true,
+          "detail": "المتجر &#8211; نيلاد"
+        },
+        {
+          "name": "og:image present",
+          "ok": true,
+          "detail": "http://localhost:8888/wp-content/uploads/2026/10/og-nilad.jpg"
+        },
+        {
+          "name": "lang=\"ar\"",
+          "ok": true,
+          "detail": "lang=ar"
+        },
+        {
+          "name": "dir=\"rtl\"",
+          "ok": true,
+          "detail": "dir=rtl"
+        },
+        {
+          "name": "exactly one h1",
+          "ok": true,
+          "detail": "h1 count=1"
+        },
+        {
+          "name": "all images have alt",
+          "ok": true,
+          "detail": "images without alt=0"
+        },
+        {
+          "name": "responsive viewport",
+          "ok": true,
+          "detail": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "JSON-LD structured data",
+          "ok": true,
+          "detail": "blocks=1"
+        },
+        {
+          "name": "no noindex on indexable page",
+          "ok": true,
+          "detail": "robots=max-image-preview:large"
+        }
+      ],
+      "passed": 15,
+      "failed": 0
+    },
+    {
+      "id": "product",
+      "url": "http://localhost:8888/?p=38",
+      "checks": [
+        {
+          "name": "title present",
+          "ok": true,
+          "detail": "عباية كتان مطرّزة &#8211; نيلاد"
+        },
+        {
+          "name": "title length 15-70",
+          "ok": true,
+          "detail": "len=31"
+        },
+        {
+          "name": "title is Arabic",
+          "ok": true,
+          "detail": "عباية كتان مطرّزة &#8211; نيلاد"
+        },
+        {
+          "name": "meta description present",
+          "ok": true,
+          "detail": "كتان مطرّز بقصّة مريحة — مثالية للاستخدام اليومي. — من نيلاد: توصيل لكل المحافظا"
+        },
+        {
+          "name": "meta description length 50-160",
+          "ok": true,
+          "detail": "len=128"
+        },
+        {
+          "name": "canonical present",
+          "ok": true,
+          "detail": "http://localhost:8888/product/embroidered-abaya/"
+        },
+        {
+          "name": "og:title present",
+          "ok": true,
+          "detail": "عباية كتان مطرّزة &#8211; نيلاد"
+        },
+        {
+          "name": "og:image present",
+          "ok": true,
+          "detail": "http://localhost:8888/wp-content/uploads/2026/10/abaya.jpg"
+        },
+        {
+          "name": "lang=\"ar\"",
+          "ok": true,
+          "detail": "lang=ar"
+        },
+        {
+          "name": "dir=\"rtl\"",
+          "ok": true,
+          "detail": "dir=rtl"
+        },
+        {
+          "name": "exactly one h1",
+          "ok": true,
+          "detail": "h1 count=1"
+        },
+        {
+          "name": "all images have alt",
+          "ok": true,
+          "detail": "images without alt=0"
+        },
+        {
+          "name": "responsive viewport",
+          "ok": true,
+          "detail": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "JSON-LD structured data",
+          "ok": true,
+          "detail": "blocks=2"
+        },
+        {
+          "name": "no noindex on indexable page",
+          "ok": true,
+          "detail": "robots=max-image-preview:large"
+        }
+      ],
+      "passed": 15,
+      "failed": 0
+    },
+    {
+      "id": "cart",
+      "url": "http://localhost:8888/cart/",
+      "checks": [
+        {
+          "name": "title present",
+          "ok": true,
+          "detail": "السلة &#8211; نيلاد"
+        },
+        {
+          "name": "title length 15-70",
+          "ok": true,
+          "detail": "len=19"
+        },
+        {
+          "name": "title is Arabic",
+          "ok": true,
+          "detail": "السلة &#8211; نيلاد"
+        },
+        {
+          "name": "meta description present",
+          "ok": true,
+          "detail": "نيلاد — متجر أزياء وإكسسوارات مصري للنساء والرجال: هدوم وحقائب وساعات ونظارات، ش"
+        },
+        {
+          "name": "meta description length 50-160",
+          "ok": true,
+          "detail": "len=119"
+        },
+        {
+          "name": "canonical present",
+          "ok": true,
+          "detail": "http://localhost:8888/cart/"
+        },
+        {
+          "name": "og:title present",
+          "ok": true,
+          "detail": "السلة &#8211; نيلاد"
+        },
+        {
+          "name": "og:image present",
+          "ok": true,
+          "detail": "http://localhost:8888/wp-content/uploads/2026/10/og-nilad.jpg"
+        },
+        {
+          "name": "lang=\"ar\"",
+          "ok": true,
+          "detail": "lang=ar"
+        },
+        {
+          "name": "dir=\"rtl\"",
+          "ok": true,
+          "detail": "dir=rtl"
+        },
+        {
+          "name": "exactly one h1",
+          "ok": true,
+          "detail": "h1 count=1"
+        },
+        {
+          "name": "all images have alt",
+          "ok": true,
+          "detail": "images without alt=0"
+        },
+        {
+          "name": "responsive viewport",
+          "ok": true,
+          "detail": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "JSON-LD structured data",
+          "ok": true,
+          "detail": "blocks=1"
+        },
+        {
+          "name": "cart/checkout marked noindex (correct)",
+          "ok": true,
+          "detail": "robots=max-image-preview:large, noindex, follow"
+        }
+      ],
+      "passed": 15,
+      "failed": 0
+    },
+    {
+      "id": "checkout",
+      "url": "http://localhost:8888/checkout/",
+      "checks": [
+        {
+          "name": "title present",
+          "ok": true,
+          "detail": "إتمام الطلب &#8211; نيلاد"
+        },
+        {
+          "name": "title length 15-70",
+          "ok": true,
+          "detail": "len=25"
+        },
+        {
+          "name": "title is Arabic",
+          "ok": true,
+          "detail": "إتمام الطلب &#8211; نيلاد"
+        },
+        {
+          "name": "meta description present",
+          "ok": true,
+          "detail": "نيلاد — متجر أزياء وإكسسوارات مصري للنساء والرجال: هدوم وحقائب وساعات ونظارات، ش"
+        },
+        {
+          "name": "meta description length 50-160",
+          "ok": true,
+          "detail": "len=119"
+        },
+        {
+          "name": "canonical present",
+          "ok": true,
+          "detail": "http://localhost:8888/checkout/"
+        },
+        {
+          "name": "og:title present",
+          "ok": true,
+          "detail": "إتمام الطلب &#8211; نيلاد"
+        },
+        {
+          "name": "og:image present",
+          "ok": true,
+          "detail": "http://localhost:8888/wp-content/uploads/2026/10/og-nilad.jpg"
+        },
+        {
+          "name": "lang=\"ar\"",
+          "ok": true,
+          "detail": "lang=ar"
+        },
+        {
+          "name": "dir=\"rtl\"",
+          "ok": true,
+          "detail": "dir=rtl"
+        },
+        {
+          "name": "exactly one h1",
+          "ok": true,
+          "detail": "h1 count=1"
+        },
+        {
+          "name": "all images have alt",
+          "ok": true,
+          "detail": "images without alt=0"
+        },
+        {
+          "name": "responsive viewport",
+          "ok": true,
+          "detail": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "JSON-LD structured data",
+          "ok": true,
+          "detail": "blocks=1"
+        },
+        {
+          "name": "cart/checkout marked noindex (correct)",
+          "ok": true,
+          "detail": "robots=max-image-preview:large, noindex, follow"
+        }
+      ],
+      "passed": 15,
+      "failed": 0
+    },
+    {
+      "id": "contact",
+      "url": "http://localhost:8888/contact/",
+      "checks": [
+        {
+          "name": "title present",
+          "ok": true,
+          "detail": "تواصل معنا &#8211; نيلاد"
+        },
+        {
+          "name": "title length 15-70",
+          "ok": true,
+          "detail": "len=24"
+        },
+        {
+          "name": "title is Arabic",
+          "ok": true,
+          "detail": "تواصل معنا &#8211; نيلاد"
+        },
+        {
+          "name": "meta description present",
+          "ok": true,
+          "detail": "إحنا في مرحلة الديمو — القنوات دي توضيحية لشكل صفحة التواصل، وهتتبدّل ببيانات حق"
+        },
+        {
+          "name": "meta description length 50-160",
+          "ok": true,
+          "detail": "len=155"
+        },
+        {
+          "name": "canonical present",
+          "ok": true,
+          "detail": "http://localhost:8888/contact/"
+        },
+        {
+          "name": "og:title present",
+          "ok": true,
+          "detail": "تواصل معنا &#8211; نيلاد"
+        },
+        {
+          "name": "og:image present",
+          "ok": true,
+          "detail": "http://localhost:8888/wp-content/uploads/2026/10/og-nilad.jpg"
+        },
+        {
+          "name": "lang=\"ar\"",
+          "ok": true,
+          "detail": "lang=ar"
+        },
+        {
+          "name": "dir=\"rtl\"",
+          "ok": true,
+          "detail": "dir=rtl"
+        },
+        {
+          "name": "exactly one h1",
+          "ok": true,
+          "detail": "h1 count=1"
+        },
+        {
+          "name": "all images have alt",
+          "ok": true,
+          "detail": "images without alt=0"
+        },
+        {
+          "name": "responsive viewport",
+          "ok": true,
+          "detail": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "JSON-LD structured data",
+          "ok": true,
+          "detail": "blocks=1"
+        },
+        {
+          "name": "no noindex on indexable page",
+          "ok": true,
+          "detail": "robots=max-image-preview:large"
+        }
+      ],
+      "passed": 15,
+      "failed": 0
+    }
+  ]
+}

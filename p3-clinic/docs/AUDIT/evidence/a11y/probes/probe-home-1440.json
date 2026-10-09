@@ -1,0 +1,207 @@
+{
+ "url": "/",
+ "dir": "rtl",
+ "lang": "ar",
+ "docDirCss": "rtl",
+ "htmlClasses": "js-motion",
+ "title": "عيادة سِراج للأسنان – نموذج تجريبي — حجز زيارات وأسنان (Demo)",
+ "headings": [
+  {
+   "lvl": 1,
+   "t": "أسنانك تستاهل عناية واضحة، بموعد يناسبك"
+  },
+  {
+   "lvl": 2,
+   "t": "ملاحظات الزيارة"
+  },
+  {
+   "lvl": 2,
+   "t": "كل خدمة بسعرها ومدةها، قبل ما تحجز"
+  },
+  {
+   "lvl": 3,
+   "t": "فحص وتشخيص"
+  },
+  {
+   "lvl": 3,
+   "t": "تنظيف وتلميع"
+  },
+  {
+   "lvl": 3,
+   "t": "علاج العصب (حشو عصب)"
+  },
+  {
+   "lvl": 3,
+   "t": "حشو تجميلي"
+  },
+  {
+   "lvl": 3,
+   "t": "تقويم"
+  },
+  {
+   "lvl": 3,
+   "t": "زراعة سن"
+  },
+  {
+   "lvl": 2,
+   "t": "أدوات واضحة، ونظافة مقدّمة"
+  },
+  {
+   "lvl": 2,
+   "t": "تخصصات واضحة، كل واحد في مجاله"
+  },
+  {
+   "lvl": 3,
+   "t": "طبقة التقويم"
+  },
+  {
+   "lvl": 3,
+   "t": "طبقة زراعة الأسنان"
+  },
+  {
+   "lvl": 3,
+   "t": "طبقة تجميل الأسنان"
+  },
+  {
+   "lvl": 2,
+   "t": "أربع خطوات، تعرفها قبل ما تيجي"
+  },
+  {
+   "lvl": 3,
+   "t": "تحجز أونلاين"
+  },
+  {
+   "lvl": 3,
+   "t": "تأكيد الموعد"
+  },
+  {
+   "lvl": 3,
+   "t": "الفحص والتقييم"
+  },
+  {
+   "lvl": 3,
+   "t": "خطة العلاج"
+  },
+  {
+   "lvl": 2,
+   "t": "الأسئلة اللي بتتسأل قبل الحجز"
+  },
+  {
+   "lvl": 2,
+   "t": "وسط البلد، القاهرة"
+  },
+  {
+   "lvl": 2,
+   "t": "جاهز تحجز؟ ابدأ من غير ما تتصل"
+  }
+ ],
+ "h1Count": 1,
+ "headingSkips": [],
+ "landmarks": {
+  "banner": 1,
+  "nav": 2,
+  "main": 1,
+  "contentinfo": 1,
+  "aside": 1
+ },
+ "skipLinks": [
+  {
+   "href": "#wp--skip-link--target",
+   "text": "تخطى إلى المحتوى",
+   "cls": "skip-link screen-reader-text"
+  }
+ ],
+ "bodyFont": "Alexandria, system-ui, -apple-system, \"Segoe UI\", Tahoma, sans-serif",
+ "bodyFontSize": "16px",
+ "bodyLineHeight": "27.2px",
+ "bodyLetterSpacing": "normal",
+ "h1LineHeight": "96.6px",
+ "h1FontSize": "84px",
+ "h1LetterSpacing": "normal",
+ "imgs": 4,
+ "imgsNoAlt": 0,
+ "imgsBroken": [],
+ "imgsNoDims": 4,
+ "emptyAltNonDecorative": 0,
+ "figures": 4,
+ "mixedNodes": [
+  {
+   "sel": "p.stamp",
+   "text": "سراج · Cairo",
+   "dir": null,
+   "lang": null,
+   "unicodeBidi": "isolate",
+   "isolation": "auto"
+  },
+  {
+   "sel": "p.wp-block-paragraph",
+   "text": "© نموذج تجريبي (Demo) — لا يمثّل أي عيادة حقيقية · الصور توضيحية",
+   "dir": null,
+   "lang": null,
+   "unicodeBidi": "isolate",
+   "isolation": "auto"
+  }
+ ],
+ "mixedCount": 2,
+ "latinRuns": [
+  {
+   "sel": "span.demo-badge",
+   "text": "Demo",
+   "lang": null,
+   "dir": null,
+   "bdi": false
+  },
+  {
+   "sel": "span.sec-num",
+   "text": "RX—001",
+   "lang": null,
+   "dir": null,
+   "bdi": false
+  },
+  {
+   "sel": "span.demo-badge",
+   "text": "Demo",
+   "lang": "en",
+   "dir": null,
+   "bdi": false
+  }
+ ],
+ "latinRunCount": 3,
+ "bdiCount": 0,
+ "langEnCount": 1,
+ "langEnValues": [
+  "ar",
+  "en"
+ ],
+ "justifiedCount": 0,
+ "letterSpacedArabic": [],
+ "easternDigits": 0,
+ "westernDigits": 69,
+ "arabicComma": 24,
+ "westernCommaBetweenArabic": 0,
+ "fonts": [
+  "Alexandria 400 loaded",
+  "Alexandria 400 loaded",
+  "Alexandria 500 unloaded",
+  "Alexandria 500 unloaded",
+  "Alexandria 600 loaded",
+  "Alexandria 600 loaded",
+  "Alexandria 700 loaded",
+  "Alexandria 700 loaded",
+  "Alexandria 800 loaded",
+  "Alexandria 800 loaded"
+ ],
+ "scrollWidth": 1440,
+ "innerWidth": 1440,
+ "horizontalOverflow": false,
+ "overflowEls": [],
+ "revealTotal": 24,
+ "revealHidden": 16,
+ "tables": 0,
+ "details": 5,
+ "forms": 0,
+ "iframes": 0,
+ "videosNoCaptions": 0,
+ "langAttrOnHtml": "ar",
+ "bidiElements": 1
+}

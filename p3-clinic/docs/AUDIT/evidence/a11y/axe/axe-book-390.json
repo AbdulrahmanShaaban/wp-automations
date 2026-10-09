@@ -1,0 +1,24 @@
+{
+ "bytes": 580480,
+ "axeVersion": "4.13.0",
+ "url": "http://localhost:8889/book/",
+ "timestamp": "2026-10-08T03:14:09.456Z",
+ "violations": [],
+ "incomplete": [],
+ "passCount": 38,
+ "inapplicableCount": 52,
+ "testEngine": {
+  "name": "axe-core",
+  "version": "4.13.0"
+ },
+ "testRunner": {
+  "name": "axe"
+ },
+ "testEnvironment": {
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+  "windowWidth": 390,
+  "windowHeight": 844,
+  "orientationAngle": 0,
+  "orientationType": "landscape-primary"
+ }
+}

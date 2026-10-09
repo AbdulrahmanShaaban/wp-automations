@@ -1,0 +1,2549 @@
+{
+  "generatedAt": "2026-10-08T11:40:57.417Z",
+  "base": "http://localhost:8889",
+  "pages": {
+    "home": {
+      "url": "http://localhost:8889/",
+      "fetchedAt": "2026-10-08T11:39:20.458Z",
+      "lighthouseVersion": "13.5.0",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "formFactor": "mobile",
+      "scores": {
+        "performance": 76,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcpMs": 1733,
+        "fcp": "1.7 s",
+        "lcpMs": 2375,
+        "lcp": "2.4 s",
+        "tbtMs": 458,
+        "tbt": "460 ms",
+        "cls": 0.03299939603282145,
+        "clsDisp": "0.033",
+        "ttiMs": 2741,
+        "tti": "2.7 s",
+        "ttfbMs": 14461,
+        "ttfb": "Root document took 14,430 ms",
+        "speedIndexMs": 21800,
+        "speedIndex": "21.8 s",
+        "totalByteWeightBytes": 194123,
+        "totalByteWeight": "Total size was 190 KiB",
+        "maxPotentialFID": "540 ms",
+        "observedFcpMs": 14952,
+        "observedLcpMs": 14952,
+        "observedTtfbMs": null
+      },
+      "lcpElement": {
+        "selector": "section.hero > div.container > div.hero-text > h1",
+        "snippet": "<h1>",
+        "label": "أسنانك تستاهل عناية واضحة، بموعد يناسبك"
+      },
+      "lcpPhases": {
+        "timeToFirstByte": 14461,
+        "elementRenderDelay": 492
+      },
+      "renderBlocking": {
+        "wastedMs": 1776,
+        "items": 3,
+        "top": [
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+            "wastedMs": 642,
+            "totalBytes": 973
+          },
+          {
+            "url": "/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+            "wastedMs": 492,
+            "totalBytes": 4124
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+            "wastedMs": 642,
+            "totalBytes": 6430
+          }
+        ]
+      },
+      "requests": {
+        "total": 16,
+        "byType": {
+          "Document": {
+            "count": 1,
+            "transfer": 18624
+          },
+          "Stylesheet": {
+            "count": 3,
+            "transfer": 11527
+          },
+          "Script": {
+            "count": 5,
+            "transfer": 42787
+          },
+          "Image": {
+            "count": 4,
+            "transfer": 58021
+          },
+          "Font": {
+            "count": 2,
+            "transfer": 62064
+          },
+          "Other": {
+            "count": 1,
+            "transfer": 1099
+          }
+        },
+        "fonts": [
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+            "transfer": 30428,
+            "resourceSize": 30140
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+            "transfer": 31636,
+            "resourceSize": 31348
+          }
+        ],
+        "js": {
+          "count": 5,
+          "transfer": 42787
+        },
+        "css": {
+          "count": 3,
+          "transfer": 11527
+        },
+        "images": {
+          "count": 4,
+          "transfer": 58021
+        },
+        "fontCount": 2,
+        "fontTransfer": 62064,
+        "thirdPartyHosts": [
+          "localhost:8889",
+          ""
+        ]
+      },
+      "perRequest": [
+        {
+          "url": "/",
+          "resourceType": "Document",
+          "status": 200,
+          "priority": "VeryHigh",
+          "startMs": 3,
+          "endMs": 14462,
+          "totalMs": 14458367,
+          "transferSize": 18624,
+          "resourceSize": 77961,
+          "protocol": "http/1.1",
+          "mimeType": "text/html"
+        },
+        {
+          "url": "/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+          "resourceType": "Stylesheet",
+          "status": 200,
+          "priority": "VeryHigh",
+          "startMs": 14479,
+          "endMs": 14629,
+          "totalMs": 150922,
+          "transferSize": 4124,
+          "resourceSize": 25575,
+          "protocol": "http/1.1",
+          "mimeType": "text/css"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+          "resourceType": "Stylesheet",
+          "status": 200,
+          "priority": "VeryHigh",
+          "startMs": 14492,
+          "endMs": 14655,
+          "totalMs": 163162,
+          "transferSize": 973,
+          "resourceSize": 6035,
+          "protocol": "http/1.1",
+          "mimeType": "text/css"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+          "resourceType": "Stylesheet",
+          "status": 200,
+          "priority": "VeryHigh",
+          "startMs": 14493,
+          "endMs": 14608,
+          "totalMs": 114541,
+          "transferSize": 6430,
+          "resourceSize": 20301,
+          "protocol": "http/1.1",
+          "mimeType": "text/css"
+        },
+        {
+          "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+          "resourceType": "Script",
+          "status": 200,
+          "priority": "Low",
+          "startMs": 14494,
+          "endMs": 14658,
+          "totalMs": 164546,
+          "transferSize": 28051,
+          "resourceSize": 107579,
+          "protocol": "http/1.1",
+          "mimeType": "text/javascript"
+        },
+        {
+          "url": "/wp-includes/js/dist/script-modules/block-library/navigation/view.js?ver=1bf28ded04f9f188bdcb",
+          "resourceType": "Script",
+          "status": 200,
+          "priority": "Low",
+          "startMs": 14494,
+          "endMs": 14717,
+          "totalMs": 223084,
+          "transferSize": 1774,
+          "resourceSize": 6027,
+          "protocol": "http/1.1",
+          "mimeType": "text/javascript"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/logo-mark.svg",
+          "resourceType": "Image",
+          "status": 200,
+          "priority": "High",
+          "startMs": 14661,
+          "endMs": 14780,
+          "totalMs": 119284,
+          "transferSize": 1167,
+          "resourceSize": 879,
+          "protocol": "http/1.1",
+          "mimeType": "image/svg+xml"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+          "resourceType": "Font",
+          "status": 200,
+          "priority": "VeryHigh",
+          "startMs": 14928,
+          "endMs": 15329,
+          "totalMs": 401155,
+          "transferSize": 30428,
+          "resourceSize": 30140,
+          "protocol": "http/1.1",
+          "mimeType": "font/woff2"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+          "resourceType": "Font",
+          "status": 200,
+          "priority": "VeryHigh",
+          "startMs": 14928,
+          "endMs": 15359,
+          "totalMs": 430910,
+          "transferSize": 31636,
+          "resourceSize": 31348,
+          "protocol": "http/1.1",
+          "mimeType": "font/woff2"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/photo-instruments.webp",
+          "resourceType": "Image",
+          "status": 200,
+          "priority": "Low",
+          "startMs": 14926,
+          "endMs": 15329,
+          "totalMs": 402807,
+          "transferSize": 21212,
+          "resourceSize": 20924,
+          "protocol": "http/1.1",
+          "mimeType": "image/webp"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/photo-stilllife.webp",
+          "resourceType": "Image",
+          "status": 200,
+          "priority": "Low",
+          "startMs": 14927,
+          "endMs": 15329,
+          "totalMs": 402443,
+          "transferSize": 14992,
+          "resourceSize": 14704,
+          "protocol": "http/1.1",
+          "mimeType": "image/webp"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/photo-implant.webp",
+          "resourceType": "Image",
+          "status": 200,
+          "priority": "Low",
+          "startMs": 14927,
+          "endMs": 15328,
+          "totalMs": 400379,
+          "transferSize": 20650,
+          "resourceSize": 20362,
+          "protocol": "http/1.1",
+          "mimeType": "image/webp"
+        },
+        {
+          "url": "blob:/821c7483-11db-40e9-b0aa-68051b02f341",
+          "resourceType": "Script",
+          "status": 200,
+          "priority": "VeryLow",
+          "startMs": 14959,
+          "endMs": 15205,
+          "totalMs": 246338,
+          "transferSize": -1,
+          "resourceSize": 5074,
+          "protocol": "blob",
+          "mimeType": "text/javascript"
+        },
+        {
+          "url": "/wp-includes/js/twemoji.js?ver=7.1.3",
+          "resourceType": "Script",
+          "status": 200,
+          "priority": "Low",
+          "startMs": 15191,
+          "endMs": 16061,
+          "totalMs": 869703,
+          "transferSize": 9231,
+          "resourceSize": 37769,
+          "protocol": "http/1.1",
+          "mimeType": "text/javascript"
+        },
+        {
+          "url": "/wp-includes/js/wp-emoji.js?ver=7.1.3",
+          "resourceType": "Script",
+          "status": 200,
+          "priority": "Low",
+          "startMs": 15328,
+          "endMs": 16042,
+          "totalMs": 714039,
+          "transferSize": 3732,
+          "resourceSize": 9087,
+          "protocol": "http/1.1",
+          "mimeType": "text/javascript"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/favicon.svg",
+          "resourceType": "Other",
+          "status": 200,
+          "priority": "High",
+          "startMs": 16080,
+          "endMs": 16344,
+          "totalMs": 263618,
+          "transferSize": 1099,
+          "resourceSize": 811,
+          "protocol": "http/1.1",
+          "mimeType": "image/svg+xml"
+        }
+      ],
+      "clsSources": [
+        {
+          "score": 0.03299939603282145,
+          "node": "main#wp--skip-link--target > section.hero > div.container > aside.note",
+          "cause": null,
+          "movedNode": null
+        }
+      ],
+      "tbtAttribution": {
+        "longTasks": [
+          {
+            "url": "/",
+            "durationMs": 539,
+            "startTime": 1203
+          },
+          {
+            "url": "/",
+            "durationMs": 442,
+            "startTime": 1900
+          },
+          {
+            "url": "Unattributable",
+            "durationMs": 92,
+            "startTime": 1742
+          },
+          {
+            "url": "/",
+            "durationMs": 66,
+            "startTime": 1834
+          },
+          {
+            "url": "Unattributable",
+            "durationMs": 65,
+            "startTime": 2975
+          },
+          {
+            "url": "/",
+            "durationMs": 56,
+            "startTime": 1147
+          },
+          {
+            "url": "Unattributable",
+            "durationMs": 55,
+            "startTime": 1092
+          }
+        ],
+        "scriptMs": [
+          {
+            "url": "/",
+            "scriptingMs": 46,
+            "totalMs": 2225
+          },
+          {
+            "url": "Unattributable",
+            "scriptingMs": 110,
+            "totalMs": 505
+          },
+          {
+            "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+            "scriptingMs": 57,
+            "totalMs": 80
+          }
+        ],
+        "mainthread": [
+          {
+            "durationMs": 5
+          },
+          {
+            "durationMs": 8
+          },
+          {
+            "durationMs": 14
+          },
+          {
+            "durationMs": 14
+          },
+          {
+            "durationMs": 270
+          },
+          {
+            "durationMs": 8
+          }
+        ]
+      },
+      "opportunities": [
+        {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0.5,
+          "displayValue": "Est savings of 170 KiB",
+          "wastedMs": 174400,
+          "items": 13
+        },
+        {
+          "id": "unminified-javascript",
+          "title": "Minify JavaScript",
+          "score": 0.5,
+          "displayValue": "Est savings of 12 KiB",
+          "wastedMs": 11963,
+          "items": 2
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 50 ms",
+          "wastedMs": 1776,
+          "items": 3
+        },
+        {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "score": 0,
+          "displayValue": "21.8 s",
+          "wastedMs": 0,
+          "items": 0
+        },
+        {
+          "id": "total-blocking-time",
+          "title": "Total Blocking Time",
+          "score": 0.62,
+          "displayValue": "460 ms",
+          "wastedMs": 0,
+          "items": 0
+        },
+        {
+          "id": "max-potential-fid",
+          "title": "Max Potential First Input Delay",
+          "score": 0.06,
+          "displayValue": "540 ms",
+          "wastedMs": 0,
+          "items": 0
+        },
+        {
+          "id": "server-response-time",
+          "title": "Reduce initial server response time",
+          "score": 0,
+          "displayValue": "Root document took 14,430 ms",
+          "wastedMs": 0,
+          "items": 1
+        },
+        {
+          "id": "mainthread-work-breakdown",
+          "title": "Minimize main-thread work",
+          "score": 0,
+          "displayValue": "2.9 s",
+          "wastedMs": 0,
+          "items": 7
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0,
+          "displayValue": "Est savings of 14,330 ms",
+          "wastedMs": 0,
+          "items": 0
+        },
+        {
+          "id": "lcp-breakdown-insight",
+          "title": "LCP breakdown",
+          "score": 0,
+          "displayValue": null,
+          "wastedMs": 0,
+          "items": 2
+        }
+      ],
+      "failedAudits": [
+        "speed-index",
+        "total-blocking-time",
+        "max-potential-fid",
+        "server-response-time",
+        "mainthread-work-breakdown",
+        "unminified-javascript",
+        "cache-insight",
+        "document-latency-insight",
+        "lcp-breakdown-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ],
+      "slowRequests": [
+        {
+          "url": "/",
+          "resourceType": "Document",
+          "status": 200,
+          "priority": "VeryHigh",
+          "startMs": 3,
+          "endMs": 14462,
+          "totalMs": 14458367,
+          "transferSize": 18624,
+          "resourceSize": 77961,
+          "protocol": "http/1.1",
+          "mimeType": "text/html"
+        },
+        {
+          "url": "/wp-includes/js/twemoji.js?ver=7.1.3",
+          "resourceType": "Script",
+          "status": 200,
+          "priority": "Low",
+          "startMs": 15191,
+          "endMs": 16061,
+          "totalMs": 869703,
+          "transferSize": 9231,
+          "resourceSize": 37769,
+          "protocol": "http/1.1",
+          "mimeType": "text/javascript"
+        },
+        {
+          "url": "/wp-includes/js/wp-emoji.js?ver=7.1.3",
+          "resourceType": "Script",
+          "status": 200,
+          "priority": "Low",
+          "startMs": 15328,
+          "endMs": 16042,
+          "totalMs": 714039,
+          "transferSize": 3732,
+          "resourceSize": 9087,
+          "protocol": "http/1.1",
+          "mimeType": "text/javascript"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+          "resourceType": "Font",
+          "status": 200,
+          "priority": "VeryHigh",
+          "startMs": 14928,
+          "endMs": 15359,
+          "totalMs": 430910,
+          "transferSize": 31636,
+          "resourceSize": 31348,
+          "protocol": "http/1.1",
+          "mimeType": "font/woff2"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/photo-instruments.webp",
+          "resourceType": "Image",
+          "status": 200,
+          "priority": "Low",
+          "startMs": 14926,
+          "endMs": 15329,
+          "totalMs": 402807,
+          "transferSize": 21212,
+          "resourceSize": 20924,
+          "protocol": "http/1.1",
+          "mimeType": "image/webp"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/photo-stilllife.webp",
+          "resourceType": "Image",
+          "status": 200,
+          "priority": "Low",
+          "startMs": 14927,
+          "endMs": 15329,
+          "totalMs": 402443,
+          "transferSize": 14992,
+          "resourceSize": 14704,
+          "protocol": "http/1.1",
+          "mimeType": "image/webp"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+          "resourceType": "Font",
+          "status": 200,
+          "priority": "VeryHigh",
+          "startMs": 14928,
+          "endMs": 15329,
+          "totalMs": 401155,
+          "transferSize": 30428,
+          "resourceSize": 30140,
+          "protocol": "http/1.1",
+          "mimeType": "font/woff2"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/photo-implant.webp",
+          "resourceType": "Image",
+          "status": 200,
+          "priority": "Low",
+          "startMs": 14927,
+          "endMs": 15328,
+          "totalMs": 400379,
+          "transferSize": 20650,
+          "resourceSize": 20362,
+          "protocol": "http/1.1",
+          "mimeType": "image/webp"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/favicon.svg",
+          "resourceType": "Other",
+          "status": 200,
+          "priority": "High",
+          "startMs": 16080,
+          "endMs": 16344,
+          "totalMs": 263618,
+          "transferSize": 1099,
+          "resourceSize": 811,
+          "protocol": "http/1.1",
+          "mimeType": "image/svg+xml"
+        },
+        {
+          "url": "blob:/821c7483-11db-40e9-b0aa-68051b02f341",
+          "resourceType": "Script",
+          "status": 200,
+          "priority": "VeryLow",
+          "startMs": 14959,
+          "endMs": 15205,
+          "totalMs": 246338,
+          "transferSize": -1,
+          "resourceSize": 5074,
+          "protocol": "blob",
+          "mimeType": "text/javascript"
+        },
+        {
+          "url": "/wp-includes/js/dist/script-modules/block-library/navigation/view.js?ver=1bf28ded04f9f188bdcb",
+          "resourceType": "Script",
+          "status": 200,
+          "priority": "Low",
+          "startMs": 14494,
+          "endMs": 14717,
+          "totalMs": 223084,
+          "transferSize": 1774,
+          "resourceSize": 6027,
+          "protocol": "http/1.1",
+          "mimeType": "text/javascript"
+        },
+        {
+          "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+          "resourceType": "Script",
+          "status": 200,
+          "priority": "Low",
+          "startMs": 14494,
+          "endMs": 14658,
+          "totalMs": 164546,
+          "transferSize": 28051,
+          "resourceSize": 107579,
+          "protocol": "http/1.1",
+          "mimeType": "text/javascript"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+          "resourceType": "Stylesheet",
+          "status": 200,
+          "priority": "VeryHigh",
+          "startMs": 14492,
+          "endMs": 14655,
+          "totalMs": 163162,
+          "transferSize": 973,
+          "resourceSize": 6035,
+          "protocol": "http/1.1",
+          "mimeType": "text/css"
+        },
+        {
+          "url": "/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+          "resourceType": "Stylesheet",
+          "status": 200,
+          "priority": "VeryHigh",
+          "startMs": 14479,
+          "endMs": 14629,
+          "totalMs": 150922,
+          "transferSize": 4124,
+          "resourceSize": 25575,
+          "protocol": "http/1.1",
+          "mimeType": "text/css"
+        }
+      ],
+      "insights": {
+        "render-blocking-insight": {
+          "score": 0,
+          "displayValue": "Est savings of 50 ms",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+                "totalBytes": 973,
+                "wastedMs": 642
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+                "totalBytes": 4124,
+                "wastedMs": 492
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+                "totalBytes": 6430,
+                "wastedMs": 642
+              }
+            ]
+          }
+        },
+        "image-delivery-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL",
+                "subItemsHeading": {
+                  "key": "reason",
+                  "valueType": "text"
+                }
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Resource Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings",
+                "subItemsHeading": {
+                  "key": "wastedBytes",
+                  "valueType": "bytes"
+                }
+              }
+            ],
+            "items": [],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 0
+            }
+          }
+        },
+        "cache-insight": {
+          "score": 0.5,
+          "displayValue": "Est savings of 170 KiB",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "Request"
+              },
+              {
+                "key": "cacheLifetimeMs",
+                "valueType": "ms",
+                "label": "Cache TTL",
+                "displayUnit": "duration"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size",
+                "displayUnit": "kb",
+                "granularity": 1
+              }
+            ],
+            "items": [
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 31636,
+                "wastedBytes": 31636
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 30428,
+                "wastedBytes": 30428
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 28051,
+                "wastedBytes": 28051
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/img/photo-instruments.webp",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 21212,
+                "wastedBytes": 21212
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/img/photo-implant.webp",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 20650,
+                "wastedBytes": 20650
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/img/photo-stilllife.webp",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 14992,
+                "wastedBytes": 14992
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/twemoji.js?ver=7.1.3",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 9231,
+                "wastedBytes": 9231
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 6430,
+                "wastedBytes": 6430
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 4124,
+                "wastedBytes": 4124
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/wp-emoji.js?ver=7.1.3",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 3732,
+                "wastedBytes": 3732
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/dist/script-modules/block-library/navigation/view.js?ver=1bf28ded04f9f188bdcb",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 1774,
+                "wastedBytes": 1774
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/img/logo-mark.svg",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 1167,
+                "wastedBytes": 1167
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 973,
+                "wastedBytes": 973
+              }
+            ],
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "skipSumming": [
+              "cacheLifetimeMs"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 174400
+            }
+          }
+        },
+        "font-display-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "ms",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [],
+            "skipSumming": [
+              "wastedMs"
+            ]
+          }
+        },
+        "network-dependency-tree-insight": {
+          "score": 0,
+          "displayValue": null,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "list-section",
+                "value": {
+                  "type": "network-tree",
+                  "chains": {
+                    "E396F84574D05CEBAADF01756AF21D74": {
+                      "url": "http://localhost:8889/",
+                      "navStartToEndTime": 14492,
+                      "transferSize": 18624,
+                      "isLongest": true,
+                      "children": {
+                        "17636.3": {
+                          "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+                          "navStartToEndTime": 14656,
+                          "transferSize": 973,
+                          "isLongest": true,
+                          "children": {
+                            "17636.15": {
+                              "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+                              "navStartToEndTime": 15427,
+                              "transferSize": 31636,
+                              "isLongest": true,
+                              "children": {}
+                            },
+                            "17636.16": {
+                              "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+                              "navStartToEndTime": 15390,
+                              "transferSize": 30428,
+                              "children": {}
+                            }
+                          }
+                        },
+                        "17636.2": {
+                          "url": "http://localhost:8889/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+                          "navStartToEndTime": 14631,
+                          "transferSize": 4124,
+                          "children": {}
+                        },
+                        "17636.4": {
+                          "url": "http://localhost:8889/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+                          "navStartToEndTime": 14609,
+                          "transferSize": 6430,
+                          "children": {}
+                        }
+                      }
+                    }
+                  },
+                  "longestChain": {
+                    "duration": 15427
+                  }
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnected origins",
+                "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+                "value": {
+                  "type": "text",
+                  "value": "no origins were preconnected"
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnect candidates",
+                "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+                "value": {
+                  "type": "text",
+                  "value": "No additional origins are good candidates for preconnecting"
+                }
+              }
+            ]
+          }
+        },
+        "document-latency-insight": {
+          "score": 0,
+          "displayValue": "Est savings of 14,330 ms",
+          "details": {
+            "type": "checklist",
+            "items": {
+              "noRedirects": {
+                "label": "Avoids redirects",
+                "value": true
+              },
+              "serverResponseIsFast": {
+                "label": "Server responded slowly (observed 14434 ms)",
+                "value": false
+              },
+              "usesCompression": {
+                "label": "Applies text compression",
+                "value": true
+              }
+            },
+            "debugData": {
+              "type": "debugdata",
+              "redirectDuration": 0,
+              "serverResponseTime": 14434,
+              "uncompressedResponseBytes": 0,
+              "wastedBytes": 0
+            }
+          }
+        },
+        "dom-size-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "statistic",
+                "valueType": "text",
+                "label": "Statistic"
+              },
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              },
+              {
+                "key": "value",
+                "valueType": "numeric",
+                "label": "Value"
+              }
+            ],
+            "items": [
+              {
+                "statistic": "Total elements",
+                "value": {
+                  "type": "numeric",
+                  "granularity": 1,
+                  "value": 260
+                }
+              },
+              {
+                "statistic": "DOM depth",
+                "node": {
+                  "type": "node",
+                  "lhId": "page-8-SPAN",
+                  "path": "1,HTML,1,BODY,1,DIV,0,DIV,0,HEADER,0,DIV,1,NAV,1,DIV,0,DIV,0,DIV,1,DIV,0,UL,0,LI,0,A,0,SPAN",
+                  "selector": "ul.wp-block-navigation__container > li.wp-block-navigation-item > a.wp-block-navigation-item__content > span.wp-block-navigation-item__label",
+                  "boundingRect": {
+                    "top": 0,
+                    "bottom": 0,
+                    "left": 0,
+                    "right": 0,
+                    "width": 0,
+                    "height": 0
+                  },
+                  "snippet": "<span class=\"wp-block-navigation-item__label\">",
+                  "nodeLabel": "الخدمات"
+                },
+                "value": {
+                  "type": "numeric",
+                  "granularity": 1,
+                  "value": 14
+                }
+              },
+              {
+                "statistic": "Most children",
+                "node": {
+                  "type": "node",
+                  "lhId": "page-7-MAIN",
+                  "path": "1,HTML,1,BODY,1,DIV,1,MAIN",
+                  "selector": "body.rtl > div.wp-site-blocks > main#wp--skip-link--target",
+                  "boundingRect": {
+                    "top": 93,
+                    "bottom": 8231,
+                    "left": 0,
+                    "right": 390,
+                    "width": 390,
+                    "height": 8138
+                  },
+                  "snippet": "<main id=\"wp--skip-link--target\" class=\"wp-block-group site-main is-layout-flow wp-block-group-is-layout-flow\">",
+                  "nodeLabel": "نموذج تجريبي · لا يمثّل أي عيادة حقيقية\n\nأسنانك تستاهل عناية واضحة، بموعد يناسبك…"
+                },
+                "value": {
+                  "type": "numeric",
+                  "granularity": 1,
+                  "value": 8
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "totalElements": 260,
+              "maxChildren": 8,
+              "maxDepth": 14
+            }
+          }
+        },
+        "third-parties-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "entity",
+                "valueType": "text",
+                "label": "3rd party",
+                "subItemsHeading": {
+                  "key": "url",
+                  "valueType": "url"
+                }
+              },
+              {
+                "key": "transferSize",
+                "granularity": 1,
+                "valueType": "bytes",
+                "label": "Transfer size",
+                "subItemsHeading": {
+                  "key": "transferSize"
+                }
+              },
+              {
+                "key": "mainThreadTime",
+                "granularity": 1,
+                "valueType": "ms",
+                "label": "Main thread time",
+                "subItemsHeading": {
+                  "key": "mainThreadTime"
+                }
+              }
+            ],
+            "items": []
+          }
+        },
+        "forced-reflow-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "source",
+                    "valueType": "source-location",
+                    "label": "Source"
+                  },
+                  {
+                    "key": "reflowTime",
+                    "valueType": "ms",
+                    "granularity": 1,
+                    "label": "Total reflow time"
+                  }
+                ],
+                "items": []
+              }
+            ]
+          }
+        },
+        "cls-culprits-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "node",
+                    "valueType": "node",
+                    "subItemsHeading": {
+                      "key": "extra"
+                    },
+                    "label": "Element"
+                  },
+                  {
+                    "key": "score",
+                    "valueType": "numeric",
+                    "subItemsHeading": {
+                      "key": "cause",
+                      "valueType": "text"
+                    },
+                    "granularity": 0.001,
+                    "label": "Layout shift score"
+                  }
+                ],
+                "items": [
+                  {
+                    "node": {
+                      "type": "text",
+                      "value": "Total"
+                    },
+                    "score": 0.03299939603282145
+                  },
+                  {
+                    "node": {
+                      "type": "node",
+                      "lhId": "page-1-ASIDE",
+                      "path": "1,HTML,1,BODY,1,DIV,1,MAIN,0,SECTION,0,DIV,1,ASIDE",
+                      "selector": "main#wp--skip-link--target > section.hero > div.container > aside.note",
+                      "boundingRect": {
+                        "top": 737,
+                        "bottom": 1219,
+                        "left": 24,
+                        "right": 366,
+                        "width": 342,
+                        "height": 483
+                      },
+                      "snippet": "<aside class=\"note paper\" aria-label=\"توضيح نظام الحجز\">",
+                      "nodeLabel": "RX—001\nملاحظات الزيارة\nفحص وتشخيص\n20 دقيقة\nأشعة عند الحاجة\n15 دقيقة\nتنظيف وتلمي…"
+                    },
+                    "score": 0.03299939603282145
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "duplicated-javascript-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "code",
+                "subItemsHeading": {
+                  "key": "url",
+                  "valueType": "url"
+                },
+                "label": "Source"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "subItemsHeading": {
+                  "key": "sourceTransferBytes"
+                },
+                "granularity": 10,
+                "label": "Duplicated bytes"
+              }
+            ],
+            "items": [],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 0
+            }
+          }
+        },
+        "modern-http-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "protocol",
+                "valueType": "text",
+                "label": "Protocol"
+              }
+            ],
+            "items": []
+          }
+        }
+      }
+    },
+    "book": {
+      "url": "http://localhost:8889/book/",
+      "fetchedAt": "2026-10-08T11:40:15.948Z",
+      "lighthouseVersion": "13.5.0",
+      "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+      "formFactor": "mobile",
+      "scores": {
+        "performance": 92,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 92
+      },
+      "metrics": {
+        "fcpMs": 1377,
+        "fcp": "1.4 s",
+        "lcpMs": 1677,
+        "lcp": "1.7 s",
+        "tbtMs": 0,
+        "tbt": "0 ms",
+        "cls": 0.0018572479494515404,
+        "clsDisp": "0.002",
+        "ttiMs": 1677,
+        "tti": "1.7 s",
+        "ttfbMs": 4870,
+        "ttfb": "Root document took 4,860 ms",
+        "speedIndexMs": 7863,
+        "speedIndex": "7.9 s",
+        "totalByteWeightBytes": 135030,
+        "totalByteWeight": "Total size was 132 KiB",
+        "maxPotentialFID": "50 ms",
+        "observedFcpMs": 5192,
+        "observedLcpMs": 5192,
+        "observedTtfbMs": null
+      },
+      "lcpElement": {
+        "selector": "div.wp-site-blocks > main#wp--skip-link--target > div.entry-content > p.lead",
+        "snippet": "<p class=\"lead wp-block-paragraph\">",
+        "label": "املأ النموذج بالتوازي، والتأكيد بيتم بعد كده على واتساب أو اتصال. البيانات مش ب…"
+      },
+      "lcpPhases": {
+        "timeToFirstByte": 4870,
+        "elementRenderDelay": 322
+      },
+      "renderBlocking": {
+        "wastedMs": 1242,
+        "items": 3,
+        "top": [
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+            "wastedMs": 464,
+            "totalBytes": 973
+          },
+          {
+            "url": "/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+            "wastedMs": 314,
+            "totalBytes": 4124
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+            "wastedMs": 464,
+            "totalBytes": 6430
+          }
+        ]
+      },
+      "requests": {
+        "total": 14,
+        "byType": {
+          "Document": {
+            "count": 1,
+            "transfer": 16386
+          },
+          "Stylesheet": {
+            "count": 3,
+            "transfer": 11527
+          },
+          "Script": {
+            "count": 5,
+            "transfer": 42786
+          },
+          "Image": {
+            "count": 2,
+            "transfer": 1167
+          },
+          "Font": {
+            "count": 2,
+            "transfer": 62064
+          },
+          "Other": {
+            "count": 1,
+            "transfer": 1099
+          }
+        },
+        "fonts": [
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+            "transfer": 30428,
+            "resourceSize": 30140
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+            "transfer": 31636,
+            "resourceSize": 31348
+          }
+        ],
+        "js": {
+          "count": 5,
+          "transfer": 42786
+        },
+        "css": {
+          "count": 3,
+          "transfer": 11527
+        },
+        "images": {
+          "count": 2,
+          "transfer": 1167
+        },
+        "fontCount": 2,
+        "fontTransfer": 62064,
+        "thirdPartyHosts": [
+          "localhost:8889",
+          ""
+        ]
+      },
+      "perRequest": [
+        {
+          "url": "/book/",
+          "resourceType": "Document",
+          "status": 200,
+          "priority": "VeryHigh",
+          "startMs": 1,
+          "endMs": 4890,
+          "totalMs": 4888535,
+          "transferSize": 16386,
+          "resourceSize": 67780,
+          "protocol": "http/1.1",
+          "mimeType": "text/html"
+        },
+        {
+          "url": "/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+          "resourceType": "Stylesheet",
+          "status": 200,
+          "priority": "VeryHigh",
+          "startMs": 4889,
+          "endMs": 5013,
+          "totalMs": 123885,
+          "transferSize": 4124,
+          "resourceSize": 25575,
+          "protocol": "http/1.1",
+          "mimeType": "text/css"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+          "resourceType": "Stylesheet",
+          "status": 200,
+          "priority": "VeryHigh",
+          "startMs": 4893,
+          "endMs": 5023,
+          "totalMs": 129658,
+          "transferSize": 973,
+          "resourceSize": 6035,
+          "protocol": "http/1.1",
+          "mimeType": "text/css"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+          "resourceType": "Stylesheet",
+          "status": 200,
+          "priority": "VeryHigh",
+          "startMs": 4894,
+          "endMs": 4975,
+          "totalMs": 81044,
+          "transferSize": 6430,
+          "resourceSize": 20301,
+          "protocol": "http/1.1",
+          "mimeType": "text/css"
+        },
+        {
+          "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+          "resourceType": "Script",
+          "status": 200,
+          "priority": "Low",
+          "startMs": 4895,
+          "endMs": 5080,
+          "totalMs": 185756,
+          "transferSize": 28051,
+          "resourceSize": 107579,
+          "protocol": "http/1.1",
+          "mimeType": "text/javascript"
+        },
+        {
+          "url": "/wp-includes/js/dist/script-modules/block-library/navigation/view.js?ver=1bf28ded04f9f188bdcb",
+          "resourceType": "Script",
+          "status": 200,
+          "priority": "Low",
+          "startMs": 4899,
+          "endMs": 5203,
+          "totalMs": 304397,
+          "transferSize": 1774,
+          "resourceSize": 6027,
+          "protocol": "http/1.1",
+          "mimeType": "text/javascript"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/logo-mark.svg",
+          "resourceType": "Image",
+          "status": 200,
+          "priority": "High",
+          "startMs": 5027,
+          "endMs": 5369,
+          "totalMs": 341421,
+          "transferSize": 1167,
+          "resourceSize": 879,
+          "protocol": "http/1.1",
+          "mimeType": "image/svg+xml"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+          "resourceType": "Font",
+          "status": 200,
+          "priority": "VeryHigh",
+          "startMs": 5177,
+          "endMs": 5430,
+          "totalMs": 253040,
+          "transferSize": 30428,
+          "resourceSize": 30140,
+          "protocol": "http/1.1",
+          "mimeType": "font/woff2"
+        },
+        {
+          "url": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ…",
+          "resourceType": "Image",
+          "status": 200,
+          "priority": "Low",
+          "startMs": 5060,
+          "endMs": 5060,
+          "totalMs": 117,
+          "transferSize": 0,
+          "resourceSize": 266,
+          "protocol": "data",
+          "mimeType": "image/svg+xml"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+          "resourceType": "Font",
+          "status": 200,
+          "priority": "VeryHigh",
+          "startMs": 5181,
+          "endMs": 5427,
+          "totalMs": 245902,
+          "transferSize": 31636,
+          "resourceSize": 31348,
+          "protocol": "http/1.1",
+          "mimeType": "font/woff2"
+        },
+        {
+          "url": "blob:/31165718-0734-4406-aada-ac0e12bb1e0a",
+          "resourceType": "Script",
+          "status": 200,
+          "priority": "VeryLow",
+          "startMs": 5219,
+          "endMs": 5389,
+          "totalMs": 170548,
+          "transferSize": -1,
+          "resourceSize": 5074,
+          "protocol": "blob",
+          "mimeType": "text/javascript"
+        },
+        {
+          "url": "/wp-includes/js/twemoji.js?ver=7.1.3",
+          "resourceType": "Script",
+          "status": 200,
+          "priority": "Low",
+          "startMs": 5390,
+          "endMs": 5556,
+          "totalMs": 165562,
+          "transferSize": 9230,
+          "resourceSize": 37769,
+          "protocol": "http/1.1",
+          "mimeType": "text/javascript"
+        },
+        {
+          "url": "/wp-includes/js/wp-emoji.js?ver=7.1.3",
+          "resourceType": "Script",
+          "status": 200,
+          "priority": "Low",
+          "startMs": 5390,
+          "endMs": 5546,
+          "totalMs": 155790,
+          "transferSize": 3732,
+          "resourceSize": 9087,
+          "protocol": "http/1.1",
+          "mimeType": "text/javascript"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/favicon.svg",
+          "resourceType": "Other",
+          "status": 200,
+          "priority": "High",
+          "startMs": 5563,
+          "endMs": 5607,
+          "totalMs": 43951,
+          "transferSize": 1099,
+          "resourceSize": 811,
+          "protocol": "http/1.1",
+          "mimeType": "image/svg+xml"
+        }
+      ],
+      "clsSources": [
+        {
+          "score": 0.001800157885644141,
+          "node": "div.siraj-grid > div.siraj-field > label.siraj-label > span",
+          "cause": "Web font loaded",
+          "movedNode": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2"
+        },
+        {
+          "score": 0.00005709006380739944,
+          "node": "div > div#date-time-edit > div > span",
+          "cause": null,
+          "movedNode": null
+        }
+      ],
+      "tbtAttribution": {
+        "longTasks": [
+          {
+            "url": "/book/",
+            "durationMs": 300,
+            "startTime": 965
+          },
+          {
+            "url": "/book/",
+            "durationMs": 63,
+            "startTime": 1265
+          },
+          {
+            "url": "Unattributable",
+            "durationMs": 50,
+            "startTime": 2127
+          }
+        ],
+        "scriptMs": [
+          {
+            "url": "/book/",
+            "scriptingMs": 8,
+            "totalMs": 856
+          },
+          {
+            "url": "Unattributable",
+            "scriptingMs": 92,
+            "totalMs": 285
+          },
+          {
+            "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+            "scriptingMs": 36,
+            "totalMs": 56
+          }
+        ],
+        "mainthread": [
+          {
+            "durationMs": 11
+          },
+          {
+            "durationMs": 8
+          },
+          {
+            "durationMs": 150
+          },
+          {
+            "durationMs": 9
+          },
+          {
+            "durationMs": 5
+          },
+          {
+            "durationMs": 12
+          }
+        ]
+      },
+      "opportunities": [
+        {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0,
+          "displayValue": "Est savings of 115 KiB",
+          "wastedMs": 117545,
+          "items": 10
+        },
+        {
+          "id": "unminified-javascript",
+          "title": "Minify JavaScript",
+          "score": 0.5,
+          "displayValue": "Est savings of 12 KiB",
+          "wastedMs": 11963,
+          "items": 2
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "displayValue": "Est savings of 160 ms",
+          "wastedMs": 1242,
+          "items": 3
+        },
+        {
+          "id": "speed-index",
+          "title": "Speed Index",
+          "score": 0.23,
+          "displayValue": "7.9 s",
+          "wastedMs": 0,
+          "items": 0
+        },
+        {
+          "id": "server-response-time",
+          "title": "Reduce initial server response time",
+          "score": 0,
+          "displayValue": "Root document took 4,860 ms",
+          "wastedMs": 0,
+          "items": 1
+        },
+        {
+          "id": "robots-txt",
+          "title": "robots.txt is not valid",
+          "score": 0,
+          "displayValue": null,
+          "wastedMs": 0,
+          "items": 0
+        },
+        {
+          "id": "bf-cache",
+          "title": "Page prevented back/forward cache restoration",
+          "score": 0,
+          "displayValue": "1 failure reason",
+          "wastedMs": 0,
+          "items": 1
+        },
+        {
+          "id": "document-latency-insight",
+          "title": "Document request latency",
+          "score": 0,
+          "displayValue": "Est savings of 4,760 ms",
+          "wastedMs": 0,
+          "items": 0
+        },
+        {
+          "id": "lcp-breakdown-insight",
+          "title": "LCP breakdown",
+          "score": 0,
+          "displayValue": null,
+          "wastedMs": 0,
+          "items": 2
+        },
+        {
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "displayValue": null,
+          "wastedMs": 0,
+          "items": 3
+        }
+      ],
+      "failedAudits": [
+        "speed-index",
+        "server-response-time",
+        "unminified-javascript",
+        "robots-txt",
+        "bf-cache",
+        "cache-insight",
+        "document-latency-insight",
+        "lcp-breakdown-insight",
+        "network-dependency-tree-insight",
+        "render-blocking-insight"
+      ],
+      "slowRequests": [
+        {
+          "url": "/book/",
+          "resourceType": "Document",
+          "status": 200,
+          "priority": "VeryHigh",
+          "startMs": 1,
+          "endMs": 4890,
+          "totalMs": 4888535,
+          "transferSize": 16386,
+          "resourceSize": 67780,
+          "protocol": "http/1.1",
+          "mimeType": "text/html"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/logo-mark.svg",
+          "resourceType": "Image",
+          "status": 200,
+          "priority": "High",
+          "startMs": 5027,
+          "endMs": 5369,
+          "totalMs": 341421,
+          "transferSize": 1167,
+          "resourceSize": 879,
+          "protocol": "http/1.1",
+          "mimeType": "image/svg+xml"
+        },
+        {
+          "url": "/wp-includes/js/dist/script-modules/block-library/navigation/view.js?ver=1bf28ded04f9f188bdcb",
+          "resourceType": "Script",
+          "status": 200,
+          "priority": "Low",
+          "startMs": 4899,
+          "endMs": 5203,
+          "totalMs": 304397,
+          "transferSize": 1774,
+          "resourceSize": 6027,
+          "protocol": "http/1.1",
+          "mimeType": "text/javascript"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+          "resourceType": "Font",
+          "status": 200,
+          "priority": "VeryHigh",
+          "startMs": 5177,
+          "endMs": 5430,
+          "totalMs": 253040,
+          "transferSize": 30428,
+          "resourceSize": 30140,
+          "protocol": "http/1.1",
+          "mimeType": "font/woff2"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+          "resourceType": "Font",
+          "status": 200,
+          "priority": "VeryHigh",
+          "startMs": 5181,
+          "endMs": 5427,
+          "totalMs": 245902,
+          "transferSize": 31636,
+          "resourceSize": 31348,
+          "protocol": "http/1.1",
+          "mimeType": "font/woff2"
+        },
+        {
+          "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+          "resourceType": "Script",
+          "status": 200,
+          "priority": "Low",
+          "startMs": 4895,
+          "endMs": 5080,
+          "totalMs": 185756,
+          "transferSize": 28051,
+          "resourceSize": 107579,
+          "protocol": "http/1.1",
+          "mimeType": "text/javascript"
+        },
+        {
+          "url": "blob:/31165718-0734-4406-aada-ac0e12bb1e0a",
+          "resourceType": "Script",
+          "status": 200,
+          "priority": "VeryLow",
+          "startMs": 5219,
+          "endMs": 5389,
+          "totalMs": 170548,
+          "transferSize": -1,
+          "resourceSize": 5074,
+          "protocol": "blob",
+          "mimeType": "text/javascript"
+        },
+        {
+          "url": "/wp-includes/js/twemoji.js?ver=7.1.3",
+          "resourceType": "Script",
+          "status": 200,
+          "priority": "Low",
+          "startMs": 5390,
+          "endMs": 5556,
+          "totalMs": 165562,
+          "transferSize": 9230,
+          "resourceSize": 37769,
+          "protocol": "http/1.1",
+          "mimeType": "text/javascript"
+        },
+        {
+          "url": "/wp-includes/js/wp-emoji.js?ver=7.1.3",
+          "resourceType": "Script",
+          "status": 200,
+          "priority": "Low",
+          "startMs": 5390,
+          "endMs": 5546,
+          "totalMs": 155790,
+          "transferSize": 3732,
+          "resourceSize": 9087,
+          "protocol": "http/1.1",
+          "mimeType": "text/javascript"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+          "resourceType": "Stylesheet",
+          "status": 200,
+          "priority": "VeryHigh",
+          "startMs": 4893,
+          "endMs": 5023,
+          "totalMs": 129658,
+          "transferSize": 973,
+          "resourceSize": 6035,
+          "protocol": "http/1.1",
+          "mimeType": "text/css"
+        },
+        {
+          "url": "/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+          "resourceType": "Stylesheet",
+          "status": 200,
+          "priority": "VeryHigh",
+          "startMs": 4889,
+          "endMs": 5013,
+          "totalMs": 123885,
+          "transferSize": 4124,
+          "resourceSize": 25575,
+          "protocol": "http/1.1",
+          "mimeType": "text/css"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+          "resourceType": "Stylesheet",
+          "status": 200,
+          "priority": "VeryHigh",
+          "startMs": 4894,
+          "endMs": 4975,
+          "totalMs": 81044,
+          "transferSize": 6430,
+          "resourceSize": 20301,
+          "protocol": "http/1.1",
+          "mimeType": "text/css"
+        },
+        {
+          "url": "/wp-content/themes/siraj-theme/assets/img/favicon.svg",
+          "resourceType": "Other",
+          "status": 200,
+          "priority": "High",
+          "startMs": 5563,
+          "endMs": 5607,
+          "totalMs": 43951,
+          "transferSize": 1099,
+          "resourceSize": 811,
+          "protocol": "http/1.1",
+          "mimeType": "image/svg+xml"
+        }
+      ],
+      "insights": {
+        "render-blocking-insight": {
+          "score": 0,
+          "displayValue": "Est savings of 160 ms",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "timespanMs",
+                "label": "Duration"
+              }
+            ],
+            "items": [
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+                "totalBytes": 973,
+                "wastedMs": 464
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+                "totalBytes": 4124,
+                "wastedMs": 314
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+                "totalBytes": 6430,
+                "wastedMs": 464
+              }
+            ]
+          }
+        },
+        "image-delivery-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": ""
+              },
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL",
+                "subItemsHeading": {
+                  "key": "reason",
+                  "valueType": "text"
+                }
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Resource Size"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "label": "Est Savings",
+                "subItemsHeading": {
+                  "key": "wastedBytes",
+                  "valueType": "bytes"
+                }
+              }
+            ],
+            "items": [],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 0
+            }
+          }
+        },
+        "cache-insight": {
+          "score": 0,
+          "displayValue": "Est savings of 115 KiB",
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "Request"
+              },
+              {
+                "key": "cacheLifetimeMs",
+                "valueType": "ms",
+                "label": "Cache TTL",
+                "displayUnit": "duration"
+              },
+              {
+                "key": "totalBytes",
+                "valueType": "bytes",
+                "label": "Transfer Size",
+                "displayUnit": "kb",
+                "granularity": 1
+              }
+            ],
+            "items": [
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 31636,
+                "wastedBytes": 31636
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 30428,
+                "wastedBytes": 30428
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 28051,
+                "wastedBytes": 28051
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/twemoji.js?ver=7.1.3",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 9230,
+                "wastedBytes": 9230
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 6430,
+                "wastedBytes": 6430
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 4124,
+                "wastedBytes": 4124
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/wp-emoji.js?ver=7.1.3",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 3732,
+                "wastedBytes": 3732
+              },
+              {
+                "url": "http://localhost:8889/wp-includes/js/dist/script-modules/block-library/navigation/view.js?ver=1bf28ded04f9f188bdcb",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 1774,
+                "wastedBytes": 1774
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/img/logo-mark.svg",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 1167,
+                "wastedBytes": 1167
+              },
+              {
+                "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+                "cacheLifetimeMs": 0,
+                "totalBytes": 973,
+                "wastedBytes": 973
+              }
+            ],
+            "sortedBy": [
+              "wastedBytes"
+            ],
+            "skipSumming": [
+              "cacheLifetimeMs"
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 117545
+            }
+          }
+        },
+        "font-display-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "wastedMs",
+                "valueType": "ms",
+                "label": "Est Savings"
+              }
+            ],
+            "items": [],
+            "skipSumming": [
+              "wastedMs"
+            ]
+          }
+        },
+        "network-dependency-tree-insight": {
+          "score": 0,
+          "displayValue": null,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "list-section",
+                "value": {
+                  "type": "network-tree",
+                  "chains": {
+                    "13E96EEF6AC0857F12BA5E51044A55D1": {
+                      "url": "http://localhost:8889/book/",
+                      "navStartToEndTime": 4891,
+                      "transferSize": 16386,
+                      "isLongest": true,
+                      "children": {
+                        "16964.4": {
+                          "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+                          "navStartToEndTime": 5024,
+                          "transferSize": 973,
+                          "isLongest": true,
+                          "children": {
+                            "16964.12": {
+                              "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+                              "navStartToEndTime": 5494,
+                              "transferSize": 30428,
+                              "isLongest": true,
+                              "children": {}
+                            },
+                            "16964.11": {
+                              "url": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+                              "navStartToEndTime": 5462,
+                              "transferSize": 31636,
+                              "children": {}
+                            }
+                          }
+                        },
+                        "16964.2": {
+                          "url": "http://localhost:8889/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+                          "navStartToEndTime": 5014,
+                          "transferSize": 4124,
+                          "children": {}
+                        },
+                        "16964.5": {
+                          "url": "http://localhost:8889/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+                          "navStartToEndTime": 4977,
+                          "transferSize": 6430,
+                          "children": {}
+                        }
+                      }
+                    }
+                  },
+                  "longestChain": {
+                    "duration": 5494
+                  }
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnected origins",
+                "description": "[preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints help the browser establish a connection earlier in the page load, saving time when the first request for that origin is made. The following are the origins that the page preconnected to.",
+                "value": {
+                  "type": "text",
+                  "value": "no origins were preconnected"
+                }
+              },
+              {
+                "type": "list-section",
+                "title": "Preconnect candidates",
+                "description": "Add [preconnect](https://developer.chrome.com/docs/lighthouse/performance/uses-rel-preconnect/) hints to your most important origins, but try to use no more than 4.",
+                "value": {
+                  "type": "text",
+                  "value": "No additional origins are good candidates for preconnecting"
+                }
+              }
+            ]
+          }
+        },
+        "document-latency-insight": {
+          "score": 0,
+          "displayValue": "Est savings of 4,760 ms",
+          "details": {
+            "type": "checklist",
+            "items": {
+              "noRedirects": {
+                "label": "Avoids redirects",
+                "value": true
+              },
+              "serverResponseIsFast": {
+                "label": "Server responded slowly (observed 4857 ms)",
+                "value": false
+              },
+              "usesCompression": {
+                "label": "Applies text compression",
+                "value": true
+              }
+            },
+            "debugData": {
+              "type": "debugdata",
+              "redirectDuration": 0,
+              "serverResponseTime": 4857,
+              "uncompressedResponseBytes": 0,
+              "wastedBytes": 0
+            }
+          }
+        },
+        "dom-size-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "statistic",
+                "valueType": "text",
+                "label": "Statistic"
+              },
+              {
+                "key": "node",
+                "valueType": "node",
+                "label": "Element"
+              },
+              {
+                "key": "value",
+                "valueType": "numeric",
+                "label": "Value"
+              }
+            ],
+            "items": [
+              {
+                "statistic": "Total elements",
+                "value": {
+                  "type": "numeric",
+                  "granularity": 1,
+                  "value": 101
+                }
+              },
+              {
+                "statistic": "DOM depth",
+                "node": {
+                  "type": "node",
+                  "lhId": "page-8-SPAN",
+                  "path": "1,HTML,1,BODY,1,DIV,0,DIV,0,HEADER,0,DIV,1,NAV,1,DIV,0,DIV,0,DIV,1,DIV,0,UL,0,LI,0,A,0,SPAN",
+                  "selector": "ul.wp-block-navigation__container > li.wp-block-navigation-item > a.wp-block-navigation-item__content > span.wp-block-navigation-item__label",
+                  "boundingRect": {
+                    "top": 0,
+                    "bottom": 0,
+                    "left": 0,
+                    "right": 0,
+                    "width": 0,
+                    "height": 0
+                  },
+                  "snippet": "<span class=\"wp-block-navigation-item__label\">",
+                  "nodeLabel": "الخدمات"
+                },
+                "value": {
+                  "type": "numeric",
+                  "granularity": 1,
+                  "value": 14
+                }
+              },
+              {
+                "statistic": "Most children",
+                "node": {
+                  "type": "node",
+                  "lhId": "page-7-SELECT",
+                  "path": "1,HTML,1,BODY,1,DIV,1,MAIN,1,DIV,1,DIV,0,FORM,1,DIV,2,DIV,1,SELECT",
+                  "selector": "form > div.siraj-grid > div.siraj-field > select#siraj-service-1",
+                  "boundingRect": {
+                    "top": 644,
+                    "bottom": 696,
+                    "left": 49,
+                    "right": 341,
+                    "width": 292,
+                    "height": 52
+                  },
+                  "snippet": "<select class=\"siraj-select\" id=\"siraj-service-1\" name=\"siraj_service\" aria-required=\"true\">",
+                  "nodeLabel": "من فضلك اختر الخدمة\nتنظيف وتلميع\nعلاج عصب\nحشو تجميلي\nتقويم\nزراعة\nفحص وتشخيص"
+                },
+                "value": {
+                  "type": "numeric",
+                  "granularity": 1,
+                  "value": 7
+                }
+              }
+            ],
+            "debugData": {
+              "type": "debugdata",
+              "totalElements": 101,
+              "maxChildren": 7,
+              "maxDepth": 14
+            }
+          }
+        },
+        "third-parties-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "entity",
+                "valueType": "text",
+                "label": "3rd party",
+                "subItemsHeading": {
+                  "key": "url",
+                  "valueType": "url"
+                }
+              },
+              {
+                "key": "transferSize",
+                "granularity": 1,
+                "valueType": "bytes",
+                "label": "Transfer size",
+                "subItemsHeading": {
+                  "key": "transferSize"
+                }
+              },
+              {
+                "key": "mainThreadTime",
+                "granularity": 1,
+                "valueType": "ms",
+                "label": "Main thread time",
+                "subItemsHeading": {
+                  "key": "mainThreadTime"
+                }
+              }
+            ],
+            "items": []
+          }
+        },
+        "forced-reflow-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "source",
+                    "valueType": "source-location",
+                    "label": "Source"
+                  },
+                  {
+                    "key": "reflowTime",
+                    "valueType": "ms",
+                    "granularity": 1,
+                    "label": "Total reflow time"
+                  }
+                ],
+                "items": []
+              }
+            ]
+          }
+        },
+        "cls-culprits-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "list",
+            "items": [
+              {
+                "type": "table",
+                "headings": [
+                  {
+                    "key": "node",
+                    "valueType": "node",
+                    "subItemsHeading": {
+                      "key": "extra"
+                    },
+                    "label": "Element"
+                  },
+                  {
+                    "key": "score",
+                    "valueType": "numeric",
+                    "subItemsHeading": {
+                      "key": "cause",
+                      "valueType": "text"
+                    },
+                    "granularity": 0.001,
+                    "label": "Layout shift score"
+                  }
+                ],
+                "items": [
+                  {
+                    "node": {
+                      "type": "text",
+                      "value": "Total"
+                    },
+                    "score": 0.0018572479494515404
+                  },
+                  {
+                    "node": {
+                      "type": "node",
+                      "lhId": "page-1-SPAN",
+                      "path": "1,HTML,1,BODY,1,DIV,1,MAIN,1,DIV,1,DIV,0,FORM,1,DIV,1,DIV,0,LABEL,1,SPAN",
+                      "selector": "div.siraj-grid > div.siraj-field > label.siraj-label > span",
+                      "boundingRect": {
+                        "top": 436,
+                        "bottom": 455,
+                        "left": 236,
+                        "right": 242,
+                        "width": 6,
+                        "height": 19
+                      },
+                      "snippet": "<span aria-hidden=\"true\">",
+                      "nodeLabel": "*"
+                    },
+                    "score": 0.001800157885644141,
+                    "subItems": {
+                      "type": "subitems",
+                      "items": [
+                        {
+                          "extra": {
+                            "type": "url",
+                            "value": "http://localhost:8889/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2"
+                          },
+                          "cause": "Web font"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "node": {
+                      "type": "node",
+                      "lhId": "page-5-SPAN",
+                      "path": "1,HTML,1,BODY,1,DIV,1,MAIN,1,DIV,1,DIV,0,FORM,1,DIV,3,DIV,1,INPUT,a,#document-fragment,0,DIV,0,DIV,0,DIV,4,SPAN",
+                      "selector": "div > div#date-time-edit > div > span",
+                      "boundingRect": {
+                        "top": 767,
+                        "bottom": 788,
+                        "left": 136,
+                        "right": 172,
+                        "width": 36,
+                        "height": 21
+                      },
+                      "snippet": "<span role=\"spinbutton\" aria-placeholder=\"yyyy\" aria-valuemin=\"2026\" aria-valuemax=\"275760\" aria-label=\"Year\" pseudo=\"-webkit-datetime-edit-year-field\">",
+                      "nodeLabel": "yyyy"
+                    },
+                    "score": 0.00005709006380739944
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "duplicated-javascript-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "source",
+                "valueType": "code",
+                "subItemsHeading": {
+                  "key": "url",
+                  "valueType": "url"
+                },
+                "label": "Source"
+              },
+              {
+                "key": "wastedBytes",
+                "valueType": "bytes",
+                "subItemsHeading": {
+                  "key": "sourceTransferBytes"
+                },
+                "granularity": 10,
+                "label": "Duplicated bytes"
+              }
+            ],
+            "items": [],
+            "debugData": {
+              "type": "debugdata",
+              "wastedBytes": 0
+            }
+          }
+        },
+        "modern-http-insight": {
+          "score": 1,
+          "displayValue": null,
+          "details": {
+            "type": "table",
+            "headings": [
+              {
+                "key": "url",
+                "valueType": "url",
+                "label": "URL"
+              },
+              {
+                "key": "protocol",
+                "valueType": "text",
+                "label": "Protocol"
+              }
+            ],
+            "items": []
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+﻿node.exe : i Starting 'wp post list --post_type=page --fields=ID,post_name,comment_status --format=csv' on the cli 
+container. 
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (i Starting 'wp ...cli container. :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+ID,post_name,comment_status
+14,privacy,closed
+13,shipping-returns,closed
+12,contact,closed
+11,about,closed
+10,home,closed
+5,shop,closed
+6,cart,closed
+7,checkout,closed
+8,my-account,closed
+9,refund_returns,closed
+3,privacy-policy,closed
+ΓêÜ Ran `wp post list --post_type=page --fields=ID,post_name,comment_status --format=csv` in 'cli'. (in 30s 233ms)

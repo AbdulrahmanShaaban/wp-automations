@@ -1,0 +1,70 @@
+# Plan — P1: Arabic-first WooCommerce fashion store (Demo)
+
+Brief: `docs/` + `design/brief.md`. Master instructions: `OPENCODE_MASTER_BRIEF.md` (owner's workspace). Market: `MARKET_RESEARCH.md`.
+
+## Current State
+**Phase 2 (Foundation) complete, 2026-10-01** — wp-env live at `http://localhost:8888` (WP 7.1.2 / Woo 11.1.2 / PHP 8.3), block theme `nilad-theme` renders the approved design A (RTL, palette verified by pixel probes), plugin `nilad-core` active, 5 Arabic pages + front page + EGP/0-decimals/COD seeded. **`scripts/reset.sh` proven green end-to-end: destroy → start → seed → verify, 17/17 checks PASS**; seed re-run idempotent (no duplicate pages). **Homepage load: 8–24s → ~1.7–2.0s** after the bind-mount performance fix (`scripts/php-tune.js` ini + deferred WooCommerce block registration in `nilad-core` — DECISIONS `opcache-validate-timestamps-off` + `deferred-wc-block-registration`; full story in PROBLEMS "8–24 seconds"). Added missing `page.html`/`single.html` templates (pages were rendering empty bodies). Evidence: `design/shots/foundation-{1440,390}{,-top}.png` (re-captured post-fix) + `docs/PROBLEMS.md` entries (6 fixed this phase).
+
+**Phase 3 (Build) complete, 2026-10-02** — homepage sections built section-by-section against `design/APPROVED.md` (`b4-home-{1440,390}`, heights within ~1% of reference); header sticky/blurred with curated inline nav + ghost cart pill + CTA, mobile <900px matches the approved reference (logo right / cart pill center / CTA left, no hamburger); 4 content pages seeded and screenshot-verified (`b5-*`); catalog seeded (8 categories, 8 products w/ placeholder imagery, shipping zone مصر, COD+BACS, EGP symbol filter, reviews off); **storefront incidents fixed**: WooCommerce "coming soon" empty-template mode, baked-English cart content + `Category: ` prefix (`b8-*`/`b9-*`), **free-shipping threshold bug** (seed wrote `minimum_amount`, WC reads `min_amount` → threshold silently 0; fixed + converged every seed run, verified at 1,250/1,630 via Store API — PROBLEMS 2026-10-02), **checkout missing site header** (WC's `page-checkout.html` shipped a logo-only `checkout-header`; theme `templates/page-checkout.html` override restores full header + footer — DECISIONS `checkout-header-override`); mobile bottom action dock added (cart + WhatsApp placeholder, `b12-dock-*`); full idempotent `seed.sh` re-run (`SEED_MARKER_DONE=0`) + `verify.sh` **17/17 ALL PASS**; final evidence: `b11/b12` (mobile), `b17-cart-1440`, `b17-checkout-{full,vp}-1440`; `OWNER-BRIEF/03-build.md` delivered.
+
+**Phase 4 (Commerce) complete, 2026-10-03 (owner-blocked item: Paymob live keys)** — **seed rewritten to a single wp-cli boot** (`seed-wp.php` includes `seed-catalog.php`, page HTML moved into `nilad-core/assets/content/`; 40+ min → **~50s**, DECISIONS `seed-single-boot`); Egyptian shipping: two zones (القاهرة والجيزة flat 60 / باقي المحافظات flat 90, free ≥1,500 — DECISIONS `egypt-governorate-zones`); phone validated+normalized at the Store API with Arabic 400 (DECISIONS `storeapi-phone-validation`); branded Arabic order emails captured locally (`نيلاد <orders@nilad.example.com>`, DECISIONS `local-mail-capture`); official `paymob-for-woocommerce` installed+activated (DECISIONS `paymob-official-plugin`, live runs NOT VERIFIED — owner keys); free-shipping notice Store-API bug fixed (`total_items`, DECISIONS `store-api-total-items`); **browser e2e `scripts/phase4-test.js` → 9/9 PASS** (evidence `b18-*`: notice both sides, rates 60/90/free, invalid-phone 400 banner, COD order #50 received); CLI evidence `check-phase4.php` (order #50 canonical phone `01012345678`, EGC/القاهرة/11511, total 1,310, mail-log Arabic + branded From); `verify.sh` extended (lint ×6 + phase-4 commerce checks) → **ALL PASS**. PROBLEMS 2026-10-03: 6 new entries (NaN notice, postcode gate, detached-frame, PowerShell mojibake, empty mail From, Paymob owner-blocked).
+
+## In Progress
+- [x] Brand name approved: **نيلاد / Nilad** (DECISIONS.md `brand-name`)
+- [ ] Phase 0 Discovery — remaining owner items in `docs/ASSETS_TODO.md` (Docker ✅ running; Paymob/Telegram/Sheet/images can land later per phase)
+- [x] **Phase 5 Automation — complete (2026-10-03), live-verified for F1 (2026-10-04)** — P2 "Order Ops Suite" delivered per the 10-line spec below: 8 workflow JSONs in `n8n/workflows/` (F1–F7 + shared Error Workflow), `n8n/CONVENTIONS.md`, `n8n/README.md`, `n8n/.env.example`, `n8n/runbooks.md`, test harness `n8n/tests/` → **87/87 PASS**, real-import validation **8/8 on n8n 2.41.6** (`n8n/tests/import-evidence.txt`), `verify.sh` extended with §9 (n8n logic tests), `OWNER-BRIEF/05-automation.md` delivered. **Live (2026-10-04):** real n8n 2.41.6 in Docker with the 8 workflows imported+published+activated and the shared Error Workflow attached; a signed webhook runs F1 to `success` with the Arabic Telegram alert delivered, a tampered signature is rejected and the Error Workflow fires (`n8n/tests/live-e2e-evidence.txt`). Telegram token/chat verified live. Still owner-blocked: Google Sheet write (credential login), SMTP, schedule observation, store→webhook hop from a public URL. Original spec:
+  1. Triggers: F1/F2 = WooCommerce webhooks (`order.created`/`order.updated`, HMAC `X-WC-Webhook-Signature`); F3/F4/F5/F6 = schedules (Africa/Cairo); F7 = Error Workflow + site health schedule.
+  2. Outcomes: F1 Telegram+Sheet row; F2 Arabic customer email on processing/shipped/completed; F3 pending-order reminder + owner alert (stop if paid); F4 low-stock Telegram; F5 09:00 daily summary; F6 review email 5 days after completed; F7 failure alert + HTTP/SSL check.
+  3. Data: order id/total/items/governorate/phone (normalized `+20…`, masked in logs) — PII stays in Telegram/Sheet/email targets only, never in error alerts beyond order id.
+  4. Credentials (owner-owned, NEVER in chat/nodes): Telegram bot token (ASSETS_TODO #4), Google Sheet + OAuth (ASSETS_TODO #5), WooCommerce webhook secret, SMTP for F2/F6 (Phase 6/7).
+  5. Failure policy: every workflow attached to one shared **Error Workflow** (Telegram alert w/ workflow+node+execution link); webhooks respond 200 fast, process async; duplicates dropped by order-id idempotency.
+  6. Idempotency key = WooCommerce order id (+ event type for F2) checked before side effects.
+  7. Validation at entry: required fields present, phone normalized, amounts numeric — reject early with clear log.
+  8. Tests: pinned sample payloads — happy, duplicate, missing field, bad signature — unit-tested on shared pure functions in `n8n/tests/` (runs without n8n); structural import validation in a local n8n container if the host allows.
+  9. Deliverables: exported JSON per flow in `n8n/workflows/`, runbook in `n8n/runbooks.md`, README, `OWNER-BRIEF/05-automation.md`; live Telegram/Sheet/email screenshots = **owner-credential-blocked** (recorded NOT VERIFIED until tokens exist).
+  10. License rule: demo runs on owner's own n8n (DECISIONS `n8n-hosting-rule`); no client production on our server.
+
+## Next (phases per OPENCODE_MASTER_BRIEF Part 7)
+- [x] Phase 1 Design: 3 previews (1440/390) → owner approval → `design/APPROVED.md` — **gate passed**: owner picked **A** + B elements merged (colored H1 word, editorial H1, sticky section titles, reveal-on-scroll, ghost hero CTA), 4 A-shots pixel-verified; 18-site pattern study → `docs/REFERENCE-SITES.md`
+- [x] Phase 2 Foundation: `.wp-env.json`, block theme from approved tokens, `nilad-core`, idempotent `seed.sh`, `reset.sh`, `verify.sh` — **all green (17/17)**; machine workarounds scripted (`patch-wp-env.js`, MSYS exclusions — DECISIONS `wp-env-workarounds`); perf fix + `page.html`/`single.html` (PROBLEMS "8–24 seconds")
+- [x] Phase 3 Build: **complete (2026-10-02)** — homepage (`b2–b4-*`), content pages (`b5-*`), catalog/shop/product/cart/404/account (`b7–b10-*`), mobile header + dock (`b11/b12-*`), checkout (`b17-*`); incidents fixed (PROBLEMS 2026-10-02: coming-soon, baked-English, shipping threshold, checkout header, fullPage capture); seed re-run + verify 17/17; `OWNER-BRIEF/03-build.md` written — owner report delivered in chat
+- [x] Phase 4 Commerce: **complete 2026-10-03** — governorate zones ✅, COD ✅, phone validation ✅, Arabic order emails ✅, e2e 9/9 + verify ALL PASS; Paymob plugin installed — **live test-mode runs owner-blocked** (ASSETS_TODO #3 → NOT VERIFIED until keys)
+- [x] Phase 5 Automation: P2 "Order Ops Suite" flows F1–F7 — **complete 2026-10-03** (8 JSONs, 87/87 tests, import 8/8; live sends owner-blocked → NOT VERIFIED)
+- [x] Phase 6 QA: **complete 2026-10-04** — security 9/9 + SEO 15/15 on all 6 pages, Lighthouse a11y **100** / best-practices 96–100, axe clean on home/shop/product/contact, **0** sub-24px touch targets; performance is environment-bound and documented as a deployment item (`docs/QA-REPORT.md`)
+- [x] Phase 7 Package: **complete 2026-10-04** — `docs/CASE-STUDY.md` (portfolio narrative with the verification table), `docs/CLIENT-QA.md` extended to **19** client answers (+automation, +security, +speed, +monitoring), `README.md` rewritten for the finished project, portfolio evidence indexed in `docs/99-final.md` §6
+- [x] Phase 8 Final report: **complete 2026-10-04** — `docs/99-final.md` in the owner's Senior-Architect structure, every number cross-checked against `design/qa/qa-summary.json` and the live n8n evidence file
+
+## Recently Completed
+- [x] Phase 6 QA (2026-10-04) — `scripts/qa-audit.js` (Lighthouse mobile ×2 passes + axe-core WCAG 2.1 AA + SEO + security headers over 6 pages; the cart is seeded through the Store API so `/checkout/` is measured as the real checkout, not an empty-cart redirect) → **`docs/QA-REPORT.md`** + 12 Lighthouse JSONs in `design/qa/`. Result: **security 9/9 and SEO 15/15 on all six pages**, **Lighthouse accessibility 100 and best-practices 96–100 on every page**, axe clean on home/shop/product/contact, **0 sub-24px touch targets anywhere**. Fixed this phase: 4 missing security headers, meta description + Open Graph + JSON-LD (Organization/WebSite/Product) + canonical, duplicate `h1` (site title demoted to `<p>`), page content outside landmarks, WCAG 2.2 target sizes, a `.screen-reader-text` utility, and a seeded 1200×630 OG image. Performance (6–92) is **environment-bound**: the DB is fast (0.075s for all products) while PHP over the wp-env bind mount answers in 1.7–10.5s — documented as a deployment item, not a code defect.
+- [x] Phase 5 Automation (2026-10-03) — F1–F7 + Error Workflow JSONs, CONVENTIONS/README/.env.example/runbooks, 87/87 logic tests, n8n 2.41.6 import 8/8, verify.sh §9; owner brief 05 delivered
+- [x] Phase 4 Commerce (2026-10-03) — zones, phone hook, mail capture, Paymob plugin, e2e 9/9, verify extended
+- [x] Seed single-boot rewrite (2026-10-03) — 40+ min → ~50s (DECISIONS `seed-single-boot`)
+- [x] Repo + docs scaffold (2026-10-01)
+- [x] Phase 1 Design gate (2026-10-01) — approved A + merges; `design/APPROVED.md`
+- [x] Phase 2 Foundation (2026-10-01) — green `reset.sh`; `docs/OWNER-BRIEF/01-design.md` + `02-foundation.md`
+- [x] Homepage performance fix (2026-10-01) — 8–24s → ~1.7–2.0s; deferred WC block registration + php-tune lifecycle; verify 17/17
+
+## Phase 9 — Launch gate + remediation (2026-10-07)
+Three read-only audits ran on 2026-10-06 (`docs/AUDIT/security.md` 18 findings, `a11y-arabic.md` 12 + `arabic-rtl` §10 15/5/2, `perf-seo.md` 15) and `docs/AUDIT/GATE-2026-10-06.md` issued **NO-GO** with 7 blockers. All 7 are fixed and re-verified on the live site — gate re-issued **GO (conditional on the accepted risks)**.
+
+- **B1** webhook HMAC secret out of source + rotated (wp option `nilad_n8n_webhook_secret` is canonical; `scripts/sync-webhook-secret.js` propagates it into `n8n/.env`; no literal anywhere)
+- **B2** handoff zip is safe by construction (`npm run dist` → `dist/nilad-source-*.zip`, 385 entries, verified free of `.env` / `.local.txt` / `.log` / `.git` / `node_modules`)
+- **B3** mobile navigation restored (core overlay menu; the header's `backdrop-filter` had to be released via `html.has-modal-open` or the overlay collapses)
+- **B4** `#cats` / `#best` / `#about` anchors resolve
+- **B5** homepage content stays visible without JS
+- **B6** block-checkout `autocomplete="email"` + `inputmode`/`dir` (the only serious axe violation is gone; axe @390 home/checkout = 0)
+- **B7** user enumeration + XML-RPC + login throttle closed, uploads script execution denied by a seeded `.htaccess`
+- SEO correctness also closed: single canonical per page, one `Product` JSON-LD (Woo owns it), sitemap free of noindex/author/sample URLs, `hello-world` deleted and comments closed by default
+- a11y polish: truthful "اتفرج على المتجر" labels (8×), `lang="en"` on the 8 `Demo` badges, ≥24px controls, `letter-spacing: 0` on Arabic
+- Evidence: `docs/AUDIT/evidence/remediation/` (`verify-fixes.txt`/`.json`, 5 screenshots, re-runnable `tools/verify-fixes.js`); the 2026-10-06 audit evidence was left intact
+- Still owner-side / deploy-side (recorded in the GATE's remaining risks): rotate the Telegram token + Google OAuth secret, Paymob live keys, hosting re-measure (TTFB/Cache-Control/HSTS/CSP), self-host Cairo before public launch
+
+## Risks
+| Risk | Impact | Mitigation |
+|---|---|---|
+| Brand name undecided | Theme/slug rename gets expensive after Phase 2 | ~~Decide before Phase 2~~ — done: **نيلاد / Nilad** (2026-10-01) |
+| Paymob test account late | Blocks Phase 4 | Owner starts account creation now |
+| Design looks generic (weak-model weakness) | Lower price perception | ~~Design gate~~ — passed (A + merges), keep referencing `design/APPROVED.md` |
+| Docker Desktop not running / engine dies | Blocks any build | Scripted pattern: check `docker info`, restart Desktop, re-run `reset.sh` (PROBLEMS 2026-10-01) |
+| wp-env update re-breaks username patch | `reset.sh` fails at image build | `patch-wp-env.js` idempotent + runs on `postinstall` and in `reset.sh`; marker detects |
+| Market numbers drift | Positioning | Re-check monthly (MARKET_RESEARCH §8) |

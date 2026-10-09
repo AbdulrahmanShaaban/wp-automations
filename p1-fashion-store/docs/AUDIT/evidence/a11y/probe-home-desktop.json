@@ -1,0 +1,1022 @@
+{
+ "page": "home",
+ "url": "http://localhost:8888/",
+ "viewport": {
+  "name": "desktop",
+  "w": 1440,
+  "h": 900,
+  "mobile": false
+ },
+ "cartState": null,
+ "probe": {
+  "lang": "ar",
+  "dir": "rtl",
+  "title": "نيلاد – أزياء وإكسسوارات — متجر تجريبي (Demo)",
+  "viewportMeta": "width=device-width, initial-scale=1",
+  "url": "/",
+  "headings": [
+   {
+    "level": 1,
+    "text": "قطع تلبسها كل يوم، بجودة تحسّها",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "وصل حديثًا",
+    "visible": true
+   },
+   {
+    "level": 3,
+    "text": "عباية كتان مطرّزة",
+    "visible": true
+   },
+   {
+    "level": 3,
+    "text": "حقيبة كتف جلد طبيعي",
+    "visible": true
+   },
+   {
+    "level": 3,
+    "text": "ساعة كلاسيك معدنية",
+    "visible": true
+   },
+   {
+    "level": 3,
+    "text": "نظارة شمسية كلاسيك",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "ابدأ من هنا",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "مختارات يومية، من النيل للمالبي",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "قطع بيشتريها الناس كتير",
+    "visible": true
+   },
+   {
+    "level": 3,
+    "text": "قميص قطن بسيط",
+    "visible": true
+   },
+   {
+    "level": 3,
+    "text": "شال كتان خفيف",
+    "visible": true
+   },
+   {
+    "level": 3,
+    "text": "فستان صيفي مطرّز",
+    "visible": true
+   },
+   {
+    "level": 3,
+    "text": "تيشيرت قطن أوفرسايز",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "خليك أول واحد يعرف",
+    "visible": true
+   }
+  ],
+  "h1Count": 1,
+  "hiddenHeadingCount": 0,
+  "landmarks": {
+   "header": 1,
+   "nav": 2,
+   "main": 1,
+   "footer": 1,
+   "aside": 1,
+   "bodyDirectMain": true,
+   "roleMain": 0,
+   "bannerTopLevel": false,
+   "contentinfoTopLevel": false
+  },
+  "focusableCount": 33,
+  "firstFocusable": [
+   {
+    "tag": "a",
+    "text": "تخطى إلى المحتوى",
+    "href": "#wp--skip-link--target",
+    "cls": "skip-link screen-reader-text"
+   },
+   {
+    "tag": "a",
+    "text": "نيلاد",
+    "href": "http://localhost:8888",
+    "cls": ""
+   },
+   {
+    "tag": "a",
+    "text": "الجديد",
+    "href": "/#new",
+    "cls": "wp-block-navigation-item__content"
+   },
+   {
+    "tag": "a",
+    "text": "التصنيفات",
+    "href": "/#cats",
+    "cls": "wp-block-navigation-item__content"
+   },
+   {
+    "tag": "a",
+    "text": "الأكثر مبيعًا",
+    "href": "/#best",
+    "cls": "wp-block-navigation-item__content"
+   },
+   {
+    "tag": "a",
+    "text": "عن نيلاد",
+    "href": "/#about",
+    "cls": "wp-block-navigation-item__content"
+   }
+  ],
+  "skipLink": {
+   "present": true,
+   "href": "#wp--skip-link--target",
+   "text": "تخطى إلى المحتوى",
+   "isFirstFocusable": true
+  },
+  "images": {
+   "total": 1,
+   "missingAlt": 0,
+   "emptyAlt": 0,
+   "sample": [
+    {
+     "alt": "🛒",
+     "src": "1f6d2.svg",
+     "w": 17
+    }
+   ],
+   "svgMissingLabel": 0
+  },
+  "digits": {
+   "latin": 48,
+   "eastern": 0,
+   "egp": 9
+  },
+  "typography": [
+   {
+    "tag": "a",
+    "cls": "skip-link screen-reader-text",
+    "text": "تخطى إلى المحتوى",
+    "letterSpacing": "normal",
+    "lineHeight": "28.9px",
+    "fontSize": "17px",
+    "fontStyle": "normal",
+    "fontFamily": "Cairo, Inter, system-ui",
+    "textAlign": "start"
+   },
+   {
+    "tag": "p",
+    "cls": "has-text-align-center has-sm-font-size wp-block-pa",
+    "text": "شحن مجاني فوق 1,500 ج.م · كاش عند الاستلام · متجر ",
+    "letterSpacing": "normal",
+    "lineHeight": "23.8px",
+    "fontSize": "14px",
+    "fontStyle": "normal",
+    "fontFamily": "Cairo, Inter, system-ui",
+    "textAlign": "center"
+   },
+   {
+    "tag": "a",
+    "cls": "",
+    "text": "نيلاد",
+    "letterSpacing": "-0.18px",
+    "lineHeight": "30.6px",
+    "fontSize": "18px",
+    "fontStyle": "normal",
+    "fontFamily": "Cairo, Inter, system-ui",
+    "textAlign": "start"
+   },
+   {
+    "tag": "h1",
+    "cls": "wp-block-heading hero-title",
+    "text": "قطع تلبسها كل يوم،",
+    "letterSpacing": "normal",
+    "lineHeight": "69px",
+    "fontSize": "60px",
+    "fontStyle": "normal",
+    "fontFamily": "Cairo, Inter, system-ui",
+    "textAlign": "start"
+   },
+   {
+    "tag": "p",
+    "cls": "lead wp-block-paragraph",
+    "text": "هدوم وإكسسوارات مختارة بعناية — ادفع كاش عند الاست",
+    "letterSpacing": "normal",
+    "lineHeight": "30.6px",
+    "fontSize": "18px",
+    "fontStyle": "normal",
+    "fontFamily": "Cairo, Inter, system-ui",
+    "textAlign": "start"
+   },
+   {
+    "tag": "h2",
+    "cls": "screen-reader-text",
+    "text": "وصل حديثًا",
+    "letterSpacing": "normal",
+    "lineHeight": "43.35px",
+    "fontSize": "25.5px",
+    "fontStyle": "normal",
+    "fontFamily": "Cairo, Inter, system-ui",
+    "textAlign": "start"
+   },
+   {
+    "tag": "span",
+    "cls": "badge sale",
+    "text": "خصم",
+    "letterSpacing": "normal",
+    "lineHeight": "20.4px",
+    "fontSize": "12px",
+    "fontStyle": "normal",
+    "fontFamily": "Cairo, Inter, system-ui",
+    "textAlign": "start"
+   },
+   {
+    "tag": "h3",
+    "cls": "",
+    "text": "عباية كتان مطرّزة",
+    "letterSpacing": "normal",
+    "lineHeight": "22.4px",
+    "fontSize": "16px",
+    "fontStyle": "normal",
+    "fontFamily": "Cairo, Inter, system-ui",
+    "textAlign": "start"
+   },
+   {
+    "tag": "h2",
+    "cls": "wp-block-heading",
+    "text": "ابدأ من هنا",
+    "letterSpacing": "normal",
+    "lineHeight": "50px",
+    "fontSize": "40px",
+    "fontStyle": "normal",
+    "fontFamily": "Cairo, Inter, system-ui",
+    "textAlign": "start"
+   }
+  ],
+  "bodyStyle": {
+   "lineHeight": "28.9px",
+   "fontSize": "17px",
+   "fontFamily": "Cairo, Inter, system-ui, -apple-system, \"Segoe UI\", Tahoma, sans-serif",
+   "letterSpacing": "normal",
+   "textAlign": "start",
+   "direction": "rtl"
+  },
+  "targets": [
+   {
+    "group": "other",
+    "tag": "a",
+    "cls": "skip-link screen-reader-text",
+    "text": "تخطى إلى المحتوى",
+    "w": 1,
+    "h": 1,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "header",
+    "tag": "a",
+    "cls": "",
+    "text": "نيلاد",
+    "w": 36.5,
+    "h": 33,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "header",
+    "tag": "a",
+    "cls": "wp-block-navigation-item__content",
+    "text": "الجديد",
+    "w": 43.4,
+    "h": 28.9,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "header",
+    "tag": "a",
+    "cls": "wp-block-navigation-item__content",
+    "text": "التصنيفات",
+    "w": 70.5,
+    "h": 28.9,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "header",
+    "tag": "a",
+    "cls": "wp-block-navigation-item__content",
+    "text": "الأكثر مبيعًا",
+    "w": 79.2,
+    "h": 28.9,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "header",
+    "tag": "a",
+    "cls": "wp-block-navigation-item__content",
+    "text": "عن نيلاد",
+    "w": 56,
+    "h": 28.9,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "header",
+    "tag": "a",
+    "cls": "wp-block-button__link has-text-color has-surface-background-",
+    "text": "السلة",
+    "w": 100.4,
+    "h": 57.5,
+    "padT": "13.339px",
+    "padB": "13.339px"
+   },
+   {
+    "group": "header",
+    "tag": "a",
+    "cls": "wp-block-button__link has-on-primary-text-color has-primary-",
+    "text": "اتسوّق الآن",
+    "w": 118.3,
+    "h": 55.5,
+    "padT": "13.339px",
+    "padB": "13.339px"
+   },
+   {
+    "group": "other",
+    "tag": "a",
+    "cls": "wp-block-button__link has-on-primary-text-color has-primary-",
+    "text": "تسوّق الجديد",
+    "w": 148.3,
+    "h": 57.5,
+    "padT": "13.339px",
+    "padB": "13.339px"
+   },
+   {
+    "group": "other",
+    "tag": "a",
+    "cls": "wp-block-button__link has-text-color has-bg-background-color",
+    "text": "شوف التصنيفات",
+    "w": 174.6,
+    "h": 57.5,
+    "padT": "13.339px",
+    "padB": "13.339px"
+   },
+   {
+    "group": "other",
+    "tag": "a",
+    "cls": "chip active",
+    "text": "الكل",
+    "w": 61.3,
+    "h": 46,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "other",
+    "tag": "a",
+    "cls": "chip",
+    "text": "هدوم",
+    "w": 69.4,
+    "h": 46,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "other",
+    "tag": "a",
+    "cls": "chip",
+    "text": "حقائب",
+    "w": 70.8,
+    "h": 46,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "other",
+    "tag": "a",
+    "cls": "chip",
+    "text": "ساعات",
+    "w": 74,
+    "h": 46,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "other",
+    "tag": "a",
+    "cls": "chip",
+    "text": "نظارات",
+    "w": 72,
+    "h": 46,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "product-card",
+    "tag": "a",
+    "cls": "p-btn",
+    "text": "أضف للسلة",
+    "w": 238,
+    "h": 44,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "product-card",
+    "tag": "a",
+    "cls": "p-btn",
+    "text": "أضف للسلة",
+    "w": 238,
+    "h": 44,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "product-card",
+    "tag": "a",
+    "cls": "p-btn",
+    "text": "أضف للسلة",
+    "w": 238,
+    "h": 44,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "product-card",
+    "tag": "a",
+    "cls": "p-btn",
+    "text": "أضف للسلة",
+    "w": 238,
+    "h": 44,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "other",
+    "tag": "a",
+    "cls": "tile reveal in",
+    "text": "هدوم",
+    "w": 252,
+    "h": 324.7,
+    "padT": "16px",
+    "padB": "16px"
+   },
+   {
+    "group": "other",
+    "tag": "a",
+    "cls": "tile reveal in",
+    "text": "حقائب",
+    "w": 252,
+    "h": 324.7,
+    "padT": "16px",
+    "padB": "16px"
+   },
+   {
+    "group": "other",
+    "tag": "a",
+    "cls": "tile reveal in",
+    "text": "ساعات",
+    "w": 252,
+    "h": 324.7,
+    "padT": "16px",
+    "padB": "16px"
+   },
+   {
+    "group": "other",
+    "tag": "a",
+    "cls": "tile reveal in",
+    "text": "نظارات",
+    "w": 252,
+    "h": 324.7,
+    "padT": "16px",
+    "padB": "16px"
+   },
+   {
+    "group": "other",
+    "tag": "a",
+    "cls": "wp-block-button__link has-text-color has-surface-background-",
+    "text": "شوف الحكاية",
+    "w": 152.5,
+    "h": 55.5,
+    "padT": "13.339px",
+    "padB": "13.339px"
+   },
+   {
+    "group": "product-card",
+    "tag": "a",
+    "cls": "p-btn",
+    "text": "أضف للسلة",
+    "w": 218,
+    "h": 44,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "product-card",
+    "tag": "a",
+    "cls": "p-btn",
+    "text": "أضف للسلة",
+    "w": 218,
+    "h": 44,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "product-card",
+    "tag": "a",
+    "cls": "p-btn",
+    "text": "أضف للسلة",
+    "w": 218,
+    "h": 44,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "product-card",
+    "tag": "a",
+    "cls": "p-btn",
+    "text": "أضف للسلة",
+    "w": 218,
+    "h": 44,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "form",
+    "tag": "input",
+    "cls": "",
+    "text": "",
+    "w": 276.5,
+    "h": 48,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "form",
+    "tag": "button",
+    "cls": "news-btn",
+    "text": "اشترك",
+    "w": 95.5,
+    "h": 48,
+    "padT": "1px",
+    "padB": "1px"
+   },
+   {
+    "group": "footer",
+    "tag": "a",
+    "cls": "",
+    "text": "الشحن والإرجاع",
+    "w": 84.7,
+    "h": 26,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "footer",
+    "tag": "a",
+    "cls": "",
+    "text": "الخصوصية",
+    "w": 59.8,
+    "h": 26,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "footer",
+    "tag": "a",
+    "cls": "",
+    "text": "تواصل معنا",
+    "w": 66.1,
+    "h": 26,
+    "padT": "0px",
+    "padB": "0px"
+   }
+  ],
+  "targetTotal": 33,
+  "forms": [
+   {
+    "tag": "input",
+    "type": "email",
+    "id": "em",
+    "name": "email",
+    "dir": null,
+    "autocomplete": null,
+    "inputmode": null,
+    "placeholder": "بريدك الإلكتروني",
+    "ariaLabel": null,
+    "labelText": "بريدك الإلكتروني",
+    "describedby": null,
+    "required": true,
+    "rect": {
+     "w": 277,
+     "h": 48
+    }
+   }
+  ],
+  "reveal": {
+   "total": 13,
+   "hiddenNow": 0,
+   "sample": [
+    {
+     "cls": "tile reveal in",
+     "opacity": "1",
+     "text": "هدوم"
+    },
+    {
+     "cls": "tile reveal in",
+     "opacity": "1",
+     "text": "حقائب"
+    },
+    {
+     "cls": "tile reveal in",
+     "opacity": "1",
+     "text": "ساعات"
+    },
+    {
+     "cls": "tile reveal in",
+     "opacity": "1",
+     "text": "نظارات"
+    },
+    {
+     "cls": "reveal in",
+     "opacity": "1",
+     "text": "كاش عند الاستلامادفع لما الشحنة توصلك"
+    },
+    {
+     "cls": "reveal in",
+     "opacity": "1",
+     "text": "شحن لكل المحافظاتمن 2–5 أيام عمل"
+    },
+    {
+     "cls": "reveal in",
+     "opacity": "1",
+     "text": "إرجاع خلال 14 يومالشروط مكتوبة في صفحة الإرجاع"
+    },
+    {
+     "cls": "reveal in",
+     "opacity": "1",
+     "text": "دفع آمنبوابة Paymob · وضع تجريبي في الديمو"
+    }
+   ]
+  },
+  "motion": {
+   "scrollBehavior": "smooth",
+   "reducedMotionQuery": false,
+   "transitionCount": 21
+  },
+  "foreignRuns": [
+   {
+    "text": "Demo",
+    "parentTag": "span",
+    "parentLang": "ar"
+   },
+   {
+    "text": "Demo",
+    "parentTag": "span",
+    "parentLang": "ar"
+   },
+   {
+    "text": "Demo",
+    "parentTag": "span",
+    "parentLang": "ar"
+   },
+   {
+    "text": "Demo",
+    "parentTag": "span",
+    "parentLang": "ar"
+   },
+   {
+    "text": "Demo",
+    "parentTag": "span",
+    "parentLang": "ar"
+   },
+   {
+    "text": "Demo",
+    "parentTag": "span",
+    "parentLang": "ar"
+   },
+   {
+    "text": "Demo",
+    "parentTag": "span",
+    "parentLang": "ar"
+   },
+   {
+    "text": "Demo",
+    "parentTag": "span",
+    "parentLang": "ar"
+   }
+  ],
+  "contrast": [
+   {
+    "sel": "body",
+    "text": "تخطى إلى المحتوى شحن مجاني فوق 1,500 ج.م · كا",
+    "fg": "rgb(27, 26, 23)",
+    "bg": "rgb(250, 248, 244)",
+    "bgImage": false,
+    "bgEl": "rtl home wp-singular page-template-default page pa",
+    "fontSize": 17,
+    "fontWeight": 400,
+    "lineHeight": "28.9px",
+    "w": 1440,
+    "h": 3940
+   },
+   {
+    "sel": ".hero .lead",
+    "text": "هدوم وإكسسوارات مختارة بعناية — ادفع كاش عند ",
+    "fg": "rgb(95, 90, 82)",
+    "bg": "rgb(250, 248, 244)",
+    "bgImage": false,
+    "bgEl": "rtl home wp-singular page-template-default page pa",
+    "fontSize": 18,
+    "fontWeight": 400,
+    "lineHeight": "30.6px",
+    "w": 341,
+    "h": 92
+   },
+   {
+    "sel": ".eyebrow",
+    "text": "موسم جديد · خريف 2026",
+    "fg": "rgb(11, 107, 87)",
+    "bg": "rgb(250, 248, 244)",
+    "bgImage": false,
+    "bgEl": "rtl home wp-singular page-template-default page pa",
+    "fontSize": 14,
+    "fontWeight": 700,
+    "lineHeight": "23.8px",
+    "w": 795,
+    "h": 24
+   },
+   {
+    "sel": ".hero-title",
+    "text": "قطع تلبسها كل يوم، بجودة تحسّها",
+    "fg": "rgb(27, 26, 23)",
+    "bg": "rgb(250, 248, 244)",
+    "bgImage": false,
+    "bgEl": "rtl home wp-singular page-template-default page pa",
+    "fontSize": 60,
+    "fontWeight": 800,
+    "lineHeight": "69px",
+    "w": 533,
+    "h": 138
+   },
+   {
+    "sel": ".p-body h3",
+    "text": "عباية كتان مطرّزة",
+    "fg": "rgb(27, 26, 23)",
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": false,
+    "bgEl": "card product",
+    "fontSize": 16,
+    "fontWeight": 700,
+    "lineHeight": "22.4px",
+    "w": 238,
+    "h": 22
+   },
+   {
+    "sel": ".p-cat",
+    "text": "هدوم",
+    "fg": "rgb(95, 90, 82)",
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": false,
+    "bgEl": "card product",
+    "fontSize": 14,
+    "fontWeight": 400,
+    "lineHeight": "23.8px",
+    "w": 238,
+    "h": 24
+   },
+   {
+    "sel": ".price .now",
+    "text": "1,250",
+    "fg": "rgb(154, 52, 18)",
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": false,
+    "bgEl": "card product",
+    "fontSize": 18,
+    "fontWeight": 800,
+    "lineHeight": "30.6px",
+    "w": 45,
+    "h": 31
+   },
+   {
+    "sel": ".price del",
+    "text": "1,450",
+    "fg": "rgb(95, 90, 82)",
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": false,
+    "bgEl": "card product",
+    "fontSize": 14,
+    "fontWeight": 600,
+    "lineHeight": "23.8px",
+    "w": 35,
+    "h": 24
+   },
+   {
+    "sel": ".badge.sale",
+    "text": "خصم",
+    "fg": "rgb(255, 255, 255)",
+    "bg": "rgb(154, 52, 18)",
+    "bgImage": false,
+    "bgEl": "badge sale",
+    "fontSize": 12,
+    "fontWeight": 700,
+    "lineHeight": "20.4px",
+    "w": 52,
+    "h": 29
+   },
+   {
+    "sel": ".news h2",
+    "text": "خليك أول واحد يعرف",
+    "fg": "rgb(255, 255, 255)",
+    "bg": "rgb(11, 107, 87)",
+    "bgImage": false,
+    "bgEl": "wp-block-group news is-layout-flow wp-block-group-",
+    "fontSize": 40,
+    "fontWeight": 800,
+    "lineHeight": "50px",
+    "w": 576,
+    "h": 50
+   },
+   {
+    "sel": ".news p",
+    "text": "نماذج جديدة وعروض — رسالة واحدة في الشهر، من ",
+    "fg": "rgb(215, 235, 229)",
+    "bg": "rgb(11, 107, 87)",
+    "bgImage": false,
+    "bgEl": "wp-block-group news is-layout-flow wp-block-group-",
+    "fontSize": 17,
+    "fontWeight": 400,
+    "lineHeight": "28.9px",
+    "w": 576,
+    "h": 29
+   },
+   {
+    "sel": ".site-footer p",
+    "text": "© 2026 نيلاد — متجر تجريبي (Demo) لا يبيع فعل",
+    "fg": "rgb(95, 90, 82)",
+    "bg": "rgb(250, 248, 244)",
+    "bgImage": false,
+    "bgEl": "rtl home wp-singular page-template-default page pa",
+    "fontSize": 14,
+    "fontWeight": 400,
+    "lineHeight": "23.8px",
+    "w": 273,
+    "h": 24
+   },
+   {
+    "sel": ".announce p",
+    "text": "شحن مجاني فوق 1,500 ج.م · كاش عند الاستلام · ",
+    "fg": "rgb(27, 26, 23)",
+    "bg": "rgb(228, 241, 236)",
+    "bgImage": false,
+    "bgEl": "wp-block-group announce has-global-padding is-layo",
+    "fontSize": 14,
+    "fontWeight": 600,
+    "lineHeight": "23.8px",
+    "w": 1200,
+    "h": 24
+   },
+   {
+    "sel": ".p-btn",
+    "text": "أضف للسلة",
+    "fg": "rgb(255, 255, 255)",
+    "bg": "rgb(11, 107, 87)",
+    "bgImage": false,
+    "bgEl": "p-btn",
+    "fontSize": 17,
+    "fontWeight": 700,
+    "lineHeight": "28.9px",
+    "w": 238,
+    "h": 44
+   },
+   {
+    "sel": ".chip.active",
+    "text": "الكل",
+    "fg": "rgb(11, 107, 87)",
+    "bg": "rgb(228, 241, 236)",
+    "bgImage": false,
+    "bgEl": "chip active",
+    "fontSize": 14,
+    "fontWeight": 600,
+    "lineHeight": "23.8px",
+    "w": 61,
+    "h": 46
+   },
+   {
+    "sel": ".chip",
+    "text": "الكل",
+    "fg": "rgb(11, 107, 87)",
+    "bg": "rgb(228, 241, 236)",
+    "bgImage": false,
+    "bgEl": "chip active",
+    "fontSize": 14,
+    "fontWeight": 600,
+    "lineHeight": "23.8px",
+    "w": 61,
+    "h": 46
+   },
+   {
+    "sel": ".value-list li",
+    "text": "كاش عند الاستلامادفع لما الشحنة توصلك",
+    "fg": "rgb(27, 26, 23)",
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": false,
+    "bgEl": "wp-block-group value has-global-padding is-layout-",
+    "fontSize": 14,
+    "fontWeight": 700,
+    "lineHeight": "23.8px",
+    "w": 252,
+    "h": 64
+   },
+   {
+    "sel": ".value-list li span",
+    "text": "ادفع لما الشحنة توصلك",
+    "fg": "rgb(95, 90, 82)",
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": false,
+    "bgEl": "wp-block-group value has-global-padding is-layout-",
+    "fontSize": 14,
+    "fontWeight": 600,
+    "lineHeight": "23.8px",
+    "w": 252,
+    "h": 24
+   },
+   {
+    "sel": ".tile span",
+    "text": "هدوم",
+    "fg": "rgb(27, 26, 23)",
+    "bg": "color(srgb 1 1 1 / 0.92)",
+    "bgImage": false,
+    "bgEl": "",
+    "fontSize": 14,
+    "fontWeight": 700,
+    "lineHeight": "23.8px",
+    "w": 70,
+    "h": 37
+   },
+   {
+    "sel": ".site-header .wp-block-navigation a",
+    "text": "الجديد",
+    "fg": "rgb(27, 26, 23)",
+    "bg": "color(srgb 0.980392 0.972549 0.956863 / 0.88)",
+    "bgImage": false,
+    "bgEl": "wp-block-group site-header has-global-padding is-l",
+    "fontSize": 17,
+    "fontWeight": 600,
+    "lineHeight": "28.9px",
+    "w": 43,
+    "h": 29
+   },
+   {
+    "sel": ".wp-block-site-title a",
+    "text": "نيلاد",
+    "fg": "rgb(27, 26, 23)",
+    "bg": "color(srgb 0.980392 0.972549 0.956863 / 0.88)",
+    "bgImage": false,
+    "bgEl": "wp-block-group site-header has-global-padding is-l",
+    "fontSize": 18,
+    "fontWeight": 800,
+    "lineHeight": "30.6px",
+    "w": 37,
+    "h": 33
+   },
+   {
+    "sel": ".news-btn",
+    "text": "اشترك",
+    "fg": "rgb(250, 248, 244)",
+    "bg": "rgb(27, 26, 23)",
+    "bgImage": false,
+    "bgEl": "news-btn",
+    "fontSize": 17,
+    "fontWeight": 700,
+    "lineHeight": "28.9px",
+    "w": 95,
+    "h": 48
+   },
+   {
+    "sel": ".news-form input",
+    "text": "",
+    "fg": "rgb(0, 0, 0)",
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": false,
+    "bgEl": "",
+    "fontSize": 17,
+    "fontWeight": 400,
+    "lineHeight": "28.9px",
+    "w": 277,
+    "h": 48
+   }
+  ]
+ }
+}

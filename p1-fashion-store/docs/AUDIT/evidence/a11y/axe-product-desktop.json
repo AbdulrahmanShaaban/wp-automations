@@ -1,0 +1,41 @@
+{
+ "page": "product",
+ "url": "http://localhost:8888/product/linen-scarf/",
+ "viewport": {
+  "w": 1440,
+  "h": 900
+ },
+ "cartState": null,
+ "violations": [],
+ "incomplete": [
+  {
+   "id": "aria-valid-attr-value",
+   "impact": "critical",
+   "nodes": 1,
+   "sample": [
+    {
+     "target": ".woocommerce-product-gallery__trigger",
+     "html": "<a href=\"#\" role=\"button\" class=\"woocommerce-product-gallery__trigger\" aria-haspopup=\"dialog\" aria-controls=\"photoswipe-fullscreen-dialog\" aria-label=\"عرض معرض الصورة بشاشة كاملة\">"
+    }
+   ]
+  }
+ ],
+ "passes": 45,
+ "inapplicable": 45,
+ "engine": {
+  "name": "axe-core",
+  "version": "4.13.0"
+ },
+ "runner": {
+  "name": "axe"
+ },
+ "timestamp": "2026-10-06T11:36:48.326Z",
+ "violationCounts": {
+  "critical": 0,
+  "serious": 0,
+  "moderate": 0,
+  "minor": 0,
+  "total": 0,
+  "nodes": 0
+ }
+}

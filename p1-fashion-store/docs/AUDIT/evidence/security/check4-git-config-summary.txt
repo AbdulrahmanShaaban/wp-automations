@@ -1,0 +1,3 @@
+﻿remote-url-embedded-userinfo: False
+remote-url-scheme+host: https://github.com
+raw config file (unredacted copy of public core repo config, no credentials found) stored at check4-git-web-config.txt

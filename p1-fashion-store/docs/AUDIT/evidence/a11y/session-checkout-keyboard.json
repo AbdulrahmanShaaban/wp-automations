@@ -1,0 +1,63 @@
+{
+  "captured": "2026-10-06",
+  "page": "/checkout/ (cart seeded with linen scarf 380 EGP)",
+  "method": "chrome-devtools MCP: evaluate_script + press_key + type_text + take_screenshot",
+  "keyboard": {
+    "tabOrder": [
+      {"from": "#email", "key": "Tab", "landed": "#shipping-first_name", "result": "PASS natural DOM order"},
+      {"from": "#shipping-first_name", "key": "Shift+Tab", "landed": "#email", "result": "PASS no trap, reverse works"}
+    ],
+    "typing": {"field": "#shipping-first_name", "typed": "أحمد", "valueAfter": "أحمد", "result": "PASS keyboard input accepted, React state synced", "cleanup": "value cleared after test"},
+    "focusVisible": [
+      {"el": "#email", "matchesFocusVisible": true, "computedOutline": "rgb(16, 16, 16) auto 1px", "verdict": "PASS native UA focus ring visible"},
+      {"el": "#shipping-first_name", "matchesFocusVisible": true, "computedOutline": "rgb(16, 16, 16) auto 1px", "verdict": "PASS"}
+    ]
+  },
+  "couponDisclosure": {
+    "element": "div[role=button].wc-block-components-panel__button",
+    "tabindex": 0,
+    "ariaExpandedBefore": "false",
+    "key": "Enter",
+    "ariaExpandedAfter": "true",
+    "revealed": "_coupon form: label 'رمز القسيمة (اختياري)' for=wc-block-components-totals-coupon-input + input",
+    "collapsedAgainWithEnter": true,
+    "labelAssociation": "explicit (label[for] matched)",
+    "focusOutlineWhileFocused": "rgb(16, 16, 16) auto 1px",
+    "verdict": "PASS keyboard-operable disclosure, APG pattern, state exposed via aria-expanded"
+  },
+  "formValidation": {
+    "action": "cleared #email, activated submit button 'تقديم طلب'",
+    "urlAfter": "/checkout/ (stayed, no order created)",
+    "focusMovedTo": "#email (first invalid field)",
+    "ariaInvalidOnEmail": "true",
+    "ariaInvalidOnShippingFields": "true",
+    "errors": [
+      {"text": "يرجى إدخال البريد الإلكتروني صالح", "role": "alert"},
+      {"text": "يرجى إدخال الاسم الأخير صالح", "role": "alert"},
+      {"text": "يرجى إدخال عنوان الشارع / الحي صالح", "role": "alert"},
+      {"text": "يرجى إدخال المدينة صالح", "role": "alert"},
+      {"text": "يرجى إدخال الرمز البريدي / zip صالح", "role": "alert"}
+    ],
+    "errorStyle": {"color": "rgb(204, 24, 24)", "fontSize": "13px", "borderColor": "rgb(204, 24, 24)", "bg": "rgb(250, 248, 244)", "contrastText": 5.33, "contrastBorder": 5.33},
+    "verdict": "PASS 3.3.1 (text + role=alert + aria-invalid + focus to first error), contrast PASS 5.33 >= 4.5",
+    "note": "Arabic copy slightly awkward: 'يرجى إدخال البريد الإلكتروني صالح' (should be 'يرجى إدخال بريد إلكتروني صالح'); 'zip' not translated"
+  },
+  "fields": {
+    "total": 15,
+    "labelled": 15,
+    "types": ["email", "text", "select", "tel", "checkbox", "radio"],
+    "autofill": {
+      "#email": "section-contact contact email -> axe autocomplete-valid SERIOUS (known, unchanged from Phase 6)",
+      "#shipping-first_name": "section-shipping shipping given-name",
+      "#shipping-last_name": "section-shipping shipping family-name",
+      "#shipping-address_1": "section-shipping shipping address-line1",
+      "#shipping-address_2": "address-line2",
+      "#shipping-city": "section-shipping shipping address-level2",
+      "#shipping-state": "section-shipping shipping address-level1",
+      "#shipping-postcode": "section-shipping shipping postal-code",
+      "#shipping-phone": "section-shipping shipping tel"
+    },
+    "liveRegions": ["[role=alert] validation messages", "empty assertive + polite + status containers present"]
+  },
+  "screenshot": "screens/co-01-checkout-validation-errors.png"
+}

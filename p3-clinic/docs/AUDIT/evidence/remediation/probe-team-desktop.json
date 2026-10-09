@@ -1,0 +1,617 @@
+{
+ "page": "team",
+ "url": "http://localhost:8889/team/",
+ "viewport": {
+  "name": "desktop",
+  "w": 1440,
+  "h": 900,
+  "mobile": false
+ },
+ "probe": {
+  "lang": "ar",
+  "dir": "rtl",
+  "title": "الفريق – عيادة سِراج للأسنان",
+  "viewportMeta": "width=device-width, initial-scale=1",
+  "url": "/team/",
+  "headings": [
+   {
+    "level": 1,
+    "text": "الفريق",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "طبقة التقويم",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "طبقة زراعة الأسنان",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "طبقة تجميل الأسنان",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "فريق المساعدة",
+    "visible": true
+   }
+  ],
+  "h1Count": 1,
+  "hiddenHeadingCount": 0,
+  "headingSkips": [],
+  "landmarks": {
+   "header": 1,
+   "nav": 1,
+   "main": 1,
+   "footer": 1,
+   "aside": 0,
+   "bannerTopLevel": false,
+   "contentinfoTopLevel": false,
+   "roleMain": 0,
+   "roleStatus": 0
+  },
+  "focusableCount": 12,
+  "firstFocusables": [
+   {
+    "tag": "a",
+    "text": "تخطى إلى المحتوى",
+    "href": "#wp--skip-link--target",
+    "cls": "skip-link screen-reader-text",
+    "tabIndex": 0
+   },
+   {
+    "tag": "a",
+    "text": "عيادة سِراج للأسنان Demo",
+    "href": "/",
+    "cls": "brand",
+    "tabIndex": 0
+   },
+   {
+    "tag": "button",
+    "text": "فتح القائمة",
+    "href": null,
+    "cls": "wp-block-navigation__responsive-container-open",
+    "tabIndex": 0
+   },
+   {
+    "tag": "button",
+    "text": "إغلاق القائمة",
+    "href": null,
+    "cls": "wp-block-navigation__responsive-container-close",
+    "tabIndex": 0
+   },
+   {
+    "tag": "a",
+    "text": "الخدمات",
+    "href": "/services/",
+    "cls": "wp-block-navigation-item__content",
+    "tabIndex": 0
+   },
+   {
+    "tag": "a",
+    "text": "الفريق",
+    "href": "/team/",
+    "cls": "wp-block-navigation-item__content",
+    "tabIndex": 0
+   },
+   {
+    "tag": "a",
+    "text": "تواصل",
+    "href": "/contact/",
+    "cls": "wp-block-navigation-item__content",
+    "tabIndex": 0
+   },
+   {
+    "tag": "a",
+    "text": "احجز زيارة",
+    "href": "/book/",
+    "cls": "wp-block-button__link wp-element-button",
+    "tabIndex": 0
+   }
+  ],
+  "skipLink": {
+   "present": true,
+   "href": "#wp--skip-link--target",
+   "text": "تخطى إلى المحتوى",
+   "cls": "skip-link screen-reader-text",
+   "isFirstFocusable": true,
+   "targetExists": true
+  },
+  "images": {
+   "total": 0,
+   "missingAlt": 0,
+   "emptyAlt": 0,
+   "broken": 0,
+   "sample": []
+  },
+  "digits": {
+   "latin": 0,
+   "eastern": 0,
+   "egp": 0,
+   "arabicComma": 6,
+   "westernCommaInArabic": 0,
+   "semicolonAr": 0
+  },
+  "typography": [
+   {
+    "tag": "a",
+    "cls": "skip-link screen-reader-text",
+    "text": "تخطى إلى المحتوى",
+    "letterSpacing": "normal",
+    "lineHeight": "27.2px",
+    "fontSize": "16px",
+    "fontStyle": "normal",
+    "fontFamily": "Alexandria, system-ui, -apple-system",
+    "textAlign": "start"
+   },
+   {
+    "tag": "span",
+    "cls": "brand-name",
+    "text": "عيادة سِراج للأسنان",
+    "letterSpacing": "normal",
+    "lineHeight": "34px",
+    "fontSize": "20px",
+    "fontStyle": "normal",
+    "fontFamily": "Alexandria, system-ui, -apple-system",
+    "textAlign": "start"
+   },
+   {
+    "tag": "a",
+    "cls": "wp-block-button__link wp-element-button",
+    "text": "احجز زيارة",
+    "letterSpacing": "normal",
+    "lineHeight": "27.2px",
+    "fontSize": "16px",
+    "fontStyle": "normal",
+    "fontFamily": "Alexandria, system-ui, -apple-system",
+    "textAlign": "center"
+   },
+   {
+    "tag": "h1",
+    "cls": "wp-block-post-title",
+    "text": "الفريق",
+    "letterSpacing": "normal",
+    "lineHeight": "109.2px",
+    "fontSize": "84px",
+    "fontStyle": "normal",
+    "fontFamily": "Alexandria, system-ui, -apple-system",
+    "textAlign": "start"
+   },
+   {
+    "tag": "h2",
+    "cls": "wp-block-heading",
+    "text": "طبقة التقويم",
+    "letterSpacing": "normal",
+    "lineHeight": "48px",
+    "fontSize": "40px",
+    "fontStyle": "normal",
+    "fontFamily": "Alexandria, system-ui, -apple-system",
+    "textAlign": "start"
+   },
+   {
+    "tag": "p",
+    "cls": "field-note wp-block-paragraph",
+    "text": "الأسماء والأدوار في النموذج توضيحية، ولا تمثّل أشخ",
+    "letterSpacing": "normal",
+    "lineHeight": "23.8px",
+    "fontSize": "14px",
+    "fontStyle": "normal",
+    "fontFamily": "Alexandria, system-ui, -apple-system",
+    "textAlign": "start"
+   }
+  ],
+  "negativeLetterSpacing": null,
+  "justifySeen": null,
+  "lowLineHeight": {
+   "sel": "h1.wp-block-post-title",
+   "ratio": 1.3,
+   "lineHeight": "109.2px",
+   "fontSize": "84px",
+   "text": "الفريق"
+  },
+  "bodyStyle": {
+   "lineHeight": "27.2px",
+   "fontSize": "16px",
+   "fontFamily": "Alexandria, system-ui, -apple-system, \"Segoe UI\", Tahoma, sans-serif",
+   "letterSpacing": "normal",
+   "textAlign": "start",
+   "direction": "rtl"
+  },
+  "targets": [
+   {
+    "sel": "#wp-skip-link",
+    "tag": "a",
+    "text": "تخطى إلى المحتوى",
+    "w": 1,
+    "h": 1,
+    "x": 1440,
+    "y": -1
+   },
+   {
+    "sel": "div.wp-site-blocks>div.wp-block-template-part>header.wp-block-group.site-header.has-global-padding>div.wp-block-group.container.nav>a.brand",
+    "tag": "a",
+    "text": "عيادة سِراج للأسنان Demo",
+    "w": 312.3,
+    "h": 34,
+    "x": 788,
+    "y": 17
+   },
+   {
+    "sel": "div.wp-block-navigation__responsive-dialog>div.wp-block-navigation__responsive-container-content>ul.wp-block-navigation__container.is-responsive.items-justified-center>li.wp-block-navigation-item.wp-block-navigation-link>a.wp-block-navigation-item__content",
+    "tag": "a",
+    "text": "الخدمات",
+    "w": 63.3,
+    "h": 27.2,
+    "x": 656,
+    "y": 20
+   },
+   {
+    "sel": "div.wp-block-navigation__responsive-dialog>div.wp-block-navigation__responsive-container-content>ul.wp-block-navigation__container.is-responsive.items-justified-center>li.wp-block-navigation-item.wp-block-navigation-link>a.wp-block-navigation-item__content",
+    "tag": "a",
+    "text": "الفريق",
+    "w": 48.9,
+    "h": 27.2,
+    "x": 583,
+    "y": 20
+   },
+   {
+    "sel": "div.wp-block-navigation__responsive-dialog>div.wp-block-navigation__responsive-container-content>ul.wp-block-navigation__container.is-responsive.items-justified-center>li.wp-block-navigation-item.wp-block-navigation-link>a.wp-block-navigation-item__content",
+    "tag": "a",
+    "text": "تواصل",
+    "w": 50.8,
+    "h": 27.2,
+    "x": 508,
+    "y": 20
+   },
+   {
+    "sel": "header.wp-block-group.site-header.has-global-padding>div.wp-block-group.container.nav>div.wp-block-buttons.nav-actions.is-layout-flex>div.wp-block-button>a.wp-block-button__link.wp-element-button",
+    "tag": "a",
+    "text": "احجز زيارة",
+    "w": 100,
+    "h": 52.5,
+    "x": 340,
+    "y": 8
+   },
+   {
+    "sel": "div.wp-site-blocks>main.wp-block-group.container.has-global-padding>div.entry-content.wp-block-post-content.is-layout-flow>p.wp-block-paragraph>a.btn.btn-primary",
+    "tag": "a",
+    "text": "احجز زيارة",
+    "w": 118,
+    "h": 48,
+    "x": 982,
+    "y": 859
+   },
+   {
+    "sel": "div.wp-site-blocks>div.wp-block-template-part>footer.wp-block-group.site-footer.has-global-padding>div.wp-block-group.container.footer-row>a.brand",
+    "tag": "a",
+    "text": "عيادة سِراج للأسنان",
+    "w": 241.7,
+    "h": 40,
+    "x": 858,
+    "y": 964
+   },
+   {
+    "sel": "div.wp-block-template-part>footer.wp-block-group.site-footer.has-global-padding>div.wp-block-group.container.footer-row>p.wp-block-paragraph>a",
+    "tag": "a",
+    "text": "الخدمات",
+    "w": 52.2,
+    "h": 24,
+    "x": 1048,
+    "y": 1020
+   },
+   {
+    "sel": "div.wp-block-template-part>footer.wp-block-group.site-footer.has-global-padding>div.wp-block-group.container.footer-row>p.wp-block-paragraph>a",
+    "tag": "a",
+    "text": "الفريق",
+    "w": 39.6,
+    "h": 24,
+    "x": 997,
+    "y": 1020
+   },
+   {
+    "sel": "div.wp-block-template-part>footer.wp-block-group.site-footer.has-global-padding>div.wp-block-group.container.footer-row>p.wp-block-paragraph>a",
+    "tag": "a",
+    "text": "تواصل",
+    "w": 41.5,
+    "h": 24,
+    "x": 945,
+    "y": 1020
+   },
+   {
+    "sel": "div.wp-block-template-part>footer.wp-block-group.site-footer.has-global-padding>div.wp-block-group.container.footer-row>p.wp-block-paragraph>a",
+    "tag": "a",
+    "text": "احجز زيارة",
+    "w": 56,
+    "h": 24,
+    "x": 878,
+    "y": 1020
+   }
+  ],
+  "targetTotal": 12,
+  "forms": [],
+  "unlabelled": 0,
+  "foreignRuns": [
+   {
+    "text": "Demo",
+    "parentTag": "span",
+    "parentCls": "demo-badge",
+    "langAncestor": "en",
+    "dirAttr": "rtl",
+    "bdi": false
+   },
+   {
+    "text": "(Demo)",
+    "parentTag": "span",
+    "parentCls": "",
+    "langAncestor": "en",
+    "dirAttr": "rtl",
+    "bdi": false
+   }
+  ],
+  "langEnCount": 2,
+  "bdiCount": 0,
+  "links": [
+   {
+    "text": "تخطى إلى المحتوى",
+    "href": "#wp--skip-link--target",
+    "cls": "skip-link screen-reader-text",
+    "rect": {
+     "w": 1,
+     "h": 1
+    }
+   },
+   {
+    "text": "عيادة سِراج للأسنان Demo",
+    "href": "/",
+    "cls": "brand",
+    "rect": {
+     "w": 312,
+     "h": 34
+    }
+   },
+   {
+    "text": "الخدمات",
+    "href": "/services/",
+    "cls": "wp-block-navigation-item__content",
+    "rect": {
+     "w": 63,
+     "h": 27
+    }
+   },
+   {
+    "text": "الفريق",
+    "href": "/team/",
+    "cls": "wp-block-navigation-item__content",
+    "rect": {
+     "w": 49,
+     "h": 27
+    }
+   },
+   {
+    "text": "تواصل",
+    "href": "/contact/",
+    "cls": "wp-block-navigation-item__content",
+    "rect": {
+     "w": 51,
+     "h": 27
+    }
+   },
+   {
+    "text": "احجز زيارة",
+    "href": "/book/",
+    "cls": "wp-block-button__link wp-element-button",
+    "rect": {
+     "w": 100,
+     "h": 53
+    }
+   },
+   {
+    "text": "احجز زيارة",
+    "href": "/book/",
+    "cls": "btn btn-primary",
+    "rect": {
+     "w": 118,
+     "h": 48
+    }
+   },
+   {
+    "text": "عيادة سِراج للأسنان",
+    "href": "/",
+    "cls": "brand",
+    "rect": {
+     "w": 242,
+     "h": 40
+    }
+   },
+   {
+    "text": "الخدمات",
+    "href": "/services/",
+    "cls": "",
+    "rect": {
+     "w": 52,
+     "h": 24
+    }
+   },
+   {
+    "text": "الفريق",
+    "href": "/team/",
+    "cls": "",
+    "rect": {
+     "w": 40,
+     "h": 24
+    }
+   },
+   {
+    "text": "تواصل",
+    "href": "/contact/",
+    "cls": "",
+    "rect": {
+     "w": 42,
+     "h": 24
+    }
+   },
+   {
+    "text": "احجز زيارة",
+    "href": "/book/",
+    "cls": "",
+    "rect": {
+     "w": 56,
+     "h": 24
+    }
+   }
+  ],
+  "reveal": {
+   "total": 0,
+   "hiddenNow": 0,
+   "jsMotion": false
+  },
+  "motion": {
+   "reducedMotionQuery": false,
+   "scrollBehavior": "smooth",
+   "ruleAnimation": "no-.rule"
+  },
+  "nav": {
+   "hamburger": {
+    "display": "none",
+    "visible": false,
+    "w": 0,
+    "h": 0,
+    "ariaExpanded": null,
+    "tag": "button"
+   },
+   "overlayContainer": {
+    "display": "block",
+    "cls": "wp-block-navigation__responsive-container",
+    "visible": true
+   },
+   "inlineListDisplay": "flex",
+   "inlineLinksVisible": 3,
+   "headerBackdropFilter": "saturate(1.4) blur(10px)",
+   "htmlHasModalOpen": false
+  },
+  "overflowX": null,
+  "contrast": [
+   {
+    "sel": "body",
+    "text": "تخطى إلى المحتوى عيادة سِراج للأسنان Demo الخ",
+    "fg": "rgb(18, 19, 43)",
+    "bg": "rgb(247, 248, 252)",
+    "bgImage": false,
+    "bgEl": "rtl wp-singular page-template-default page page-id",
+    "fontSize": 16,
+    "fontWeight": 400,
+    "lineHeight": "27.2px",
+    "w": 1440,
+    "h": 1076
+   },
+   {
+    "sel": ".lead",
+    "text": "النموذج بيعرض التخصصات والأدوار بدون صور أشخا",
+    "fg": "rgb(85, 88, 120)",
+    "bg": "rgb(247, 248, 252)",
+    "bgImage": false,
+    "bgEl": "rtl wp-singular page-template-default page page-id",
+    "fontSize": 20,
+    "fontWeight": 400,
+    "lineHeight": "34px",
+    "w": 760,
+    "h": 68
+   },
+   {
+    "sel": ".field-note",
+    "text": "الأسماء والأدوار في النموذج توضيحية، ولا تمثّ",
+    "fg": "rgb(85, 88, 120)",
+    "bg": "rgb(247, 248, 252)",
+    "bgImage": false,
+    "bgEl": "rtl wp-singular page-template-default page page-id",
+    "fontSize": 14,
+    "fontWeight": 400,
+    "lineHeight": "23.8px",
+    "w": 643,
+    "h": 24
+   },
+   {
+    "sel": ".demo-badge",
+    "text": "Demo",
+    "fg": "rgb(47, 75, 216)",
+    "bg": "rgb(230, 234, 251)",
+    "bgImage": false,
+    "bgEl": "demo-badge",
+    "fontSize": 14,
+    "fontWeight": 700,
+    "lineHeight": "23.8px",
+    "w": 69,
+    "h": 31
+   },
+   {
+    "sel": ".brand-name",
+    "text": "عيادة سِراج للأسنان",
+    "fg": "rgb(18, 19, 43)",
+    "bg": "color(srgb 0.968627 0.972549 0.988235 / 0.88)",
+    "bgImage": false,
+    "bgEl": "wp-block-group site-header has-global-padding is-l",
+    "fontSize": 20,
+    "fontWeight": 800,
+    "lineHeight": "34px",
+    "w": 194,
+    "h": 34
+   },
+   {
+    "sel": ".wp-block-navigation a",
+    "text": "الخدمات",
+    "fg": "rgb(18, 19, 43)",
+    "bg": "color(srgb 0.968627 0.972549 0.988235 / 0.88)",
+    "bgImage": false,
+    "bgEl": "wp-block-group site-header has-global-padding is-l",
+    "fontSize": 16,
+    "fontWeight": 600,
+    "lineHeight": "27.2px",
+    "w": 63,
+    "h": 27
+   },
+   {
+    "sel": "footer p",
+    "text": "© نموذج تجريبي (Demo) — لا يمثّل أي عيادة حقي",
+    "fg": "rgb(85, 88, 120)",
+    "bg": "rgb(247, 248, 252)",
+    "bgImage": false,
+    "bgEl": "rtl wp-singular page-template-default page page-id",
+    "fontSize": 14,
+    "fontWeight": 400,
+    "lineHeight": "23.8px",
+    "w": 434,
+    "h": 24
+   },
+   {
+    "sel": "footer a",
+    "text": "عيادة سِراج للأسنان",
+    "fg": "rgb(85, 88, 120)",
+    "bg": "rgb(247, 248, 252)",
+    "bgImage": false,
+    "bgEl": "rtl wp-singular page-template-default page page-id",
+    "fontSize": 20,
+    "fontWeight": 800,
+    "lineHeight": "34px",
+    "w": 242,
+    "h": 40
+   },
+   {
+    "sel": ".btn-primary",
+    "text": "احجز زيارة",
+    "fg": "rgb(255, 255, 255)",
+    "bg": "rgb(47, 75, 216)",
+    "bgImage": false,
+    "bgEl": "btn btn-primary",
+    "fontSize": 16,
+    "fontWeight": 600,
+    "lineHeight": "27.2px",
+    "w": 118,
+    "h": 48
+   }
+  ]
+ }
+}

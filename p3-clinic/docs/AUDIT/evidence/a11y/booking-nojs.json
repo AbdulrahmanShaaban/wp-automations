@@ -1,0 +1,20 @@
+{
+ "scriptsDisabled": true,
+ "htmlHasJsMotion": false,
+ "controlsTotal": 10,
+ "controlsUser": 7,
+ "controlsUserVisible": 7,
+ "hiddenControls": 3,
+ "controlsVisible": 7,
+ "labelsVisible": 7,
+ "submitPresent": true,
+ "submitVisible": true,
+ "submitText": "إرسال الطلب",
+ "formPresent": true,
+ "formAction": "http://localhost:8889/book/",
+ "formMethod": "post",
+ "honeypotDisplayNone": false,
+ "revealHidden": 0,
+ "revealTotal": 0,
+ "bodyTextLen": 617
+}

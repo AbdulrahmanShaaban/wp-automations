@@ -1,0 +1,13 @@
+﻿SIMULATED 'plain zip of D:\my work\p1-fashion-store' — sensitive entries that WOULD be included (.gitignore does NOT apply to a zip):
+  INCLUDED: n8n\.env  (bytes=1711)
+  INCLUDED: n8n\oauth-client.local.txt  (bytes=964)
+  INCLUDED: n8n\owner-account.local.txt  (bytes=546)
+  INCLUDED: reset-run.log  (bytes=8062)
+  INCLUDED: seed-run.log  (bytes=615)
+  INCLUDED: seed-run-copy.log  (bytes=699)
+  INCLUDED: seed-err.log  (bytes=29196)
+  INCLUDED: seed-catalog-test.log  (bytes=736)
+  INCLUDED: .env.example  (bytes=517)
+  INCLUDED: n8n\.env.example  (bytes=1884)
+Note: node_modules/ and wp-content/uploads/ are also large non-source entries; wordpress/ absent.
+Contrast: git add -A would SKIP n8n\.env, n8n\oauth-client.local.txt, n8n\owner-account.local.txt (git check-ignore confirmed).

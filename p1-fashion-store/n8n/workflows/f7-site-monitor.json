@@ -1,0 +1,179 @@
+{
+  "name": "Nilad F7: site up check",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "hours",
+              "hoursInterval": 1
+            }
+          ]
+        }
+      },
+      "id": "f7a00001-0000-4000-8000-000000000001",
+      "name": "Hourly schedule",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -160,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $env.STORE_URL }}",
+        "options": {
+          "response": {
+            "response": {
+              "fullResponse": true,
+              "neverError": true
+            }
+          },
+          "timeout": 20000
+        }
+      },
+      "id": "f7a00001-0000-4000-8000-000000000002",
+      "name": "Fetch store",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "onError": "continueRegularOutput",
+      "position": [
+        60,
+        0
+      ],
+      "retryOnFail": false
+    },
+    {
+      "parameters": {
+        "jsCode": "// Nilad F7 — evaluate one store health-check response (pure; unit-tested in n8n/tests/cases/f7.cases.js).\n// Input: HTTP Request full-response item { json: { statusCode, body?, headers?, request? } },\n//        or an error-ish item { json: { error?, message?, body?, ... } } when the request itself failed.\n// Env: none in this node — STORE_URL is consumed by the upstream HTTP Request node.\n// Outputs ONE item: { healthy, statusCode, reason, checkedAt }\n//   reason: 'ok' (200-399) | 'http-<code>' (>=400) | 'request-failed' (no/invalid status, json.error, connection failure)\nconst json = ($input.first() || {}).json || {};\n\nlet statusCode = null;\nconst raw = json.statusCode;\nif (typeof raw === 'number' && Number.isFinite(raw)) {\n  statusCode = Math.trunc(raw);\n} else if (typeof raw === 'string' && /^\\s*\\d{1,4}\\s*$/.test(raw)) {\n  statusCode = Number(raw.trim());\n}\n\nlet bodyText = '';\nif (typeof json.body === 'string') {\n  bodyText = json.body;\n} else if (json.body !== undefined && json.body !== null) {\n  try {\n    bodyText = JSON.stringify(json.body);\n  } catch (err) {\n    bodyText = '';\n  }\n}\nconst messageText = typeof json.message === 'string' ? json.message : '';\nconst errorPresent = json.error !== undefined && json.error !== null && json.error !== '';\nconst connectionFailed = /ECONNREFUSED|ECONNRESET|ETIMEDOUT|EAI_AGAIN|ENOTFOUND|EPIPE|getaddrinfo|socket hang up|Connection refused|Connection reset|Could not connect|Connection error/i.test(\n  bodyText + ' ' + messageText\n);\n\nlet healthy = false;\nlet reason = 'request-failed';\nif (!errorPresent && !connectionFailed && statusCode !== null) {\n  if (statusCode >= 200 && statusCode <= 399) {\n    healthy = true;\n    reason = 'ok';\n  } else if (statusCode >= 400) {\n    reason = 'http-' + statusCode;\n  }\n}\n\nreturn [{ json: { healthy, statusCode, reason, checkedAt: new Date().toISOString() } }];"
+      },
+      "id": "f7a00001-0000-4000-8000-000000000003",
+      "name": "Evaluate health",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        280,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "f7a00001-0000-4000-8000-000000000007",
+              "leftValue": "={{ $json.healthy }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "f7a00001-0000-4000-8000-000000000004",
+      "name": "Healthy?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        500,
+        0
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "f7a00001-0000-4000-8000-000000000005",
+      "name": "Site up",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        720,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "errorMessage": "={{ 'Site down: ' + $json.reason }}"
+      },
+      "id": "f7a00001-0000-4000-8000-000000000006",
+      "name": "Site down → error workflow",
+      "type": "n8n-nodes-base.stopAndError",
+      "typeVersion": 1,
+      "position": [
+        500,
+        220
+      ]
+    }
+  ],
+  "connections": {
+    "Hourly schedule": {
+      "main": [
+        [
+          {
+            "node": "Fetch store",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch store": {
+      "main": [
+        [
+          {
+            "node": "Evaluate health",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Evaluate health": {
+      "main": [
+        [
+          {
+            "node": "Healthy?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Healthy?": {
+      "main": [
+        [
+          {
+            "node": "Site up",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Site down → error workflow",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Africa/Cairo"
+  },
+  "pinData": {}
+}

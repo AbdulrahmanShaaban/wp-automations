@@ -1,0 +1,435 @@
+{
+ "page": "product",
+ "url": "http://localhost:8888/product/linen-scarf/",
+ "viewport": {
+  "name": "mobile",
+  "w": 390,
+  "h": 844,
+  "mobile": true
+ },
+ "cartState": null,
+ "probe": {
+  "lang": "ar",
+  "dir": "rtl",
+  "title": "شال كتان خفيف – نيلاد",
+  "viewportMeta": "width=device-width, initial-scale=1",
+  "url": "/product/linen-scarf/",
+  "headings": [
+   {
+    "level": 1,
+    "text": "شال كتان خفيف",
+    "visible": true
+   }
+  ],
+  "h1Count": 1,
+  "hiddenHeadingCount": 0,
+  "landmarks": {
+   "header": 1,
+   "nav": 2,
+   "main": 1,
+   "footer": 1,
+   "aside": 1,
+   "bodyDirectMain": true,
+   "roleMain": 0,
+   "bannerTopLevel": false,
+   "contentinfoTopLevel": false
+  },
+  "focusableCount": 14,
+  "firstFocusable": [
+   {
+    "tag": "a",
+    "text": "تخطى إلى المحتوى",
+    "href": "#wp--skip-link--target",
+    "cls": "skip-link screen-reader-text"
+   },
+   {
+    "tag": "a",
+    "text": "نيلاد",
+    "href": "http://localhost:8888",
+    "cls": ""
+   },
+   {
+    "tag": "a",
+    "text": "الجديد",
+    "href": "/#new",
+    "cls": "wp-block-navigation-item__content"
+   },
+   {
+    "tag": "a",
+    "text": "التصنيفات",
+    "href": "/#cats",
+    "cls": "wp-block-navigation-item__content"
+   },
+   {
+    "tag": "a",
+    "text": "الأكثر مبيعًا",
+    "href": "/#best",
+    "cls": "wp-block-navigation-item__content"
+   },
+   {
+    "tag": "a",
+    "text": "عن نيلاد",
+    "href": "/#about",
+    "cls": "wp-block-navigation-item__content"
+   }
+  ],
+  "skipLink": {
+   "present": true,
+   "href": "#wp--skip-link--target",
+   "text": "تخطى إلى المحتوى",
+   "isFirstFocusable": true
+  },
+  "images": {
+   "total": 4,
+   "missingAlt": 0,
+   "emptyAlt": 1,
+   "sample": [
+    {
+     "alt": "🛒",
+     "src": "1f6d2.svg",
+     "w": 17
+    },
+    {
+     "alt": "🔍",
+     "src": "1f50d.svg",
+     "w": 1
+    },
+    {
+     "alt": "شال كتان خفيف",
+     "src": "scarf.jpg",
+     "w": 350
+    },
+    {
+     "alt": "",
+     "src": "scarf.jpg",
+     "w": 800
+    }
+   ],
+   "svgMissingLabel": 0
+  },
+  "digits": {
+   "latin": 11,
+   "eastern": 0,
+   "egp": 2
+  },
+  "typography": [
+   {
+    "tag": "a",
+    "cls": "skip-link screen-reader-text",
+    "text": "تخطى إلى المحتوى",
+    "letterSpacing": "normal",
+    "lineHeight": "28.9px",
+    "fontSize": "17px",
+    "fontStyle": "normal",
+    "fontFamily": "Cairo, Inter, system-ui",
+    "textAlign": "start"
+   },
+   {
+    "tag": "p",
+    "cls": "has-text-align-center has-sm-font-size wp-block-pa",
+    "text": "شحن مجاني فوق 1,500 ج.م · كاش عند الاستلام · متجر ",
+    "letterSpacing": "normal",
+    "lineHeight": "23.8px",
+    "fontSize": "14px",
+    "fontStyle": "normal",
+    "fontFamily": "Cairo, Inter, system-ui",
+    "textAlign": "center"
+   },
+   {
+    "tag": "a",
+    "cls": "",
+    "text": "نيلاد",
+    "letterSpacing": "-0.18px",
+    "lineHeight": "30.6px",
+    "fontSize": "18px",
+    "fontStyle": "normal",
+    "fontFamily": "Cairo, Inter, system-ui",
+    "textAlign": "start"
+   },
+   {
+    "tag": "h1",
+    "cls": "wp-block-post-title",
+    "text": "شال كتان خفيف",
+    "letterSpacing": "normal",
+    "lineHeight": "57.8px",
+    "fontSize": "34px",
+    "fontStyle": "normal",
+    "fontFamily": "Cairo, Inter, system-ui",
+    "textAlign": "start"
+   },
+   {
+    "tag": "span",
+    "cls": "woocommerce-Price-currencySymbol",
+    "text": "ج.م",
+    "letterSpacing": "normal",
+    "lineHeight": "39.2119px",
+    "fontSize": "23.0658px",
+    "fontStyle": "normal",
+    "fontFamily": "Cairo, Inter, system-ui",
+    "textAlign": "start"
+   }
+  ],
+  "bodyStyle": {
+   "lineHeight": "28.9px",
+   "fontSize": "17px",
+   "fontFamily": "Cairo, Inter, system-ui, -apple-system, \"Segoe UI\", Tahoma, sans-serif",
+   "letterSpacing": "normal",
+   "textAlign": "start",
+   "direction": "rtl"
+  },
+  "targets": [
+   {
+    "group": "other",
+    "tag": "a",
+    "cls": "skip-link screen-reader-text",
+    "text": "تخطى إلى المحتوى",
+    "w": 1,
+    "h": 1,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "header",
+    "tag": "a",
+    "cls": "",
+    "text": "نيلاد",
+    "w": 36.5,
+    "h": 33,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "header",
+    "tag": "a",
+    "cls": "wp-block-button__link has-text-color has-surface-background-",
+    "text": "السلة",
+    "w": 100.4,
+    "h": 57.5,
+    "padT": "13.339px",
+    "padB": "13.339px"
+   },
+   {
+    "group": "header",
+    "tag": "a",
+    "cls": "wp-block-button__link has-on-primary-text-color has-primary-",
+    "text": "اتسوّق الآن",
+    "w": 118.3,
+    "h": 55.5,
+    "padT": "13.339px",
+    "padB": "13.339px"
+   },
+   {
+    "group": "other",
+    "tag": "a",
+    "cls": "woocommerce-product-gallery__trigger",
+    "text": "عرض معرض الصورة بشاشة كاملة",
+    "w": 36,
+    "h": 36,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "other",
+    "tag": "a",
+    "cls": "",
+    "text": "",
+    "w": 350,
+    "h": 437.5,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "form",
+    "tag": "input",
+    "cls": "input-text qty text",
+    "text": "كمية المنتج",
+    "w": 61.2,
+    "h": 55.5,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "form",
+    "tag": "button",
+    "cls": "single_add_to_cart_button button alt wp-element-button",
+    "text": "إضافة إلى السلة",
+    "w": 170.9,
+    "h": 55.5,
+    "padT": "13.339px",
+    "padB": "13.339px"
+   },
+   {
+    "group": "other",
+    "tag": "a",
+    "cls": "",
+    "text": "أكسسوارات",
+    "w": 81.3,
+    "h": 32,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "footer",
+    "tag": "a",
+    "cls": "",
+    "text": "الشحن والإرجاع",
+    "w": 84.7,
+    "h": 26,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "footer",
+    "tag": "a",
+    "cls": "",
+    "text": "الخصوصية",
+    "w": 59.8,
+    "h": 26,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "footer",
+    "tag": "a",
+    "cls": "",
+    "text": "تواصل معنا",
+    "w": 66.1,
+    "h": 26,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "dock",
+    "tag": "a",
+    "cls": "dock-btn dock-cart",
+    "text": "السلة",
+    "w": 179,
+    "h": 50,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "dock",
+    "tag": "a",
+    "cls": "dock-btn dock-wa",
+    "text": "واتساب",
+    "w": 179,
+    "h": 50,
+    "padT": "0px",
+    "padB": "0px"
+   }
+  ],
+  "targetTotal": 14,
+  "forms": [
+   {
+    "tag": "input",
+    "type": "number",
+    "id": "quantity_6ac4dddc6aedb",
+    "name": "quantity",
+    "dir": null,
+    "autocomplete": "off",
+    "inputmode": "numeric",
+    "placeholder": "",
+    "ariaLabel": "كمية المنتج",
+    "labelText": "كمية شال كتان خفيف",
+    "describedby": null,
+    "required": false,
+    "rect": {
+     "w": 61,
+     "h": 56
+    }
+   }
+  ],
+  "reveal": {
+   "total": 0,
+   "hiddenNow": 0,
+   "sample": []
+  },
+  "motion": {
+   "scrollBehavior": "smooth",
+   "reducedMotionQuery": false,
+   "transitionCount": 16
+  },
+  "foreignRuns": [],
+  "contrast": [
+   {
+    "sel": "body",
+    "text": "تخطى إلى المحتوى شحن مجاني فوق 1,500 ج.م · كا",
+    "fg": "rgb(27, 26, 23)",
+    "bg": "rgb(250, 248, 244)",
+    "bgImage": false,
+    "bgEl": "rtl wp-singular product-template-default single si",
+    "fontSize": 17,
+    "fontWeight": 400,
+    "lineHeight": "28.9px",
+    "w": 390,
+    "h": 1241
+   },
+   {
+    "sel": ".site-footer p",
+    "text": "© 2026 نيلاد — متجر تجريبي (Demo) لا يبيع فعل",
+    "fg": "rgb(95, 90, 82)",
+    "bg": "rgb(250, 248, 244)",
+    "bgImage": false,
+    "bgEl": "rtl wp-singular product-template-default single si",
+    "fontSize": 14,
+    "fontWeight": 400,
+    "lineHeight": "23.8px",
+    "w": 273,
+    "h": 24
+   },
+   {
+    "sel": ".announce p",
+    "text": "شحن مجاني فوق 1,500 ج.م · كاش عند الاستلام · ",
+    "fg": "rgb(27, 26, 23)",
+    "bg": "rgb(228, 241, 236)",
+    "bgImage": false,
+    "bgEl": "wp-block-group announce has-global-padding is-layo",
+    "fontSize": 14,
+    "fontWeight": 600,
+    "lineHeight": "23.8px",
+    "w": 350,
+    "h": 48
+   },
+   {
+    "sel": ".dock .dock-wa",
+    "text": "واتساب",
+    "fg": "rgb(255, 255, 255)",
+    "bg": "rgb(11, 107, 87)",
+    "bgImage": false,
+    "bgEl": "dock-btn dock-wa",
+    "fontSize": 17,
+    "fontWeight": 700,
+    "lineHeight": "28.9px",
+    "w": 179,
+    "h": 50
+   },
+   {
+    "sel": ".dock .dock-cart",
+    "text": "السلة",
+    "fg": "rgb(27, 26, 23)",
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": false,
+    "bgEl": "dock-btn dock-cart",
+    "fontSize": 17,
+    "fontWeight": 700,
+    "lineHeight": "28.9px",
+    "w": 179,
+    "h": 50
+   },
+   {
+    "sel": ".wp-block-site-title a",
+    "text": "نيلاد",
+    "fg": "rgb(27, 26, 23)",
+    "bg": "color(srgb 0.980392 0.972549 0.956863 / 0.88)",
+    "bgImage": false,
+    "bgEl": "wp-block-group site-header has-global-padding is-l",
+    "fontSize": 18,
+    "fontWeight": 800,
+    "lineHeight": "30.6px",
+    "w": 37,
+    "h": 33
+   }
+  ]
+ }
+}

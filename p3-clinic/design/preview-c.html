@@ -1,0 +1,343 @@
+<!doctype html>
+<!--
+  DIRECTION C — «دفتر الوصفات» / the paper prescription book  (design/direction.md)
+  Concept: warm sand paper, deep ocean-blue ballpoint ink, numbered cards — the
+  neighbourhood clinic you already trust. Keeps the sticky-title + divided-list
+  structure the owner liked, and gives it a purpose.
+  Palette: adapted from C (Warm Local sand); terracotta primary -> deep ocean blue
+            #0E4A6B (ink on paper — the owner asked for blue), teal accent -> rose #BE123C.
+  Type: pairing 5 — El Messiri (calligraphic Arabic display) + Tajawal (body).
+  Radius family: PILL (pill buttons, 20px cards) — friendly, never mixed with A/B.
+  Hero: split composition, not centered headline + buttons.
+  Signature moment: the dotted paper rail beside the service list (tokens) — static
+        preview stands in for the scroll-driven fill (real build uses ScrollTrigger).
+  Sections: sticky title + divided list · team grid · form-first booking with receipt-style
+  prices · FAQ with side note · contact-card footer.
+-->
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<title>Direction C — عيادة سِراج للأسنان (Demo)</title>
+<meta name="description" content="نموذج تجريبي لعيادة أسنان: حجز زيارة، خدمات، أسعار، وفريق العمل.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@400;500;600;700&family=Cormorant+Garamond:wght@500;600&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<style>
+/* ---- hero: H1 split ---- */
+.hero{padding-block:var(--s12) var(--s16)}
+.hero-grid{display:grid;gap:var(--s8);align-items:center}
+@media(min-width:960px){.hero-grid{grid-template-columns:1.05fr .95fr}}
+.hero h1{max-width:17ch} /* --fs-hero / --lh-hero come from the .palette-c tokens */
+.hero-actions{display:flex;flex-wrap:wrap;gap:var(--s3);margin-top:var(--s6)}
+/* the ruled-paper surface for this placeholder comes from tokens.css
+   (.palette-c .hero-media) — setting a background here would win the cascade
+   because this <style> block loads after the stylesheet. */
+.hero-media{aspect-ratio:5/4;border-radius:var(--radius-lg);
+  border:var(--border-w) solid var(--border);display:grid;place-items:center;text-align:center;
+  color:var(--muted);font-weight:600;padding:var(--s6)}
+.pill-note{display:inline-flex;align-items:center;gap:var(--s2);background:var(--surface);
+  border:var(--border-w) solid var(--border);border-radius:var(--radius-pill);
+  padding:.3rem var(--s4);font-size:var(--fs-sm);font-weight:600;color:var(--muted);margin-bottom:var(--s4)}
+
+/* ---- services: S4 sticky title + divided list ---- */
+.svc-wrap{display:grid;gap:var(--s8)}
+@media(min-width:900px){.svc-wrap{grid-template-columns:.8fr 1.2fr;gap:var(--s12)}}
+.svc-aside{position:sticky;top:96px;align-self:start}
+@media(max-width:899px){.svc-aside{position:static}}
+.svc-list{display:grid}
+.svc-row{display:grid;gap:var(--s3);padding-block:var(--s6);border-top:var(--border-w) solid var(--border);
+  align-items:start}
+@media(min-width:620px){.svc-row{grid-template-columns:auto 1fr auto;gap:var(--s6)}}
+.svc-row .n{width:44px;height:44px;border-radius:14px;background:var(--primary);color:var(--on-primary);
+  display:grid;place-items:center;font-weight:800}
+.svc-row h3{margin-bottom:var(--s1)}
+.svc-row p{margin:0;color:var(--muted)}
+.svc-row .price{font-weight:800;color:var(--primary);white-space:nowrap}
+@media(max-width:619px){.svc-row .price{grid-row:2}}
+
+/* ---- team ---- */
+.team-note{font-size:var(--fs-sm);color:var(--muted);margin:0 0 var(--s3)}
+
+/* ---- booking: form first ---- */
+.book-grid{display:grid;gap:var(--s8)}
+@media(min-width:960px){.book-grid{grid-template-columns:1fr 1fr}}
+.form-card{background:var(--surface);border:var(--border-w) solid var(--border);
+  border-radius:var(--radius);padding:var(--s8);box-shadow:var(--shadow)}
+.addons{display:grid;gap:var(--s4)}
+.addon{display:flex;align-items:center;justify-content:space-between;gap:var(--s4);
+  background:var(--surface);border:var(--border-w) solid var(--border);
+  border-radius:var(--radius);padding:var(--s4) var(--s6)}
+.addon b{color:var(--primary);white-space:nowrap}
+
+/* ---- faq with side note ---- */
+.faq-wrap{display:grid;gap:var(--s8)}
+@media(min-width:900px){.faq-wrap{grid-template-columns:.75fr 1.25fr;gap:var(--s12)}}
+.aside-note{background:var(--primary-soft);border:var(--border-w) solid var(--border);
+  border-radius:var(--radius);padding:var(--s6);align-self:start}
+.aside-note p{margin:0}
+
+/* ---- footer ---- */
+.foot-grid{display:grid;gap:var(--s8)}
+@media(min-width:760px){.foot-grid{grid-template-columns:1.2fr 1fr 1fr}}
+.foot-card{background:var(--surface);border:var(--border-w) solid var(--border);
+  border-radius:var(--radius);padding:var(--s6)}
+.foot-card h3{font-size:var(--fs-base)}
+.foot-card p{margin:0;color:var(--muted)}
+</style>
+</head>
+<body class="palette-c">
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="#top"><span class="mark">س</span> عيادة سِراج للأسنان <span class="demo-badge">Demo</span></a>
+    <ul class="nav-links">
+      <li><a href="#services">الخدمات</a></li>
+      <li><a href="#team">الفريق</a></li>
+      <li><a href="#book">الحجز</a></li>
+      <li><a href="#faq">أسئلة</a></li>
+      <li><a href="#contact">تواصل</a></li>
+    </ul>
+    <a class="btn btn-primary" href="#book">احجز زيارة</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="pill-note">وسط البلد · القاهرة · Demo</p>
+        <h1>عيادة أسنان قريبة منك، بمواعيد بتتفق عليها بسهولة</h1>
+        <p class="lead">بنشرح كل حاجة قبل ما نبدأ، وبنحسب معاك وأنت في العيادة.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#book">احجز زيارة</a>
+          <a class="btn btn-ghost" href="#services">الخدمات والأسعار</a>
+        </div>
+        <ul class="proof">
+          <li>يوميًا 10ص — 9م</li>
+          <li>بتقبل التأمين الطبي</li>
+          <li>حجز أونلاين أو واتساب</li>
+        </ul>
+      </div>
+      <div class="hero-media" role="img" aria-label="صورة توضيحية للعيادة">صورة العيادة (Demo)</div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container svc-wrap">
+      <div class="svc-aside">
+        <span class="sec-num">01</span>
+        <p class="eyebrow">الخدمات</p>
+        <h2>كل خدمة بسعرها</h2>
+        <p class="lead">من غير مفاجآت — السعر المبدئي مكتوب جنب كل خدمة، والفرق بيتبين بعد الفحص.</p>
+      </div>
+      <div class="svc-list rail">
+        <span class="rail-dot rail-dot-1" aria-hidden="true"></span>
+        <span class="rail-fill" aria-hidden="true"></span>
+        <span class="rail-dot rail-dot-2" aria-hidden="true"></span>
+        <span class="rail-dot rail-dot-3" aria-hidden="true"></span>
+        <article class="svc-row">
+          <div class="n">1</div>
+          <div>
+            <h3>تنظيف وتلميع الأسنان</h3>
+            <p>إزالة الجير والتلميع في جلسة واحدة، مع نصائح عناية يومية.</p>
+          </div>
+          <div class="price">400 ج.م</div>
+        </article>
+        <article class="svc-row">
+          <div class="n">2</div>
+          <div>
+            <h3>علاج التسوّس (حشو تجويف)</h3>
+            <p>فحص وأشعة، ثم حشو المكان المصاب بخامة مناسبة.</p>
+          </div>
+          <div class="price">500 ج.م</div>
+        </article>
+        <article class="svc-row">
+          <div class="n">3</div>
+          <div>
+            <h3>تقويم الأسنان</h3>
+            <p>شفاف أو تقليدي، مع خطة مكتوبة خطوة بخطوة.</p>
+          </div>
+          <div class="price">استشارة 200</div>
+        </article>
+        <article class="svc-row">
+          <div class="n">4</div>
+          <div>
+            <h3>زراعة الأسنان</h3>
+            <p>فحص العظم أولًا، وخطة زراعة مكتوبة بالمراحل.</p>
+          </div>
+          <div class="price">12,000 ج.م</div>
+        </article>
+        <article class="svc-row">
+          <div class="n">5</div>
+          <div>
+            <h3>تبييض الأسنان</h3>
+            <p>في العيادة أو بقوالب منزلية، مع شرح الفرق.</p>
+          </div>
+          <div class="price">2,500 ج.م</div>
+        </article>
+        <article class="svc-row">
+          <div class="n">6</div>
+          <div>
+            <h3>علاج عصب السن</h3>
+            <p>للألم الحاد، بمواعيد طوارئ في نفس اليوم ومتابعة بعد الجلسات.</p>
+          </div>
+          <div class="price">1,200 ج.م</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="team">
+    <div class="container">
+      <div class="section-head">
+        <span class="sec-num">02</span>
+        <p class="eyebrow">الفريق</p>
+        <h2>الأطباء</h2>
+        <p class="lead">أسماء وصور توضيحية — النموذج كله تجريبي.</p>
+      </div>
+      <div class="grid grid-3">
+        <article class="card team-card">
+          <div class="team-media" role="img" aria-label="صورة توضيحية">صورة (Demo)</div>
+          <div class="team-body">
+            <h3>د. منى عبد الله</h3>
+            <p class="team-note">أسنان تحفظ · 9 سنوات</p>
+            <p style="margin-top:var(--s3)">تشخيص التسوّس وحشو التجويف للبالغين.</p>
+          </div>
+        </article>
+        <article class="card team-card">
+          <div class="team-media" role="img" aria-label="صورة توضيحية">صورة (Demo)</div>
+          <div class="team-body">
+            <h3>د. كريم فؤاد</h3>
+            <p class="team-note">تقويم · 12 سنة</p>
+            <p style="margin-top:var(--s3)">تقويم شفاف وتقويم تقليدي.</p>
+          </div>
+        </article>
+        <article class="card team-card">
+          <div class="team-media" role="img" aria-label="صورة توضيحية">صورة (Demo)</div>
+          <div class="team-body">
+            <h3>د. هالة رشدي</h3>
+            <p class="team-note">زراعة · 11 سنة</p>
+            <p style="margin-top:var(--s3)">زراعة الأسنان وخطط الزراعة.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="book">
+    <div class="container book-grid">
+      <div>
+        <span class="sec-num">03</span>
+        <p class="eyebrow">الحجز</p>
+        <h2>احجز في أقل من دقيقة</h2>
+        <p class="lead">سيب بياناتك وبنرد عليك خلال ساعات العمل لتأكيد الموعد.</p>
+        <form class="form-card" action="#" method="post" novalidate style="margin-top:var(--s6)">
+          <label>الاسم الكامل
+            <input name="name" autocomplete="name" required>
+          </label>
+          <label>رقم الموبايل
+            <input name="phone" inputmode="tel" autocomplete="tel" placeholder="01xxxxxxxxx" required>
+          </label>
+          <label>الخدمة المطلوبة
+            <select name="service" required>
+              <option>تنظيف وتلميع</option>
+              <option>علاج تسوّس (حشو)</option>
+              <option>تقويم الأسنان</option>
+              <option>زراعة الأسنان</option>
+              <option>تبييض</option>
+              <option>علاج عصب (طوارئ)</option>
+            </select>
+          </label>
+          <label>الموعد المناسب
+            <select name="slot" required>
+              <option>صباحًا (10ص — 1م)</option>
+              <option>ظهرًا (1م — 5م)</option>
+              <option>مساءً (5م — 9م)</option>
+            </select>
+          </label>
+          <input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <button class="btn btn-primary" type="submit">أرسل طلب الحجز</button>
+        </form>
+      </div>
+
+      <div>
+        <span class="sec-num">04</span>
+        <p class="eyebrow">الأسعار</p>
+        <h2>أسعار مبدئية (Demo)</h2>
+        <div class="addons" style="margin-top:var(--s6)">
+          <div class="addon"><span>تنظيف وتلميع</span><b>400 ج.م</b></div>
+          <div class="addon"><span>حشو تجويف</span><b>500 ج.م</b></div>
+          <div class="addon"><span>حشو عصب</span><b>1,200 ج.م</b></div>
+          <div class="addon"><span>تبييض في العيادة</span><b>2,500 ج.م</b></div>
+          <div class="addon"><span>استشارة تقويم</span><b>200 ج.م</b></div>
+          <div class="addon"><span>زراعة سن (مبدئية)</span><b>12,000 ج.م</b></div>
+        </div>
+        <p class="field-note" style="margin-top:var(--s4)">أرقام توضيحية للنموذج، والسعر النهائي بيتحدد بعد الفحص.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="container faq-wrap">
+      <div>
+        <span class="sec-num">05</span>
+        <p class="eyebrow">أسئلة شائعة</p>
+        <h2>اللي بيتكرر على التليفون</h2>
+        <div class="aside-note" style="margin-top:var(--s6)">
+          <p><b>لسه متردّد؟</b><br>ابعتلنا على واتساب وهنجاوبك على السؤال ده — من غير حجز.</p>
+        </div>
+      </div>
+      <div>
+        <details><summary>هل الحجز أونلاين بيضمن الموعد؟</summary>
+          <p>الحجز بيعتبر طلب — بنكلمك على الرقم المسجّل للتأكيد، والأولوية للمواعيد المؤكدة.</p></details>
+        <details><summary>بتقبلوا التأمين الطبي؟</summary>
+          <p>بنقبل التحصيل من شركات التأمين المشاركة بعد التحقق من البوليصة في الفرع.</p></details>
+        <details><summary>في عيادة للأطفال؟</summary>
+          <p>أيوا، من سن 4 سنوات، وأول زيارة تكون الفحص فقط من غير أي إجراء.</p></details>
+        <details><summary>إيه حالة الطوارئ؟</summary>
+          <p>ألم حاد أو تورّم: ابعتلنا على واتساب مع صور، وبنرد عليك في نفس اليوم.</p></details>
+        <details><summary>أقدر أدفع بالأقساط؟</summary>
+          <p>أيوا، من 3 إلى 12 قسطًا على التقويم والزراعة — بيتأكد في زيارة الاستشارة.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="section-head">
+        <span class="sec-num">06</span>
+        <p class="eyebrow">تواصل</p>
+        <h2>الموقع والعنوان</h2>
+      </div>
+      <div class="foot-grid">
+        <div class="foot-card">
+          <h3>العنوان (Demo)</h3>
+          <p>٢٤ شارع التحرير، وسط البلد، القاهرة</p>
+        </div>
+        <div class="foot-card">
+          <h3>التليفون والواتساب</h3>
+          <p>0100 000 0000 (placeholder)</p>
+          <p>واتساب: 0100 000 0000</p>
+        </div>
+        <div class="foot-card">
+          <h3>ساعات العمل</h3>
+          <p>يوميًا 10ص — 9م</p>
+          <p>الجمعة 2م — 7م</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <span>© عيادة سِراج للأسنان — نموذج تجريبي (Demo)</span>
+    <span>القاهرة · الخصوصية · سياسة الحجز</span>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!-- wp:template-part {"slug":"header","tagName":"div"} /-->
+
+<!-- wp:group {"tagName":"main","className":"container","layout":{"type":"constrained","contentSize":"760px"}} -->
+<main class="wp-block-group container"><!-- wp:heading {"level":1} -->
+<h1 class="wp-block-heading">المقالات</h1>
+<!-- /wp:heading -->
+
+<!-- wp:query {"query":{"perPage":10,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date"},"className":"siraj-query"} -->
+<div class="wp-block-query siraj-query"><!-- wp:post-template -->
+<!-- wp:post-title {"isLink":true,"fontSize":"h2"} /-->
+
+<!-- wp:post-excerpt /-->
+<!-- /wp:post-template -->
+
+<!-- wp:query-no-results -->
+<!-- wp:paragraph -->
+<p>لا توجد مقالات حتى الآن.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query --></main>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","tagName":"div"} /-->

@@ -1,0 +1,48 @@
+﻿node.exe : i Starting 'bash -c echo '=== paymob htaccess ==='; cat 
+/var/www/html/wp-content/uploads/paymob-private-logs/.htaccess; echo '=== wc-logs htaccess ==='; cat 
+/var/www/html/wp-content/uploads/wc-logs/.htaccess; echo '=== woocommerce_uploads htaccess ==='; cat 
+/var/www/html/wp-content/uploads/woocommerce_uploads/.htaccess; echo '=== wp-content ls ==='; ls -la 
+/var/www/html/wp-content/; echo '=== plugins ls ==='; ls -la /var/www/html/wp-content/plugins/' on the wordpress 
+container. 
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (i Starting 'bas...ess container. :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+=== paymob htaccess ===
+Deny from all
+<IfModule mod_authz_core.c>
+Require all denied
+</IfModule>
+=== wc-logs htaccess ===
+Deny from all
+<IfModule mod_authz_core.c>
+Require all denied
+</IfModule>
+=== woocommerce_uploads htaccess ===
+deny from all=== wp-content ls ===
+total 0
+drwxrwxrwx 1 root root 512 Oct  1 23:43 .
+drwxrwxrwx 1 root root 512 Oct  3 00:19 ..
+-rwxrwxrwx 1 root root  30 Oct  1 17:34 index.php
+drwxrwxrwx 1 1000 1000 512 Oct  2 03:10 languages
+drwxrwxrwx 1 root root 512 Oct  3 02:28 plugins
+drwxrwxrwx 1 root root 512 Oct  1 23:39 themes
+drwxrwxrwx 1 1000 1000 512 Oct  3 02:28 upgrade
+drwxrwxrwx 1 1000 1000 512 Oct  3 02:28 uploads
+=== plugins ls ===
+total 4
+drwxrwxrwx 1 root root  512 Oct  3 02:28 .
+drwxrwxrwx 1 root root  512 Oct  1 23:43 ..
+-rwxrwxrwx 1 root root 2775 Oct  1 17:35 hello.php
+-rwxrwxrwx 1 root root   30 Oct  1 17:34 index.php
+drwxrwxrwx 1 root root  512 Oct  4 23:52 nilad-core
+drwxrwxrwx 1 1000 1000  512 Oct  3 02:28 paymob-for-woocommerce
+drwxrwxrwx 1 root root  512 Oct  4 21:30 woocommerce
+ΓêÜ Ran `bash -c echo '=== paymob htaccess ==='; cat /var/www/html/wp-content/uploads/paymob-private-logs/.htaccess; 
+echo '=== wc-logs htaccess ==='; cat /var/www/html/wp-content/uploads/wc-logs/.htaccess; echo '=== woocommerce_uploads 
+htaccess ==='; cat /var/www/html/wp-content/uploads/woocommerce_uploads/.htaccess; echo '=== wp-content ls ==='; ls 
+-la /var/www/html/wp-content/; echo '=== plugins ls ==='; ls -la /var/www/html/wp-content/plugins/` in 'wordpress'. 
+(in 1s 651ms)

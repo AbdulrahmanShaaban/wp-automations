@@ -1,0 +1,160 @@
+{
+  "generatedAt": "2026-10-08T03:42:02.737Z",
+  "pages": {
+    "home": {
+      "styleTags": 14,
+      "styleBytes": 37049,
+      "coreInlineStyleTags": 9,
+      "coreInlineStyleBytes": 19167,
+      "scriptTags": 6,
+      "inlineScriptBytes": 15265,
+      "inlineScripts": [
+        {
+          "attrs": "id=\"wp-importmap\" type=\"importmap\"",
+          "bytes": 149
+        },
+        {
+          "attrs": "type=\"speculationrules\"",
+          "bytes": 381
+        },
+        {
+          "attrs": "",
+          "bytes": 568
+        },
+        {
+          "attrs": "id=\"wp-emoji-settings\" type=\"application/json\"",
+          "bytes": 301
+        },
+        {
+          "attrs": "type=\"module\"",
+          "bytes": 13866
+        }
+      ],
+      "totalHtmlBytes": 73948
+    },
+    "services": {
+      "styleTags": 17,
+      "styleBytes": 40050,
+      "coreInlineStyleTags": 12,
+      "coreInlineStyleBytes": 21821,
+      "scriptTags": 6,
+      "inlineScriptBytes": 15265,
+      "inlineScripts": [
+        {
+          "attrs": "id=\"wp-importmap\" type=\"importmap\"",
+          "bytes": 149
+        },
+        {
+          "attrs": "type=\"speculationrules\"",
+          "bytes": 381
+        },
+        {
+          "attrs": "",
+          "bytes": 568
+        },
+        {
+          "attrs": "id=\"wp-emoji-settings\" type=\"application/json\"",
+          "bytes": 301
+        },
+        {
+          "attrs": "type=\"module\"",
+          "bytes": 13866
+        }
+      ],
+      "totalHtmlBytes": 66091
+    },
+    "team": {
+      "styleTags": 17,
+      "styleBytes": 40050,
+      "coreInlineStyleTags": 12,
+      "coreInlineStyleBytes": 21821,
+      "scriptTags": 6,
+      "inlineScriptBytes": 15265,
+      "inlineScripts": [
+        {
+          "attrs": "id=\"wp-importmap\" type=\"importmap\"",
+          "bytes": 149
+        },
+        {
+          "attrs": "type=\"speculationrules\"",
+          "bytes": 381
+        },
+        {
+          "attrs": "",
+          "bytes": 568
+        },
+        {
+          "attrs": "id=\"wp-emoji-settings\" type=\"application/json\"",
+          "bytes": 301
+        },
+        {
+          "attrs": "type=\"module\"",
+          "bytes": 13866
+        }
+      ],
+      "totalHtmlBytes": 65235
+    },
+    "contact": {
+      "styleTags": 17,
+      "styleBytes": 38950,
+      "coreInlineStyleTags": 12,
+      "coreInlineStyleBytes": 20721,
+      "scriptTags": 6,
+      "inlineScriptBytes": 15265,
+      "inlineScripts": [
+        {
+          "attrs": "id=\"wp-importmap\" type=\"importmap\"",
+          "bytes": 149
+        },
+        {
+          "attrs": "type=\"speculationrules\"",
+          "bytes": 381
+        },
+        {
+          "attrs": "",
+          "bytes": 568
+        },
+        {
+          "attrs": "id=\"wp-emoji-settings\" type=\"application/json\"",
+          "bytes": 301
+        },
+        {
+          "attrs": "type=\"module\"",
+          "bytes": 13866
+        }
+      ],
+      "totalHtmlBytes": 63781
+    },
+    "book": {
+      "styleTags": 16,
+      "styleBytes": 37931,
+      "coreInlineStyleTags": 11,
+      "coreInlineStyleBytes": 19702,
+      "scriptTags": 6,
+      "inlineScriptBytes": 15265,
+      "inlineScripts": [
+        {
+          "attrs": "id=\"wp-importmap\" type=\"importmap\"",
+          "bytes": 149
+        },
+        {
+          "attrs": "type=\"speculationrules\"",
+          "bytes": 381
+        },
+        {
+          "attrs": "",
+          "bytes": 568
+        },
+        {
+          "attrs": "id=\"wp-emoji-settings\" type=\"application/json\"",
+          "bytes": 301
+        },
+        {
+          "attrs": "type=\"module\"",
+          "bytes": 13866
+        }
+      ],
+      "totalHtmlBytes": 65055
+    }
+  }
+}

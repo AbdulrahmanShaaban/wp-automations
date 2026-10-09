@@ -1,0 +1,4 @@
+﻿readme.html bytes: 98
+readme mentions version: 	<li><a href="https://www.php.net/">PHP</a> version <strong>7.4</strong> or greater.</li> 	<li><a href="https://www.mysql.com/">MySQL</a> version <strong>5.5.5</strong> or greater.</li> 	<li><a href="https://www.php.net/">PHP</a> version <strong>8.3</strong> or greater.</li> 	<li><a href="https://www.mysql.com/">MySQL</a> version <strong>8.0</strong> or greater OR <a href="https://mariadb.org/">MariaDB</a> version <strong>10.11</strong> or greater.</li> <p>WordPress is free software, and is released under the terms of the <abbr>GPL</abbr> (GNU General Public License) version 2 or (at your option) any later version. See <a href="license.txt">license.txt</a>.</p>
+wp-includes/version.php executed (0 bytes expected): 0
+generator meta tag on home: <meta name="generator" content="WordPress 7.1.2" />

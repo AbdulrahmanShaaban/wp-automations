@@ -1,0 +1,6 @@
+{
+ "success": false,
+ "alert": true,
+ "alertText": "من فضلك راجع الحقول التالية:تعذّر إرسال الطلب، من فضلك أعد المحاولة.",
+ "formStillThere": true
+}

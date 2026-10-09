@@ -1,0 +1,95 @@
+{
+ "h1": {
+  "selector": ".hero h1",
+  "fonts": [
+   {
+    "family": "Alexandria",
+    "glyphCount": 36
+   }
+  ]
+ },
+ "bodyArabic": {
+  "selector": ".hero .lead",
+  "fonts": [
+   {
+    "family": "Alexandria",
+    "glyphCount": 95
+   }
+  ]
+ },
+ "servicePrice": {
+  "selector": ".svc-meta",
+  "fonts": [
+   {
+    "family": "Alexandria",
+    "glyphCount": 8
+   },
+   {
+    "family": "Alexandria",
+    "glyphCount": 7
+   }
+  ]
+ },
+ "documentFonts": {
+  "readyStatus": "loaded",
+  "alexandria400": true,
+  "alexandria700": true,
+  "faces": [
+   {
+    "family": "Alexandria",
+    "weight": "400",
+    "status": "loaded"
+   },
+   {
+    "family": "Alexandria",
+    "weight": "400",
+    "status": "loaded"
+   },
+   {
+    "family": "Alexandria",
+    "weight": "500",
+    "status": "unloaded"
+   },
+   {
+    "family": "Alexandria",
+    "weight": "500",
+    "status": "unloaded"
+   },
+   {
+    "family": "Alexandria",
+    "weight": "600",
+    "status": "loaded"
+   },
+   {
+    "family": "Alexandria",
+    "weight": "600",
+    "status": "loaded"
+   },
+   {
+    "family": "Alexandria",
+    "weight": "700",
+    "status": "loaded"
+   },
+   {
+    "family": "Alexandria",
+    "weight": "700",
+    "status": "loaded"
+   },
+   {
+    "family": "Alexandria",
+    "weight": "800",
+    "status": "loaded"
+   },
+   {
+    "family": "Alexandria",
+    "weight": "800",
+    "status": "loaded"
+   }
+  ],
+  "stackBody": [
+   "Alexandria",
+   " system-ui",
+   " -apple-system"
+  ]
+ }
+}

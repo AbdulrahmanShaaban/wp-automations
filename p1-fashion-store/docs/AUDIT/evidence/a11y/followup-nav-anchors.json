@@ -1,0 +1,40 @@
+{
+  "captured": "2026-10-06",
+  "page": "/ (home) + header nav, viewports 390 and desktop (DOM identical)",
+  "method": "chrome-devtools MCP evaluate_script + click + read-only DOM inspection",
+  "findings": {
+    "brokenHashAnchors": {
+      "navLinks": [
+        {"href": "/#new", "targetExists": true, "targetTag": "DIV", "verdict": "works"},
+        {"href": "/#cats", "targetExists": false, "verdict": "BROKEN"},
+        {"href": "/#best", "targetExists": false, "verdict": "BROKEN"},
+        {"href": "/#about", "targetExists": false, "verdict": "BROKEN (no about section on home; only /about/ page exists)"}
+      ],
+      "inPageLink": {"text": "شوف التصنيفات", "href": "#cats", "targetExists": false},
+      "clickProof": {"link": "a[href=\"#cats\"]", "before": {"y": 0, "hash": ""}, "after": {"y": 0, "hash": "#cats"}, "scrolled": false, "note": "hash set, no scroll"},
+      "sectionsThatLackIds": [
+        {"heading": "ابدأ من هنا", "sectionClass": "section cats", "expectedId": "cats", "actualId": null},
+        {"heading": "قطع بيشتريها الناس كتير", "expectedId": "best", "actualId": null}
+      ],
+      "workingDestinations": {
+        "/about/": "exists as standalone page (footer link)",
+        "/shipping-returns/": "footer",
+        "/privacy/": "footer",
+        "/contact/": "footer"
+      }
+    },
+    "mobileNavHidden": {
+      "viewport": "390x844 (CDP emulation, hasTouch)",
+      "navElement": "nav.wp-block-navigation",
+      "computedDisplay": "none",
+      "hiddenLinks": ["الجديد /#new", "التصنيفات /#cats", "الأكثر مبيعًا /#best", "عن نيلاد /#about"],
+      "menuToggleButtonFound": false,
+      "allButtonsAt390": ["اشترك (newsletter)"],
+      "dockNavPresent": true,
+      "dockLinks": ["السلة (172x50)", "واتساب (172x50)"],
+      "impact": "primary header navigation unavailable on small screens; no disclosure control",
+      "verdict": "no clean WCAG SC failure (targets are in-page anchors reachable by scrolling / pages reachable via footer), reported as UX/navigation gap + interacts with broken anchors above"
+    }
+  },
+  "screenshot": "screens/m-01-home-390.png"
+}

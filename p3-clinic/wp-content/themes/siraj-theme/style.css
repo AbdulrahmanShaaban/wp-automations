@@ -1,0 +1,368 @@
+/*
+Theme Name: Siraj Clinic Demo
+Theme URI: https://example.com/siraj
+Author: OpenCode
+Description: Arabic-first (RTL) block theme for عيادة سِراج للأسنان (Demo). Approved design direction A «الروشتة» — see design/APPROVED.md.
+Requires at least: 6.5
+Tested up to: 7.1
+Requires PHP: 8.3
+Version: 0.1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: siraj
+Tags: rtl-language-support, block-patterns, custom-colors, custom-menu
+*/
+
+/* ============================================================
+   Tokens — single-sourced from design/tokens.css (direction A).
+   theme.json mirrors the same values as WP presets; these custom
+   properties are what the theme's own classes below reference.
+   Arabic rules (arabic-rtl): NO letter-spacing anywhere, body
+   line-height 1.7, Western numerals, one radius family (14px).
+   ============================================================ */
+:root{
+  --font-body:"Alexandria",system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;
+  --font-display:var(--font-body);
+
+  --fs-sm:.875rem;
+  --fs-base:1rem;
+  --fs-lg:1.25rem;
+  --fs-xl:1.5rem;
+  --fs-2xl:clamp(1.75rem,1.2rem + 2vw,2.5rem);
+  --fs-hero:clamp(2.5rem,1rem + 7vw,5.25rem);
+  --lh-hero:1.3;
+
+  --s1:.25rem; --s2:.5rem; --s3:.75rem; --s4:1rem; --s6:1.5rem;
+  --s8:2rem; --s12:3rem; --s16:4rem; --s24:6rem;
+  --sec-pad:var(--s16);
+
+  --radius:14px;
+  --radius-sm:10px;
+  --radius-lg:20px;
+  --radius-pill:14px;
+  --border-w:1px;
+  --shadow:0 1px 2px rgba(16,20,32,.06),0 8px 24px rgba(16,20,32,.06);
+  --shadow-strong:0 2px 6px rgba(16,20,32,.10),0 18px 48px rgba(16,20,32,.12);
+
+  --container:1120px;
+
+  /* palette A — «الروشتة» (design/tokens.css .palette-a) */
+  --bg:#F7F8FC; --surface:#FFFFFF; --text:#12132B; --muted:#555878;
+  --primary:#2F4BD8; --on-primary:#FFFFFF; --accent:#A3231B;
+  --border:#E1E2EF; --primary-soft:#E6EAFB;
+  --success:#15803D; --danger:#B91C1C;
+  --ink-line:color-mix(in srgb,var(--primary) 55%,var(--border));
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);
+  font-size:var(--fs-base);line-height:1.7;-webkit-font-smoothing:antialiased;
+  /* WP preset kept aligned with the same token (theme.json mirrors it) */
+  font-family:var(--wp--preset--font-family--body,var(--font-body))}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-display);line-height:1.2;margin:0 0 var(--s4)}
+h1{font-size:var(--fs-hero);font-weight:800;line-height:var(--lh-hero)}
+h2{font-size:var(--fs-2xl);font-weight:700}
+h3{font-size:var(--fs-lg);font-weight:700}
+p{margin:0 0 var(--s4);max-width:65ch}
+.container{width:min(100% - 2*var(--s6),var(--container));margin-inline:auto}
+section{padding-block:var(--sec-pad)}
+.eyebrow{font-size:var(--fs-sm);font-weight:700;color:var(--primary);margin-bottom:var(--s3)}
+.lead{font-size:var(--fs-lg);color:var(--muted)}
+.section-head{max-width:640px;margin-bottom:var(--s12)}
+.sec-num{font-family:var(--font-display);font-weight:700;color:var(--primary);
+  display:block;margin-bottom:var(--s2);line-height:1}
+.screen-reader-text{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;
+  overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+
+/* buttons — 48px min target (WCAG 2.2), radius family = 14 (no pills) */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--s2);
+  min-height:48px;padding:0 var(--s6);border-radius:var(--radius-pill);
+  border:1.5px solid transparent;font:inherit;font-weight:600;text-decoration:none;cursor:pointer;
+  transition:transform .15s,background-color .15s,border-color .15s,color .15s}
+.btn-primary{background:var(--primary);color:var(--on-primary)}
+.btn-primary:hover{transform:translateY(-1px);filter:brightness(.94)}
+.btn-ghost{border-color:var(--border);background:var(--surface);color:var(--text)}
+.btn-ghost:hover{border-color:var(--primary);color:var(--primary)}
+:where(a,button,input,select,textarea,summary):focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+/* sticky header with blur */
+.site-header{position:sticky;top:0;z-index:20;
+  background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:saturate(1.4) blur(10px);
+  border-bottom:var(--border-w) solid var(--border)}
+/* The menu overlay is position:fixed — a backdrop-filter (like transform/filter)
+   makes this header its containing block, trapping the overlay in a 68px box.
+   Drop the blur while the modal menu is open so it covers the viewport. */
+html.has-modal-open .site-header{backdrop-filter:none}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:var(--s4);min-height:68px}
+.brand{font-weight:800;font-size:var(--fs-lg);text-decoration:none;display:flex;align-items:center;gap:var(--s2);
+  white-space:nowrap}
+.brand .mark{flex:0 0 34px;width:34px;height:34px;border-radius:10px;overflow:hidden;line-height:0;
+  background:var(--siraj-logo) center/contain no-repeat}
+.brand-name{font-weight:800}
+.demo-badge{display:inline-flex;align-items:center;gap:var(--s1);font-size:var(--fs-sm);font-weight:700;
+  padding:.15rem var(--s3);border-radius:var(--radius-pill);
+  background:var(--primary-soft);color:var(--primary);border:var(--border-w) solid var(--border)}
+.nav .btn,.nav .wp-block-button__link{min-height:44px;padding-inline:var(--s4);white-space:nowrap;display:inline-flex;align-items:center}
+/* keep one row on a 390px screen (measured rule from design/tokens.css) */
+@media(max-width:560px){
+  .brand{font-size:var(--fs-base)}
+  .nav .btn,.nav .wp-block-button__link{padding-inline:var(--s3);font-size:var(--fs-sm)}
+  .site-header .demo-badge{display:none}
+}
+/* WP navigation block: links + responsive overlay (never display:none) */
+.wp-block-navigation{font-weight:600}
+.wp-block-navigation a{text-decoration:none;color:var(--muted)}
+.wp-block-navigation a:hover{color:var(--text)}
+
+/* cards / grids */
+.card{background:var(--surface);border:var(--border-w) solid var(--border);
+  border-radius:var(--radius);padding:var(--s8);box-shadow:var(--shadow)}
+.grid{display:grid;gap:var(--s6)}
+
+/* ---- hero: prescription composition (asymmetric, oversized display) ---- */
+.hero{padding-block:var(--s12) var(--s16)}
+.hero-grid{display:grid;gap:var(--s8);align-items:start}
+@media(min-width:900px){.hero-grid{grid-template-columns:1.15fr .85fr;gap:var(--s12)}}
+.hero h1{margin-bottom:var(--s4)}
+.hero .lead{max-width:48ch}
+.hero .rule{width:min(100%,320px);margin-block:var(--s4) var(--s6)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:var(--s3);margin-top:var(--s6)}
+
+/* proof strip — only true, verifiable items */
+.proof{display:flex;flex-wrap:wrap;gap:var(--s2) var(--s4);margin:var(--s8) 0 0;padding:0;list-style:none;
+  color:var(--muted);font-size:var(--fs-sm);font-weight:600}
+.proof li::before{content:"✓";color:var(--primary);margin-inline-end:var(--s2)}
+
+/* the ruled "notes" card — the paper metaphor + hero's second column */
+.note{position:relative;overflow:hidden;background:var(--surface);
+  border:var(--border-w) solid var(--border);border-radius:var(--radius);
+  padding:var(--s6) var(--s8) var(--s8);box-shadow:var(--shadow)}
+.note h2{font-size:var(--fs-xl);margin-bottom:var(--s2)}
+.note-list{list-style:none;margin:var(--s4) 0 0;padding:0}
+.note-list li{display:flex;justify-content:space-between;gap:var(--s4);padding-block:var(--s3);
+  border-bottom:var(--border-w) dashed var(--border);font-weight:600}
+.note-list li span{color:var(--muted);font-weight:400;white-space:nowrap}
+.note .stamp{margin-top:var(--s6);justify-self:start;display:inline-flex;align-items:center;gap:var(--s2);
+  font-size:var(--fs-sm);font-weight:800;color:var(--accent);
+  border:2px solid color-mix(in srgb,var(--accent) 55%,transparent);border-radius:var(--radius-sm);
+  padding:var(--s2) var(--s4);transform:rotate(-2deg)}
+.field-note{font-size:var(--fs-sm);color:var(--muted);font-weight:400}
+/* the blueprint watermark inside the card (inline so it can draw itself later) */
+.note .mark-art{position:absolute;inset-block-start:-28px;inset-inline-end:-28px;width:230px;
+  opacity:.12;pointer-events:none;color:var(--text)}
+.note>*:not(.mark-art){position:relative}
+
+/* ==================== direction A: ruled prescription paper ==================== */
+/* =====================================================================
+   Motion (approved direction A: the rule draws, sections reveal)
+   ---------------------------------------------------------------------
+   Rule of the house: content is VISIBLE by default; motion is only ever
+   ADDED by the script, which arms itself by putting `js-motion` on <html>
+   and only when the visitor allows motion. No JS (blocked, error, or the
+   script never runs) => the class is never added => everything stays visible.
+   CSS scroll-driven animations were tried here first and removed: when a
+   browser parses `@supports (animation-timeline: view())` but does not drive
+   the timeline, `animation-fill-mode: both` strands every section at
+   opacity 0 — measured 24/24 hidden with scripts disabled
+   (docs/evidence/motion-report.json). A stuck-invisible page is a worse
+   failure than a missing animation, so the reveal stays JS-only.
+   ===================================================================== */
+
+/* 1. Base state: visible. Never the other way round. */
+.reveal{opacity:1;transform:none}
+
+/* 2. Armed state: hidden only while the script has taken over. */
+.js-motion .reveal{opacity:0;transform:translateY(16px);
+  transition:opacity .7s ease,transform .7s ease}
+.js-motion .reveal.in{opacity:1;transform:none}
+
+/* Stagger inside a group so rows cascade instead of popping together. */
+.js-motion .photo-grid .reveal:nth-child(2),
+.js-motion .team-list .reveal:nth-child(2){transition-delay:.08s}
+.js-motion .photo-grid .reveal:nth-child(3),
+.js-motion .team-list .reveal:nth-child(3){transition-delay:.16s}
+.js-motion .photo-grid .reveal:nth-child(4),
+.js-motion .team-list .reveal:nth-child(4){transition-delay:.24s}
+.js-motion .step-list .reveal:nth-child(2){transition-delay:.08s}
+.js-motion .step-list .reveal:nth-child(3){transition-delay:.16s}
+.js-motion .step-list .reveal:nth-child(4){transition-delay:.24s}
+
+/* The hero rule: the signature moment. Pure CSS, so it plays even with
+   scripts blocked. */
+.rule{height:1px;background:var(--ink-line);transform-origin:right;
+  animation:draw .9s ease-out both}
+@keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+
+@media(prefers-reduced-motion:reduce){
+  /* Belt and braces: the script refuses to arm under reduced motion, and if it
+     somehow did, this wins because it is !important. */
+  .js-motion .reveal{opacity:1!important;transform:none!important;transition:none!important}
+}
+.paper{background:
+  repeating-linear-gradient(to bottom,transparent,transparent 33px,
+    color-mix(in srgb,var(--primary) 7%,transparent) 33px,
+    color-mix(in srgb,var(--primary) 7%,transparent) 34px)}
+
+/* forms */
+form{display:grid;gap:var(--s4)}
+label{font-weight:600;display:grid;gap:var(--s2)}
+input,select,textarea{font:inherit;padding:var(--s3) var(--s4);border:1.5px solid var(--border);
+  border-radius:var(--radius-sm);background:var(--surface);color:var(--text);min-height:48px}
+textarea{min-height:120px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--primary);
+  box-shadow:0 0 0 3px var(--primary-soft)}
+
+/* grid/flex overflow guard (design/tokens.css — measured fix) */
+.grid>*,.foot-grid>*,.hero-grid>*,label,form{min-width:0}
+input,select,textarea,button{min-width:0;max-width:100%}
+/* honeypot — hidden from users and a11y tree, no RTL overflow */
+.hp{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+  clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
+
+/* footer */
+footer{border-top:var(--border-w) solid var(--border);padding-block:var(--s8);
+  color:var(--muted);font-size:var(--fs-sm)}
+.footer-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--s4);align-items:center}
+footer .brand .mark{flex-basis:40px;width:40px;height:40px;border-radius:12px}
+footer a{color:var(--muted)}
+footer a:hover{color:var(--text)}
+/* WCAG 2.2 target size: footer links render ~18px tall on text line-height */
+footer a,.footer-row a{min-height:24px;display:inline-flex;align-items:center}
+
+/* generic page content (stub pages, posts) */
+.page-content,.entry-content{max-width:760px}
+.is-layout-constrained>.page-content{max-width:none}
+
+/* =====================================================================
+   Content build (2026-10-07) — sections on front-page + booking form
+   ===================================================================== */
+.section{padding-block:var(--s12)}
+@media(min-width:900px){.section{padding-block:var(--s16)}}
+section[id]{scroll-margin-top:96px}
+.narrow{max-width:760px}
+.section h2{margin-bottom:var(--s3)}
+.section .section-head{margin-bottom:var(--s10)}
+.field-note{font-size:var(--fs-sm);color:var(--muted)}
+
+/* --- services 01–06: prescription rows --- */
+.svc-list{list-style:none;margin:0;padding:0;display:grid;gap:var(--s4)}
+.svc{display:grid;grid-template-columns:56px 1fr;gap:var(--s4);align-items:start;
+  background:var(--surface);border:var(--border-w) solid var(--border);
+  border-radius:var(--radius-sm);padding:var(--s6)}
+@media(min-width:720px){.svc{grid-template-columns:72px 1fr;padding:var(--s8)}}
+.svc .sec-num{font-size:var(--fs-sm);line-height:1.6;margin:0}
+.svc h3{font-size:var(--fs-lg);margin-bottom:var(--s2)}
+.svc p{margin:0 0 var(--s2)}
+.svc-meta{display:flex;flex-wrap:wrap;gap:var(--s2) var(--s4);margin:0;
+  font-size:var(--fs-sm);color:var(--muted);font-weight:600}
+.svc-meta span:last-child{color:var(--text);font-weight:800}
+
+/* --- photo grid (no people in this demo) --- */
+.photo-grid{display:grid;gap:var(--s5);grid-template-columns:1fr}
+@media(min-width:720px){.photo-grid{grid-template-columns:repeat(3,1fr)}}
+.photo{margin:0;overflow:hidden;background:var(--surface);
+  border:var(--border-w) solid var(--border);border-radius:var(--radius-sm)}
+.photo img{display:block;width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.photo.photo-tall img{aspect-ratio:3/2}
+.photo figcaption{font-size:var(--fs-sm);color:var(--muted);
+  padding:var(--s3) var(--s4);border-top:var(--border-w) solid var(--border)}
+
+/* --- team (monogram tiles instead of photos) --- */
+.team-list{list-style:none;margin:0 0 var(--s6);padding:0;display:grid;gap:var(--s5)}
+@media(min-width:720px){.team-list{grid-template-columns:repeat(3,1fr)}}
+.team-card{padding:var(--s6)}
+.team-card .mono{display:grid;place-items:center;width:56px;height:56px;margin-bottom:var(--s4);
+  border-radius:12px;background:var(--primary-soft);color:var(--primary);
+  font-weight:800;font-size:var(--fs-sm)}
+.team-card h3{font-size:var(--fs-lg);margin-bottom:var(--s2)}
+.team-card p{margin:0 0 var(--s3)}
+.team-meta{font-size:var(--fs-sm);color:var(--muted);font-weight:700;margin:0}
+
+/* --- process steps --- */
+.step-list{list-style:none;counter-reset:none;margin:0;padding:0;display:grid;gap:var(--s5)}
+@media(min-width:720px){.step-list{grid-template-columns:repeat(2,1fr)}}
+@media(min-width:1100px){.step-list{grid-template-columns:repeat(4,1fr)}}
+.step{background:var(--surface);border:var(--border-w) solid var(--border);
+  border-radius:var(--radius-sm);padding:var(--s6)}
+.step-num{display:grid;place-items:center;width:40px;height:40px;margin-bottom:var(--s4);
+  border-radius:50%;background:var(--primary);color:var(--on-primary);font-weight:800}
+.step h3{font-size:var(--fs-lg);margin-bottom:var(--s2)}
+.step p{margin:0;color:var(--muted)}
+
+/* --- FAQ --- */
+.faq-list{display:grid;gap:var(--s3)}
+.faq-item{background:var(--surface);border:var(--border-w) solid var(--border);
+  border-radius:var(--radius-sm);padding:var(--s4) var(--s5)}
+.faq-item summary{cursor:pointer;font-weight:700;min-height:24px;
+  display:flex;align-items:center;gap:var(--s3);list-style:none}
+.faq-item summary::-webkit-details-marker{display:none}
+.faq-item summary::after{content:"+";margin-inline-start:auto;color:var(--primary);
+  font-weight:800;font-size:var(--fs-lg);line-height:1}
+.faq-item[open] summary::after{content:"–"}
+.faq-item p{margin:var(--s3) 0 0;color:var(--muted)}
+
+/* --- contact band --- */
+.contact-grid{display:grid;gap:var(--s8);align-items:start}
+@media(min-width:900px){.contact-grid{grid-template-columns:1.1fr .9fr;gap:var(--s12)}}
+.contact-text h2{margin-bottom:var(--s5)}
+.info-list{list-style:none;margin:0 0 var(--s6);padding:0;display:grid;gap:var(--s3)}
+.info-list li{display:flex;justify-content:space-between;gap:var(--s4);
+  padding-block:var(--s3);border-bottom:var(--border-w) solid var(--border)}
+.info-list .k{color:var(--muted);font-weight:600}
+.info-list .v{font-weight:700;text-align:end}
+
+/* --- closing CTA --- */
+.cta-band{padding-block:var(--s12) var(--s16)}
+.cta-inner{background:var(--primary);color:var(--on-primary);border-radius:var(--radius-sm);
+  padding:var(--s10) var(--s8);display:grid;gap:var(--s4);justify-items:start;text-align:start}
+@media(min-width:900px){.cta-inner{padding:var(--s16);justify-items:center;text-align:center}}
+.cta-inner .lead{color:color-mix(in srgb,var(--on-primary) 82%,transparent);max-width:46ch}
+.btn-lg{min-height:56px;padding-inline:var(--s8);font-size:var(--fs-lg)}
+
+/* =====================================================================
+   Booking form (shortcode [siraj_booking] from siraj-core)
+   ===================================================================== */
+.siraj-booking{background:var(--surface);border:var(--border-w) solid var(--border);
+  border-radius:var(--radius-sm);padding:var(--s6);margin-block:var(--s6)}
+@media(min-width:720px){.siraj-booking{padding:var(--s10)}}
+/* The theme's global `label{display:grid}` turns the label text and the
+   required asterisk into two grid items in separate columns, which pushed the
+   asterisk into the neighbouring field. Labels here are siblings of their
+   control, so keep them plain blocks. */
+.siraj-booking label{display:block;font-weight:600}
+.siraj-grid{display:grid;gap:var(--s5)}
+@media(min-width:720px){.siraj-grid{grid-template-columns:repeat(2,1fr)}}
+.siraj-field{display:flex;flex-direction:column;gap:var(--s2);min-width:0;align-content:start}
+/* Labels reserve two lines so controls line up across a two-column grid even
+   when one label wraps (misaligned inputs read as a broken form). */
+.siraj-label{display:flex;flex-wrap:wrap;gap:0 var(--s1);align-items:baseline;min-height:calc(2*1.5em)}
+.siraj-field:has(.siraj-consent),.siraj-actions,.siraj-success,.siraj-alert{grid-column:1/-1}
+.siraj-label{font-weight:600}
+.siraj-input,.siraj-select,.siraj-textarea{width:100%}
+.siraj-input,.siraj-select{min-height:52px;padding-block:var(--s2)}
+.siraj-textarea{min-height:120px}
+.siraj-hint{font-size:var(--fs-sm);color:var(--muted)}
+.siraj-error{font-size:var(--fs-sm);color:var(--danger);font-weight:600}
+.siraj-alert{background:color-mix(in srgb,var(--danger) 10%,var(--surface));
+  border:var(--border-w) solid var(--danger);border-radius:var(--radius-sm);
+  padding:var(--s4);color:var(--danger);font-weight:600}
+.siraj-consent{display:flex;align-items:flex-start;gap:var(--s3);font-weight:600}
+.siraj-consent input{margin-top:2px;width:24px;height:24px;min-height:24px;flex:none}
+.siraj-actions{display:flex;flex-wrap:wrap;gap:var(--s3);align-items:center}
+.siraj-submit{min-height:52px;padding-inline:var(--s8);border:0;cursor:pointer;
+  background:var(--primary);color:var(--on-primary);border-radius:var(--radius-sm);
+  font:inherit;font-weight:700}
+.siraj-submit:hover{filter:brightness(.94)}
+.siraj-success{background:color-mix(in srgb,var(--success) 10%,var(--surface));
+  border:var(--border-w) solid var(--success);border-radius:var(--radius-sm);
+  padding:var(--s6);display:grid;gap:var(--s3)}
+.siraj-success h3{font-size:var(--fs-lg)}
+.siraj-hp{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+  clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
+
+@media(prefers-reduced-motion:reduce){
+  *{transition:none!important;animation:none!important;scroll-behavior:auto!important}
+}

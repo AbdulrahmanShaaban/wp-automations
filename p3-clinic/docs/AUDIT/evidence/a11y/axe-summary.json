@@ -1,0 +1,231 @@
+{
+ "generatedAt": "2026-10-08T04:22:26.156Z",
+ "base": "http://localhost:8889",
+ "axeTags": [
+  "wcag2a",
+  "wcag2aa",
+  "wcag21a",
+  "wcag21aa",
+  "wcag22aa",
+  "best-practice"
+ ],
+ "axeVersion": "4.13.0",
+ "pages": [
+  {
+   "page": "home",
+   "viewport": "desktop",
+   "ms": 19521,
+   "critical": 0,
+   "serious": 0,
+   "moderate": 0,
+   "minor": 0,
+   "total": 0,
+   "nodes": 0,
+   "rules": [],
+   "incomplete": [
+    "color-contrast(7)"
+   ],
+   "h1": 1,
+   "headingSkips": 0,
+   "unlabelled": 0,
+   "overflowX": false,
+   "revealHidden": 4,
+   "jsMotion": true
+  },
+  {
+   "page": "services",
+   "viewport": "desktop",
+   "ms": 6326,
+   "critical": 0,
+   "serious": 0,
+   "moderate": 1,
+   "minor": 0,
+   "total": 1,
+   "nodes": 1,
+   "rules": [
+    "heading-order(moderate,1)"
+   ],
+   "incomplete": [],
+   "h1": 1,
+   "headingSkips": 1,
+   "unlabelled": 0,
+   "overflowX": false,
+   "revealHidden": 0,
+   "jsMotion": false
+  },
+  {
+   "page": "team",
+   "viewport": "desktop",
+   "ms": 8482,
+   "critical": 0,
+   "serious": 0,
+   "moderate": 1,
+   "minor": 0,
+   "total": 1,
+   "nodes": 1,
+   "rules": [
+    "heading-order(moderate,1)"
+   ],
+   "incomplete": [],
+   "h1": 1,
+   "headingSkips": 1,
+   "unlabelled": 0,
+   "overflowX": false,
+   "revealHidden": 0,
+   "jsMotion": false
+  },
+  {
+   "page": "contact",
+   "viewport": "desktop",
+   "ms": 11205,
+   "critical": 0,
+   "serious": 0,
+   "moderate": 0,
+   "minor": 0,
+   "total": 0,
+   "nodes": 0,
+   "rules": [],
+   "incomplete": [],
+   "h1": 1,
+   "headingSkips": 0,
+   "unlabelled": 0,
+   "overflowX": false,
+   "revealHidden": 0,
+   "jsMotion": false
+  },
+  {
+   "page": "book",
+   "viewport": "desktop",
+   "ms": 8838,
+   "critical": 0,
+   "serious": 0,
+   "moderate": 0,
+   "minor": 0,
+   "total": 0,
+   "nodes": 0,
+   "rules": [],
+   "incomplete": [],
+   "h1": 1,
+   "headingSkips": 0,
+   "unlabelled": 0,
+   "overflowX": false,
+   "revealHidden": 0,
+   "jsMotion": false
+  },
+  {
+   "page": "home",
+   "viewport": "mobile",
+   "ms": 7440,
+   "critical": 0,
+   "serious": 0,
+   "moderate": 0,
+   "minor": 0,
+   "total": 0,
+   "nodes": 0,
+   "rules": [],
+   "incomplete": [
+    "color-contrast(7)"
+   ],
+   "h1": 1,
+   "headingSkips": 0,
+   "unlabelled": 0,
+   "overflowX": false,
+   "revealHidden": 10,
+   "jsMotion": true
+  },
+  {
+   "page": "services",
+   "viewport": "mobile",
+   "ms": 12933,
+   "critical": 0,
+   "serious": 0,
+   "moderate": 1,
+   "minor": 0,
+   "total": 1,
+   "nodes": 1,
+   "rules": [
+    "heading-order(moderate,1)"
+   ],
+   "incomplete": [],
+   "h1": 1,
+   "headingSkips": 1,
+   "unlabelled": 0,
+   "overflowX": false,
+   "revealHidden": 0,
+   "jsMotion": false
+  },
+  {
+   "page": "team",
+   "viewport": "mobile",
+   "ms": 8715,
+   "critical": 0,
+   "serious": 0,
+   "moderate": 1,
+   "minor": 0,
+   "total": 1,
+   "nodes": 1,
+   "rules": [
+    "heading-order(moderate,1)"
+   ],
+   "incomplete": [],
+   "h1": 1,
+   "headingSkips": 1,
+   "unlabelled": 0,
+   "overflowX": false,
+   "revealHidden": 0,
+   "jsMotion": false
+  },
+  {
+   "page": "contact",
+   "viewport": "mobile",
+   "ms": 11150,
+   "critical": 0,
+   "serious": 0,
+   "moderate": 0,
+   "minor": 0,
+   "total": 0,
+   "nodes": 0,
+   "rules": [],
+   "incomplete": [],
+   "h1": 1,
+   "headingSkips": 0,
+   "unlabelled": 0,
+   "overflowX": false,
+   "revealHidden": 0,
+   "jsMotion": false
+  },
+  {
+   "page": "book",
+   "viewport": "mobile",
+   "ms": 6927,
+   "critical": 0,
+   "serious": 0,
+   "moderate": 0,
+   "minor": 0,
+   "total": 0,
+   "nodes": 0,
+   "rules": [],
+   "incomplete": [],
+   "h1": 1,
+   "headingSkips": 0,
+   "unlabelled": 0,
+   "overflowX": false,
+   "revealHidden": 0,
+   "jsMotion": false
+  }
+ ],
+ "viewports": [
+  {
+   "name": "desktop",
+   "w": 1440,
+   "h": 900,
+   "mobile": false
+  },
+  {
+   "name": "mobile",
+   "w": 390,
+   "h": 844,
+   "mobile": true
+  }
+ ]
+}

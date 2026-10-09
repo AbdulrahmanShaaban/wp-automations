@@ -1,0 +1,157 @@
+{
+ "page": "shop",
+ "total": 34,
+ "measured": 34,
+ "below24": 2,
+ "minW": 1,
+ "minH": 1,
+ "smallest": [
+  {
+   "group": "other",
+   "tag": "a",
+   "cls": "skip-link screen-reader-text",
+   "text": "تخطى إلى المحتوى",
+   "w": 1,
+   "h": 1,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "header",
+   "tag": "a",
+   "cls": "",
+   "text": "نيلاد",
+   "w": 36.5,
+   "h": 33,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "footer",
+   "tag": "a",
+   "cls": "",
+   "text": "الخصوصية",
+   "w": 59.8,
+   "h": 26,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "footer",
+   "tag": "a",
+   "cls": "",
+   "text": "تواصل معنا",
+   "w": 66.1,
+   "h": 26,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "footer",
+   "tag": "a",
+   "cls": "",
+   "text": "الشحن والإرجاع",
+   "w": 84.7,
+   "h": 26,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "other",
+   "tag": "a",
+   "cls": "",
+   "text": "شال كتان خفيف",
+   "w": 107.2,
+   "h": 24,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "other",
+   "tag": "a",
+   "cls": "",
+   "text": "عباية كتان مطرّزة",
+   "w": 112.6,
+   "h": 24,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "other",
+   "tag": "a",
+   "cls": "",
+   "text": "قميص قطن بسيط",
+   "w": 120.1,
+   "h": 24,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "other",
+   "tag": "a",
+   "cls": "",
+   "text": "فستان صيفي مطرّز",
+   "w": 125.8,
+   "h": 24,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "form",
+   "tag": "select",
+   "cls": "orderby",
+   "text": "الترتيب الافتراضي ترتيب حسب الشهرة ترتيب",
+   "w": 162,
+   "h": 19,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "other",
+   "tag": "a",
+   "cls": "",
+   "text": "ساعة كلاسيك معدنية",
+   "w": 143.9,
+   "h": 24,
+   "padT": "0px",
+   "padB": "0px"
+  },
+  {
+   "group": "other",
+   "tag": "a",
+   "cls": "",
+   "text": "تيشيرت قطن أوفرسايز",
+   "w": 145.9,
+   "h": 24,
+   "padT": "0px",
+   "padB": "0px"
+  }
+ ],
+ "byGroup": {
+  "other": {
+   "n": 25,
+   "minW": 1,
+   "minH": 1
+  },
+  "header": {
+   "n": 3,
+   "minW": 36.5,
+   "minH": 33
+  },
+  "form": {
+   "n": 1,
+   "minW": 162,
+   "minH": 19
+  },
+  "footer": {
+   "n": 3,
+   "minW": 59.8,
+   "minH": 26
+  },
+  "dock": {
+   "n": 2,
+   "minW": 179,
+   "minH": 50
+  }
+ }
+}

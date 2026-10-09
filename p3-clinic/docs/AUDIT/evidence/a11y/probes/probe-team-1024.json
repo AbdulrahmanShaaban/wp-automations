@@ -1,0 +1,118 @@
+{
+ "url": "/team/",
+ "dir": "rtl",
+ "lang": "ar",
+ "docDirCss": "rtl",
+ "htmlClasses": "",
+ "title": "الفريق – عيادة سِراج للأسنان",
+ "headings": [
+  {
+   "lvl": 1,
+   "t": "الفريق"
+  },
+  {
+   "lvl": 3,
+   "t": "طبقة التقويم"
+  },
+  {
+   "lvl": 3,
+   "t": "طبقة زراعة الأسنان"
+  },
+  {
+   "lvl": 3,
+   "t": "طبقة تجميل الأسنان"
+  },
+  {
+   "lvl": 3,
+   "t": "فريق المساعدة"
+  }
+ ],
+ "h1Count": 1,
+ "headingSkips": [
+  "3:طبقة التقويم"
+ ],
+ "landmarks": {
+  "banner": 1,
+  "nav": 2,
+  "main": 1,
+  "contentinfo": 1,
+  "aside": 0
+ },
+ "skipLinks": [
+  {
+   "href": "#wp--skip-link--target",
+   "text": "تخطى إلى المحتوى",
+   "cls": "skip-link screen-reader-text"
+  }
+ ],
+ "bodyFont": "Alexandria, system-ui, -apple-system, \"Segoe UI\", Tahoma, sans-serif",
+ "bodyFontSize": "16px",
+ "bodyLineHeight": "27.2px",
+ "bodyLetterSpacing": "normal",
+ "h1LineHeight": "96.6px",
+ "h1FontSize": "84px",
+ "h1LetterSpacing": "normal",
+ "imgs": 0,
+ "imgsNoAlt": 0,
+ "imgsBroken": [],
+ "imgsNoDims": 0,
+ "emptyAltNonDecorative": 0,
+ "figures": 0,
+ "mixedNodes": [
+  {
+   "sel": "p.wp-block-paragraph",
+   "text": "© نموذج تجريبي (Demo) — لا يمثّل أي عيادة حقيقية · الصور توضيحية",
+   "dir": null,
+   "lang": null,
+   "unicodeBidi": "isolate",
+   "isolation": "auto"
+  }
+ ],
+ "mixedCount": 1,
+ "latinRuns": [
+  {
+   "sel": "span.demo-badge",
+   "text": "Demo",
+   "lang": null,
+   "dir": null,
+   "bdi": false
+  }
+ ],
+ "latinRunCount": 1,
+ "bdiCount": 0,
+ "langEnCount": 0,
+ "langEnValues": [
+  "ar"
+ ],
+ "justifiedCount": 0,
+ "letterSpacedArabic": [],
+ "easternDigits": 0,
+ "westernDigits": 0,
+ "arabicComma": 6,
+ "westernCommaBetweenArabic": 0,
+ "fonts": [
+  "Alexandria 400 loaded",
+  "Alexandria 400 loaded",
+  "Alexandria 500 unloaded",
+  "Alexandria 500 unloaded",
+  "Alexandria 600 loaded",
+  "Alexandria 600 loaded",
+  "Alexandria 700 loaded",
+  "Alexandria 700 loaded",
+  "Alexandria 800 loaded",
+  "Alexandria 800 loaded"
+ ],
+ "scrollWidth": 1024,
+ "innerWidth": 1024,
+ "horizontalOverflow": false,
+ "overflowEls": [],
+ "revealTotal": 0,
+ "revealHidden": 0,
+ "tables": 0,
+ "details": 0,
+ "forms": 0,
+ "iframes": 0,
+ "videosNoCaptions": 0,
+ "langAttrOnHtml": "ar",
+ "bidiElements": 1
+}

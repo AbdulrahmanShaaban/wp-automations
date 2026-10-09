@@ -1,0 +1,37 @@
+﻿# sensitive-path probe table (unauthenticated, GET)
+# columns: status | body-bytes | path
+
+404 | 63024 | /.env
+404 | 63024 | /.env.local
+404 | 63024 | /.env.production
+200 | 0 | /wp-config.php
+500 | 2596 | /wp-config-sample.php
+404 | 63024 | /package.json
+404 | 63024 | /package-lock.json
+404 | 63024 | /.wp-env.json
+404 | 63024 | /scripts/verify.sh
+404 | 63024 | /scripts/seed.sh
+404 | 63024 | /scripts/booking-e2e.js
+404 | 63024 | /docs/
+404 | 63024 | /docs/PLAN.md
+404 | 63024 | /docs/AUDIT/security.md
+404 | 63024 | /n8n/
+404 | 63024 | /n8n/.env
+404 | 63024 | /design/
+404 | 63024 | /design/APPROVED.md
+404 | 63024 | /README.md
+404 | 63024 | /.DS_Store
+404 | 63024 | /backup.zip
+404 | 63024 | /phpinfo.php
+403 | 316 | /server-status
+200 | 1508 | /wp-admin/install.php
+302 | 0 | /wp-signup.php
+403 | (not captured) | /wp-mail.php
+200 | 114 | /robots.txt
+403 | 316 | /.htaccess
+404 | 63024 | /wp-content/debug.log
+404 | 63024 | /debug.log
+200 | 41 | /.git/HEAD
+200 | 354 | /.git/config
+200 | (not captured) | /.git/index
+200 | (not captured) | /wp-cli.yml

@@ -1,0 +1,17 @@
+{
+ "jsMotionOnHtml": false,
+ "reducedMotionQuery": true,
+ "revealTotal": 24,
+ "hiddenCount": 0,
+ "notInCount": 24,
+ "hiddenSample": [],
+ "rule": {
+  "animationName": "none",
+  "transform": "none",
+  "w": 320
+ },
+ "scrollBehavior": "auto",
+ "anyTransition": 0,
+ "bodyTextLen": 3024,
+ "bookingFormVisible": "no-form"
+}

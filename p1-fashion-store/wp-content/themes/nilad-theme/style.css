@@ -1,0 +1,221 @@
+/*
+Theme Name: Nilad Theme
+Theme URI: https://example.com/nilad
+Author: OpenCode
+Description: Arabic-first (RTL) WooCommerce block theme for Nilad (نيلاد). Approved design direction A with merged B elements — see design/APPROVED.md.
+Requires at least: 6.5
+Tested up to: 7.1
+Requires PHP: 8.3
+Version: 0.1.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: nilad
+Tags: e-commerce, rtl-language-support, block-patterns, custom-colors, custom-menu
+*/
+
+/* ---- tokens (mirror design/tokens.css — see design/APPROVED.md) ---- */
+:root{
+  --nilad-radius:22px;
+  --nilad-pill:999px;
+  --nilad-header-h:72px;
+}
+
+html{scroll-behavior:smooth}
+body{background:var(--wp--preset--color--bg);color:var(--wp--preset--color--text)}
+
+/* ---- container (brief 3.2: 1200px, pad 20/40) ---- */
+.container{width:min(100% - 40px,1200px);margin-inline:auto}
+@media(min-width:900px){.container{width:min(100% - 80px,1200px)}}
+
+/* ---- announce bar ---- */
+.announce{background:var(--wp--preset--color--primary-soft);padding-block:var(--wp--preset--spacing--20)}
+.announce p{margin:0;font-size:var(--wp--preset--font-size--sm);font-weight:600;text-align:center}
+
+/* ---- header ---- */
+.site-header{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--wp--preset--color--bg) 88%,transparent);backdrop-filter:saturate(1.4) blur(16px);border-bottom:1px solid var(--wp--preset--color--border)}
+.site-header .nav{display:flex;align-items:center;justify-content:space-between;gap:var(--wp--preset--spacing--40);min-height:var(--nilad-header-h)}
+.site-header .wp-block-site-title{font-weight:800;font-size:var(--wp--preset--font-size--lg);letter-spacing:0;white-space:nowrap}
+.site-header .wp-block-site-title a{text-decoration:none}
+/* brand sub-label (approved A merged element) */
+.site-header .wp-block-site-title::after{content:"NILAD · DEMO";display:none;font-size:.65rem;font-weight:600;color:var(--wp--preset--color--primary);letter-spacing:.12em;margin-inline-start:.6rem}
+@media(min-width:600px){.site-header .wp-block-site-title::after{display:inline}}
+.site-header .wp-block-navigation a{text-decoration:none;font-weight:600;white-space:nowrap}
+.site-header .wp-block-navigation a:hover{color:var(--wp--preset--color--primary)}
+/* header nav: desktop inline ≥900px. Below 900px the core overlay menu
+   (overlayMenu:"mobile") takes over: hide only the inline list — the open
+   button appears — so the links stay reachable instead of vanishing. */
+@media(max-width:899px){
+  .site-header .wp-block-navigation > .wp-block-navigation__container{display:none}
+  .site-header .wp-block-navigation__responsive-container-open{display:block;min-width:44px;min-height:44px}
+  /* Width budget at 390px: brand + hamburger + cart already fill the row, and
+     the buttons container wraps (core .wp-block-buttons{flex-wrap:wrap}) — which
+     pushed the green CTA onto its own line and made a 3-row header. The shop CTA
+     is duplicated by the mobile dock and the hero, so it steps aside here. */
+  .site-header .nav-cta-shop{display:none}
+}
+/* The overlay menu is position:fixed; an ancestor with backdrop-filter turns it
+   into a positioned box (the whole menu collapsed into a thin strip under the
+   header). WordPress adds .has-modal-open to <html> while the menu is open. */
+html.has-modal-open .site-header{backdrop-filter:none}
+.nav-actions{display:flex;align-items:center;gap:var(--wp--preset--spacing--30);margin:0}
+.nav-actions .wp-block-button__link{min-height:44px;padding-inline:var(--wp--preset--spacing--40);white-space:nowrap}
+.nav-actions .is-style-ghost .wp-block-button__link{background:var(--wp--preset--color--surface);color:var(--wp--preset--color--text);border:1.5px solid var(--wp--preset--color--border)}
+.nav-actions .is-style-ghost .wp-block-button__link:hover{border-color:var(--wp--preset--color--primary)}
+
+/* ---- hero (approved A) ---- */
+main.container{padding-block:var(--wp--preset--spacing--80) 0}
+section[id],main[id],.row-scroll[id]{scroll-margin-top:96px}
+.hero .eyebrow,.section .eyebrow{font-size:var(--wp--preset--font-size--sm);font-weight:700;color:var(--wp--preset--color--primary);margin:0 0 var(--wp--preset--spacing--30)}
+.hero-top{display:grid;gap:var(--wp--preset--spacing--60);align-items:end}
+@media(min-width:900px){.hero-top{grid-template-columns:1.4fr .6fr}}
+.hero-title{font-size:clamp(2.4rem,1.6rem + 3.4vw,3.75rem);line-height:1.15;max-width:16ch;font-weight:800}
+.hero-title mark{background:none;color:var(--wp--preset--color--primary);font-style:normal}
+.hero .lead,.section .lead{font-size:var(--wp--preset--font-size--lg);color:var(--wp--preset--color--muted);max-width:52ch;margin-top:0}
+.hero-actions{display:flex;flex-wrap:wrap;gap:var(--wp--preset--spacing--30);align-items:center;margin-top:var(--wp--preset--spacing--40)}
+.hero-actions .wp-block-button__link{min-height:48px;padding-inline:var(--wp--preset--spacing--60);border:1.5px solid transparent}
+.is-style-ghost .wp-block-button__link{background:var(--wp--preset--color--bg);color:var(--wp--preset--color--text);border-color:var(--wp--preset--color--border)}
+.is-style-ghost .wp-block-button__link:hover{border-color:var(--wp--preset--color--primary)}
+.hero-actions .wp-block-button__link:hover{transform:translateY(-1px)}
+
+/* ---- chips (hero filters) ---- */
+.chips{display:flex;flex-wrap:wrap;gap:var(--wp--preset--spacing--30);list-style:none;margin:var(--wp--preset--spacing--60) 0 0;padding:0}
+.chip{display:inline-flex;align-items:center;min-height:44px;padding-inline:var(--wp--preset--spacing--40);border-radius:var(--nilad-pill);border:1.5px solid var(--wp--preset--color--border);background:var(--wp--preset--color--surface);font-weight:600;text-decoration:none;color:var(--wp--preset--color--text)}
+.chip:hover,.chip.active{border-color:var(--wp--preset--color--primary);background:var(--wp--preset--color--primary-soft);color:var(--wp--preset--color--primary)}
+
+/* ---- product cards (row-scroll + grid-4) ---- */
+.row-scroll{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(240px,1fr);gap:var(--wp--preset--spacing--60);overflow-x:auto;scroll-snap-type:x mandatory;padding-block:var(--wp--preset--spacing--60) var(--wp--preset--spacing--20);margin-top:var(--wp--preset--spacing--40)}
+.row-scroll>*{scroll-snap-align:start}
+@media(min-width:900px){.row-scroll{grid-auto-columns:minmax(0,1fr);grid-auto-flow:column;overflow:visible}}
+.grid-4{display:grid;gap:var(--wp--preset--spacing--60);grid-template-columns:repeat(2,1fr)}
+@media(min-width:900px){.grid-4{grid-template-columns:repeat(4,1fr)}}
+.card{background:var(--wp--preset--color--surface);border:1px solid var(--wp--preset--color--border);border-radius:var(--nilad-radius);overflow:hidden;box-shadow:0 1px 2px rgba(27,26,23,.05),0 12px 32px rgba(27,26,23,.05)}
+.product .thumb{aspect-ratio:4/5;position:relative;display:grid;place-items:center;color:var(--wp--preset--color--muted);font-weight:600;font-size:var(--wp--preset--font-size--sm)}
+.thumb.a{background:linear-gradient(140deg,#E4F1EC,#D8CFC0)}
+.thumb.b{background:linear-gradient(140deg,#EFE6D8,#DCD3C4)}
+.thumb.c{background:linear-gradient(140deg,#E8E4EF,#D4CEC2)}
+.thumb.d{background:linear-gradient(140deg,#F0E4DA,#D9CDC1)}
+.badge{position:absolute;top:var(--wp--preset--spacing--30);inset-inline-start:var(--wp--preset--spacing--30);background:var(--wp--preset--color--surface);border:1px solid var(--wp--preset--color--border);border-radius:var(--nilad-pill);font-size:.75rem;font-weight:700;padding:.2rem var(--wp--preset--spacing--30)}
+.badge.sale{background:var(--wp--preset--color--sale);color:#fff;border-color:var(--wp--preset--color--sale)}
+.badge.demo{background:var(--wp--preset--color--text);color:var(--wp--preset--color--bg);border-color:var(--wp--preset--color--text)}
+.p-body{padding:var(--wp--preset--spacing--40) var(--wp--preset--spacing--40) var(--wp--preset--spacing--60)}
+.p-body h3{font-size:var(--wp--preset--font-size--base);font-weight:700;line-height:1.4;margin:0 0 var(--wp--preset--spacing--10)}
+.p-cat{font-size:var(--wp--preset--font-size--sm);color:var(--wp--preset--color--muted);margin:0 0 var(--wp--preset--spacing--20)}
+.price{display:flex;align-items:baseline;gap:var(--wp--preset--spacing--20);flex-wrap:wrap;margin:0 0 var(--wp--preset--spacing--30);font-weight:800;font-size:var(--wp--preset--font-size--lg)}
+.price del{color:var(--wp--preset--color--muted);font-weight:600;font-size:var(--wp--preset--font-size--sm)}
+.price .now{color:var(--wp--preset--color--sale)}
+.price small{font-size:var(--wp--preset--font-size--sm);font-weight:700}
+.p-btn{display:inline-flex;align-items:center;justify-content:center;width:100%;min-height:44px;border-radius:var(--nilad-pill);background:var(--wp--preset--color--primary);color:var(--wp--preset--color--on-primary);font-weight:700;text-decoration:none;transition:transform .15s,background-color .15s}
+.p-btn:hover{background:#095646;transform:translateY(-1px)}
+
+/* ---- section rhythm (brief: ~96/64px) ---- */
+.section{padding-block:var(--wp--preset--spacing--160)}
+@media(min-width:900px){.section{padding-block:var(--wp--preset--spacing--240)}}
+h2.wp-block-heading{font-size:var(--wp--preset--font-size--h-2);line-height:1.25}
+.section-head h2{margin:0 0 var(--wp--preset--spacing--30)}
+.section-head .lead{margin-top:0}
+
+/* ---- category tiles ---- */
+.tiles{display:grid;gap:var(--wp--preset--spacing--60);grid-template-columns:repeat(2,1fr)}
+@media(min-width:900px){.tiles{grid-template-columns:repeat(4,1fr)}}
+.tile{position:relative;aspect-ratio:3/4;border-radius:var(--nilad-radius);overflow:hidden;display:flex;align-items:flex-end;padding:var(--wp--preset--spacing--40);text-decoration:none;color:var(--wp--preset--color--text);border:1px solid var(--wp--preset--color--border);background:linear-gradient(160deg,#F1EBE0,#E0D6C6)}
+.tile:nth-child(2){background:linear-gradient(160deg,#E6EFEA,#D5CDBC)}
+.tile:nth-child(3){background:linear-gradient(160deg,#ECE7EE,#D9D2C9)}
+.tile:nth-child(4){background:linear-gradient(160deg,#F2E7DD,#DED2C4)}
+.tile span{background:color-mix(in srgb,var(--wp--preset--color--surface) 92%,transparent);backdrop-filter:blur(6px);border:1px solid var(--wp--preset--color--border);border-radius:var(--nilad-pill);padding:.35rem var(--wp--preset--spacing--40);font-weight:700;font-size:var(--wp--preset--font-size--sm)}
+.tile:hover span{background:var(--wp--preset--color--primary);color:var(--wp--preset--color--on-primary);border-color:var(--wp--preset--color--primary)}
+
+/* ---- editorial split (about) ---- */
+.split{display:grid;gap:var(--wp--preset--spacing--80);align-items:center}
+@media(min-width:900px){.split{grid-template-columns:1fr 1fr;gap:var(--wp--preset--spacing--160)}}
+.split .media{aspect-ratio:4/3;border-radius:var(--nilad-radius);background:linear-gradient(135deg,var(--wp--preset--color--primary-soft),#F3E6D3);border:1px solid var(--wp--preset--color--border);display:grid;place-items:center;color:var(--wp--preset--color--muted);font-weight:600;text-align:center;padding:var(--wp--preset--spacing--40)}
+.about-copy .lead{margin-bottom:var(--wp--preset--spacing--60)}
+
+/* ---- newsletter ---- */
+.news{background:var(--wp--preset--color--primary);color:#fff;border-radius:var(--nilad-radius);padding:var(--wp--preset--spacing--120) var(--wp--preset--spacing--80);display:grid;gap:var(--wp--preset--spacing--60)}
+@media(min-width:900px){.news{grid-template-columns:1.2fr .8fr;align-items:center;padding:var(--wp--preset--spacing--160) var(--wp--preset--spacing--120)}}
+.news h2{color:#fff;margin:0 0 var(--wp--preset--spacing--20)}
+.news p{color:#D7EBE5;margin:0}
+.news-form{display:flex;gap:var(--wp--preset--spacing--30);flex-wrap:wrap}
+.news-form input{flex:1 1 200px;min-height:48px;border-radius:var(--nilad-pill);border:none;padding:0 var(--wp--preset--spacing--40);font:inherit}
+.news-btn{min-height:48px;padding-inline:var(--wp--preset--spacing--60);border-radius:var(--nilad-pill);border:none;background:var(--wp--preset--color--text);color:var(--wp--preset--color--bg);font:inherit;font-weight:700;cursor:pointer}
+.news-btn:hover{background:#000}
+
+/* ---- value strip ---- */
+.value{background:var(--wp--preset--color--surface);border-block:1px solid var(--wp--preset--color--border);padding-block:var(--wp--preset--spacing--80)}
+.value-list{display:grid;gap:var(--wp--preset--spacing--60);grid-template-columns:repeat(2,1fr);list-style:none;margin:0;padding:0}
+@media(min-width:900px){.value-list{grid-template-columns:repeat(4,1fr)}}
+.value-list li{font-weight:700}
+.value-list li span{display:block;font-weight:600;font-size:var(--wp--preset--font-size--sm);color:var(--wp--preset--color--muted);margin-top:var(--wp--preset--spacing--10)}
+.value-list li::before{content:"✓";display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:var(--wp--preset--color--primary-soft);color:var(--wp--preset--color--primary);margin-bottom:var(--wp--preset--spacing--20)}
+
+/* ---- footer ---- */
+.site-footer{border-top:1px solid var(--wp--preset--color--border);padding-block:var(--wp--preset--spacing--80);margin-top:var(--wp--preset--spacing--160);font-size:var(--wp--preset--font-size--sm);color:var(--wp--preset--color--muted)}
+.site-footer p{margin:0}
+.footer-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--wp--preset--spacing--40)}
+.footer-row a{color:var(--wp--preset--color--muted);text-decoration:none}
+.footer-row a:hover{color:var(--wp--preset--color--primary)}
+
+/* ---- mobile bottom action dock (approved Phase 3+ item — REFERENCE-SITES #4) ---- */
+.dock{display:none}
+@media(max-width:899px){
+  .dock{display:grid;grid-template-columns:1fr 1fr;gap:var(--wp--preset--spacing--20);position:fixed;inset-inline:0;bottom:0;z-index:30;background:color-mix(in srgb,var(--wp--preset--color--bg) 92%,transparent);backdrop-filter:saturate(1.4) blur(14px);border-top:1px solid var(--wp--preset--color--border);padding:var(--wp--preset--spacing--20) var(--wp--preset--spacing--30) calc(var(--wp--preset--spacing--20) + env(safe-area-inset-bottom,0px));box-shadow:0 -10px 30px rgba(27,26,23,.10)}
+  .dock a{display:flex;align-items:center;justify-content:center;gap:var(--wp--preset--spacing--20);min-height:48px;border-radius:var(--nilad-pill);font-weight:700;text-decoration:none;transition:transform .15s,background-color .15s}
+  .dock .dock-cart{background:var(--wp--preset--color--surface);color:var(--wp--preset--color--text);border:1.5px solid var(--wp--preset--color--border)}
+  .dock .dock-cart:hover{border-color:var(--wp--preset--color--primary)}
+  .dock .dock-wa{background:var(--wp--preset--color--primary);color:var(--wp--preset--color--on-primary);border:1.5px solid transparent}
+  .dock .dock-wa:hover{background:#095646;transform:translateY(-1px)}
+  .dock svg{width:20px;height:20px;flex:none}
+  body{padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}
+}
+
+/* ---- motion (approved A: reveal-on-scroll + reduced-motion) ---- */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+/* No-JS fallback: the reveal script only runs in the browser, so without it
+   `.in` is never added. Keep everything visible instead of hidden content. */
+@media(scripting:none){.reveal{opacity:1;transform:none;transition:none}}
+.tiles .tile:nth-child(2),.grid-4 .product:nth-child(2),.value-list li:nth-child(2){transition-delay:.07s}
+.tiles .tile:nth-child(3),.grid-4 .product:nth-child(3),.value-list li:nth-child(3){transition-delay:.14s}
+.tiles .tile:nth-child(4),.grid-4 .product:nth-child(4),.value-list li:nth-child(4){transition-delay:.21s}
+@media(min-width:900px){
+  .cats .section-head,.best .section-head{position:sticky;top:96px;z-index:1;background:var(--wp--preset--color--bg);padding-block:var(--wp--preset--spacing--20) var(--wp--preset--spacing--40);margin-bottom:var(--wp--preset--spacing--60)}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .reveal{opacity:1!important;transform:none!important;transition:none!important}
+  .cats .section-head,.best .section-head{position:static}
+}
+
+/* ---- editor/preview affordances ---- */
+:where(a):focus-visible{outline:3px solid var(--wp--preset--color--accent);outline-offset:3px;border-radius:6px}
+
+/* ---- accessibility helpers ---- */
+/* Visually hidden but available to screen readers: used for the section heading
+   that gives the new-arrivals card row its place in the document outline, and for
+   form labels. Clipped (not display:none) so it stays in the accessibility tree. */
+.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}
+.screen-reader-text:focus{clip:auto!important;clip-path:none!important;height:auto;margin:0;overflow:visible;position:static;width:auto}
+
+/* ---- WCAG 2.2 target size (2.5.8, 24px minimum) ----
+   Product-card titles in the shop grid rendered as ~20px tall links, which fails the
+   minimum on touch. A little vertical padding fixes it without changing typography. */
+.wc-block-grid__product-title a,.wc-block-product-title a,.wp-block-post-title a{min-height:24px;display:inline-flex;align-items:center}
+
+/* ---- WCAG 2.2 target size on WooCommerce's own links ----
+   axe measured the cart/checkout action links (coupon "خصم على الطلب", "رحلة الشراء")
+   at 18px tall, below the 24px minimum. Padding fixes it without touching layout. */
+.wc-components-link,.wc-block-components-totals-footer a,.wc-block-components-form .wc-components-link{min-height:24px;display:inline-flex;align-items:center}
+
+/* ---- WCAG 2.2 target size: WooCommerce checkout controls ----
+   axe measured the address-form toggle and the collapsible panel button at 18px
+   tall (below the 24px minimum). These are the elements themselves, not links. */
+.wc-block-components-address-form__address_2-toggle,.wc-block-components-panel__button,.wc-block-components-form .wc-block-components-address-form button,.wc-block-components-panel button{min-height:24px;padding-block:3px;display:inline-flex;align-items:center}
+/* Raw sub-24px targets measured at 390px on cart/checkout/shop: the block
+   checkout checkbox (20px) and radio controls, and the shop order-by select
+   (19px). Space is generous enough that growing them to 24px is invisible.
+   !important: the Woo blocks stylesheet loads after the theme and pins the
+   checkbox to 20px at equal specificity. */
+.wc-block-components-checkbox .wc-block-components-checkbox__input,.wc-block-components-radio-control .wc-block-components-radio-control__input,.wc-block-components-typed-radio-control .wc-block-components-typed-radio-control__input{width:24px!important;height:24px!important;min-width:24px;min-height:24px}
+.wc-block-components-form input[type="radio"]{width:24px!important;height:24px!important}
+.woocommerce-ordering select,.wc-block-components-order-select select{min-height:24px}
+.wc-block-cart-items__product-link,.wc-block-components-product-link{min-height:24px;display:inline-flex;align-items:center}

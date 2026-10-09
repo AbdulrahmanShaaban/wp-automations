@@ -1,0 +1,191 @@
+[
+ {
+  "target": "aside > .sec-num",
+  "text": "RX—001",
+  "fg": "rgb(47, 75, 216)",
+  "fgRgb": {
+   "r": 47,
+   "g": 75,
+   "b": 216,
+   "a": 1
+  },
+  "solidBg": {
+   "color": "rgb(247, 248, 252)",
+   "cls": "rtl home wp-singular page-template-defau"
+  },
+  "gradientLayers": [
+   "note paper"
+  ],
+  "gradientBandApprox": "rgb(233, 236, 249)",
+  "fontSize": 16,
+  "fontWeight": 700,
+  "large": false,
+  "required": 4.5,
+  "ratioVsSolid": 6.34,
+  "ratioVsBand": 5.71,
+  "verdictSolid": "PASS",
+  "verdictBand": "PASS"
+ },
+ {
+  "target": "aside > h2",
+  "text": "ملاحظات الزيارة",
+  "fg": "rgb(18, 19, 43)",
+  "fgRgb": {
+   "r": 18,
+   "g": 19,
+   "b": 43,
+   "a": 1
+  },
+  "solidBg": {
+   "color": "rgb(247, 248, 252)",
+   "cls": "rtl home wp-singular page-template-defau"
+  },
+  "gradientLayers": [
+   "note paper"
+  ],
+  "gradientBandApprox": "rgb(233, 236, 249)",
+  "fontSize": 24,
+  "fontWeight": 700,
+  "large": true,
+  "required": 3,
+  "ratioVsSolid": 17.15,
+  "ratioVsBand": 15.45,
+  "verdictSolid": "PASS",
+  "verdictBand": "PASS"
+ },
+ {
+  "target": ".note-list > li:nth-child(1) > span",
+  "text": "20 دقيقة",
+  "fg": "rgb(85, 88, 120)",
+  "fgRgb": {
+   "r": 85,
+   "g": 88,
+   "b": 120,
+   "a": 1
+  },
+  "solidBg": {
+   "color": "rgb(247, 248, 252)",
+   "cls": "rtl home wp-singular page-template-defau"
+  },
+  "gradientLayers": [
+   "note paper"
+  ],
+  "gradientBandApprox": "rgb(233, 236, 249)",
+  "fontSize": 16,
+  "fontWeight": 400,
+  "large": false,
+  "required": 4.5,
+  "ratioVsSolid": 6.48,
+  "ratioVsBand": 5.84,
+  "verdictSolid": "PASS",
+  "verdictBand": "PASS"
+ },
+ {
+  "target": ".note-list > li:nth-child(2)",
+  "text": "أشعة عند الحاجة 15 دقيقة",
+  "fg": "rgb(18, 19, 43)",
+  "fgRgb": {
+   "r": 18,
+   "g": 19,
+   "b": 43,
+   "a": 1
+  },
+  "solidBg": {
+   "color": "rgb(247, 248, 252)",
+   "cls": "rtl home wp-singular page-template-defau"
+  },
+  "gradientLayers": [
+   "note paper"
+  ],
+  "gradientBandApprox": "rgb(233, 236, 249)",
+  "fontSize": 16,
+  "fontWeight": 600,
+  "large": false,
+  "required": 4.5,
+  "ratioVsSolid": 17.15,
+  "ratioVsBand": 15.45,
+  "verdictSolid": "PASS",
+  "verdictBand": "PASS"
+ },
+ {
+  "target": ".note-list > li:nth-child(2) > span",
+  "text": "15 دقيقة",
+  "fg": "rgb(85, 88, 120)",
+  "fgRgb": {
+   "r": 85,
+   "g": 88,
+   "b": 120,
+   "a": 1
+  },
+  "solidBg": {
+   "color": "rgb(247, 248, 252)",
+   "cls": "rtl home wp-singular page-template-defau"
+  },
+  "gradientLayers": [
+   "note paper"
+  ],
+  "gradientBandApprox": "rgb(233, 236, 249)",
+  "fontSize": 16,
+  "fontWeight": 400,
+  "large": false,
+  "required": 4.5,
+  "ratioVsSolid": 6.48,
+  "ratioVsBand": 5.84,
+  "verdictSolid": "PASS",
+  "verdictBand": "PASS"
+ },
+ {
+  "target": ".note-list > li:nth-child(3) > span",
+  "text": "45 دقيقة",
+  "fg": "rgb(85, 88, 120)",
+  "fgRgb": {
+   "r": 85,
+   "g": 88,
+   "b": 120,
+   "a": 1
+  },
+  "solidBg": {
+   "color": "rgb(247, 248, 252)",
+   "cls": "rtl home wp-singular page-template-defau"
+  },
+  "gradientLayers": [
+   "note paper"
+  ],
+  "gradientBandApprox": "rgb(233, 236, 249)",
+  "fontSize": 16,
+  "fontWeight": 400,
+  "large": false,
+  "required": 4.5,
+  "ratioVsSolid": 6.48,
+  "ratioVsBand": 5.84,
+  "verdictSolid": "PASS",
+  "verdictBand": "PASS"
+ },
+ {
+  "target": ".stamp",
+  "text": "سراج · Cairo",
+  "fg": "rgb(163, 35, 27)",
+  "fgRgb": {
+   "r": 163,
+   "g": 35,
+   "b": 27,
+   "a": 1
+  },
+  "solidBg": {
+   "color": "rgb(247, 248, 252)",
+   "cls": "rtl home wp-singular page-template-defau"
+  },
+  "gradientLayers": [
+   "note paper"
+  ],
+  "gradientBandApprox": "rgb(233, 236, 249)",
+  "fontSize": 14,
+  "fontWeight": 800,
+  "large": false,
+  "required": 4.5,
+  "ratioVsSolid": 7.03,
+  "ratioVsBand": 6.34,
+  "verdictSolid": "PASS",
+  "verdictBand": "PASS"
+ }
+]

@@ -1,0 +1,165 @@
+{
+ "page": "checkout",
+ "url": "http://localhost:8888/checkout/",
+ "viewport": {
+  "name": "mobile",
+  "w": 390,
+  "h": 844,
+  "mobile": true
+ },
+ "redirected": false,
+ "cartEmpty": false,
+ "violations": [
+  {
+   "id": "autocomplete-valid",
+   "impact": "serious",
+   "help": "autocomplete attribute must be used correctly",
+   "tags": [
+    "wcag21aa",
+    "wcag135"
+   ],
+   "nodes": 1,
+   "sample": [
+    {
+     "target": "#email",
+     "html": "<input type=\"email\" id=\"email\" autocapitalize=\"none\" autocomplete=\"section-contact contact email\" aria-label=\"البريد الإلكتروني\" aria-describedby=\"wc-guest-checkout-notice\" required=\"\" aria-invalid=\"false\" title=\"\" name=\"contact_email\" value=\"\">",
+     "failureSummary": "Fix all of the following:\n  the autocomplete attribute is incorrectly formatted"
+    }
+   ]
+  }
+ ],
+ "incomplete": [
+  {
+   "id": "aria-valid-attr-value",
+   "impact": "critical",
+   "nodes": 1,
+   "sample": [
+    {
+     "target": "#radio-control-wc-payment-method-options-cod",
+     "html": "<input id=\"radio-control-wc-payment-method-options-cod\" class=\"wc-block-components-radio-control__input\" type=\"radio\" name=\"radio-control-wc-payment-method-options\" aria-describedby=\"radio-control-wc-"
+    }
+   ]
+  },
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "nodes": 1,
+   "sample": [
+    {
+     "target": ".checkout-order-summary-block-fill > .wp-block-woocommerce-checkout-order-summary-cart-items-block.wc-block-components-totals-wrapper > .wc-block-components-order-summary > .wc-block-components-order-summary__content > .wc-block-components-order-summary-item > .wc-block-components-order-summary-item__image > .wc-block-components-order-summary-item__quantity > span[aria-hidden=\"true\"]",
+     "html": "<span aria-hidden=\"true\">1</span>"
+    }
+   ]
+  }
+ ],
+ "passes": [
+  "aria-allowed-attr",
+  "aria-allowed-role",
+  "aria-command-name",
+  "aria-conditional-attr",
+  "aria-deprecated-role",
+  "aria-hidden-body",
+  "aria-hidden-focus",
+  "aria-prohibited-attr",
+  "aria-required-attr",
+  "aria-roles",
+  "aria-valid-attr-value",
+  "aria-valid-attr",
+  "autocomplete-valid",
+  "avoid-inline-spacing",
+  "button-name",
+  "bypass",
+  "color-contrast",
+  "document-title",
+  "duplicate-id-aria",
+  "empty-heading",
+  "form-field-multiple-labels",
+  "heading-order",
+  "html-has-lang",
+  "html-lang-valid",
+  "image-alt",
+  "image-redundant-alt",
+  "label-title-only",
+  "label",
+  "landmark-banner-is-top-level",
+  "landmark-contentinfo-is-top-level",
+  "landmark-main-is-top-level",
+  "landmark-no-duplicate-banner",
+  "landmark-no-duplicate-contentinfo",
+  "landmark-no-duplicate-main",
+  "landmark-one-main",
+  "landmark-unique",
+  "link-name",
+  "meta-viewport-large",
+  "meta-viewport",
+  "nested-interactive",
+  "page-has-heading-one",
+  "region",
+  "select-name",
+  "skip-link",
+  "tabindex",
+  "target-size"
+ ],
+ "inapplicable": [
+  "accesskeys",
+  "area-alt",
+  "aria-braille-equivalent",
+  "aria-dialog-name",
+  "aria-input-field-name",
+  "aria-meter-name",
+  "aria-progressbar-name",
+  "aria-required-children",
+  "aria-required-parent",
+  "aria-tab-name",
+  "aria-text",
+  "aria-toggle-field-name",
+  "aria-tooltip-name",
+  "aria-treeitem-name",
+  "blink",
+  "definition-list",
+  "dlitem",
+  "empty-table-header",
+  "frame-focusable-content",
+  "frame-tested",
+  "frame-title-unique",
+  "frame-title",
+  "html-xml-lang-mismatch",
+  "input-button-name",
+  "input-image-alt",
+  "link-in-text-block",
+  "list",
+  "listitem",
+  "marquee",
+  "meta-refresh",
+  "object-alt",
+  "presentation-role-conflict",
+  "role-img-alt",
+  "scope-attr-valid",
+  "scrollable-region-focusable",
+  "server-side-image-map",
+  "summary-name",
+  "svg-img-alt",
+  "table-duplicate-name",
+  "td-headers-attr",
+  "th-has-data-cells",
+  "valid-lang",
+  "video-caption",
+  "no-autoplay-audio"
+ ],
+ "engine": {
+  "name": "axe-core",
+  "version": "4.13.0"
+ },
+ "runner": {
+  "name": "axe"
+ },
+ "timestamp": "2026-10-06T11:42:55.556Z",
+ "violationCounts": {
+  "critical": 0,
+  "serious": 1,
+  "moderate": 0,
+  "minor": 0,
+  "total": 1,
+  "nodes": 1
+ }
+}

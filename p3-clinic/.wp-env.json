@@ -1,0 +1,17 @@
+{
+  "core": null,
+  "phpVersion": "8.3",
+  "testsEnvironment": false,
+  "themes": ["./wp-content/themes/siraj-theme"],
+  "plugins": ["./wp-content/plugins/siraj-core"],
+  "port": 8889,
+  "config": {
+    "WP_DEBUG": true,
+    "WP_DEBUG_DISPLAY": false,
+    "DISALLOW_FILE_EDIT": true,
+    "DISALLOW_FILE_MODS": true
+  },
+  "lifecycleScripts": {
+    "afterStart": "node scripts/php-tune.js"
+  }
+}

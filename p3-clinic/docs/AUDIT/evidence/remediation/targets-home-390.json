@@ -1,0 +1,192 @@
+{
+ "page": "home",
+ "totalInteractive": 19,
+ "measured": 19,
+ "below24raw": 1,
+ "minW": 1,
+ "minH": 1,
+ "below24": [
+  {
+   "sel": "#wp-skip-link",
+   "tag": "a",
+   "text": "تخطى إلى المحتوى",
+   "w": 1,
+   "h": 1,
+   "x": 390,
+   "y": -4410
+  }
+ ],
+ "all": [
+  {
+   "sel": "#wp-skip-link",
+   "tag": "a",
+   "text": "تخطى إلى المحتوى",
+   "w": 1,
+   "h": 1,
+   "x": 390,
+   "y": -4410
+  },
+  {
+   "sel": "div.wp-site-blocks>div.wp-block-template-part>header.wp-block-group.site-header.has-global-padding>div.wp-block-group.container.nav>a.brand",
+   "tag": "a",
+   "text": "عيادة سِراج للأسنان Demo",
+   "w": 196.9,
+   "h": 34,
+   "x": 169,
+   "y": -4392
+  },
+  {
+   "sel": "div.wp-block-template-part>header.wp-block-group.site-header.has-global-padding>div.wp-block-group.container.nav>nav.is-responsive.items-justified-center.wp-block-navigation>button.wp-block-navigation__responsive-container-open",
+   "tag": "button",
+   "text": "فتح القائمة",
+   "w": 24,
+   "h": 24,
+   "x": 126,
+   "y": -4387
+  },
+  {
+   "sel": "header.wp-block-group.site-header.has-global-padding>div.wp-block-group.container.nav>div.wp-block-buttons.nav-actions.is-layout-flex>div.wp-block-button>a.wp-block-button__link.wp-element-button",
+   "tag": "a",
+   "text": "احجز زيارة",
+   "w": 83.5,
+   "h": 46.5,
+   "x": 24,
+   "y": -4398
+  },
+  {
+   "sel": "section.hero>div.container.hero-grid>div.hero-text>div.hero-actions>a.btn.btn-primary",
+   "tag": "a",
+   "text": "احجز زيارة",
+   "w": 118,
+   "h": 48,
+   "x": 248,
+   "y": -3840
+  },
+  {
+   "sel": "section.hero>div.container.hero-grid>div.hero-text>div.hero-actions>a.btn.btn-ghost",
+   "tag": "a",
+   "text": "شوف الخدمات",
+   "w": 159.7,
+   "h": 48,
+   "x": 76,
+   "y": -3840
+  },
+  {
+   "sel": "section.section.faq>div.container.narrow>div.faq-list>details.faq-item>summary",
+   "tag": "summary",
+   "text": "هل الحجز اللي بعمله أونلاين نهائي؟",
+   "w": 340,
+   "h": 27.2,
+   "x": 25,
+   "y": 2335
+  },
+  {
+   "sel": "section.section.faq>div.container.narrow>div.faq-list>details.faq-item>summary",
+   "tag": "summary",
+   "text": "كام تكلفة الكشف؟",
+   "w": 340,
+   "h": 27.2,
+   "x": 25,
+   "y": 2376
+  },
+  {
+   "sel": "section.section.faq>div.container.narrow>div.faq-list>details.faq-item>summary",
+   "tag": "summary",
+   "text": "بتقبلوا التأمين الطبي؟",
+   "w": 340,
+   "h": 27.2,
+   "x": 25,
+   "y": 2417
+  },
+  {
+   "sel": "section.section.faq>div.container.narrow>div.faq-list>details.faq-item>summary",
+   "tag": "summary",
+   "text": "إيه المواعيد المتاحة؟",
+   "w": 340,
+   "h": 27.2,
+   "x": 25,
+   "y": 2458
+  },
+  {
+   "sel": "section.section.faq>div.container.narrow>div.faq-list>details.faq-item>summary",
+   "tag": "summary",
+   "text": "الأسعار دي هتفضل زي ما هي؟",
+   "w": 340,
+   "h": 27.2,
+   "x": 25,
+   "y": 2500
+  },
+  {
+   "sel": "section.section.contact-band>div.container.contact-grid>div.contact-text.reveal.in>div.hero-actions>a.btn.btn-primary",
+   "tag": "a",
+   "text": "احجز دلوقتي",
+   "w": 143.2,
+   "h": 48,
+   "x": 223,
+   "y": 2991
+  },
+  {
+   "sel": "section.section.contact-band>div.container.contact-grid>div.contact-text.reveal.in>div.hero-actions>a.btn.btn-ghost",
+   "tag": "a",
+   "text": "صفحة التواصل",
+   "w": 166,
+   "h": 48,
+   "x": 45,
+   "y": 2991
+  },
+  {
+   "sel": "div.wp-site-blocks>main.wp-block-group.site-main.is-layout-flow>section.section.cta-band>div.container.cta-inner.reveal>a.btn.btn-primary.btn-lg",
+   "tag": "a",
+   "text": "احجز زيارة",
+   "w": 151,
+   "h": 56,
+   "x": 215,
+   "y": 3718
+  },
+  {
+   "sel": "div.wp-site-blocks>div.wp-block-template-part>footer.wp-block-group.site-footer.has-global-padding>div.wp-block-group.container.footer-row>a.brand",
+   "tag": "a",
+   "text": "عيادة سِراج للأسنان",
+   "w": 202.9,
+   "h": 40,
+   "x": 163,
+   "y": 3879
+  },
+  {
+   "sel": "div.wp-block-template-part>footer.wp-block-group.site-footer.has-global-padding>div.wp-block-group.container.footer-row>p.wp-block-paragraph>a",
+   "tag": "a",
+   "text": "الخدمات",
+   "w": 52.2,
+   "h": 24,
+   "x": 314,
+   "y": 3998
+  },
+  {
+   "sel": "div.wp-block-template-part>footer.wp-block-group.site-footer.has-global-padding>div.wp-block-group.container.footer-row>p.wp-block-paragraph>a",
+   "tag": "a",
+   "text": "الفريق",
+   "w": 39.6,
+   "h": 24,
+   "x": 263,
+   "y": 3998
+  },
+  {
+   "sel": "div.wp-block-template-part>footer.wp-block-group.site-footer.has-global-padding>div.wp-block-group.container.footer-row>p.wp-block-paragraph>a",
+   "tag": "a",
+   "text": "تواصل",
+   "w": 41.5,
+   "h": 24,
+   "x": 211,
+   "y": 3998
+  },
+  {
+   "sel": "div.wp-block-template-part>footer.wp-block-group.site-footer.has-global-padding>div.wp-block-group.container.footer-row>p.wp-block-paragraph>a",
+   "tag": "a",
+   "text": "احجز زيارة",
+   "w": 56,
+   "h": 24,
+   "x": 144,
+   "y": 3998
+  }
+ ]
+}

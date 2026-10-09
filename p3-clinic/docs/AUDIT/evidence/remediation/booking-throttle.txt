@@ -1,0 +1,21 @@
+﻿=== 0. reset throttle keys + booking count ===
+info  throttle key = siraj_bk_t_516224c5f3ad255c
+info  stale counter cleared (delete is a no-op when absent)
+info  siraj_booking posts before = 4
+=== 1. fetch a fresh nonce ===
+PASS  nonce extracted
+=== 2. attempts 1..6 pass the envelope (phone error) ===
+info  attempt 1 -> validation error (envelope counted)
+info  attempt 2 -> validation error (envelope counted)
+info  attempt 3 -> validation error (envelope counted)
+info  attempt 4 -> validation error (envelope counted)
+info  attempt 5 -> validation error (envelope counted)
+info  attempt 6 -> validation error (envelope counted)
+=== 3. attempt 7 blocked by throttle ===
+PASS  7th attempt generic envelope message
+PASS  7th attempt did not reach validation
+=== 4. stored counter = 6, no bookings created ===
+PASS  throttle counter (6)
+PASS  booking posts unchanged (4)
+
+SUMMARY: PASS=11 FAIL=0

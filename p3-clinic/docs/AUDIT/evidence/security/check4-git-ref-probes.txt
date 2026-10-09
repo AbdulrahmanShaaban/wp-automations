@@ -1,0 +1,17 @@
+# check4 git-ref probes (supplement to check4-sensitive-path-probe.txt)
+# unauthenticated GET, run 2026-10-08 during evidence-gap closure for finding #8
+# command: curl.exe -s -o <out> -w "%{http_code} %{size_download}" http://localhost:8889/<path>
+
+path                      status  bytes   body file
+/.git/refs/heads/master   200     41      check4-probe-__git_refs_heads_master.out
+/.git/packed-refs         200     57700   (body not retained — status + size only; it is
+                                           ~1000 public WordPress-core commit ids/refs,
+                                           contains no credentials, and adds nothing the
+                                           200/57700 measurement does not)
+
+# notes
+# - 41 bytes = a single commit id (same class as check4-probe-__git_HEAD.out)
+# - 57700 bytes = the WordPress core clone's packed refs (public upstream refs,
+#   consistent with check4-git-robots-content.txt: url = https://github.com/WordPress/WordPress.git)
+# - /.git/index status 200 was already recorded in check4-sensitive-path-probe.txt
+#   (body intentionally not captured there: "(not captured)")

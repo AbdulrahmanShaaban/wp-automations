@@ -1,0 +1,474 @@
+{
+ "generatedAt": "2026-10-07T12:48:04.012Z",
+ "base": "http://localhost:8889",
+ "pages": [
+  {
+   "viewport": "1440",
+   "page": "home",
+   "url": "/",
+   "dir": "rtl",
+   "lang": "ar",
+   "h1": [
+    "أسنانك تستاهل عناية واضحة، بموعد يناسبك"
+   ],
+   "h1Count": 1,
+   "sections": [
+    "services",
+    "gallery",
+    "team",
+    "steps",
+    "faq",
+    "contact"
+   ],
+   "hashHrefs": [
+    "#wp--skip-link--target"
+   ],
+   "brokenHash": [],
+   "imgs": [
+    {
+     "src": "http://localhost:8889/wp-content/themes/siraj-theme/assets/img/photo-instruments.jpg",
+     "ok": true,
+     "w": 1200,
+     "alt": "أدوات تنظيف الأسنان مرتبة على سطح أبيض"
+    },
+    {
+     "src": "http://localhost:8889/wp-content/themes/siraj-theme/assets/img/photo-stilllife.jpg",
+     "ok": true,
+     "w": 1200,
+     "alt": "مرآة فحص الأسنان وملقط معدني على سطح أبي"
+    },
+    {
+     "src": "http://localhost:8889/wp-content/themes/siraj-theme/assets/img/photo-implant.jpg",
+     "ok": true,
+     "w": 1200,
+     "alt": "زرعة سن معدنية ممسوكة بقفاز أبيض"
+    },
+    {
+     "src": "http://localhost:8889/wp-content/themes/siraj-theme/assets/img/photo-lounge.jpg",
+     "ok": true,
+     "w": 1200,
+     "alt": "صالة انتظار في عيادة أسنان بأربعة كراسي "
+    }
+   ],
+   "imgsNoAlt": 0,
+   "hamburger": {
+    "visible": false,
+    "w": 0,
+    "h": 0
+   },
+   "forms": 0,
+   "labels": [],
+   "unlabelled": 0,
+   "overflowX": null,
+   "smallTargets": [
+    "A.skip-link 1x1",
+    "A. 52x18",
+    "A. 40x18",
+    "A. 42x18"
+   ]
+  },
+  {
+   "viewport": "1440",
+   "page": "book",
+   "url": "/book/",
+   "dir": "rtl",
+   "lang": "ar",
+   "h1": [
+    "احجز زيارة"
+   ],
+   "h1Count": 1,
+   "sections": [],
+   "hashHrefs": [
+    "#wp--skip-link--target"
+   ],
+   "brokenHash": [],
+   "imgs": [],
+   "imgsNoAlt": 0,
+   "hamburger": {
+    "visible": false,
+    "w": 0,
+    "h": 0
+   },
+   "forms": 1,
+   "labels": [
+    {
+     "name": "siraj_website",
+     "type": "text",
+     "label": true
+    },
+    {
+     "name": "siraj_name",
+     "type": "text",
+     "label": true
+    },
+    {
+     "name": "siraj_phone",
+     "type": "tel",
+     "label": true
+    },
+    {
+     "name": "siraj_service",
+     "type": "select-one",
+     "label": true
+    },
+    {
+     "name": "siraj_date",
+     "type": "date",
+     "label": true
+    },
+    {
+     "name": "siraj_notes",
+     "type": "textarea",
+     "label": true
+    },
+    {
+     "name": "siraj_consent",
+     "type": "checkbox",
+     "label": true
+    }
+   ],
+   "unlabelled": 0,
+   "overflowX": null,
+   "smallTargets": [
+    "A.skip-link 1x1",
+    "INPUT.siraj-input 22x22",
+    "A. 52x18",
+    "A. 40x18",
+    "A. 42x18"
+   ]
+  },
+  {
+   "viewport": "1440",
+   "page": "services",
+   "url": "/services/",
+   "dir": "rtl",
+   "lang": "ar",
+   "h1": [
+    "الخدمات"
+   ],
+   "h1Count": 1,
+   "sections": [],
+   "hashHrefs": [
+    "#wp--skip-link--target"
+   ],
+   "brokenHash": [],
+   "imgs": [],
+   "imgsNoAlt": 0,
+   "hamburger": {
+    "visible": false,
+    "w": 0,
+    "h": 0
+   },
+   "forms": 0,
+   "labels": [],
+   "unlabelled": 0,
+   "overflowX": null,
+   "smallTargets": [
+    "A.skip-link 1x1",
+    "A. 52x18",
+    "A. 40x18",
+    "A. 42x18"
+   ]
+  },
+  {
+   "viewport": "1440",
+   "page": "team",
+   "url": "/team/",
+   "dir": "rtl",
+   "lang": "ar",
+   "h1": [
+    "الفريق"
+   ],
+   "h1Count": 1,
+   "sections": [],
+   "hashHrefs": [
+    "#wp--skip-link--target"
+   ],
+   "brokenHash": [],
+   "imgs": [],
+   "imgsNoAlt": 0,
+   "hamburger": {
+    "visible": false,
+    "w": 0,
+    "h": 0
+   },
+   "forms": 0,
+   "labels": [],
+   "unlabelled": 0,
+   "overflowX": null,
+   "smallTargets": [
+    "A.skip-link 1x1",
+    "A. 52x18",
+    "A. 40x18",
+    "A. 42x18"
+   ]
+  },
+  {
+   "viewport": "1440",
+   "page": "contact",
+   "url": "/contact/",
+   "dir": "rtl",
+   "lang": "ar",
+   "h1": [
+    "تواصل"
+   ],
+   "h1Count": 1,
+   "sections": [],
+   "hashHrefs": [
+    "#wp--skip-link--target"
+   ],
+   "brokenHash": [],
+   "imgs": [],
+   "imgsNoAlt": 0,
+   "hamburger": {
+    "visible": false,
+    "w": 0,
+    "h": 0
+   },
+   "forms": 0,
+   "labels": [],
+   "unlabelled": 0,
+   "overflowX": null,
+   "smallTargets": [
+    "A.skip-link 1x1",
+    "A. 52x18",
+    "A. 40x18",
+    "A. 42x18"
+   ]
+  },
+  {
+   "viewport": "390",
+   "page": "home",
+   "url": "/",
+   "dir": "rtl",
+   "lang": "ar",
+   "h1": [
+    "أسنانك تستاهل عناية واضحة، بموعد يناسبك"
+   ],
+   "h1Count": 1,
+   "sections": [
+    "services",
+    "gallery",
+    "team",
+    "steps",
+    "faq",
+    "contact"
+   ],
+   "hashHrefs": [
+    "#wp--skip-link--target"
+   ],
+   "brokenHash": [],
+   "imgs": [
+    {
+     "src": "http://localhost:8889/wp-content/themes/siraj-theme/assets/img/photo-instruments.jpg",
+     "ok": true,
+     "w": 1200,
+     "alt": "أدوات تنظيف الأسنان مرتبة على سطح أبيض"
+    },
+    {
+     "src": "http://localhost:8889/wp-content/themes/siraj-theme/assets/img/photo-stilllife.jpg",
+     "ok": true,
+     "w": 1200,
+     "alt": "مرآة فحص الأسنان وملقط معدني على سطح أبي"
+    },
+    {
+     "src": "http://localhost:8889/wp-content/themes/siraj-theme/assets/img/photo-implant.jpg",
+     "ok": true,
+     "w": 1200,
+     "alt": "زرعة سن معدنية ممسوكة بقفاز أبيض"
+    },
+    {
+     "src": "http://localhost:8889/wp-content/themes/siraj-theme/assets/img/photo-lounge.jpg",
+     "ok": true,
+     "w": 1200,
+     "alt": "صالة انتظار في عيادة أسنان بأربعة كراسي "
+    }
+   ],
+   "imgsNoAlt": 0,
+   "hamburger": {
+    "visible": true,
+    "w": 24,
+    "h": 24
+   },
+   "forms": 0,
+   "labels": [],
+   "unlabelled": 0,
+   "overflowX": null,
+   "smallTargets": [
+    "A.skip-link 1x1",
+    "A. 52x18",
+    "A. 40x18",
+    "A. 42x18"
+   ]
+  },
+  {
+   "viewport": "390",
+   "page": "book",
+   "url": "/book/",
+   "dir": "rtl",
+   "lang": "ar",
+   "h1": [
+    "احجز زيارة"
+   ],
+   "h1Count": 1,
+   "sections": [],
+   "hashHrefs": [
+    "#wp--skip-link--target"
+   ],
+   "brokenHash": [],
+   "imgs": [],
+   "imgsNoAlt": 0,
+   "hamburger": {
+    "visible": true,
+    "w": 24,
+    "h": 24
+   },
+   "forms": 1,
+   "labels": [
+    {
+     "name": "siraj_website",
+     "type": "text",
+     "label": true
+    },
+    {
+     "name": "siraj_name",
+     "type": "text",
+     "label": true
+    },
+    {
+     "name": "siraj_phone",
+     "type": "tel",
+     "label": true
+    },
+    {
+     "name": "siraj_service",
+     "type": "select-one",
+     "label": true
+    },
+    {
+     "name": "siraj_date",
+     "type": "date",
+     "label": true
+    },
+    {
+     "name": "siraj_notes",
+     "type": "textarea",
+     "label": true
+    },
+    {
+     "name": "siraj_consent",
+     "type": "checkbox",
+     "label": true
+    }
+   ],
+   "unlabelled": 0,
+   "overflowX": null,
+   "smallTargets": [
+    "A.skip-link 1x1",
+    "INPUT.siraj-input 22x22",
+    "A. 52x18",
+    "A. 40x18",
+    "A. 42x18"
+   ]
+  },
+  {
+   "viewport": "390",
+   "page": "services",
+   "url": "/services/",
+   "dir": "rtl",
+   "lang": "ar",
+   "h1": [
+    "الخدمات"
+   ],
+   "h1Count": 1,
+   "sections": [],
+   "hashHrefs": [
+    "#wp--skip-link--target"
+   ],
+   "brokenHash": [],
+   "imgs": [],
+   "imgsNoAlt": 0,
+   "hamburger": {
+    "visible": true,
+    "w": 24,
+    "h": 24
+   },
+   "forms": 0,
+   "labels": [],
+   "unlabelled": 0,
+   "overflowX": null,
+   "smallTargets": [
+    "A.skip-link 1x1",
+    "A. 52x18",
+    "A. 40x18",
+    "A. 42x18"
+   ]
+  },
+  {
+   "viewport": "390",
+   "page": "team",
+   "url": "/team/",
+   "dir": "rtl",
+   "lang": "ar",
+   "h1": [
+    "الفريق"
+   ],
+   "h1Count": 1,
+   "sections": [],
+   "hashHrefs": [
+    "#wp--skip-link--target"
+   ],
+   "brokenHash": [],
+   "imgs": [],
+   "imgsNoAlt": 0,
+   "hamburger": {
+    "visible": true,
+    "w": 24,
+    "h": 24
+   },
+   "forms": 0,
+   "labels": [],
+   "unlabelled": 0,
+   "overflowX": null,
+   "smallTargets": [
+    "A.skip-link 1x1",
+    "A. 52x18",
+    "A. 40x18",
+    "A. 42x18"
+   ]
+  },
+  {
+   "viewport": "390",
+   "page": "contact",
+   "url": "/contact/",
+   "dir": "rtl",
+   "lang": "ar",
+   "h1": [
+    "تواصل"
+   ],
+   "h1Count": 1,
+   "sections": [],
+   "hashHrefs": [
+    "#wp--skip-link--target"
+   ],
+   "brokenHash": [],
+   "imgs": [],
+   "imgsNoAlt": 0,
+   "hamburger": {
+    "visible": true,
+    "w": 24,
+    "h": 24
+   },
+   "forms": 0,
+   "labels": [],
+   "unlabelled": 0,
+   "overflowX": null,
+   "smallTargets": [
+    "A.skip-link 1x1",
+    "A. 52x18",
+    "A. 40x18",
+    "A. 42x18"
+   ]
+  }
+ ]
+}

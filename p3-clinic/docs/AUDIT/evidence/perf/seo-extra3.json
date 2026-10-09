@@ -1,0 +1,78 @@
+{
+  "generatedAt": "2026-10-08T03:37:30.467Z",
+  "base": "http://localhost:8889",
+  "variants": {
+    "/BOOK/": {
+      "status": 200,
+      "canonical": "http://localhost:8889/book/",
+      "canonicalCount": 1,
+      "title": "احجز زيارة &#8211; عيادة سِراج للأسنان",
+      "robots": "max-image-preview:large",
+      "bytes": 65055
+    },
+    "/Book/": {
+      "status": 200,
+      "canonical": "http://localhost:8889/book/",
+      "canonicalCount": 1,
+      "title": "احجز زيارة &#8211; عيادة سِراج للأسنان",
+      "robots": "max-image-preview:large",
+      "bytes": 65055
+    },
+    "/book/?utm_source=x": {
+      "status": 200,
+      "canonical": "http://localhost:8889/book/",
+      "canonicalCount": 1,
+      "title": "احجز زيارة &#8211; عيادة سِراج للأسنان",
+      "robots": "max-image-preview:large",
+      "bytes": 65068
+    },
+    "/book/?page_id=7": {
+      "status": 301,
+      "canonical": null,
+      "canonicalCount": 0,
+      "title": null,
+      "robots": null,
+      "bytes": 0
+    },
+    "/index.php/book/": {
+      "status": 301,
+      "canonical": null,
+      "canonicalCount": 0,
+      "title": null,
+      "robots": null,
+      "bytes": 0
+    },
+    "/SERVICES/": {
+      "status": 200,
+      "canonical": "http://localhost:8889/services/",
+      "canonicalCount": 1,
+      "title": "الخدمات &#8211; عيادة سِراج للأسنان",
+      "robots": "max-image-preview:large",
+      "bytes": 66091
+    },
+    "/services/?utm_source=x": {
+      "status": 200,
+      "canonical": "http://localhost:8889/services/",
+      "canonicalCount": 1,
+      "title": "الخدمات &#8211; عيادة سِراج للأسنان",
+      "robots": "max-image-preview:large",
+      "bytes": 66091
+    },
+    "/TEAM/": {
+      "status": 200,
+      "canonical": "http://localhost:8889/team/",
+      "canonicalCount": 1,
+      "title": "الفريق &#8211; عيادة سِراج للأسنان",
+      "robots": "max-image-preview:large",
+      "bytes": 65235
+    },
+    "/CONTACT/": {
+      "status": 200,
+      "canonical": "http://localhost:8889/contact/",
+      "canonicalCount": 1,
+      "title": "تواصل &#8211; عيادة سِراج للأسنان",
+      "robots": "max-image-preview:large",
+      "bytes": 63781
+    }
+  }
+}

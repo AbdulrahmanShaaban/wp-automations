@@ -1,0 +1,19 @@
+{
+ "method": "POST /wp-json/wc/store/v1/cart/add-item",
+ "product": {
+  "id": 45,
+  "name": "تيشيرت قطن أوفرسايز",
+  "permalink": "http://localhost:8888/product/oversized-cotton-tee/"
+ },
+ "status": 201,
+ "itemsCountBefore": 0,
+ "itemsCountAfter": 1,
+ "subtotalAfter": "420",
+ "currency": "EGP",
+ "cookieNames": [
+  "woocommerce_items_in_cart",
+  "woocommerce_cart_hash"
+ ],
+ "cookiesOmitted": true,
+ "capturedAt": "2026-10-06T11:35:31.099Z"
+}

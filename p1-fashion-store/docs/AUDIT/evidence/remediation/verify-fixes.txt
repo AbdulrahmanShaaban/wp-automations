@@ -1,0 +1,20 @@
+GATE-2026-10-06 remediation verification (fresh run, read-only against the site)
+base: http://localhost:8888  generated: 2026-10-07T10:58:33.409Z
+cart seeded in browser: before=0 after=1 (تيشيرت قطن أوفرسايز)
+
+B3 mobile nav @390: hamburger visible=true size=44x44 inline-list display=MISSING
+B3 after click: container visible=true links=4 all-visible=true
+B3 desktop 1440: hamburger display=none inline-list=MISSING links=4
+B4 anchors: #wp--skip-link--target=true /#new=true /#cats=true /#best=true /#about=true #cats=true
+B5 no-JS: reveal total=13 hidden=0 hero visible=true
+B6 checkout #email autocomplete=email inputmode(phone)=tel dir(phone)=ltr
+F7 sub-24 controls @390: none | orderby select=24px tall
+F8 letter-spacing (Arabic title) = normal
+F5 add-to-cart labels on plain links = 0 | labels now: اتفرج على المتجر
+F6 Demo badges with lang="en": 8/8
+SEO canonical on home @390 = 1 | desktop = 1 | JSON-LD blocks = 1
+axe home@390: {"total":0,"critical":0,"serious":0,"moderate":0,"minor":0} | rules: none
+axe checkout@390: {"total":0,"critical":0,"serious":0,"moderate":0,"minor":0} | rules: none
+screens: checkout-390.png, home-1440.png, home-390-nav-closed.png, home-390-nav-open.png, home-390-no-js.png
+
+took 56s

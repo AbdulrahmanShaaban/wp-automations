@@ -1,0 +1,69 @@
+<!doctype html>
+<!-- Components sheet — states for the approved direction (palette A shown; B/C swap tokens only). -->
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>نيلاد — مكوّنات وحالات</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tokens.css">
+<style>
+:root{--bg:#FAF8F4;--surface:#FFFFFF;--text:#1B1A17;--muted:#5F5A52;--primary:#0B6B57;--on-primary:#FFFFFF;--accent:#B45309;--border:#E6E1D8;--primary-soft:#E4F1EC;--danger:#B91C1C;--success:#15803D;
+--font-body:"Cairo","Inter",system-ui,sans-serif;--pad-x:20px;--section-y:48px}
+body{padding-block:48px}
+h2{margin-top:48px}
+.row{display:flex;flex-wrap:wrap;gap:16px;align-items:center;margin-bottom:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border-radius:999px;border:1.5px solid transparent;font:inherit;font-weight:700;cursor:pointer;text-decoration:none}
+.btn-primary{background:var(--primary);color:#fff}
+.btn-ghost{border-color:var(--border);background:var(--surface)}
+.btn[disabled]{opacity:.5;cursor:not-allowed}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.card{background:var(--surface);border:1px solid var(--border);border-radius:22px;padding:24px;max-width:320px}
+label{font-weight:600;display:grid;gap:8px;margin-bottom:16px}
+input,select{font:inherit;padding:12px 16px;border:1.5px solid var(--border);border-radius:12px;background:var(--surface);min-height:48px}
+input:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px var(--primary-soft)}
+input[aria-invalid="true"]{border-color:var(--danger)}
+.err{color:var(--danger);font-size:.875rem;font-weight:600}
+.ok{color:var(--success);font-size:.875rem;font-weight:600}
+.note{color:var(--muted);font-size:.875rem}
+</style>
+</head>
+<body>
+<div class="container">
+  <h1 style="font-size:2.25rem">مكوّنات نيلاد — الحالات</h1>
+  <p class="note">مرجع لكل حالة قبل ما نبني الثيم. الاتجاه المعتمد بيتغير بس في الـ tokens مش في الشكل.</p>
+
+  <h2>أزرار</h2>
+  <div class="row">
+    <button class="btn btn-primary">أساسي (primary)</button>
+    <button class="btn btn-ghost">ثانوي (ghost)</button>
+    <button class="btn btn-primary" disabled>معطّل (disabled)</button>
+    <a class="btn btn-primary" href="#" onclick="return false">hover/press تجربة</a>
+  </div>
+  <p class="note">دائمًا primary واحد ممتلئ + ghost ثانوي — ما يبقاش اتنين متماثلين.</p>
+
+  <h2>حقول + حالات</h2>
+  <div class="row" style="align-items:flex-start">
+    <label>اسمك<input type="text" placeholder="مثال: أحمد"></label>
+    <label>بريد غير صحيح<input type="email" value="not-an-email" aria-invalid="true"><span class="err">✗ البريد غير صحيح</span></label>
+    <label>رقم واتساب<input type="tel" value="0101234567" aria-invalid="false"><span class="ok">✓ رقم مصري صحيح</span></label>
+  </div>
+
+  <h2>كارت منتج</h2>
+  <div class="row">
+    <article class="card" style="padding:0;overflow:hidden">
+      <div style="aspect-ratio:4/5;background:linear-gradient(140deg,#E4F1EC,#D8CFC0);display:grid;place-items:center;color:#5F5A52;font-weight:600">صورة المنتج</div>
+      <div style="padding:16px">
+        <p class="note" style="margin:0">هدوم</p>
+        <h3 style="margin:4px 0">عباية كتان</h3>
+        <p style="font-weight:800;margin:0 0 12px">1,250 <small>ج.م</small> <del class="note">1,450</del></p>
+        <button class="btn btn-primary" style="width:100%">أضف للسلة</button>
+      </div>
+    </article>
+  </div>
+
+  <h2>حالات الشاشات المطلوب تغطيتها</h2>
+  <p class="note">تحميل (skeleton) · فاضي ("لسه مفيش منتجات") · خطأ (رسالة + retry) · نجاح (توفيق) — كلها بتحط في نفس الشبكة من غير ما تتغير أبعاد الكروت.</p>
+</div>
+</body>
+</html>

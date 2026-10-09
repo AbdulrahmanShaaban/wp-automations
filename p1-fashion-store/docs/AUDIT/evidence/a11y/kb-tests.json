@@ -1,0 +1,341 @@
+{
+ "generatedAt": "2026-10-06T11:43:51.463Z",
+ "checks": [
+  {
+   "id": "skip-link-first-focus",
+   "ok": true,
+   "detail": {
+    "tag": "a",
+    "id": "wp-skip-link",
+    "cls": "skip-link screen-reader-text",
+    "type": null,
+    "name": null,
+    "href": "#wp--skip-link--target",
+    "aria": null,
+    "text": "تخطى إلى المحتوى",
+    "rect": {
+     "x": 5,
+     "y": 5,
+     "w": 1430,
+     "h": 61
+    },
+    "onScreen": true,
+    "visible": true,
+    "outline": "solid 3px rgb(180, 83, 9)",
+    "outlineOffset": "3px",
+    "boxShadow": "rgba(0, 0, 0, 0.6) 0px 0px 2px 2px",
+    "focusVisible": true,
+    "bg": "rgb(238, 238, 238)",
+    "color": "rgb(68, 68, 68)",
+    "landmark": "",
+    "hash": "",
+    "path": "/",
+    "uid": "body:nth-of-type(1)>a:nth-of-type(1)"
+   }
+  },
+  {
+   "id": "skip-link-visible-when-focused",
+   "ok": true,
+   "detail": {
+    "rect": {
+     "x": 5,
+     "y": 5,
+     "w": 1430,
+     "h": 61
+    },
+    "visible": true,
+    "outline": "solid 3px rgb(180, 83, 9)",
+    "path": "/"
+   }
+  },
+  {
+   "id": "skip-link-visible-focus-indicator",
+   "ok": true,
+   "detail": {
+    "focusVisible": true,
+    "outline": "solid 3px rgb(180, 83, 9)",
+    "boxShadow": "rgba(0, 0, 0, 0.6) 0px 0px 2px 2px"
+   }
+  },
+  {
+   "id": "skip-link-activates-target",
+   "ok": true,
+   "detail": {
+    "hash": "#wp--skip-link--target",
+    "target": {
+     "exists": true,
+     "tag": "main",
+     "tabindex": null,
+     "y": 96,
+     "hash": "#wp--skip-link--target"
+    },
+    "nextStop": {
+     "tag": "a",
+     "id": null,
+     "landmark": "main",
+     "text": "تسوّق الجديد"
+    }
+   }
+  },
+  {
+   "id": "header-nav-keyboard-reachable",
+   "ok": true,
+   "detail": {
+    "navStops": [
+     "نيلاد",
+     "الجديد",
+     "التصنيفات",
+     "الأكثر مبيعًا",
+     "عن نيلاد",
+     "السلة",
+     "اتسوّق الآن"
+    ]
+   }
+  },
+  {
+   "id": "focus-indicator-on-all-home-stops",
+   "ok": true,
+   "detail": {
+    "without": []
+   }
+  },
+  {
+   "id": "main-reachable-in-tab-order",
+   "ok": true,
+   "detail": {
+    "atStep": 9
+   }
+  },
+  {
+   "id": "home-no-keyboard-trap",
+   "ok": true,
+   "detail": {
+    "focusables": 35,
+    "longestRun": 0
+   }
+  },
+  {
+   "id": "add-to-cart-keyboard-reachable",
+   "ok": true,
+   "detail": {
+    "step": 33,
+    "text": "إضافة إلى السلة",
+    "cls": "wp-block-button__link wp-element-button wc-block-components-product-bu",
+    "rect": {
+     "x": 654,
+     "y": 688,
+     "w": 132,
+     "h": 43
+    },
+    "focusVisible": true,
+    "outline": "auto 1px rgb(16, 16, 16)"
+   }
+  },
+  {
+   "id": "add-to-cart-operable-by-enter",
+   "ok": true,
+   "detail": {
+    "itemsBefore": 0,
+    "itemsAfter": 1
+   }
+  },
+  {
+   "id": "cart-seeded-for-keyboard-test",
+   "ok": true,
+   "detail": {
+    "already": true,
+    "before": 1
+   }
+  },
+  {
+   "id": "cart-controls-keyboard-reachable",
+   "ok": true,
+   "detail": [
+    {
+     "tag": "input",
+     "cls": "wc-block-components-quantity-selector__input",
+     "text": "1",
+     "rect": {
+      "x": 1188,
+      "y": 381,
+      "w": 45,
+      "h": 25
+     }
+    },
+    {
+     "tag": "button",
+     "cls": "wc-block-components-quantity-selector__button wc-block-components-quan",
+     "text": "+",
+     "rect": {
+      "x": 1158,
+      "y": 381,
+      "w": 30,
+      "h": 25
+     }
+    },
+    {
+     "tag": "button",
+     "cls": "wc-block-cart-item__remove-link",
+     "text": "",
+     "rect": {
+      "x": 1121,
+      "y": 381,
+      "w": 24,
+      "h": 24
+     }
+    },
+    {
+     "tag": "input",
+     "cls": "wc-block-components-quantity-selector__input",
+     "text": "1",
+     "rect": {
+      "x": 1188,
+      "y": 381,
+      "w": 45,
+      "h": 25
+     }
+    },
+    {
+     "tag": "button",
+     "cls": "wc-block-components-quantity-selector__button wc-block-components-quan",
+     "text": "+",
+     "rect": {
+      "x": 1158,
+      "y": 381,
+      "w": 30,
+      "h": 25
+     }
+    },
+    {
+     "tag": "button",
+     "cls": "wc-block-cart-item__remove-link",
+     "text": "",
+     "rect": {
+      "x": 1121,
+      "y": 381,
+      "w": 24,
+      "h": 24
+     }
+    }
+   ]
+  },
+  {
+   "id": "cart-no-keyboard-trap",
+   "ok": true,
+   "detail": {
+    "focusables": 21,
+    "longestRun": 0
+   }
+  },
+  {
+   "id": "checkout-form-fields-reachable",
+   "ok": true,
+   "detail": [
+    {
+     "name": "contact_email",
+     "id": "email",
+     "type": "email",
+     "aria": "البريد الإلكتروني"
+    },
+    {
+     "name": "shipping_first_name",
+     "id": "shipping-first_name",
+     "type": "text",
+     "aria": "الاسم الأول"
+    },
+    {
+     "name": "shipping_last_name",
+     "id": "shipping-last_name",
+     "type": "text",
+     "aria": "الاسم الأخير"
+    },
+    {
+     "name": null,
+     "id": "shipping-country",
+     "type": null,
+     "aria": null
+    },
+    {
+     "name": "shipping_address_1",
+     "id": "shipping-address_1",
+     "type": "text",
+     "aria": "عنوان الشارع / الحي"
+    },
+    {
+     "name": "shipping_city",
+     "id": "shipping-city",
+     "type": "text",
+     "aria": "المدينة"
+    },
+    {
+     "name": null,
+     "id": "shipping-state",
+     "type": null,
+     "aria": null
+    },
+    {
+     "name": "shipping_postcode",
+     "id": "shipping-postcode",
+     "type": "text",
+     "aria": "الرمز البريدي / ZIP"
+    },
+    {
+     "name": "shipping_phone",
+     "id": "shipping-phone",
+     "type": "tel",
+     "aria": "الهاتف (اختياري)"
+    },
+    {
+     "name": null,
+     "id": "checkbox-control-0",
+     "type": "checkbox",
+     "aria": null
+    },
+    {
+     "name": "radio-control-0",
+     "id": "radio-control-0-flat_rate:2",
+     "type": "radio",
+     "aria": null
+    },
+    {
+     "name": "radio-control-wc-payment-method-options",
+     "id": "radio-control-wc-payment-method-options-bacs",
+     "type": "radio",
+     "aria": null
+    },
+    {
+     "name": null,
+     "id": "checkbox-control-1",
+     "type": "checkbox",
+     "aria": null
+    },
+    {
+     "name": "contact_email",
+     "id": "email",
+     "type": "email",
+     "aria": "البريد الإلكتروني"
+    }
+   ]
+  },
+  {
+   "id": "checkout-no-keyboard-trap",
+   "ok": true,
+   "detail": {
+    "focusables": 32,
+    "longestRun": 0
+   }
+  },
+  {
+   "id": "checkout-focus-indicator-visible",
+   "ok": true,
+   "detail": []
+  },
+  {
+   "id": "shift-tab-moves-backwards",
+   "ok": true,
+   "detail": {
+    "distinctStops": 4
+   }
+  }
+ ]
+}

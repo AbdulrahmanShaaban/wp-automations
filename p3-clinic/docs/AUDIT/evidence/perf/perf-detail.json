@@ -1,0 +1,1068 @@
+{
+  "generatedAt": "2026-10-08T03:40:17.781Z",
+  "pages": {
+    "home": {
+      "unminifiedJavascript": {
+        "score": 0.5,
+        "displayValue": "Est savings of 12 KiB",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+            "wastedBytes": 8241,
+            "wastedMs": null,
+            "totalBytes": 27704,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "/wp-includes/js/twemoji.js?ver=7.1.3",
+            "wastedBytes": 3722,
+            "wastedMs": null,
+            "totalBytes": 8886,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 2
+      },
+      "unusedJavascript": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "unusedCssRules": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "unminifiedCss": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "cacheInsight": {
+        "score": 0.5,
+        "displayValue": "Est savings of 441 KiB",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/img/photo-implant.jpg",
+            "wastedBytes": 124263,
+            "wastedMs": null,
+            "totalBytes": 124263,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/img/photo-instruments.jpg",
+            "wastedBytes": 112118,
+            "wastedMs": null,
+            "totalBytes": 112118,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/img/photo-stilllife.jpg",
+            "wastedBytes": 97944,
+            "wastedMs": null,
+            "totalBytes": 97944,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+            "wastedBytes": 31636,
+            "wastedMs": null,
+            "totalBytes": 31636,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+            "wastedBytes": 30428,
+            "wastedMs": null,
+            "totalBytes": 30428,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+            "wastedBytes": 28051,
+            "wastedMs": null,
+            "totalBytes": 28051,
+            "cacheLifetimeMs": 0
+          }
+        ],
+        "itemCount": 13
+      },
+      "imageDelivery": {
+        "score": 0.5,
+        "displayValue": "Est savings of 189 KiB",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/img/photo-instruments.jpg",
+            "wastedBytes": 71666,
+            "wastedMs": null,
+            "totalBytes": 111828,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/img/photo-implant.jpg",
+            "wastedBytes": 68135,
+            "wastedMs": null,
+            "totalBytes": 123973,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/img/photo-stilllife.jpg",
+            "wastedBytes": 53816,
+            "wastedMs": null,
+            "totalBytes": 97655,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 3
+      },
+      "renderBlocking": {
+        "score": 0.5,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+            "wastedBytes": null,
+            "wastedMs": 501,
+            "totalBytes": 973,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+            "wastedBytes": null,
+            "wastedMs": 351,
+            "totalBytes": 4124,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+            "wastedBytes": null,
+            "wastedMs": 501,
+            "totalBytes": 6436,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 3
+      },
+      "bootup": {
+        "score": 1,
+        "displayValue": "0.2 s",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": "Unattributable",
+            "wastedBytes": null,
+            "wastedMs": null,
+            "totalBytes": null,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "/",
+            "wastedBytes": null,
+            "wastedMs": null,
+            "totalBytes": null,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+            "wastedBytes": null,
+            "wastedMs": null,
+            "totalBytes": null,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 3
+      },
+      "networkServerLatency": {
+        "score": 1,
+        "displayValue": "200 ms",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": null,
+            "wastedBytes": null,
+            "wastedMs": null,
+            "totalBytes": null,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 1
+      },
+      "networkRtt": {
+        "score": 1,
+        "displayValue": "0 ms",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": null,
+            "wastedBytes": null,
+            "wastedMs": null,
+            "totalBytes": null,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 1
+      },
+      "modernHttp": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "thirdParties": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "fontDisplay": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      }
+    },
+    "services": {
+      "unminifiedJavascript": {
+        "score": 0.5,
+        "displayValue": "Est savings of 12 KiB",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+            "wastedBytes": 8241,
+            "wastedMs": null,
+            "totalBytes": 27704,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "/wp-includes/js/twemoji.js?ver=7.1.3",
+            "wastedBytes": 3722,
+            "wastedMs": null,
+            "totalBytes": 8886,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 2
+      },
+      "unusedJavascript": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "unusedCssRules": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "unminifiedCss": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "cacheInsight": {
+        "score": 0.5,
+        "displayValue": "Est savings of 115 KiB",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+            "wastedBytes": 31636,
+            "wastedMs": null,
+            "totalBytes": 31636,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+            "wastedBytes": 30428,
+            "wastedMs": null,
+            "totalBytes": 30428,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+            "wastedBytes": 28051,
+            "wastedMs": null,
+            "totalBytes": 28051,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-includes/js/twemoji.js?ver=7.1.3",
+            "wastedBytes": 9230,
+            "wastedMs": null,
+            "totalBytes": 9230,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+            "wastedBytes": 6436,
+            "wastedMs": null,
+            "totalBytes": 6436,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+            "wastedBytes": 4124,
+            "wastedMs": null,
+            "totalBytes": 4124,
+            "cacheLifetimeMs": 0
+          }
+        ],
+        "itemCount": 10
+      },
+      "imageDelivery": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "renderBlocking": {
+        "score": 0,
+        "displayValue": "Est savings of 50 ms",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": "/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+            "wastedBytes": null,
+            "wastedMs": 236,
+            "totalBytes": 4124,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+            "wastedBytes": null,
+            "wastedMs": 386,
+            "totalBytes": 973,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+            "wastedBytes": null,
+            "wastedMs": 386,
+            "totalBytes": 6436,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 3
+      },
+      "bootup": {
+        "score": 1,
+        "displayValue": "0.2 s",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": "/services/",
+            "wastedBytes": null,
+            "wastedMs": null,
+            "totalBytes": null,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "Unattributable",
+            "wastedBytes": null,
+            "wastedMs": null,
+            "totalBytes": null,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+            "wastedBytes": null,
+            "wastedMs": null,
+            "totalBytes": null,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 3
+      },
+      "networkServerLatency": {
+        "score": 1,
+        "displayValue": "90 ms",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": null,
+            "wastedBytes": null,
+            "wastedMs": null,
+            "totalBytes": null,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 1
+      },
+      "networkRtt": {
+        "score": 1,
+        "displayValue": "0 ms",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": null,
+            "wastedBytes": null,
+            "wastedMs": null,
+            "totalBytes": null,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 1
+      },
+      "modernHttp": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "thirdParties": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "fontDisplay": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      }
+    },
+    "team": {
+      "unminifiedJavascript": {
+        "score": 0.5,
+        "displayValue": "Est savings of 12 KiB",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+            "wastedBytes": 8241,
+            "wastedMs": null,
+            "totalBytes": 27704,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "/wp-includes/js/twemoji.js?ver=7.1.3",
+            "wastedBytes": 3722,
+            "wastedMs": null,
+            "totalBytes": 8886,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 2
+      },
+      "unusedJavascript": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "unusedCssRules": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "unminifiedCss": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "cacheInsight": {
+        "score": 0.5,
+        "displayValue": "Est savings of 115 KiB",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+            "wastedBytes": 31636,
+            "wastedMs": null,
+            "totalBytes": 31636,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+            "wastedBytes": 30428,
+            "wastedMs": null,
+            "totalBytes": 30428,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+            "wastedBytes": 28051,
+            "wastedMs": null,
+            "totalBytes": 28051,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-includes/js/twemoji.js?ver=7.1.3",
+            "wastedBytes": 9230,
+            "wastedMs": null,
+            "totalBytes": 9230,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+            "wastedBytes": 6436,
+            "wastedMs": null,
+            "totalBytes": 6436,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+            "wastedBytes": 4124,
+            "wastedMs": null,
+            "totalBytes": 4124,
+            "cacheLifetimeMs": 0
+          }
+        ],
+        "itemCount": 10
+      },
+      "imageDelivery": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "renderBlocking": {
+        "score": 0,
+        "displayValue": "Est savings of 100 ms",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": "/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+            "wastedBytes": null,
+            "wastedMs": 243,
+            "totalBytes": 4124,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+            "wastedBytes": null,
+            "wastedMs": 393,
+            "totalBytes": 973,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+            "wastedBytes": null,
+            "wastedMs": 393,
+            "totalBytes": 6436,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 3
+      },
+      "bootup": {
+        "score": 1,
+        "displayValue": "0.1 s",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": "Unattributable",
+            "wastedBytes": null,
+            "wastedMs": null,
+            "totalBytes": null,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "/team/",
+            "wastedBytes": null,
+            "wastedMs": null,
+            "totalBytes": null,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 2
+      },
+      "networkServerLatency": {
+        "score": 1,
+        "displayValue": "90 ms",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": null,
+            "wastedBytes": null,
+            "wastedMs": null,
+            "totalBytes": null,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 1
+      },
+      "networkRtt": {
+        "score": 1,
+        "displayValue": "0 ms",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": null,
+            "wastedBytes": null,
+            "wastedMs": null,
+            "totalBytes": null,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 1
+      },
+      "modernHttp": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "thirdParties": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "fontDisplay": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      }
+    },
+    "contact": {
+      "unminifiedJavascript": {
+        "score": 0,
+        "displayValue": "Est savings of 12 KiB",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+            "wastedBytes": 8241,
+            "wastedMs": null,
+            "totalBytes": 27704,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "/wp-includes/js/twemoji.js?ver=7.1.3",
+            "wastedBytes": 3722,
+            "wastedMs": null,
+            "totalBytes": 8886,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 2
+      },
+      "unusedJavascript": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "unusedCssRules": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "unminifiedCss": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "cacheInsight": {
+        "score": 0,
+        "displayValue": "Est savings of 115 KiB",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+            "wastedBytes": 31636,
+            "wastedMs": null,
+            "totalBytes": 31636,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+            "wastedBytes": 30428,
+            "wastedMs": null,
+            "totalBytes": 30428,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+            "wastedBytes": 28051,
+            "wastedMs": null,
+            "totalBytes": 28051,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-includes/js/twemoji.js?ver=7.1.3",
+            "wastedBytes": 9230,
+            "wastedMs": null,
+            "totalBytes": 9230,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+            "wastedBytes": 6436,
+            "wastedMs": null,
+            "totalBytes": 6436,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+            "wastedBytes": 4124,
+            "wastedMs": null,
+            "totalBytes": 4124,
+            "cacheLifetimeMs": 0
+          }
+        ],
+        "itemCount": 10
+      },
+      "imageDelivery": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "renderBlocking": {
+        "score": 0,
+        "displayValue": "Est savings of 150 ms",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": "/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+            "wastedBytes": null,
+            "wastedMs": 249,
+            "totalBytes": 4124,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+            "wastedBytes": null,
+            "wastedMs": 399,
+            "totalBytes": 973,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+            "wastedBytes": null,
+            "wastedMs": 399,
+            "totalBytes": 6436,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 3
+      },
+      "bootup": {
+        "score": 1,
+        "displayValue": "0.1 s",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": "Unattributable",
+            "wastedBytes": null,
+            "wastedMs": null,
+            "totalBytes": null,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "/contact/",
+            "wastedBytes": null,
+            "wastedMs": null,
+            "totalBytes": null,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 2
+      },
+      "networkServerLatency": {
+        "score": 1,
+        "displayValue": "100 ms",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": null,
+            "wastedBytes": null,
+            "wastedMs": null,
+            "totalBytes": null,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 1
+      },
+      "networkRtt": {
+        "score": 1,
+        "displayValue": "0 ms",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": null,
+            "wastedBytes": null,
+            "wastedMs": null,
+            "totalBytes": null,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 1
+      },
+      "modernHttp": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "thirdParties": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "fontDisplay": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      }
+    },
+    "book": {
+      "unminifiedJavascript": {
+        "score": 0.5,
+        "displayValue": "Est savings of 12 KiB",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+            "wastedBytes": 8241,
+            "wastedMs": null,
+            "totalBytes": 27704,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "/wp-includes/js/twemoji.js?ver=7.1.3",
+            "wastedBytes": 3722,
+            "wastedMs": null,
+            "totalBytes": 8886,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 2
+      },
+      "unusedJavascript": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "unusedCssRules": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "unminifiedCss": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "cacheInsight": {
+        "score": 0.5,
+        "displayValue": "Est savings of 115 KiB",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-arabic.woff2",
+            "wastedBytes": 31636,
+            "wastedMs": null,
+            "totalBytes": 31636,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/fonts/alexandria-latin.woff2",
+            "wastedBytes": 30428,
+            "wastedMs": null,
+            "totalBytes": 30428,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+            "wastedBytes": 28051,
+            "wastedMs": null,
+            "totalBytes": 28051,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-includes/js/twemoji.js?ver=7.1.3",
+            "wastedBytes": 9230,
+            "wastedMs": null,
+            "totalBytes": 9230,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+            "wastedBytes": 6436,
+            "wastedMs": null,
+            "totalBytes": 6436,
+            "cacheLifetimeMs": 0
+          },
+          {
+            "url": "/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+            "wastedBytes": 4124,
+            "wastedMs": null,
+            "totalBytes": 4124,
+            "cacheLifetimeMs": 0
+          }
+        ],
+        "itemCount": 10
+      },
+      "imageDelivery": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "renderBlocking": {
+        "score": 0,
+        "displayValue": "Est savings of 40 ms",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": "/wp-content/themes/siraj-theme/assets/css/fonts.css?ver=0.1.0",
+            "wastedBytes": null,
+            "wastedMs": 386,
+            "totalBytes": 973,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.3",
+            "wastedBytes": null,
+            "wastedMs": 236,
+            "totalBytes": 4124,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "/wp-content/themes/siraj-theme/style.css?ver=0.1.0",
+            "wastedBytes": null,
+            "wastedMs": 386,
+            "totalBytes": 6436,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 3
+      },
+      "bootup": {
+        "score": 1,
+        "displayValue": "0.2 s",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": "Unattributable",
+            "wastedBytes": null,
+            "wastedMs": null,
+            "totalBytes": null,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "/book/",
+            "wastedBytes": null,
+            "wastedMs": null,
+            "totalBytes": null,
+            "cacheLifetimeMs": null
+          },
+          {
+            "url": "/wp-includes/js/dist/script-modules/interactivity/index.js?ver=efaa5193bbad9c60ffd1",
+            "wastedBytes": null,
+            "wastedMs": null,
+            "totalBytes": null,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 3
+      },
+      "networkServerLatency": {
+        "score": 1,
+        "displayValue": "90 ms",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": null,
+            "wastedBytes": null,
+            "wastedMs": null,
+            "totalBytes": null,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 1
+      },
+      "networkRtt": {
+        "score": 1,
+        "displayValue": "0 ms",
+        "wastedBytes": null,
+        "items": [
+          {
+            "url": null,
+            "wastedBytes": null,
+            "wastedMs": null,
+            "totalBytes": null,
+            "cacheLifetimeMs": null
+          }
+        ],
+        "itemCount": 1
+      },
+      "modernHttp": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "thirdParties": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      },
+      "fontDisplay": {
+        "score": 1,
+        "displayValue": null,
+        "wastedBytes": null,
+        "items": [],
+        "itemCount": 0
+      }
+    }
+  }
+}

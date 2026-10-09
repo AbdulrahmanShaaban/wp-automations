@@ -1,0 +1,31 @@
+﻿== .env.example placeholder check (values NOT shown) ==
+FILE: D:\my work\p1-fashion-store\.env.example
+  PAYMOB_API_KEY => empty=True placeholder-like=True length=0
+  PAYMOB_INTEGRATION_ID => empty=True placeholder-like=True length=0
+  PAYMOB_IFRAME_ID => empty=True placeholder-like=True length=0
+  PAYMOB_HMAC_SECRET => empty=True placeholder-like=True length=0
+  SMTP_HOST => empty=True placeholder-like=True length=0
+  SMTP_PORT => empty=True placeholder-like=True length=0
+  SMTP_USER => empty=True placeholder-like=True length=0
+  SMTP_PASSWORD => empty=True placeholder-like=True length=0
+  N8N_ENCRYPTION_KEY => empty=True placeholder-like=True length=0
+  N8N_OWNER_EMAIL => empty=True placeholder-like=True length=0
+  TELEGRAM_BOT_TOKEN => empty=True placeholder-like=True length=0
+  TELEGRAM_CHAT_ID => empty=True placeholder-like=True length=0
+  WC_WEBHOOK_SECRET => empty=True placeholder-like=True length=0
+FILE: D:\my work\p1-fashion-store\n8n\.env.example
+  WOO_WEBHOOK_SECRET => empty=False placeholder-like=True length=30
+  TELEGRAM_BOT_TOKEN => empty=False placeholder-like=True length=22
+  TELEGRAM_CHAT_ID => empty=False placeholder-like=True length=20
+  GOOGLE_SHEET_ID => empty=False placeholder-like=True length=21
+  GOOGLE_SHEET_GID => empty=False placeholder-like=False length=1
+  GOOGLE_SHEET_TAB => empty=False placeholder-like=False length=6
+  SHEETS_ENABLED => empty=False placeholder-like=False length=5
+  STORE_URL => empty=False placeholder-like=False length=32
+  WC_API_KEY => empty=False placeholder-like=False length=10
+  WC_API_SECRET => empty=False placeholder-like=False length=10
+  PENDING_HOURS => empty=False placeholder-like=False length=2
+  LOW_STOCK_QTY => empty=False placeholder-like=False length=1
+  REVIEW_AFTER_DAYS => empty=False placeholder-like=False length=1
+  NODE_FUNCTION_ALLOW_BUILTIN => empty=False placeholder-like=False length=6
+  GENERIC_TIMEZONE => empty=False placeholder-like=False length=12

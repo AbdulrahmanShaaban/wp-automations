@@ -1,0 +1,1998 @@
+{
+ "generatedAt": "2026-10-08T03:20:05.052Z",
+ "chrome": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+ "checks": [
+  {
+   "id": "home-skiplink-first-focusable",
+   "desc": "Skip link is the first focusable element and gets a visible focus ring on focus",
+   "expected": "skip link focused, :focus-visible true, outline >= 2px",
+   "actual": "first tab stop after skip = a.div.wp-block-group.container.nav | skip matches(:focus-visible)=true outline=3px solid rgb(163, 35, 27) offset=3px | rect={\"x\":4,\"y\":4,\"w\":185,\"h\":48} onScreen=true",
+   "pass": true,
+   "evidence": "screens/kb-home-skip-link-focused.png, chains/home.json"
+  },
+  {
+   "id": "home-skiplink-target",
+   "desc": "Activating the skip link moves focus/scroll to the main content target",
+   "expected": "#wp--skip-link--target exists, page scrolls down",
+   "actual": "hash=#wp--skip-link--target scrollY=93 activeId=BODY targetExists=true targetTag=MAIN",
+   "pass": true,
+   "evidence": "chains/home.json"
+  },
+  {
+   "id": "home-focus-ring",
+   "desc": "Keyboard focus is visible on the primary CTA (theme :focus-visible rule)",
+   "expected": "outline >= 2px with non-none style",
+   "actual": "el=a.div.container.hero-grid outline=3px solid rgb(163, 35, 27) offset=3px :focus-visible=true",
+   "pass": true,
+   "evidence": "screens/kb-home-focus-ring.png"
+  },
+  {
+   "id": "home-chain-rings",
+   "desc": "Every element reached by Tab has a visible focus indicator",
+   "expected": "0 elements without an outline/shadow",
+   "actual": "stops=34 withoutRing=0",
+   "pass": true,
+   "evidence": "chains/home.json"
+  },
+  {
+   "id": "book-skiplink-first-focusable",
+   "desc": "Skip link is the first focusable element and gets a visible focus ring on focus",
+   "expected": "skip link focused, :focus-visible true, outline >= 2px",
+   "actual": "first tab stop after skip = a.div.wp-block-group.container.nav | skip matches(:focus-visible)=true outline=3px solid rgb(163, 35, 27) offset=3px | rect={\"x\":4,\"y\":4,\"w\":185,\"h\":48} onScreen=true",
+   "pass": true,
+   "evidence": "screens/kb-book-skip-link-focused.png, chains/book.json"
+  },
+  {
+   "id": "book-skiplink-target",
+   "desc": "Activating the skip link moves focus/scroll to the main content target",
+   "expected": "#wp--skip-link--target exists, page scrolls down",
+   "actual": "hash=#wp--skip-link--target scrollY=93 activeId=BODY targetExists=true targetTag=MAIN",
+   "pass": true,
+   "evidence": "chains/book.json"
+  },
+  {
+   "id": "book-focus-ring",
+   "desc": "Keyboard focus is visible on the primary CTA (theme :focus-visible rule)",
+   "expected": "outline >= 2px with non-none style",
+   "actual": "el=a.div.wp-block-template-part outline=3px solid rgb(163, 35, 27) offset=3px :focus-visible=true",
+   "pass": true,
+   "evidence": "screens/kb-book-focus-ring.png"
+  },
+  {
+   "id": "book-chain-rings",
+   "desc": "Every element reached by Tab has a visible focus indicator",
+   "expected": "0 elements without an outline/shadow",
+   "actual": "stops=34 withoutRing=15 :: input.none, input.none, select.none, input.none, input.none, input.none, textarea.none, input.none, input.none, input.none, select.none, input.none, input.none, input.none, textarea.none",
+   "pass": false,
+   "evidence": "chains/book.json"
+  },
+  {
+   "id": "faq-keyboard",
+   "desc": "FAQ details/summary open with Enter and Space, and never traps Tab",
+   "expected": "open toggles on Enter and Space; Tab leaves the widget",
+   "actual": "openBefore=false afterEnter=false (active still summary=SUMMARY|true) afterSpace=true focus ring on summary outline=3px none rgb(18, 19, 43) | tab stops after summary: summary:كام تكلفة الكشف؟ -> summary:بتقبلوا التأمين الطبي؟ -> summary:إيه المواعيد المتاحة؟ -> summary:الأسعار دي هتفضل زي ما -> a:احجز دلوقتي -> a:صفحة التواصل -> a:احجز زيارة -> a:عيادة سِراج للأسنان",
+   "pass": false,
+   "evidence": "kb-faq.json, screens/kb-faq-open-with-enter.png"
+  }
+ ],
+ "chains": {
+  "home": [
+   {
+    "tag": "a",
+    "path": "a.brand < div.wp-block-group.container.nav < header.wp-block-group.site-header.has-global-padding < div.wp-block-template-part",
+    "text": "عيادة سِراج للأسنان Demo",
+    "id": null,
+    "name": null,
+    "href": "/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 788,
+     "y": 17,
+     "w": 312,
+     "h": 34
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "a",
+    "path": "a.wp-block-navigation-item__content < li.wp-block-navigation-item.wp-block-navigation-link < ul.wp-block-navigation__container.is-responsive.items-justified-center < div.wp-block-navigation__responsive-container-content",
+    "text": "الخدمات",
+    "id": null,
+    "name": null,
+    "href": "/services/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 656,
+     "y": 20,
+     "w": 63,
+     "h": 27
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "a",
+    "path": "a.wp-block-navigation-item__content < li.wp-block-navigation-item.wp-block-navigation-link < ul.wp-block-navigation__container.is-responsive.items-justified-center < div.wp-block-navigation__responsive-container-content",
+    "text": "الفريق",
+    "id": null,
+    "name": null,
+    "href": "/team/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 583,
+     "y": 20,
+     "w": 49,
+     "h": 27
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "a",
+    "path": "a.wp-block-navigation-item__content < li.wp-block-navigation-item.wp-block-navigation-link < ul.wp-block-navigation__container.is-responsive.items-justified-center < div.wp-block-navigation__responsive-container-content",
+    "text": "تواصل",
+    "id": null,
+    "name": null,
+    "href": "/contact/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 508,
+     "y": 20,
+     "w": 51,
+     "h": 27
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "a",
+    "path": "a.wp-block-button__link.wp-element-button < div.wp-block-button < div.wp-block-buttons.nav-actions.is-layout-flex < div.wp-block-group.container.nav",
+    "text": "احجز زيارة",
+    "id": null,
+    "name": null,
+    "href": "/contact/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 340,
+     "y": 8,
+     "w": 100,
+     "h": 53
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(255, 255, 255)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "a",
+    "path": "a.btn.btn-primary < div.hero-actions < div.hero-text < div.container.hero-grid",
+    "text": "احجز زيارة",
+    "id": null,
+    "name": null,
+    "href": "/book/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 1162,
+     "y": 696,
+     "w": 118,
+     "h": 48
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgba(0, 0, 0, 0)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "a",
+    "path": "a.btn.btn-ghost < div.hero-actions < div.hero-text < div.container.hero-grid",
+    "text": "شوف الخدمات",
+    "id": null,
+    "name": null,
+    "href": "/services/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 990,
+     "y": 696,
+     "w": 160,
+     "h": 48
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(225, 226, 239)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "summary",
+    "path": "summary < details.faq-item < div.faq-list < div.container.narrow",
+    "text": "هل الحجز اللي بعمله أونلاين نهائي؟",
+    "id": null,
+    "name": null,
+    "href": null,
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 341,
+     "y": 4339,
+     "w": 758,
+     "h": 27
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 41
+   },
+   {
+    "tag": "summary",
+    "path": "summary < details.faq-item < div.faq-list < div.container.narrow",
+    "text": "كام تكلفة الكشف؟",
+    "id": null,
+    "name": null,
+    "href": null,
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 341,
+     "y": 4332,
+     "w": 758,
+     "h": 27
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 89
+   },
+   {
+    "tag": "summary",
+    "path": "summary < details.faq-item < div.faq-list < div.container.narrow",
+    "text": "بتقبلوا التأمين الطبي؟",
+    "id": null,
+    "name": null,
+    "href": null,
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 341,
+     "y": 4307,
+     "w": 758,
+     "h": 27
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 156
+   },
+   {
+    "tag": "summary",
+    "path": "summary < details.faq-item < div.faq-list < div.container.narrow",
+    "text": "إيه المواعيد المتاحة؟",
+    "id": null,
+    "name": null,
+    "href": null,
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 341,
+     "y": 4288,
+     "w": 758,
+     "h": 27
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 216
+   },
+   {
+    "tag": "summary",
+    "path": "summary < details.faq-item < div.faq-list < div.container.narrow",
+    "text": "الأسعار دي هتفضل زي ما هي؟",
+    "id": null,
+    "name": null,
+    "href": null,
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 341,
+     "y": 4280,
+     "w": 758,
+     "h": 27
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 265
+   },
+   {
+    "tag": "a",
+    "path": "a.btn.btn-primary < div.hero-actions < div.contact-text.reveal < div.container.contact-grid",
+    "text": "احجز دلوقتي",
+    "id": null,
+    "name": null,
+    "href": "/book/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 1137,
+     "y": 4720,
+     "w": 143,
+     "h": 48
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgba(0, 0, 0, 0)",
+    "docScrollY": 377
+   },
+   {
+    "tag": "a",
+    "path": "a.btn.btn-ghost < div.hero-actions < div.contact-text.reveal < div.container.contact-grid",
+    "text": "صفحة التواصل",
+    "id": null,
+    "name": null,
+    "href": "/contact/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 959,
+     "y": 4136,
+     "w": 166,
+     "h": 48
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(225, 226, 239)",
+    "docScrollY": 961
+   },
+   {
+    "tag": "a",
+    "path": "a.btn.btn-primary.btn-lg < div.container.cta-inner.reveal < section.section.cta-band < main.wp-block-group.site-main.is-layout-flow",
+    "text": "احجز زيارة",
+    "id": null,
+    "name": null,
+    "href": "/book/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 644,
+     "y": 3704,
+     "w": 151,
+     "h": 56
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgba(0, 0, 0, 0)",
+    "docScrollY": 1823
+   },
+   {
+    "tag": "a",
+    "path": "a.brand < div.wp-block-group.container.footer-row < footer.wp-block-group.site-footer.has-global-padding < div.wp-block-template-part",
+    "text": "عيادة سِراج للأسنان",
+    "id": null,
+    "name": null,
+    "href": "/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 858,
+     "y": 3074,
+     "w": 242,
+     "h": 40
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(85, 88, 120)",
+    "docScrollY": 2678
+   },
+   {
+    "tag": "a",
+    "path": "a < p.wp-block-paragraph < div.wp-block-group.container.footer-row < footer.wp-block-group.site-footer.has-global-padding",
+    "text": "الخدمات",
+    "id": null,
+    "name": null,
+    "href": "/services/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 1048,
+     "y": 1631,
+     "w": 52,
+     "h": 24
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(85, 88, 120)",
+    "docScrollY": 4177
+   },
+   {
+    "tag": "a",
+    "path": "a < p.wp-block-paragraph < div.wp-block-group.container.footer-row < footer.wp-block-group.site-footer.has-global-padding",
+    "text": "الفريق",
+    "id": null,
+    "name": null,
+    "href": "/team/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 997,
+     "y": 1334,
+     "w": 40,
+     "h": 24
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(85, 88, 120)",
+    "docScrollY": 4474
+   },
+   {
+    "tag": "a",
+    "path": "a < p.wp-block-paragraph < div.wp-block-group.container.footer-row < footer.wp-block-group.site-footer.has-global-padding",
+    "text": "تواصل",
+    "id": null,
+    "name": null,
+    "href": "/contact/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 945,
+     "y": 1059,
+     "w": 42,
+     "h": 24
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(85, 88, 120)",
+    "docScrollY": 4749
+   },
+   {
+    "none": true,
+    "active": "BODY|rtl home wp-singular page-template-default page page-id-4 wp-embed-responsive wp-theme-siraj-theme"
+   },
+   {
+    "tag": "a",
+    "path": "a.skip-link.screen-reader-text < body.rtl.home.wp-singular < html.js-motion",
+    "text": "تخطى إلى المحتوى",
+    "id": "wp-skip-link",
+    "name": null,
+    "href": "#wp--skip-link--target",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 4,
+     "y": -4805,
+     "w": 185,
+     "h": 48
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(68, 68, 68)",
+    "docScrollY": 4809
+   },
+   {
+    "tag": "a",
+    "path": "a.brand < div.wp-block-group.container.nav < header.wp-block-group.site-header.has-global-padding < div.wp-block-template-part",
+    "text": "عيادة سِراج للأسنان Demo",
+    "id": null,
+    "name": null,
+    "href": "/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 788,
+     "y": -4561,
+     "w": 312,
+     "h": 34
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 4578
+   },
+   {
+    "tag": "a",
+    "path": "a.wp-block-navigation-item__content < li.wp-block-navigation-item.wp-block-navigation-link < ul.wp-block-navigation__container.is-responsive.items-justified-center < div.wp-block-navigation__responsive-container-content",
+    "text": "الخدمات",
+    "id": null,
+    "name": null,
+    "href": "/services/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 656,
+     "y": -4040,
+     "w": 63,
+     "h": 27
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 4060
+   },
+   {
+    "tag": "a",
+    "path": "a.wp-block-navigation-item__content < li.wp-block-navigation-item.wp-block-navigation-link < ul.wp-block-navigation__container.is-responsive.items-justified-center < div.wp-block-navigation__responsive-container-content",
+    "text": "الفريق",
+    "id": null,
+    "name": null,
+    "href": "/team/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 583,
+     "y": -2440,
+     "w": 49,
+     "h": 27
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 2460
+   },
+   {
+    "tag": "a",
+    "path": "a.wp-block-navigation-item__content < li.wp-block-navigation-item.wp-block-navigation-link < ul.wp-block-navigation__container.is-responsive.items-justified-center < div.wp-block-navigation__responsive-container-content",
+    "text": "تواصل",
+    "id": null,
+    "name": null,
+    "href": "/contact/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 508,
+     "y": -1040,
+     "w": 51,
+     "h": 27
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 1060
+   },
+   {
+    "tag": "a",
+    "path": "a.wp-block-button__link.wp-element-button < div.wp-block-button < div.wp-block-buttons.nav-actions.is-layout-flex < div.wp-block-group.container.nav",
+    "text": "احجز زيارة",
+    "id": null,
+    "name": null,
+    "href": "/contact/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 340,
+     "y": -709,
+     "w": 100,
+     "h": 53
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(255, 255, 255)",
+    "docScrollY": 717
+   },
+   {
+    "tag": "a",
+    "path": "a.btn.btn-primary < div.hero-actions < div.hero-text < div.container.hero-grid",
+    "text": "احجز زيارة",
+    "id": null,
+    "name": null,
+    "href": "/book/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 1162,
+     "y": 1,
+     "w": 118,
+     "h": 48
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgba(0, 0, 0, 0)",
+    "docScrollY": 695
+   },
+   {
+    "tag": "a",
+    "path": "a.btn.btn-ghost < div.hero-actions < div.hero-text < div.container.hero-grid",
+    "text": "شوف الخدمات",
+    "id": null,
+    "name": null,
+    "href": "/services/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 990,
+     "y": 0,
+     "w": 160,
+     "h": 48
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(225, 226, 239)",
+    "docScrollY": 696
+   },
+   {
+    "tag": "summary",
+    "path": "summary < details.faq-item < div.faq-list < div.container.narrow",
+    "text": "هل الحجز اللي بعمله أونلاين نهائي؟",
+    "id": null,
+    "name": null,
+    "href": null,
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 341,
+     "y": 3642,
+     "w": 758,
+     "h": 27
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 738
+   },
+   {
+    "tag": "summary",
+    "path": "summary < details.faq-item < div.faq-list < div.container.narrow",
+    "text": "كام تكلفة الكشف؟",
+    "id": null,
+    "name": null,
+    "href": null,
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 341,
+     "y": 3595,
+     "w": 758,
+     "h": 27
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 826
+   },
+   {
+    "tag": "summary",
+    "path": "summary < details.faq-item < div.faq-list < div.container.narrow",
+    "text": "بتقبلوا التأمين الطبي؟",
+    "id": null,
+    "name": null,
+    "href": null,
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 341,
+     "y": 3575,
+     "w": 758,
+     "h": 27
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 888
+   },
+   {
+    "tag": "summary",
+    "path": "summary < details.faq-item < div.faq-list < div.container.narrow",
+    "text": "إيه المواعيد المتاحة؟",
+    "id": null,
+    "name": null,
+    "href": null,
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 341,
+     "y": 3566,
+     "w": 758,
+     "h": 27
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 938
+   },
+   {
+    "tag": "summary",
+    "path": "summary < details.faq-item < div.faq-list < div.container.narrow",
+    "text": "الأسعار دي هتفضل زي ما هي؟",
+    "id": null,
+    "name": null,
+    "href": null,
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 341,
+     "y": 3545,
+     "w": 758,
+     "h": 27
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 1000
+   },
+   {
+    "tag": "a",
+    "path": "a.btn.btn-primary < div.hero-actions < div.contact-text.reveal.in < div.container.contact-grid",
+    "text": "احجز دلوقتي",
+    "id": null,
+    "name": null,
+    "href": "/book/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 1137,
+     "y": 4012,
+     "w": 143,
+     "h": 48
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgba(0, 0, 0, 0)",
+    "docScrollY": 1069
+   }
+  ],
+  "book": [
+   {
+    "tag": "a",
+    "path": "a.brand < div.wp-block-group.container.nav < header.wp-block-group.site-header.has-global-padding < div.wp-block-template-part",
+    "text": "عيادة سِراج للأسنان Demo",
+    "id": null,
+    "name": null,
+    "href": "/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 788,
+     "y": 17,
+     "w": 312,
+     "h": 34
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "a",
+    "path": "a.wp-block-navigation-item__content < li.wp-block-navigation-item.wp-block-navigation-link < ul.wp-block-navigation__container.is-responsive.items-justified-center < div.wp-block-navigation__responsive-container-content",
+    "text": "الخدمات",
+    "id": null,
+    "name": null,
+    "href": "/services/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 656,
+     "y": 20,
+     "w": 63,
+     "h": 27
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "a",
+    "path": "a.wp-block-navigation-item__content < li.wp-block-navigation-item.wp-block-navigation-link < ul.wp-block-navigation__container.is-responsive.items-justified-center < div.wp-block-navigation__responsive-container-content",
+    "text": "الفريق",
+    "id": null,
+    "name": null,
+    "href": "/team/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 583,
+     "y": 20,
+     "w": 49,
+     "h": 27
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "a",
+    "path": "a.wp-block-navigation-item__content < li.wp-block-navigation-item.wp-block-navigation-link < ul.wp-block-navigation__container.is-responsive.items-justified-center < div.wp-block-navigation__responsive-container-content",
+    "text": "تواصل",
+    "id": null,
+    "name": null,
+    "href": "/contact/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 508,
+     "y": 20,
+     "w": 51,
+     "h": 27
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "a",
+    "path": "a.wp-block-button__link.wp-element-button < div.wp-block-button < div.wp-block-buttons.nav-actions.is-layout-flex < div.wp-block-group.container.nav",
+    "text": "احجز زيارة",
+    "id": null,
+    "name": null,
+    "href": "/contact/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 340,
+     "y": 8,
+     "w": 100,
+     "h": 53
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(255, 255, 255)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "input",
+    "path": "input.siraj-input < div.siraj-field < div.siraj-grid < form",
+    "text": "",
+    "id": "siraj-name-1",
+    "name": "siraj_name",
+    "href": null,
+    "type": "text",
+    "tabindex": null,
+    "rect": {
+     "x": 720,
+     "y": 363,
+     "w": 379,
+     "h": 52
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "none",
+     "width": "3px",
+     "color": "rgb(18, 19, 43)",
+     "offset": "3px"
+    },
+    "boxShadow": "rgb(230, 234, 251) 0px 0px 0px 3px",
+    "borderColor": "rgb(47, 75, 216)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "input",
+    "path": "input.siraj-input < div.siraj-field < div.siraj-grid < form",
+    "text": "",
+    "id": "siraj-phone-1",
+    "name": "siraj_phone",
+    "href": null,
+    "type": "tel",
+    "tabindex": null,
+    "rect": {
+     "x": 341,
+     "y": 363,
+     "w": 379,
+     "h": 52
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "none",
+     "width": "3px",
+     "color": "rgb(18, 19, 43)",
+     "offset": "3px"
+    },
+    "boxShadow": "rgb(230, 234, 251) 0px 0px 0px 3px",
+    "borderColor": "rgb(47, 75, 216)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "select",
+    "path": "select.siraj-select < div.siraj-field < div.siraj-grid < form",
+    "text": "من فضلك اختر الخدمةتنظيف وتلميععلاج عصبح",
+    "id": "siraj-service-1",
+    "name": "siraj_service",
+    "href": null,
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 720,
+     "y": 518,
+     "w": 379,
+     "h": 52
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "none",
+     "width": "3px",
+     "color": "rgb(18, 19, 43)",
+     "offset": "3px"
+    },
+    "boxShadow": "rgb(230, 234, 251) 0px 0px 0px 3px",
+    "borderColor": "rgb(47, 75, 216)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "input",
+    "path": "input.siraj-input < div.siraj-field < div.siraj-grid < form",
+    "text": "",
+    "id": "siraj-date-1",
+    "name": "siraj_date",
+    "href": null,
+    "type": "date",
+    "tabindex": null,
+    "rect": {
+     "x": 341,
+     "y": 518,
+     "w": 379,
+     "h": 52
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "none",
+     "width": "3px",
+     "color": "rgb(18, 19, 43)",
+     "offset": "3px"
+    },
+    "boxShadow": "rgb(230, 234, 251) 0px 0px 0px 3px",
+    "borderColor": "rgb(47, 75, 216)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "input",
+    "path": "input.siraj-input < div.siraj-field < div.siraj-grid < form",
+    "text": "",
+    "id": "siraj-date-1",
+    "name": "siraj_date",
+    "href": null,
+    "type": "date",
+    "tabindex": null,
+    "rect": {
+     "x": 341,
+     "y": 518,
+     "w": 379,
+     "h": 52
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "none",
+     "width": "3px",
+     "color": "rgb(18, 19, 43)",
+     "offset": "3px"
+    },
+    "boxShadow": "rgb(230, 234, 251) 0px 0px 0px 3px",
+    "borderColor": "rgb(47, 75, 216)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "input",
+    "path": "input.siraj-input < div.siraj-field < div.siraj-grid < form",
+    "text": "",
+    "id": "siraj-date-1",
+    "name": "siraj_date",
+    "href": null,
+    "type": "date",
+    "tabindex": null,
+    "rect": {
+     "x": 341,
+     "y": 518,
+     "w": 379,
+     "h": 52
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "none",
+     "width": "3px",
+     "color": "rgb(18, 19, 43)",
+     "offset": "3px"
+    },
+    "boxShadow": "rgb(230, 234, 251) 0px 0px 0px 3px",
+    "borderColor": "rgb(47, 75, 216)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "input",
+    "path": "input.siraj-input < div.siraj-field < div.siraj-grid < form",
+    "text": "",
+    "id": "siraj-date-1",
+    "name": "siraj_date",
+    "href": null,
+    "type": "date",
+    "tabindex": null,
+    "rect": {
+     "x": 341,
+     "y": 518,
+     "w": 379,
+     "h": 52
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": false,
+    "outline": {
+     "style": "none",
+     "width": "3px",
+     "color": "rgb(18, 19, 43)",
+     "offset": "0px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(225, 226, 239)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "textarea",
+    "path": "textarea.siraj-textarea < div.siraj-field < div.siraj-grid < form",
+    "text": "",
+    "id": "siraj-notes-1",
+    "name": "siraj_notes",
+    "href": null,
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 720,
+     "y": 674,
+     "w": 379,
+     "h": 135
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "none",
+     "width": "3px",
+     "color": "rgb(18, 19, 43)",
+     "offset": "3px"
+    },
+    "boxShadow": "rgb(230, 234, 251) 0px 0px 0px 3px",
+    "borderColor": "rgb(47, 75, 216)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "input",
+    "path": "input.siraj-input < div.siraj-consent < div.siraj-field < div.siraj-grid",
+    "text": "1",
+    "id": "siraj-consent-1",
+    "name": "siraj_consent",
+    "href": null,
+    "type": "checkbox",
+    "tabindex": null,
+    "rect": {
+     "x": 1072,
+     "y": 859,
+     "w": 24,
+     "h": 24
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "none",
+     "width": "3px",
+     "color": "rgb(18, 19, 43)",
+     "offset": "3px"
+    },
+    "boxShadow": "rgb(230, 234, 251) 0px 0px 0px 3px",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "button",
+    "path": "button.siraj-submit.btn.btn-primary < div.siraj-actions < div.siraj-grid < form",
+    "text": "إرسال الطلب",
+    "id": null,
+    "name": null,
+    "href": null,
+    "type": "submit",
+    "tabindex": null,
+    "rect": {
+     "x": 937,
+     "y": 799,
+     "w": 162,
+     "h": 52
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(255, 255, 255)",
+    "docScrollY": 106
+   },
+   {
+    "tag": "a",
+    "path": "a.brand < div.wp-block-group.container.footer-row < footer.wp-block-group.site-footer.has-global-padding < div.wp-block-template-part",
+    "text": "عيادة سِراج للأسنان",
+    "id": null,
+    "name": null,
+    "href": "/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 858,
+     "y": 806,
+     "w": 242,
+     "h": 40
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(85, 88, 120)",
+    "docScrollY": 209
+   },
+   {
+    "tag": "a",
+    "path": "a < p.wp-block-paragraph < div.wp-block-group.container.footer-row < footer.wp-block-group.site-footer.has-global-padding",
+    "text": "الخدمات",
+    "id": null,
+    "name": null,
+    "href": "/services/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 1048,
+     "y": 846,
+     "w": 52,
+     "h": 24
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(85, 88, 120)",
+    "docScrollY": 225
+   },
+   {
+    "tag": "a",
+    "path": "a < p.wp-block-paragraph < div.wp-block-group.container.footer-row < footer.wp-block-group.site-footer.has-global-padding",
+    "text": "الفريق",
+    "id": null,
+    "name": null,
+    "href": "/team/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 997,
+     "y": 844,
+     "w": 40,
+     "h": 24
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(85, 88, 120)",
+    "docScrollY": 227
+   },
+   {
+    "tag": "a",
+    "path": "a < p.wp-block-paragraph < div.wp-block-group.container.footer-row < footer.wp-block-group.site-footer.has-global-padding",
+    "text": "تواصل",
+    "id": null,
+    "name": null,
+    "href": "/contact/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 945,
+     "y": 844,
+     "w": 42,
+     "h": 24
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(85, 88, 120)",
+    "docScrollY": 227
+   },
+   {
+    "none": true,
+    "active": "BODY|rtl wp-singular page-template-default page page-id-23 wp-embed-responsive wp-theme-siraj-theme"
+   },
+   {
+    "tag": "a",
+    "path": "a.skip-link.screen-reader-text < body.rtl.wp-singular.page-template-default < html",
+    "text": "تخطى إلى المحتوى",
+    "id": "wp-skip-link",
+    "name": null,
+    "href": "#wp--skip-link--target",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 4,
+     "y": -117,
+     "w": 185,
+     "h": 48
+    },
+    "inViewport": false,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(68, 68, 68)",
+    "docScrollY": 121
+   },
+   {
+    "tag": "a",
+    "path": "a.brand < div.wp-block-group.container.nav < header.wp-block-group.site-header.has-global-padding < div.wp-block-template-part",
+    "text": "عيادة سِراج للأسنان Demo",
+    "id": null,
+    "name": null,
+    "href": "/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 788,
+     "y": -1,
+     "w": 312,
+     "h": 34
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 18
+   },
+   {
+    "tag": "a",
+    "path": "a.wp-block-navigation-item__content < li.wp-block-navigation-item.wp-block-navigation-link < ul.wp-block-navigation__container.is-responsive.items-justified-center < div.wp-block-navigation__responsive-container-content",
+    "text": "الخدمات",
+    "id": null,
+    "name": null,
+    "href": "/services/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 656,
+     "y": 18,
+     "w": 63,
+     "h": 27
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 2
+   },
+   {
+    "tag": "a",
+    "path": "a.wp-block-navigation-item__content < li.wp-block-navigation-item.wp-block-navigation-link < ul.wp-block-navigation__container.is-responsive.items-justified-center < div.wp-block-navigation__responsive-container-content",
+    "text": "الفريق",
+    "id": null,
+    "name": null,
+    "href": "/team/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 583,
+     "y": 20,
+     "w": 49,
+     "h": 27
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "a",
+    "path": "a.wp-block-navigation-item__content < li.wp-block-navigation-item.wp-block-navigation-link < ul.wp-block-navigation__container.is-responsive.items-justified-center < div.wp-block-navigation__responsive-container-content",
+    "text": "تواصل",
+    "id": null,
+    "name": null,
+    "href": "/contact/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 508,
+     "y": 20,
+     "w": 51,
+     "h": 27
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(18, 19, 43)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "a",
+    "path": "a.wp-block-button__link.wp-element-button < div.wp-block-button < div.wp-block-buttons.nav-actions.is-layout-flex < div.wp-block-group.container.nav",
+    "text": "احجز زيارة",
+    "id": null,
+    "name": null,
+    "href": "/contact/",
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 340,
+     "y": 8,
+     "w": 100,
+     "h": 53
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "solid",
+     "width": "3px",
+     "color": "rgb(163, 35, 27)",
+     "offset": "3px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(255, 255, 255)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "input",
+    "path": "input.siraj-input < div.siraj-field < div.siraj-grid < form",
+    "text": "",
+    "id": "siraj-name-1",
+    "name": "siraj_name",
+    "href": null,
+    "type": "text",
+    "tabindex": null,
+    "rect": {
+     "x": 720,
+     "y": 363,
+     "w": 379,
+     "h": 52
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "none",
+     "width": "3px",
+     "color": "rgb(18, 19, 43)",
+     "offset": "3px"
+    },
+    "boxShadow": "rgb(230, 234, 251) 0px 0px 0px 3px",
+    "borderColor": "rgb(47, 75, 216)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "input",
+    "path": "input.siraj-input < div.siraj-field < div.siraj-grid < form",
+    "text": "",
+    "id": "siraj-phone-1",
+    "name": "siraj_phone",
+    "href": null,
+    "type": "tel",
+    "tabindex": null,
+    "rect": {
+     "x": 341,
+     "y": 363,
+     "w": 379,
+     "h": 52
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "none",
+     "width": "3px",
+     "color": "rgb(18, 19, 43)",
+     "offset": "3px"
+    },
+    "boxShadow": "rgb(230, 234, 251) 0px 0px 0px 3px",
+    "borderColor": "rgb(47, 75, 216)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "select",
+    "path": "select.siraj-select < div.siraj-field < div.siraj-grid < form",
+    "text": "من فضلك اختر الخدمةتنظيف وتلميععلاج عصبح",
+    "id": "siraj-service-1",
+    "name": "siraj_service",
+    "href": null,
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 720,
+     "y": 518,
+     "w": 379,
+     "h": 52
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "none",
+     "width": "3px",
+     "color": "rgb(18, 19, 43)",
+     "offset": "3px"
+    },
+    "boxShadow": "rgb(230, 234, 251) 0px 0px 0px 3px",
+    "borderColor": "rgb(47, 75, 216)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "input",
+    "path": "input.siraj-input < div.siraj-field < div.siraj-grid < form",
+    "text": "",
+    "id": "siraj-date-1",
+    "name": "siraj_date",
+    "href": null,
+    "type": "date",
+    "tabindex": null,
+    "rect": {
+     "x": 341,
+     "y": 518,
+     "w": 379,
+     "h": 52
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "none",
+     "width": "3px",
+     "color": "rgb(18, 19, 43)",
+     "offset": "3px"
+    },
+    "boxShadow": "rgb(230, 234, 251) 0px 0px 0px 3px",
+    "borderColor": "rgb(47, 75, 216)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "input",
+    "path": "input.siraj-input < div.siraj-field < div.siraj-grid < form",
+    "text": "",
+    "id": "siraj-date-1",
+    "name": "siraj_date",
+    "href": null,
+    "type": "date",
+    "tabindex": null,
+    "rect": {
+     "x": 341,
+     "y": 518,
+     "w": 379,
+     "h": 52
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "none",
+     "width": "3px",
+     "color": "rgb(18, 19, 43)",
+     "offset": "3px"
+    },
+    "boxShadow": "rgb(230, 234, 251) 0px 0px 0px 3px",
+    "borderColor": "rgb(47, 75, 216)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "input",
+    "path": "input.siraj-input < div.siraj-field < div.siraj-grid < form",
+    "text": "",
+    "id": "siraj-date-1",
+    "name": "siraj_date",
+    "href": null,
+    "type": "date",
+    "tabindex": null,
+    "rect": {
+     "x": 341,
+     "y": 518,
+     "w": 379,
+     "h": 52
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "none",
+     "width": "3px",
+     "color": "rgb(18, 19, 43)",
+     "offset": "3px"
+    },
+    "boxShadow": "rgb(230, 234, 251) 0px 0px 0px 3px",
+    "borderColor": "rgb(47, 75, 216)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "input",
+    "path": "input.siraj-input < div.siraj-field < div.siraj-grid < form",
+    "text": "",
+    "id": "siraj-date-1",
+    "name": "siraj_date",
+    "href": null,
+    "type": "date",
+    "tabindex": null,
+    "rect": {
+     "x": 341,
+     "y": 518,
+     "w": 379,
+     "h": 52
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": false,
+    "outline": {
+     "style": "none",
+     "width": "3px",
+     "color": "rgb(18, 19, 43)",
+     "offset": "0px"
+    },
+    "boxShadow": "none",
+    "borderColor": "rgb(225, 226, 239)",
+    "docScrollY": 0
+   },
+   {
+    "tag": "textarea",
+    "path": "textarea.siraj-textarea < div.siraj-field < div.siraj-grid < form",
+    "text": "",
+    "id": "siraj-notes-1",
+    "name": "siraj_notes",
+    "href": null,
+    "type": null,
+    "tabindex": null,
+    "rect": {
+     "x": 720,
+     "y": 674,
+     "w": 379,
+     "h": 135
+    },
+    "inViewport": true,
+    "onScreen": true,
+    "matchesFocusVisible": true,
+    "outline": {
+     "style": "none",
+     "width": "3px",
+     "color": "rgb(18, 19, 43)",
+     "offset": "3px"
+    },
+    "boxShadow": "rgb(230, 234, 251) 0px 0px 0px 3px",
+    "borderColor": "rgb(47, 75, 216)",
+    "docScrollY": 0
+   }
+  ]
+ },
+ "faq": {
+  "count": 5,
+  "summaryText": "هل الحجز اللي بعمله أونلاين نهائي؟",
+  "summaryRect": {
+   "y": 4380,
+   "h": 27
+  },
+  "openBefore": false,
+  "summaryTabindex": null,
+  "summaryNativeFocusable": true,
+  "afterEnter": {
+   "open": false,
+   "active": "SUMMARY|true",
+   "hash": ""
+  },
+  "afterSpace": {
+   "open": true
+  },
+  "focusRingOnSummary": {
+   "tag": "summary",
+   "path": "summary < details.faq-item < div.faq-list < div.container.narrow",
+   "text": "هل الحجز اللي بعمله أونلاين نهائي؟",
+   "id": null,
+   "name": null,
+   "href": null,
+   "type": null,
+   "tabindex": null,
+   "rect": {
+    "x": 341,
+    "y": 1934,
+    "w": 758,
+    "h": 27
+   },
+   "inViewport": false,
+   "onScreen": true,
+   "matchesFocusVisible": false,
+   "outline": {
+    "style": "none",
+    "width": "3px",
+    "color": "rgb(18, 19, 43)",
+    "offset": "0px"
+   },
+   "boxShadow": "none",
+   "borderColor": "rgb(18, 19, 43)",
+   "docScrollY": 2446
+  },
+  "tabFromSummary": [
+   "summary:كام تكلفة الكشف؟",
+   "summary:بتقبلوا التأمين الطبي؟",
+   "summary:إيه المواعيد المتاحة؟",
+   "summary:الأسعار دي هتفضل زي ما",
+   "a:احجز دلوقتي",
+   "a:صفحة التواصل",
+   "a:احجز زيارة",
+   "a:عيادة سِراج للأسنان"
+  ]
+ },
+ "traps": {}
+}

@@ -1,0 +1,47 @@
+Nilad Order Ops Suite — n8n import validation evidence
+=====================================================
+Date: 2026-10-03
+n8n image: n8nio/n8n:latest (n8n --version -> 2.41.6), digest sha256:87e0bab2c93192e8dd885ff7b0697c22a1bd97489568a8c67cc140fd7dbb342d
+Command (one-shot container, fresh SQLite, NODE_FUNCTION_ALLOW_BUILTIN=crypto):
+  n8n import:workflow --separate --input=/workflows && n8n list:workflow
+
+Result:
+  Importing 8 workflows...
+  Successfully imported 8 workflows.
+  IMPORT_OK
+
+  fTSJfqr0gHsMxHiK|Nilad: error → owner alert
+  pbDxSVCiKLK8HR2D|Nilad F1: new order → Telegram + Sheet
+  keKjHMDgC4ie3FP2|Nilad F2: order status → customer email
+  7FQVLNrgu2hcfSBc|Nilad F3: schedule → pending order recovery
+  pD53JnhoumVktVBq|Nilad F4: daily schedule → low stock Telegram
+  kRr9QREsVJlDxgon|Nilad F5: 09:00 schedule → Telegram daily summary
+  DnLJfbeWcNN36PP6|Nilad F6: schedule → review request email
+  V9xoYTYoBgaRu2UO|Nilad F7: site up check
+
+Notes:
+- Import proves: JSON structure, node type names, typeVersions, connections,
+  settings and expressions all accepted by n8n 2.41.6.
+- NOT proven by import alone: live credential flows (Telegram/Google/SMTP),
+  schedule firing, expression evaluation at runtime, static-data persistence.
+  Logic itself is covered by n8n/tests/run-tests.js (87/87 passing).
+- Known quirk: running `n8n import:workflow` inside a container whose server
+  process is already running fails with SQLITE_BUSY (database locked) — use a
+  one-shot container with --entrypoint sh instead.
+
+Re-validation (same day, after the Sheet-tab change)
+---------------------------------------------------
+Change: F1's Google Sheets node now selects the tab by numeric gid
+  ("sheetName": { "__rl": true, "value": "={{ $env.GOOGLE_SHEET_GID }}", "mode": "id" })
+  instead of by tab name. Reason: n8n docs (sheet-operations.md, "Append or Update
+  Row") define the sheet "sheetId" as the #gid=<N> value of the sheet URL and offer
+  From list / By URL / By ID / By Name — a gid is exact, a localized tab name
+  ("الصفحة1") is not typeable from an env var.
+Command: docker run --rm --name nilad-n8n-validate -e GENERIC_TIMEZONE=Africa/Cairo
+  -e NODE_FUNCTION_ALLOW_BUILTIN=crypto -v "<repo>/n8n/workflows:/workflows:ro"
+  --entrypoint sh n8nio/n8n:latest -c "n8n import:workflow --separate --input=/workflows && n8n list:workflow"
+Result: "Successfully imported 8 workflows." (container exited and auto-removed)
+Logic guard: f1-structure now asserts sheetName.mode === 'id' and that the value
+  reads $env.GOOGLE_SHEET_GID, so the decision cannot silently regress (run-tests.js).
+Still NOT proven: the actual row write — needs the Google OAuth2 credential in the
+  owner's n8n instance (ASSETS_TODO #5).

@@ -1,0 +1,26 @@
+﻿== single failed login probe (1 attempt) ==HTTP/1.1 200 OK
+Date: Tue, 06 Oct 2026 07:28:28 GMT
+Server: Apache/2.4.68 (Debian)
+X-Powered-By: PHP/8.3.35
+Expires: Wed, 11 Jan 1984 05:00:00 GMT
+Cache-Control: no-cache, must-revalidate, max-age=0, no-store, private
+Set-Cookie: wordpress_test_cookie=WP%20Cookie%20check; path=/; HttpOnly
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self';
+Referrer-Policy: strict-origin-when-cross-origin
+Vary: Accept-Encoding
+Transfer-Encoding: chunked
+Content-Type: text/html; charset=UTF-8
+
+== wp-admin probe ==HTTP/1.1 302 Found
+Date: Tue, 06 Oct 2026 07:28:29 GMT
+Server: Apache/2.4.68 (Debian)
+X-Powered-By: PHP/8.3.35
+Expires: Wed, 11 Jan 1984 05:00:00 GMT
+Cache-Control: no-cache, must-revalidate, max-age=0, no-store, private
+X-Redirect-By: WordPress
+Location: http://localhost:8888/wp-login.php?redirect_to=http%3A%2F%2Flocalhost%3A8888%2Fwp-admin%2F&reauth=1
+Content-Length: 0
+Content-Type: text/html; charset=UTF-8
+
+== rate-limit / throttling headers present? ==

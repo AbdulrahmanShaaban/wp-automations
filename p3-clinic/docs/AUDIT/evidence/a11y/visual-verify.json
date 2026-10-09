@@ -1,0 +1,178 @@
+{
+ "generatedAt": "2026-10-08T05:40:46.504Z",
+ "hashGroup": {
+  "home-1440.png": {
+   "file": "home-1440.png",
+   "w": 1440,
+   "h": 900,
+   "redPx": 201,
+   "whitePx": 287542,
+   "darkPx": 15593,
+   "mean": 234,
+   "sd": 51.7
+  },
+  "team-1440.png": {
+   "file": "team-1440.png",
+   "w": 1440,
+   "h": 900,
+   "redPx": 0,
+   "whitePx": 307964,
+   "darkPx": 5524,
+   "mean": 241.9,
+   "sd": 33.4
+  },
+  "services-1440.png": {
+   "file": "services-1440.png",
+   "w": 1440,
+   "h": 900,
+   "redPx": 0,
+   "whitePx": 306276,
+   "darkPx": 7839,
+   "mean": 240.6,
+   "sd": 37.2
+  },
+  "contact-1440.png": {
+   "file": "contact-1440.png",
+   "w": 1440,
+   "h": 900,
+   "redPx": 0,
+   "whitePx": 309296,
+   "darkPx": 3729,
+   "mean": 242.7,
+   "sd": 30.6
+  },
+  "home-390.png": {
+   "file": "home-390.png",
+   "w": 390,
+   "h": 844,
+   "redPx": 0,
+   "whitePx": 67627,
+   "darkPx": 4380,
+   "mean": 228,
+   "sd": 57.9
+  },
+  "booking-1440-invalid.png": {
+   "file": "booking-1440-invalid.png",
+   "w": 1440,
+   "h": 900,
+   "redPx": 4597,
+   "whitePx": 271663,
+   "darkPx": 4391,
+   "mean": 241.4,
+   "sd": 34.7
+  },
+  "booking-390-invalid-values-retained.png": {
+   "file": "booking-390-invalid-values-retained.png",
+   "w": 390,
+   "h": 844,
+   "redPx": 1592,
+   "whitePx": 62565,
+   "darkPx": 1511,
+   "mean": 237,
+   "sd": 44.2
+  },
+  "booking-1440-success.png": {
+   "file": "booking-1440-success.png",
+   "w": 1440,
+   "h": 900,
+   "redPx": 0,
+   "whitePx": 285486,
+   "darkPx": 3920,
+   "mean": 242.5,
+   "sd": 29.4
+  },
+  "kb-home-focus-ring.png": {
+   "file": "kb-home-focus-ring.png",
+   "w": 1440,
+   "h": 900,
+   "redPx": 521,
+   "whitePx": 287195,
+   "darkPx": 15593,
+   "mean": 233.8,
+   "sd": 52
+  },
+  "kb-05-menu-open-390.png": {
+   "file": "kb-05-menu-open-390.png",
+   "w": 390,
+   "h": 844,
+   "redPx": 238,
+   "whitePx": 81719,
+   "darkPx": 148,
+   "mean": 253.9,
+   "sd": 15.1
+  }
+ },
+ "skipLink": {
+  "kb-01-skip-link-focused.png": {
+   "file": "kb-01-skip-link-focused.png",
+   "redNearSkipBox": {
+    "count": 0
+   },
+   "whiteInteriorPx": 8190
+  },
+  "home-1440.png": {
+   "file": "home-1440.png",
+   "redNearSkipBox": {
+    "count": 0
+   },
+   "whiteInteriorPx": 8190
+  },
+  "kb-home-skip-link-focused.png": {
+   "file": "kb-home-skip-link-focused.png",
+   "redNearSkipBox": {
+    "count": 0
+   },
+   "whiteInteriorPx": 8190
+  }
+ },
+ "regions": [
+  {
+   "file": "booking-1440-invalid.png",
+   "region": [
+    340,
+    300,
+    1100,
+    900
+   ],
+   "n": 456000,
+   "redPx": 18177,
+   "pinkishPx": 135304
+  },
+  {
+   "file": "booking-390-invalid-values-retained.png",
+   "region": [
+    0,
+    0,
+    390,
+    844
+   ],
+   "n": 329160,
+   "redPx": 5912,
+   "pinkishPx": 45261
+  },
+  {
+   "file": "booking-1440-success.png",
+   "region": [
+    0,
+    60,
+    1440,
+    900
+   ],
+   "n": 1209600,
+   "redPx": 0,
+   "pinkishPx": 0
+  },
+  {
+   "file": "kb-home-focus-ring.png",
+   "region": [
+    0,
+    0,
+    300,
+    900
+   ],
+   "n": 270000,
+   "redPx": 0,
+   "pinkishPx": 0
+  }
+ ]
+}

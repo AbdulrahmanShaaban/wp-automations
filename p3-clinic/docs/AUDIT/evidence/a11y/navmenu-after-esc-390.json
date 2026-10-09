@@ -1,0 +1,9 @@
+{
+ "boxVisible": false,
+ "hasModalOpen": false,
+ "activeElement": {
+  "tag": "button",
+  "cls": "wp-block-navigation__responsive-container-open"
+ },
+ "headerBackdropFilter": "saturate(1.4) blur(10px)"
+}

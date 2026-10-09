@@ -1,0 +1,25 @@
+# Author enumeration evidence (unauthenticated)
+
+## GET /?author=1
+  status: 200, no redirect (Location header absent)
+  response Link headers:
+    Link: <http://localhost:8889/wp-json/>; rel="https://api.w.org/"
+    Link: <http://localhost:8889/wp-json/wp/v2/users/1>; rel="alternate"; title="JSON"; type="application/json"
+  feed autodiscovery links found in the body:
+    <link rel="alternate" type="application/rss+xml" title="عيادة سِراج للأسنان &laquo; الخلاصة" href="http://localhost:8889/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="عيادة سِراج للأسنان &laquo; خلاصة التعليقات" href="http://localhost:8889/comments/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="عيادة سِراج للأسنان &laquo; خلاصة مقالات admin" href="http://localhost:8889/author/admin/feed/" />
+
+## comparison probes
+  /?author=2            -> 404
+  /?author=99           -> 404
+  /author/admin/        -> 200
+  /author/bogus-slug-audit/ -> 404
+  /author/admin/feed/   -> 200 (954 bytes XML)
+
+## GET /wp-json/wp/v2/users  (unauthenticated)
+  status: 200, body: []
+## GET /wp-json/wp/v2/users/me
+  status: 401, body: {"code":"rest_not_logged_in","message":"\u0623\u0646\u062a \u063a\u064a\u0631 \u0645\u0633\u062c\u0644 \u062f\u062e\u0648\u0644 \u062d\u0627\u0644\u064a\u064b\u0627.","data":{"status":401}}
+## GET /wp-json/wp/v2/users/1
+  status: 401, body: {"code":"rest_user_cannot_view","message":"\u0639\u0630\u0631\u064b\u0627\u060c \u063a\u064a\u0631 \u0645\u0633\u0645\u0648\u062d \u0644\u0643 \u0627\u0633\u062a\u0639\u0631\u0627\u0636 \u0642\u0627\u0626\u0645\u0629 \u0627\u0644\u0645\u0633\u062a\u062e\u062f\u0645\u064a\u0646.","data":{"status":401}}

@@ -1,0 +1,337 @@
+{
+ "generatedAt": "2026-10-08T03:31:59.762Z",
+ "pages": {
+  "/": {
+   "status": 200,
+   "htmlLength": 71090,
+   "formPresent": false,
+   "formHasNonce": false,
+   "formHasReferer": false,
+   "hiddenInputs": [],
+   "formTail": "",
+   "easternDigits": 0,
+   "westernDigits": 77,
+   "arabicComma": 29,
+   "westernCommaBetweenArabic": 0,
+   "anyLatinCommaBetweenArabic": 0,
+   "links": [
+    {
+     "href": "#wp--skip-link--target",
+     "name": "تخطى إلى المحتوى"
+    },
+    {
+     "href": "/",
+     "name": "عيادة سِراج للأسنان Demo"
+    },
+    {
+     "href": "/services/",
+     "name": "الخدمات"
+    },
+    {
+     "href": "/team/",
+     "name": "الفريق"
+    },
+    {
+     "href": "/contact/",
+     "name": "تواصل"
+    },
+    {
+     "href": "/contact/",
+     "name": "احجز زيارة"
+    },
+    {
+     "href": "/book/",
+     "name": "احجز زيارة"
+    },
+    {
+     "href": "/services/",
+     "name": "شوف الخدمات"
+    },
+    {
+     "href": "/book/",
+     "name": "احجز دلوقتي"
+    },
+    {
+     "href": "/contact/",
+     "name": "صفحة التواصل"
+    },
+    {
+     "href": "/book/",
+     "name": "احجز زيارة"
+    },
+    {
+     "href": "/",
+     "name": "عيادة سِراج للأسنان"
+    },
+    {
+     "href": "/services/",
+     "name": "الخدمات"
+    },
+    {
+     "href": "/team/",
+     "name": "الفريق"
+    },
+    {
+     "href": "/contact/",
+     "name": "تواصل"
+    }
+   ],
+   "skipLinkText": "تخطى إلى المحتوى",
+   "hasNoscript": false,
+   "searchControl": false,
+   "sliders": 0
+  },
+  "/services/": {
+   "status": 200,
+   "htmlLength": 65204,
+   "formPresent": false,
+   "formHasNonce": false,
+   "formHasReferer": false,
+   "hiddenInputs": [],
+   "formTail": "",
+   "easternDigits": 0,
+   "westernDigits": 27,
+   "arabicComma": 7,
+   "westernCommaBetweenArabic": 0,
+   "anyLatinCommaBetweenArabic": 0,
+   "links": [
+    {
+     "href": "#wp--skip-link--target",
+     "name": "تخطى إلى المحتوى"
+    },
+    {
+     "href": "/",
+     "name": "عيادة سِراج للأسنان Demo"
+    },
+    {
+     "href": "/services/",
+     "name": "الخدمات"
+    },
+    {
+     "href": "/team/",
+     "name": "الفريق"
+    },
+    {
+     "href": "/contact/",
+     "name": "تواصل"
+    },
+    {
+     "href": "/contact/",
+     "name": "احجز زيارة"
+    },
+    {
+     "href": "/book/",
+     "name": "احجز زيارة"
+    },
+    {
+     "href": "/",
+     "name": "عيادة سِراج للأسنان"
+    },
+    {
+     "href": "/services/",
+     "name": "الخدمات"
+    },
+    {
+     "href": "/team/",
+     "name": "الفريق"
+    },
+    {
+     "href": "/contact/",
+     "name": "تواصل"
+    }
+   ],
+   "skipLinkText": "تخطى إلى المحتوى",
+   "hasNoscript": false,
+   "searchControl": false,
+   "sliders": 0
+  },
+  "/team/": {
+   "status": 200,
+   "htmlLength": 64596,
+   "formPresent": false,
+   "formHasNonce": false,
+   "formHasReferer": false,
+   "hiddenInputs": [],
+   "formTail": "",
+   "easternDigits": 0,
+   "westernDigits": 0,
+   "arabicComma": 6,
+   "westernCommaBetweenArabic": 0,
+   "anyLatinCommaBetweenArabic": 0,
+   "links": [
+    {
+     "href": "#wp--skip-link--target",
+     "name": "تخطى إلى المحتوى"
+    },
+    {
+     "href": "/",
+     "name": "عيادة سِراج للأسنان Demo"
+    },
+    {
+     "href": "/services/",
+     "name": "الخدمات"
+    },
+    {
+     "href": "/team/",
+     "name": "الفريق"
+    },
+    {
+     "href": "/contact/",
+     "name": "تواصل"
+    },
+    {
+     "href": "/contact/",
+     "name": "احجز زيارة"
+    },
+    {
+     "href": "/",
+     "name": "عيادة سِراج للأسنان"
+    },
+    {
+     "href": "/services/",
+     "name": "الخدمات"
+    },
+    {
+     "href": "/team/",
+     "name": "الفريق"
+    },
+    {
+     "href": "/contact/",
+     "name": "تواصل"
+    }
+   ],
+   "skipLinkText": "تخطى إلى المحتوى",
+   "hasNoscript": false,
+   "searchControl": false,
+   "sliders": 0
+  },
+  "/contact/": {
+   "status": 200,
+   "htmlLength": 63358,
+   "formPresent": false,
+   "formHasNonce": false,
+   "formHasReferer": false,
+   "hiddenInputs": [],
+   "formTail": "",
+   "easternDigits": 0,
+   "westernDigits": 17,
+   "arabicComma": 2,
+   "westernCommaBetweenArabic": 0,
+   "anyLatinCommaBetweenArabic": 0,
+   "links": [
+    {
+     "href": "#wp--skip-link--target",
+     "name": "تخطى إلى المحتوى"
+    },
+    {
+     "href": "/",
+     "name": "عيادة سِراج للأسنان Demo"
+    },
+    {
+     "href": "/services/",
+     "name": "الخدمات"
+    },
+    {
+     "href": "/team/",
+     "name": "الفريق"
+    },
+    {
+     "href": "/contact/",
+     "name": "تواصل"
+    },
+    {
+     "href": "/contact/",
+     "name": "احجز زيارة"
+    },
+    {
+     "href": "/book/",
+     "name": "احجز زيارة"
+    },
+    {
+     "href": "/",
+     "name": "عيادة سِراج للأسنان"
+    },
+    {
+     "href": "/services/",
+     "name": "الخدمات"
+    },
+    {
+     "href": "/team/",
+     "name": "الفريق"
+    },
+    {
+     "href": "/contact/",
+     "name": "تواصل"
+    }
+   ],
+   "skipLinkText": "تخطى إلى المحتوى",
+   "hasNoscript": false,
+   "searchControl": false,
+   "sliders": 0
+  },
+  "/book/": {
+   "status": 200,
+   "htmlLength": 64457,
+   "formPresent": true,
+   "formHasNonce": false,
+   "formHasReferer": true,
+   "hiddenInputs": [
+    "<input type=\"hidden\" id=\"siraj_booking_submit\" name=\"siraj_booking_submit\" value=\"0fc77c73f2\" />",
+    "<input type=\"hidden\" name=\"_wp_http_referer\" value=\"/book/\" />",
+    "<input type=\"hidden\" name=\"siraj_booking_form\" value=\"1\" />"
+   ],
+   "formTail": " معا لتأكيد الموعد</label></div></div><div class=\"siraj-actions\"><button class=\"siraj-submit btn btn-primary\" type=\"submit\">إرسال الطلب</button></div></div><input type=\"hidden\" id=\"siraj_booking_submit\" name=\"siraj_booking_submit\" value=\"0fc77c73f2\" /><input type=\"hidden\" name=\"_wp_http_referer\" value=\"/book/\" /><input type=\"hidden\" name=\"siraj_booking_form\" value=\"1\" /></form>",
+   "easternDigits": 0,
+   "westernDigits": 14,
+   "arabicComma": 4,
+   "westernCommaBetweenArabic": 0,
+   "anyLatinCommaBetweenArabic": 0,
+   "links": [
+    {
+     "href": "#wp--skip-link--target",
+     "name": "تخطى إلى المحتوى"
+    },
+    {
+     "href": "/",
+     "name": "عيادة سِراج للأسنان Demo"
+    },
+    {
+     "href": "/services/",
+     "name": "الخدمات"
+    },
+    {
+     "href": "/team/",
+     "name": "الفريق"
+    },
+    {
+     "href": "/contact/",
+     "name": "تواصل"
+    },
+    {
+     "href": "/contact/",
+     "name": "احجز زيارة"
+    },
+    {
+     "href": "/",
+     "name": "عيادة سِراج للأسنان"
+    },
+    {
+     "href": "/services/",
+     "name": "الخدمات"
+    },
+    {
+     "href": "/team/",
+     "name": "الفريق"
+    },
+    {
+     "href": "/contact/",
+     "name": "تواصل"
+    }
+   ],
+   "skipLinkText": "تخطى إلى المحتوى",
+   "hasNoscript": false,
+   "searchControl": false,
+   "sliders": 0
+  }
+ }
+}

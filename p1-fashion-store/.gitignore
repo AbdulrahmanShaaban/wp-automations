@@ -1,0 +1,36 @@
+# secrets
+.env
+*.env.local
+
+# wordpress / wp-env (generated at Phase 2)
+wordpress/
+wp-content/uploads/
+wp-content/cache/
+*.sqlite
+
+# n8n local data (Phase 5)
+n8n/.n8n/
+n8n/postgres-data/
+n8n/.env
+n8n/oauth-client.local.txt
+n8n/owner-account.local.txt
+
+# node
+node_modules/
+npm-debug.log*
+
+# handoff archives (npm run dist)
+dist/
+
+# logs & dumps (never commit real customer data)
+*.log
+php-error.log
+*.sql
+*.sql.gz
+dump*/
+
+# os / editor
+Thumbs.db
+.DS_Store
+.idea/
+.vscode/

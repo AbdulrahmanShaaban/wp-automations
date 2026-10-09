@@ -1,0 +1,27 @@
+# Finding #2 supplementary greps — 2026-10-08T04:55:00Z
+# scope: project source tree only (never the container docroot)
+
+## 1. security-header code anywhere in wp-content/ (report quotes this grep)
+$ grep -rn 'send_headers\|header(\|Content-Security\|X-Frame' --include='*.php' --include='*.html' wp-content/
+exit=1 (grep: 1 = zero matches)
+matches: 0 (no output lines above)
+
+## 2. scope: php/html files scanned under wp-content/
+wp-content/plugins/siraj-core/booking.php
+wp-content/plugins/siraj-core/seed-wp.php
+wp-content/plugins/siraj-core/siraj-core.php
+wp-content/themes/siraj-theme/functions.php
+wp-content/themes/siraj-theme/parts/footer.html
+wp-content/themes/siraj-theme/parts/header.html
+wp-content/themes/siraj-theme/templates/404.html
+wp-content/themes/siraj-theme/templates/front-page.html
+wp-content/themes/siraj-theme/templates/index.html
+wp-content/themes/siraj-theme/templates/page.html
+wp-content/themes/siraj-theme/templates/single.html
+php/html files under wp-content/: 11
+
+## 3. .htaccess anywhere in the project tree (node_modules pruned)
+$ find . -name '.htaccess' -not -path './node_modules/*'
+exit=0
+findings: 0 .htaccess file(s) in the project tree
+(the container docroot /var/www/html/.htaccess is core's rewrite block — check7-inventory.txt section F)

@@ -1,0 +1,367 @@
+{
+  "name": "Nilad F1: new order → Telegram + Sheet",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "woo-order-created",
+        "responseMode": "onReceived",
+        "options": {
+          "rawBody": true
+        }
+      },
+      "id": "f1a00001-0000-4000-8000-000000000001",
+      "name": "Woo order.created",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 1,
+      "position": [
+        -160,
+        0
+      ],
+      "webhookId": "f1a00001-0000-4000-8000-000000000002"
+    },
+    {
+      "parameters": {
+        "jsCode": "// Nilad F1 — verify WooCommerce webhook HMAC + validate + normalize + duplicate check.\n// Requires: NODE_FUNCTION_ALLOW_BUILTIN=crypto, env WOO_WEBHOOK_SECRET,\n// Webhook node option Raw Body ON (raw bytes at binary.data.data, base64).\n// Outputs: { ok, reason, duplicate, orderId, total, city, phone, phoneValid,\n//            status, createdAt, paymentMethod, customerName, itemsText }\nconst crypto = require('crypto');\nconst item = $input.first();\nconst headers = (item.json && item.json.headers) || {};\nconst secret = $env.WOO_WEBHOOK_SECRET;\n\nlet ok = false;\nlet reason = '';\nconst rawB64 = item.binary && item.binary.data && item.binary.data.data;\nconst sig = headers['x-wc-webhook-signature'] || headers['X-WC-Webhook-Signature'] || '';\n\nif (!secret) {\n  reason = 'server-misconfig: WOO_WEBHOOK_SECRET missing';\n} else if (!rawB64) {\n  reason = 'no-raw-body: enable Raw Body on the Webhook node';\n} else if (!sig) {\n  reason = 'missing-signature-header';\n} else {\n  const expected = crypto.createHmac('sha256', secret).update(Buffer.from(rawB64, 'base64')).digest('base64');\n  const a = Buffer.from(String(sig));\n  const b = Buffer.from(expected);\n  ok = a.length === b.length && crypto.timingSafeEqual(a, b);\n  reason = ok ? 'valid' : 'bad-signature';\n}\n\nconst body = (item.json && item.json.body) || {};\nconst orderId = typeof body.id === 'number' ? body.id : null;\nif (ok && orderId === null) {\n  ok = false;\n  reason = 'missing-order-id';\n}\n\nfunction normalizePhone(raw) {\n  const trimmed = String(raw || '').trim();\n  if (!trimmed) return { phone: '', phoneValid: false };\n  const cleaned = trimmed.replace(/[^\\d+]/g, '');\n  let p = cleaned;\n  if (p.startsWith('0020')) p = '+20' + p.slice(4);\n  else if (p.startsWith('+20')) { /* already */ }\n  else if (p.startsWith('0')) p = '+20' + p.slice(1);\n  const phoneValid = /^\\+20(10|11|12|15)\\d{8}$/.test(p);\n  return { phone: phoneValid ? p : trimmed, phoneValid };\n}\n\nconst rawPhone = (body.billing && body.billing.phone) || (body.shipping && body.shipping.phone) || '';\nconst { phone, phoneValid } = normalizePhone(rawPhone);\nconst lines = Array.isArray(body.line_items) ? body.line_items : [];\nconst itemsText = lines.map((l) => `${l.name || 'منتج'} ×${l.quantity || 1}`).join('\\n');\nconst billing = body.billing || {};\nconst shipping = body.shipping || {};\nconst total = Number.isFinite(parseFloat(body.total)) ? parseFloat(body.total) : 0;\nconst customerName = `${billing.first_name || ''} ${billing.last_name || ''}`.trim() || shipping.first_name || '';\n\nconst sd = $getWorkflowStaticData('global');\nsd.processed = Array.isArray(sd.processed) ? sd.processed : [];\nconst duplicate = ok && sd.processed.includes('f1:' + orderId);\n\nreturn [{\n  json: {\n    ok,\n    reason,\n    duplicate,\n    orderId,\n    total,\n    city: shipping.city || billing.city || '',\n    phone,\n    phoneValid,\n    status: body.status || '',\n    createdAt: body.date_created || '',\n    paymentMethod: body.payment_method_title || body.payment_method || '',\n    customerName,\n    itemsText\n  }\n}];"
+      },
+      "id": "f1a00001-0000-4000-8000-000000000003",
+      "name": "Verify HMAC + validate",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        60,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "f1a00001-0000-4000-8000-000000000004",
+              "leftValue": "={{ $json.ok }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "f1a00001-0000-4000-8000-000000000005",
+      "name": "Signature + payload ok?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        280,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "errorMessage": "={{ 'F1 rejected webhook: ' + $json.reason }}"
+      },
+      "id": "f1a00001-0000-4000-8000-000000000006",
+      "name": "Reject → error workflow",
+      "type": "n8n-nodes-base.stopAndError",
+      "typeVersion": 1,
+      "position": [
+        500,
+        220
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "f1a00001-0000-4000-8000-000000000007",
+              "leftValue": "={{ $json.duplicate }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "f1a00001-0000-4000-8000-000000000008",
+      "name": "Duplicate delivery?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        500,
+        0
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "f1a00001-0000-4000-8000-000000000009",
+      "name": "Skip duplicate",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        720,
+        160
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Nilad F1 — mark order processed (idempotency write). Passthrough output.\nconst sd = $getWorkflowStaticData('global');\nsd.processed = Array.isArray(sd.processed) ? sd.processed : [];\nconst key = 'f1:' + $input.first().json.orderId;\nif (!sd.processed.includes(key)) sd.processed.push(key);\nif (sd.processed.length > 500) sd.processed.splice(0, sd.processed.length - 500);\nreturn [{ json: { ...$input.first().json } }];"
+      },
+      "id": "f1a00001-0000-4000-8000-000000000010",
+      "name": "Mark processed",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        720,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Nilad F1 — build the owner Telegram text (Arabic, HTML-escaped) + Sheet row.\n// Outputs ONLY: { orderId, total, city, phone, status, createdAt, tgText }\n// (sheet headers = orderId,total,city,phone,status,createdAt — extra tgText ignored by autoMap)\nconst j = $input.first().json;\nconst esc = (s) => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');\nconst lines = String(j.itemsText || '').split('\\n').map((l) => '  • ' + esc(l)).join('\\n');\nconst phoneLine = j.phone ? `${esc(j.phone)} ${j.phoneValid ? '✅' : '⚠️'}` : 'بدون رقم';\nconst tgText = [\n  '🛍 <b>طلب جديد #' + esc(j.orderId) + '</b>',\n  '👤 ' + esc(j.customerName || 'زبون'),\n  '📱 ' + phoneLine,\n  '📦\\n' + lines,\n  '💰 <b>' + esc(j.total) + ' ج.م</b> — ' + esc(j.city || '—'),\n  '🧾 ' + esc(j.status) + ' · ' + esc(j.paymentMethod || '')\n].join('\\n');\nreturn [{\n  json: {\n    // n8n 2.41 blocks $env in node expressions (Code nodes may read it), so\n    // the Telegram HTTP node gets its credentials from this item instead.\n    tgToken: $env.TELEGRAM_BOT_TOKEN || '',\n    tgChatId: $env.TELEGRAM_CHAT_ID || '',\n    orderId: j.orderId,\n    total: j.total,\n    city: j.city,\n    phone: j.phone,\n    status: j.status,\n    createdAt: j.createdAt,\n    tgText\n  }\n}];"
+      },
+      "id": "f1a00001-0000-4000-8000-000000000011",
+      "name": "Format owner message + row",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        940,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://api.telegram.org/bot{{ $json.tgToken }}/sendMessage",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ chat_id: $json.tgChatId, text: $json.tgText, parse_mode: 'HTML' }) }}",
+        "options": {}
+      },
+      "id": "f1a00001-0000-4000-8000-000000000012",
+      "name": "Telegram → owner",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1160,
+        -110
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "f1c00001-3f1a-4a7e-9c11-5b0d2e7a9a31",
+              "leftValue": "={{ ($env.SHEETS_ENABLED || 'false').toString().trim().toLowerCase() }}",
+              "rightValue": "true",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "f1c00001-3f1a-4a7e-9c11-5b0d2e7a9a31",
+      "name": "Sheet log enabled?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        1160,
+        110
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "f1c00002-8b2c-4d6f-a0e3-71c9b5d3f842",
+      "name": "Sheet log skipped",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1380,
+        220
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "value": "={{ $env.GOOGLE_SHEET_ID }}",
+          "mode": "id"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "={{ $env.GOOGLE_SHEET_GID }}",
+          "mode": "id"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "matchingColumns": [],
+          "schema": []
+        },
+        "options": {}
+      },
+      "id": "f1a00001-0000-4000-8000-000000000013",
+      "name": "Google Sheets → order log",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        1160,
+        110
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000,
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "REPLACE_ON_IMPORT",
+          "name": "Nilad Google Sheet"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Woo order.created": {
+      "main": [
+        [
+          {
+            "node": "Verify HMAC + validate",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Verify HMAC + validate": {
+      "main": [
+        [
+          {
+            "node": "Signature + payload ok?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Signature + payload ok?": {
+      "main": [
+        [
+          {
+            "node": "Duplicate delivery?",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Reject → error workflow",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Duplicate delivery?": {
+      "main": [
+        [
+          {
+            "node": "Skip duplicate",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Mark processed",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Mark processed": {
+      "main": [
+        [
+          {
+            "node": "Format owner message + row",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format owner message + row": {
+      "main": [
+        [
+          {
+            "node": "Telegram → owner",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Sheet log enabled?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Sheet log enabled?": {
+      "main": [
+        [
+          {
+            "node": "Google Sheets → order log",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Sheet log skipped",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Africa/Cairo"
+  },
+  "pinData": {}
+}

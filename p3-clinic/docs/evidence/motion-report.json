@@ -1,0 +1,162 @@
+{
+ "generatedAt": "2026-10-08T02:33:38.137Z",
+ "base": "http://localhost:8889",
+ "modes": {
+  "cssScrollDriven_top": {
+   "total": 24,
+   "hiddenCount": 24,
+   "hiddenSample": [
+    {
+     "cls": "section-head.reveal",
+     "opacity": "0",
+     "transform": "matrix(1, 0, 0, 1, 0, 16)"
+    },
+    {
+     "cls": "svc.reveal",
+     "opacity": "0",
+     "transform": "matrix(1, 0, 0, 1, 0, 16)"
+    },
+    {
+     "cls": "svc.reveal",
+     "opacity": "0",
+     "transform": "matrix(1, 0, 0, 1, 0, 16)"
+    },
+    {
+     "cls": "svc.reveal",
+     "opacity": "0",
+     "transform": "matrix(1, 0, 0, 1, 0, 16)"
+    }
+   ],
+   "inClass": 0,
+   "jsMotionClass": true,
+   "supportsScrollTimeline": false,
+   "animationName": "none",
+   "ruleTransform": "matrix(1, 0, 0, 1, 0, 0)",
+   "heroVisible": true,
+   "overflowX": false
+  },
+  "cssScrollDriven_mid": {
+   "total": 24,
+   "hiddenCount": 24,
+   "hiddenSample": [
+    {
+     "cls": "section-head.reveal.in",
+     "opacity": "0.978023",
+     "transform": "matrix(1, 0, 0, 1, 0, 0.351635"
+    },
+    {
+     "cls": "svc.reveal.in",
+     "opacity": "0.964433",
+     "transform": "matrix(1, 0, 0, 1, 0, 0.569077"
+    },
+    {
+     "cls": "svc.reveal.in",
+     "opacity": "0.956171",
+     "transform": "matrix(1, 0, 0, 1, 0, 0.701271"
+    },
+    {
+     "cls": "svc.reveal.in",
+     "opacity": "0.946853",
+     "transform": "matrix(1, 0, 0, 1, 0, 0.850358"
+    }
+   ],
+   "inClass": 15,
+   "jsMotionClass": true,
+   "supportsScrollTimeline": false,
+   "animationName": "none",
+   "ruleTransform": "matrix(1, 0, 0, 1, 0, 0)",
+   "heroVisible": true,
+   "overflowX": false
+  },
+  "jsFallback_top": {
+   "total": 24,
+   "hiddenCount": 24,
+   "hiddenSample": [
+    {
+     "cls": "section-head.reveal",
+     "opacity": "0",
+     "transform": "matrix(1, 0, 0, 1, 0, 16)"
+    },
+    {
+     "cls": "svc.reveal",
+     "opacity": "0",
+     "transform": "matrix(1, 0, 0, 1, 0, 16)"
+    },
+    {
+     "cls": "svc.reveal",
+     "opacity": "0",
+     "transform": "matrix(1, 0, 0, 1, 0, 16)"
+    },
+    {
+     "cls": "svc.reveal",
+     "opacity": "0",
+     "transform": "matrix(1, 0, 0, 1, 0, 16)"
+    }
+   ],
+   "inClass": 0,
+   "jsMotionClass": true,
+   "supportsScrollTimeline": false,
+   "animationName": "none",
+   "ruleTransform": "matrix(1, 0, 0, 1, 0, 0)",
+   "heroVisible": true,
+   "overflowX": false
+  },
+  "jsFallback_mid": {
+   "total": 24,
+   "hiddenCount": 24,
+   "hiddenSample": [
+    {
+     "cls": "section-head.reveal.in",
+     "opacity": "0.978047",
+     "transform": "matrix(1, 0, 0, 1, 0, 0.351246"
+    },
+    {
+     "cls": "svc.reveal.in",
+     "opacity": "0.964465",
+     "transform": "matrix(1, 0, 0, 1, 0, 0.568564"
+    },
+    {
+     "cls": "svc.reveal.in",
+     "opacity": "0.956207",
+     "transform": "matrix(1, 0, 0, 1, 0, 0.70069)"
+    },
+    {
+     "cls": "svc.reveal.in",
+     "opacity": "0.946893",
+     "transform": "matrix(1, 0, 0, 1, 0, 0.849705"
+    }
+   ],
+   "inClass": 15,
+   "jsMotionClass": true,
+   "supportsScrollTimeline": false,
+   "animationName": "none",
+   "ruleTransform": "matrix(1, 0, 0, 1, 0, 0)",
+   "heroVisible": true,
+   "overflowX": false
+  },
+  "noJs": {
+   "total": 24,
+   "hiddenCount": 0,
+   "hiddenSample": [],
+   "inClass": 0,
+   "jsMotionClass": false,
+   "supportsScrollTimeline": false,
+   "animationName": "none",
+   "ruleTransform": "matrix(1, 0, 0, 1, 0, 0)",
+   "heroVisible": true,
+   "overflowX": false
+  },
+  "reducedMotion": {
+   "total": 24,
+   "hiddenCount": 0,
+   "hiddenSample": [],
+   "inClass": 0,
+   "jsMotionClass": false,
+   "supportsScrollTimeline": false,
+   "animationName": "none",
+   "ruleTransform": "none",
+   "heroVisible": true,
+   "overflowX": false
+  }
+ }
+}

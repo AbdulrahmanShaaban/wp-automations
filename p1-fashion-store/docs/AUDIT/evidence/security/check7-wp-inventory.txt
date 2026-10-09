@@ -1,0 +1,50 @@
+﻿node.exe : i Starting 'wp core version' on the cli container. 
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (i Starting 'wp ...cli container. :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+7.1.2
+ΓêÜ Ran `wp core version` in 'cli'. (in 5s 528ms)
+node.exe : i Starting 'wp plugin list --format=csv' on the cli container. 
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (i Starting 'wp ...cli container. :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+name,status,update,version,update_version,auto_update
+hello,inactive,none,1.7.2,,off
+nilad-core,active,none,0.1.0,,off
+paymob-for-woocommerce,active,available,4.1.14,4.1.15,off
+woocommerce,active,none,11.1.2,,off
+ΓêÜ Ran `wp plugin list --format=csv` in 'cli'. (in 78s 620ms)
+node.exe : i Starting 'wp theme list --format=csv' on the cli container. 
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (i Starting 'wp ...cli container. :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+name,status,update,version,update_version,auto_update
+nilad-theme,active,none,0.1.0,,off
+twentyeleven,inactive,none,5.2,,off
+twentyfifteen,inactive,none,4.3,,off
+twentyfourteen,inactive,none,4.6,,off
+twentynineteen,inactive,none,3.4,,off
+twentyseventeen,inactive,none,4.2,,off
+twentysixteen,inactive,none,3.9,,off
+twentyten,inactive,none,4.7,,off
+twentythirteen,inactive,none,4.7,,off
+twentytwelve,inactive,none,4.9,,off
+twentytwenty,inactive,none,3.2,,off
+twentytwentyfive,inactive,none,1.5,,off
+twentytwentyfour,inactive,none,1.6,,off
+twentytwentyone,inactive,none,2.9,,off
+twentytwentythree,inactive,none,1.7,,off
+twentytwentytwo,inactive,none,2.2,,off
+ΓêÜ Ran `wp theme list --format=csv` in 'cli'. (in 56s 954ms)

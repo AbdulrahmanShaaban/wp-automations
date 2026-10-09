@@ -1,0 +1,28 @@
+{
+ "viewport": "390x844",
+ "rule": "target-size (WCAG 2.2 2.5.8)",
+ "orderbySelect": null,
+ "violations": [],
+ "passes": [
+  {
+   "id": "target-size",
+   "nodes": 31,
+   "sample": [
+    "#wp-skip-link",
+    "a[href$=\"localhost:8888\"]",
+    ".has-surface-background-color",
+    ".has-on-primary-text-color",
+    "select",
+    ".post-38 > .wc-block-components-product-image.wc-block-grid__product-image.wc-block-components-product-image--aspect-ratio-1-1 > a",
+    ".post-38 > h2 > a[target=\"_self\"]",
+    "button[data-product_id=\"38\"]",
+    ".post-39 > .wc-block-components-product-image.wc-block-grid__product-image.wc-block-components-product-image--aspect-ratio-1-1 > a",
+    ".post-39 > h2 > a[target=\"_self\"]",
+    "button[data-product_id=\"39\"]",
+    ".post-40 > .wc-block-components-product-image.wc-block-grid__product-image.wc-block-components-product-image--aspect-ratio-1-1 > a"
+   ]
+  }
+ ],
+ "inapplicable": [],
+ "incomplete": []
+}

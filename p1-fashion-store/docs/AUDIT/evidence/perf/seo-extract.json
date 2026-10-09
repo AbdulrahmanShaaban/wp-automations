@@ -1,0 +1,549 @@
+{
+  "seo": {
+    "home": {
+      "url": "http://localhost:8888/",
+      "finalUrl": "http://localhost:8888/",
+      "status": 200,
+      "redirectChain": 0,
+      "title": "نيلاد &#8211; أزياء وإكسسوارات — متجر تجريبي (Demo)",
+      "titleLen": 51,
+      "metaDesc": "نيلاد — متجر أزياء وإكسسوارات مصري: هدوم مختارة بخامات مريحة، أسعار واضحة، شحن لكل المحافظات، ودفع كاش عند الاستلام. متجر تجريبي للعرض.",
+      "metaDescLen": 135,
+      "canonical": "http://localhost:8888/",
+      "robots": "max-image-preview:large",
+      "lang": "ar",
+      "dir": "rtl",
+      "og": {
+        "og:locale": "ar",
+        "og:type": "website",
+        "og:title": "نيلاد &#8211; أزياء وإكسسوارات — متجر تجريبي (Demo)",
+        "og:description": "نيلاد — متجر أزياء وإكسسوارات مصري: هدوم مختارة بخامات مريحة، أسعار واضحة، شحن لكل المحافظات، ودفع كاش عند الاستلام. متجر تجريبي للعرض.",
+        "og:url": "http://localhost:8888/",
+        "og:image": "http://localhost:8888/wp-content/uploads/2026/10/og-nilad.jpg"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "types": [
+            "Organization",
+            "WebSite"
+          ],
+          "raw": 730
+        }
+      ],
+      "hreflang": [],
+      "h1Count": 1,
+      "images": {
+        "count": 0,
+        "missingAlt": 0,
+        "missingDims": 0,
+        "lazy": 0,
+        "sample": []
+      },
+      "hashAnchors": [
+        "#wp--skip-link--target",
+        "#cats"
+      ],
+      "bytes": 79708
+    },
+    "shop": {
+      "url": "http://localhost:8888/shop/",
+      "finalUrl": "http://localhost:8888/shop/",
+      "status": 200,
+      "redirectChain": 0,
+      "title": "المتجر &#8211; نيلاد",
+      "titleLen": 20,
+      "metaDesc": "تسوّق كل منتجات نيلاد: هدوم، حقائب، ساعات، نظارات وإكسسوارات — بأسعار واضحة وشحن لكل المحافظات ودفع عند الاستلام.",
+      "metaDescLen": 113,
+      "canonical": "http://localhost:8888/shop/",
+      "robots": "max-image-preview:large",
+      "lang": "ar",
+      "dir": "rtl",
+      "og": {
+        "og:locale": "ar",
+        "og:type": "website",
+        "og:title": "المتجر &#8211; نيلاد",
+        "og:description": "تسوّق كل منتجات نيلاد: هدوم، حقائب، ساعات، نظارات وإكسسوارات — بأسعار واضحة وشحن لكل المحافظات ودفع عند الاستلام.",
+        "og:url": "http://localhost:8888/shop/",
+        "og:image": "http://localhost:8888/wp-content/uploads/2026/10/og-nilad.jpg"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "types": [
+            "Organization",
+            "WebSite"
+          ],
+          "raw": 686
+        }
+      ],
+      "hreflang": [],
+      "h1Count": 1,
+      "images": {
+        "count": 8,
+        "missingAlt": 0,
+        "missingDims": 0,
+        "lazy": 8,
+        "sample": [
+          {
+            "src": "http://localhost:8888/wp-content/uploads/2026/10/abaya.jpg",
+            "alt": "عباية كتان مطرّزة",
+            "w": "800",
+            "h": "1000",
+            "lazy": true
+          },
+          {
+            "src": "http://localhost:8888/wp-content/uploads/2026/10/bag.jpg",
+            "alt": "حقيبة كتف جلد طبيعي",
+            "w": "800",
+            "h": "1000",
+            "lazy": true
+          },
+          {
+            "src": "http://localhost:8888/wp-content/uploads/2026/10/watch.jpg",
+            "alt": "ساعة كلاسيك معدنية",
+            "w": "800",
+            "h": "1000",
+            "lazy": true
+          },
+          {
+            "src": "http://localhost:8888/wp-content/uploads/2026/10/sunglasses.jpg",
+            "alt": "نظارة شمسية كلاسيك",
+            "w": "800",
+            "h": "1000",
+            "lazy": true
+          },
+          {
+            "src": "http://localhost:8888/wp-content/uploads/2026/10/shirt.jpg",
+            "alt": "قميص قطن بسيط",
+            "w": "800",
+            "h": "1000",
+            "lazy": true
+          }
+        ]
+      },
+      "hashAnchors": [
+        "#wp--skip-link--target"
+      ],
+      "bytes": 146471
+    },
+    "product": {
+      "url": "http://localhost:8888/product/embroidered-abaya/",
+      "finalUrl": "http://localhost:8888/product/embroidered-abaya/",
+      "status": 200,
+      "redirectChain": 0,
+      "title": "عباية كتان مطرّزة &#8211; نيلاد",
+      "titleLen": 31,
+      "metaDesc": "كتان مطرّز بقصّة مريحة — مثالية للاستخدام اليومي. — من نيلاد: توصيل لكل المحافظات، دفع كاش عند الاستلام، وإرجاع سهل خلال ١٤ يوم.",
+      "metaDescLen": 128,
+      "canonical": "http://localhost:8888/product/embroidered-abaya/",
+      "robots": "max-image-preview:large",
+      "lang": "ar",
+      "dir": "rtl",
+      "og": {
+        "og:locale": "ar",
+        "og:type": "website",
+        "og:title": "عباية كتان مطرّزة &#8211; نيلاد",
+        "og:description": "كتان مطرّز بقصّة مريحة — مثالية للاستخدام اليومي. — من نيلاد: توصيل لكل المحافظات، دفع كاش عند الاستلام، وإرجاع سهل خلال ١٤ يوم.",
+        "og:url": "http://localhost:8888/product/embroidered-abaya/",
+        "og:image": "http://localhost:8888/wp-content/uploads/2026/10/abaya.jpg"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "types": [
+            "Organization",
+            "Product"
+          ],
+          "raw": 966
+        },
+        {
+          "types": [
+            "Product"
+          ],
+          "raw": 1193
+        }
+      ],
+      "hreflang": [],
+      "h1Count": 1,
+      "images": {
+        "count": 1,
+        "missingAlt": 0,
+        "missingDims": 0,
+        "lazy": 0,
+        "sample": [
+          {
+            "src": "http://localhost:8888/wp-content/uploads/2026/10/abaya-600x750.jpg",
+            "alt": "عباية كتان مطرّزة",
+            "w": "600",
+            "h": "750",
+            "lazy": false
+          }
+        ]
+      },
+      "hashAnchors": [
+        "#wp--skip-link--target"
+      ],
+      "bytes": 98011
+    },
+    "cart": {
+      "url": "http://localhost:8888/cart/",
+      "finalUrl": "http://localhost:8888/cart/",
+      "status": 200,
+      "redirectChain": 0,
+      "title": "السلة &#8211; نيلاد",
+      "titleLen": 19,
+      "metaDesc": "نيلاد — متجر أزياء وإكسسوارات مصري للنساء والرجال: هدوم وحقائب وساعات ونظارات، شحن لكل المحافظات ودفع كاش عند الاستلام.",
+      "metaDescLen": 119,
+      "canonical": "http://localhost:8888/cart/",
+      "robots": "max-image-preview:large, noindex, follow",
+      "lang": "ar",
+      "dir": "rtl",
+      "og": {
+        "og:locale": "ar",
+        "og:type": "website",
+        "og:title": "السلة &#8211; نيلاد",
+        "og:description": "نيلاد — متجر أزياء وإكسسوارات مصري للنساء والرجال: هدوم وحقائب وساعات ونظارات، شحن لكل المحافظات ودفع كاش عند الاستلام.",
+        "og:url": "http://localhost:8888/cart/",
+        "og:image": "http://localhost:8888/wp-content/uploads/2026/10/og-nilad.jpg"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "types": [
+            "Organization"
+          ],
+          "raw": 381
+        }
+      ],
+      "hreflang": [],
+      "h1Count": 1,
+      "images": {
+        "count": 4,
+        "missingAlt": 0,
+        "missingDims": 0,
+        "lazy": 1,
+        "sample": [
+          {
+            "src": "http://localhost:8888/wp-content/uploads/2026/10/tee-300x300.jpg",
+            "alt": "تيشيرت قطن أوفرسايز",
+            "w": "300",
+            "h": "300",
+            "lazy": false
+          },
+          {
+            "src": "http://localhost:8888/wp-content/uploads/2026/10/dress-300x300.jpg",
+            "alt": "فستان صيفي مطرّز",
+            "w": "300",
+            "h": "300",
+            "lazy": false
+          },
+          {
+            "src": "http://localhost:8888/wp-content/uploads/2026/10/scarf-300x300.jpg",
+            "alt": "شال كتان خفيف",
+            "w": "300",
+            "h": "300",
+            "lazy": false
+          },
+          {
+            "src": "http://localhost:8888/wp-content/uploads/2026/10/shirt-300x300.jpg",
+            "alt": "قميص قطن بسيط",
+            "w": "300",
+            "h": "300",
+            "lazy": true
+          }
+        ]
+      },
+      "hashAnchors": [
+        "#wp--skip-link--target"
+      ],
+      "bytes": 443820
+    },
+    "checkout": {
+      "url": "http://localhost:8888/checkout/",
+      "finalUrl": "http://localhost:8888/cart/",
+      "status": 200,
+      "redirectChain": 1,
+      "title": "السلة &#8211; نيلاد",
+      "titleLen": 19,
+      "metaDesc": "نيلاد — متجر أزياء وإكسسوارات مصري للنساء والرجال: هدوم وحقائب وساعات ونظارات، شحن لكل المحافظات ودفع كاش عند الاستلام.",
+      "metaDescLen": 119,
+      "canonical": "http://localhost:8888/cart/",
+      "robots": "max-image-preview:large, noindex, follow",
+      "lang": "ar",
+      "dir": "rtl",
+      "og": {
+        "og:locale": "ar",
+        "og:type": "website",
+        "og:title": "السلة &#8211; نيلاد",
+        "og:description": "نيلاد — متجر أزياء وإكسسوارات مصري للنساء والرجال: هدوم وحقائب وساعات ونظارات، شحن لكل المحافظات ودفع كاش عند الاستلام.",
+        "og:url": "http://localhost:8888/cart/",
+        "og:image": "http://localhost:8888/wp-content/uploads/2026/10/og-nilad.jpg"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "types": [
+            "Organization"
+          ],
+          "raw": 381
+        }
+      ],
+      "hreflang": [],
+      "h1Count": 1,
+      "images": {
+        "count": 4,
+        "missingAlt": 0,
+        "missingDims": 0,
+        "lazy": 1,
+        "sample": [
+          {
+            "src": "http://localhost:8888/wp-content/uploads/2026/10/tee-300x300.jpg",
+            "alt": "تيشيرت قطن أوفرسايز",
+            "w": "300",
+            "h": "300",
+            "lazy": false
+          },
+          {
+            "src": "http://localhost:8888/wp-content/uploads/2026/10/dress-300x300.jpg",
+            "alt": "فستان صيفي مطرّز",
+            "w": "300",
+            "h": "300",
+            "lazy": false
+          },
+          {
+            "src": "http://localhost:8888/wp-content/uploads/2026/10/scarf-300x300.jpg",
+            "alt": "شال كتان خفيف",
+            "w": "300",
+            "h": "300",
+            "lazy": false
+          },
+          {
+            "src": "http://localhost:8888/wp-content/uploads/2026/10/shirt-300x300.jpg",
+            "alt": "قميص قطن بسيط",
+            "w": "300",
+            "h": "300",
+            "lazy": true
+          }
+        ]
+      },
+      "hashAnchors": [
+        "#wp--skip-link--target"
+      ],
+      "bytes": 443820
+    },
+    "contact": {
+      "url": "http://localhost:8888/contact/",
+      "finalUrl": "http://localhost:8888/contact/",
+      "status": 200,
+      "redirectChain": 0,
+      "title": "تواصل معنا &#8211; نيلاد",
+      "titleLen": 24,
+      "metaDesc": "إحنا في مرحلة الديمو — القنوات دي توضيحية لشكل صفحة التواصل، وهتتبدّل ببيانات حقيقية قبل التسليم النهائي للمتجر. قنوات التواصل قبل ما تطلب تقدر تتصفّح المت",
+      "metaDescLen": 155,
+      "canonical": "http://localhost:8888/contact/",
+      "robots": "max-image-preview:large",
+      "lang": "ar",
+      "dir": "rtl",
+      "og": {
+        "og:locale": "ar",
+        "og:type": "website",
+        "og:title": "تواصل معنا &#8211; نيلاد",
+        "og:description": "إحنا في مرحلة الديمو — القنوات دي توضيحية لشكل صفحة التواصل، وهتتبدّل ببيانات حقيقية قبل التسليم النهائي للمتجر. قنوات التواصل قبل ما تطلب تقدر تتصفّح المت",
+        "og:url": "http://localhost:8888/contact/",
+        "og:image": "http://localhost:8888/wp-content/uploads/2026/10/og-nilad.jpg"
+      },
+      "twitter": {
+        "twitter:card": "summary_large_image"
+      },
+      "jsonLd": [
+        {
+          "types": [
+            "Organization"
+          ],
+          "raw": 417
+        }
+      ],
+      "hreflang": [],
+      "h1Count": 1,
+      "images": {
+        "count": 0,
+        "missingAlt": 0,
+        "missingDims": 0,
+        "lazy": 0,
+        "sample": []
+      },
+      "hashAnchors": [
+        "#wp--skip-link--target"
+      ],
+      "bytes": 72650
+    }
+  },
+  "statusChecks": {
+    "/checkout/": {
+      "status": 200,
+      "chain": [
+        "http://localhost:8888/checkout/",
+        "http://localhost:8888/cart/"
+      ],
+      "finalUrl": "http://localhost:8888/cart/"
+    },
+    "/my-account/": {
+      "status": 200,
+      "chain": [
+        "http://localhost:8888/my-account/"
+      ],
+      "finalUrl": "http://localhost:8888/my-account/"
+    },
+    "/nonexistent-page-xyz": {
+      "status": 404,
+      "chain": [
+        "http://localhost:8888/nonexistent-page-xyz"
+      ],
+      "finalUrl": "http://localhost:8888/nonexistent-page-xyz"
+    },
+    "/shop/": {
+      "status": 200,
+      "chain": [
+        "http://localhost:8888/shop/"
+      ],
+      "finalUrl": "http://localhost:8888/shop/"
+    },
+    "/product/embroidered-abaya/": {
+      "status": 200,
+      "chain": [
+        "http://localhost:8888/product/embroidered-abaya/"
+      ],
+      "finalUrl": "http://localhost:8888/product/embroidered-abaya/"
+    },
+    "/?post_type=product": {
+      "status": 200,
+      "chain": [
+        "http://localhost:8888/?post_type=product"
+      ],
+      "finalUrl": "http://localhost:8888/?post_type=product"
+    },
+    "/?p=38": {
+      "status": 200,
+      "chain": [
+        "http://localhost:8888/?p=38",
+        "http://localhost:8888/product/embroidered-abaya/"
+      ],
+      "finalUrl": "http://localhost:8888/product/embroidered-abaya/"
+    },
+    "/wp-sitemap.xml": {
+      "status": 200,
+      "chain": [
+        "http://localhost:8888/wp-sitemap.xml"
+      ],
+      "finalUrl": "http://localhost:8888/wp-sitemap.xml"
+    },
+    "/sitemap.xml": {
+      "status": 200,
+      "chain": [
+        "http://localhost:8888/sitemap.xml",
+        "http://localhost:8888/wp-sitemap.xml"
+      ],
+      "finalUrl": "http://localhost:8888/wp-sitemap.xml"
+    },
+    "/cart/": {
+      "status": 200,
+      "chain": [
+        "http://localhost:8888/cart/"
+      ],
+      "finalUrl": "http://localhost:8888/cart/"
+    },
+    "/feed/": {
+      "status": 200,
+      "chain": [
+        "http://localhost:8888/feed/"
+      ],
+      "finalUrl": "http://localhost:8888/feed/"
+    }
+  },
+  "robotsTxt": "User-agent: *\nDisallow: /wp-content/uploads/wc-logs/\nDisallow: /wp-content/uploads/woocommerce_transient_files/\nDisallow: /wp-content/uploads/woocommerce_uploads/\nDisallow: /*?add-to-cart=\nDisallow: /*?*add-to-cart=\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nSitemap: http://localhost:8888/wp-sitemap.xml\n",
+  "sitemapIndex": [
+    "http://localhost:8888/wp-sitemap-posts-post-1.xml",
+    "http://localhost:8888/wp-sitemap-posts-page-1.xml",
+    "http://localhost:8888/wp-sitemap-posts-product-1.xml",
+    "http://localhost:8888/wp-sitemap-taxonomies-category-1.xml",
+    "http://localhost:8888/wp-sitemap-taxonomies-product_cat-1.xml",
+    "http://localhost:8888/wp-sitemap-users-1.xml"
+  ],
+  "sitemaps": {
+    "http://localhost:8888/wp-sitemap-posts-post-1.xml": {
+      "status": 200,
+      "count": 1,
+      "locs": [
+        "http://localhost:8888/2026/10/01/hello-world/"
+      ]
+    },
+    "http://localhost:8888/wp-sitemap-posts-page-1.xml": {
+      "status": 200,
+      "count": 9,
+      "locs": [
+        "http://localhost:8888/shop/",
+        "http://localhost:8888/cart/",
+        "http://localhost:8888/checkout/",
+        "http://localhost:8888/my-account/",
+        "http://localhost:8888/",
+        "http://localhost:8888/about/",
+        "http://localhost:8888/contact/",
+        "http://localhost:8888/shipping-returns/",
+        "http://localhost:8888/privacy/"
+      ]
+    },
+    "http://localhost:8888/wp-sitemap-posts-product-1.xml": {
+      "status": 200,
+      "count": 8,
+      "locs": [
+        "http://localhost:8888/product/embroidered-abaya/",
+        "http://localhost:8888/product/leather-shoulder-bag/",
+        "http://localhost:8888/product/classic-metal-watch/",
+        "http://localhost:8888/product/classic-sunglasses/",
+        "http://localhost:8888/product/plain-cotton-shirt/",
+        "http://localhost:8888/product/linen-scarf/",
+        "http://localhost:8888/product/summer-embroidered-dress/",
+        "http://localhost:8888/product/oversized-cotton-tee/"
+      ]
+    },
+    "http://localhost:8888/wp-sitemap-taxonomies-category-1.xml": {
+      "status": 200,
+      "count": 1,
+      "locs": [
+        "http://localhost:8888/category/uncategorized/"
+      ]
+    },
+    "http://localhost:8888/wp-sitemap-taxonomies-product_cat-1.xml": {
+      "status": 200,
+      "count": 8,
+      "locs": [
+        "http://localhost:8888/product-category/%d9%87%d8%af%d9%88%d9%85/",
+        "http://localhost:8888/product-category/%d9%82%d9%85%d8%b5%d8%a7%d9%86/",
+        "http://localhost:8888/product-category/%d9%81%d8%b3%d8%a7%d8%aa%d9%8a%d9%86/",
+        "http://localhost:8888/product-category/%d8%aa%d9%8a%d8%b4%d9%8a%d8%b1%d8%aa%d8%a7%d8%aa/",
+        "http://localhost:8888/product-category/%d8%ad%d9%82%d8%a7%d8%a6%d8%a8/",
+        "http://localhost:8888/product-category/%d8%b3%d8%a7%d8%b9%d8%a7%d8%aa/",
+        "http://localhost:8888/product-category/%d9%86%d8%b8%d8%a7%d8%b1%d8%a7%d8%aa/",
+        "http://localhost:8888/product-category/%d8%a3%d9%83%d8%b3%d8%b3%d9%88%d8%a7%d8%b1%d8%a7%d8%aa/"
+      ]
+    },
+    "http://localhost:8888/wp-sitemap-users-1.xml": {
+      "status": 200,
+      "count": 1,
+      "locs": [
+        "http://localhost:8888/author/admin/"
+      ]
+    }
+  }
+}

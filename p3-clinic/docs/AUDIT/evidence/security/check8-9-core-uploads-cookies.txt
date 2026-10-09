@@ -1,0 +1,89 @@
+=== A. what is actually inside wp-content/uploads ===
+file-count=0
+--- any executable-ish extension anywhere in uploads ---
+(end)
+
+=== B. auth cookie flags as core sets them (source, not executed) ===
+1071:	function wp_set_auth_cookie( $user_id, $remember = false, $secure = '', $token = '' ) {
+1072-		if ( $remember ) {
+1073-			/**
+1074-			 * Filters the duration of the authentication cookie expiration period.
+1075-			 *
+1076-			 * @since 2.8.0
+1077-			 *
+--- setcookie calls with their flags ---
+1193:		setcookie( $auth_cookie_name, $auth_cookie, $expire, PLUGINS_COOKIE_PATH, COOKIE_DOMAIN, $secure, true );
+1194:		setcookie( $auth_cookie_name, $auth_cookie, $expire, ADMIN_COOKIE_PATH, COOKIE_DOMAIN, $secure, true );
+1195:		setcookie( LOGGED_IN_COOKIE, $logged_in_cookie, $expire, COOKIEPATH, COOKIE_DOMAIN, $secure_logged_in_cookie, true );
+1197:			setcookie( LOGGED_IN_COOKIE, $logged_in_cookie, $expire, SITECOOKIEPATH, COOKIE_DOMAIN, $secure_logged_in_cookie, true );
+1222:		setcookie( AUTH_COOKIE, ' ', time() - YEAR_IN_SECONDS, ADMIN_COOKIE_PATH, COOKIE_DOMAIN );
+1223:		setcookie( SECURE_AUTH_COOKIE, ' ', time() - YEAR_IN_SECONDS, ADMIN_COOKIE_PATH, COOKIE_DOMAIN );
+1224:		setcookie( AUTH_COOKIE, ' ', time() - YEAR_IN_SECONDS, PLUGINS_COOKIE_PATH, COOKIE_DOMAIN );
+1225:		setcookie( SECURE_AUTH_COOKIE, ' ', time() - YEAR_IN_SECONDS, PLUGINS_COOKIE_PATH, COOKIE_DOMAIN );
+1226:		setcookie( LOGGED_IN_COOKIE, ' ', time() - YEAR_IN_SECONDS, COOKIEPATH, COOKIE_DOMAIN );
+1227:		setcookie( LOGGED_IN_COOKIE, ' ', time() - YEAR_IN_SECONDS, SITECOOKIEPATH, COOKIE_DOMAIN );
+1230:		setcookie( 'wp-settings-' . get_current_user_id(), ' ', time() - YEAR_IN_SECONDS, SITECOOKIEPATH );
+1231:		setcookie( 'wp-settings-time-' . get_current_user_id(), ' ', time() - YEAR_IN_SECONDS, SITECOOKIEPATH );
+1234:		setcookie( AUTH_COOKIE, ' ', time() - YEAR_IN_SECONDS, COOKIEPATH, COOKIE_DOMAIN );
+1235:		setcookie( AUTH_COOKIE, ' ', time() - YEAR_IN_SECONDS, SITECOOKIEPATH, COOKIE_DOMAIN );
+1236:		setcookie( SECURE_AUTH_COOKIE, ' ', time() - YEAR_IN_SECONDS, COOKIEPATH, COOKIE_DOMAIN );
+1237:		setcookie( SECURE_AUTH_COOKIE, ' ', time() - YEAR_IN_SECONDS, SITECOOKIEPATH, COOKIE_DOMAIN );
+1240:		setcookie( USER_COOKIE, ' ', time() - YEAR_IN_SECONDS, COOKIEPATH, COOKIE_DOMAIN );
+1241:		setcookie( PASS_COOKIE, ' ', time() - YEAR_IN_SECONDS, COOKIEPATH, COOKIE_DOMAIN );
+1242:		setcookie( USER_COOKIE, ' ', time() - YEAR_IN_SECONDS, SITECOOKIEPATH, COOKIE_DOMAIN );
+1243:		setcookie( PASS_COOKIE, ' ', time() - YEAR_IN_SECONDS, SITECOOKIEPATH, COOKIE_DOMAIN );
+--- SameSite handling ---
+--- wp_cookie_constants ---
+
+=== C. does core ship an uploads .htaccess? (WordPress never writes one) ===
+(grep done: WP has no built-in uploads .htaccess generator)
+
+=== D. cron reachability + hook inventory ===
+DISABLE_WP_CRON defined: no
+ALTERNATE_WP_CRON: no
+doing_cron: no
+--- is wp-cron.php linked from any page? ---
+413:	add_action( 'init', 'wp_cron' );
+
+=== E. does anything in project code send mail or make outbound requests? ===
+booking.php: wp_mail=0 curl=0 file_get_contents-http=0 fsockopen=0 wp_remote=0
+seed-wp.php: wp_mail=0 curl=0 file_get_contents-http=0 fsockopen=0 wp_remote=0
+siraj-core.php: wp_mail=0 curl=0 file_get_contents-http=0 fsockopen=0 wp_remote=0
+functions.php: wp_mail=0 curl=0 file_get_contents-http=0 fsockopen=0 wp_remote=0
+
+=== F. plugin/theme version headers + text domain / i18n ===
+(no textdomain loader = __() calls fall back to the msgid, i18n note only)
+
+=== G. file checksums of audited project files (reproducibility) ===
+<REDACTED-HEX-LITERAL>  /var/www/html/wp-content/plugins/siraj-core/booking.php
+<REDACTED-HEX-LITERAL>  /var/www/html/wp-content/plugins/siraj-core/seed-wp.php
+<REDACTED-HEX-LITERAL>  /var/www/html/wp-content/plugins/siraj-core/siraj-core.php
+<REDACTED-HEX-LITERAL>  /var/www/html/wp-content/themes/siraj-theme/functions.php
+<REDACTED-HEX-LITERAL>  /var/www/html/wp-config.php
+
+=== H. wp-config.php: which hardening constants exist (names only) ===
+44:define( 'DB_NAME', getenv_docker('WORDPRESS_DB_NAME', 'wordpress') );
+47:define( 'DB_USER', getenv_docker('WORDPRESS_DB_USER', '<REDACTED-PLACEHOLDER>') );
+50:define( 'DB_PASSWORD', getenv_docker('WORDPRESS_DB_PASSWORD', '<REDACTED-PLACEHOLDER>') );
+59:define( 'DB_HOST', getenv_docker('WORDPRESS_DB_HOST', 'mysql') );
+62:define( 'DB_CHARSET', getenv_docker('WORDPRESS_DB_CHARSET', 'utf8mb4') );
+65:define( 'DB_COLLATE', getenv_docker('WORDPRESS_DB_COLLATE', '') );
+78:define( 'AUTH_KEY',         getenv_docker('WORDPRESS_AUTH_KEY',         '<REDACTED-HEX-LITERAL>') );
+79:define( 'SECURE_AUTH_KEY',  getenv_docker('WORDPRESS_SECURE_AUTH_KEY',  '<REDACTED-HEX-LITERAL>') );
+80:define( 'LOGGED_IN_KEY',    getenv_docker('WORDPRESS_LOGGED_IN_KEY',    '<REDACTED-HEX-LITERAL>') );
+81:define( 'NONCE_KEY',        getenv_docker('WORDPRESS_NONCE_KEY',        '<REDACTED-HEX-LITERAL>') );
+82:define( 'AUTH_SALT',        getenv_docker('WORDPRESS_AUTH_SALT',        '<REDACTED-HEX-LITERAL>') );
+83:define( 'SECURE_AUTH_SALT', getenv_docker('WORDPRESS_SECURE_AUTH_SALT', '<REDACTED-HEX-LITERAL>') );
+84:define( 'LOGGED_IN_SALT',   getenv_docker('WORDPRESS_LOGGED_IN_SALT',   '<REDACTED-HEX-LITERAL>') );
+85:define( 'NONCE_SALT',       getenv_docker('WORDPRESS_NONCE_SALT',       '<REDACTED-HEX-LITERAL>') );
+116:define( 'FS_METHOD', <value withheld> );
+117:define( 'SCRIPT_DEBUG', true );
+118:define( 'WP_ENVIRONMENT_TYPE', <value withheld> );
+119:define( 'WP_PHP_BINARY', <value withheld> );
+120:define( 'WP_TESTS_EMAIL', <value withheld> );
+121:define( 'WP_TESTS_TITLE', <value withheld> );
+122:define( 'WP_TESTS_DOMAIN', <value withheld> );
+123:define( 'WP_SITEURL', <value withheld> );
+124:define( 'WP_HOME', <value withheld> );
+125:define( 'WP_DEBUG', true );
+144:	define( 'ABSPATH', __DIR__ . '/' );

@@ -1,0 +1,18 @@
+﻿=== 0. reset failure counters ===
+info  key = siraj_login_fails_2ff4fb82e497844a03adf28cf6bedfde
+info  stale counter cleared (delete is a no-op when absent)
+=== 1. five failed logins stay below the limit ===
+info  attempt 1 -> HTTP 200
+info  attempt 2 -> HTTP 200
+info  attempt 3 -> HTTP 200
+info  attempt 4 -> HTTP 200
+info  attempt 5 -> HTTP 200
+=== 2. sixth attempt throttled ===
+info  attempt 6 -> HTTP 429 Retry-After=900
+PASS  6th attempt status (429)
+PASS  Retry-After header (900)
+PASS  Arabic throttle message present
+=== 3. stored counter = 5 ===
+PASS  failure counter (5)
+
+SUMMARY: PASS=9 FAIL=0

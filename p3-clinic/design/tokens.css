@@ -1,0 +1,281 @@
+/* P3 clinic — shared design tokens (see design/direction.md).
+   Each preview opts in with <body class="palette-a|b|c">, so palette, type pairing,
+   radius family, hero scale and the one signature moment vary independently while
+   structure and engineering stay shared.
+
+   Every palette below is ADAPTED from web-design/references/palettes-and-type.md
+   (verified base + two deliberate changes), never pasted untouched, and contrast is
+   re-computed by design/check-contrast.js.
+
+   Arabic rules applied (web-design + design-direction §6):
+   - NO letter-spacing anywhere (it breaks Arabic letter joins).
+   - body line-height 1.7, display 1.15-1.25, display weight 700-900, body 400-500.
+   - Arabic display type runs larger than Latin (+1-2px) and Arabic digits stay Western.
+   - Cairo + Inter is the banned old default: it is not used anywhere here. */
+
+:root{
+  /* font pairs — chosen per direction (see direction.md) */
+  --font-a:"Alexandria","Manrope",system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;   /* A: geometric clinical */
+  --font-bd:"Markazi Text","IBM Plex Sans Arabic",Georgia,serif;                            /* B: Arabic serif display */
+  --font-bb:"IBM Plex Sans Arabic","Hanken Grotesk",system-ui,"Segoe UI",Tahoma,sans-serif; /* B: body */
+  --font-cd:"El Messiri","Cormorant Garamond",Georgia,serif;                               /* C: calligraphic display */
+  --font-cb:"Tajawal","DM Sans",system-ui,-apple-system,"Segoe UI",Tahoma,sans-serif;      /* C: body */
+
+  /* type scale */
+  --fs-sm:.875rem;
+  --fs-base:1rem;
+  --fs-lg:1.25rem;
+  --fs-xl:1.5rem;
+  --fs-2xl:clamp(1.75rem,1.2rem + 2vw,2.5rem);
+  --fs-hero:clamp(2.25rem,1.3rem + 4.5vw,4.25rem);
+  --lh-hero:1.2;
+
+  /* spacing — 4px base */
+  --s1:.25rem; --s2:.5rem; --s3:.75rem; --s4:1rem; --s6:1.5rem;
+  --s8:2rem; --s12:3rem; --s16:4rem; --s24:6rem;
+  --sec-pad:var(--s16);
+
+  /* shape — overridden per palette so ONE radius family is used per direction */
+  --radius:14px;
+  --radius-sm:10px;
+  --radius-lg:24px;
+  --radius-pill:999px;
+  --border-w:1px;
+  --shadow:0 1px 2px rgba(16,20,32,.06),0 8px 24px rgba(16,20,32,.06);
+  --shadow-strong:0 2px 6px rgba(16,20,32,.10),0 18px 48px rgba(16,20,32,.12);
+  --no-shadow:none;
+
+  --container:1120px;
+}
+
+/* ---- A — «الروشتة» the prescription pad --------------------------------
+   Base I (Electric Indigo Light) + two changes: indigo primary -> clinical blue
+   #2F4BD8, pink accent -> oxblood ink #A3231B. Precise, daylight, ruled paper.
+   Radius family: SOFT (14px), borders + one soft shadow, no pills. */
+.palette-a{
+  --bg:#F7F8FC; --surface:#FFFFFF; --text:#12132B; --muted:#555878;
+  --primary:#2F4BD8; --on-primary:#FFFFFF; --accent:#A3231B; --border:#E1E2EF; --primary-soft:#E6EAFB;
+  --success:#15803D; --danger:#B91C1C;
+  --font-body:var(--font-a); --font-display:var(--font-a);
+  --radius:14px; --radius-sm:10px; --radius-lg:20px; --radius-pill:14px;
+  --fs-hero:clamp(2.5rem,1rem + 7vw,5.25rem); --lh-hero:1.15;
+}
+
+/* ---- B — «العيادة الخاصة» the private practice --------------------------
+   Base E (Midnight Cinema) + two changes: cream primary -> warm bone #E8DCC3,
+   periwinkle accent -> muted gold #D9B26A. Premium, quiet, Arabic serif headlines.
+   Radius family: SHARP (4px), borders only, zero shadows. Section padding 128px. */
+.palette-b{
+  --bg:#0B0C10; --surface:#14161D; --text:#ECEAE4; --muted:#9EA2AE;
+  --primary:#E8DCC3; --on-primary:#14110A; --accent:#D9B26A; --border:#23262F; --primary-soft:#1E1D18;
+  --success:#8FD6A8; --danger:#E9937A;
+  --font-body:var(--font-bb); --font-display:var(--font-bd);
+  --radius:4px; --radius-sm:4px; --radius-lg:4px; --radius-pill:4px;
+  --shadow:var(--no-shadow); --shadow-strong:var(--no-shadow);
+  --fs-hero:clamp(3rem,1rem + 7vw,6.5rem); --lh-hero:1.15;
+}
+
+/* ---- C — «دفتر الوصفات» the paper prescription book -----------------------
+   Base C (Warm Local sand) + two changes: terracotta primary -> deep ocean blue
+   #0E4A6B (ink on warm paper — the owner asked for blue), teal accent -> rose #BE123C.
+   Warm, familiar, unhurried; keeps the sticky list structure the owner liked.
+   Radius family: PILL (pill buttons, 20px cards). */
+.palette-c{
+  --bg:#FFF7EE; --surface:#FFFFFF; --text:#2A1A12; --muted:#6E5546;
+  --primary:#0E4A6B; --on-primary:#FFFFFF; --accent:#BE123C; --border:#F0DCC8; --primary-soft:#DCE9F0;
+  --success:#15803D; --danger:#B91C1C;
+  --font-body:var(--font-cb); --font-display:var(--font-cd);
+  --radius:20px; --radius-sm:16px; --radius-lg:24px; --radius-pill:999px;
+  --fs-hero:clamp(2.25rem,1.3rem + 4.5vw,4.25rem); --lh-hero:1.2;
+}
+
+/* ============================ shared base ============================ */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:var(--font-body);
+  font-size:var(--fs-base);line-height:1.7;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--font-display);line-height:1.2;margin:0 0 var(--s4)}
+h1{font-size:var(--fs-hero);font-weight:800;line-height:var(--lh-hero)}
+/* Markazi Text tops out at 700: asking for 800 makes the browser fake-bold an Arabic
+   serif, which smears the letter joins. Cap the editorial face at its real weight. */
+.palette-b h1{font-weight:700}
+h2{font-size:var(--fs-2xl);font-weight:700}
+h3{font-size:var(--fs-lg);font-weight:700}
+p{margin:0 0 var(--s4);max-width:65ch}
+.container{width:min(100% - 2*var(--s6),var(--container));margin-inline:auto}
+section{padding-block:var(--sec-pad)}
+@media(min-width:900px){section{padding-block:var(--sec-pad)}}
+.palette-b{--sec-pad:var(--s16)}
+@media(min-width:900px){.palette-b section{padding-block:8rem}} /* premium: 128px */
+.eyebrow{font-size:var(--fs-sm);font-weight:700;color:var(--primary);margin-bottom:var(--s3)}
+.lead{font-size:var(--fs-lg);color:var(--muted)}
+.section-head{max-width:640px;margin-bottom:var(--s12)}
+
+/* section numbers in the margin — editorial detail, one per direction */
+.sec-num{font-family:var(--font-display);font-weight:700;color:var(--primary);
+  display:block;margin-bottom:var(--s2);line-height:1}
+
+/* buttons — one primary action per screen, 48px min target (WCAG 2.2) */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:var(--s2);
+  min-height:48px;padding:0 var(--s6);border-radius:var(--radius-pill);
+  border:1.5px solid transparent;font:inherit;font-weight:600;text-decoration:none;cursor:pointer;
+  transition:transform .15s,background-color .15s,border-color .15s,color .15s}
+.btn-primary{background:var(--primary);color:var(--on-primary)}
+.btn-primary:hover{transform:translateY(-1px);filter:brightness(.94)}
+.btn-ghost{border-color:var(--border);background:var(--surface);color:var(--text)}
+.btn-ghost:hover{border-color:var(--primary);color:var(--primary)}
+:where(a,button,input,select,textarea,summary):focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:6px}
+
+/* sticky header with blur */
+.site-header{position:sticky;top:0;z-index:20;
+  background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:saturate(1.4) blur(10px);
+  border-bottom:var(--border-w) solid var(--border)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:var(--s4);min-height:68px}
+.brand{font-weight:800;font-size:var(--fs-lg);text-decoration:none;display:flex;align-items:center;gap:var(--s2)}
+/* the header must stay one line on a 390px screen: "احجز زيارة" was wrapping to
+   two lines inside the CTA because flex items shrink below their text width. */
+.brand,.nav .btn{white-space:nowrap}
+@media(max-width:560px){.brand{font-size:var(--fs-base)}.nav .btn{padding-inline:var(--s3);font-size:var(--fs-sm)}
+  /* measured: with the badge kept, brand+CTA needed 356px inside a 342px row and pushed
+     the page 14px wide. The hero eyebrow already carries the "نموذج تجريبي" label. */
+  .site-header .demo-badge{display:none}}
+.brand .mark{width:30px;height:30px;border-radius:var(--radius-sm);background:var(--primary);color:var(--on-primary);
+  display:grid;place-items:center;font-size:.8rem;font-weight:800}
+.nav-links{display:none;gap:var(--s6);list-style:none;margin:0;padding:0}
+.nav-links a{text-decoration:none;color:var(--muted);font-weight:600}
+.nav-links a:hover{color:var(--text)}
+@media(min-width:860px){.nav-links{display:flex}}
+.nav .btn{min-height:44px;padding-inline:var(--s4)}
+
+/* cards */
+.card{background:var(--surface);border:var(--border-w) solid var(--border);
+  border-radius:var(--radius);padding:var(--s8);box-shadow:var(--shadow)}
+.card p{color:var(--muted);margin-bottom:0}
+.grid{display:grid;gap:var(--s6)}
+.grid-3{grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr))}
+.icon{width:44px;height:44px;border-radius:var(--radius-sm);background:var(--primary-soft);color:var(--primary);
+  display:grid;place-items:center;font-weight:800;margin-bottom:var(--s4)}
+
+/* placeholder media — labelled, never fake photography */
+.ph{background:linear-gradient(135deg,var(--primary-soft),color-mix(in srgb,var(--accent) 22%,var(--surface)));
+  border:var(--border-w) solid var(--border);border-radius:var(--radius-lg);
+  display:grid;place-items:center;color:var(--muted);font-weight:600;text-align:center;padding:var(--s6)}
+
+.demo-badge{display:inline-flex;align-items:center;gap:var(--s1);font-size:var(--fs-sm);font-weight:700;
+  padding:.15rem var(--s3);border-radius:var(--radius-pill);
+  background:var(--primary-soft);color:var(--primary);border:var(--border-w) solid var(--border)}
+
+/* proof strip — only true, verifiable items */
+.proof{display:flex;flex-wrap:wrap;gap:var(--s2) var(--s4);margin:var(--s8) 0 0;padding:0;list-style:none;
+  color:var(--muted);font-size:var(--fs-sm);font-weight:600}
+.proof li::before{content:"✓";color:var(--primary);margin-inline-end:var(--s2)}
+
+/* faq */
+details{border-bottom:var(--border-w) solid var(--border);padding-block:var(--s4)}
+summary{cursor:pointer;font-weight:600;font-size:var(--fs-lg);list-style:none;display:flex;
+  justify-content:space-between;align-items:center;gap:var(--s4)}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--primary);font-weight:800;font-size:var(--fs-xl)}
+details[open] summary::after{content:"–"}
+details p{margin-top:var(--s3);color:var(--muted)}
+
+/* forms */
+form{display:grid;gap:var(--s4)}
+label{font-weight:600;display:grid;gap:var(--s2)}
+input,select,textarea{font:inherit;padding:var(--s3) var(--s4);border:1.5px solid var(--border);
+  border-radius:var(--radius-sm);background:var(--surface);color:var(--text);min-height:48px}
+textarea{min-height:120px;resize:vertical}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--primary);
+  box-shadow:0 0 0 3px var(--primary-soft)}
+.field-note{font-size:var(--fs-sm);color:var(--muted);font-weight:400}
+/* ---- grid/flex overflow guard ----
+   Grid and flex items default to `min-width:auto`, so one wide child (a <select>
+   whose longest option is long, a long URL) pushes its track wider than the
+   container, and the overflow walks up every nested grid (measured on direction B
+   at 390px: a 336px track inside a 276px form, pushing the page 3px past the
+   viewport). Breaking the chain needs `min-width:0` on the ITEMS *and* on the
+   controls themselves — one level is not enough because form/label are grids too. */
+.grid>*,.bento>*,.band-grid>*,.book-grid>*,.book>*,.team-wrap>*,.faq-grid>*,
+.faq-wrap>*,.contact-wrap>*,.svc-list>*,.foot-grid>*,.addons>*,.two-col>*,
+label,form{min-width:0}
+input,select,textarea,button{min-width:0;max-width:100%}
+
+/* Honeypot — hidden from users and from the a11y tree, and it must NOT create
+   horizontal overflow. The classic `inset-inline-start:-9999px` is wrong in RTL:
+   inline-start is the right edge there, so the field sits outside the page and
+   scrollWidth grows (measured 393px on a 390px viewport). */
+.hp{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;
+  clip:rect(0 0 0 0);clip-path:inset(50%);white-space:nowrap;border:0}
+
+/* price list */
+.price-row{display:flex;align-items:baseline;justify-content:space-between;gap:var(--s4);
+  padding-block:var(--s3);border-bottom:var(--border-w) dashed var(--border)}
+.price-row b{font-size:var(--fs-lg);white-space:nowrap}
+
+/* team card */
+.team-card{padding:0;overflow:hidden}
+.team-media{aspect-ratio:4/5;display:grid;place-items:center;color:var(--muted);font-weight:600;
+  background:linear-gradient(135deg,var(--primary-soft),color-mix(in srgb,var(--accent) 18%,var(--surface)))}
+.team-body{padding:var(--s6)}
+.team-body h3{margin-bottom:var(--s1)}
+
+/* footer */
+footer{border-top:var(--border-w) solid var(--border);padding-block:var(--s8);
+  color:var(--muted);font-size:var(--fs-sm)}
+.foot-grid{display:grid;gap:var(--s6)}
+.foot-grid>*{min-width:0}
+.footer-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:var(--s4)}
+
+/* ==================== direction A: ruled prescription paper ====================
+   Signature moment: the rule under the hero headline draws itself on load
+   (scaleX 0->1) and then becomes every section's divider. */
+.palette-a{--ink-line:color-mix(in srgb,var(--primary) 55%,var(--border))}
+.rule{height:1px;background:var(--ink-line);transform-origin:right;animation:draw .9s ease-out both}
+@keyframes draw{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.palette-a .paper{background:
+  repeating-linear-gradient(to bottom,transparent,transparent 33px,
+    color-mix(in srgb,var(--primary) 7%,transparent) 33px,
+    color-mix(in srgb,var(--primary) 7%,transparent) 34px)}
+/* image placeholders read as ruled paper, not as a candy gradient (the previous
+   accent-tinted gradients looked pink against a blue primary) */
+.palette-a .hero-media,.palette-a .team-media{background:
+  repeating-linear-gradient(to bottom,transparent,transparent 31px,
+    color-mix(in srgb,var(--primary) 5%,transparent) 31px,
+    color-mix(in srgb,var(--primary) 5%,transparent) 32px),var(--surface)}
+
+/* ==================== direction B: grain + editorial masks ====================
+   Signature moment: headline lines reveal behind a fixed edge (line mask).
+   Grain (opacity .05) is what makes a dark surface read as material. */
+.palette-b::after{content:"";position:fixed;inset:0;z-index:1;pointer-events:none;opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='120' height='120' filter='url(%23n)'/%3E%3C/svg%3E")}
+.palette-b .line-mask{display:block;overflow:hidden}
+.palette-b .line-mask>span{display:block;transform:translateY(105%);animation:rise .8s cubic-bezier(.2,.7,.2,1) both}
+.palette-b .line-mask:nth-of-type(2)>span{animation-delay:.12s}
+.palette-b .line-mask:nth-of-type(3)>span{animation-delay:.24s}
+@keyframes rise{to{transform:translateY(0)}}
+
+/* ==================== direction C: dotted paper rail ====================
+   Signature moment: the dotted rail beside the service list fills as you scroll.
+   The paper texture is the material cue: warm sand stock, ruled with ink. */
+.palette-c .paper{background:
+  repeating-linear-gradient(to bottom,transparent,transparent 31px,
+    color-mix(in srgb,var(--primary) 6%,transparent) 31px,
+    color-mix(in srgb,var(--primary) 6%,transparent) 32px)}
+.palette-c .hero-media,.palette-c .team-media{background:
+  repeating-linear-gradient(to bottom,transparent,transparent 31px,
+    color-mix(in srgb,var(--primary) 6%,transparent) 31px,
+    color-mix(in srgb,var(--primary) 6%,transparent) 32px),var(--surface)}
+.palette-c .rail{position:relative;padding-inline-start:var(--s8)}
+.palette-c .rail::before{content:"";position:absolute;inset-block:6px;inset-inline-start:5px;width:3px;
+  border-radius:999px;background:repeating-linear-gradient(to bottom,
+    color-mix(in srgb,var(--primary) 35%,transparent) 0 6px,transparent 6px 12px)}
+.palette-c .rail-fill{position:absolute;inset-block-start:6px;inset-inline-start:5px;width:3px;
+  border-radius:999px;height:34%;background:var(--primary)}
+.palette-c .rail-dot{position:absolute;inset-inline-start:0;width:13px;height:13px;border-radius:999px;
+  background:var(--surface);border:2px solid var(--primary)}
+.palette-c .rail-dot-1{inset-block-start:2px}
+.palette-c .rail-dot-2{inset-block-start:calc(38% - 6px)}
+.palette-c .rail-dot-3{inset-block-end:2px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}

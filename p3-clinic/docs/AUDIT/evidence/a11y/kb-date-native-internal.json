@@ -1,0 +1,38 @@
+{
+ "step": 34,
+ "snapshot": {
+  "tag": "textarea",
+  "id": "siraj-notes-1",
+  "cls": "siraj-textarea",
+  "type": null,
+  "name": "siraj_notes",
+  "href": null,
+  "aria": null,
+  "text": "",
+  "rect": {
+   "x": 720,
+   "y": 666,
+   "w": 379,
+   "h": 135
+  },
+  "onScreen": true,
+  "visible": true,
+  "outline": "none 3px rgb(18, 19, 43)",
+  "outlineOffset": "3px",
+  "boxShadow": "rgb(230, 234, 251) 0px 0px 0px 3px",
+  "focusVisible": true,
+  "inDetails": false,
+  "detailsOpen": null,
+  "landmark": "main",
+  "hash": "",
+  "path": "/book/",
+  "uid": "body:nth-of-type(1)>div:nth-of-type(1)>main:nth-of-type(1)>div:nth-of-type(1)>div:nth-of-type(1)>form:nth-of-type(1)>div:nth-of-type(2)>div:nth-of-type(5)>textarea:nth-of-type(1)"
+ },
+ "clip": {
+  "x": 712,
+  "y": 658.1875,
+  "width": 395,
+  "height": 150.75,
+  "scale": 1
+ }
+}

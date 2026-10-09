@@ -1,0 +1,598 @@
+{
+ "page": "checkout",
+ "url": "http://localhost:8888/checkout/",
+ "viewport": {
+  "name": "desktop",
+  "w": 1440,
+  "h": 900,
+  "mobile": false
+ },
+ "redirected": false,
+ "probe": {
+  "lang": "ar",
+  "dir": "rtl",
+  "title": "إتمام الطلب – نيلاد",
+  "url": "/checkout/",
+  "actualPath": "/checkout/",
+  "headings": [
+   {
+    "level": 1,
+    "text": "إتمام الطلب",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "معلومات جهة الاتصال",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "عنوان الشحن",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "خيارات الشحن",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "خيارات الدفع",
+    "visible": true
+   },
+   {
+    "level": 3,
+    "text": "تيشيرت قطن أوفرسايز",
+    "visible": true
+   }
+  ],
+  "h1Count": 1,
+  "landmarks": {
+   "header": 1,
+   "nav": 2,
+   "main": 1,
+   "footer": 1,
+   "aside": 1
+  },
+  "focusableCount": 30,
+  "skipLink": {
+   "present": true,
+   "href": "#wp--skip-link--target",
+   "text": "تخطى إلى المحتوى",
+   "isFirstFocusable": true
+  },
+  "firstFocusable": [
+   {
+    "tag": "a",
+    "text": "تخطى إلى المحتوى",
+    "href": "#wp--skip-link--target"
+   },
+   {
+    "tag": "a",
+    "text": "نيلاد",
+    "href": "http://localhost:8888"
+   },
+   {
+    "tag": "a",
+    "text": "الجديد",
+    "href": "/#new"
+   },
+   {
+    "tag": "a",
+    "text": "التصنيفات",
+    "href": "/#cats"
+   }
+  ],
+  "bodyTextLen": 3880,
+  "cartEmpty": false,
+  "forms": [
+   {
+    "tag": "input",
+    "type": "email",
+    "id": "email",
+    "name": "contact_email",
+    "dir": null,
+    "autocomplete": "section-contact contact email",
+    "inputmode": null,
+    "placeholder": null,
+    "ariaLabel": "البريد الإلكتروني",
+    "labelText": "البريد الإلكتروني",
+    "describedby": "wc-guest-checkout-notice",
+    "invalid": "false",
+    "required": true,
+    "w": 774,
+    "h": 50
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "id": "shipping-first_name",
+    "name": "shipping_first_name",
+    "dir": null,
+    "autocomplete": "section-shipping shipping given-name",
+    "inputmode": null,
+    "placeholder": null,
+    "ariaLabel": "الاسم الأول",
+    "labelText": "الاسم الأول",
+    "describedby": "",
+    "invalid": "false",
+    "required": true,
+    "w": 381,
+    "h": 50
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "id": "shipping-last_name",
+    "name": "shipping_last_name",
+    "dir": null,
+    "autocomplete": "section-shipping shipping family-name",
+    "inputmode": null,
+    "placeholder": null,
+    "ariaLabel": "الاسم الأخير",
+    "labelText": "الاسم الأخير",
+    "describedby": "",
+    "invalid": "false",
+    "required": true,
+    "w": 381,
+    "h": 50
+   },
+   {
+    "tag": "select",
+    "type": "select-one",
+    "id": "shipping-country",
+    "name": null,
+    "dir": null,
+    "autocomplete": "section-shipping shipping country",
+    "inputmode": null,
+    "placeholder": null,
+    "ariaLabel": null,
+    "labelText": "الدولة / المنطقة",
+    "describedby": null,
+    "invalid": "false",
+    "required": false,
+    "w": 774,
+    "h": 50
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "id": "shipping-address_1",
+    "name": "shipping_address_1",
+    "dir": null,
+    "autocomplete": "section-shipping shipping address-line1",
+    "inputmode": null,
+    "placeholder": null,
+    "ariaLabel": "عنوان الشارع / الحي",
+    "labelText": "عنوان الشارع / الحي",
+    "describedby": "",
+    "invalid": "false",
+    "required": true,
+    "w": 774,
+    "h": 50
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "id": "shipping-address_2",
+    "name": null,
+    "dir": null,
+    "autocomplete": "address-line2",
+    "inputmode": null,
+    "placeholder": null,
+    "ariaLabel": "الشقة، الجناح، الوحدة، إلخ.",
+    "labelText": null,
+    "describedby": null,
+    "invalid": null,
+    "required": false,
+    "w": 177,
+    "h": 21
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "id": "shipping-city",
+    "name": "shipping_city",
+    "dir": null,
+    "autocomplete": "section-shipping shipping address-level2",
+    "inputmode": null,
+    "placeholder": null,
+    "ariaLabel": "المدينة",
+    "labelText": "المدينة",
+    "describedby": "",
+    "invalid": "false",
+    "required": true,
+    "w": 381,
+    "h": 50
+   },
+   {
+    "tag": "select",
+    "type": "select-one",
+    "id": "shipping-state",
+    "name": null,
+    "dir": null,
+    "autocomplete": "section-shipping shipping address-level1",
+    "inputmode": null,
+    "placeholder": null,
+    "ariaLabel": null,
+    "labelText": "المنطقة",
+    "describedby": null,
+    "invalid": "false",
+    "required": false,
+    "w": 381,
+    "h": 50
+   },
+   {
+    "tag": "input",
+    "type": "text",
+    "id": "shipping-postcode",
+    "name": "shipping_postcode",
+    "dir": null,
+    "autocomplete": "section-shipping shipping postal-code",
+    "inputmode": null,
+    "placeholder": null,
+    "ariaLabel": "الرمز البريدي / ZIP",
+    "labelText": "الرمز البريدي / ZIP",
+    "describedby": "",
+    "invalid": "false",
+    "required": true,
+    "w": 381,
+    "h": 50
+   },
+   {
+    "tag": "input",
+    "type": "tel",
+    "id": "shipping-phone",
+    "name": "shipping_phone",
+    "dir": null,
+    "autocomplete": "section-shipping shipping tel",
+    "inputmode": null,
+    "placeholder": null,
+    "ariaLabel": "الهاتف (اختياري)",
+    "labelText": "الهاتف (اختياري)",
+    "describedby": "",
+    "invalid": "false",
+    "required": false,
+    "w": 381,
+    "h": 50
+   },
+   {
+    "tag": "input",
+    "type": "checkbox",
+    "id": "checkbox-control-0",
+    "name": null,
+    "dir": null,
+    "autocomplete": null,
+    "inputmode": null,
+    "placeholder": null,
+    "ariaLabel": null,
+    "labelText": "استخدام العنوان نفسه للفوترة",
+    "describedby": null,
+    "invalid": "false",
+    "required": false,
+    "w": 20,
+    "h": 20
+   },
+   {
+    "tag": "input",
+    "type": "radio",
+    "id": "radio-control-0-flat_rate:2",
+    "name": "radio-control-0",
+    "dir": null,
+    "autocomplete": null,
+    "inputmode": null,
+    "placeholder": null,
+    "ariaLabel": null,
+    "labelText": "شحن قياسي60 ج.م",
+    "describedby": "radio-control-0-flat_rate:2__secondary-label",
+    "invalid": null,
+    "required": false,
+    "w": 20,
+    "h": 20
+   },
+   {
+    "tag": "input",
+    "type": "radio",
+    "id": "radio-control-wc-payment-method-options-bacs",
+    "name": "radio-control-wc-payment-method-options",
+    "dir": null,
+    "autocomplete": null,
+    "inputmode": null,
+    "placeholder": null,
+    "ariaLabel": null,
+    "labelText": "تحويل بنكي",
+    "describedby": "radio-control-wc-payment-method-options-bacs__content",
+    "invalid": null,
+    "required": false,
+    "w": 20,
+    "h": 20
+   },
+   {
+    "tag": "input",
+    "type": "radio",
+    "id": "radio-control-wc-payment-method-options-cod",
+    "name": "radio-control-wc-payment-method-options",
+    "dir": null,
+    "autocomplete": null,
+    "inputmode": null,
+    "placeholder": null,
+    "ariaLabel": null,
+    "labelText": "الدفع عند الاستلام",
+    "describedby": "radio-control-wc-payment-method-options-cod__content",
+    "invalid": null,
+    "required": false,
+    "w": 20,
+    "h": 20
+   },
+   {
+    "tag": "input",
+    "type": "checkbox",
+    "id": "checkbox-control-1",
+    "name": null,
+    "dir": null,
+    "autocomplete": null,
+    "inputmode": null,
+    "placeholder": null,
+    "ariaLabel": null,
+    "labelText": "إضافة ملحوظة إلى طلبك",
+    "describedby": null,
+    "invalid": "false",
+    "required": false,
+    "w": 20,
+    "h": 20
+   }
+  ],
+  "targets": [
+   {
+    "group": "other",
+    "tag": "a",
+    "cls": "skip-link screen-reader-text",
+    "text": "تخطى إلى المحتوى",
+    "w": 1,
+    "h": 1
+   },
+   {
+    "group": "header",
+    "tag": "a",
+    "cls": "",
+    "text": "نيلاد",
+    "w": 36.5,
+    "h": 33
+   },
+   {
+    "group": "header",
+    "tag": "a",
+    "cls": "wp-block-navigation-item__content",
+    "text": "الجديد",
+    "w": 43.4,
+    "h": 28.9
+   },
+   {
+    "group": "header",
+    "tag": "a",
+    "cls": "wp-block-navigation-item__content",
+    "text": "التصنيفات",
+    "w": 70.5,
+    "h": 28.9
+   },
+   {
+    "group": "header",
+    "tag": "a",
+    "cls": "wp-block-navigation-item__content",
+    "text": "الأكثر مبيعًا",
+    "w": 79.2,
+    "h": 28.9
+   },
+   {
+    "group": "header",
+    "tag": "a",
+    "cls": "wp-block-navigation-item__content",
+    "text": "عن نيلاد",
+    "w": 56,
+    "h": 28.9
+   },
+   {
+    "group": "header",
+    "tag": "a",
+    "cls": "wp-block-button__link has-text-color has-surface-background-",
+    "text": "السلة",
+    "w": 100.4,
+    "h": 57.5
+   },
+   {
+    "group": "header",
+    "tag": "a",
+    "cls": "wp-block-button__link has-on-primary-text-color has-primary-",
+    "text": "اتسوّق الآن",
+    "w": 118.3,
+    "h": 55.5
+   },
+   {
+    "group": "form",
+    "tag": "input",
+    "cls": "",
+    "text": "البريد الإلكتروني",
+    "w": 774,
+    "h": 50
+   },
+   {
+    "group": "form",
+    "tag": "span",
+    "cls": "wc-block-components-address-card__edit",
+    "text": "تحرير",
+    "w": 23.6,
+    "h": 18.2
+   },
+   {
+    "group": "form",
+    "tag": "input",
+    "cls": "",
+    "text": "الاسم الأول",
+    "w": 381,
+    "h": 50
+   },
+   {
+    "group": "form",
+    "tag": "input",
+    "cls": "",
+    "text": "الاسم الأخير",
+    "w": 381,
+    "h": 50
+   },
+   {
+    "group": "form",
+    "tag": "select",
+    "cls": "wc-blocks-components-select__select",
+    "text": "تحديد الدولة / المنطقةآيسلنداأثيوبياأذرب",
+    "w": 774,
+    "h": 50
+   },
+   {
+    "group": "form",
+    "tag": "input",
+    "cls": "",
+    "text": "عنوان الشارع / الحي",
+    "w": 774,
+    "h": 50
+   },
+   {
+    "group": "form",
+    "tag": "span",
+    "cls": "wc-block-components-address-form__address_2-toggle",
+    "text": "+ إضافة الشقة، الجناح، الوحدة، إلخ.",
+    "w": 774,
+    "h": 30
+   },
+   {
+    "group": "form",
+    "tag": "input",
+    "cls": "wc-block-components-address-form__address_2-hidden-input",
+    "text": "الشقة، الجناح، الوحدة، إلخ.",
+    "w": 177,
+    "h": 21
+   },
+   {
+    "group": "form",
+    "tag": "input",
+    "cls": "",
+    "text": "المدينة",
+    "w": 381,
+    "h": 50
+   },
+   {
+    "group": "form",
+    "tag": "select",
+    "cls": "wc-blocks-components-select__select",
+    "text": "تحديد المنطقةالإسكندريةأسوانأسيوطالبحر ا",
+    "w": 381,
+    "h": 50
+   },
+   {
+    "group": "form",
+    "tag": "input",
+    "cls": "",
+    "text": "الرمز البريدي / ZIP",
+    "w": 381,
+    "h": 50
+   },
+   {
+    "group": "form",
+    "tag": "input",
+    "cls": "",
+    "text": "الهاتف (اختياري)",
+    "w": 381,
+    "h": 50
+   },
+   {
+    "group": "form",
+    "tag": "input",
+    "cls": "wc-block-components-checkbox__input",
+    "text": "",
+    "w": 20,
+    "h": 20
+   },
+   {
+    "group": "form",
+    "tag": "input",
+    "cls": "wc-block-components-radio-control__input",
+    "text": "",
+    "w": 20,
+    "h": 20
+   },
+   {
+    "group": "form",
+    "tag": "input",
+    "cls": "wc-block-components-radio-control__input",
+    "text": "",
+    "w": 20,
+    "h": 20
+   },
+   {
+    "group": "form",
+    "tag": "input",
+    "cls": "wc-block-components-radio-control__input",
+    "text": "",
+    "w": 20,
+    "h": 20
+   },
+   {
+    "group": "form",
+    "tag": "input",
+    "cls": "wc-block-components-checkbox__input",
+    "text": "",
+    "w": 20,
+    "h": 20
+   },
+   {
+    "group": "form",
+    "tag": "button",
+    "cls": "wc-block-components-button wp-element-button wc-block-compon",
+    "text": "تقديم طلب",
+    "w": 774,
+    "h": 39.5
+   },
+   {
+    "group": "main",
+    "tag": "div",
+    "cls": "wc-block-components-panel__button",
+    "text": "إضافة قسيمة",
+    "w": 385,
+    "h": 24
+   },
+   {
+    "group": "footer",
+    "tag": "a",
+    "cls": "",
+    "text": "الشحن والإرجاع",
+    "w": 84.7,
+    "h": 26
+   },
+   {
+    "group": "footer",
+    "tag": "a",
+    "cls": "",
+    "text": "الخصوصية",
+    "w": 59.8,
+    "h": 26
+   },
+   {
+    "group": "footer",
+    "tag": "a",
+    "cls": "",
+    "text": "تواصل معنا",
+    "w": 66.1,
+    "h": 26
+   }
+  ],
+  "targetTotal": 30,
+  "cartControls": [],
+  "foreignRuns": [],
+  "digits": {
+   "latin": 30,
+   "eastern": 0
+  },
+  "notice": {
+   "present": false
+  }
+ }
+}

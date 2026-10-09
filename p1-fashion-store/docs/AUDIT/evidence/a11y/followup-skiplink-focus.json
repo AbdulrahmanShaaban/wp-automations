@@ -1,0 +1,42 @@
+{
+ "skipLink": {
+  "present": true,
+  "href": "#wp--skip-link--target",
+  "text": "تخطى إلى المحتوى",
+  "targetExists": true,
+  "before": {
+   "w": 1,
+   "h": 1,
+   "x": 1440,
+   "y": -1
+  },
+  "focused": {
+   "w": 1,
+   "h": 1,
+   "x": 1440,
+   "y": -1
+  },
+  "focusedStyles": {
+   "outline": "rgb(27, 26, 23) none 3px",
+   "outlineOffset": "0px",
+   "backgroundColor": "rgba(0, 0, 0, 0)",
+   "color": "rgb(27, 26, 23)",
+   "fontSize": "17px",
+   "position": "absolute"
+  },
+  "activeElementIsSkip": true
+ },
+ "focusRingStyles": {
+  "selector": "header nav a",
+  "outline": "rgb(27, 26, 23) none 3px",
+  "outlineOffset": "0px",
+  "boxShadow": "none",
+  "color": "rgb(27, 26, 23)",
+  "button": {
+   "outline": "rgb(27, 26, 23) none 3px",
+   "outlineOffset": "0px",
+   "boxShadow": "none"
+  }
+ },
+ "note": "programmatic focus() — keyboard Tab order verified separately via chrome-devtools MCP"
+}

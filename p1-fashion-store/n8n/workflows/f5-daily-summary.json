@@ -1,0 +1,231 @@
+{
+  "name": "Nilad F5: 09:00 schedule → Telegram daily summary",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "days",
+              "daysInterval": 1,
+              "triggerAtHour": 9
+            }
+          ]
+        }
+      },
+      "id": "f5a00001-0000-4000-8000-000000000001",
+      "name": "Every day 09:00",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -160,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "={{ $env.STORE_URL }}/wp-json/wc/v3/orders?after={{ $now.minus({ days: 1 }).toISO() }}&per_page=100&consumer_key={{ $env.WC_API_KEY }}&consumer_secret={{ $env.WC_API_SECRET }}",
+        "options": {
+          "timeout": 20000
+        }
+      },
+      "id": "f5a00001-0000-4000-8000-000000000002",
+      "name": "Fetch yesterday's orders",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        60,
+        0
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000
+    },
+    {
+      "parameters": {
+        "jsCode": "// Nilad F5 — aggregate yesterday's WooCommerce orders + daily duplicate guard.\n// Env (used by the upstream HTTP node, not this code): STORE_URL, WC_API_KEY, WC_API_SECRET.\n// Input: [{ json: [ ...orders ] }] (defensive: { body: [ ...orders ] }).\n// Output (dup): [{ json: { dup: true } }] — else ONE item:\n//   { dup:false, orderCount, revenue, pendingCount, topProduct, dateStr, byStatus }\nconst item = $input.first();\nconst j = (item && item.json) || {};\nconst orders = Array.isArray(j) ? j : (Array.isArray(j.body) ? j.body : []);\n\nconst d = new Date(Date.now() - 86400000);\nconst p2 = (n) => String(n).padStart(2, '0');\nconst dateStr = d.getFullYear() + '-' + p2(d.getMonth() + 1) + '-' + p2(d.getDate());\n\nconst sd = $getWorkflowStaticData('global');\nsd.keys = Array.isArray(sd.keys) ? sd.keys : [];\nif (sd.keys.includes('f5:' + dateStr)) return [{ json: { dup: true } }];\n\nconst ELIGIBLE = ['pending', 'processing', 'on-hold', 'completed'];\nlet revenue = 0;\nlet pendingCount = 0;\nconst byStatus = {};\nconst productQty = {};\nfor (const o of orders) {\n  const status = String((o && o.status) || '');\n  byStatus[status] = (byStatus[status] || 0) + 1;\n  if (status === 'pending') pendingCount++;\n  if (!ELIGIBLE.includes(status)) continue;\n  revenue += parseFloat(o.total) || 0;\n  const lines = Array.isArray(o.line_items) ? o.line_items : [];\n  for (const li of lines) {\n    const name = String((li && li.name) || '');\n    if (!name) continue;\n    productQty[name] = (productQty[name] || 0) + (Number(li.quantity) || 0);\n  }\n}\nlet topProduct = null;\nfor (const name of Object.keys(productQty)) {\n  const qty = productQty[name];\n  if (qty > 0 && (!topProduct || qty > topProduct.qty)) topProduct = { name, qty };\n}\nreturn [{\n  json: {\n    dup: false,\n    orderCount: orders.length,\n    revenue,\n    pendingCount,\n    topProduct,\n    dateStr,\n    byStatus\n  }\n}];"
+      },
+      "id": "f5a00001-0000-4000-8000-000000000003",
+      "name": "Aggregate yesterday",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        280,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "f5a00001-0000-4000-8000-000000000004",
+              "leftValue": "={{ $json.dup }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "f5a00001-0000-4000-8000-000000000005",
+      "name": "Duplicate run?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        500,
+        0
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "f5a00001-0000-4000-8000-000000000006",
+      "name": "Already sent",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        720,
+        220
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Nilad F5 — build the owner Telegram text (Arabic, HTML-escaped) + idempotency key.\n// Input: Aggregate yesterday output (dup:false path). Output ONLY: { tgText, key }\nconst j = $input.first().json;\nconst esc = (s) => String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');\nconst lines = [\n  '📊 ملخص يومي ' + esc(j.dateStr),\n  'الطلبات: ' + esc(j.orderCount),\n  'الإيراد: ' + esc(j.revenue) + ' ج.م',\n  'المعلقة: ' + esc(j.pendingCount),\n  j.topProduct\n    ? 'الأكثر مبيعًا: ' + esc(j.topProduct.name) + ' (' + esc(j.topProduct.qty) + ')'\n    : 'الأكثر مبيعًا: —'\n];\nconst byStatus = j.byStatus || {};\nfor (const s of Object.keys(byStatus)) {\n  lines.push(esc(s) + ': ' + esc(byStatus[s]));\n}\nreturn [{ json: {\n    // n8n 2.41 blocks $env in node expressions (Code nodes may read it), so\n    // the Telegram HTTP node gets its credentials from this item instead.\n    tgToken: $env.TELEGRAM_BOT_TOKEN || '',\n    tgChatId: $env.TELEGRAM_CHAT_ID || '', tgText: lines.join('\\n'), key: 'f5:' + j.dateStr } }];"
+      },
+      "id": "f5a00001-0000-4000-8000-000000000007",
+      "name": "Format summary",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        720,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://api.telegram.org/bot{{ $json.tgToken }}/sendMessage",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ chat_id: $json.tgChatId, text: $json.tgText, parse_mode: 'HTML' }) }}",
+        "options": {}
+      },
+      "id": "f5a00001-0000-4000-8000-000000000008",
+      "name": "Telegram → owner",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1160,
+        0
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000
+    },
+    {
+      "parameters": {
+        "jsCode": "// Nilad F5 — record the sent report key (idempotency write, cap 100). Passthrough.\n// Input: { tgText, key }. Output: same json unchanged.\nconst item = $input.first();\nconst sd = $getWorkflowStaticData('global');\nsd.keys = Array.isArray(sd.keys) ? sd.keys : [];\nconst key = item.json.key;\nif (key && !sd.keys.includes(key)) sd.keys.push(key);\nif (sd.keys.length > 100) sd.keys.splice(0, sd.keys.length - 100);\nreturn [{ json: {\n    // n8n 2.41 blocks $env in node expressions (Code nodes may read it), so\n    // the Telegram HTTP node gets its credentials from this item instead.\n    tgToken: $env.TELEGRAM_BOT_TOKEN || '',\n    tgChatId: $env.TELEGRAM_CHAT_ID || '', ...item.json } }];"
+      },
+      "id": "f5a00001-0000-4000-8000-000000000009",
+      "name": "Mark sent",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        940,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "Every day 09:00": {
+      "main": [
+        [
+          {
+            "node": "Fetch yesterday's orders",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch yesterday's orders": {
+      "main": [
+        [
+          {
+            "node": "Aggregate yesterday",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Aggregate yesterday": {
+      "main": [
+        [
+          {
+            "node": "Duplicate run?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Duplicate run?": {
+      "main": [
+        [
+          {
+            "node": "Already sent",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Format summary",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Format summary": {
+      "main": [
+        [
+          {
+            "node": "Mark sent",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Mark sent": {
+      "main": [
+        [
+          {
+            "node": "Telegram → owner",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Africa/Cairo"
+  },
+  "pinData": {}
+}

@@ -1,0 +1,17 @@
+table rows: 28
+computed tally: {"High":1,"Medium":6,"Low":8,"Info":13} total=28
+claimed in report: High 1 · Medium 6 · Low 8 · Info 13 (28 rows)
+MATCH: YES
+numbering 1..28 continuous: YES
+highest-impact fix bullets: 5
+  present ## Exact tools / commands used
+  present ## Attack-surface inventory
+  present ## Findings
+  present ## 5 highest-impact fixes
+  present ## Deployment items
+  present ## Could not verify / out of scope
+  present ## Evidence index
+  word "secure" occurrences: 4
+  word "safe" occurrences: 0
+  word "no vulnerabilities" occurrences: 0
+  word "completely" occurrences: 0

@@ -1,0 +1,8 @@
+﻿== contact page forms ==
+contact status: 200
+form tags: NONE
+input names: name="viewport", name="description", name="twitter:card", name="generator", name="msapplication-TileImage"
+== xmlrpc system.listMethods POST ==
+xmlrpc POST status: 200
+methods returned: 0
+includes wp.getUsersBlogs:   <value><string>wp.getUsersBlogs</string></value>

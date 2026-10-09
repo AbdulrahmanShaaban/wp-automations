@@ -1,0 +1,76 @@
+[
+ {
+  "page": "cart",
+  "viewport": "desktop",
+  "redirected": false,
+  "cartEmpty": false,
+  "forms": 1,
+  "critical": 0,
+  "serious": 0,
+  "moderate": 0,
+  "minor": 0,
+  "total": 0,
+  "nodes": 0,
+  "rules": [],
+  "incomplete": [],
+  "ms": 28752
+ },
+ {
+  "page": "checkout",
+  "viewport": "desktop",
+  "redirected": false,
+  "cartEmpty": false,
+  "forms": 15,
+  "critical": 0,
+  "serious": 1,
+  "moderate": 0,
+  "minor": 0,
+  "total": 1,
+  "nodes": 1,
+  "rules": [
+   "autocomplete-valid(serious,1)"
+  ],
+  "incomplete": [
+   "aria-valid-attr-value(1)",
+   "color-contrast(1)"
+  ],
+  "ms": 13395
+ },
+ {
+  "page": "cart",
+  "viewport": "mobile",
+  "redirected": false,
+  "cartEmpty": false,
+  "forms": 1,
+  "critical": 0,
+  "serious": 0,
+  "moderate": 0,
+  "minor": 0,
+  "total": 0,
+  "nodes": 0,
+  "rules": [],
+  "incomplete": [],
+  "ms": 14749
+ },
+ {
+  "page": "checkout",
+  "viewport": "mobile",
+  "redirected": false,
+  "cartEmpty": false,
+  "forms": 15,
+  "critical": 0,
+  "serious": 1,
+  "moderate": 0,
+  "minor": 0,
+  "total": 1,
+  "nodes": 1,
+  "rules": [
+   "autocomplete-valid(serious,1)"
+  ],
+  "incomplete": [
+   "aria-valid-attr-value(1)",
+   "color-contrast(1)"
+  ],
+  "ms": 9536
+ }
+]

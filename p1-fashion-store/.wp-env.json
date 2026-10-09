@@ -1,0 +1,17 @@
+{
+  "core": null,
+  "phpVersion": "8.3",
+  "testsEnvironment": false,
+  "plugins": [
+    "https://downloads.wordpress.org/plugin/woocommerce.11.1.2.zip",
+    "./wp-content/plugins/nilad-core"
+  ],
+  "themes": ["./wp-content/themes/nilad-theme"],
+  "port": 8888,
+  "config": {
+    "WP_DEBUG": true
+  },
+  "lifecycleScripts": {
+    "afterStart": "node scripts/php-tune.js"
+  }
+}

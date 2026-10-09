@@ -1,0 +1,58 @@
+[
+ {
+  "step": 1,
+  "tag": "a",
+  "cls": "wp-block-navigation-item__content",
+  "text": "الفريق",
+  "inside": true
+ },
+ {
+  "step": 2,
+  "tag": "a",
+  "cls": "wp-block-navigation-item__content",
+  "text": "تواصل",
+  "inside": true
+ },
+ {
+  "step": 3,
+  "tag": "button",
+  "cls": "wp-block-navigation__responsive-container-close",
+  "text": "",
+  "inside": true
+ },
+ {
+  "step": 4,
+  "tag": "a",
+  "cls": "wp-block-navigation-item__content",
+  "text": "الخدمات",
+  "inside": true
+ },
+ {
+  "step": 5,
+  "tag": "a",
+  "cls": "wp-block-navigation-item__content",
+  "text": "الفريق",
+  "inside": true
+ },
+ {
+  "step": 6,
+  "tag": "a",
+  "cls": "wp-block-navigation-item__content",
+  "text": "تواصل",
+  "inside": true
+ },
+ {
+  "step": 7,
+  "tag": "button",
+  "cls": "wp-block-navigation__responsive-container-close",
+  "text": "",
+  "inside": true
+ },
+ {
+  "step": 8,
+  "tag": "a",
+  "cls": "wp-block-navigation-item__content",
+  "text": "الخدمات",
+  "inside": true
+ }
+]

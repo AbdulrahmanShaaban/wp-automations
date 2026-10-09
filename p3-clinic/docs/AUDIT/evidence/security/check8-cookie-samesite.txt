@@ -1,0 +1,70 @@
+=== A. every SameSite mention in wp-includes ===
+grep: unrecognized option: include=*.php
+BusyBox v1.37.0 (2026-01-10 15:38:28 UTC) multi-call binary.
+
+Usage: grep [-HhnlLoqvsrRiwFE] [-m N] [-A|B|C N] { PATTERN | -e PATTERN... | -f FILE... } [FILE]...
+
+Search for PATTERN in FILEs (or stdin)
+
+	-H	Add 'filename:' prefix
+	-h	Do not add 'filename:' prefix
+	-n	Add 'line_no:' prefix
+	-l	Show only names of files that match
+	-L	Show only names of files that don't match
+	-c	Show only count of matching lines
+	-o	Show only the matching part of line
+	-q	Quiet. Return 0 if PATTERN is found, 1 otherwise
+	-v	Select non-matching lines
+	-s	Suppress open and read errors
+	-r	Recurse
+	-R	Recurse and dereference symlinks
+	-i	Ignore case
+	-w	Match whole words only
+	-x	Match whole lines only
+	-F	PATTERN is a literal (not regexp)
+	-E	PATTERN is an extended regexp
+	-m N	Match up to N times per file
+	-A N	Print N lines of trailing context
+	-B N	Print N lines of leading context
+	-C N	Same as '-A N -B N'
+	-e PTRN	Pattern to match
+	-f FILE	Read pattern from file
+(end of SameSite grep)
+
+=== B. the setcookie() calls that issue the auth cookies (context) ===
+		 * @param string $scheme     Authentication scheme. Values include 'auth' or 'secure_auth'.
+		 *                           Empty string when clearing cookies.
+		 * @param string $token      User's session token to use for this cookie. Empty string when clearing cookies.
+		 */
+		if ( ! apply_filters( 'send_auth_cookies', true, $expire, $expiration, $user_id, $scheme, $token ) ) {
+			return;
+		}
+
+		setcookie( $auth_cookie_name, $auth_cookie, $expire, PLUGINS_COOKIE_PATH, COOKIE_DOMAIN, $secure, true );
+		setcookie( $auth_cookie_name, $auth_cookie, $expire, ADMIN_COOKIE_PATH, COOKIE_DOMAIN, $secure, true );
+		setcookie( LOGGED_IN_COOKIE, $logged_in_cookie, $expire, COOKIEPATH, COOKIE_DOMAIN, $secure_logged_in_cookie, true );
+		if ( COOKIEPATH !== SITECOOKIEPATH ) {
+			setcookie( LOGGED_IN_COOKIE, $logged_in_cookie, $expire, SITECOOKIEPATH, COOKIE_DOMAIN, $secure_logged_in_cookie, true );
+		}
+	}
+endif;
+
+=== C. does wp_set_auth_cookie compute $secure from the request scheme? ===
+2:		 * @param string $scheme      Authentication scheme. Values include 'auth' or 'secure_auth'.
+36:		 * @param string $scheme     Authentication scheme. Values include 'auth' or 'secure_auth'.
+44:		setcookie( $auth_cookie_name, $auth_cookie, $expire, PLUGINS_COOKIE_PATH, COOKIE_DOMAIN, $secure, true );
+45:		setcookie( $auth_cookie_name, $auth_cookie, $expire, ADMIN_COOKIE_PATH, COOKIE_DOMAIN, $secure, true );
+46:		setcookie( LOGGED_IN_COOKIE, $logged_in_cookie, $expire, COOKIEPATH, COOKIE_DOMAIN, $secure_logged_in_cookie, true );
+
+=== D. what the browser actually received (captured earlier) ===
+Set-Cookie: wordpress_test_cookie=WP%20Cookie%20check; path=/; HttpOnly
+-> attributes present: Path, HttpOnly
+-> attributes ABSENT: Secure, SameSite
+
+=== E. cookie path/httponly constants ===
+252:			define( 'COOKIEHASH', md5( $siteurl ) );
+254:			define( 'COOKIEHASH', '' );
+262:		define( 'USER_COOKIE', 'wordpressuser_' . COOKIEHASH );
+304:		define( 'COOKIEPATH', preg_replace( '|https?://[^/]+|i', '', get_option( 'home' ) . '/' ) );
+318:		define( 'ADMIN_COOKIE_PATH', SITECOOKIEPATH . 'wp-admin' );
+325:		define( 'PLUGINS_COOKIE_PATH', preg_replace( '|https?://[^/]+|i', '', WP_PLUGIN_URL ) );

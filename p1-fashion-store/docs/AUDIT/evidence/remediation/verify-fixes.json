@@ -1,0 +1,246 @@
+{
+ "generatedAt": "2026-10-07T10:58:33.409Z",
+ "base": "http://localhost:8888",
+ "gate": "GATE-2026-10-06",
+ "cart": {
+  "before": 0,
+  "after": 1,
+  "status": 201,
+  "product": {
+   "id": 45,
+   "name": "تيشيرت قطن أوفرسايز"
+  }
+ },
+ "desktop1440": {
+  "dir": "rtl",
+  "lang": "ar",
+  "hamburger": {
+   "exists": true,
+   "display": "none",
+   "visible": false,
+   "w": 0,
+   "h": 0,
+   "ariaExpanded": null
+  },
+  "inlineListDisplay": "MISSING",
+  "navLinkCount": 4,
+  "navLinkHrefs": [
+   "/#new",
+   "/#cats",
+   "/#best",
+   "/#about"
+  ],
+  "letterSpacingTitle": "normal",
+  "hashTargets": [
+   {
+    "href": "#wp--skip-link--target",
+    "id": "wp--skip-link--target",
+    "targetExists": true
+   },
+   {
+    "href": "/#new",
+    "id": "new",
+    "targetExists": true
+   },
+   {
+    "href": "/#cats",
+    "id": "cats",
+    "targetExists": true
+   },
+   {
+    "href": "/#best",
+    "id": "best",
+    "targetExists": true
+   },
+   {
+    "href": "/#about",
+    "id": "about",
+    "targetExists": true
+   },
+   {
+    "href": "#cats",
+    "id": "cats",
+    "targetExists": true
+   }
+  ],
+  "revealTotal": 13,
+  "revealHidden": 13,
+  "addToCartLabels": 0,
+  "pBtnLabels": [
+   "اتفرج على المتجر"
+  ],
+  "demoBadges": 8,
+  "demoBadgesWithLang": 8,
+  "canonicalCount": 1,
+  "ldBlocks": 1
+ },
+ "mobile390Closed": {
+  "dir": "rtl",
+  "lang": "ar",
+  "hamburger": {
+   "exists": true,
+   "display": "block",
+   "visible": true,
+   "w": 44,
+   "h": 44,
+   "ariaExpanded": null
+  },
+  "inlineListDisplay": "MISSING",
+  "navLinkCount": 4,
+  "navLinkHrefs": [
+   "/#new",
+   "/#cats",
+   "/#best",
+   "/#about"
+  ],
+  "letterSpacingTitle": "normal",
+  "hashTargets": [
+   {
+    "href": "#wp--skip-link--target",
+    "id": "wp--skip-link--target",
+    "targetExists": true
+   },
+   {
+    "href": "/#new",
+    "id": "new",
+    "targetExists": true
+   },
+   {
+    "href": "/#cats",
+    "id": "cats",
+    "targetExists": true
+   },
+   {
+    "href": "/#best",
+    "id": "best",
+    "targetExists": true
+   },
+   {
+    "href": "/#about",
+    "id": "about",
+    "targetExists": true
+   },
+   {
+    "href": "#cats",
+    "id": "cats",
+    "targetExists": true
+   }
+  ],
+  "revealTotal": 13,
+  "revealHidden": 13,
+  "addToCartLabels": 0,
+  "pBtnLabels": [
+   "اتفرج على المتجر"
+  ],
+  "demoBadges": 8,
+  "demoBadgesWithLang": 8,
+  "canonicalCount": 1,
+  "ldBlocks": 1
+ },
+ "mobile390MenuOpen": {
+  "navIsResponsive": true,
+  "containerClass": "wp-block-navigation__responsive-container has-modal-open is-menu-open",
+  "containerVisible": true,
+  "linkCount": 4,
+  "links": [
+   {
+    "text": "الجديد",
+    "href": "/#new",
+    "visible": true
+   },
+   {
+    "text": "التصنيفات",
+    "href": "/#cats",
+    "visible": true
+   },
+   {
+    "text": "الأكثر مبيعًا",
+    "href": "/#best",
+    "visible": true
+   },
+   {
+    "text": "عن نيلاد",
+    "href": "/#about",
+    "visible": true
+   }
+  ]
+ },
+ "axeHomeMobile": {
+  "violations": [],
+  "incomplete": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": 1
+   }
+  ],
+  "passes": 45,
+  "engine": {
+   "name": "axe-core",
+   "version": "4.13.0"
+  },
+  "runner": {
+   "name": "axe"
+  },
+  "violationCounts": {
+   "total": 0,
+   "critical": 0,
+   "serious": 0,
+   "moderate": 0,
+   "minor": 0
+  }
+ },
+ "noJsReveal": {
+  "scriptingDisabled": true,
+  "revealTotal": 13,
+  "hiddenCount": 0,
+  "heroVisible": true,
+  "h1Text": "قطع تلبسها كل يوم، بجودة تحسّها"
+ },
+ "checkoutMobile390": {
+  "emailAutocomplete": "email",
+  "emailDir": "ltr",
+  "phoneInputmode": "tel",
+  "phoneDir": "ltr",
+  "sub24Controls": [],
+  "checkboxBox": {
+   "w": 24,
+   "h": 24
+  }
+ },
+ "axeCheckoutMobile": {
+  "violations": [],
+  "incomplete": [
+   {
+    "id": "aria-valid-attr-value",
+    "impact": "critical",
+    "nodes": 1
+   },
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "nodes": 1
+   }
+  ],
+  "passes": 47,
+  "engine": {
+   "name": "axe-core",
+   "version": "4.13.0"
+  },
+  "runner": {
+   "name": "axe"
+  },
+  "violationCounts": {
+   "total": 0,
+   "critical": 0,
+   "serious": 0,
+   "moderate": 0,
+   "minor": 0
+  }
+ },
+ "shopOrderBy": {
+  "cls": "orderby",
+  "w": 162,
+  "h": 24
+ }
+}

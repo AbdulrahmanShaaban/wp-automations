@@ -1,0 +1,434 @@
+{
+ "generatedAt": "2026-10-08T04:57:51.078Z",
+ "checks": [
+  {
+   "id": "skip-link-first-focus",
+   "ok": true,
+   "detail": {
+    "cls": "skip-link screen-reader-text",
+    "text": "تخطى إلى المحتوى",
+    "hash": ""
+   }
+  },
+  {
+   "id": "skip-link-visible-when-focused",
+   "ok": true,
+   "detail": {
+    "rect": {
+     "x": 4,
+     "y": 4,
+     "w": 185,
+     "h": 48
+    },
+    "visible": true,
+    "outline": "solid 3px rgb(163, 35, 27)"
+   }
+  },
+  {
+   "id": "skip-link-focus-indicator",
+   "ok": true,
+   "detail": {
+    "focusVisible": true,
+    "outline": "solid 3px rgb(163, 35, 27)",
+    "boxShadow": "none"
+   }
+  },
+  {
+   "id": "skip-link-activates-target",
+   "ok": true,
+   "detail": {
+    "target": {
+     "id": "wp--skip-link--target",
+     "exists": true,
+     "tag": "main",
+     "tabindex": null,
+     "hash": "#wp--skip-link--target"
+    },
+    "nextStop": {
+     "tag": "a",
+     "id": null,
+     "landmark": "main",
+     "text": "احجز زيارة"
+    }
+   }
+  },
+  {
+   "id": "home-header-reachable",
+   "ok": true,
+   "detail": {
+    "navStops": [
+     "عيادة سِراج للأسنان Demo",
+     "الخدمات",
+     "الفريق",
+     "تواصل",
+     "احجز زيارة",
+     "عيادة سِراج للأسنان Demo",
+     "الخدمات",
+     "الفريق"
+    ]
+   }
+  },
+  {
+   "id": "home-focus-indicator-all-stops",
+   "ok": true,
+   "detail": {
+    "without": []
+   }
+  },
+  {
+   "id": "home-main-reachable",
+   "ok": true,
+   "detail": {
+    "atStep": 7
+   }
+  },
+  {
+   "id": "home-no-keyboard-trap",
+   "ok": true,
+   "detail": {
+    "focusables": 22,
+    "longestRun": 0
+   }
+  },
+  {
+   "id": "home-tab-order-follows-dom-order",
+   "ok": true,
+   "detail": {
+    "resolved": 43,
+    "regressions": 0
+   }
+  },
+  {
+   "id": "faq-summary-keyboard-reachable",
+   "ok": true,
+   "detail": {
+    "step": 9,
+    "text": "هل الحجز اللي بعمله أونلاين نهائي؟",
+    "outline": "solid 3px rgb(163, 35, 27)",
+    "focusVisible": true
+   }
+  },
+  {
+   "id": "faq-enter-toggles-open",
+   "ok": true,
+   "detail": {
+    "before": false,
+    "afterEnter": true
+   }
+  },
+  {
+   "id": "faq-space-toggles",
+   "ok": true,
+   "detail": {
+    "afterSpace1": false,
+    "afterSpace2": true
+   }
+  },
+  {
+   "id": "faq-panel-visible-when-open",
+   "ok": true,
+   "detail": {
+    "open": true,
+    "h": 27,
+    "opacity": "1"
+   }
+  },
+  {
+   "id": "book-fields-keyboard-reachable",
+   "ok": true,
+   "detail": [
+    {
+     "name": "siraj_name",
+     "tag": "input",
+     "step": 7
+    },
+    {
+     "name": "siraj_phone",
+     "tag": "input",
+     "step": 8
+    },
+    {
+     "name": "siraj_service",
+     "tag": "select",
+     "step": 9
+    },
+    {
+     "name": "siraj_date",
+     "tag": "input",
+     "step": 10
+    },
+    {
+     "name": "siraj_date",
+     "tag": "input",
+     "step": 11
+    },
+    {
+     "name": "siraj_date",
+     "tag": "input",
+     "step": 12
+    },
+    {
+     "name": "siraj_date",
+     "tag": "input",
+     "step": 13
+    },
+    {
+     "name": "siraj_notes",
+     "tag": "textarea",
+     "step": 14
+    },
+    {
+     "name": "siraj_consent",
+     "tag": "input",
+     "step": 15
+    },
+    {
+     "name": "siraj_name",
+     "tag": "input",
+     "step": 28
+    },
+    {
+     "name": "siraj_phone",
+     "tag": "input",
+     "step": 29
+    },
+    {
+     "name": "siraj_service",
+     "tag": "select",
+     "step": 30
+    },
+    {
+     "name": "siraj_date",
+     "tag": "input",
+     "step": 31
+    },
+    {
+     "name": "siraj_date",
+     "tag": "input",
+     "step": 32
+    },
+    {
+     "name": "siraj_date",
+     "tag": "input",
+     "step": 33
+    },
+    {
+     "name": "siraj_date",
+     "tag": "input",
+     "step": 34
+    },
+    {
+     "name": "siraj_notes",
+     "tag": "textarea",
+     "step": 35
+    },
+    {
+     "name": "siraj_consent",
+     "tag": "input",
+     "step": 36
+    }
+   ]
+  },
+  {
+   "id": "book-honeypot-not-in-tab-order",
+   "ok": true,
+   "detail": {
+    "honeypotStops": []
+   }
+  },
+  {
+   "id": "book-submit-reachable",
+   "ok": true,
+   "detail": [
+    {
+     "text": "إرسال الطلب",
+     "step": 16
+    },
+    {
+     "text": "إرسال الطلب",
+     "step": 37
+    }
+   ]
+  },
+  {
+   "id": "book-no-keyboard-trap",
+   "ok": true,
+   "detail": {
+    "focusables": 20,
+    "longestRun": 4,
+    "nativeInternalSteps": [
+     13,
+     34
+    ],
+    "note": "runs on input#siraj-date-1 = Chrome date widget internal segments (activeElement stays host), not a trap"
+   }
+  },
+  {
+   "id": "book-focus-indicator-all-stops",
+   "ok": true,
+   "detail": {
+    "without": [],
+    "nativeInternalExcluded": [
+     "13:input#siraj-date-1 fv=false (focus inside Chrome date shadow — native highlight, host :focus not matched)",
+     "34:input#siraj-date-1 fv=false (focus inside Chrome date shadow — native highlight, host :focus not matched)"
+    ]
+   }
+  },
+  {
+   "id": "book-input-focus-visible",
+   "ok": true,
+   "detail": {
+    "id": "siraj-name-1",
+    "outlineStyle": "none",
+    "outlineWidth": "3px",
+    "borderColor": "rgb(47, 75, 216)",
+    "boxShadow": "rgb(230, 234, 251) 0px 0px 0px 3px",
+    "focusVisible": true
+   }
+  },
+  {
+   "id": "book-shift-tab-reverses",
+   "ok": true,
+   "detail": {
+    "distinctStops": 5,
+    "backSequence": [
+     "a#:احجز زيارة",
+     "a#:تواصل",
+     "a#:الفريق",
+     "a#:الخدمات",
+     "a#:عيادة سِراج للأس"
+    ]
+   }
+  },
+  {
+   "id": "mobile-hamburger-keyboard-reachable",
+   "ok": true,
+   "detail": {
+    "step": 3,
+    "rect": {
+     "x": 126,
+     "y": 22,
+     "w": 24,
+     "h": 24
+    },
+    "outline": "solid 3px rgb(163, 35, 27)",
+    "focusVisible": true,
+    "aria": "فتح القائمة",
+    "text": ""
+   }
+  },
+  {
+   "id": "menu-opens",
+   "ok": true,
+   "detail": {
+    "links": 3,
+    "visible": true
+   }
+  },
+  {
+   "id": "menu-has-modal-open-class",
+   "ok": true,
+   "detail": {
+    "hasModalOpen": true
+   }
+  },
+  {
+   "id": "menu-backdrop-filter-disabled",
+   "ok": true,
+   "detail": {
+    "backdropFilter": "none"
+   }
+  },
+  {
+   "id": "menu-covers-viewport",
+   "ok": true,
+   "detail": {
+    "boxRect": {
+     "x": 0,
+     "y": 0,
+     "w": 390,
+     "h": 844
+    },
+    "viewport": {
+     "w": 390,
+     "h": 844
+    }
+   }
+  },
+  {
+   "id": "menu-not-trapped-in-header-box",
+   "ok": true,
+   "detail": {
+    "centerPoint": {
+     "tag": "div",
+     "cls": "wp-block-navigation__responsive-container has-modal-open is-"
+    },
+    "inside": true
+   }
+  },
+  {
+   "id": "menu-focus-moved-inside",
+   "ok": true,
+   "detail": {
+    "inside": true,
+    "onToggle": false,
+    "active": {
+     "tag": "a",
+     "cls": "wp-block-navigation-item__content"
+    }
+   }
+  },
+  {
+   "id": "menu-focus-stays-inside-while-open",
+   "ok": true,
+   "detail": {
+    "inside": 8,
+    "total": 8
+   }
+  },
+  {
+   "id": "escape-closes-menu",
+   "ok": true,
+   "detail": {
+    "boxVisible": false,
+    "hasModalOpen": false,
+    "activeElement": {
+     "tag": "button",
+     "cls": "wp-block-navigation__responsive-container-open"
+    },
+    "headerBackdropFilter": "saturate(1.4) blur(10px)"
+   }
+  },
+  {
+   "id": "focus-returns-to-hamburger-after-esc",
+   "ok": true,
+   "detail": {
+    "activeElement": {
+     "tag": "button",
+     "cls": "wp-block-navigation__responsive-container-open"
+    }
+   }
+  },
+  {
+   "id": "backdrop-restored-after-close",
+   "ok": true,
+   "detail": {
+    "backdropFilter": "saturate(1.4) blur(10px)"
+   }
+  },
+  {
+   "id": "menu-reopens-by-click",
+   "ok": true,
+   "detail": {
+    "open": true
+   }
+  },
+  {
+   "id": "menu-link-navigates",
+   "ok": true,
+   "detail": {
+    "landedOn": "/services/"
+   }
+  }
+ ]
+}

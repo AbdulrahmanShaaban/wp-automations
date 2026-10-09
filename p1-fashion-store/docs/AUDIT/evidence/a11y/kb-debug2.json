@@ -1,0 +1,37 @@
+{
+ "countStart": 0,
+ "jsClick": {
+  "found": true,
+  "pid": "38",
+  "cookie": true
+ },
+ "countAfterJsClick": 1,
+ "countAfterEnter": 1,
+ "focusAfterEnter": "BUTTON.wp-block-button__link wp-element-button wc-block-components-",
+ "netLog": [
+  {
+   "url": "http://localhost:8888/wp-content/plugins/woocommerce/assets/client/blocks/@woocommerce/stores/woocommerce/cart.js?ver=3cb6a716bf84517f4eff",
+   "status": 200
+  },
+  {
+   "url": "http://localhost:8888/wp-json/wc/store/v1/cart",
+   "status": 200
+  },
+  {
+   "url": "http://localhost:8888/wp-json/wc/store/v1/cart",
+   "status": 200
+  },
+  {
+   "url": "http://localhost:8888/wp-json/wc/store/v1/cart",
+   "status": 200
+  },
+  {
+   "url": "http://localhost:8888/wp-json/wc/store/v1/cart/items",
+   "status": 401
+  },
+  {
+   "url": "http://localhost:8888/wp-json/wc/store/v1/cart",
+   "status": 200
+  }
+ ]
+}

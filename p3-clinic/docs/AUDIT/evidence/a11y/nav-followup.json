@@ -1,0 +1,211 @@
+{
+ "generatedAt": "2026-10-08T03:42:07.533Z",
+ "chrome": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/154.0.0.0 Safari/537.36",
+ "toggleAttrs": {
+  "attrs": {
+   "aria-haspopup": "dialog",
+   "aria-label": "فتح القائمة",
+   "class": "wp-block-navigation__responsive-container-open",
+   "data-wp-on--click": "actions.openMenuOnClick",
+   "data-wp-on--keydown": "actions.handleMenuKeydown"
+  },
+  "role": null,
+  "tag": "BUTTON",
+  "tabindex": null,
+  "ariaExpanded": null,
+  "ariaControls": null,
+  "ariaHasPopup": "dialog",
+  "text": "",
+  "innerHTML": "<svg width=\"24\" height=\"24\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M4 7.5h16v1.5H4z\"></path><path d=\"M4 15h16v1.5H4z\"></path></svg>",
+  "iconSize": {
+   "w": 24,
+   "h": 24
+  },
+  "containerAttrs": {
+   "class": "wp-block-navigation__responsive-container",
+   "id": "modal-1",
+   "data-wp-class--has-modal-open": "state.isMenuOpen",
+   "data-wp-class--is-menu-open": "state.isMenuOpen",
+   "data-wp-watch": "callbacks.initMenu",
+   "data-wp-on--keydown": "actions.handleMenuKeydown",
+   "data-wp-on--focusout": "actions.handleMenuFocusout",
+   "tabindex": "-1"
+  },
+  "containerClasses": "wp-block-navigation__responsive-container",
+  "modalOverlayPresent": false,
+  "fixedBoxes": [
+   {
+    "cls": "wp-block-navigation__responsive-container-open",
+    "position": "static",
+    "display": "flex",
+    "zIndex": "auto",
+    "rect": {
+     "x": 126,
+     "y": 22,
+     "w": 24,
+     "h": 24
+    }
+   },
+   {
+    "cls": "wp-block-navigation__responsive-container",
+    "position": "fixed",
+    "display": "none",
+    "zIndex": "auto",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0
+    }
+   },
+   {
+    "cls": "wp-block-navigation__responsive-container-close",
+    "position": "absolute",
+    "display": "block",
+    "zIndex": "2",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0
+    }
+   },
+   {
+    "cls": "[object SVGAnimatedString]",
+    "position": "static",
+    "display": "block",
+    "zIndex": "auto",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0
+    }
+   },
+   {
+    "cls": "wp-block-navigation__responsive-container-content",
+    "position": "static",
+    "display": "flex",
+    "zIndex": "auto",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0
+    }
+   },
+   {
+    "cls": "wp-block-navigation__container is-responsive items-justified-center wp",
+    "position": "relative",
+    "display": "flex",
+    "zIndex": "auto",
+    "rect": {
+     "x": 0,
+     "y": 0,
+     "w": 0,
+     "h": 0
+    }
+   }
+  ]
+ },
+ "wheelWhileOpen": {
+  "before": {
+   "scrollY": 0,
+   "htmlOverflow": "hidden",
+   "htmlInlineOverflow": "",
+   "bodyOverflow": "visible",
+   "hasModalOpen": true
+  },
+  "after": {
+   "scrollY": 0,
+   "hitTestBelowMenu": "DIV.wp-block-navigation__responsive-containe"
+  },
+  "moved": 0,
+  "hitTestBelowMenu": "DIV.wp-block-navigation__responsive-containe"
+ },
+ "wheelClosedControl": {
+  "ctrlBefore": 0,
+  "ctrlAfter": 240,
+  "moved": 240
+ },
+ "notePaper": {
+  "classes": "note paper",
+  "backgroundColor": "rgba(0, 0, 0, 0)",
+  "backgroundImage": "repeating-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 33px, color(srgb 0.184314 0.294118 0.847059 / 0.07) 33px, color(srgb 0.184314 0.294118 0.847059 / 0.07) 34px)",
+  "expectedSurface": "#FFFFFF",
+  "bodyBackground": "rgb(247, 248, 252)",
+  "card": {
+   "cls": "svc reveal",
+   "bg": "rgb(255, 255, 255)"
+  },
+  "rules": [
+   {
+    "selector": ".note",
+    "background": "var(--surface)",
+    "backgroundColor": null,
+    "backgroundImage": null,
+    "href": "style.css?ver=0.1.0"
+   },
+   {
+    "selector": ".note h2",
+    "background": null,
+    "backgroundColor": null,
+    "backgroundImage": null,
+    "href": "style.css?ver=0.1.0"
+   },
+   {
+    "selector": ".note-list",
+    "background": null,
+    "backgroundColor": null,
+    "backgroundImage": null,
+    "href": "style.css?ver=0.1.0"
+   },
+   {
+    "selector": ".note-list li",
+    "background": null,
+    "backgroundColor": null,
+    "backgroundImage": null,
+    "href": "style.css?ver=0.1.0"
+   },
+   {
+    "selector": ".note-list li span",
+    "background": null,
+    "backgroundColor": null,
+    "backgroundImage": null,
+    "href": "style.css?ver=0.1.0"
+   },
+   {
+    "selector": ".note .stamp",
+    "background": null,
+    "backgroundColor": null,
+    "backgroundImage": null,
+    "href": "style.css?ver=0.1.0"
+   },
+   {
+    "selector": ".note .mark-art",
+    "background": null,
+    "backgroundColor": null,
+    "backgroundImage": null,
+    "href": "style.css?ver=0.1.0"
+   },
+   {
+    "selector": ".note > :not(.mark-art)",
+    "background": null,
+    "backgroundColor": null,
+    "backgroundImage": null,
+    "href": "style.css?ver=0.1.0"
+   },
+   {
+    "selector": ".paper",
+    "background": "repeating-linear-gradient(to bottom,transparent,transparent 33px,\n    color-mix(in srgb,var(--primary) 7%,transparent) 33px,\n    color-mix(in srgb,var(--primary) 7%,transparent) 34px)",
+    "backgroundColor": null,
+    "backgroundImage": null,
+    "href": "style.css?ver=0.1.0"
+   }
+  ]
+ },
+ "notePaper390": {
+  "backgroundColor": "rgba(0, 0, 0, 0)",
+  "backgroundImage": "repeating-linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 33px, color(srgb 0.184314 0.294118 0.847059 / 0.07) 33px, color(srgb 0.184314 0"
+ }
+}

@@ -1,0 +1,37 @@
+﻿{
+ "generatedAt": "2026-10-08T12:00:08.472Z",
+ "base": "http://localhost:8889",
+ "viewport": 390,
+ "filled": {
+  "input[name=\"siraj_name\"]": "ok",
+  "input[name=\"siraj_phone\"]": "ok",
+  "select[name=\"siraj_service\"]": "ok",
+  "input[name=\"siraj_date\"]": "ok",
+  "textarea[name=\"siraj_notes\"]": "ok",
+  "honeypotPresent": true
+ },
+ "invalid": {
+  "url": "/book/",
+  "errors": [
+   "╪▒┘é┘à ╪º┘ä┘à┘ê╪¿╪º┘è┘ä ╪║┘è╪▒ ╪╡╪¡┘è╪¡. ┘à╪½╪º┘ä: 01012345678"
+  ],
+  "alertText": "┘à┘å ┘ü╪╢┘ä┘â ╪▒╪º╪¼╪╣ ╪º┘ä╪¡┘é┘ê┘ä ╪º┘ä╪¬╪º┘ä┘è╪⌐:╪▒┘é┘à ╪º┘ä┘à┘ê╪¿╪º┘è┘ä: ╪▒┘é┘à ╪º┘ä┘à┘ê╪¿╪º┘è┘ä ╪║┘è╪▒ ╪╡╪¡┘è╪¡. ┘à╪½╪º┘ä: 01012345678",
+  "invalidFields": 1,
+  "stillHasForm": true,
+  "successShown": false,
+  "valueKept": "╪▓╪¿┘ê┘å ╪¬╪¼╪▒┘è╪¿┘è"
+ },
+ "valid": {
+  "successShown": true,
+  "successText": "╪¬┘à ╪º╪│╪¬┘ä╪º┘à ╪╖┘ä╪¿┘â ╪¿┘å╪¼╪º╪¡╪î ┘ç┘è╪¬┘à ╪º┘ä╪¬┘ê╪º╪╡┘ä ┘à╪╣┘â ┘ä╪¬╪ú┘â┘è╪» ╪º┘ä┘à┘ê╪╣╪».╪º┘ä╪▒╪» ╪¿┘è┘â┘ê┘å ╪╣┘ä┘ë ┘ê╪º╪¬╪│╪º╪¿ ╪ú┘ê ╪º╪¬╪╡╪º┘ä ╪«┘ä╪º┘ä ╪│╪º╪╣╪º╪¬ ╪º┘ä╪╣┘à┘ä.",
+  "successRole": "status",
+  "successTabindex": "-1",
+  "successFocused": true,
+  "formGone": true,
+  "errors": []
+ },
+ "honeypot": {
+  "successShown": false,
+  "alertText": "┘à┘å ┘ü╪╢┘ä┘â ╪▒╪º╪¼╪╣ ╪º┘ä╪¡┘é┘ê┘ä ╪º┘ä╪¬╪º┘ä┘è╪⌐:╪¬╪╣╪░┘æ╪▒ ╪Ñ╪▒╪│╪º┘ä ╪º┘ä╪╖┘ä╪¿╪î ┘à┘å ┘ü╪╢┘ä┘â ╪ú╪╣╪» ╪º┘ä┘à╪¡╪º┘ê┘ä╪⌐."
+ }
+}

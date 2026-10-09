@@ -1,0 +1,23 @@
+{
+ "page": "contact",
+ "nav": {
+  "hamburger": {
+   "display": "flex",
+   "visible": true,
+   "w": 24,
+   "h": 24,
+   "ariaExpanded": null,
+   "tag": "button"
+  },
+  "overlayContainer": {
+   "display": "none",
+   "cls": "wp-block-navigation__responsive-container",
+   "visible": false
+  },
+  "inlineListDisplay": "flex",
+  "inlineLinksVisible": 0,
+  "headerBackdropFilter": "saturate(1.4) blur(10px)",
+  "htmlHasModalOpen": false
+ },
+ "overflowX": null
+}

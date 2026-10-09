@@ -1,0 +1,11 @@
+bytes: 12414
+login_error block: خطأ: كلمة المرور التي أدخلتها لاسم المستخدم admin غير صحيحة. هل فقدت كلمة مرورك؟
+redirect_to input echoed: true
+lostpassword link present: true
+register link present: false
+two-factor / app-password hints: false
+form action target: <form name="loginform" id="loginform" action="http://localhost:8889/wp-login.php" method="post">
+login form fields: log, pwd, rememberme, redirect_to, testcookie
+generator tag: none
+php warning markers: none
+body mentions wp-admin path: true

@@ -1,0 +1,270 @@
+=== Apache version / loaded modules ===
+Server version: Apache/2.4.68 (Debian)
+Server built:   2026-06-11T18:28:43
+--- modules of interest ---
+ authz_core_module (shared)
+ authz_host_module (shared)
+ authz_user_module (shared)
+ autoindex_module (shared)
+ dir_module (shared)
+ env_module (shared)
+ filter_module (shared)
+ mime_module (shared)
+ php_module (shared)
+ rewrite_module (shared)
+ setenvif_module (shared)
+
+=== authz / php handler directives in /etc/apache2 ===
+/etc/apache2/sites-enabled/000-default.conf:12:	DocumentRoot /var/www/html
+/etc/apache2/sites-available/default-ssl.conf:4:	DocumentRoot /var/www/html
+/etc/apache2/sites-available/default-ssl.conf:71:	#   SSL Engine Options:
+/etc/apache2/sites-available/default-ssl.conf:94:	#SSLOptions +FakeBasicAuth +ExportCertData +StrictRequire
+/etc/apache2/sites-available/default-ssl.conf:95:	<FilesMatch "\.(?:cgi|shtml|phtml|php)$">
+/etc/apache2/sites-available/default-ssl.conf:96:		SSLOptions +StdEnvVars
+/etc/apache2/sites-available/default-ssl.conf:97:	</FilesMatch>
+/etc/apache2/sites-available/default-ssl.conf:99:		SSLOptions +StdEnvVars
+/etc/apache2/sites-available/000-default.conf:12:	DocumentRoot /var/www/html
+/etc/apache2/conf-available/security.conf:5:# ServerTokens
+/etc/apache2/conf-available/security.conf:11:#ServerTokens Minimal
+/etc/apache2/conf-available/security.conf:12:ServerTokens OS
+/etc/apache2/conf-available/security.conf:13:#ServerTokens Full
+/etc/apache2/conf-available/security.conf:22:#ServerSignature Off
+/etc/apache2/conf-available/security.conf:23:ServerSignature On
+/etc/apache2/conf-available/security.conf:51:#Header set X-Content-Type-Options: "nosniff"
+/etc/apache2/conf-available/serve-cgi-bin.conf:13:			AllowOverride None
+/etc/apache2/conf-available/serve-cgi-bin.conf:14:			Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+/etc/apache2/conf-available/serve-cgi-bin.conf:15:			Require all granted
+/etc/apache2/conf-available/localized-error-pages.conf:31:# ServerAdmin email address regardless of the setting of ServerSignature.
+/etc/apache2/conf-available/localized-error-pages.conf:34:#		  SetHandler directive in a <Location /> context somewhere. Adding
+/etc/apache2/conf-available/localized-error-pages.conf:38:#			 SetHandler none
+/etc/apache2/conf-available/localized-error-pages.conf:51:#				Options IncludesNoExec
+/etc/apache2/conf-available/docker-php.conf:1:<FilesMatch \.php$>
+/etc/apache2/conf-available/docker-php.conf:2:	SetHandler application/x-httpd-php
+/etc/apache2/conf-available/docker-php.conf:3:</FilesMatch>
+/etc/apache2/conf-available/docker-php.conf:5:DirectoryIndex disabled
+/etc/apache2/conf-available/docker-php.conf:6:DirectoryIndex index.php index.html
+/etc/apache2/conf-available/docker-php.conf:9:	Options -Indexes
+/etc/apache2/conf-available/docker-php.conf:10:	AllowOverride All
+/etc/apache2/ports.conf:5:Listen 80
+/etc/apache2/ports.conf:8:	Listen 443
+/etc/apache2/ports.conf:12:	Listen 443
+/etc/apache2/ports.conf:14:Listen 8889
+/etc/apache2/mods-available/alias.conf:16:	Options FollowSymlinks
+/etc/apache2/mods-available/alias.conf:17:	AllowOverride None
+/etc/apache2/mods-available/alias.conf:18:	Require all granted
+/etc/apache2/mods-available/autoindex.conf:4:# IndexOptions: Controls the appearance of server-generated directory
+/etc/apache2/mods-available/autoindex.conf:7:IndexOptions FancyIndexing VersionSort HTMLTable NameWidth=* DescriptionWidth=* Charset=UTF-8
+/etc/apache2/mods-available/ldap.conf:2:	SetHandler ldap-status
+/etc/apache2/mods-available/info.conf:6:	SetHandler server-info
+/etc/apache2/mods-available/proxy.conf:14:#   Require all denied
+/etc/apache2/mods-available/proxy_balancer.conf:6:#		SetHandler balancer-manager
+/etc/apache2/mods-available/http2.conf:21:# <FilesMatch "\.html$">
+/etc/apache2/mods-available/http2.conf:24:# </FilesMatch>
+/etc/apache2/mods-available/userdir.conf:5:	AllowOverride FileInfo AuthConfig Limit Indexes
+/etc/apache2/mods-available/userdir.conf:6:	Options MultiViews Indexes SymLinksIfOwnerMatch IncludesNoExec
+/etc/apache2/mods-available/status.conf:6:	SetHandler server-status
+/etc/apache2/mods-available/dir.conf:1:DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm
+/etc/apache2/mods-available/mime.conf:216:# (You will also need to add "ExecCGI" to the "Options" directive.)
+/etc/apache2/mods-available/mime.conf:241:# (You will also need to add "Includes" to the "Options" directive.)
+/etc/apache2/apache2.conf:160:	Options FollowSymLinks
+/etc/apache2/apache2.conf:161:	AllowOverride None
+/etc/apache2/apache2.conf:162:	Require all denied
+/etc/apache2/apache2.conf:166:	AllowOverride None
+/etc/apache2/apache2.conf:167:	Require all granted
+/etc/apache2/apache2.conf:171:	Options Indexes FollowSymLinks
+/etc/apache2/apache2.conf:172:	AllowOverride None
+/etc/apache2/apache2.conf:173:	Require all granted
+/etc/apache2/apache2.conf:177:#	Options Indexes FollowSymLinks
+/etc/apache2/apache2.conf:178:#	AllowOverride None
+/etc/apache2/apache2.conf:179:#	Require all granted
+/etc/apache2/apache2.conf:186:# for additional configuration directives.  See also the AllowOverride
+/etc/apache2/apache2.conf:195:<FilesMatch "^\.ht">
+/etc/apache2/apache2.conf:196:	Require all denied
+/etc/apache2/apache2.conf:197:</FilesMatch>
+
+=== enabled conf files ===
+/etc/apache2/conf-enabled:
+charset.conf
+docker-php.conf
+localized-error-pages.conf
+other-vhosts-access-log.conf
+remoteip.conf
+security.conf
+serve-cgi-bin.conf
+
+/etc/apache2/sites-enabled:
+000-default.conf
+
+=== docker php apache conf (full) ===
+--- /etc/apache2/conf-enabled/docker-php.conf
+<FilesMatch \.php$>
+	SetHandler application/x-httpd-php
+</FilesMatch>
+
+DirectoryIndex disabled
+DirectoryIndex index.php index.html
+
+<Directory /var/www/>
+	Options -Indexes
+	AllowOverride All
+</Directory>
+--- /etc/apache2/conf-enabled/docker-php-general.conf
+(absent)
+--- /etc/apache2/conf-enabled/docker-php-phar-dynamic.conf
+(absent)
+
+=== sites-enabled default vhost (full) ===
+--- /etc/apache2/sites-enabled/000-default.conf
+<VirtualHost *:80 *:8889>
+	# The ServerName directive sets the request scheme, hostname and port that
+	# the server uses to identify itself. This is used when creating
+	# redirection URLs. In the context of virtual hosts, the ServerName
+	# specifies what hostname must appear in the request's Host: header to
+	# match this virtual host. For the default virtual host (this file) this
+	# value is not decisive as it is used as a last resort host regardless.
+	# However, you must set it for any further virtual host explicitly.
+	#ServerName www.example.com
+
+	ServerAdmin webmaster@localhost
+	DocumentRoot /var/www/html
+
+	# Available loglevels: trace8, ..., trace1, debug, info, notice, warn,
+	# error, crit, alert, emerg.
+	# It is also possible to configure the loglevel for particular
+	# modules, e.g.
+	#LogLevel info ssl:warn
+
+	ErrorLog ${APACHE_LOG_DIR}/error.log
+	CustomLog ${APACHE_LOG_DIR}/access.log combined
+
+	# For most configuration files from conf-available/, which are
+	# enabled or disabled at a global level, it is possible to
+	# include a line for only one particular virtual host. For example the
+	# following line enables the CGI configuration for this host only
+	# after it has been globally disabled with "a2disconf".
+	#Include conf-available/serve-cgi-bin.conf
+</VirtualHost>
+
+=== php ini conf.d files (names + security-relevant settings only) ===
+docker-php-ext-bcmath.ini
+docker-php-ext-exif.ini
+docker-php-ext-gd.ini
+docker-php-ext-imagick.ini
+docker-php-ext-intl.ini
+docker-php-ext-mysqli.ini
+docker-php-ext-opcache.ini
+docker-php-ext-sodium.ini
+docker-php-ext-zip.ini
+error-logging.ini
+opcache-recommended.ini
+--- display_errors / expose_php / disable_functions across conf.d ---
+/usr/local/etc/php/conf.d/error-logging.ini:1:error_reporting = E_ERROR | E_WARNING | E_PARSE | E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_COMPILE_WARNING | E_RECOVERABLE_ERROR
+/usr/local/etc/php/conf.d/error-logging.ini:2:display_errors = Off
+/usr/local/etc/php/conf.d/error-logging.ini:4:log_errors = On
+/usr/local/etc/php/conf.d/error-logging.ini:6:log_errors_max_len = 1024
+/usr/local/etc/php/php.ini-production:333:disable_functions =
+/usr/local/etc/php/php.ini-production:410:expose_php = On
+/usr/local/etc/php/php.ini-production:501:error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT
+/usr/local/etc/php/php.ini-production:518:display_errors = Off
+/usr/local/etc/php/php.ini-production:537:log_errors = On
+/usr/local/etc/php/php.ini-production:880:allow_url_include = Off
+/usr/local/etc/php/php.ini-development:333:disable_functions =
+/usr/local/etc/php/php.ini-development:408:expose_php = On
+/usr/local/etc/php/php.ini-development:499:error_reporting = E_ALL
+/usr/local/etc/php/php.ini-development:516:display_errors = On
+/usr/local/etc/php/php.ini-development:535:log_errors = On
+/usr/local/etc/php/php.ini-development:878:allow_url_include = Off
+
+=== EFFECTIVE runtime ini under WordPress bootstrap (web code path) ===
+bash: line 37: wp: command not found
+--- wp_debug_mode() relevant lines from core (source, not executed) ---
+549: * Uses three constants: `WP_DEBUG`, `WP_DEBUG_DISPLAY`, and `WP_DEBUG_LOG`.
+551: * `WP_DEBUG_LOG` are set to false, and `WP_DEBUG_DISPLAY` is set to true.
+561: * `WP_DEBUG_DISPLAY` and `WP_DEBUG_LOG` perform no function unless `WP_DEBUG`
+564: * When `WP_DEBUG_DISPLAY` is true, WordPress will force errors to be displayed.
+565: * `WP_DEBUG_DISPLAY` defaults to true. Defining it as null prevents WordPress
+566: * from changing the global configuration setting. Defining `WP_DEBUG_DISPLAY`
+614:		error_reporting( E_ALL );
+616:		if ( WP_DEBUG_DISPLAY ) {
+617:			ini_set( 'display_errors', 1 );
+618:		} elseif ( null !== WP_DEBUG_DISPLAY ) {
+619:			ini_set( 'display_errors', 0 );
+635:		error_reporting( E_CORE_ERROR | E_CORE_WARNING | E_COMPILE_ERROR | E_ERROR | E_WARNING | E_PARSE | E_USER_ERROR | E_USER_WARNING | E_RECOVERABLE_ERROR );
+646:		ini_set( 'display_errors', 0 );
+function wp_debug_mode() {
+	/**
+	 * Filters whether to allow the debug mode check to occur.
+	 *
+	 * This filter runs before it can be used by plugins. It is designed for
+	 * non-web runtimes. Returning false causes the `WP_DEBUG` and related
+	 * constants to not be checked and the default PHP values for errors
+	 * will be used unless you take care to update them yourself.
+	 *
+	 * To use this filter you must define a `$wp_filter` global before
+	 * WordPress loads, usually in `wp-config.php`.
+	 *
+	 * Example:
+	 *
+	 *     $GLOBALS['wp_filter'] = array(
+	 *         'enable_wp_debug_mode_checks' => array(
+	 *             10 => array(
+	 *                 array(
+	 *                     'accepted_args' => 0,
+	 *                     'function'      => function() {
+	 *                         return false;
+	 *                     },
+	 *                 ),
+	 *             ),
+	 *         ),
+	 *     );
+	 *
+	 * @since 4.6.0
+	 *
+	 * @param bool $enable_debug_mode Whether to enable debug mode checks to occur. Default true.
+	 */
+	if ( ! apply_filters( 'enable_wp_debug_mode_checks', true ) ) {
+		return;
+	}
+
+	if ( WP_DEBUG ) {
+		error_reporting( E_ALL );
+
+		if ( WP_DEBUG_DISPLAY ) {
+			ini_set( 'display_errors', 1 );
+
+=== effective uploads execution test WITHOUT writing anything ===
+(no file is created; inference is from the handler config below)
+--- is there a php SetHandler applying to the uploads dir? ---
+/etc/apache2/sites-available/default-ssl.conf:95:	<FilesMatch "\.(?:cgi|shtml|phtml|php)$">
+/etc/apache2/sites-available/default-ssl.conf:97:	</FilesMatch>
+/etc/apache2/conf-available/localized-error-pages.conf:34:#		  SetHandler directive in a <Location /> context somewhere. Adding
+/etc/apache2/conf-available/localized-error-pages.conf:38:#			 SetHandler none
+/etc/apache2/conf-available/localized-error-pages.conf:53:#				AddHandler type-map var
+/etc/apache2/conf-available/docker-php.conf:1:<FilesMatch \.php$>
+/etc/apache2/conf-available/docker-php.conf:2:	SetHandler application/x-httpd-php
+/etc/apache2/conf-available/docker-php.conf:3:</FilesMatch>
+/etc/apache2/mods-available/ssl.conf:27:AddType application/x-x509-ca-cert .crt
+/etc/apache2/mods-available/ssl.conf:28:AddType application/x-pkcs7-crl .crl
+/etc/apache2/mods-available/ldap.conf:2:	SetHandler ldap-status
+/etc/apache2/mods-available/info.conf:6:	SetHandler server-info
+/etc/apache2/mods-available/proxy_balancer.conf:6:#		SetHandler balancer-manager
+/etc/apache2/mods-available/http2.conf:21:# <FilesMatch "\.html$">
+/etc/apache2/mods-available/http2.conf:24:# </FilesMatch>
+/etc/apache2/mods-available/status.conf:6:	SetHandler server-status
+/etc/apache2/mods-available/mime.conf:8:# AddType allows you to add to or override the MIME configuration
+/etc/apache2/mods-available/mime.conf:11:#AddType application/x-gzip .tgz
+/etc/apache2/mods-available/mime.conf:25:AddType application/x-compress .Z
+/etc/apache2/mods-available/mime.conf:26:AddType application/x-gzip .gz .tgz
+/etc/apache2/mods-available/mime.conf:27:AddType application/x-bzip2 .bz2
+/etc/apache2/mods-available/mime.conf:211:# AddHandler allows you to map certain file extensions to "handlers":
+/etc/apache2/mods-available/mime.conf:218:#AddHandler cgi-script .cgi
+/etc/apache2/mods-available/mime.conf:223:#AddHandler send-as-is asis
+/etc/apache2/mods-available/mime.conf:228:#AddHandler imap-file map
+/etc/apache2/mods-available/mime.conf:235:AddHandler type-map var
+/etc/apache2/mods-available/mime.conf:243:AddType text/html .shtml
+/etc/apache2/apache2.conf:195:<FilesMatch "^\.ht">
+/etc/apache2/apache2.conf:197:</FilesMatch>
+(none beyond the docker-php.conf shown above)
+
+=== open_basedir / docroot separation ===
+open_basedir=(empty)

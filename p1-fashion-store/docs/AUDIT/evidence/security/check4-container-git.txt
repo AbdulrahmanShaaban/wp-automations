@@ -1,0 +1,71 @@
+﻿node.exe : i Starting 'bash -c ls -la /var/www/html/ | head -30; echo --- .git ---; ls -la /var/www/html/.git | head 
+-25; echo --- log ---; git -C /var/www/html log --oneline -5; echo --- remote-name ---; git -C /var/www/html remote | 
+tr \n  ; echo; echo --- config-credential-check ---; if grep -qE url = [a-z]+://[^/[:space:]]*:[^/[:space:]]*@ 
+/var/www/html/.git/config; then echo URL-HAS-EMBEDDED-CREDENTIALS: yes; else echo URL-HAS-EMBEDDED-CREDENTIALS: no; 
+fi; echo --- url-host-only ---; git -C /var/www/html remote get-url origin 2>/dev/null | sed -E 
+s#^[a-z]+://([^@/]+@)?([^/]+).*#\2#' on the wordpress container. 
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (i Starting 'bas...ess container. :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+total 228
+drwxrwxrwx 1 root root   512 Oct  3 00:19 .
+drwxr-xr-x 1 root root  4096 Sep 25 17:41 ..
+drwxrwxrwx 1 root root   512 Oct  4 21:29 .git
+-rw-r--r-- 1 1000 1000   525 Oct  4 21:32 .htaccess
+-rwxrwxrwx 1 root root   422 Oct  1 17:34 index.php
+-rwxrwxrwx 1 root root 19903 Oct  1 17:34 license.txt
+-rwxrwxrwx 1 root root  7505 Oct  1 17:34 readme.html
+-rwxrwxrwx 1 root root  7938 Oct  1 17:34 wp-activate.php
+drwxrwxrwx 1 root root   512 Oct  1 17:35 wp-admin
+-rwxrwxrwx 1 root root   372 Oct  1 17:34 wp-blog-header.php
+-rw-r--r-- 1 1000 1000    32 Oct  1 23:39 wp-cli.yml
+-rwxrwxrwx 1 root root  2404 Oct  1 17:34 wp-comments-post.php
+-rwxrwxrwx 1 root root  3339 Oct  1 17:34 wp-config-sample.php
+-rw-r--r-- 1 1000 1000  6122 Oct  1 23:39 wp-config.php
+drwxrwxrwx 1 root root   512 Oct  1 23:43 wp-content
+-rwxrwxrwx 1 root root  5822 Oct  1 17:34 wp-cron.php
+drwxrwxrwx 1 root root   512 Oct  1 17:35 wp-includes
+-rwxrwxrwx 1 root root  2591 Oct  1 17:34 wp-links-opml.php
+-rwxrwxrwx 1 root root  4042 Oct  1 17:34 wp-load.php
+-rwxrwxrwx 1 root root 54216 Oct  1 17:35 wp-login.php
+-rwxrwxrwx 1 root root  9003 Oct  1 17:35 wp-mail.php
+-rwxrwxrwx 1 root root 33953 Oct  1 17:35 wp-settings.php
+-rwxrwxrwx 1 root root 36144 Oct  1 17:34 wp-signup.php
+-rwxrwxrwx 1 root root  5577 Oct  1 17:34 wp-trackback.php
+-rwxrwxrwx 1 root root  3311 Oct  1 17:34 xmlrpc.php
+--- .git ---
+total 800
+drwxrwxrwx 1 root root    512 Oct  4 21:29 .
+drwxrwxrwx 1 root root    512 Oct  3 00:19 ..
+-rwxrwxrwx 1 root root 102545 Oct  4 21:29 FETCH_HEAD
+-rwxrwxrwx 1 root root     41 Oct  1 17:35 HEAD
+-rwxrwxrwx 1 root root     41 Oct  1 17:35 ORIG_HEAD
+-rwxrwxrwx 1 root root    354 Oct  1 17:33 config
+-rwxrwxrwx 1 root root     73 Oct  1 17:33 description
+drwxrwxrwx 1 root root    512 Oct  1 17:33 hooks
+-rwxrwxrwx 1 root root 607614 Oct  4 21:29 index
+drwxrwxrwx 1 root root    512 Oct  1 17:33 info
+drwxrwxrwx 1 root root    512 Oct  1 17:33 logs
+drwxrwxrwx 1 root root    512 Oct  4 21:29 objects
+-rwxrwxrwx 1 root root  57700 Oct  1 17:33 packed-refs
+drwxrwxrwx 1 root root    512 Oct  1 17:33 refs
+-rwxrwxrwx 1 root root  40590 Oct  1 17:33 shallow
+--- log ---
+--- remote-name ---
+fatal: detected dubious ownership in repository at '/var/www/html'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /var/www/html
+tr: missing operand after 'n'
+Two strings must be given when translating.
+Try 'tr --help' for more information.
+fatal: detected dubious ownership in repository at '/var/www/html'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /var/www/html
+├ù Command failed with exit code 1
+Command failed with exit code 1

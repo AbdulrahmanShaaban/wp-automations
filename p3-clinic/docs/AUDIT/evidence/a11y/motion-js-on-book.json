@@ -1,0 +1,13 @@
+{
+ "jsMotionOnHtml": false,
+ "reducedMotionQuery": false,
+ "revealTotal": 0,
+ "hiddenCount": 0,
+ "notInCount": 0,
+ "hiddenSample": [],
+ "rule": "no-.rule",
+ "scrollBehavior": "smooth",
+ "anyTransition": 1,
+ "bodyTextLen": 643,
+ "bookingFormVisible": true
+}

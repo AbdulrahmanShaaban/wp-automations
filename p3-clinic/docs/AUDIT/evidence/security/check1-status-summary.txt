@@ -1,0 +1,9 @@
+﻿wp-login -> 200
+xmlrpc-get -> 405
+wp-cron -> 200
+wp-json-index -> 200
+readme -> 200
+license -> 200
+404-page -> 404
+wp-admin-redirect -> 302
+admin-post -> 200

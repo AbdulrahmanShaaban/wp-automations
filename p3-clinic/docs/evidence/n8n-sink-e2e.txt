@@ -1,0 +1,2 @@
+{"at":"2026-10-08T13:01:09.448Z","listening":9333,"path":"/siraj-sink"}
+{"at":"2026-10-08T13:01:20.952Z","signature":"VALID","skewSeconds":0,"bodyParse":"ok","event":"booking.created","booking":{"id":34,"name":"سارة عبد الرحمن","phone":"+201012345678","service":"cleaning","service_label":"تنظيف وتلميع","date":"2026-11-02","notes":"أول زيارة، morningZX9 الموعد.","created_at":"2026-10-08T13:01:20"}}

@@ -1,0 +1,1793 @@
+{
+  "generatedAt": "2026-10-06T07:23:39.643Z",
+  "mode": "extract-from-saved-json",
+  "pages": {
+    "home": {
+      "url": "http://localhost:8888/",
+      "fetchedAt": "2026-10-06T07:16:20.349Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "performance": 84,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcpMs": 2426.3742,
+        "fcp": "2.4 s",
+        "lcpMs": 2576.7570000000005,
+        "lcp": "2.6 s",
+        "tbtMs": 26,
+        "tbt": "30 ms",
+        "cls": 0.13251773849592155,
+        "clsDisp": "0.133",
+        "ttiMs": 3343.7092800000005,
+        "tti": "3.3 s",
+        "ttfbMs": 3099,
+        "ttfb": "Root document took 3,100 ms",
+        "speedIndexMs": 6237.344065985912,
+        "speedIndex": "6.2 s",
+        "totalByteWeightBytes": 252750,
+        "totalByteWeight": "Total size was 247 KiB"
+      },
+      "lcpElement": {
+        "selector": "div.wp-block-group > div.wp-block-group > div.wp-block-group > h1.wp-block-heading",
+        "snippet": "<h1 class=\"wp-block-heading hero-title\">",
+        "label": "قطع تلبسها كل يوم، بجودة تحسّها"
+      },
+      "lcpSplitMs": {
+        "timeToFirstByte": 3103,
+        "elementRenderDelay": 643
+      },
+      "clsUnattributed": 0,
+      "renderBlocking": {
+        "wastedMs": 5966,
+        "items": 12,
+        "top": [
+          {
+            "url": "https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;600;800&display=swap",
+            "wastedMs": 949,
+            "bytes": 1594
+          },
+          {
+            "url": "/wp-includes/js/jquery/jquery.js?ver=3.7.1",
+            "wastedMs": 1126,
+            "bytes": 85437
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.js?ver=11.1.2",
+            "wastedMs": 374,
+            "bytes": 7372
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.js?ver=11.1.2",
+            "wastedMs": 224,
+            "bytes": 3002
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks-rtl.css?ver=1790077202",
+            "wastedMs": 224,
+            "bytes": 3000
+          },
+          {
+            "url": "/wp-includes/js/jquery/jquery-migrate.js?ver=3.4.1",
+            "wastedMs": 524,
+            "bytes": 10521
+          },
+          {
+            "url": "/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.2",
+            "wastedMs": 224,
+            "bytes": 4124
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/css/woocommerce-rtl.css?ver=11.1.2",
+            "wastedMs": 675,
+            "bytes": 12131
+          }
+        ]
+      },
+      "requests": {
+        "total": 24,
+        "js": {
+          "count": 11,
+          "transfer": 133894
+        },
+        "css": {
+          "count": 8,
+          "transfer": 33513
+        },
+        "images": {
+          "count": 1,
+          "transfer": 996
+        },
+        "fonts": {
+          "count": 2,
+          "transfer": 64417,
+          "urls": [
+            "https://fonts.gstatic.com/s/cairo/v31/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA.woff2",
+            "https://fonts.gstatic.com/s/cairo/v31/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1.woff2"
+          ]
+        },
+        "byType": {
+          "Document": {
+            "count": 1,
+            "transfer": 18321
+          },
+          "Stylesheet": {
+            "count": 8,
+            "transfer": 33513
+          },
+          "Script": {
+            "count": 11,
+            "transfer": 133894
+          },
+          "Font": {
+            "count": 2,
+            "transfer": 64417
+          },
+          "Other": {
+            "count": 1,
+            "transfer": 1608
+          },
+          "Image": {
+            "count": 1,
+            "transfer": 996
+          }
+        }
+      },
+      "clsSources": [
+        {
+          "score": 0.132,
+          "selector": "div.wp-block-group > div.wp-block-group > div.wp-block-group > h1.wp-block-heading",
+          "label": "قطع تلبسها كل يوم، بجودة تحسّها",
+          "cause": "Web font loaded"
+        },
+        {
+          "score": 0,
+          "selector": "div.wp-site-blocks > div.wp-block-template-part > aside.wp-block-group > p.has-text-align-center",
+          "label": "شحن مجاني فوق 1,500 ج.م · كاش عند الاستلام · متجر تجريبي (Demo)",
+          "cause": "Web font loaded"
+        }
+      ],
+      "tbtAttribution": {
+        "longTasks": [
+          {
+            "url": "/",
+            "durationMs": 553,
+            "startTime": 894
+          },
+          {
+            "url": "/",
+            "durationMs": 114,
+            "startTime": 1530
+          },
+          {
+            "url": "/wp-includes/js/jquery/jquery.js?ver=3.7.1",
+            "durationMs": 102,
+            "startTime": 3377
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.js?ver=11.1.2",
+            "durationMs": 99,
+            "startTime": 1644
+          },
+          {
+            "url": "/",
+            "durationMs": 64,
+            "startTime": 1785
+          },
+          {
+            "url": "Unattributable",
+            "durationMs": 58,
+            "startTime": 824
+          }
+        ],
+        "scriptMs": [
+          {
+            "url": "/",
+            "scriptingMs": 10,
+            "parseCompileMs": 21,
+            "totalMs": 1666
+          },
+          {
+            "url": "Unattributable",
+            "scriptingMs": 6,
+            "parseCompileMs": 0,
+            "totalMs": 278
+          },
+          {
+            "url": "/wp-includes/js/jquery/jquery.js?ver=3.7.1",
+            "scriptingMs": 122,
+            "parseCompileMs": 35,
+            "totalMs": 168
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.js?ver=11.1.2",
+            "scriptingMs": 61,
+            "parseCompileMs": 1,
+            "totalMs": 62
+          }
+        ],
+        "mainthread": [
+          {
+            "group": "styleLayout",
+            "durationMs": 1470
+          },
+          {
+            "group": "other",
+            "durationMs": 346
+          },
+          {
+            "group": "scriptEvaluation",
+            "durationMs": 248
+          },
+          {
+            "group": "parseHTML",
+            "durationMs": 86
+          },
+          {
+            "group": "scriptParseCompile",
+            "durationMs": 76
+          },
+          {
+            "group": "paintCompositeRender",
+            "durationMs": 63
+          }
+        ]
+      },
+      "opportunities": [
+        {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 165814,
+          "items": 17
+        },
+        {
+          "id": "unminified-javascript",
+          "title": "Minify JavaScript",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 55195,
+          "items": 5
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 47856,
+          "items": 1
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 11717,
+          "items": 1
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 5966,
+          "items": 12
+        }
+      ],
+      "failedAudits": [
+        "first-contentful-paint",
+        "largest-contentful-paint",
+        "speed-index",
+        "cumulative-layout-shift",
+        "cls-culprits-insight",
+        "forced-reflow-insight",
+        "lcp-breakdown-insight",
+        "network-dependency-tree-insight"
+      ]
+    },
+    "shop": {
+      "url": "http://localhost:8888/shop/",
+      "fetchedAt": "2026-10-06T07:16:39.307Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "performance": 66,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcpMs": 3660.0000867033204,
+        "fcp": "3.7 s",
+        "lcpMs": 4712.528930054981,
+        "lcp": "4.7 s",
+        "tbtMs": 99.50000000000045,
+        "tbt": "100 ms",
+        "cls": 0.009374733519409451,
+        "clsDisp": "0.009",
+        "ttiMs": 5264.821099063622,
+        "tti": "5.3 s",
+        "ttfbMs": 5714,
+        "ttfb": "Root document took 5,710 ms",
+        "speedIndexMs": 10939.76164467124,
+        "speedIndex": "10.9 s",
+        "totalByteWeightBytes": 403541,
+        "totalByteWeight": "Total size was 394 KiB"
+      },
+      "lcpElement": {
+        "selector": "li.wc-block-product > div.wc-block-components-product-image > a > img.attachment-large",
+        "snippet": "<img width=\"800\" height=\"1000\" src=\"http://localhost:8888/wp-content/uploads/2026/10/abaya-600x750.jpg\" class=\"attachment-large size-large\" alt=\"عباية كتان مطرّزة\" data-testid=\"product-image\" data-ima",
+        "label": "عباية كتان مطرّزة"
+      },
+      "lcpSplitMs": {
+        "timeToFirstByte": 5724,
+        "resourceLoadDelay": 789,
+        "resourceLoadDuration": 482,
+        "elementRenderDelay": 107
+      },
+      "clsUnattributed": 0,
+      "renderBlocking": {
+        "wastedMs": 9893,
+        "items": 16,
+        "top": [
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.js?ver=11.1.2",
+            "wastedMs": 534,
+            "bytes": 7372
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.js?ver=11.1.2",
+            "wastedMs": 384,
+            "bytes": 3002
+          },
+          {
+            "url": "/wp-includes/js/jquery/jquery.js?ver=3.7.1",
+            "wastedMs": 2038,
+            "bytes": 85437
+          },
+          {
+            "url": "/wp-includes/js/jquery/jquery-migrate.js?ver=3.4.1",
+            "wastedMs": 685,
+            "bytes": 10521
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/css/woocommerce-rtl.css?ver=11.1.2",
+            "wastedMs": 685,
+            "bytes": 12130
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/css/woocommerce-layout-rtl.css?ver=11.1.2",
+            "wastedMs": 384,
+            "bytes": 3830
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen-rtl.css?ver=11.1.2",
+            "wastedMs": 384,
+            "bytes": 1761
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/css/woocommerce-blocktheme-rtl.css?ver=11.1.2",
+            "wastedMs": 384,
+            "bytes": 2511
+          }
+        ]
+      },
+      "requests": {
+        "total": 43,
+        "js": {
+          "count": 17,
+          "transfer": 170274
+        },
+        "css": {
+          "count": 12,
+          "transfer": 37292
+        },
+        "images": {
+          "count": 9,
+          "transfer": 102395
+        },
+        "fonts": {
+          "count": 2,
+          "transfer": 64417,
+          "urls": [
+            "https://fonts.gstatic.com/s/cairo/v31/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1.woff2",
+            "https://fonts.gstatic.com/s/cairo/v31/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA.woff2"
+          ]
+        },
+        "byType": {
+          "Document": {
+            "count": 1,
+            "transfer": 25490
+          },
+          "Stylesheet": {
+            "count": 12,
+            "transfer": 37292
+          },
+          "Script": {
+            "count": 17,
+            "transfer": 170274
+          },
+          "Font": {
+            "count": 2,
+            "transfer": 64417
+          },
+          "Image": {
+            "count": 9,
+            "transfer": 102395
+          },
+          "Fetch": {
+            "count": 1,
+            "transfer": 2064
+          },
+          "Other": {
+            "count": 1,
+            "transfer": 1608
+          }
+        }
+      },
+      "clsSources": [
+        {
+          "score": 0.007,
+          "selector": "div.wp-site-blocks > div.wp-block-template-part > aside.wp-block-group > p.has-text-align-center",
+          "label": "شحن مجاني فوق 1,500 ج.م · كاش عند الاستلام · متجر تجريبي (Demo)",
+          "cause": "Web font loaded"
+        },
+        {
+          "score": 0.003,
+          "selector": "div.wp-site-blocks > div.wp-block-template-part > aside.wp-block-group > p.has-text-align-center",
+          "label": "شحن مجاني فوق 1,500 ج.م · كاش عند الاستلام · متجر تجريبي (Demo)",
+          "cause": "Web font loaded"
+        }
+      ],
+      "tbtAttribution": {
+        "longTasks": [
+          {
+            "url": "/shop/",
+            "durationMs": 459,
+            "startTime": 1097
+          },
+          {
+            "url": "Unattributable",
+            "durationMs": 157,
+            "startTime": 1783
+          },
+          {
+            "url": "Unattributable",
+            "durationMs": 128,
+            "startTime": 1655
+          },
+          {
+            "url": "Unattributable",
+            "durationMs": 120,
+            "startTime": 4024
+          },
+          {
+            "url": "/wp-includes/js/jquery/jquery.js?ver=3.7.1",
+            "durationMs": 103,
+            "startTime": 5512
+          },
+          {
+            "url": "Unattributable",
+            "durationMs": 72,
+            "startTime": 985
+          }
+        ],
+        "scriptMs": [
+          {
+            "url": "/shop/",
+            "scriptingMs": 29,
+            "parseCompileMs": 6,
+            "totalMs": 1294
+          },
+          {
+            "url": "Unattributable",
+            "scriptingMs": 338,
+            "parseCompileMs": 0,
+            "totalMs": 849
+          },
+          {
+            "url": "/wp-includes/js/jquery/jquery.js?ver=3.7.1",
+            "scriptingMs": 150,
+            "parseCompileMs": 40,
+            "totalMs": 206
+          }
+        ],
+        "mainthread": [
+          {
+            "group": "styleLayout",
+            "durationMs": 1057
+          },
+          {
+            "group": "scriptEvaluation",
+            "durationMs": 647
+          },
+          {
+            "group": "other",
+            "durationMs": 633
+          },
+          {
+            "group": "parseHTML",
+            "durationMs": 117
+          },
+          {
+            "group": "scriptParseCompile",
+            "durationMs": 74
+          },
+          {
+            "group": "paintCompositeRender",
+            "durationMs": 39
+          }
+        ]
+      },
+      "opportunities": [
+        {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 307721,
+          "items": 35
+        },
+        {
+          "id": "unminified-javascript",
+          "title": "Minify JavaScript",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 63436,
+          "items": 6
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 50454,
+          "items": 1
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 11696,
+          "items": 1
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 9893,
+          "items": 16
+        }
+      ],
+      "failedAudits": [
+        "first-contentful-paint",
+        "largest-contentful-paint",
+        "speed-index",
+        "interactive",
+        "lcp-breakdown-insight",
+        "lcp-discovery-insight",
+        "network-dependency-tree-insight"
+      ]
+    },
+    "product": {
+      "url": "http://localhost:8888/product/embroidered-abaya/",
+      "fetchedAt": "2026-10-06T07:17:00.261Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "performance": 70,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcpMs": 2696.5094,
+        "fcp": "2.7 s",
+        "lcpMs": 4549.0198,
+        "lcp": "4.5 s",
+        "tbtMs": 36.5,
+        "tbt": "40 ms",
+        "cls": 0.005628839480245278,
+        "clsDisp": "0.006",
+        "ttiMs": 4750.475310000001,
+        "tti": "4.8 s",
+        "ttfbMs": 10551,
+        "ttfb": "Root document took 10,550 ms",
+        "speedIndexMs": 17694.254869519715,
+        "speedIndex": "17.7 s",
+        "totalByteWeightBytes": 371941,
+        "totalByteWeight": "Total size was 363 KiB"
+      },
+      "lcpElement": {
+        "selector": "div.woocommerce-product-gallery__wrapper > div.woocommerce-product-gallery__image > a > img.wp-post-image",
+        "snippet": "<img width=\"600\" height=\"750\" src=\"http://localhost:8888/wp-content/uploads/2026/10/abaya.jpg\" class=\"wp-post-image\" alt=\"عباية كتان مطرّزة\" data-caption=\"\" data-src=\"http://localhost:8888/wp-content/",
+        "label": "عباية كتان مطرّزة"
+      },
+      "lcpSplitMs": {
+        "timeToFirstByte": 10565,
+        "resourceLoadDelay": 36,
+        "resourceLoadDuration": 734,
+        "elementRenderDelay": 957
+      },
+      "clsUnattributed": 0,
+      "renderBlocking": {
+        "wastedMs": 7202,
+        "items": 15,
+        "top": [
+          {
+            "url": "/wp-includes/js/jquery/jquery.js?ver=3.7.1",
+            "wastedMs": 1061,
+            "bytes": 85437
+          },
+          {
+            "url": "/wp-includes/js/jquery/jquery-migrate.js?ver=3.4.1",
+            "wastedMs": 455,
+            "bytes": 10521
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.min.css?ver=11.1.2",
+            "wastedMs": 303,
+            "bytes": 2297
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/css/photoswipe/photoswipe.min.css?ver=11.1.2",
+            "wastedMs": 303,
+            "bytes": 1321
+          },
+          {
+            "url": "/wp-content/themes/nilad-theme/style.css?ver=0.1.0",
+            "wastedMs": 455,
+            "bytes": 4558
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/css/woocommerce-rtl.css?ver=11.1.2",
+            "wastedMs": 606,
+            "bytes": 12130
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen-rtl.css?ver=11.1.2",
+            "wastedMs": 303,
+            "bytes": 1761
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/css/woocommerce-layout-rtl.css?ver=11.1.2",
+            "wastedMs": 303,
+            "bytes": 3830
+          }
+        ]
+      },
+      "requests": {
+        "total": 38,
+        "js": {
+          "count": 18,
+          "transfer": 216582
+        },
+        "css": {
+          "count": 13,
+          "transfer": 39812
+        },
+        "images": {
+          "count": 3,
+          "transfer": 27229
+        },
+        "fonts": {
+          "count": 2,
+          "transfer": 64417,
+          "urls": [
+            "https://fonts.gstatic.com/s/cairo/v31/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1.woff2",
+            "https://fonts.gstatic.com/s/cairo/v31/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA.woff2"
+          ]
+        },
+        "byType": {
+          "Document": {
+            "count": 1,
+            "transfer": 22292
+          },
+          "Stylesheet": {
+            "count": 13,
+            "transfer": 39812
+          },
+          "Script": {
+            "count": 18,
+            "transfer": 216582
+          },
+          "Image": {
+            "count": 3,
+            "transfer": 27229
+          },
+          "Font": {
+            "count": 2,
+            "transfer": 64417
+          },
+          "Other": {
+            "count": 1,
+            "transfer": 1608
+          }
+        }
+      },
+      "clsSources": [
+        {
+          "score": 0.005,
+          "selector": "main#wp--skip-link--target > div.wp-block-columns > div.wp-block-column > h1.wp-block-post-title",
+          "label": "عباية كتان مطرّزة",
+          "cause": "Media element lacking an explicit size, Web font loaded"
+        },
+        {
+          "score": 0,
+          "selector": "div.wp-site-blocks > div.wp-block-template-part > aside.wp-block-group > p.has-text-align-center",
+          "label": "شحن مجاني فوق 1,500 ج.م · كاش عند الاستلام · متجر تجريبي (Demo)",
+          "cause": "Media element lacking an explicit size, Web font loaded"
+        }
+      ],
+      "tbtAttribution": {
+        "longTasks": [
+          {
+            "url": "/product/embroidered-abaya/",
+            "durationMs": 358,
+            "startTime": 991
+          },
+          {
+            "url": "/wp-includes/js/jquery/jquery.js?ver=3.7.1",
+            "durationMs": 123,
+            "startTime": 4696
+          },
+          {
+            "url": "/product/embroidered-abaya/",
+            "durationMs": 67,
+            "startTime": 1418
+          },
+          {
+            "url": "/wp-includes/js/jquery/jquery-migrate.js?ver=3.4.1",
+            "durationMs": 58,
+            "startTime": 2422
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.js?ver=11.1.2",
+            "durationMs": 50,
+            "startTime": 2574
+          }
+        ],
+        "scriptMs": [
+          {
+            "url": "/product/embroidered-abaya/",
+            "scriptingMs": 9,
+            "parseCompileMs": 13,
+            "totalMs": 1168
+          },
+          {
+            "url": "Unattributable",
+            "scriptingMs": 24,
+            "parseCompileMs": 0,
+            "totalMs": 340
+          },
+          {
+            "url": "/wp-includes/js/jquery/jquery.js?ver=3.7.1",
+            "scriptingMs": 223,
+            "parseCompileMs": 40,
+            "totalMs": 292
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.js?ver=11.1.2",
+            "scriptingMs": 49,
+            "parseCompileMs": 1,
+            "totalMs": 51
+          }
+        ],
+        "mainthread": [
+          {
+            "group": "styleLayout",
+            "durationMs": 924
+          },
+          {
+            "group": "other",
+            "durationMs": 455
+          },
+          {
+            "group": "scriptEvaluation",
+            "durationMs": 381
+          },
+          {
+            "group": "parseHTML",
+            "durationMs": 139
+          },
+          {
+            "group": "scriptParseCompile",
+            "durationMs": 103
+          },
+          {
+            "group": "paintCompositeRender",
+            "durationMs": 43
+          }
+        ]
+      },
+      "opportunities": [
+        {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 280578,
+          "items": 30
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 88023,
+          "items": 3
+        },
+        {
+          "id": "unminified-javascript",
+          "title": "Minify JavaScript",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 77693,
+          "items": 8
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0.5,
+          "mode": "metricSavings",
+          "wasted": 11411,
+          "items": 1
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 7202,
+          "items": 15
+        }
+      ],
+      "failedAudits": [
+        "first-contentful-paint",
+        "largest-contentful-paint",
+        "speed-index",
+        "interactive",
+        "lcp-breakdown-insight",
+        "network-dependency-tree-insight"
+      ]
+    },
+    "cart": {
+      "url": "http://localhost:8888/cart/",
+      "fetchedAt": "2026-10-06T07:17:27.727Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "performance": 7,
+        "accessibility": 100,
+        "bestPractices": 96,
+        "seo": 69
+      },
+      "metrics": {
+        "fcpMs": 3544.8053999999993,
+        "fcp": "3.5 s",
+        "lcpMs": 14052.433599999998,
+        "lcp": "14.1 s",
+        "tbtMs": 1875.6119000000008,
+        "tbt": "1,880 ms",
+        "cls": 0.8086681075336315,
+        "clsDisp": "0.809",
+        "ttiMs": 14572.12731,
+        "tti": "14.6 s",
+        "ttfbMs": 4696,
+        "ttfb": "Root document took 4,700 ms",
+        "speedIndexMs": 15505.35141665836,
+        "speedIndex": "15.5 s",
+        "totalByteWeightBytes": 1660795,
+        "totalByteWeight": "Total size was 1,622 KiB"
+      },
+      "lcpElement": {
+        "selector": "li.wc-block-grid__product > a.wc-block-grid__product-link > div.wc-block-grid__product-image > img.attachment-woocommerce_thumbnail",
+        "snippet": "<img fetchpriority=\"high\" decoding=\"async\" width=\"300\" height=\"300\" src=\"http://localhost:8888/wp-content/uploads/2026/10/tee-300x300.jpg\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thum",
+        "label": "تيشيرت قطن أوفرسايز"
+      },
+      "lcpSplitMs": {
+        "timeToFirstByte": 4699,
+        "resourceLoadDelay": 20,
+        "resourceLoadDuration": 647,
+        "elementRenderDelay": 6820
+      },
+      "clsUnattributed": 0.019,
+      "renderBlocking": {
+        "wastedMs": 14425,
+        "items": 17,
+        "top": [
+          {
+            "url": "/wp-includes/js/jquery/jquery.js?ver=3.7.1",
+            "wastedMs": 1396,
+            "bytes": 85437
+          },
+          {
+            "url": "/wp-includes/js/jquery/jquery-migrate.js?ver=3.4.1",
+            "wastedMs": 944,
+            "bytes": 10521
+          },
+          {
+            "url": "/wp-includes/js/dist/development/react-refresh-entry.js?ver=0.14.0",
+            "wastedMs": 944,
+            "bytes": 8982
+          },
+          {
+            "url": "/wp-includes/js/dist/development/react-refresh-runtime.js?ver=0.14.0",
+            "wastedMs": 793,
+            "bytes": 6987
+          },
+          {
+            "url": "/wp-content/plugins/paymob-for-woocommerce/assets/css/paymob.css?ver=4.1.14",
+            "wastedMs": 642,
+            "bytes": 1421
+          },
+          {
+            "url": "/wp-content/themes/nilad-theme/style.css?ver=0.1.0",
+            "wastedMs": 793,
+            "bytes": 4558
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/css/woocommerce-rtl.css?ver=11.1.2",
+            "wastedMs": 1095,
+            "bytes": 12130
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen-rtl.css?ver=11.1.2",
+            "wastedMs": 642,
+            "bytes": 1761
+          }
+        ]
+      },
+      "requests": {
+        "total": 91,
+        "js": {
+          "count": 67,
+          "transfer": 1447450
+        },
+        "css": {
+          "count": 13,
+          "transfer": 55879
+        },
+        "images": {
+          "count": 6,
+          "transfer": 17585
+        },
+        "fonts": {
+          "count": 2,
+          "transfer": 64417,
+          "urls": [
+            "https://fonts.gstatic.com/s/cairo/v31/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1.woff2",
+            "https://fonts.gstatic.com/s/cairo/v31/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA.woff2"
+          ]
+        },
+        "byType": {
+          "Document": {
+            "count": 1,
+            "transfer": 71791
+          },
+          "Stylesheet": {
+            "count": 13,
+            "transfer": 55879
+          },
+          "Script": {
+            "count": 67,
+            "transfer": 1447450
+          },
+          "Image": {
+            "count": 6,
+            "transfer": 17585
+          },
+          "Font": {
+            "count": 2,
+            "transfer": 64417
+          },
+          "Fetch": {
+            "count": 1,
+            "transfer": 2064
+          },
+          "Other": {
+            "count": 1,
+            "transfer": 1608
+          }
+        }
+      },
+      "clsSources": [
+        {
+          "score": 0.768,
+          "selector": "div.wp-site-blocks > main#wp--skip-link--target > div.entry-content > div.wp-block-woocommerce-cart",
+          "label": "سلة مشترياتك فارغة في الوقت الحالي! جديد في المتجر تيشيرت قطن أوفرسايز 420 ج.م …",
+          "cause": null
+        },
+        {
+          "score": 0.041,
+          "selector": "body.rtl > div.wp-site-blocks > div.wp-block-template-part > footer.wp-block-group",
+          "label": "© 2026 نيلاد — متجر تجريبي (Demo) لا يبيع فعليًا الشحن والإرجاع · الخصوصية · تو…",
+          "cause": null
+        },
+        {
+          "score": 0.002,
+          "selector": "div.wp-site-blocks > div.wp-block-template-part > aside.wp-block-group > p.has-text-align-center",
+          "label": "شحن مجاني فوق 1,500 ج.م · كاش عند الاستلام · متجر تجريبي (Demo)",
+          "cause": "Web font loaded"
+        },
+        {
+          "score": 0,
+          "selector": "div.wp-site-blocks > div.wp-block-template-part > aside.wp-block-group > p.has-text-align-center",
+          "label": "شحن مجاني فوق 1,500 ج.م · كاش عند الاستلام · متجر تجريبي (Demo)",
+          "cause": "Web font loaded"
+        }
+      ],
+      "tbtAttribution": {
+        "longTasks": [
+          {
+            "url": "/wp-includes/js/dist/components.js?ver=9b751f17060211272a5c",
+            "durationMs": 929,
+            "startTime": 13877
+          },
+          {
+            "url": "/wp-includes/js/dist/plugins.js?ver=673d1e05ca49004ab160",
+            "durationMs": 429,
+            "startTime": 10073
+          },
+          {
+            "url": "/wp-includes/js/dist/vendor/react.js?ver=18.3.1.1",
+            "durationMs": 410,
+            "startTime": 11947
+          },
+          {
+            "url": "/cart/",
+            "durationMs": 242,
+            "startTime": 1349
+          },
+          {
+            "url": "/wp-includes/js/dist/vendor/react-dom.js?ver=18.3.1.1",
+            "durationMs": 181,
+            "startTime": 11766
+          },
+          {
+            "url": "/wp-includes/js/dist/vendor/react-dom.js?ver=18.3.1.1",
+            "durationMs": 136,
+            "startTime": 12433
+          }
+        ],
+        "scriptMs": [
+          {
+            "url": "/cart/",
+            "scriptingMs": 89,
+            "parseCompileMs": 97,
+            "totalMs": 1546
+          },
+          {
+            "url": "/wp-includes/js/dist/components.js?ver=9b751f17060211272a5c",
+            "scriptingMs": 384,
+            "parseCompileMs": 508,
+            "totalMs": 929
+          },
+          {
+            "url": "Unattributable",
+            "scriptingMs": 8,
+            "parseCompileMs": 0,
+            "totalMs": 727
+          },
+          {
+            "url": "/wp-includes/js/dist/vendor/react.js?ver=18.3.1.1",
+            "scriptingMs": 451,
+            "parseCompileMs": 11,
+            "totalMs": 469
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/client/blocks/cart-frontend.js?ver=d280e168288559e9bb34",
+            "scriptingMs": 243,
+            "parseCompileMs": 8,
+            "totalMs": 381
+          },
+          {
+            "url": "/wp-includes/js/dist/vendor/react-dom.js?ver=18.3.1.1",
+            "scriptingMs": 149,
+            "parseCompileMs": 162,
+            "totalMs": 312
+          }
+        ],
+        "mainthread": [
+          {
+            "group": "scriptEvaluation",
+            "durationMs": 2146
+          },
+          {
+            "group": "scriptParseCompile",
+            "durationMs": 1132
+          },
+          {
+            "group": "other",
+            "durationMs": 1019
+          },
+          {
+            "group": "styleLayout",
+            "durationMs": 907
+          },
+          {
+            "group": "parseHTML",
+            "durationMs": 293
+          },
+          {
+            "group": "paintCompositeRender",
+            "durationMs": 114
+          }
+        ]
+      },
+      "opportunities": [
+        {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 1518674,
+          "items": 82
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 540297,
+          "items": 6
+        },
+        {
+          "id": "unminified-javascript",
+          "title": "Minify JavaScript",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 344602,
+          "items": 20
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 14425,
+          "items": 17
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0.5,
+          "mode": "metricSavings",
+          "wasted": 11717,
+          "items": 1
+        }
+      ],
+      "failedAudits": [
+        "first-contentful-paint",
+        "largest-contentful-paint",
+        "speed-index",
+        "total-blocking-time",
+        "max-potential-fid",
+        "cumulative-layout-shift",
+        "interactive",
+        "image-size-responsive",
+        "valid-source-maps",
+        "is-crawlable",
+        "cls-culprits-insight",
+        "forced-reflow-insight",
+        "lcp-breakdown-insight",
+        "network-dependency-tree-insight"
+      ]
+    },
+    "checkout": {
+      "url": "http://localhost:8888/cart/",
+      "fetchedAt": "2026-10-06T07:18:01.468Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "performance": 20,
+        "accessibility": 100,
+        "bestPractices": 96,
+        "seo": 69
+      },
+      "metrics": {
+        "fcpMs": 4005.1884999999993,
+        "fcp": "4.0 s",
+        "lcpMs": 15559.4337,
+        "lcp": "15.6 s",
+        "tbtMs": 1640.8832499999999,
+        "tbt": "1,640 ms",
+        "cls": 0.21542585193428598,
+        "clsDisp": "0.215",
+        "ttiMs": 16695.004025000002,
+        "tti": "16.7 s",
+        "ttfbMs": 5264,
+        "ttfb": "Root document took 5,260 ms",
+        "speedIndexMs": 15678.567214500632,
+        "speedIndex": "15.7 s",
+        "totalByteWeightBytes": 1661385,
+        "totalByteWeight": "Total size was 1,622 KiB"
+      },
+      "lcpElement": {
+        "selector": "li.wc-block-grid__product > a.wc-block-grid__product-link > div.wc-block-grid__product-image > img.attachment-woocommerce_thumbnail",
+        "snippet": "<img fetchpriority=\"high\" decoding=\"async\" width=\"300\" height=\"300\" src=\"http://localhost:8888/wp-content/uploads/2026/10/tee-300x300.jpg\" class=\"attachment-woocommerce_thumbnail size-woocommerce_thum",
+        "label": "تيشيرت قطن أوفرسايز"
+      },
+      "lcpSplitMs": {
+        "timeToFirstByte": 6103,
+        "resourceLoadDelay": 20,
+        "resourceLoadDuration": 307,
+        "elementRenderDelay": 4489
+      },
+      "clsUnattributed": 0.007,
+      "renderBlocking": {
+        "wastedMs": 11007,
+        "items": 17,
+        "top": [
+          {
+            "url": "/wp-includes/js/jquery/jquery.js?ver=3.7.1",
+            "wastedMs": 1373,
+            "bytes": 85437
+          },
+          {
+            "url": "/wp-includes/js/jquery/jquery-migrate.js?ver=3.4.1",
+            "wastedMs": 735,
+            "bytes": 10521
+          },
+          {
+            "url": "/wp-includes/js/dist/development/react-refresh-entry.js?ver=0.14.0",
+            "wastedMs": 735,
+            "bytes": 8982
+          },
+          {
+            "url": "/wp-includes/js/dist/development/react-refresh-runtime.js?ver=0.14.0",
+            "wastedMs": 576,
+            "bytes": 6987
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/css/woocommerce-rtl.css?ver=11.1.2",
+            "wastedMs": 735,
+            "bytes": 12130
+          },
+          {
+            "url": "/wp-content/plugins/paymob-for-woocommerce/assets/css/paymob.css?ver=4.1.14",
+            "wastedMs": 416,
+            "bytes": 1421
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen-rtl.css?ver=11.1.2",
+            "wastedMs": 416,
+            "bytes": 1761
+          },
+          {
+            "url": "/wp-content/themes/nilad-theme/style.css?ver=0.1.0",
+            "wastedMs": 576,
+            "bytes": 4558
+          }
+        ]
+      },
+      "requests": {
+        "total": 92,
+        "js": {
+          "count": 67,
+          "transfer": 1447450
+        },
+        "css": {
+          "count": 13,
+          "transfer": 55879
+        },
+        "images": {
+          "count": 6,
+          "transfer": 17585
+        },
+        "fonts": {
+          "count": 2,
+          "transfer": 64417,
+          "urls": [
+            "https://fonts.gstatic.com/s/cairo/v31/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1.woff2",
+            "https://fonts.gstatic.com/s/cairo/v31/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA.woff2"
+          ]
+        },
+        "byType": {
+          "Other": {
+            "count": 2,
+            "transfer": 2196
+          },
+          "Document": {
+            "count": 1,
+            "transfer": 71793
+          },
+          "Stylesheet": {
+            "count": 13,
+            "transfer": 55879
+          },
+          "Script": {
+            "count": 67,
+            "transfer": 1447450
+          },
+          "Image": {
+            "count": 6,
+            "transfer": 17585
+          },
+          "Font": {
+            "count": 2,
+            "transfer": 64417
+          },
+          "Fetch": {
+            "count": 1,
+            "transfer": 2064
+          }
+        }
+      },
+      "clsSources": [
+        {
+          "score": 0.153,
+          "selector": "body.rtl > div.wp-site-blocks > div.wp-block-template-part > footer.wp-block-group",
+          "label": "© 2026 نيلاد — متجر تجريبي (Demo) لا يبيع فعليًا الشحن والإرجاع · الخصوصية · تو…",
+          "cause": null
+        },
+        {
+          "score": 0.041,
+          "selector": "body.rtl > div.wp-site-blocks > div.wp-block-template-part > footer.wp-block-group",
+          "label": "© 2026 نيلاد — متجر تجريبي (Demo) لا يبيع فعليًا الشحن والإرجاع · الخصوصية · تو…",
+          "cause": null
+        },
+        {
+          "score": 0.022,
+          "selector": "div.wp-site-blocks > main#wp--skip-link--target > div.entry-content > div.wp-block-woocommerce-cart",
+          "label": "سلة مشترياتك فارغة في الوقت الحالي! جديد في المتجر تيشيرت قطن أوفرسايز 420 ج.م …",
+          "cause": null
+        },
+        {
+          "score": 0.002,
+          "selector": "div.wp-site-blocks > div.wp-block-template-part > aside.wp-block-group > p.has-text-align-center",
+          "label": "شحن مجاني فوق 1,500 ج.م · كاش عند الاستلام · متجر تجريبي (Demo)",
+          "cause": "Web font loaded"
+        },
+        {
+          "score": 0,
+          "selector": "div.wp-site-blocks > div.wp-block-template-part > aside.wp-block-group > p.has-text-align-center",
+          "label": "شحن مجاني فوق 1,500 ج.م · كاش عند الاستلام · متجر تجريبي (Demo)",
+          "cause": "Web font loaded"
+        }
+      ],
+      "tbtAttribution": {
+        "longTasks": [
+          {
+            "url": "/wp-includes/js/dist/components.js?ver=9b751f17060211272a5c",
+            "durationMs": 903,
+            "startTime": 16095
+          },
+          {
+            "url": "/wp-includes/js/dist/vendor/react.js?ver=18.3.1.1",
+            "durationMs": 426,
+            "startTime": 13394
+          },
+          {
+            "url": "/wp-includes/js/dist/style-engine.js?ver=914befb08774033e6265",
+            "durationMs": 387,
+            "startTime": 12442
+          },
+          {
+            "url": "/cart/",
+            "durationMs": 304,
+            "startTime": 1868
+          },
+          {
+            "url": "/wp-includes/js/dist/vendor/react-dom.js?ver=18.3.1.1",
+            "durationMs": 188,
+            "startTime": 13206
+          },
+          {
+            "url": "/wp-includes/js/dist/vendor/react-dom.js?ver=18.3.1.1",
+            "durationMs": 134,
+            "startTime": 13820
+          }
+        ],
+        "scriptMs": [
+          {
+            "url": "/cart/",
+            "scriptingMs": 92,
+            "parseCompileMs": 64,
+            "totalMs": 1472
+          },
+          {
+            "url": "/wp-includes/js/dist/components.js?ver=9b751f17060211272a5c",
+            "scriptingMs": 314,
+            "parseCompileMs": 565,
+            "totalMs": 903
+          },
+          {
+            "url": "Unattributable",
+            "scriptingMs": 16,
+            "parseCompileMs": 0,
+            "totalMs": 730
+          },
+          {
+            "url": "/wp-includes/js/dist/vendor/react.js?ver=18.3.1.1",
+            "scriptingMs": 471,
+            "parseCompileMs": 14,
+            "totalMs": 489
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/client/blocks/cart-frontend.js?ver=d280e168288559e9bb34",
+            "scriptingMs": 244,
+            "parseCompileMs": 14,
+            "totalMs": 364
+          },
+          {
+            "url": "/wp-includes/js/dist/vendor/react-dom.js?ver=18.3.1.1",
+            "scriptingMs": 166,
+            "parseCompileMs": 168,
+            "totalMs": 335
+          }
+        ],
+        "mainthread": [
+          {
+            "group": "scriptEvaluation",
+            "durationMs": 2054
+          },
+          {
+            "group": "scriptParseCompile",
+            "durationMs": 1157
+          },
+          {
+            "group": "other",
+            "durationMs": 957
+          },
+          {
+            "group": "styleLayout",
+            "durationMs": 855
+          },
+          {
+            "group": "parseHTML",
+            "durationMs": 295
+          },
+          {
+            "group": "paintCompositeRender",
+            "durationMs": 144
+          }
+        ]
+      },
+      "opportunities": [
+        {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 1518674,
+          "items": 82
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 540297,
+          "items": 6
+        },
+        {
+          "id": "unminified-javascript",
+          "title": "Minify JavaScript",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 344602,
+          "items": 20
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 11717,
+          "items": 1
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 11007,
+          "items": 17
+        },
+        {
+          "id": "redirects",
+          "title": "Avoid multiple page redirects",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 868,
+          "items": 2
+        }
+      ],
+      "failedAudits": [
+        "first-contentful-paint",
+        "largest-contentful-paint",
+        "speed-index",
+        "total-blocking-time",
+        "max-potential-fid",
+        "cumulative-layout-shift",
+        "interactive",
+        "image-size-responsive",
+        "valid-source-maps",
+        "is-crawlable",
+        "cls-culprits-insight",
+        "lcp-breakdown-insight",
+        "network-dependency-tree-insight"
+      ]
+    },
+    "contact": {
+      "url": "http://localhost:8888/contact/",
+      "fetchedAt": "2026-10-06T07:18:32.722Z",
+      "lighthouseVersion": "13.5.0",
+      "scores": {
+        "performance": 93,
+        "accessibility": 100,
+        "bestPractices": 100,
+        "seo": 100
+      },
+      "metrics": {
+        "fcpMs": 2279.9444000000003,
+        "fcp": "2.3 s",
+        "lcpMs": 2583.0734,
+        "lcp": "2.6 s",
+        "tbtMs": 34.5,
+        "tbt": "30 ms",
+        "cls": 0.01297739665961439,
+        "clsDisp": "0.013",
+        "ttiMs": 3356.05235,
+        "tti": "3.4 s",
+        "ttfbMs": 1410,
+        "ttfb": "Root document took 1,410 ms",
+        "speedIndexMs": 3492.3035080047043,
+        "speedIndex": "3.5 s",
+        "totalByteWeightBytes": 251319,
+        "totalByteWeight": "Total size was 245 KiB"
+      },
+      "lcpElement": {
+        "selector": "div.wp-site-blocks > main#wp--skip-link--target > div.entry-content > p.wp-block-paragraph",
+        "snippet": "<p class=\"wp-block-paragraph\">",
+        "label": "تقدر تتصفّح المتجر وتضيف منتجات للسلة وتجربة خطوات الطلب من غير ما يتحصّل أي دفع"
+      },
+      "lcpSplitMs": {
+        "timeToFirstByte": 1423,
+        "elementRenderDelay": 404
+      },
+      "clsUnattributed": 0,
+      "renderBlocking": {
+        "wastedMs": 5632,
+        "items": 12,
+        "top": [
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks-rtl.css?ver=1790077202",
+            "wastedMs": 216,
+            "bytes": 3000
+          },
+          {
+            "url": "/wp-includes/js/jquery/jquery.js?ver=3.7.1",
+            "wastedMs": 974,
+            "bytes": 85437
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.js?ver=11.1.2",
+            "wastedMs": 368,
+            "bytes": 7372
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.js?ver=11.1.2",
+            "wastedMs": 216,
+            "bytes": 3002
+          },
+          {
+            "url": "/wp-includes/js/jquery/jquery-migrate.js?ver=3.4.1",
+            "wastedMs": 519,
+            "bytes": 10521
+          },
+          {
+            "url": "/wp-includes/blocks/navigation/style-rtl.css?ver=7.1.2",
+            "wastedMs": 216,
+            "bytes": 4124
+          },
+          {
+            "url": "https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;600;800&display=swap",
+            "wastedMs": 829,
+            "bytes": 1246
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/css/woocommerce-rtl.css?ver=11.1.2",
+            "wastedMs": 671,
+            "bytes": 12131
+          }
+        ]
+      },
+      "requests": {
+        "total": 24,
+        "js": {
+          "count": 11,
+          "transfer": 133894
+        },
+        "css": {
+          "count": 8,
+          "transfer": 33165
+        },
+        "images": {
+          "count": 1,
+          "transfer": 995
+        },
+        "fonts": {
+          "count": 2,
+          "transfer": 64417,
+          "urls": [
+            "https://fonts.gstatic.com/s/cairo/v31/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1.woff2",
+            "https://fonts.gstatic.com/s/cairo/v31/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA.woff2"
+          ]
+        },
+        "byType": {
+          "Document": {
+            "count": 1,
+            "transfer": 17239
+          },
+          "Stylesheet": {
+            "count": 8,
+            "transfer": 33165
+          },
+          "Script": {
+            "count": 11,
+            "transfer": 133894
+          },
+          "Font": {
+            "count": 2,
+            "transfer": 64417
+          },
+          "Other": {
+            "count": 1,
+            "transfer": 1608
+          },
+          "Image": {
+            "count": 1,
+            "transfer": 995
+          }
+        }
+      },
+      "clsSources": [
+        {
+          "score": 0.013,
+          "selector": "div.wp-site-blocks > main#wp--skip-link--target > div.entry-content > p.wp-block-paragraph",
+          "label": "تقدر تتصفّح المتجر وتضيف منتجات للسلة وتجربة خطوات الطلب من غير ما يتحصّل أي دفع …",
+          "cause": "Web font loaded"
+        },
+        {
+          "score": 0,
+          "selector": "div.wp-site-blocks > div.wp-block-template-part > aside.wp-block-group > p.has-text-align-center",
+          "label": "شحن مجاني فوق 1,500 ج.م · كاش عند الاستلام · متجر تجريبي (Demo)",
+          "cause": "Web font loaded"
+        }
+      ],
+      "tbtAttribution": {
+        "longTasks": [
+          {
+            "url": "/contact/",
+            "durationMs": 272,
+            "startTime": 880
+          },
+          {
+            "url": "/wp-includes/js/jquery/jquery.js?ver=3.7.1",
+            "durationMs": 119,
+            "startTime": 3373
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.js?ver=11.1.2",
+            "durationMs": 70,
+            "startTime": 1555
+          },
+          {
+            "url": "Unattributable",
+            "durationMs": 70,
+            "startTime": 1152
+          },
+          {
+            "url": "/wp-includes/js/jquery/jquery-migrate.js?ver=3.4.1",
+            "durationMs": 61,
+            "startTime": 1706
+          }
+        ],
+        "scriptMs": [
+          {
+            "url": "/contact/",
+            "scriptingMs": 7,
+            "parseCompileMs": 20,
+            "totalMs": 805
+          },
+          {
+            "url": "Unattributable",
+            "scriptingMs": 9,
+            "parseCompileMs": 0,
+            "totalMs": 286
+          },
+          {
+            "url": "/wp-includes/js/jquery/jquery.js?ver=3.7.1",
+            "scriptingMs": 124,
+            "parseCompileMs": 56,
+            "totalMs": 187
+          },
+          {
+            "url": "/wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.js?ver=11.1.2",
+            "scriptingMs": 55,
+            "parseCompileMs": 1,
+            "totalMs": 56
+          }
+        ],
+        "mainthread": [
+          {
+            "group": "styleLayout",
+            "durationMs": 658
+          },
+          {
+            "group": "other",
+            "durationMs": 336
+          },
+          {
+            "group": "scriptEvaluation",
+            "durationMs": 244
+          },
+          {
+            "group": "scriptParseCompile",
+            "durationMs": 97
+          },
+          {
+            "group": "parseHTML",
+            "durationMs": 83
+          },
+          {
+            "group": "paintCompositeRender",
+            "durationMs": 20
+          }
+        ]
+      },
+      "opportunities": [
+        {
+          "id": "cache-insight",
+          "title": "Use efficient cache lifetimes",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 165814,
+          "items": 17
+        },
+        {
+          "id": "unminified-javascript",
+          "title": "Minify JavaScript",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 55195,
+          "items": 5
+        },
+        {
+          "id": "unused-javascript",
+          "title": "Reduce unused JavaScript",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 48286,
+          "items": 1
+        },
+        {
+          "id": "unused-css-rules",
+          "title": "Reduce unused CSS",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 11717,
+          "items": 1
+        },
+        {
+          "id": "render-blocking-insight",
+          "title": "Render-blocking requests",
+          "score": 0,
+          "mode": "metricSavings",
+          "wasted": 5632,
+          "items": 12
+        }
+      ],
+      "failedAudits": [
+        "first-contentful-paint",
+        "largest-contentful-paint",
+        "speed-index",
+        "forced-reflow-insight",
+        "network-dependency-tree-insight"
+      ]
+    }
+  }
+}

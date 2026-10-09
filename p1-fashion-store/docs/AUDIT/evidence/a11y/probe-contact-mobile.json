@@ -1,0 +1,361 @@
+{
+ "page": "contact",
+ "url": "http://localhost:8888/contact/",
+ "viewport": {
+  "name": "mobile",
+  "w": 390,
+  "h": 844,
+  "mobile": true
+ },
+ "cartState": null,
+ "probe": {
+  "lang": "ar",
+  "dir": "rtl",
+  "title": "تواصل معنا – نيلاد",
+  "viewportMeta": "width=device-width, initial-scale=1",
+  "url": "/contact/",
+  "headings": [
+   {
+    "level": 1,
+    "text": "تواصل معنا",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "قنوات التواصل",
+    "visible": true
+   },
+   {
+    "level": 2,
+    "text": "قبل ما تطلب",
+    "visible": true
+   }
+  ],
+  "h1Count": 1,
+  "hiddenHeadingCount": 0,
+  "landmarks": {
+   "header": 1,
+   "nav": 2,
+   "main": 1,
+   "footer": 1,
+   "aside": 1,
+   "bodyDirectMain": true,
+   "roleMain": 0,
+   "bannerTopLevel": false,
+   "contentinfoTopLevel": false
+  },
+  "focusableCount": 9,
+  "firstFocusable": [
+   {
+    "tag": "a",
+    "text": "تخطى إلى المحتوى",
+    "href": "#wp--skip-link--target",
+    "cls": "skip-link screen-reader-text"
+   },
+   {
+    "tag": "a",
+    "text": "نيلاد",
+    "href": "http://localhost:8888",
+    "cls": ""
+   },
+   {
+    "tag": "a",
+    "text": "الجديد",
+    "href": "/#new",
+    "cls": "wp-block-navigation-item__content"
+   },
+   {
+    "tag": "a",
+    "text": "التصنيفات",
+    "href": "/#cats",
+    "cls": "wp-block-navigation-item__content"
+   },
+   {
+    "tag": "a",
+    "text": "الأكثر مبيعًا",
+    "href": "/#best",
+    "cls": "wp-block-navigation-item__content"
+   },
+   {
+    "tag": "a",
+    "text": "عن نيلاد",
+    "href": "/#about",
+    "cls": "wp-block-navigation-item__content"
+   }
+  ],
+  "skipLink": {
+   "present": true,
+   "href": "#wp--skip-link--target",
+   "text": "تخطى إلى المحتوى",
+   "isFirstFocusable": true
+  },
+  "images": {
+   "total": 1,
+   "missingAlt": 0,
+   "emptyAlt": 0,
+   "sample": [
+    {
+     "alt": "🛒",
+     "src": "1f6d2.svg",
+     "w": 17
+    }
+   ],
+   "svgMissingLabel": 0
+  },
+  "digits": {
+   "latin": 8,
+   "eastern": 0,
+   "egp": 1
+  },
+  "typography": [
+   {
+    "tag": "a",
+    "cls": "skip-link screen-reader-text",
+    "text": "تخطى إلى المحتوى",
+    "letterSpacing": "normal",
+    "lineHeight": "28.9px",
+    "fontSize": "17px",
+    "fontStyle": "normal",
+    "fontFamily": "Cairo, Inter, system-ui",
+    "textAlign": "start"
+   },
+   {
+    "tag": "p",
+    "cls": "has-text-align-center has-sm-font-size wp-block-pa",
+    "text": "شحن مجاني فوق 1,500 ج.م · كاش عند الاستلام · متجر ",
+    "letterSpacing": "normal",
+    "lineHeight": "23.8px",
+    "fontSize": "14px",
+    "fontStyle": "normal",
+    "fontFamily": "Cairo, Inter, system-ui",
+    "textAlign": "center"
+   },
+   {
+    "tag": "a",
+    "cls": "",
+    "text": "نيلاد",
+    "letterSpacing": "-0.18px",
+    "lineHeight": "30.6px",
+    "fontSize": "18px",
+    "fontStyle": "normal",
+    "fontFamily": "Cairo, Inter, system-ui",
+    "textAlign": "start"
+   },
+   {
+    "tag": "h1",
+    "cls": "wp-block-post-title",
+    "text": "تواصل معنا",
+    "letterSpacing": "normal",
+    "lineHeight": "57.8px",
+    "fontSize": "34px",
+    "fontStyle": "normal",
+    "fontFamily": "Cairo, Inter, system-ui",
+    "textAlign": "start"
+   },
+   {
+    "tag": "h2",
+    "cls": "wp-block-heading",
+    "text": "قنوات التواصل",
+    "letterSpacing": "normal",
+    "lineHeight": "35px",
+    "fontSize": "28px",
+    "fontStyle": "normal",
+    "fontFamily": "Cairo, Inter, system-ui",
+    "textAlign": "start"
+   }
+  ],
+  "bodyStyle": {
+   "lineHeight": "28.9px",
+   "fontSize": "17px",
+   "fontFamily": "Cairo, Inter, system-ui, -apple-system, \"Segoe UI\", Tahoma, sans-serif",
+   "letterSpacing": "normal",
+   "textAlign": "start",
+   "direction": "rtl"
+  },
+  "targets": [
+   {
+    "group": "other",
+    "tag": "a",
+    "cls": "skip-link screen-reader-text",
+    "text": "تخطى إلى المحتوى",
+    "w": 1,
+    "h": 1,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "header",
+    "tag": "a",
+    "cls": "",
+    "text": "نيلاد",
+    "w": 36.5,
+    "h": 33,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "header",
+    "tag": "a",
+    "cls": "wp-block-button__link has-text-color has-surface-background-",
+    "text": "السلة",
+    "w": 100.4,
+    "h": 57.5,
+    "padT": "13.339px",
+    "padB": "13.339px"
+   },
+   {
+    "group": "header",
+    "tag": "a",
+    "cls": "wp-block-button__link has-on-primary-text-color has-primary-",
+    "text": "اتسوّق الآن",
+    "w": 118.3,
+    "h": 55.5,
+    "padT": "13.339px",
+    "padB": "13.339px"
+   },
+   {
+    "group": "footer",
+    "tag": "a",
+    "cls": "",
+    "text": "الشحن والإرجاع",
+    "w": 84.7,
+    "h": 26,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "footer",
+    "tag": "a",
+    "cls": "",
+    "text": "الخصوصية",
+    "w": 59.8,
+    "h": 26,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "footer",
+    "tag": "a",
+    "cls": "",
+    "text": "تواصل معنا",
+    "w": 66.1,
+    "h": 26,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "dock",
+    "tag": "a",
+    "cls": "dock-btn dock-cart",
+    "text": "السلة",
+    "w": 179,
+    "h": 50,
+    "padT": "0px",
+    "padB": "0px"
+   },
+   {
+    "group": "dock",
+    "tag": "a",
+    "cls": "dock-btn dock-wa",
+    "text": "واتساب",
+    "w": 179,
+    "h": 50,
+    "padT": "0px",
+    "padB": "0px"
+   }
+  ],
+  "targetTotal": 9,
+  "forms": [],
+  "reveal": {
+   "total": 0,
+   "hiddenNow": 0,
+   "sample": []
+  },
+  "motion": {
+   "scrollBehavior": "smooth",
+   "reducedMotionQuery": false,
+   "transitionCount": 2
+  },
+  "foreignRuns": [],
+  "contrast": [
+   {
+    "sel": "body",
+    "text": "تخطى إلى المحتوى شحن مجاني فوق 1,500 ج.م · كا",
+    "fg": "rgb(27, 26, 23)",
+    "bg": "rgb(250, 248, 244)",
+    "bgImage": false,
+    "bgEl": "rtl wp-singular page-template-default page page-id",
+    "fontSize": 17,
+    "fontWeight": 400,
+    "lineHeight": "28.9px",
+    "w": 390,
+    "h": 1137
+   },
+   {
+    "sel": ".site-footer p",
+    "text": "© 2026 نيلاد — متجر تجريبي (Demo) لا يبيع فعل",
+    "fg": "rgb(95, 90, 82)",
+    "bg": "rgb(250, 248, 244)",
+    "bgImage": false,
+    "bgEl": "rtl wp-singular page-template-default page page-id",
+    "fontSize": 14,
+    "fontWeight": 400,
+    "lineHeight": "23.8px",
+    "w": 273,
+    "h": 24
+   },
+   {
+    "sel": ".announce p",
+    "text": "شحن مجاني فوق 1,500 ج.م · كاش عند الاستلام · ",
+    "fg": "rgb(27, 26, 23)",
+    "bg": "rgb(228, 241, 236)",
+    "bgImage": false,
+    "bgEl": "wp-block-group announce has-global-padding is-layo",
+    "fontSize": 14,
+    "fontWeight": 600,
+    "lineHeight": "23.8px",
+    "w": 350,
+    "h": 48
+   },
+   {
+    "sel": ".dock .dock-wa",
+    "text": "واتساب",
+    "fg": "rgb(255, 255, 255)",
+    "bg": "rgb(11, 107, 87)",
+    "bgImage": false,
+    "bgEl": "dock-btn dock-wa",
+    "fontSize": 17,
+    "fontWeight": 700,
+    "lineHeight": "28.9px",
+    "w": 179,
+    "h": 50
+   },
+   {
+    "sel": ".dock .dock-cart",
+    "text": "السلة",
+    "fg": "rgb(27, 26, 23)",
+    "bg": "rgb(255, 255, 255)",
+    "bgImage": false,
+    "bgEl": "dock-btn dock-cart",
+    "fontSize": 17,
+    "fontWeight": 700,
+    "lineHeight": "28.9px",
+    "w": 179,
+    "h": 50
+   },
+   {
+    "sel": ".wp-block-site-title a",
+    "text": "نيلاد",
+    "fg": "rgb(27, 26, 23)",
+    "bg": "color(srgb 0.980392 0.972549 0.956863 / 0.88)",
+    "bgImage": false,
+    "bgEl": "wp-block-group site-header has-global-padding is-l",
+    "fontSize": 18,
+    "fontWeight": 800,
+    "lineHeight": "30.6px",
+    "w": 37,
+    "h": 33
+   }
+  ]
+ }
+}

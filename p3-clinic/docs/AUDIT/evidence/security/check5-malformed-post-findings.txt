@@ -1,0 +1,22 @@
+bytes: 65005
+has role="alert" summary: true
+has role="status" success block: false
+aria-invalid="true" occurrences: 2
+
+--- error <li> items rendered ---
+  الاسم بالكامل: من فضلك اكتب الاسم بالكامل، 3 أحرف على الأقل.
+  رقم الموبايل: رقم الموبايل غير صحيح. مثال: 01012345678
+
+--- XSS probe: does the literal <script>alert(1)</script> survive in the response? ---
+  literal "<script>alert(1)</script>" present: false
+  "alert(1)" present anywhere: false
+  siraj_name input tag: <input type="text" autocomplete="name" maxlength="120" class="siraj-input" id="siraj-name-1" name="siraj_name" aria-required="true" aria-invalid="true" aria-describedby="siraj-name-1-error" />
+  siraj_phone input tag: <input dir="ltr" type="tel" inputmode="tel" autocomplete="tel" class="siraj-input" id="siraj-phone-1" name="siraj_phone" value="12345" aria-required="true" aria-invalid="true" aria-describedby="siraj-phone-1-hint siraj-phone-1-error" />
+
+--- error paragraphs with ids (for aria-describedby wiring) ---
+  siraj-name-1-error -> من فضلك اكتب الاسم بالكامل، 3 أحرف على الأقل.
+  siraj-phone-1-error -> رقم الموبايل غير صحيح. مثال: 01012345678
+
+--- page generator / debug markers in this response ---
+  generator: WordPress 7.1.3
+  php warning markers: none

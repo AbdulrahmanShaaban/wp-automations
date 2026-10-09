@@ -1,0 +1,26 @@
+﻿node.exe : i Starting 'wp eval echo display_errors=.ini_get(display_errors). log_errors=.ini_get(log_errors). 
+error_log=.ini_get(error_log).PHP_EOL;' on the cli container. 
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (i Starting 'wp ...cli container. :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Error: Too many positional arguments: log_errors=.ini_get(log_errors). error_log=.ini_get(error_log).PHP_EOL;
+├ù Command failed with exit code 1
+Command failed with exit code 1
+node.exe : i Starting 'wp eval echo (defined(WP_DEBUG_DISPLAY) ? (WP_DEBUG_DISPLAY=. (WP_DEBUG_DISPLAY ? true:false)) 
+: WP_DEBUG_DISPLAY undefined).PHP_EOL; echo (defined(WP_DEBUG_LOG) ? (WP_DEBUG_LOG=. (WP_DEBUG_LOG ? true:false)) : 
+WP_DEBUG_LOG undefined).PHP_EOL;' on the cli container. 
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (i Starting 'wp ...cli container. :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+Error: Too many positional arguments: undefined).PHP_EOL; echo (defined(WP_DEBUG_LOG) ? (WP_DEBUG_LOG=. (WP_DEBUG_LOG 
+? true:false)) : WP_DEBUG_LOG undefined).PHP_EOL;
+├ù Command failed with exit code 1
+Command failed with exit code 1

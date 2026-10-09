@@ -1,0 +1,48 @@
+Nilad F1 — LIVE end-to-end evidence
+====================================
+Date: 2026-10-04T22:23:17.447Z
+n8n: local docker (nilad-n8n), workflows imported + published + activated via API
+Telegram: @nilad_notify_bot (token valid, chat id read from owner /start)
+
+1) Webhook probes against F1 (n8n /webhook/woo-order-created):
+   POST http://localhost:5678/webhook/woo-order-created
+   n8n HTTP 200 — {"message":"Workflow was started"}
+   n8n HTTP (bad signature) 200
+
+2) Recent n8n executions:
+   executions: 8 (newest first)
+     #26 | Nilad: error → owner alert | status=success | finished=undefined | started=2026-10-04T22:23:18.720Z | mode=error
+     #25 | Nilad F1: new order → Telegram + Sheet | status=error | finished=undefined | started=2026-10-04T22:23:18.575Z | mode=webhook
+     #24 | Nilad F1: new order → Telegram + Sheet | status=success | finished=undefined | started=2026-10-04T22:23:18.077Z | mode=webhook
+     #23 | Nilad: error → owner alert | status=success | finished=undefined | started=2026-10-04T22:22:15.164Z | mode=error
+     #22 | Nilad F1: new order → Telegram + Sheet | status=error | finished=undefined | started=2026-10-04T22:22:14.416Z | mode=webhook
+     #21 | Nilad F1: new order → Telegram + Sheet | status=success | finished=undefined | started=2026-10-04T22:22:14.193Z | mode=webhook
+     #20 | Nilad: error → owner alert | status=error | finished=undefined | started=2026-10-04T22:18:47.254Z | mode=error
+     #19 | Nilad: error → owner alert | status=error | finished=undefined | started=2026-10-04T22:18:47.237Z | mode=error
+
+3) Per-node results (SQLite dump inside one-shot n8n container):
+   exec #26 mode=error status=success
+     lastNodeExecuted: Telegram → owner
+     (resultData.error empty — dumping node errors from runData)
+   exec #25 mode=webhook status=error
+     lastNodeExecuted: Reject → error workflow
+     ERROR: F1 rejected webhook: bad-signature
+     node: Reject → error workflow
+     stack: NodeOperationError: F1 rejected webhook: bad-signature at ExecuteContext.execute (/usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-nodes-base@file++++home+runner+_work+n8n+n8n+packages+nodes-base/node_modules/n8n-nodes-base/nodes/StopAndError/StopAndError.node.ts:91:9) at WorkflowExecute.execu
+     node "Reject → error workflow" -> F1 rejected webhook: bad-signature
+   exec #24 mode=webhook status=success
+     lastNodeExecuted: Skip duplicate
+     (resultData.error empty — dumping node errors from runData)
+   exec #23 mode=error status=success
+     lastNodeExecuted: Telegram → owner
+     (resultData.error empty — dumping node errors from runData)
+   exec #22 mode=webhook status=error
+     lastNodeExecuted: Reject → error workflow
+     ERROR: F1 rejected webhook: bad-signature
+     node: Reject → error workflow
+     stack: NodeOperationError: F1 rejected webhook: bad-signature at ExecuteContext.execute (/usr/local/lib/node_modules/n8n/node_modules/.pnpm/n8n-nodes-base@file++++home+runner+_work+n8n+n8n+packages+nodes-base/node_modules/n8n-nodes-base/nodes/StopAndError/StopAndError.node.ts:91:9) at WorkflowExecute.execu
+     node "Reject → error workflow" -> F1 rejected webhook: bad-signature
+   exec #21 mode=webhook status=success
+     lastNodeExecuted: Sheet log skipped
+     (resultData.error empty — dumping node errors from runData)
+   done

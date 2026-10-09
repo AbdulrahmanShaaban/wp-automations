@@ -1,0 +1,450 @@
+{
+ "generatedAt": "2026-10-08T05:12:16.737Z",
+ "checks": [
+  {
+   "id": "all-controls-labelled",
+   "ok": true,
+   "detail": {
+    "unlabelled": 0,
+    "controls": [
+     {
+      "name": "siraj_website",
+      "label": "اترك هذا الحقل فارغًا",
+      "aria": null
+     },
+     {
+      "name": "siraj_name",
+      "label": "الاسم بالكامل *",
+      "aria": null
+     },
+     {
+      "name": "siraj_phone",
+      "label": "رقم الموبايل *",
+      "aria": null
+     },
+     {
+      "name": "siraj_service",
+      "label": "الخدمة المطلوبة *",
+      "aria": null
+     },
+     {
+      "name": "siraj_date",
+      "label": "التاريخ المفضّل",
+      "aria": null
+     },
+     {
+      "name": "siraj_notes",
+      "label": "ملاحظات",
+      "aria": null
+     },
+     {
+      "name": "siraj_consent",
+      "label": "أوافق إن العيادة تتواصل معا لتأكيد الموعد",
+      "aria": null
+     },
+     {
+      "name": "siraj_booking_submit",
+      "label": null,
+      "aria": null
+     },
+     {
+      "name": "_wp_http_referer",
+      "label": null,
+      "aria": null
+     },
+     {
+      "name": "siraj_booking_form",
+      "label": null,
+      "aria": null
+     }
+    ]
+   }
+  },
+  {
+   "id": "honeypot-not-display-none",
+   "ok": true,
+   "detail": {
+    "wrapper": {
+     "display": "block",
+     "visibility": "visible",
+     "position": "absolute",
+     "width": "1px",
+     "height": "1px",
+     "overflow": "hidden",
+     "clip": "rect(0px, 0px, 0px, 0px)",
+     "clipPath": "inset(50%)",
+     "opacity": "1",
+     "rectW": 1,
+     "rectH": 1
+    },
+    "input": {
+     "display": "inline-block",
+     "visibility": "visible",
+     "tabindex": "-1",
+     "autocomplete": "off",
+     "type": "text",
+     "label": "اترك هذا الحقل فارغًا",
+     "focusable": false
+    }
+   }
+  },
+  {
+   "id": "honeypot-out-of-tab-order",
+   "ok": true,
+   "detail": {
+    "input": {
+     "display": "inline-block",
+     "visibility": "visible",
+     "tabindex": "-1",
+     "autocomplete": "off",
+     "type": "text",
+     "label": "اترك هذا الحقل فارغًا",
+     "focusable": false
+    }
+   }
+  },
+  {
+   "id": "honeypot-labelled",
+   "ok": true,
+   "detail": {
+    "label": "اترك هذا الحقل فارغًا"
+   }
+  },
+  {
+   "id": "tel-field-attrs",
+   "ok": true,
+   "detail": {
+    "tag": "input",
+    "type": "tel",
+    "id": "siraj-phone-1",
+    "name": "siraj_phone",
+    "label": "رقم الموبايل *",
+    "ariaLabel": null,
+    "ariaRequired": "true",
+    "ariaInvalid": null,
+    "describedby": "siraj-phone-1-hint",
+    "autocomplete": "tel",
+    "inputmode": "tel",
+    "dir": "ltr",
+    "placeholder": null,
+    "tabindex": null,
+    "visible": true,
+    "w": 379,
+    "h": 52,
+    "classVisible": true
+   }
+  },
+  {
+   "id": "no-placeholder-only-labels",
+   "ok": true,
+   "detail": [
+    {
+     "name": "siraj_website",
+     "label": "اترك هذا الحقل فارغًا",
+     "ph": null
+    },
+    {
+     "name": "siraj_name",
+     "label": "الاسم بالكامل *",
+     "ph": null
+    },
+    {
+     "name": "siraj_phone",
+     "label": "رقم الموبايل *",
+     "ph": null
+    },
+    {
+     "name": "siraj_service",
+     "label": "الخدمة المطلوبة *",
+     "ph": null
+    },
+    {
+     "name": "siraj_date",
+     "label": "التاريخ المفضّل",
+     "ph": null
+    },
+    {
+     "name": "siraj_notes",
+     "label": "ملاحظات",
+     "ph": null
+    },
+    {
+     "name": "siraj_consent",
+     "label": "أوافق إن العيادة تتواصل معا لتأكيد الموعد",
+     "ph": null
+    },
+    {
+     "name": "siraj_booking_submit",
+     "label": null,
+     "ph": null
+    },
+    {
+     "name": "_wp_http_referer",
+     "label": null,
+     "ph": null
+    },
+    {
+     "name": "siraj_booking_form",
+     "label": null,
+     "ph": null
+    }
+   ]
+  },
+  {
+   "id": "form-native-post",
+   "ok": true,
+   "detail": {
+    "method": "post",
+    "action": "http://localhost:8889/book/"
+   }
+  },
+  {
+   "id": "invalid-shows-alert",
+   "ok": true,
+   "detail": {
+    "role": "alert",
+    "items": 4
+   }
+  },
+  {
+   "id": "invalid-aria-invalid-set",
+   "ok": true,
+   "detail": {
+    "invalidCount": 4,
+    "total": 6
+   }
+  },
+  {
+   "id": "invalid-describedby-resolves",
+   "ok": true,
+   "detail": [
+    {
+     "name": "siraj_name",
+     "describedby": [
+      "siraj-name-1-error"
+     ],
+     "errorId": "siraj-name-1-error",
+     "resolves": true
+    },
+    {
+     "name": "siraj_phone",
+     "describedby": [
+      "siraj-phone-1-hint",
+      "siraj-phone-1-error"
+     ],
+     "errorId": "siraj-phone-1-error",
+     "resolves": true
+    },
+    {
+     "name": "siraj_service",
+     "describedby": [
+      "siraj-service-1-error"
+     ],
+     "errorId": "siraj-service-1-error",
+     "resolves": true
+    },
+    {
+     "name": "siraj_consent",
+     "describedby": [
+      "siraj-consent-1-error"
+     ],
+     "errorId": "siraj-consent-1-error",
+     "resolves": true
+    }
+   ]
+  },
+  {
+   "id": "errors-adjacent-to-control",
+   "ok": true,
+   "detail": [
+    {
+     "name": "siraj_name",
+     "adjacent": true,
+     "after": true,
+     "visible": true
+    },
+    {
+     "name": "siraj_phone",
+     "adjacent": true,
+     "after": true,
+     "visible": true
+    },
+    {
+     "name": "siraj_service",
+     "adjacent": true,
+     "after": true,
+     "visible": true
+    },
+    {
+     "name": "siraj_consent",
+     "adjacent": true,
+     "after": true,
+     "visible": true
+    }
+   ]
+  },
+  {
+   "id": "errors-visible-not-color-only",
+   "ok": true,
+   "detail": [
+    {
+     "name": "siraj_name",
+     "text": "من فضلك اكتب الاسم بالكامل، 3 أحرف على الأقل.",
+     "color": "rgb(185, 28, 28)"
+    },
+    {
+     "name": "siraj_phone",
+     "text": "رقم الموبايل غير صحيح. مثال: 01012345678",
+     "color": "rgb(185, 28, 28)"
+    },
+    {
+     "name": "siraj_service",
+     "text": "من فضلك اختر الخدمة المطلوبة من القائمة.",
+     "color": "rgb(185, 28, 28)"
+    },
+    {
+     "name": "siraj_consent",
+     "text": "من فضلك أوافق على تواصل العيادة معك لتأكيد الموعد.",
+     "color": "rgb(185, 28, 28)"
+    }
+   ]
+  },
+  {
+   "id": "errors-western-digits-only",
+   "ok": true,
+   "detail": {
+    "eastern": 0,
+    "latin": 38,
+    "fieldDigits": [
+     {
+      "n": "siraj_name",
+      "east": 0,
+      "lat": 1
+     },
+     {
+      "n": "siraj_phone",
+      "east": 0,
+      "lat": 11
+     },
+     {
+      "n": "siraj_service",
+      "east": 0,
+      "lat": 0
+     },
+     {
+      "n": "siraj_date",
+      "east": 0,
+      "lat": 0
+     },
+     {
+      "n": "siraj_notes",
+      "east": 0,
+      "lat": 0
+     },
+     {
+      "n": "siraj_consent",
+      "east": 0,
+      "lat": 0
+     }
+    ]
+   }
+  },
+  {
+   "id": "invalid-keeps-previous-values",
+   "ok": true,
+   "detail": {
+    "name": "أحمد محمد",
+    "phone": "123",
+    "date": "2026-10-15",
+    "alert": true,
+    "alertItems": [
+     "رقم الموبايل: رقم الموبايل غير صحيح. مثال: 01012345678"
+    ],
+    "invalidFields": [
+     "siraj_phone"
+    ],
+    "expectedDate": "2026-10-15"
+   }
+  },
+  {
+   "id": "phone-error-shown",
+   "ok": true,
+   "detail": {
+    "name": "أحمد محمد",
+    "phone": "123",
+    "date": "2026-10-15",
+    "alert": true,
+    "alertItems": [
+     "رقم الموبايل: رقم الموبايل غير صحيح. مثال: 01012345678"
+    ],
+    "invalidFields": [
+     "siraj_phone"
+    ]
+   }
+  },
+  {
+   "id": "honeypot-filled-rejected",
+   "ok": true,
+   "detail": {
+    "success": false,
+    "alert": true,
+    "alertText": "من فضلك راجع الحقول التالية:تعذّر إرسال الطلب، من فضلك أعد المحاولة.",
+    "formStillThere": true
+   }
+  },
+  {
+   "id": "valid-submit-shows-status",
+   "ok": true,
+   "detail": {
+    "successPresent": true,
+    "role": "status",
+    "tabindex": "-1",
+    "text": "تم استلام طلبك، هنتواصل معاك لتأكيد الموعد.هذا نموذج تجريبي لا يمثّل أي عيادة حقيقية.",
+    "formGone": true,
+    "easternDigits": 0,
+    "latinDigits": 0,
+    "focusOn": "body.rtl wp-singular page-template-default page page-id-23 wp-embed-responsive wp-theme-siraj-theme"
+   }
+  },
+  {
+   "id": "success-replaces-form",
+   "ok": true,
+   "detail": {
+    "formGone": true,
+    "text": "تم استلام طلبك، هنتواصل معاك لتأكيد الموعد.هذا نموذج تجريبي لا يمثّل أي عيادة حقيقية."
+   }
+  },
+  {
+   "id": "nojs-form-visible",
+   "ok": true,
+   "detail": {
+    "formPresent": true,
+    "userControls": 7,
+    "userVisible": 7,
+    "hiddenExcluded": 3,
+    "submitVisible": true,
+    "labelsVisible": 7
+   }
+  },
+  {
+   "id": "nojs-reveal-content-visible",
+   "ok": true,
+   "detail": {
+    "revealTotal": 0,
+    "hidden": 0
+   }
+  },
+  {
+   "id": "nojs-native-post-validates",
+   "ok": true,
+   "detail": {
+    "path": "/book/",
+    "alert": true,
+    "alertText": "من فضلك راجع الحقول التالية:الاسم بالكامل: من فضلك اكتب الاسم بالكامل، 3 أحرف على الأقل.رقم الموبايل: رقم الموبايل غير صحيح. مثال: 01012345678الخدمة المطلوبة: من فضلك اختر الخدمة المطلوبة من القائمة.الموافقة على التواصل: من فضلك أوافق على تواصل العيادة معك لتأكيد الموعد.",
+    "invalidFields": 4,
+    "formPresent": true,
+    "htmlHasJsMotion": false
+   }
+  }
+ ]
+}

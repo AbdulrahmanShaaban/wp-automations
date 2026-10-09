@@ -1,0 +1,131 @@
+<!doctype html>
+<!-- Review gallery — the three directions side by side. Open this file to compare
+     them, then open any preview full-size. Nothing here is the final site: the
+     direction is chosen first, then it gets built for real. -->
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<title>P3 — اختار الاتجاه (Demo)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    /* neutral review chrome on purpose: a review page should have no personality,
+       and it must NOT borrow P1's store green (palette A is on the ban list). */
+    --bg:#F7F7F9; --surface:#fff; --text:#1B1C22; --muted:#565A66;
+    --primary:#2B2D36; --on-primary:#fff; --border:#E3E5EB; --accent:#2F4BD8;
+    --s2:.5rem; --s3:.75rem; --s4:1rem; --s6:1.5rem; --s8:2rem; --s12:3rem;
+    --radius:14px;
+  }
+  *,*::before,*::after{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);
+    font-family:"IBM Plex Sans Arabic","Alexandria",system-ui,"Segoe UI",Tahoma,sans-serif;line-height:1.7}
+  h1,h2{font-family:"Alexandria","IBM Plex Sans Arabic",system-ui,sans-serif}
+  .wrap{width:min(100% - 2rem,1400px);margin-inline:auto}
+  header{padding:var(--s8) 0 var(--s4)}
+  h1{font-size:clamp(1.6rem,1.2rem + 2vw,2.4rem);margin:0 0 var(--s2)}
+  p.lead{color:var(--muted);max-width:70ch;margin:0}
+  .grid{display:grid;gap:var(--s6);grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));
+    margin-block:var(--s8)}
+  .dir{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+    overflow:hidden;display:flex;flex-direction:column}
+  .dir .frame{border:0;width:100%;height:520px;background:#fff;display:block}
+  .dir .meta{padding:var(--s6);display:flex;flex-direction:column;gap:var(--s3);flex:1}
+  .dir h2{margin:0;font-size:1.15rem}
+  .tag{display:inline-block;font-size:.75rem;font-weight:700;padding:.1rem .5rem;border-radius:999px;
+    background:#EEF0F5;color:var(--text);border:1px solid var(--border);width:max-content}
+  .dir p{margin:0;color:var(--muted);font-size:.9rem}
+  .row{display:flex;gap:var(--s3);flex-wrap:wrap;margin-top:auto}
+  a.btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;padding:0 1.1rem;
+    border-radius:999px;font:inherit;font-weight:600;text-decoration:none;border:1.5px solid transparent}
+  .btn-primary{background:var(--primary);color:var(--on-primary)}
+  .btn-ghost{border-color:var(--border);color:var(--text)}
+  .note{background:#fff;border:1px solid var(--border);border-radius:var(--radius);
+    padding:var(--s6);margin-bottom:var(--s8)}
+  .note ul{margin:var(--s2) 0 0;padding-inline-start:1.2rem;color:var(--muted)}
+  .shots{display:grid;gap:var(--s4);grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));
+    margin-top:var(--s4)}
+  .shots figure{margin:0}
+  .shots img{width:100%;border:1px solid var(--border);border-radius:10px;display:block}
+  .shots figcaption{font-size:.8rem;color:var(--muted);margin-top:.3rem}
+  footer{border-top:1px solid var(--border);margin-top:var(--s12);padding:var(--s6) 0;color:var(--muted);
+    font-size:.85rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="tag">عيادة سِراج للأسنان — نموذج تجريبي (Demo)</span>
+    <h1 style="margin-top:var(--s3)">اختار الاتجاه اللي يعجبك</h1>
+    <p class="lead">ثلاثة اتجاهات مختلفة في الشكل والألوان والخطوط — مش مجرد تغيير لون. كل واحدة مبنية بنفس المحتوى، والفرق في الهيكل. بعد ما تختار، ابني الموقع الحقيقي عليه.</p>
+  </header>
+
+  <div class="note">
+    <b>قبل ما تختار، جرّب على الموبايل:</b> كل المعروضات متعملة بـ CSS متجاوب — افتح أي واحد على عرض 390px أو دوّر على شاشة موبايل.
+    <ul>
+      <li>الاختيار النهائي بيتبني عليه الموقع كامل (الصفحات الداخلية + الحجز + الأتمتة).</li>
+      <li>تقدر تدمج: مثلاً "A مع الخط الكبير بتاع B".</li>
+      <li>مفيش صور طبية ولا شهادات عملاء ولا إحصائيات — النموذج كله موسوم Demo.</li>
+    </ul>
+  </div>
+
+  <div class="grid">
+    <article class="dir">
+      <iframe class="frame" src="preview-a.html" title="Direction A" loading="lazy"></iframe>
+      <div class="meta">
+        <span class="tag">A — «الروشتة» · APPROVED</span>
+        <h2>روشتة دكتور: أزرق سريري + Alexandria</h2>
+        <p>مفهومه دفتر ملاحظات physician: خطوط مسطرة وأرقام في الهامش وختم أحمر. الزوايا ناعمة (14px)، والهيرو headline كبير على غير شكل بلوكي. لحظته المميزة: خط تحت العنوان بينرسم نفسه. إحساسها: عيادة دقيقة وواضحة. بقالها أنيميشن حقيقي (GSAP) وصور فوتوغرافية من Unsplash + لوجو معمول للعيادة — <b>دي اللي اتاخدت.</b></p>
+        <div class="row">
+          <a class="btn btn-primary" href="preview-a.html">افتح A</a>
+          <a class="btn btn-ghost" href="shots/p3-a-390.png">موبايل</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="dir">
+      <iframe class="frame" src="preview-b.html" title="Direction B" loading="lazy"></iframe>
+      <div class="meta">
+        <span class="tag">B — «العيادة الخاصة»</span>
+        <h2>كحلي + عاجي + خط عربي SERIF (Markazi)</h2>
+        <p>مفهومه عيادة خاصة فاخرة بعد المغرب: عنوان عربي serif ضخم هو الصورة نفسها، مع texture حبيبات خفيفة. الزوايا حادة (4px) ومفيش ظلال خالص. لحظتها المميزة: العنوان يظهر سطر ورا سطر خلف حافة ثابتة. إحساسها: بريميوم وهادي.</p>
+        <div class="row">
+          <a class="btn btn-primary" href="preview-b.html">افتح B</a>
+          <a class="btn btn-ghost" href="shots/p3-b-390.png">موبايل</a>
+        </div>
+      </div>
+    </article>
+
+    <article class="dir">
+      <iframe class="frame" src="preview-c.html" title="Direction C" loading="lazy"></iframe>
+      <div class="meta">
+        <span class="tag">C — «دفتر الوصفات»</span>
+        <h2>ورق رملي + حبر أزرق بحري + El Messiri</h2>
+        <p>مفهومه دفتر وصفات على ورق دافي: العنوان ثابت وإنت بتتنزل في قائمة الخدمات (اللي عجبك)، والأسعار زي الإيصال. الزوايا pill (20px). لحظتها المميزة: الخط المنقّط جنب القائمة يتملي مع السكرول. إحساسها: عيادة الحي اللي تثق فيها.</p>
+        <div class="row">
+          <a class="btn btn-primary" href="preview-c.html">افتح C</a>
+          <a class="btn btn-ghost" href="shots/p3-c-390.png">موبايل</a>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <div class="note">
+    <b>عناصر مشتركة (مش محتاجة تختار):</b>
+    <div class="shots">
+      <figure><img src="shots/p3-a-1440.png" alt="A على سطح المكتب"><figcaption>A — سطح المكتب</figcaption></figure>
+      <figure><img src="shots/p3-b-1440.png" alt="B على سطح المكتب"><figcaption>B — سطح المكتب</figcaption></figure>
+      <figure><img src="shots/p3-c-1440.png" alt="C على سطح المكتب"><figcaption>C — سطح المكتب</figcaption></figure>
+      <figure><img src="shots/p3-components-1440.png" alt="العناصر والحالات"><figcaption>العناصر والحالات</figcaption></figure>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">نموذج تجريبي (Demo) — لا يمثّل أي عيادة حقيقية · <a href="components.html">صفحة العناصر والحالات</a> · <a href="media-sheet.html">الصور</a> · <a href="logo-sheet.html">اللوجو</a></div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,138 @@
+{
+ "violations": [],
+ "incomplete": [
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "nodes": [
+    {
+     "target": "aside > .sec-num",
+     "html": "<span class=\"sec-num\">RX—001</span>",
+     "any": [
+      {
+       "id": "color-contrast",
+       "message": "Element's background color could not be determined due to a background gradient",
+       "data": {
+        "contrastRatio": 0,
+        "fontSize": "12.0pt (16px)",
+        "fontWeight": "bold",
+        "messageKey": "bgGradient",
+        "expectedContrastRatio": "4.5:1"
+       }
+      }
+     ],
+     "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+    },
+    {
+     "target": "aside > h2",
+     "html": "<h2>ملاحظات الزيارة</h2>",
+     "any": [
+      {
+       "id": "color-contrast",
+       "message": "Element's background color could not be determined due to a background gradient",
+       "data": {
+        "contrastRatio": 0,
+        "fontSize": "18.0pt (24px)",
+        "fontWeight": "bold",
+        "messageKey": "bgGradient",
+        "expectedContrastRatio": "3:1"
+       }
+      }
+     ],
+     "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+    },
+    {
+     "target": ".note-list > li:nth-child(1) > span",
+     "html": "<span>20 دقيقة</span>",
+     "any": [
+      {
+       "id": "color-contrast",
+       "message": "Element's background color could not be determined because element contains an image node",
+       "data": {
+        "contrastRatio": 0,
+        "fontSize": "12.0pt (16px)",
+        "fontWeight": "normal",
+        "messageKey": "imgNode",
+        "expectedContrastRatio": "4.5:1"
+       }
+      }
+     ],
+     "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+    },
+    {
+     "target": ".note-list > li:nth-child(2)",
+     "html": "<li>أشعة عند الحاجة <span>15 دقيقة</span></li>",
+     "any": [
+      {
+       "id": "color-contrast",
+       "message": "Element's background color could not be determined due to a background gradient",
+       "data": {
+        "contrastRatio": 0,
+        "fontSize": "12.0pt (16px)",
+        "fontWeight": "normal",
+        "messageKey": "bgGradient",
+        "expectedContrastRatio": "4.5:1"
+       }
+      }
+     ],
+     "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+    },
+    {
+     "target": ".note-list > li:nth-child(2) > span",
+     "html": "<span>15 دقيقة</span>",
+     "any": [
+      {
+       "id": "color-contrast",
+       "message": "Element's background color could not be determined because element contains an image node",
+       "data": {
+        "contrastRatio": 0,
+        "fontSize": "12.0pt (16px)",
+        "fontWeight": "normal",
+        "messageKey": "imgNode",
+        "expectedContrastRatio": "4.5:1"
+       }
+      }
+     ],
+     "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+    },
+    {
+     "target": ".note-list > li:nth-child(3) > span",
+     "html": "<span>45 دقيقة</span>",
+     "any": [
+      {
+       "id": "color-contrast",
+       "message": "Element's background color could not be determined due to a background gradient",
+       "data": {
+        "contrastRatio": 0,
+        "fontSize": "12.0pt (16px)",
+        "fontWeight": "normal",
+        "messageKey": "bgGradient",
+        "expectedContrastRatio": "4.5:1"
+       }
+      }
+     ],
+     "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+    },
+    {
+     "target": ".stamp",
+     "html": "<p class=\"stamp\">سراج · Cairo</p>",
+     "any": [
+      {
+       "id": "color-contrast",
+       "message": "Element's background color could not be determined due to a background gradient",
+       "data": {
+        "contrastRatio": 0,
+        "fontSize": "10.5pt (14px)",
+        "fontWeight": "bold",
+        "messageKey": "bgGradient",
+        "expectedContrastRatio": "4.5:1"
+       }
+      }
+     ],
+     "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+    }
+   ]
+  }
+ ],
+ "passes": 1
+}

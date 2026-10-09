@@ -1,0 +1,14 @@
+﻿node.exe : i Starting 'bash -c php -i 2>/dev/null | grep -E 'display_errors =>|error_reporting =>|log_errors =>'' on 
+the wordpress container. 
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (i Starting 'bas...ess container. :String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+display_errors => Off => Off
+error_reporting => 4343 => 4343
+log_errors => On => On
+ΓêÜ Ran `bash -c php -i 2>/dev/null | grep -E 'display_errors =>|error_reporting =>|log_errors =>'` in 'wordpress'. 
+(in 6s 500ms)
