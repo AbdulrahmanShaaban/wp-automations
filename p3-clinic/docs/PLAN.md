@@ -57,7 +57,7 @@
 3. الباقي كله owner-blocked: نشر فعلي + n8n live + shuffle-salts/تعريب admin على خادم الصاحب.
 
 ## Recently Completed
-- [x] **تجهيز المستودع للرفع على GitHub (2026-10-08)** — حُذفت 236 لقطة/16 log (‎44MB)، `.gitignore` موحّد للورشة، إزالة `.git` الفارغ من p1، مرجع sink-log صار `.txt`، README جذر للمستودع
+- [x] **رفع GitHub مكتمل (2026-10-08)** — `https://github.com/AbdulrahmanShaaban/Delivery-App` (main @ 8d616b8، 799 ملف / 4.63MiB): حُذفت 236 لقطة/16 log (‎44MB)، `.gitignore` موحّد للورشة (أسرار/caches)، فحص index خالٍ من hex/مفاتيح، `.env` الحيّ متجاهَل، إزالة `.git` الفارغ من p1، README جذر
 - [x] **اختبار متانة إعادة التشغيل (2026-10-08)** — `wp-env start` كامل: afterStart أعاد كتابة php-tune ( wordpress **و cli** — السكربت وُسّع للثانيتين) · permalinks رجعت date-based → `seed.sh` أصلحتها · بوابة verify جديدة **4b php-tune** → **50/50** · سلسلة الحجز كاملة بعد restart: e2e خضرّ + notifier → sink `signature:VALID` (id=34) · ARCHITECTURE أُعيدت كتابتها للواقع (لا GSAP، n8n مبني)
 - [x] **n8n booking confirmation (2026-10-08)** — notifier HMAC + workflow + error alert + اختبار sink محلي (VALID/401)
 - [x] **QA audits + remediation (2026-10-08)** — 3 تدقيقات + إصلاحات + إعادة قياس → `GATE-2026-10-08.md` GO (verify 50/50)
