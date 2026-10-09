@@ -57,7 +57,7 @@
 3. الباقي كله owner-blocked: نشر فعلي + n8n live + shuffle-salts/تعريب admin على خادم الصاحب.
 
 ## Recently Completed
-- [x] **تحضير المستودع للرفع (2026-10-08)** — تنظيف: 236 لقطة/16 log (‎44MB)، `.gitignore` موحّد للورشة (أسرار/caches)، فحص index خالٍ من hex/مفاتيح، `.env` الحيّ متجاهَل، إزالة `.git` الفارغ من p1، README جذر · جاهز محليًا (8d616b8 + 4259c8e) — **الريبو النهائي ينتظر الاسم الجديد** من الصاحب (محاولة الرفع على Delivery-App أُزيلت بالكامل: remote main = commit فاضي بلا ملفات)
+- [x] **رفع GitHub مكتمل (2026-10-08)** — `https://github.com/AbdulrahmanShaaban/wp-automations` (public · `main` @ b11505f): تنظيف 236 لقطة/16 log (‎44MB)، `.gitignore` موحّد للورشة (أسرار/caches)، فحص index خالٍ من hex/مفاتيح، `.env` الحيّ متجاهَل، إزالة `.git` الفارغ من p1، README جذر · (محاولة Delivery-App أُزيلت منها بالكامل قبل الاسم الصحيح)
 - [x] **اختبار متانة إعادة التشغيل (2026-10-08)** — `wp-env start` كامل: afterStart أعاد كتابة php-tune ( wordpress **و cli** — السكربت وُسّع للثانيتين) · permalinks رجعت date-based → `seed.sh` أصلحتها · بوابة verify جديدة **4b php-tune** → **50/50** · سلسلة الحجز كاملة بعد restart: e2e خضرّ + notifier → sink `signature:VALID` (id=34) · ARCHITECTURE أُعيدت كتابتها للواقع (لا GSAP، n8n مبني)
 - [x] **n8n booking confirmation (2026-10-08)** — notifier HMAC + workflow + error alert + اختبار sink محلي (VALID/401)
 - [x] **QA audits + remediation (2026-10-08)** — 3 تدقيقات + إصلاحات + إعادة قياس → `GATE-2026-10-08.md` GO (verify 50/50)
